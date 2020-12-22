@@ -1,0 +1,108 @@
+### YamlMime:Landing
+metadata:
+  title: مركز التعليمات لتطبيق Dynamics 365 Customer Insights
+  author: m-hartmann
+  description: ابحث عن مقالات ذات صلة لبدء العمل مع محتوى التعليمات.
+  ms.author: mhart
+  ms.date: 10/29/2020
+  ms.service: customer-insights
+  ms.topic: landing-page
+  ms.openlocfilehash: f175ea858213022afc87fce77213893c7d050d30
+  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+  ms.translationtype: HT
+  ms.contentlocale: ar-SA
+  ms.lasthandoff: 11/03/2020
+  ms.locfileid: "4404948"
+title: وثائق Dynamics 365 Customer Insights
+summary: ابحث عن موارد مفيدة للشروع في العمل والتعرف على ميزات وقدرات Customer Insights.
+landingContent:
+- title: تعرّف على Customer Insights
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: نظرة عامة على Customer Insights
+      url: overview.md
+    - text: خطط الإصدار
+      url: https://docs.microsoft.com/dynamics365-release-plan/2020wave2/customer-data-platform/dynamics365-customer-insights/planned-features
+    - text: الوصول إلى بيئتك
+      url: https://home.ci.ai.dynamics.com/
+- title: الشروع في العمل مع رؤى الجمهور
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: التسجيل للحصول على إصدار تجريبي
+      url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
+    - text: الجديد‬
+      url: audience-insights/whats-new-audience-insights.md
+    - text: وثائق رؤى الجمهور
+      url: audience-insights/index.yml
+- title: الاتصال
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: الانضمام إلى مجتمع Dynamics 365
+      url: https://go.microsoft.com/fwlink/?linkid=2073991
+    - text: مشاركة أفكارك
+      url: https://go.microsoft.com/fwlink/?linkid=2074172
+    - text: الإبلاغ عن مشكلة
+      url: https://go.microsoft.com/fwlink/?linkid=2079641
+- title: البرامج التعليمية لرؤى الجمهور
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: إنشاء بيئة جديدة
+      url: audience-insights/home.md
+    - text: إنشاء ملف تعريف العميل الموحد
+      url: https://docs.microsoft.com/learn/modules/unified-customer-profile/
+    - text: التعامل مع التطبيق
+      url: https://docs.microsoft.com/learn/modules/working-with-customer-insights/
+- title: تصدير بيانات رؤى الجمهور
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: تعيين وجهات التصدير
+      url: audience-insights/export-destinations.md
+    - text: بطاقات العملاء في تطبيقات Dynamics 365
+      url: audience-insights/customer-card-add-in.md
+    - text: موصل Power BI
+      url: audience-insights/export-power-bi.md
+- title: إدارة رؤى الجمهور
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: تكوين النظام
+      url: audience-insights/system.md
+    - text: تحديد أذونات المستخدم
+      url: audience-insights/permissions.md
+    - text: إدارة بيئات متعددة
+      url: audience-insights/manage-environments.md
+- title: حول رؤى المشاركة (معاينة)
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: نظرة عامة على القدرات
+      url: engagement-insights/overview.md
+    - text: الشروط والمفاهيم
+      url: engagement-insights/glossary.md
+    - text: الشروع في العمل
+      url: engagement-insights/get-started.md
+- title: تقارير رؤى المشاركة (معاينة)
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: عرض التقارير
+      url: engagement-insights/view-reports.md
+    - text: إنشاء تقارير مخصصة
+      url: engagement-insights/custom-reports.md
+    - text: عرض تقرير ملفات التعريف الموحدة
+      url: engagement-insights/profile-reports.md
+- title: أحداث رؤى المشاركة (معاينة)
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: إنشاء احداث محسنة
+      url: engagement-insights/refined-events.md
+    - text: تصدير الأحداث
+      url: engagement-insights/export-events.md
+    - text: حذف البيانات الشخصية وتصديرها
+      url: engagement-insights/delete-export-personal-data.md
