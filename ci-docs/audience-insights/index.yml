@@ -1,0 +1,79 @@
+### YamlMime:Landing
+title: قدرة رؤى الجمهور في Dynamics 365 Customer Insights
+summary: استيعاب بيانات العميل من مصادر متعددة وتوحيدها وتنظيمها. قم بإنشاء وإدارة ملفات تعريف العملاء وتقسيم الوقت الحقيقي. قم بتكامل بيانات العميل مع الأنظمة الأخرى لجعلها قابلة للتنفيذ بشكل أكبر.
+metadata:
+  title: وثائق رؤى الجمهور
+  description: مركز التعليمات مع ارتباطات رئيسية لرؤى الجمهور.
+  ms.service: customer-insights
+  ms.subservice: audience-insights
+  ms.topic: landing-page
+  author: m-hartmann
+  ms.author: mhart
+  ms.date: 10/16/2020
+  ms.openlocfilehash: 9dcbbecf793cca2ef1d79d6fad7f3b420f5a8806
+  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+  ms.translationtype: HT
+  ms.contentlocale: ar-SA
+  ms.lasthandoff: 11/03/2020
+  ms.locfileid: "4404931"
+landingContent:
+- title: حول رؤى الجمهور
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: نظرة عامة على المنتج
+      url: overview.md
+    - text: الميزات الجديدة والمحدثة
+      url: whats-new-audience-insights.md
+    - text: موقع المجتمع
+      url: https://go.microsoft.com/fwlink/?linkid=2073991
+- title: استيعاب مصادر البيانات
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: إضافة مصدر بيانات
+      url: data-sources.md
+    - text: تحديث تزايدي
+      url: incremental-refresh-data-sources.md
+    - text: فهم الكيانات
+      url: entities.md
+- title: توحيد البيانات
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: المخطط
+      url: map-entities.md
+    - text: مطابقة
+      url: match-entities.md
+    - text: ‏‏دمج
+      url: merge-entities.md
+- title: تنقيح ملفات تعريف العملاء
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: تكوين العلاقات
+      url: relationships.md
+    - text: سرد أنشطة العميل
+      url: activities.md
+    - text: إحضار نماذج التعلم الآلي الخاصة بك
+      url: custom-models.md
+- title: تصدير بيانات العميل
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: تعيين وجهات التصدير
+      url: export-destinations.md
+    - text: بطاقات العملاء في تطبيقات Dynamics 365
+      url: customer-card-add-in.md
+    - text: موصل Power BI
+      url: export-power-bi.md
+- title: إدارة التطبيق
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: تكوين النظام
+      url: system.md
+    - text: تحديد أذونات المستخدم
+      url: permissions.md
+    - text: إدارة بيئات متعددة
+      url: manage-environments.md
