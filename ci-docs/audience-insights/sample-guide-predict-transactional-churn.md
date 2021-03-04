@@ -5,202 +5,205 @@ ms.date: 11/19/2020
 ms.reviewer: digranad
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 055708ed3f9f468cad83ecf976a460814bf05199
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 81540ad2f490cf566f031233543b3cb6aa838033
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643577"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269774"
 ---
-# <a name="transactional-churn-prediction-preview-sample-guide"></a><span data-ttu-id="3db15-103">دليل نموذج التنبؤ بخسارة المعاملة (معاينة)</span><span class="sxs-lookup"><span data-stu-id="3db15-103">Transactional churn prediction (preview) sample guide</span></span>
+# <a name="transactional-churn-prediction-preview-sample-guide"></a><span data-ttu-id="4d59f-103">دليل نموذج التنبؤ بخسارة المعاملة (معاينة)</span><span class="sxs-lookup"><span data-stu-id="4d59f-103">Transactional churn prediction (preview) sample guide</span></span>
 
-<span data-ttu-id="3db15-104">سيرشدك هذا الدليل عبر مثال شامل للتنبؤ بخسارة المعاملة في Customer Insights باستخدام البيانات المتوفرة أدناه.</span><span class="sxs-lookup"><span data-stu-id="3db15-104">This guide will walk you through an end to end example of Transactional Churn prediction in Customer Insights using the data provided below.</span></span> <span data-ttu-id="3db15-105">جميع البيانات المستخدمة في هذا الدليل ليست بيانات عملاء حقيقية وهي عبارة عن جزء من مجموعة البيانات الموجودة في بيئة *العرض التوضيحي* ضمن اشتراك Customer Insights.</span><span class="sxs-lookup"><span data-stu-id="3db15-105">All data used in this guide is not real customer data and is part of the Contoso dataset found in the *Demo* environment within your Customer Insights Subscription.</span></span>
+<span data-ttu-id="4d59f-104">سيرشدك هذا الدليل عبر مثال شامل للتنبؤ بخسارة المعاملة في Customer Insights باستخدام البيانات المتوفرة أدناه.</span><span class="sxs-lookup"><span data-stu-id="4d59f-104">This guide will walk you through an end to end example of Transactional Churn prediction in Customer Insights using the data provided below.</span></span> <span data-ttu-id="4d59f-105">جميع البيانات المستخدمة في هذا الدليل ليست بيانات عملاء حقيقية وهي عبارة عن جزء من مجموعة البيانات الموجودة في بيئة *العرض التوضيحي* ضمن اشتراك Customer Insights.</span><span class="sxs-lookup"><span data-stu-id="4d59f-105">All data used in this guide is not real customer data and is part of the Contoso dataset found in the *Demo* environment within your Customer Insights Subscription.</span></span>
 
-## <a name="scenario"></a><span data-ttu-id="3db15-106">السيناريو</span><span class="sxs-lookup"><span data-stu-id="3db15-106">Scenario</span></span>
+## <a name="scenario"></a><span data-ttu-id="4d59f-106">السيناريو</span><span class="sxs-lookup"><span data-stu-id="4d59f-106">Scenario</span></span>
 
-<span data-ttu-id="3db15-107">إن Contoso هي شركه تنتج قهوة عالية الجودة وأجهزة عالية الجودة لصنع القهوة، تبيعها عبر موقع الويب Contoso Coffee.</span><span class="sxs-lookup"><span data-stu-id="3db15-107">Contoso is a company that produces high-quality coffee and coffee machines, which they sell through their Contoso Coffee website.</span></span> <span data-ttu-id="3db15-108">هدف هذه الشركة هو التعرّف على العملاء الذين يشترون عادةً منتجاتهم بشكل منتظم، والذين لن يعودوا من العملاء النشطاء خلال الستين يومًا القادمة.</span><span class="sxs-lookup"><span data-stu-id="3db15-108">Their goal is to know which customers who typically purchase their products on a regular basis, will stop being active customers in the next 60 days.</span></span> <span data-ttu-id="3db15-109">من شأن اطّلاع الشركة على الذين **سيتوقفون عن التعامل معها على الأرجح** أن يساعدها على توفير جهودها التسويقية من خلال التركيز على استبقائهم.</span><span class="sxs-lookup"><span data-stu-id="3db15-109">Knowing which of their customers is **likely to churn**, can help them save marketing efforts by focusing on keeping them.</span></span>
+<span data-ttu-id="4d59f-107">إن Contoso هي شركه تنتج قهوة عالية الجودة وأجهزة عالية الجودة لصنع القهوة، تبيعها عبر موقع الويب Contoso Coffee.</span><span class="sxs-lookup"><span data-stu-id="4d59f-107">Contoso is a company that produces high-quality coffee and coffee machines, which they sell through their Contoso Coffee website.</span></span> <span data-ttu-id="4d59f-108">هدف هذه الشركة هو التعرّف على العملاء الذين يشترون عادةً منتجاتهم بشكل منتظم، والذين لن يعودوا من العملاء النشطاء خلال الستين يومًا القادمة.</span><span class="sxs-lookup"><span data-stu-id="4d59f-108">Their goal is to know which customers who typically purchase their products on a regular basis, will stop being active customers in the next 60 days.</span></span> <span data-ttu-id="4d59f-109">من شأن اطّلاع الشركة على الذين **سيتوقفون عن التعامل معها على الأرجح** أن يساعدها على توفير جهودها التسويقية من خلال التركيز على استبقائهم.</span><span class="sxs-lookup"><span data-stu-id="4d59f-109">Knowing which of their customers is **likely to churn**, can help them save marketing efforts by focusing on keeping them.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="3db15-110">المتطلبات الأساسية</span><span class="sxs-lookup"><span data-stu-id="3db15-110">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="4d59f-110">المتطلبات الأساسية</span><span class="sxs-lookup"><span data-stu-id="4d59f-110">Prerequisites</span></span>
 
-- <span data-ttu-id="3db15-111">على الأقل [أذونات المساهم](permissions.md) في Customer Insights.</span><span class="sxs-lookup"><span data-stu-id="3db15-111">At least [Contributor permissions](permissions.md) in Customer Insights.</span></span>
-- <span data-ttu-id="3db15-112">نحن ننصح بتنفيذ الخطوات التالية [في بيئة جديدة](manage-environments.md).</span><span class="sxs-lookup"><span data-stu-id="3db15-112">We recommend that you implement the following steps [in a new environment](manage-environments.md).</span></span>
+- <span data-ttu-id="4d59f-111">على الأقل [أذونات المساهم](permissions.md) في Customer Insights.</span><span class="sxs-lookup"><span data-stu-id="4d59f-111">At least [Contributor permissions](permissions.md) in Customer Insights.</span></span>
+- <span data-ttu-id="4d59f-112">نحن ننصح بتنفيذ الخطوات التالية [في بيئة جديدة](manage-environments.md).</span><span class="sxs-lookup"><span data-stu-id="4d59f-112">We recommend that you implement the following steps [in a new environment](manage-environments.md).</span></span>
 
-## <a name="task-1---ingest-data"></a><span data-ttu-id="3db15-113">المهمة 1 - استيعاب البيانات</span><span class="sxs-lookup"><span data-stu-id="3db15-113">Task 1 - Ingest data</span></span>
+## <a name="task-1---ingest-data"></a><span data-ttu-id="4d59f-113">المهمة 1 - استيعاب البيانات</span><span class="sxs-lookup"><span data-stu-id="4d59f-113">Task 1 - Ingest data</span></span>
 
-<span data-ttu-id="3db15-114">راجع المقالات [حول استيعاب البيانات](data-sources.md) و[استيراد مصادر البيانات باستخدام موصلات Power Query](connect-power-query.md) على وجه التحديد.</span><span class="sxs-lookup"><span data-stu-id="3db15-114">Review the articles [about data ingestion](data-sources.md) and [importing data sources using Power Query connectors](connect-power-query.md) specifically.</span></span> <span data-ttu-id="3db15-115">تفترض المعلومات التالية أنك ملمّ باستيعاب البيانات بشكل عام.</span><span class="sxs-lookup"><span data-stu-id="3db15-115">The following information assumes you familiarized with ingesting data in general.</span></span> 
+<span data-ttu-id="4d59f-114">راجع المقالات [حول استيعاب البيانات](data-sources.md) و[استيراد مصادر البيانات باستخدام موصلات Power Query](connect-power-query.md) على وجه التحديد.</span><span class="sxs-lookup"><span data-stu-id="4d59f-114">Review the articles [about data ingestion](data-sources.md) and [importing data sources using Power Query connectors](connect-power-query.md) specifically.</span></span> <span data-ttu-id="4d59f-115">تفترض المعلومات التالية أنك ملمّ باستيعاب البيانات بشكل عام.</span><span class="sxs-lookup"><span data-stu-id="4d59f-115">The following information assumes you familiarized with ingesting data in general.</span></span> 
 
-### <a name="ingest-customer-data-from-ecommerce-platform"></a><span data-ttu-id="3db15-116">استيعاب بيانات العملاء من النظام الأساسي للتجارة الإلكترونية</span><span class="sxs-lookup"><span data-stu-id="3db15-116">Ingest customer data from eCommerce platform</span></span>
+### <a name="ingest-customer-data-from-ecommerce-platform"></a><span data-ttu-id="4d59f-116">استيعاب بيانات العملاء من النظام الأساسي للتجارة الإلكترونية</span><span class="sxs-lookup"><span data-stu-id="4d59f-116">Ingest customer data from eCommerce platform</span></span>
 
-1. <span data-ttu-id="3db15-117">أنشئ مصدر بيانات باسم **التجارة الإلكترونية**، وحدد خيار الاستيراد، ثم حدد الموصل **النص/CSV**.</span><span class="sxs-lookup"><span data-stu-id="3db15-117">Create a data source named **eCommerce**, choose the import option, and select the **Text/CSV** connector.</span></span>
+1. <span data-ttu-id="4d59f-117">أنشئ مصدر بيانات باسم **التجارة الإلكترونية**، وحدد خيار الاستيراد، ثم حدد الموصل **النص/CSV**.</span><span class="sxs-lookup"><span data-stu-id="4d59f-117">Create a data source named **eCommerce**, choose the import option, and select the **Text/CSV** connector.</span></span>
 
-1. <span data-ttu-id="3db15-118">أدخل عنوان URL لجهات اتصال التجارة الإلكترونية https://aka.ms/ciadclasscontacts.</span><span class="sxs-lookup"><span data-stu-id="3db15-118">Enter the URL for eCommerce contacts https://aka.ms/ciadclasscontacts.</span></span>
+1. <span data-ttu-id="4d59f-118">أدخل عنوان URL لجهات اتصال التجارة الإلكترونية https://aka.ms/ciadclasscontacts.</span><span class="sxs-lookup"><span data-stu-id="4d59f-118">Enter the URL for eCommerce contacts https://aka.ms/ciadclasscontacts.</span></span>
 
-1. <span data-ttu-id="3db15-119">أثناء تحرير البيانات، حدد **تحويل**، ثم حدد **استخدام الصف الأول كرؤوس**.</span><span class="sxs-lookup"><span data-stu-id="3db15-119">While editing the data, select **Transform** and then **Use First Row as Headers**.</span></span>
+1. <span data-ttu-id="4d59f-119">أثناء تحرير البيانات، حدد **تحويل**، ثم حدد **استخدام الصف الأول كرؤوس**.</span><span class="sxs-lookup"><span data-stu-id="4d59f-119">While editing the data, select **Transform** and then **Use First Row as Headers**.</span></span>
 
-1. <span data-ttu-id="3db15-120">حدّث نوع البيانات للأعمدة المدرجة أدناه:</span><span class="sxs-lookup"><span data-stu-id="3db15-120">Update the datatype for the columns listed below:</span></span>
+1. <span data-ttu-id="4d59f-120">حدّث نوع البيانات للأعمدة المدرجة أدناه:</span><span class="sxs-lookup"><span data-stu-id="4d59f-120">Update the datatype for the columns listed below:</span></span>
 
-   - <span data-ttu-id="3db15-121">**DateOfBirth**: التاريخ</span><span class="sxs-lookup"><span data-stu-id="3db15-121">**DateOfBirth**: Date</span></span>
-   - <span data-ttu-id="3db15-122">**CreatedOn**: التاريخ/الوقت/المنطقة</span><span class="sxs-lookup"><span data-stu-id="3db15-122">**CreatedOn**: Date/Time/Zone</span></span>
+   - <span data-ttu-id="4d59f-121">**DateOfBirth**: التاريخ</span><span class="sxs-lookup"><span data-stu-id="4d59f-121">**DateOfBirth**: Date</span></span>
+   - <span data-ttu-id="4d59f-122">**CreatedOn**: التاريخ/الوقت/المنطقة</span><span class="sxs-lookup"><span data-stu-id="4d59f-122">**CreatedOn**: Date/Time/Zone</span></span>
 
    [!div class="mx-imgBorder"]
-   <span data-ttu-id="3db15-123">![تحويل DoB إلى تاريخ](media/ecommerce-dob-date.PNG "تحويل تاريخ الولادة إلى تاريخ")</span><span class="sxs-lookup"><span data-stu-id="3db15-123">![Transform DoB to Date](media/ecommerce-dob-date.PNG "transform date of birth to date")</span></span>
+   <span data-ttu-id="4d59f-123">![تحويل DoB إلى تاريخ](media/ecommerce-dob-date.PNG "تحويل تاريخ الولادة إلى تاريخ")</span><span class="sxs-lookup"><span data-stu-id="4d59f-123">![Transform DoB to Date](media/ecommerce-dob-date.PNG "transform date of birth to date")</span></span>
 
-1. <span data-ttu-id="3db15-124">في حقل "الاسم" في الجزء الأيمن، أعد تسمية مصدر البيانات من **استعلام** إلى **‎eCommerceContacts**</span><span class="sxs-lookup"><span data-stu-id="3db15-124">In the 'Name' field on the right-hand pane, rename your data source from **Query** to **eCommerceContacts**</span></span>
+1. <span data-ttu-id="4d59f-124">في حقل **الاسم‏‎** في الجزء الأيمن، أعد تسمية مصدر البيانات من **استعلام** إلى **eCommerceContacts**</span><span class="sxs-lookup"><span data-stu-id="4d59f-124">In the **Name** field on the right-hand pane, rename your data source from **Query** to **eCommerceContacts**</span></span>
 
-1. <span data-ttu-id="3db15-125">احفظ مصدر البيانات.</span><span class="sxs-lookup"><span data-stu-id="3db15-125">Save the data source.</span></span>
+1. <span data-ttu-id="4d59f-125">احفظ مصدر البيانات.</span><span class="sxs-lookup"><span data-stu-id="4d59f-125">Save the data source.</span></span>
 
-### <a name="ingest-online-purchase-data"></a><span data-ttu-id="3db15-126">استيعاب بيانات شراء عبر الإنترنت</span><span class="sxs-lookup"><span data-stu-id="3db15-126">Ingest online purchase data</span></span>
+### <a name="ingest-online-purchase-data"></a><span data-ttu-id="4d59f-126">استيعاب بيانات شراء عبر الإنترنت</span><span class="sxs-lookup"><span data-stu-id="4d59f-126">Ingest online purchase data</span></span>
 
-1. <span data-ttu-id="3db15-127">أضف مجموعة بيانات أخرى إلى مصدر البيانات **التجارة الإلكترونية**.</span><span class="sxs-lookup"><span data-stu-id="3db15-127">Add another data set to the same **eCommerce** data source.</span></span> <span data-ttu-id="3db15-128">اختر الموصل **النص/CSV** مرة أخرى.</span><span class="sxs-lookup"><span data-stu-id="3db15-128">Choose the **Text/CSV** connector again.</span></span>
+1. <span data-ttu-id="4d59f-127">أضف مجموعة بيانات أخرى إلى مصدر البيانات **التجارة الإلكترونية**.</span><span class="sxs-lookup"><span data-stu-id="4d59f-127">Add another data set to the same **eCommerce** data source.</span></span> <span data-ttu-id="4d59f-128">اختر الموصل **النص/CSV** مرة أخرى.</span><span class="sxs-lookup"><span data-stu-id="4d59f-128">Choose the **Text/CSV** connector again.</span></span>
 
-1. <span data-ttu-id="3db15-129">أدخل عنوان URL لبيانات **المشتريات عبر الإنترنت** https://aka.ms/ciadclassonline.</span><span class="sxs-lookup"><span data-stu-id="3db15-129">Enter the URL for **Online Purchases** data https://aka.ms/ciadclassonline.</span></span>
+1. <span data-ttu-id="4d59f-129">أدخل عنوان URL لبيانات **المشتريات عبر الإنترنت** https://aka.ms/ciadclassonline.</span><span class="sxs-lookup"><span data-stu-id="4d59f-129">Enter the URL for **Online Purchases** data https://aka.ms/ciadclassonline.</span></span>
 
-1. <span data-ttu-id="3db15-130">أثناء تحرير البيانات، حدد **تحويل**، ثم حدد **استخدام الصف الأول كرؤوس**.</span><span class="sxs-lookup"><span data-stu-id="3db15-130">While editing the data, select **Transform** and then **Use First Row as Headers**.</span></span>
+1. <span data-ttu-id="4d59f-130">أثناء تحرير البيانات، حدد **تحويل**، ثم حدد **استخدام الصف الأول كرؤوس**.</span><span class="sxs-lookup"><span data-stu-id="4d59f-130">While editing the data, select **Transform** and then **Use First Row as Headers**.</span></span>
 
-1. <span data-ttu-id="3db15-131">حدّث نوع البيانات للأعمدة المدرجة أدناه:</span><span class="sxs-lookup"><span data-stu-id="3db15-131">Update the datatype for the columns listed below:</span></span>
+1. <span data-ttu-id="4d59f-131">حدّث نوع البيانات للأعمدة المدرجة أدناه:</span><span class="sxs-lookup"><span data-stu-id="4d59f-131">Update the datatype for the columns listed below:</span></span>
 
-   - <span data-ttu-id="3db15-132">**PurchasedOn**: التاريخ/الوقت</span><span class="sxs-lookup"><span data-stu-id="3db15-132">**PurchasedOn**: Date/Time</span></span>
-   - <span data-ttu-id="3db15-133">**TotalPrice**: العملة</span><span class="sxs-lookup"><span data-stu-id="3db15-133">**TotalPrice**: Currency</span></span>
+   - <span data-ttu-id="4d59f-132">**PurchasedOn**: التاريخ/الوقت</span><span class="sxs-lookup"><span data-stu-id="4d59f-132">**PurchasedOn**: Date/Time</span></span>
+   - <span data-ttu-id="4d59f-133">**TotalPrice**: العملة</span><span class="sxs-lookup"><span data-stu-id="4d59f-133">**TotalPrice**: Currency</span></span>
    
-1. <span data-ttu-id="3db15-134">في حقل "الاسم" في الجزء الأيمن، أعد تسمية مصدر البيانات من **استعلام** إلى **‎مشتريات التجارة الإلكترونية**</span><span class="sxs-lookup"><span data-stu-id="3db15-134">In the 'Name' field on the right-hand pane, rename your data source from **Query** to **eCommercePurchases**.</span></span>
+1. <span data-ttu-id="4d59f-134">في حقل **الاسم** في الجزء الأيمن، أعد تسمية مصدر البيانات من **استعلام‏‎** إلى **eCommercePurchases**.</span><span class="sxs-lookup"><span data-stu-id="4d59f-134">In the **Name** field on the right-hand pane, rename your data source from **Query** to **eCommercePurchases**.</span></span>
 
-1. <span data-ttu-id="3db15-135">احفظ مصدر البيانات.</span><span class="sxs-lookup"><span data-stu-id="3db15-135">Save the data source.</span></span>
+1. <span data-ttu-id="4d59f-135">احفظ مصدر البيانات.</span><span class="sxs-lookup"><span data-stu-id="4d59f-135">Save the data source.</span></span>
 
-### <a name="ingest-customer-data-from-loyalty-schema"></a><span data-ttu-id="3db15-136">استيعاب بيانات العملاء من مخطط الولاء</span><span class="sxs-lookup"><span data-stu-id="3db15-136">Ingest customer data from loyalty schema</span></span>
+### <a name="ingest-customer-data-from-loyalty-schema"></a><span data-ttu-id="4d59f-136">استيعاب بيانات العملاء من مخطط الولاء</span><span class="sxs-lookup"><span data-stu-id="4d59f-136">Ingest customer data from loyalty schema</span></span>
 
-1. <span data-ttu-id="3db15-137">أنشئ مصدر بيانات باسم **LoyaltyScheme**، وحدد خيار الاستيراد، ثم حدد الموصل **النص/CSV**.</span><span class="sxs-lookup"><span data-stu-id="3db15-137">Create a data source named **LoyaltyScheme**, choose the import option, and select the **Text/CSV** connector.</span></span>
+1. <span data-ttu-id="4d59f-137">أنشئ مصدر بيانات باسم **LoyaltyScheme**، وحدد خيار الاستيراد، ثم حدد الموصل **النص/CSV**.</span><span class="sxs-lookup"><span data-stu-id="4d59f-137">Create a data source named **LoyaltyScheme**, choose the import option, and select the **Text/CSV** connector.</span></span>
 
-1. <span data-ttu-id="3db15-138">أدخل عنوان URL لجهات اتصال التجارة الإلكترونية https://aka.ms/ciadclasscustomerloyalty.</span><span class="sxs-lookup"><span data-stu-id="3db15-138">Enter the URL for eCommerce contacts https://aka.ms/ciadclasscustomerloyalty.</span></span>
+1. <span data-ttu-id="4d59f-138">أدخل عنوان URL لجهات اتصال التجارة الإلكترونية https://aka.ms/ciadclasscustomerloyalty.</span><span class="sxs-lookup"><span data-stu-id="4d59f-138">Enter the URL for eCommerce contacts https://aka.ms/ciadclasscustomerloyalty.</span></span>
 
-1. <span data-ttu-id="3db15-139">أثناء تحرير البيانات، حدد **تحويل**، ثم حدد **استخدام الصف الأول كرؤوس**.</span><span class="sxs-lookup"><span data-stu-id="3db15-139">While editing the data, select **Transform** and then **Use First Row as Headers**.</span></span>
+1. <span data-ttu-id="4d59f-139">أثناء تحرير البيانات، حدد **تحويل**، ثم حدد **استخدام الصف الأول كرؤوس**.</span><span class="sxs-lookup"><span data-stu-id="4d59f-139">While editing the data, select **Transform** and then **Use First Row as Headers**.</span></span>
 
-1. <span data-ttu-id="3db15-140">حدّث نوع البيانات للأعمدة المدرجة أدناه:</span><span class="sxs-lookup"><span data-stu-id="3db15-140">Update the datatype for the columns listed below:</span></span>
+1. <span data-ttu-id="4d59f-140">حدّث نوع البيانات للأعمدة المدرجة أدناه:</span><span class="sxs-lookup"><span data-stu-id="4d59f-140">Update the datatype for the columns listed below:</span></span>
 
-   - <span data-ttu-id="3db15-141">**DateOfBirth**: التاريخ</span><span class="sxs-lookup"><span data-stu-id="3db15-141">**DateOfBirth**: Date</span></span>
-   - <span data-ttu-id="3db15-142">**RewardsPoints**: عدد صحيح</span><span class="sxs-lookup"><span data-stu-id="3db15-142">**RewardsPoints**: Whole Number</span></span>
-   - <span data-ttu-id="3db15-143">**CreatedOn**: التاريخ/الوقت</span><span class="sxs-lookup"><span data-stu-id="3db15-143">**CreatedOn**: Date/Time</span></span>
+   - <span data-ttu-id="4d59f-141">**DateOfBirth**: التاريخ</span><span class="sxs-lookup"><span data-stu-id="4d59f-141">**DateOfBirth**: Date</span></span>
+   - <span data-ttu-id="4d59f-142">**RewardsPoints**: عدد صحيح</span><span class="sxs-lookup"><span data-stu-id="4d59f-142">**RewardsPoints**: Whole Number</span></span>
+   - <span data-ttu-id="4d59f-143">**CreatedOn**: التاريخ/الوقت</span><span class="sxs-lookup"><span data-stu-id="4d59f-143">**CreatedOn**: Date/Time</span></span>
 
-1. <span data-ttu-id="3db15-144">في حقل "الاسم" في الجزء الأيمن، أعد تسمية مصدر البيانات من **استعلام** إلى **‎loyCustomers**</span><span class="sxs-lookup"><span data-stu-id="3db15-144">In the 'Name' field on the right-hand pane, rename your data source from **Query** to **loyCustomers**.</span></span>
+1. <span data-ttu-id="4d59f-144">في حقل **الاسم** في الجزء الأيمن، أعد تسمية مصدر البيانات من **استعلام‏‎** إلى **loyCustomers**.</span><span class="sxs-lookup"><span data-stu-id="4d59f-144">In the **Name** field on the right-hand pane, rename your data source from **Query** to **loyCustomers**.</span></span>
 
-1. <span data-ttu-id="3db15-145">احفظ مصدر البيانات.</span><span class="sxs-lookup"><span data-stu-id="3db15-145">Save the data source.</span></span>
+1. <span data-ttu-id="4d59f-145">احفظ مصدر البيانات.</span><span class="sxs-lookup"><span data-stu-id="4d59f-145">Save the data source.</span></span>
 
 
-## <a name="task-2---data-unification"></a><span data-ttu-id="3db15-146">المهمة 2 - توحيد البيانات</span><span class="sxs-lookup"><span data-stu-id="3db15-146">Task 2 - Data unification</span></span>
+## <a name="task-2---data-unification"></a><span data-ttu-id="4d59f-146">المهمة 2 - توحيد البيانات</span><span class="sxs-lookup"><span data-stu-id="4d59f-146">Task 2 - Data unification</span></span>
 
-<span data-ttu-id="3db15-147">بعد استيعاب البيانات، نبدأ الآن عملية **التعيين، المطابقة، الدمج** لإنشاء ملف تعريف عميل موحد.</span><span class="sxs-lookup"><span data-stu-id="3db15-147">After ingesting the data we now begin the **Map, Match, Merge** process to create a unified customer profile.</span></span> <span data-ttu-id="3db15-148">لمزيد من المعلومات، راجع [توحيد البيانات](data-unification.md).</span><span class="sxs-lookup"><span data-stu-id="3db15-148">For more information, see [Data unification](data-unification.md).</span></span>
+<span data-ttu-id="4d59f-147">بعد استيعاب البيانات، نبدأ الآن عملية **التعيين، المطابقة، الدمج** لإنشاء ملف تعريف عميل موحد.</span><span class="sxs-lookup"><span data-stu-id="4d59f-147">After ingesting the data we now begin the **Map, Match, Merge** process to create a unified customer profile.</span></span> <span data-ttu-id="4d59f-148">لمزيد من المعلومات، راجع [توحيد البيانات](data-unification.md).</span><span class="sxs-lookup"><span data-stu-id="4d59f-148">For more information, see [Data unification](data-unification.md).</span></span>
 
-### <a name="map"></a><span data-ttu-id="3db15-149">التعيين</span><span class="sxs-lookup"><span data-stu-id="3db15-149">Map</span></span>
+### <a name="map"></a><span data-ttu-id="4d59f-149">المخطط</span><span class="sxs-lookup"><span data-stu-id="4d59f-149">Map</span></span>
 
-1. <span data-ttu-id="3db15-150">بعد استيعاب البيانات، قم بتعيين جهات الاتصال من بيانات التجارة الإلكترونية والولاء إلى أنواع البيانات الشائعة.</span><span class="sxs-lookup"><span data-stu-id="3db15-150">After ingesting the data, map contacts from eCommerce and Loyalty data to common data types.</span></span> <span data-ttu-id="3db15-151">انتقل إلى **البيانات** > **توحيد** > **تعيين**.</span><span class="sxs-lookup"><span data-stu-id="3db15-151">Go to **Data** > **Unify** > **Map**.</span></span>
+1. <span data-ttu-id="4d59f-150">بعد استيعاب البيانات، قم بتعيين جهات الاتصال من بيانات التجارة الإلكترونية والولاء إلى أنواع البيانات الشائعة.</span><span class="sxs-lookup"><span data-stu-id="4d59f-150">After ingesting the data, map contacts from eCommerce and Loyalty data to common data types.</span></span> <span data-ttu-id="4d59f-151">انتقل إلى **البيانات** > **توحيد** > **تعيين**.</span><span class="sxs-lookup"><span data-stu-id="4d59f-151">Go to **Data** > **Unify** > **Map**.</span></span>
 
-1. <span data-ttu-id="3db15-152">حدد الكيانات التي تمثل ملف تعريف العميل – **eCommerceContacts** و **loyCustomers**.</span><span class="sxs-lookup"><span data-stu-id="3db15-152">Select the entities that represent the customer profile – **eCommerceContacts** and **loyCustomers**.</span></span> 
+1. <span data-ttu-id="4d59f-152">حدد الكيانات التي تمثل ملف تعريف العميل – **eCommerceContacts** و **loyCustomers**.</span><span class="sxs-lookup"><span data-stu-id="4d59f-152">Select the entities that represent the customer profile – **eCommerceContacts** and **loyCustomers**.</span></span> 
 
    :::image type="content" source="media/unify-ecommerce-loyalty.PNG" alt-text="توحيد مصادر بيانات التجارة الإلكترونية والولاء.":::
 
-1. <span data-ttu-id="3db15-154">حدد **ContactId** كمفتاح أساسي لـ **eCommerceContacts** و **LoyaltyID** كمفتاح أساسي لـ **loyCustomers**.</span><span class="sxs-lookup"><span data-stu-id="3db15-154">Select **ContactId** as the primary key for **eCommerceContacts** and **LoyaltyID** as the primary key for **loyCustomers**.</span></span>
+1. <span data-ttu-id="4d59f-154">حدد **ContactId** كمفتاح أساسي لـ **eCommerceContacts** و **LoyaltyID** كمفتاح أساسي لـ **loyCustomers**.</span><span class="sxs-lookup"><span data-stu-id="4d59f-154">Select **ContactId** as the primary key for **eCommerceContacts** and **LoyaltyID** as the primary key for **loyCustomers**.</span></span>
 
    :::image type="content" source="media/unify-loyaltyid.PNG" alt-text="توحيد LoyaltyId كمفتاح أساسي.":::
 
-### <a name="match"></a><span data-ttu-id="3db15-156">مطابقة</span><span class="sxs-lookup"><span data-stu-id="3db15-156">Match</span></span>
+### <a name="match"></a><span data-ttu-id="4d59f-156">مطابقة</span><span class="sxs-lookup"><span data-stu-id="4d59f-156">Match</span></span>
 
-1. <span data-ttu-id="3db15-157">انتقل إلى علامة التبويب **مطابقة** وحدد **تعيين الأمر**.</span><span class="sxs-lookup"><span data-stu-id="3db15-157">Go to the **Match** tab and select **Set Order**.</span></span>
+1. <span data-ttu-id="4d59f-157">انتقل إلى علامة التبويب **مطابقة** وحدد **تعيين الأمر**.</span><span class="sxs-lookup"><span data-stu-id="4d59f-157">Go to the **Match** tab and select **Set Order**.</span></span>
 
-1. <span data-ttu-id="3db15-158">من القائمة المنسدلة **أساسي**، اختر **eCommerceContacts : eCommerce** كمصدر أساسي وقم بتضمين جميع السجلات.</span><span class="sxs-lookup"><span data-stu-id="3db15-158">In the **Primary** drop-down list, choose **eCommerceContacts : eCommerce** as the primary source and include all records.</span></span>
+1. <span data-ttu-id="4d59f-158">من القائمة المنسدلة **أساسي**، اختر **eCommerceContacts : eCommerce** كمصدر أساسي وقم بتضمين جميع السجلات.</span><span class="sxs-lookup"><span data-stu-id="4d59f-158">In the **Primary** drop-down list, choose **eCommerceContacts : eCommerce** as the primary source and include all records.</span></span>
 
-1. <span data-ttu-id="3db15-159">في القائمة المنسدلة **الكيان 2**، اختر **loyCustomers : LoyaltyScheme** وقم بتضمين جميع السجلات.</span><span class="sxs-lookup"><span data-stu-id="3db15-159">In the **Entity 2** drop-down list, choose **loyCustomers : LoyaltyScheme** and include all records.</span></span>
+1. <span data-ttu-id="4d59f-159">في القائمة المنسدلة **الكيان 2**، اختر **loyCustomers : LoyaltyScheme** وقم بتضمين جميع السجلات.</span><span class="sxs-lookup"><span data-stu-id="4d59f-159">In the **Entity 2** drop-down list, choose **loyCustomers : LoyaltyScheme** and include all records.</span></span>
 
    :::image type="content" source="media/unify-match-order.PNG" alt-text="توحيد مطابقة التجارة الإلكترونية والولاء.":::
 
-1. <span data-ttu-id="3db15-161">حدد **إنشاء قاعدة جديدة**</span><span class="sxs-lookup"><span data-stu-id="3db15-161">Select **Create a new rule**</span></span>
+1. <span data-ttu-id="4d59f-161">حدد **إنشاء قاعدة جديدة**</span><span class="sxs-lookup"><span data-stu-id="4d59f-161">Select **Create a new rule**</span></span>
 
-1. <span data-ttu-id="3db15-162">أضف الشرط الأول باستخدام FullName.</span><span class="sxs-lookup"><span data-stu-id="3db15-162">Add your first condition using FullName.</span></span>
+1. <span data-ttu-id="4d59f-162">أضف الشرط الأول باستخدام FullName.</span><span class="sxs-lookup"><span data-stu-id="4d59f-162">Add your first condition using FullName.</span></span>
 
-   * <span data-ttu-id="3db15-163">لخيار eCommerceContacts، حدد **FullName‎** في القائمة المنسدلة.</span><span class="sxs-lookup"><span data-stu-id="3db15-163">For eCommerceContacts select **FullName** in the drop-down.</span></span>
-   * <span data-ttu-id="3db15-164">لخيار loyCustomers، حدد **FullName‎** في القائمة المنسدلة.</span><span class="sxs-lookup"><span data-stu-id="3db15-164">For loyCustomers select **FullName** in the drop-down.</span></span>
-   * <span data-ttu-id="3db15-165">حدد القائمة المنسدلة **تسوية**، واختر **النوع (الهاتف والاسم والعنوان و...)**.</span><span class="sxs-lookup"><span data-stu-id="3db15-165">Select the **Normalize** drop down and choose **Type (Phone, Name, Address, ...)**.</span></span>
-   * <span data-ttu-id="3db15-166">عيّن **مستوى الدقة**: **أساسي** و **قيمة**: **عالي**.</span><span class="sxs-lookup"><span data-stu-id="3db15-166">Set **Precision Level**: **Basic** and **Value**: **High**.</span></span>
+   * <span data-ttu-id="4d59f-163">لخيار eCommerceContacts، حدد **FullName‎** في القائمة المنسدلة.</span><span class="sxs-lookup"><span data-stu-id="4d59f-163">For eCommerceContacts select **FullName** in the drop-down.</span></span>
+   * <span data-ttu-id="4d59f-164">لخيار loyCustomers، حدد **FullName‎** في القائمة المنسدلة.</span><span class="sxs-lookup"><span data-stu-id="4d59f-164">For loyCustomers select **FullName** in the drop-down.</span></span>
+   * <span data-ttu-id="4d59f-165">حدد القائمة المنسدلة **تسوية**، واختر **النوع (الهاتف والاسم والعنوان و...)**.</span><span class="sxs-lookup"><span data-stu-id="4d59f-165">Select the **Normalize** drop down and choose **Type (Phone, Name, Address, ...)**.</span></span>
+   * <span data-ttu-id="4d59f-166">عيّن **مستوى الدقة**: **أساسي** و **قيمة**: **عالي**.</span><span class="sxs-lookup"><span data-stu-id="4d59f-166">Set **Precision Level**: **Basic** and **Value**: **High**.</span></span>
 
-1. <span data-ttu-id="3db15-167">أدخل الاسم **FullName, Email** للقاعدة الجديدة.</span><span class="sxs-lookup"><span data-stu-id="3db15-167">Enter the name **FullName, Email** for the new rule.</span></span>
+1. <span data-ttu-id="4d59f-167">أدخل الاسم **FullName, Email** للقاعدة الجديدة.</span><span class="sxs-lookup"><span data-stu-id="4d59f-167">Enter the name **FullName, Email** for the new rule.</span></span>
 
-   * <span data-ttu-id="3db15-168">أضف شرطًا ثانيًا لعنوان البريد الإلكتروني من خلال تحديد **إضافة شرط**</span><span class="sxs-lookup"><span data-stu-id="3db15-168">Add a second condition for email address by selecting **Add Condition**</span></span>
-   * <span data-ttu-id="3db15-169">للكيان eCommerceContacts، حدد **EMail** في القائمة المنسدلة.</span><span class="sxs-lookup"><span data-stu-id="3db15-169">For entity eCommerceContacts, choose **EMail** in drop-down.</span></span>
-   * <span data-ttu-id="3db15-170">للكيان loyCustomers، حدد **EMail** في القائمة المنسدلة.</span><span class="sxs-lookup"><span data-stu-id="3db15-170">For entity loyCustomers, choose **EMail** in the drop-down.</span></span> 
-   * <span data-ttu-id="3db15-171">اترك الخيار "تسوية" فارغًا.</span><span class="sxs-lookup"><span data-stu-id="3db15-171">Leave Normalize blank.</span></span> 
-   * <span data-ttu-id="3db15-172">عيّن **مستوى الدقة**: **أساسي** و **قيمة**: **عالي**.</span><span class="sxs-lookup"><span data-stu-id="3db15-172">Set **Precision Level**: **Basic** and **Value**: **High**.</span></span>
+   * <span data-ttu-id="4d59f-168">أضف شرطًا ثانيًا لعنوان البريد الإلكتروني من خلال تحديد **إضافة شرط**</span><span class="sxs-lookup"><span data-stu-id="4d59f-168">Add a second condition for email address by selecting **Add Condition**</span></span>
+   * <span data-ttu-id="4d59f-169">للكيان eCommerceContacts، حدد **EMail** في القائمة المنسدلة.</span><span class="sxs-lookup"><span data-stu-id="4d59f-169">For entity eCommerceContacts, choose **EMail** in drop-down.</span></span>
+   * <span data-ttu-id="4d59f-170">للكيان loyCustomers، حدد **EMail** في القائمة المنسدلة.</span><span class="sxs-lookup"><span data-stu-id="4d59f-170">For entity loyCustomers, choose **EMail** in the drop-down.</span></span> 
+   * <span data-ttu-id="4d59f-171">اترك الخيار "تسوية" فارغًا.</span><span class="sxs-lookup"><span data-stu-id="4d59f-171">Leave Normalize blank.</span></span> 
+   * <span data-ttu-id="4d59f-172">عيّن **مستوى الدقة**: **أساسي** و **قيمة**: **عالي**.</span><span class="sxs-lookup"><span data-stu-id="4d59f-172">Set **Precision Level**: **Basic** and **Value**: **High**.</span></span>
 
    :::image type="content" source="media/unify-match-rule.PNG" alt-text="توحيد قاعدة مطابقة للاسم والبريد الإلكتروني.":::
 
-7. <span data-ttu-id="3db15-174">حدد **حفظ** و **تشغيل**.</span><span class="sxs-lookup"><span data-stu-id="3db15-174">Select **Save** and **Run**.</span></span>
+7. <span data-ttu-id="4d59f-174">حدد **حفظ** و **تشغيل**.</span><span class="sxs-lookup"><span data-stu-id="4d59f-174">Select **Save** and **Run**.</span></span>
 
-### <a name="merge"></a><span data-ttu-id="3db15-175">‏‏دمج</span><span class="sxs-lookup"><span data-stu-id="3db15-175">Merge</span></span>
+### <a name="merge"></a><span data-ttu-id="4d59f-175">‏‏دمج</span><span class="sxs-lookup"><span data-stu-id="4d59f-175">Merge</span></span>
 
-1. <span data-ttu-id="3db15-176">انقر فوق علامة التبويب **دمج**.</span><span class="sxs-lookup"><span data-stu-id="3db15-176">Go to the **Merge** tab.</span></span>
+1. <span data-ttu-id="4d59f-176">انقر فوق علامة التبويب **دمج**.</span><span class="sxs-lookup"><span data-stu-id="4d59f-176">Go to the **Merge** tab.</span></span>
 
-1. <span data-ttu-id="3db15-177">على **ContactId** للكيان **loyCustomers** ، قم بتغيير الاسم المعروض إلى **ContactIdLOYALTY** لتمييزه عن المعرفات الأخرى التي تم استيعابها.</span><span class="sxs-lookup"><span data-stu-id="3db15-177">On the **ContactId** for **loyCustomers** entity, change the display name to **ContactIdLOYALTY** to differentiate it from the other IDs ingested.</span></span>
+1. <span data-ttu-id="4d59f-177">على **ContactId** للكيان **loyCustomers** ، قم بتغيير الاسم المعروض إلى **ContactIdLOYALTY** لتمييزه عن المعرفات الأخرى التي تم استيعابها.</span><span class="sxs-lookup"><span data-stu-id="4d59f-177">On the **ContactId** for **loyCustomers** entity, change the display name to **ContactIdLOYALTY** to differentiate it from the other IDs ingested.</span></span>
 
    :::image type="content" source="media/unify-merge-contactid.PNG" alt-text="إعادة تسمية contactid من معرف الولاء.":::
 
-1. <span data-ttu-id="3db15-179">حدد **حفظ** و **تشغيل** لبدء عملية الدمج.</span><span class="sxs-lookup"><span data-stu-id="3db15-179">Select **Save** and **Run** to start the Merge Process.</span></span>
+1. <span data-ttu-id="4d59f-179">حدد **حفظ** و **تشغيل** لبدء عملية الدمج.</span><span class="sxs-lookup"><span data-stu-id="4d59f-179">Select **Save** and **Run** to start the Merge Process.</span></span>
 
 
 
-## <a name="task-3---configure-transaction-churn-prediction"></a><span data-ttu-id="3db15-180">المهمة 3 - تكوين التنبؤ بخسارة المعاملة‬</span><span class="sxs-lookup"><span data-stu-id="3db15-180">Task 3 - Configure transaction churn prediction</span></span>
+## <a name="task-3---configure-transaction-churn-prediction"></a><span data-ttu-id="4d59f-180">المهمة 3 - تكوين التنبؤ بخسارة المعاملة‬</span><span class="sxs-lookup"><span data-stu-id="4d59f-180">Task 3 - Configure transaction churn prediction</span></span>
 
-<span data-ttu-id="3db15-181">من خلال وضع ملفات تعريف العملاء الموحدة، يمكننا الآن تشغيل التنبؤ بخسارة الاشتراك.</span><span class="sxs-lookup"><span data-stu-id="3db15-181">With the unified customer profiles in place, we can now run the subscription churn prediction.</span></span> <span data-ttu-id="3db15-182">للحصول على خطوات تفصيلية، راجع المقالة [التنبؤ بخسارة الاشتراك (معاينة)](predict-subscription-churn.md).</span><span class="sxs-lookup"><span data-stu-id="3db15-182">For detailed steps, see the [Subscription churn prediction (preview)](predict-subscription-churn.md) article.</span></span> 
+<span data-ttu-id="4d59f-181">من خلال وضع ملفات تعريف العملاء الموحدة، يمكننا الآن تشغيل التنبؤ بخسارة الاشتراك.</span><span class="sxs-lookup"><span data-stu-id="4d59f-181">With the unified customer profiles in place, we can now run the subscription churn prediction.</span></span> <span data-ttu-id="4d59f-182">للحصول على خطوات تفصيلية، راجع المقالة [التنبؤ بخسارة الاشتراك (معاينة)](predict-subscription-churn.md).</span><span class="sxs-lookup"><span data-stu-id="4d59f-182">For detailed steps, see the [Subscription churn prediction (preview)](predict-subscription-churn.md) article.</span></span> 
 
-1. <span data-ttu-id="3db15-183">انتقل إلى **الذكاء** > **اكتشاف** وحدد لاستخدام **نموذج خسارة العملاء**.</span><span class="sxs-lookup"><span data-stu-id="3db15-183">Go to **Intelligence** > **Discover** and select to use the **Customer churn model**.</span></span>
+1. <span data-ttu-id="4d59f-183">انتقل إلى **الذكاء** > **اكتشاف** وحدد لاستخدام **نموذج خسارة العملاء**.</span><span class="sxs-lookup"><span data-stu-id="4d59f-183">Go to **Intelligence** > **Discover** and select to use the **Customer churn model**.</span></span>
 
-1. <span data-ttu-id="3db15-184">حدد الخيار **تعاملي‬‬** وحدد **الشروع في العمل** .</span><span class="sxs-lookup"><span data-stu-id="3db15-184">Select the **Transactional** option and select **Get started**.</span></span>
+1. <span data-ttu-id="4d59f-184">حدد الخيار **تعاملي‬‬** وحدد **الشروع في العمل** .</span><span class="sxs-lookup"><span data-stu-id="4d59f-184">Select the **Transactional** option and select **Get started**.</span></span>
 
-1. <span data-ttu-id="3db15-185">أدخل الاسم **OOB التنبؤ بخسارة معاملة التجارة الإلكترونية OOB‬‬** للنموذج والاسم **OOBeCommerceChurnPrediction** لكيان الإخراج.</span><span class="sxs-lookup"><span data-stu-id="3db15-185">Name the model **OOB eCommerce Transaction Churn Prediction** and the output entity **OOBeCommerceChurnPrediction**.</span></span>
+1. <span data-ttu-id="4d59f-185">أدخل الاسم **OOB التنبؤ بخسارة معاملة التجارة الإلكترونية OOB‬‬** للنموذج والاسم **OOBeCommerceChurnPrediction** لكيان الإخراج.</span><span class="sxs-lookup"><span data-stu-id="4d59f-185">Name the model **OOB eCommerce Transaction Churn Prediction** and the output entity **OOBeCommerceChurnPrediction**.</span></span>
 
-1. <span data-ttu-id="3db15-186">قم بتعريف شرطين لنموذج الخسارة:</span><span class="sxs-lookup"><span data-stu-id="3db15-186">Define two conditions for the churn model:</span></span>
+1. <span data-ttu-id="4d59f-186">قم بتعريف شرطين لنموذج الخسارة:</span><span class="sxs-lookup"><span data-stu-id="4d59f-186">Define two conditions for the churn model:</span></span>
 
-   * <span data-ttu-id="3db15-187">**إطار التنبؤ**: **60 يومًا على الأقل**.</span><span class="sxs-lookup"><span data-stu-id="3db15-187">**Prediction window**: **at least 60** days.</span></span> <span data-ttu-id="3db15-188">يحدد هذا الاعداد إلى أي مدى في المستقبل نرغب في التنبؤ بخسارة العملاء؟</span><span class="sxs-lookup"><span data-stu-id="3db15-188">This setting defines how far into the future do we want to predict customer churn.</span></span>
+   * <span data-ttu-id="4d59f-187">**إطار التنبؤ**: **60 يومًا على الأقل**.</span><span class="sxs-lookup"><span data-stu-id="4d59f-187">**Prediction window**: **at least 60** days.</span></span> <span data-ttu-id="4d59f-188">يحدد هذا الاعداد إلى أي مدى في المستقبل نرغب في التنبؤ بخسارة العملاء؟</span><span class="sxs-lookup"><span data-stu-id="4d59f-188">This setting defines how far into the future do we want to predict customer churn.</span></span>
 
-   * <span data-ttu-id="3db15-189">**تعريف الخسارة**: **60 يومًا على الأقل**.</span><span class="sxs-lookup"><span data-stu-id="3db15-189">**Churn definition**: **at least 60** days.</span></span> <span data-ttu-id="3db15-190">المدة من دون إجراء أي عملية شراء والتي يعتبر بعدها أن الشركة خسرت العميل.</span><span class="sxs-lookup"><span data-stu-id="3db15-190">The duration without purchase after which a customer is considered churned.</span></span>
+   * <span data-ttu-id="4d59f-189">**تعريف الخسارة**: **60 يومًا على الأقل**.</span><span class="sxs-lookup"><span data-stu-id="4d59f-189">**Churn definition**: **at least 60** days.</span></span> <span data-ttu-id="4d59f-190">المدة من دون إجراء أي عملية شراء والتي يعتبر بعدها أن الشركة خسرت العميل.</span><span class="sxs-lookup"><span data-stu-id="4d59f-190">The duration without purchase after which a customer is considered churned.</span></span>
 
      :::image type="content" source="media/model-levers.PNG" alt-text="حدد نموذج إطار التنبؤ وتعريف الخسارة.":::
 
-1. <span data-ttu-id="3db15-192">حدد **محفوظات الشراء (مطلوبة)** وحدد **إضافة بيانات** لمحفوظات الاشتراكات.</span><span class="sxs-lookup"><span data-stu-id="3db15-192">Select **Purchase History (required)** and select **Add data** for subscription history.</span></span>
+1. <span data-ttu-id="4d59f-192">حدد **محفوظات الشراء (مطلوبة)** وحدد **إضافة بيانات** لمحفوظات الشراء.</span><span class="sxs-lookup"><span data-stu-id="4d59f-192">Select **Purchase History (required)** and select **Add data** for purchase history.</span></span>
 
-1. <span data-ttu-id="3db15-193">أضف الكيان **eCommercePurchases : eCommerce** وعيّن الحقل من التجارة الإلكترونية إلى الحقول المناظرة التي يطلبها النموذج.</span><span class="sxs-lookup"><span data-stu-id="3db15-193">Add the **eCommercePurchases : eCommerce** entity and map the fields from eCommerce to the corresponding fields required by the model.</span></span>
+1. <span data-ttu-id="4d59f-193">أضف الكيان **eCommercePurchases : eCommerce** وعيّن الحقل من التجارة الإلكترونية إلى الحقول المناظرة التي يطلبها النموذج.</span><span class="sxs-lookup"><span data-stu-id="4d59f-193">Add the **eCommercePurchases : eCommerce** entity and map the fields from eCommerce to the corresponding fields required by the model.</span></span>
 
-1. <span data-ttu-id="3db15-194">انضم إلى الكيان **eCommercePurchases : eCommerce** مع **eCommerceContacts : eCommerce**.</span><span class="sxs-lookup"><span data-stu-id="3db15-194">Join the **eCommercePurchases : eCommerce** entity with **eCommerceContacts : eCommerce**.</span></span>
+1. <span data-ttu-id="4d59f-194">انضم إلى الكيان **eCommercePurchases : eCommerce** مع **eCommerceContacts : eCommerce**.</span><span class="sxs-lookup"><span data-stu-id="4d59f-194">Join the **eCommercePurchases : eCommerce** entity with **eCommerceContacts : eCommerce**.</span></span>
 
    :::image type="content" source="media/model-purchase-join.PNG" alt-text="الانضمام إلى كيانات التجارة الإلكترونية.":::
 
-1. <span data-ttu-id="3db15-196">حدد **التالي** لتعيين جدول النماذج.</span><span class="sxs-lookup"><span data-stu-id="3db15-196">Select **Next** to set the model schedule.</span></span>
+1. <span data-ttu-id="4d59f-196">حدد **التالي** لتعيين جدول النماذج.</span><span class="sxs-lookup"><span data-stu-id="4d59f-196">Select **Next** to set the model schedule.</span></span>
 
-   <span data-ttu-id="3db15-197">يحتاج النموذج إلى التدريب بشكل منتظم للتعرف على الأنماط الجديدة عند وجود بيانات جديدة تم استيعابها.</span><span class="sxs-lookup"><span data-stu-id="3db15-197">The model needs to train regularly to learn new patterns when there is new data ingested.</span></span> <span data-ttu-id="3db15-198">لهذا المثال، حدد **شهري**.</span><span class="sxs-lookup"><span data-stu-id="3db15-198">For this example, select **Monthly**.</span></span>
+   <span data-ttu-id="4d59f-197">يحتاج النموذج إلى التدريب بشكل منتظم للتعرف على الأنماط الجديدة عند وجود بيانات جديدة تم استيعابها.</span><span class="sxs-lookup"><span data-stu-id="4d59f-197">The model needs to train regularly to learn new patterns when there is new data ingested.</span></span> <span data-ttu-id="4d59f-198">لهذا المثال، حدد **شهري**.</span><span class="sxs-lookup"><span data-stu-id="4d59f-198">For this example, select **Monthly**.</span></span>
 
-1. <span data-ttu-id="3db15-199">بعد مراجعة كافة التفاصيل ، حدد **حفظ وتشغيل**.</span><span class="sxs-lookup"><span data-stu-id="3db15-199">After reviewing all the details, select **Save and Run**.</span></span>
+1. <span data-ttu-id="4d59f-199">بعد مراجعة كافة التفاصيل ، حدد **حفظ وتشغيل**.</span><span class="sxs-lookup"><span data-stu-id="4d59f-199">After reviewing all the details, select **Save and Run**.</span></span>
 
-## <a name="task-4---review-model-results-and-explanations"></a><span data-ttu-id="3db15-200">المهمة 4 - مراجعة نتائج وتفسيرات النماذج</span><span class="sxs-lookup"><span data-stu-id="3db15-200">Task 4 - Review model results and explanations</span></span>
+## <a name="task-4---review-model-results-and-explanations"></a><span data-ttu-id="4d59f-200">المهمة 4 - مراجعة نتائج وتفسيرات النماذج</span><span class="sxs-lookup"><span data-stu-id="4d59f-200">Task 4 - Review model results and explanations</span></span>
 
-<span data-ttu-id="3db15-201">دع النموذج يكمل تدريب وتسجيل نقاط البيانات.</span><span class="sxs-lookup"><span data-stu-id="3db15-201">Let the model complete the training and scoring of the data.</span></span> <span data-ttu-id="3db15-202">يمكنك الآن مراجعة تفسيرات نموذج خسارة بالاشتراك.</span><span class="sxs-lookup"><span data-stu-id="3db15-202">You can now review the subscription churn model explanations.</span></span> <span data-ttu-id="3db15-203">لمزيد من المعلومات، راجع [مراجعة حاله ونتائج التنبؤ](predict-subscription-churn.md#review-a-prediction-status-and-results).</span><span class="sxs-lookup"><span data-stu-id="3db15-203">For more information, see [Review a prediction status and results](predict-subscription-churn.md#review-a-prediction-status-and-results).</span></span>
+<span data-ttu-id="4d59f-201">دع النموذج يكمل تدريب وتسجيل نقاط البيانات.</span><span class="sxs-lookup"><span data-stu-id="4d59f-201">Let the model complete the training and scoring of the data.</span></span> <span data-ttu-id="4d59f-202">يمكنك الآن مراجعة تفسيرات نموذج خسارة بالاشتراك.</span><span class="sxs-lookup"><span data-stu-id="4d59f-202">You can now review the subscription churn model explanations.</span></span> <span data-ttu-id="4d59f-203">لمزيد من المعلومات، راجع [مراجعة حاله ونتائج التنبؤ](predict-subscription-churn.md#review-a-prediction-status-and-results).</span><span class="sxs-lookup"><span data-stu-id="4d59f-203">For more information, see [Review a prediction status and results](predict-subscription-churn.md#review-a-prediction-status-and-results).</span></span>
 
-## <a name="task-5---create-a-segment-of-high-churn-risk-customers"></a><span data-ttu-id="3db15-204">المهمة 5 - إنشاء شريحة من العملاء مخاطر خسارتهم عالية</span><span class="sxs-lookup"><span data-stu-id="3db15-204">Task 5 - Create a segment of high churn-risk customers</span></span>
+## <a name="task-5---create-a-segment-of-high-churn-risk-customers"></a><span data-ttu-id="4d59f-204">المهمة 5 - إنشاء شريحة من العملاء مخاطر خسارتهم عالية</span><span class="sxs-lookup"><span data-stu-id="4d59f-204">Task 5 - Create a segment of high churn-risk customers</span></span>
 
-<span data-ttu-id="3db15-205">يؤدي تشغيل نموذج الإنتاج إلى إنشاء كيان جديد يمكنك رؤيته في **البيانات** > **الكيانات**.</span><span class="sxs-lookup"><span data-stu-id="3db15-205">Running the production model creates a new entity that you can see in **Data** > **Entities**.</span></span>   
+<span data-ttu-id="4d59f-205">يؤدي تشغيل نموذج الإنتاج إلى إنشاء كيان جديد يمكنك رؤيته في **البيانات** > **الكيانات**.</span><span class="sxs-lookup"><span data-stu-id="4d59f-205">Running the production model creates a new entity that you can see in **Data** > **Entities**.</span></span>   
 
-<span data-ttu-id="3db15-206">يمكنك إنشاء شريحة جديدة استنادًا إلى الكيان الذي تم إنشاؤه بواسطة النموذج.</span><span class="sxs-lookup"><span data-stu-id="3db15-206">You can create a new segment based on the entity created by the model.</span></span>
+<span data-ttu-id="4d59f-206">يمكنك إنشاء شريحة جديدة استنادًا إلى الكيان الذي تم إنشاؤه بواسطة النموذج.</span><span class="sxs-lookup"><span data-stu-id="4d59f-206">You can create a new segment based on the entity created by the model.</span></span>
 
-1.  <span data-ttu-id="3db15-207">انتقل إلى **الشرائح**.</span><span class="sxs-lookup"><span data-stu-id="3db15-207">Go to **Segments**.</span></span> <span data-ttu-id="3db15-208">حدد **جديد** واختر **إنشاء من** > **الذكاء**.</span><span class="sxs-lookup"><span data-stu-id="3db15-208">Select **New** and choose **Create from** > **Intelligence**.</span></span> 
+1.  <span data-ttu-id="4d59f-207">انتقل إلى **الشرائح**.</span><span class="sxs-lookup"><span data-stu-id="4d59f-207">Go to **Segments**.</span></span> <span data-ttu-id="4d59f-208">حدد **جديد** واختر **إنشاء من** > **الذكاء**.</span><span class="sxs-lookup"><span data-stu-id="4d59f-208">Select **New** and choose **Create from** > **Intelligence**.</span></span> 
 
    :::image type="content" source="media/segment-intelligence.PNG" alt-text="إنشاء شريحة بواسطة إخراج النموذج.":::
 
-1. <span data-ttu-id="3db15-210">حدد نقطة النهاية **OOBSubscriptionChurnPrediction** وحدد الشريحة:</span><span class="sxs-lookup"><span data-stu-id="3db15-210">Select the **OOBSubscriptionChurnPrediction** endpoint and define the segment:</span></span> 
-   - <span data-ttu-id="3db15-211">الحقل: ChurnScore</span><span class="sxs-lookup"><span data-stu-id="3db15-211">Field: ChurnScore</span></span>
-   - <span data-ttu-id="3db15-212">عامل التشغيل: أكبر من</span><span class="sxs-lookup"><span data-stu-id="3db15-212">Operator: greater than</span></span>
-   - <span data-ttu-id="3db15-213">القيمة: 0.6</span><span class="sxs-lookup"><span data-stu-id="3db15-213">Value: 0.6</span></span>
+1. <span data-ttu-id="4d59f-210">حدد نقطة النهاية **OOBSubscriptionChurnPrediction** وحدد الشريحة:</span><span class="sxs-lookup"><span data-stu-id="4d59f-210">Select the **OOBSubscriptionChurnPrediction** endpoint and define the segment:</span></span> 
+   - <span data-ttu-id="4d59f-211">الحقل: ChurnScore</span><span class="sxs-lookup"><span data-stu-id="4d59f-211">Field: ChurnScore</span></span>
+   - <span data-ttu-id="4d59f-212">عامل التشغيل: أكبر من</span><span class="sxs-lookup"><span data-stu-id="4d59f-212">Operator: greater than</span></span>
+   - <span data-ttu-id="4d59f-213">القيمة: 0.6</span><span class="sxs-lookup"><span data-stu-id="4d59f-213">Value: 0.6</span></span>
    
    :::image type="content" source="media/segment-setup-subs.PNG" alt-text="إعداد شريحة خسارة الاشتراك.":::
 
-<span data-ttu-id="3db15-215">لديك الآن شريحة يتم تحديثها بشكل ديناميكي مما يحدد العملاء الذين تبدو مخاطر خسارتهم عالية‬ لعمل الاشتراك هذا.</span><span class="sxs-lookup"><span data-stu-id="3db15-215">You now have a segment that is dynamically updated which identifies high churn-risk customers for this subscription business.</span></span>
+<span data-ttu-id="4d59f-215">لديك الآن شريحة يتم تحديثها بشكل ديناميكي مما يحدد العملاء الذين تبدو مخاطر خسارتهم عالية‬ لعمل الاشتراك هذا.</span><span class="sxs-lookup"><span data-stu-id="4d59f-215">You now have a segment that is dynamically updated which identifies high churn-risk customers for this subscription business.</span></span>
 
-<span data-ttu-id="3db15-216">لمزيد من المعلومات، راجع [إنشاء شرائح وإدارتها](segments.md).</span><span class="sxs-lookup"><span data-stu-id="3db15-216">For more information, see [Create and manage segments](segments.md).</span></span>
+<span data-ttu-id="4d59f-216">لمزيد من المعلومات، راجع [إنشاء شرائح وإدارتها](segments.md).</span><span class="sxs-lookup"><span data-stu-id="4d59f-216">For more information, see [Create and manage segments](segments.md).</span></span>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
