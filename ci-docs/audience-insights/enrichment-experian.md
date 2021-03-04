@@ -1,20 +1,20 @@
 ---
 title: إثراء البيانات بواسطة خدمات إثراء البيانات من طرف ثالث Experian
 description: معلومات عامة حول خدمات إثراء البيانات من طرف ثالث Experian.
-ms.date: 09/17/2020
+ms.date: 12/10/2020
 ms.reviewer: kishorem
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 60fc49734e54740e83b47a7028be216a0eb81e49
-ms.sourcegitcommit: a9b2cf598f256d07a48bba8617347ee90024a1dd
+ms.openlocfilehash: baf3cc58a233b70c48fb94ac4a543d162f91bdd1
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4668780"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269544"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>إثراء ملفات تعريف العملاء بالخصائص السكانية من Experian (معاينة)
 
@@ -41,7 +41,9 @@ ms.locfileid: "4668780"
 
 ## <a name="map-your-fields"></a>تعيين الحقول الخاصة بك
 
-1. حدد **إضافة بيانات** واختر معرفات المفاتيح من **الاسم والعنوان** أو **البريد الإلكتروني** أو **الهاتف** للإرسال إلى Experian لحل الهوية.
+1.  حدد **إضافة بيانات** واختر **مجموعة بيانات العميل** التي ترغب في إثرائها بواسطة البيانات السكانية من Experian. يمكنك تحديد كيان **العميل** لإثراء جميع ملفات تعريف العملاء أو تحديد كيان شريحة لإثراء فقط ملفات تعريف العملاء الموجودة في تلك الشريحة.
+
+1. حدد المعرفات الأساسية من **الاسم والعنوان** أو **البريد الإلكتروني** أو **الهاتف** لإرسالها إلى Experian لحل الهوية.
 
    > [!TIP]
    > من المحتمل أن تؤدي المزيد من سمات معرف المفاتيح المرسلة إلى Experian إلى معدل تطابق أعلى.
@@ -52,8 +54,8 @@ ms.locfileid: "4668780"
 
 1.  حدد **حفظ** لإكمال تعيين الحقل.
 
-   > [!div class="mx-imgBorder"]
-   > ![تعيين حقل Experian](media/experian-field-mapping.png "تعيين حقل Experian")
+    > [!div class="mx-imgBorder"]
+    > ![تعيين حقل Experian](media/experian-field-mapping.png "تعيين حقل Experian")
 
 ## <a name="enrichment-results"></a>نتائج الإثراء
 
@@ -71,3 +73,6 @@ ms.locfileid: "4668780"
 
 عند تمكين Dynamics 365 Customer Insights لإرسال البيانات إلى Experian، تسمح أنت بنقل البيانات خارج حدود الامتثال في Dynamics 365 Customer Insights، بما في ذلك البيانات الحساسة على الأرجح مثل البيانات الشخصية. ستقوم شركة Microsoft بنقل هذه البيانات وفقًا لتعليماتك، ولكنك مسؤول عن ضمان قيام Experian بتلبية أي التزامات تتعلق بالخصوصية أو الأمان قد تكون لديك. لمزيد من المعلومات، راجع [بيان خصوصية Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
 بإمكان مسؤول Dynamics 365 Customer Insights إزالة هذا الإثراء في أي وقت لإيقاف استخدام هذه الوظيفة.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

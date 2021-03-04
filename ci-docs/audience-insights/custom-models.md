@@ -4,16 +4,16 @@ description: استخدم النماذج المخصصة من خدمة التعل
 ms.date: 11/19/2020
 ms.reviewer: zacook
 ms.service: dynamics-365-ai
-ms.topic: article
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: ef248086b30b870359970529a7bfb37792be62d5
-ms.sourcegitcommit: a9b2cf598f256d07a48bba8617347ee90024a1dd
+ms.openlocfilehash: 34489faaecc5da1ce3dd68d799b3e0e0d9672ab7
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4668887"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267218"
 ---
 # <a name="custom-machine-learning-models"></a>نماذج التعلم الآلي المخصصة
 
@@ -46,15 +46,15 @@ ms.locfileid: "4668887"
 
 1. اختر خدمة الويب استوديو التعلم الآلي (كلاسيكي) او تدفقات التعلم الآلي من Azure في القائمة المنسدلة **خدمة الويب التي تحتوي على نموذجك‬**. ثم حدد **التالي**.
    - اعرف المزيد حول [نشر خدمة ويب في استوديو التعلم الآلي (كلاسيكي)](https://docs.microsoft.com/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service)
-   - اعرف المزيد حول [نشر التدفقات في التعلم الآلي من Azure باستخدام المصمم](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) أو [SDK](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). 
-     > [!NOTE]
-     > يجب نشر التدفق تحت [نقطة نهاية التدفق](https://docs.microsoft.com/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
+   - اعرف المزيد حول [نشر التدفقات في التعلم الآلي من Azure باستخدام المصمم](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) أو [SDK](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). يجب نشر التدفق تحت [نقطة نهاية التدفق](https://docs.microsoft.com/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
 
 1. لكل **إدخال خدمة ويب**‬، حدد **الكيان** المطابق من رؤى الجمهور، وحدد **التالي**.
+   > [!NOTE]
+   > سيطبق سير عمل النموذج المخصص الاستكشافات لتعيين حقول إدخال خدمة ويب على سمات الكيان بالاستناد إلى اسم ونوع بيانات الحقل. ستشاهد رسالة خطأ إذا تعذر تعيين حقل خدمة ويب إلى كيان.
 
    > [!div class="mx-imgBorder"]
    > ![تكوين سير عمل](media/intelligence-screen2-updated.png "تكوين سير عمل")
-
+   
 1. في خطوة **معلمات إخراج النموذج**، قم بتعيين الخصائص التالية:
    - استوديو التعلم الآلي (كلاسيكي)
       1. أدخل إخراج **اسم الكيان** الذي تريد ان تتدفق فيه نتائج إخراج خدمة الويب.
@@ -112,3 +112,6 @@ ms.locfileid: "4668887"
 1. حدد **حذف**، وقم بتأكيد الحذف.
 
 سيتم حذف سير عملك. يستمر [الكيان](entities.md) الذي تم إنشاؤه عند إنشاء سير العمل، ويمكن عرضه‏‎ من صفحة **الكيانات**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

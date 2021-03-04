@@ -5,16 +5,16 @@ ms.date: 06/05/2020
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 8260e3b5e529f3d54678d9d6e11aebb2795e27fd
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: c839f9dc7e403412c0e3d936392d45a43bc63545
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643667"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269958"
 ---
 # <a name="connector-for-facebook-ads-manager-preview"></a>موصل لمدير الإعلانات في Facebook (معاينة)
 
@@ -62,7 +62,16 @@ ms.locfileid: "4643667"
 
 يمكنك [تصدير البيانات عند الطلب](export-destinations.md). سيعمل التصدير أيضًا مع كل [تحديث مجدول](system.md#schedule-tab).
 
+## <a name="known-limitations"></a>القيود المعروفة
+
+- ما يصل إلى 10 مليون ملف تعريف عميل لكل عملية تصدير إلى مدير إعلانات Facebook 
+- يقتصر التصدير إلى مدير إعلانات Facebook على الشرائح.
+- تستغرق عملية تصدير الشرائح التي تتضمن 10 ملايين ملف تعريف بشكل إجمالي حتى 90 دقيقة.
+
 ## <a name="data-privacy-and-compliance"></a>خصوصية البيانات والتوافق
 
 عند تمكين Dynamics 365 Customer Insights لإرسال البيانات إلى  Facebook Ads Manager، تسمح أنت بنقل البيانات خارج حدود الامتثال في Dynamics 365 Customer Insights، بما في ذلك البيانات الحساسة على الأرجح مثل البيانات الشخصية. ستقوم شركة Microsoft بنقل هذه البيانات وفقًا لتعليماتك، ولكنك مسؤول عن ضمان قيام Facebook Ads بتلبية أي التزامات تتعلق بالخصوصية أو الأمان قد تكون لديك. لمزيد من المعلومات، راجع [بيان خصوصية Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
 بإمكان مسؤول Dynamics 365 Customer Insights إزالة وجهة التصدير هذه في أي وقت لإيقاف استخدام هذه الوظيفة.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

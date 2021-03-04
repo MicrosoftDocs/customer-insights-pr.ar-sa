@@ -4,17 +4,17 @@ description: استيراد البيانات من مخزن البيانات ال
 ms.date: 09/29/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
 ms.reviewer: adkuppa
-ms.openlocfilehash: 029857e2bbb5f6357a5c01138ceaad78887b7518
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 18b6cd3fdaf5b738877a73b520b91dbc6ded40de
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643382"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267765"
 ---
 # <a name="connect-to-data-in-a-common-data-service-managed-data-lake"></a>الاتصال بالبيانات في مستودع بيانات مُدار في Common Data Service
 
@@ -34,7 +34,10 @@ ms.locfileid: "4643382"
 
 3. حدد **اتصال بـ Common Data Service** ثم حدد **التالي**.
 
-4. أدخل **اسمًا** لمصدر البيانات، وحدد **التالي‏‎**.
+4. أدخل **اسمًا** لمصدر البيانات، وحدد **التالي‏‎**. إرشادات الاسم: 
+   - يجب أن يبدأ الاسم بحرف
+   - استخدم الأحرف و الأرقام فقط. غير مسموح باستخدام الأحرف الخاصة والمسافات.
+   - استخدم ما بين 3 و64 حرفًا.
 
 5. أدخل **عنوان الخادم** لمؤسستك في Common Data Service، ثم حدد **تسجيل الدخول**.
 
@@ -65,3 +68,6 @@ ms.locfileid: "4643382"
 3. حدد الخيار **تحرير** من القائمة.
 
 4. حدد كيانات إضافية من قائمة الكيانات المتاحة وحدد **حفظ**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

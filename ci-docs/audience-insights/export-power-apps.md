@@ -1,20 +1,20 @@
 ---
 title: موصل Power Apps
 description: الاتصال بـ Power Apps وPower Automate.
-ms.date: 08/21/2020
+ms.date: 01/19/2021
 ms.reviewer: nikeller
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: b6ec103e29e218b2f27bfc1193300ea793a6b30b
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 5a8bbb9a09218d54228589d43c21c8894680b56e
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4404897"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268900"
 ---
 # <a name="microsoft-power-apps-connector-preview"></a>موصل Microsoft Power Apps (معاينة)
 
@@ -31,7 +31,7 @@ ms.locfileid: "4404897"
 بعد إضافة Customer Insights كاتصال بيانات، يمكنك اختيار الكيانات التالية في Power Apps:
 
 - العميل: لاستخدام بيانات من [ملف تعريف العميل الموحد](customer-profiles.md).
-- نشاط العميل الموحد: لعرض [المخطط الزمني للنشاط](activities.md) على التطبيق.
+- UnifiedActivity: لعرض [المخطط الزمني للنشاط](activities.md) على التطبيق.
 
 ## <a name="limitations"></a>القيود
 
@@ -72,3 +72,6 @@ ms.locfileid: "4404897"
 1. لعرض المخطط الزمني الموحد لعميل، قم بإضافة عنصر معرض، وإضافة خاصية العناصر: **Filter('UnifiedActivity', CustomerId = {Customer_Id})**
 
     مثال: Filter('UnifiedActivity', CustomerId = Gallery1.Selected.CustomerId)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

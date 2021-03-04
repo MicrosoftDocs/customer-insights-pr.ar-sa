@@ -5,16 +5,16 @@ ms.date: 11/19/2020
 ms.reviewer: digranad
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 055708ed3f9f468cad83ecf976a460814bf05199
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 81540ad2f490cf566f031233543b3cb6aa838033
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643577"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269774"
 ---
 # <a name="transactional-churn-prediction-preview-sample-guide"></a>دليل نموذج التنبؤ بخسارة المعاملة (معاينة)
 
@@ -49,7 +49,7 @@ ms.locfileid: "4643577"
    [!div class="mx-imgBorder"]
    ![تحويل DoB إلى تاريخ](media/ecommerce-dob-date.PNG "تحويل تاريخ الولادة إلى تاريخ")
 
-1. في حقل "الاسم" في الجزء الأيمن، أعد تسمية مصدر البيانات من **استعلام** إلى **‎eCommerceContacts**
+1. في حقل **الاسم‏‎** في الجزء الأيمن، أعد تسمية مصدر البيانات من **استعلام** إلى **eCommerceContacts**
 
 1. احفظ مصدر البيانات.
 
@@ -66,7 +66,7 @@ ms.locfileid: "4643577"
    - **PurchasedOn**: التاريخ/الوقت
    - **TotalPrice**: العملة
    
-1. في حقل "الاسم" في الجزء الأيمن، أعد تسمية مصدر البيانات من **استعلام** إلى **‎مشتريات التجارة الإلكترونية**
+1. في حقل **الاسم** في الجزء الأيمن، أعد تسمية مصدر البيانات من **استعلام‏‎** إلى **eCommercePurchases**.
 
 1. احفظ مصدر البيانات.
 
@@ -84,7 +84,7 @@ ms.locfileid: "4643577"
    - **RewardsPoints**: عدد صحيح
    - **CreatedOn**: التاريخ/الوقت
 
-1. في حقل "الاسم" في الجزء الأيمن، أعد تسمية مصدر البيانات من **استعلام** إلى **‎loyCustomers**
+1. في حقل **الاسم** في الجزء الأيمن، أعد تسمية مصدر البيانات من **استعلام‏‎** إلى **loyCustomers**.
 
 1. احفظ مصدر البيانات.
 
@@ -93,7 +93,7 @@ ms.locfileid: "4643577"
 
 بعد استيعاب البيانات، نبدأ الآن عملية **التعيين، المطابقة، الدمج** لإنشاء ملف تعريف عميل موحد. لمزيد من المعلومات، راجع [توحيد البيانات](data-unification.md).
 
-### <a name="map"></a>التعيين
+### <a name="map"></a>المخطط
 
 1. بعد استيعاب البيانات، قم بتعيين جهات الاتصال من بيانات التجارة الإلكترونية والولاء إلى أنواع البيانات الشائعة. انتقل إلى **البيانات** > **توحيد** > **تعيين**.
 
@@ -166,7 +166,7 @@ ms.locfileid: "4643577"
 
      :::image type="content" source="media/model-levers.PNG" alt-text="حدد نموذج إطار التنبؤ وتعريف الخسارة.":::
 
-1. حدد **محفوظات الشراء (مطلوبة)** وحدد **إضافة بيانات** لمحفوظات الاشتراكات.
+1. حدد **محفوظات الشراء (مطلوبة)** وحدد **إضافة بيانات** لمحفوظات الشراء.
 
 1. أضف الكيان **eCommercePurchases : eCommerce** وعيّن الحقل من التجارة الإلكترونية إلى الحقول المناظرة التي يطلبها النموذج.
 
@@ -204,3 +204,6 @@ ms.locfileid: "4643577"
 لديك الآن شريحة يتم تحديثها بشكل ديناميكي مما يحدد العملاء الذين تبدو مخاطر خسارتهم عالية‬ لعمل الاشتراك هذا.
 
 لمزيد من المعلومات، راجع [إنشاء شرائح وإدارتها](segments.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

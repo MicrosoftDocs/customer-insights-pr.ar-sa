@@ -5,16 +5,16 @@ ms.date: 11/19/2020
 ms.reviewer: digranad
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 2537cfb5dde0d1ce1af16f585f0bf91d15ea1870
-ms.sourcegitcommit: a6e7df90d61450e00886753eb5db116f2f35bb6c
+ms.openlocfilehash: 3f1019ace424f89320c5a0d5058e928f4cbc7e62
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "4653964"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269820"
 ---
 # <a name="subscription-churn-prediction-preview-sample-guide"></a>دليل نموذج التنبؤ بخسارة الاشتراك‬ (معاينة)
 
@@ -46,10 +46,9 @@ ms.locfileid: "4653964"
    - **DateOfBirth**: التاريخ
    - **CreatedOn**: التاريخ/الوقت/المنطقة
 
-   [!div class="mx-imgBorder"]
-   ![تحويل DoB إلى تاريخ](media/ecommerce-dob-date.PNG "تحويل تاريخ الولادة إلى تاريخ")
+   :::image type="content" source="media/ecommerce-dob-date.PNG" alt-text="تحويل تاريخ الولادة إلى تاريخ.":::
 
-1. في حقل "الاسم" في الجزء الأيمن، أعد تسمية مصدر البيانات من **استعلام** إلى **‎eCommerceContacts**
+1. في حقل **الاسم‏‎** في الجزء الأيمن، أعد تسمية مصدر البيانات من **استعلام** إلى **eCommerceContacts**
 
 1. احفظ مصدر البيانات.
 
@@ -67,7 +66,7 @@ ms.locfileid: "4653964"
    - **RewardsPoints**: عدد صحيح
    - **CreatedOn**: التاريخ/الوقت
 
-1. في حقل "الاسم" في الجزء الأيمن، أعد تسمية مصدر البيانات من **استعلام** إلى **‎loyCustomers**
+1. في حقل **الاسم** في الجزء الأيمن، أعد تسمية مصدر البيانات من **استعلام‏‎** إلى **loyCustomers**.
 
 1. احفظ مصدر البيانات.
 
@@ -90,7 +89,7 @@ ms.locfileid: "4653964"
    - **Is_auto_renew**: صواب/خطأ
    - **RecurringFrequencyInMonths**: عدد صحيح
 
-1. في حقل "الاسم" في الجزء الأيمن، أعد تسمية مصدر البيانات من **استعلام** إلى **‎SubscriptionHistory‎**
+1. في حقل **الاسم** في الجزء الأيمن، أعد تسمية مصدر البيانات من **استعلام‏‎** إلى **SubscriptionHistory**.
 
 1. احفظ مصدر البيانات.
 
@@ -230,3 +229,6 @@ ms.locfileid: "4653964"
 لديك الآن شريحة يتم تحديثها بشكل ديناميكي مما يحدد العملاء الذين تبدو مخاطر خسارتهم عالية‬ لعمل الاشتراك هذا.
 
 لمزيد من المعلومات، راجع [إنشاء شرائح وإدارتها](segments.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

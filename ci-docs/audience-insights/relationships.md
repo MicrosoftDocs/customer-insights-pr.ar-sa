@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 295c372bb452e7c40aa950506dc494d4a2de1108
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 292da986faa7f62d8aa73ed7214075612178e2e1
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4404941"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269847"
 ---
 # <a name="relationships-between-entities"></a>العلاقات بين الكيانات
 
@@ -28,8 +28,8 @@ ms.locfileid: "4404941"
 > ![إنشاء علاقة](media/relationships-entities-merge.png "إنشاء علاقة")
 
 - تم إنشاء ***العلاقة* CustomerToContact** بين كيان العميل وكيان جهة الاتصال. يعمل كيان العميل على ربط حقل المفتاح الأساسي **Contact_contactId** بحقل المفتاح الأساسي لكيان جهة الاتصال **contactId**.
-- تم إنشاء **_العلاقة_ CustomerToAccount** بين كيان العميل وكيان الحساب. يعمل كيان العميل على ربط حقل المفتاح الأساسي **Account_contactId** بحقل المفتاح الأساسي لكيان الحساب **contactId**.
-- تم إنشاء **_العلاقة_ CustomerToWebAccount** بين كيان العميل وكيان حساب الويب. يعمل كيان العميل على ربط حقل المفتاح الأساسي **WebAccount_webaccountId** بحقل المفتاح الأساسي لكيان الحساب **webaccountId**.
+- تم إنشاء ***العلاقة* CustomerToAccount** بين كيان العميل وكيان الحساب. يعمل كيان العميل على ربط حقل المفتاح الأساسي **Account_contactId** بحقل المفتاح الأساسي لكيان الحساب **contactId**.
+- تم إنشاء ***العلاقة* CustomerToWebAccount** بين كيان العميل وكيان حساب الويب. يعمل كيان العميل على ربط حقل المفتاح الأساسي **WebAccount_webaccountId** بحقل المفتاح الأساسي لكيان الحساب **webaccountId**.
 
 ## <a name="create-a-relationship"></a>إنشاء علاقة
 
@@ -69,3 +69,6 @@ ms.locfileid: "4404941"
 ## <a name="next-step"></a>الخطوة التالية
 
 يتم استخدام العلاقات النظام والمخصصة لإنشاء المقاطع التي تستند إلى مصادر البيانات المتعددة التي لم تعد معزولة. للمزيد من المعلومات، راجع [الشرائح](segments.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

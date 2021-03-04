@@ -1,20 +1,20 @@
 ---
 title: تصدير بيانات Customer Insights إلى Dynamics 365 Marketing
 description: تعرف على كيفية تكوين الاتصال بتطبيق Dynamics 365 Marketing.
-ms.date: 08/21/2020
+ms.date: 02/01/2021
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 163387779b64bd78ef08e2d96a5f1c9615062f28
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: a06920b8ff25d7102ccd14ae68cf42fe91fa1ee6
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643757"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269038"
 ---
 # <a name="connector-for-dynamics-365-marketing-preview"></a>موصل لتطبيق Dynamics 365 Marketing (معاينة)
 
@@ -24,7 +24,10 @@ ms.locfileid: "4643757"
 
 ## <a name="prerequisite"></a>المتطلبات الأساسية
 
-سجلات جهات الاتصال [من Dynamics 365 Marketing التي تم استيعابها باستخدام Common Data Service](connect-power-query.md).
+- يجب أن تكون سجلات جهات الاتصال موجودة في Dynamics 365 Marketing قبل تصدير شريحة من Customer Insights إلى Marketing. اقرأ المزيد حول كيفية استيعاب جهات الاتصال في [Dynamics 365 Marketing باستخدام Common Data Services](connect-power-query.md).
+
+  > [!NOTE]
+  > لن يؤدي تصدير الشرائح من رؤى الجمهور إلى Marketing إلى إنشاء سجلات جهات اتصال جديدة في مثيلات Marketing. يجب استيعاب سجلات جهات الاتصال من Marketing في رؤى الجمهور واستخدامها كمصدر بيانات. كما يلزم تضمينها في كيان العميل الموحد من أجل تعيين معرفات العملاء إلى معرفات جهات الاتصال قبل أن يصبح تصدير الشرائح ممكنًا.
 
 ## <a name="configure-the-connector-for-marketing"></a>تكوين موصل Marketing
 
@@ -49,3 +52,6 @@ ms.locfileid: "4643757"
 ## <a name="export-the-data"></a>تصدير البيانات
 
 يمكنك [تصدير البيانات عند الطلب](export-destinations.md). سيعمل التصدير أيضًا مع كل [تحديث مجدول](system.md#schedule-tab).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

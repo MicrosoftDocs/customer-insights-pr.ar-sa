@@ -1,20 +1,20 @@
 ---
 title: إثراء البيانات بواسطة خدمات إثراء البيانات من طرف ثالث HERE Technologies
 description: معلومات عامة حول خدمات إثراء البيانات من طرف ثالث HERE Technologies.
-ms.date: 10/27/2020
+ms.date: 12/10/2020
 ms.reviewer: jodahl
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 7082fcfec099c3c9436b233c193be23625f6691a
-ms.sourcegitcommit: a9b2cf598f256d07a48bba8617347ee90024a1dd
+ms.openlocfilehash: 258e37de9d9685d9ebc30b3c6b8d238d583431b4
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4668662"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269498"
 ---
 # <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>إثراء ملفات تعريف العملاء بواسطة HERE Technologies (معاينة)
 
@@ -43,7 +43,11 @@ ms.locfileid: "4668662"
 
 1. أكد الإدخالين عن طريق تحديد **اتصال بـ HERE**.
 
-1. حدد **إضافة بيانات** واختر إذا كنت تريد تعيين الحقول إلى العنوان الرئيسي و/أو الثانوي. يمكنك تحديد تعيين الحقول للعنوانين (على سبيل المثال، عنوان المنزل وعنوان العمل) واعمل على إثراء ملفات التعريف للعنوانين على حدة. حدد **التالي**.
+1.  حدد **إضافة بيانات** واختر **مجموعة بيانات العميل** التي ترغب في إثرائها بواسطة بيانات الموقع من HERE Technologies. يمكنك تحديد كيان **العميل** لإثراء جميع ملفات تعريف العملاء أو تحديد كيان شريحة لإثراء فقط ملفات تعريف العملاء الموجودة في تلك الشريحة.
+
+    :::image type="content" source="media/enrichment-HERE-configuration-customer-data-set.png" alt-text="لقطة شاشة عند اختيار مجموعة بيانات العميل.":::
+
+1. اختر إذا كنت تريد تعيين الحقول إلى العنوان الرئيسي و/أو الثانوي. يمكنك تحديد تعيين الحقول للعنوانين (على سبيل المثال، عنوان المنزل وعنوان العمل) واعمل على إثراء ملفات التعريف للعنوانين على حدة. حدد **التالي**.
 
 1. حدد الحقول التي سيتم استخدامها من ملفات التعريف الموحدة للبحث عن بيانات الموقع المطابقة من تقنيات HERE يجب تعبئة الحقلين **الشارع 1** و **الرمز البريدي** للعنوان الرئيسي و/أو الثانوي المحدد.‬ للحصول على دقة مطابقة أعلى، يمكن إضافة المزيد من الحقول.
 
@@ -68,3 +72,6 @@ ms.locfileid: "4668662"
 
 عند تمكين Dynamics 365 Customer Insights لإرسال البيانات إلى HERE Technologies، تسمح أنت بنقل البيانات خارج حدود الامتثال في Dynamics 365 Customer Insights، بما في ذلك البيانات الحساسة على الأرجح مثل البيانات الشخصية. ستقوم شركة Microsoft بنقل هذه البيانات وفقًا لتعليماتك، ولكنك مسؤول عن ضمان قيام HERE Technologies بتلبية أي التزامات تتعلق بالخصوصية أو الأمان قد تكون لديك. لمزيد من المعلومات، راجع [بيان خصوصية Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
 بإمكان مسؤول Dynamics 365 Customer Insights إزالة هذا الإثراء في أي وقت لإيقاف استخدام هذه الوظيفة.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

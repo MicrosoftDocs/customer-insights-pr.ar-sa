@@ -5,16 +5,16 @@ ms.date: 09/28/2020
 ms.reviewer: adkuppa
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: b7e834f5f2fd1328563139675d7f850008348734
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: d4b01be75d25fa0e120904924a193171eefec579
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4404930"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268532"
 ---
 # <a name="incremental-refresh-for-data-sources-based-on-power-query"></a>تحديث تزايدي لمصادر البيانات المستندة إلى Power Query
 
@@ -54,3 +54,6 @@ ms.locfileid: "4404930"
    - **التحقق من وجود تحديثات كل‬**: حدد المدة التي تريدها للإطار الزمني للتحديث التزايدي.
 
 1. حدد **حفظ** لإكمال إنشاء مصدر البيانات. سيكون تحديث البيانات الأولي تحديثًا كاملاً. بعد ذلك، يتم تحديث البيانات التزايدي كما تم تكوينه في الخطوة السابقة.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

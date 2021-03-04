@@ -6,16 +6,16 @@ metadata:
   description: مركز التعليمات مع ارتباطات رئيسية لرؤى الجمهور.
   ms.service: customer-insights
   ms.subservice: audience-insights
-  ms.topic: landing-page
+  ms.topic: hub-page
   author: m-hartmann
   ms.author: mhart
   ms.date: 10/16/2020
-  ms.openlocfilehash: 9dcbbecf793cca2ef1d79d6fad7f3b420f5a8806
-  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+  ms.openlocfilehash: ba5229067c7c338b4f8d0503aaf80f25b6c4002c
+  ms.sourcegitcommit: a8f7d5d0008b2d7d0ff0daeb746126abfc82c253
   ms.translationtype: HT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 11/03/2020
-  ms.locfileid: "4404931"
+  ms.lasthandoff: 12/17/2020
+  ms.locfileid: "4745705"
 landingContent:
 - title: حول رؤى الجمهور
   linkLists:
@@ -27,36 +27,36 @@ landingContent:
       url: whats-new-audience-insights.md
     - text: موقع المجتمع
       url: https://go.microsoft.com/fwlink/?linkid=2073991
-- title: استيعاب مصادر البيانات
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: إضافة مصدر بيانات
-      url: data-sources.md
-    - text: تحديث تزايدي
-      url: incremental-refresh-data-sources.md
-    - text: فهم الكيانات
-      url: entities.md
 - title: توحيد البيانات
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: المخطط
-      url: map-entities.md
-    - text: مطابقة
-      url: match-entities.md
-    - text: ‏‏دمج
-      url: merge-entities.md
-- title: تنقيح ملفات تعريف العملاء
+    - text: نظرة عامة مصادر البيانات
+      url: data-sources.md
+    - text: نظرة عامة على التوحيد
+      url: data-unification.md
+    - text: فهم الكيانات
+      url: entities.md
+- title: إثراء البيانات وتحسينها
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: إثراء ملفات تعريف العملاء
+      url: enrichment-hub.md
     - text: تكوين العلاقات
       url: relationships.md
     - text: سرد أنشطة العميل
       url: activities.md
-    - text: إحضار نماذج التعلم الآلي الخاصة بك
-      url: custom-models.md
+- title: الحصول على المعلومات
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: إنشاء شرائح
+      url: segments.md
+    - text: إنشاء مقاييس
+      url: measures.md
+    - text: إكمال البيانات بواسطة التنبؤات
+      url: predictions.md
 - title: تصدير بيانات العميل
   linkLists:
   - linkListType: how-to-guide

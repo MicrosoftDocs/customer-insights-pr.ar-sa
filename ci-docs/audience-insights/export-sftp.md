@@ -1,20 +1,20 @@
 ---
 title: تصدير بيانات Customer Insights إلى مضيفي SFTP
 description: تعرف على كيفية تكوين الاتصال بمضيف SFTP.
-ms.date: 06/05/2020
+ms.date: 01/27/2021
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: c2529744d7a26a06324b79cad6a8001d75903545
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: ddba55b3ca159c0095371e46385dcf1d3ed4a63d
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643487"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267982"
 ---
 # <a name="connector-for-sftp-preview"></a>موصل لـ SFTP (معاينة)
 
@@ -22,7 +22,7 @@ ms.locfileid: "4643487"
 
 ## <a name="prerequisites"></a>المتطلبات الأساسية
 
-- توفر مضيف FTP وبيانات الاعتماد المناظرة.
+- توفر مضيف SFTP وبيانات الاعتماد المقابلة.
 
 ## <a name="connect-to-sftp"></a>الاتصال بـ SFTP
 
@@ -32,23 +32,22 @@ ms.locfileid: "4643487"
 
 1. في حقل **الاسم المعروض**، أدخل اسمًا للوجهة سهل التمييز.
 
-1. قم بتوفير **اسم المستخدم** و **كلمة المرور** و **اسم المضيف** لحساب SFTP. مثال: إذا كان المجلد الجذر لخادم SFTP هو /root/folder، وأردت تصدير البيانات إلى /root/folder/ci_export_destination_folder، فسيكون المضيف sftp://<server_address>/ci_export_destination_folder".
+1. أدخل **اسم المستخدم** و **كلمة المرور** و **اسم المضيف** و **مجلد التصدير** لحساب SFTP.
 
 1. حدد **تحقق** لاختبار الاتصال.
 
-1. بعد نجاح التحقق، اختر إن كنت تريد تصدير بياناتك في حالة **مضغوطة** أو **غير مضغوطة‏‎**، وحدد **محدد الحقل** للملفات المصدّرة.
+1. بعد التحقق بنجاح، اختر ما إذا كنت ترغب في تصدير بياناتك وهي **مضغوطة** أو **غير مضغوطة‏‎**، وحدد **محدد الحقل** للملفات المصدّرة.
 
 1. حدد **أوافق** لتأكيد **خصوصية البيانات والتوافق‬**.
 
 1. حدد **التالي** لبدء تكوين التصدير.
 
-## <a name="configure-the-connection"></a>تكوين الاتصال
+## <a name="configure-the-export"></a>تكوين التصدير
 
-1. حدد **سمات العميل** التي تريد تصديرها. يمكنك تصدير سمة واحدة أو سمات متعددة.
+1. حدد الكيانات، على سبيل المثال الشرائح، التي ترغب في تصديرها.
 
-1. حدد **التالي**.
-
-1. حدد الشرائح التي تريد تصديرها.
+   > [!NOTE]
+   > سيكون كل كيان محدد عبارة عن خمسة ملفات إخراج كحدٍ أقصى عند تصديره. 
 
 1. حدد **حفظ**.
 
@@ -56,7 +55,15 @@ ms.locfileid: "4643487"
 
 يمكنك [تصدير البيانات عند الطلب](export-destinations.md). سيعمل التصدير أيضًا مع كل [تحديث مجدول](system.md#schedule-tab).
 
+## <a name="known-limitations"></a>القيود المعروفة
+
+- يعتمد وقت تشغيل أي تصدير على أداء النظام. نوصي بمركزين لوحدة المعالجة المركزية وذاكرة بسعة غيغابايت واحد كحدٍ أدنى لتكوين الخادم. 
+- قد يستغرق تصدير الكيانات مع 100 مليون من ملفات تعريف العملاء 90 دقيقة عند استخدام الحد الأدنى من التكوين الموصى به من مركزين لوحدة المعالجة المركزية وذاكرة بسعة غيغابايت واحد. 
+
 ## <a name="data-privacy-and-compliance"></a>خصوصية البيانات والتوافق
 
 عند تمكين Dynamics 365 Customer Insights لإرسال البيانات عبر SFTP Technologies، تسمح أنت بنقل البيانات خارج حدود الامتثال في Dynamics 365 Customer Insights، بما في ذلك البيانات الحساسة على الأرجح مثل البيانات الشخصية. ستقوم شركة Microsoft بنقل هذه البيانات وفقًا لتعليماتك، ولكنك مسؤول عن ضمان قيام وجهة التصدير بتلبية أي التزامات تتعلق بالخصوصية أو الأمان قد تكون لديك. لمزيد من المعلومات، راجع [بيان خصوصية Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
 بإمكان مسؤول Dynamics 365 Customer Insights إزالة وجهة التصدير هذه في أي وقت لإيقاف استخدام هذه الوظيفة.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
