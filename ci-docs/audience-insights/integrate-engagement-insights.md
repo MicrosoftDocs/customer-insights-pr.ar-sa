@@ -70,7 +70,7 @@ ms.locfileid: "5267660"
 
 لمزيد من المعلومات، راجع [أنشطة العميل](activities.md).
 
-:::image type="content" source="media/web-event-activity.png" alt-text="صفحة الأنشطة مع الجزء الموسع "تحرير النشاط" وحقول تمت تعبئتها بالبيانات.":::
+:::image type="content" source="media/web-event-activity.png" alt-text="صفحة الأنشطة مع الجزء الموسع »تحرير النشاط« وحقول تمت تعبئتها بالبيانات.":::
 
 تكوين النشاط الجديد من خلال التعيين التالي: 
 
