@@ -1,20 +1,20 @@
 ---
 title: التعامل مع واجهات API
 description: استخدام واجهات API وفهم القيود.
-ms.date: 12/04/2020
+ms.date: 03/10/2021
 ms.reviewer: wimohabb
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
-ms.author: mhart
+ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 966db1a22e7dece1bcd89733880bce059151157f
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 011fa700563c53534554a6b73e87c2391bfdf714
+ms.sourcegitcommit: a872f59e6febe4d4bd678ddd0b60a1660acca0f3
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267508"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "5710444"
 ---
 # <a name="work-with-customer-insights-apis"></a>التعامل مع واجهات API في Customer Insights
 
@@ -36,7 +36,7 @@ ms.locfileid: "5267508"
 
    :::image type="content" source="media/enable-apis.gif" alt-text="تمكين واجهات API في Customer Insights":::
 
-1. حدد **استكشاف واجهات API** لتجربة واجهات API.
+1. حدد **استكشاف واجهات API** [لتجربة واجهات API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
 
 1. اختر عملية واجهة API وحدد **جرّبها**.
 
@@ -47,6 +47,9 @@ ms.locfileid: "5267508"
 1. قم بالتمرير لأسفل الجزء الجانبي وحدد **إرسال**.
 
 ستظهر استجابة HTTP تحته.
+
+
+   :::image type="content" source="media/try-apis.gif" alt-text="رسم Gif متحرك يوضح كيفية تحديد اختبار واجهات API.":::
 
 ## <a name="create-a-new-app-registration-in-the-azure-portal"></a>إنشاء تسجيل تطبيق جديد في مدخل Azure
 
@@ -61,6 +64,8 @@ ms.locfileid: "5267508"
 
 1. على تسجيل التطبيق الجديد، انتقل إلى **أذونات واجهة API**.
 
+   :::image type="content" source="media/app-registration-1.gif" alt-text="رسم GIF متحرك لتعيين إذن API في تسجيل التطبيق.":::
+
 1. حدد **إضافة إذن**، وحدد **Customer Insights** في الجزء الجانبي.
 
 1. في **نوع الإذن**، حدد **الأذونات المفوضة** وحدد إذن **user_impersonation**.
@@ -71,9 +76,11 @@ ms.locfileid: "5267508"
 
 يمكنك استخدام معرف التطبيق/العميل لتسجيل التطبيق هذا باستخدام مكتبة المصادقة من Microsoft (MSAL) للحصول علي رمز مميز حامل لإرساله مع طلبك إلى API.
 
+:::image type="content" source="media/grant-admin-consent.gif" alt-text="رسم Gif متحرك لمنح موافقة المسؤول.":::
+
 لمزيد من المعلومات حول MSAL، انظر [نظرة عامة على مكتبة المصادقة من Microsoft‏ (MSAL)](https://docs.microsoft.com/azure/active-directory/develop/msal-overview).
 
-لمزيد من المعلومات حول تسجيل التطبيق في Azure، انظر [تجربة تسجيل تطبيق Azure الجديد](https://docs.microsoft.com/azure/active-directory/develop/app-registration-portal-training-guide).
+لمزيد من المعلومات حول تسجيل التطبيق في Azure، انظر [تجربة تسجيل تطبيق Azure الجديد](/azure/active-directory/develop/app-registration-portal-training-guide).
 
 للحصول على معلومات حول استخدام API لمكتبات العملاء، راجع [مكتبات عملاء Customer Insights](#customer-insights-client-libraries).
 
@@ -101,6 +108,8 @@ ms.locfileid: "5267508"
 
 1. حدد **منح موافقة المسؤول ل...** لإكمال تسجيل التطبيق.
 
+   :::image type="content" source="media/grant-admin-consent.gif" alt-text="رسم Gif متحرك لمنح موافقة المسؤول.":::
+
 1. في النهاية، يتعين علينا إضافة اسم تسجيل التطبيق كمستخدم في Customer Insights.    
    افتح Customer Insights، وانتقل إلى **المسؤول** > **الأذونات** وحدد **إضافة مستخدم**.
 
@@ -108,7 +117,7 @@ ms.locfileid: "5267508"
 
 ## <a name="customer-insights-client-libraries"></a>مكتبات عملاء Customer Insights
 
-يساعدك هذا القسم على بدء استخدام مكتبات العملاء المتوفرة لواجهات API في Customer Insights.
+يساعدك هذا القسم على بدء استخدام مكتبات العملاء المتوفرة لواجهات API في Customer Insights. يمكن العثور على كافة التعليمات البرمجية المصدر الخاصة بالمكتبات وعينات التطبيقات في [صفحة Customer Insights GitHub](https://github.com/microsoft/Dynamics365-CustomerInsights-Client-Libraries). 
 
 ### <a name="c-nuget"></a>C# NuGet
 
@@ -127,7 +136,7 @@ ms.locfileid: "5267508"
 
 #### <a name="use-the-c-client-library"></a>استخدام مكتبة العملاء C#
 
-1. استخدم [مكتبة المصادقة من Microsoft (MSAL)](https://docs.microsoft.com/azure/active-directory/develop/msal-overview) للحصول على `AccessToken` باستخدام [تسجيل تطبيق Azure](#create-a-new-app-registration-in-the-azure-portal) موجود.
+1. استخدم [مكتبة المصادقة من Microsoft (MSAL)](/azure/active-directory/develop/msal-overview) للحصول على `AccessToken` باستخدام [تسجيل تطبيق Azure](#create-a-new-app-registration-in-the-azure-portal) موجود.
 
 1. بعد المصادقة على رمز مميز بنجاح والحصول عليه، قم بإنشاء `HttpClient` جديد أو استخدام واحد موجود مع تعيين **"التخويل" DefaultRequestHeaders** الإضافي إلى **الحامل <access token>** وتعيين **Ocp-Apim-Subscription-Key** إلى [**مفتاح الاشتراك** من بيئة Customer Insights](#get-started-trying-the-customer-insights-apis).    
    أعد تعيين رأس **التفويض** عندما يكون مناسبًا. على سبيل المثال، عند انتهاء صلاحية الرمز المميز.
@@ -141,5 +150,12 @@ ms.locfileid: "5267508"
 1. من المحتمل أن تكون الاستجابة من النوع `object` لأنه باستطاعة الأسلوب إرجاع أنواع متعددة (على سبيل المثال ، `IList<InstanceInfo>` و `ApiErrorResult`). للتحقق من نوع الإرجاع، يمكنك تحويل الكائنات بأمان إلى أنواع الاستجابة المحددة في [صفحة تفاصيل واجهة API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights) لهذه العملية.    
    إذا كانت هناك حاجة إلى مزيد من المعلومات حول الطلب، فاستخدم **أساليب رسالة http** للوصول إلى كائن الاستجابة الأولي.
 
+### <a name="nodejs-package"></a>حزمة NodeJS
+
+استخدم مكتبات عميل NodeJS المتوفرة من خلال NPM: https://www.npmjs.com/package/@microsoft/customerinsights
+
+### <a name="python-package"></a>حزمة Python
+
+استخدم مكتبات عميل Python المتوفرة من خلال PyPi: https://pypi.org/project/customerinsights/
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

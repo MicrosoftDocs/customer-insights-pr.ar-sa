@@ -6,15 +6,15 @@ ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
-ms.author: mhart
-ms.reviewer: wameng
+ms.author: wameng
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 5bcee3b4c51880740715575b18fd7a4dbf87e6d0
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 202ea22d290be04e54ce9676b6b693162354607f
+ms.sourcegitcommit: d3eb07dcc72624a2d5cfc95c7ea9faaa2c1b6001
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269912"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "5654716"
 ---
 # <a name="define-and-manage-measures"></a>تحديد المقاييس وإدارتها
 
@@ -72,8 +72,8 @@ ms.locfileid: "5269912"
    1. حدد **تحرير الأبعاد** لإضافة سمات بيانات ترغب في تجميع قيم المقياس وفقًا لها. على سبيل المثال، المدينة أو الجنس. يتم تحديد بُعد *CustomerID* بشكل افتراضي لإنشاء *مقاييس على مستوى العميل*. يمكنك إزالة البُعد الافتراضي إذا كنت ترغب في إنشاء *مقاييس على مستوى الأعمال*.
    1. حدد **تم** لإضافة الأبعاد إلى المقياس.
 
-1. في حالة وجود مسارات متعددة بين كيان البيانات الذي قمت تعيينه وكيان العميل، يجب عليك اختيار أحد [مسارات علاقات الكيان](relationships.md) المحددة. وقد تختلف نتائج القياس بناء على المسار المحدد.
-   1. حدد **تفضيلات البيانات** واختر مسار الكيان الذي ينبغي استخدامه لتحديد المقياس الذي تستخدمه.
+1. في حالة وجود مسارات متعددة بين كيان البيانات الذي قمت تعيينه وكيان *العميل*، يجب عليك اختيار أحد [مسارات علاقات الكيان](relationships.md) المحددة. وقد تختلف نتائج القياس بناء على المسار المحدد. 
+   1. حدد **تفضيلات البيانات** واختر مسار الكيان الذي ينبغي استخدامه لتحديد المقياس الذي تستخدمه. إذا كان هناك مسار واحد فقط إلى كيان *العميل*، فلن يظهر عنصر التحكم هذا.
    1. حدد **تم** لتطبيق التحديد. 
 
    :::image type="content" source="media/measures-data-preferences.png" alt-text="حدد مسار الكيان للمقياس.":::

@@ -2,19 +2,19 @@
 title: قيود واستيعاب البيانات في الوقت الحقيقي
 description: معلومات عامة حول القدرات في الوقت الحقيقي في رؤى الجمهور.
 ms.date: 10/27/2020
-ms.reviewer: nikeller
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: Nils-2m
+ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: 7421ed9d2cb399d546815b2d1b0ea5ec51ca6b6d
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 3c84cfe7441eb026c1fd45eda1f72421388d01d7
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5270264"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598553"
 ---
 # <a name="real-time-data-ingestion-preview"></a>استيعاب بيانات الوقت الحقيقي (معاينة)
 
@@ -54,7 +54,7 @@ ms.locfileid: "5270264"
 
 هناك طريقتان للاتصال بواجهة برمجة التطبيقات (API) في الوقت الحقيقي:
 
-- [بشكل غير مباشر](#connect-via-the-dynamics-365-customer-insights-connector)، باستخدام الموصل [Dynamics 365 Customer Insights ](https://docs.microsoft.com/connectors/customerinsights/)
+- [بشكل غير مباشر](#connect-via-the-dynamics-365-customer-insights-connector)، باستخدام الموصل [Dynamics 365 Customer Insights ](/connectors/customerinsights/)
 - [بشكل مباشر](#connect-directly-to-the-real-time-api)، مع التعليمات البرمجية
 
 كلا الطريقتين تشارك المتطلبات الأساسية التالية:
@@ -66,13 +66,13 @@ ms.locfileid: "5270264"
 
 ## <a name="connect-via-the-dynamics-365-customer-insights-connector"></a>الاتصال عبر الموصل Dynamics 365 Customer Insights
 
-يمكن لواجهة برمجة التطبيقات (API) في الوقت الحقيقي أن تستوعب البيانات من موصل Power Platform مخصص، والموصل [Dynamics 365 Customer Insights](https://docs.microsoft.com/connectors/customerinsights/)، دون الحاجة إلى كتابة أي تعليمات برمجية ونشرها.    
-يمكن للموصل أن يقوم بالإجراءات الخاصة بالوقت الحقيقي نفسها كواجهة برمجة التطبيقات (API). تحتاج إلى ترخيص صالح للموصلات المتميزة. للحصول على مزيد من المعلومات، راجع الأسئلة المتداولة حول ترخيص [Power Apps و Power Automate](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq).
+يمكن لواجهة برمجة التطبيقات (API) في الوقت الحقيقي أن تستوعب البيانات من موصل Power Platform مخصص، والموصل [Dynamics 365 Customer Insights](/connectors/customerinsights/)، دون الحاجة إلى كتابة أي تعليمات برمجية ونشرها.    
+يمكن للموصل أن يقوم بالإجراءات الخاصة بالوقت الحقيقي نفسها كواجهة برمجة التطبيقات (API). تحتاج إلى ترخيص صالح للموصلات المتميزة. للحصول على مزيد من المعلومات، راجع الأسئلة المتداولة حول ترخيص [Power Apps و Power Automate](/power-platform/admin/powerapps-flow-licensing-faq).
 
-- Power Platform [Power Apps و/أو Power Automate](https://docs.microsoft.com/connectors/)
-- Azure [Logic Apps](https://docs.microsoft.com/azure/connectors/apis-list)
+- Power Platform [Power Apps و/أو Power Automate](/connectors/)
+- Azure [Logic Apps](/azure/connectors/apis-list)
 
-للحصول على تفاصيل حول إنشاء التدفقات، راجع وثائق [Power Automate ](https://docs.microsoft.com/power-automate/).
+للحصول على تفاصيل حول إنشاء التدفقات، راجع وثائق [Power Automate ](/power-automate/).
 
 ## <a name="connect-directly-to-the-real-time-api"></a>الاتصال مباشرة مع واجهة برمجة التطبيقات في الوقت الحقيقي
 

@@ -1,19 +1,20 @@
 ---
 title: نماذج التعلم الآلي المخصصة | Microsoft Docs
 description: استخدم النماذج المخصصة من خدمة التعلم الآلي من Azure في Dynamics 365 Customer Insights.
-ms.date: 11/19/2020
-ms.reviewer: zacook
-ms.service: dynamics-365-ai
+ms.date: 03/22/2021
+ms.reviewer: mhart
+ms.service: customer-insights
+ms.subservice: audience-insights
 ms.topic: tutorial
-author: m-hartmann
-ms.author: mhart
+author: zacookmsft
+ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 34489faaecc5da1ce3dd68d799b3e0e0d9672ab7
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 87fb517e9f0b380f9721f77470dceb3bcb7e5616
+ms.sourcegitcommit: 55c00ea61c78db7b3b54894c01afb3246dff31c8
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267218"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "5700652"
 ---
 # <a name="custom-machine-learning-models"></a>نماذج التعلم الآلي المخصصة
 
@@ -21,13 +22,18 @@ ms.locfileid: "5267218"
 
 ## <a name="responsible-ai"></a>الذكاء الاصطناعي المسؤول
 
-تقدم التنبؤات قدرات لإنشاء تجارب عملاء أفضل وتحسين قدرات الأعمال وتدفقات الإيرادات. نوصي بضرورة موازنة قيمة التنبؤ في مقابل تأثيره والأخطاء المقصودة التي قد يتم تقديمها بطريقة معنوية. اعرف المزيد حول الطريقة التي تعمل Microsoft من خلالها على [معالجة الذكاء الاصطناعي المسؤول](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1%3aprimaryr6). يمكنك أيضًا التعرف على [تقنيات وعمليات التعلم الآلي المسؤول](https://docs.microsoft.com/azure/machine-learning/concept-responsible-ml) الخاص بالتعلم الآلي من Azure.
+تقدم التنبؤات قدرات لإنشاء تجارب عملاء أفضل وتحسين قدرات الأعمال وتدفقات الإيرادات. نوصي بضرورة موازنة قيمة التنبؤ في مقابل تأثيره والأخطاء المقصودة التي قد يتم تقديمها بطريقة معنوية. اعرف المزيد حول الطريقة التي تعمل Microsoft من خلالها على [معالجة الذكاء الاصطناعي المسؤول](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1%3aprimaryr6). يمكنك أيضًا التعرف على [تقنيات وعمليات التعلم الآلي المسؤول](/azure/machine-learning/concept-responsible-ml) الخاص بالتعلم الآلي من Azure.
 
 ## <a name="prerequisites"></a>المتطلبات الأساسية
 
-- في الوقت الحالي، تدعم هذه الميزة خدمات الويب المنشورة عبر [استوديو التعلم الآلي (كلاسيكي)‬](https://studio.azureml.net)و [التدفقات الدُفعية للتعلم الآلي من Azure‬](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines).
+- في الوقت الحالي، تدعم هذه الميزة خدمات الويب المنشورة عبر [استوديو التعلم الآلي (كلاسيكي)‬](https://studio.azureml.net)و [التدفقات الدُفعية للتعلم الآلي من Azure‬](/azure/machine-learning/concept-ml-pipelines).
 
-- تحتاج إلى حساب تخزين Azure Data Lake Gen2 المقترن بمثيل استوديو Azure لاستخدام هذه الميزة. لمزيد من المعلومات، راجع [إنشاء حساب تخزين Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-quickstart-create-account)
+- تحتاج إلى حساب تخزين Azure Data Lake Gen2 المقترن بمثيل استوديو Azure لاستخدام هذه الميزة. لمزيد من المعلومات، راجع [إنشاء حساب تخزين Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-quickstart-create-account).
+
+- بالنسبة لمساحات عمل التعلم الآلي من Azure مع مسارات، ستحتاج إلى أذونات وصول المسؤول المالك أو المستخدم إلى مساحة عمل التعلم الآلي من Azure.
+
+   > [!NOTE]
+   > يتم نقل البيانات بين مثيلات Customer Insights وخدمات ويب Azure المحددة أو المسارات المحددة في سير العمل. عند نقل البيانات إلى خدمة Azure، يرجى التأكد من أن الخدمة قد تم تكوينها لمعالجة البيانات بالطريقة والموقع اللازمين للامتثال لأي متطلبات قانونية أو تنظيمية لهذه البيانات لمؤسستك.
 
 ## <a name="add-a-new-workflow"></a>إضافة سير عمل جديد
 
@@ -45,8 +51,8 @@ ms.locfileid: "5267218"
 1. حدد **مساحات العمل** المقترنة بخدمة الويب. هناك قسمان مذكوران، أحدهما التعلم الآلي من Azure v1 (استوديو التعلم الآلي (كلاسيكي)) والتعلم الآلي من Azure v2 (التعلم الآلي من Azure). إذا لم تكن متأكدًا من مساحة العمل المناسبة لخدمة الويب استوديو التعلم الآلي (كلاسيكي)‬، فحدد **أي واحد**.
 
 1. اختر خدمة الويب استوديو التعلم الآلي (كلاسيكي) او تدفقات التعلم الآلي من Azure في القائمة المنسدلة **خدمة الويب التي تحتوي على نموذجك‬**. ثم حدد **التالي**.
-   - اعرف المزيد حول [نشر خدمة ويب في استوديو التعلم الآلي (كلاسيكي)](https://docs.microsoft.com/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service)
-   - اعرف المزيد حول [نشر التدفقات في التعلم الآلي من Azure باستخدام المصمم](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) أو [SDK](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). يجب نشر التدفق تحت [نقطة نهاية التدفق](https://docs.microsoft.com/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
+   - اعرف المزيد حول [نشر خدمة ويب في استوديو التعلم الآلي (كلاسيكي)](/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service)
+   - اعرف المزيد حول [نشر التدفقات في التعلم الآلي من Azure باستخدام المصمم](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) أو [SDK](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). يجب نشر التدفق تحت [نقطة نهاية التدفق](/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
 
 1. لكل **إدخال خدمة ويب**‬، حدد **الكيان** المطابق من رؤى الجمهور، وحدد **التالي**.
    > [!NOTE]
@@ -54,7 +60,7 @@ ms.locfileid: "5267218"
 
    > [!div class="mx-imgBorder"]
    > ![تكوين سير عمل](media/intelligence-screen2-updated.png "تكوين سير عمل")
-   
+
 1. في خطوة **معلمات إخراج النموذج**، قم بتعيين الخصائص التالية:
    - استوديو التعلم الآلي (كلاسيكي)
       1. أدخل إخراج **اسم الكيان** الذي تريد ان تتدفق فيه نتائج إخراج خدمة الويب.
@@ -62,12 +68,12 @@ ms.locfileid: "5267218"
       1. أدخل إخراج **اسم الكيان** الذي تريد ان تتدفق فيه نتائج إخراج التدفقات.
       1. حدد **اسم معلمة مخزن بيانات الإخراج‬** للتدفقات الدُفعية من القائمة المنسدلة.
       1. حدد **اسم معلمة مسار الإخراج‬‬** للتدفقات الدُفعية من القائمة المنسدلة.
-      
+
       > [!div class="mx-imgBorder"]
       > ![جزء معلمات إخراج النموذج](media/intelligence-screen3-outputparameters.png "جزء معلمات إخراج النموذج")
 
 1. حدد السمة المطابقة من القائمة المنسدلة **معرف العميل في النتائج**‬ التي تحدد العملاء، ثم حدد **حفظ**.
-   
+
    > [!div class="mx-imgBorder"]
    > ![ربط النتائج بجزء بيانات العميل](media/intelligence-screen4-relatetocustomer.png "ربط النتائج بجزء بيانات العميل")
 
@@ -95,7 +101,7 @@ ms.locfileid: "5267218"
       1. حدد **اسم معلمة مسار الإخراج‬‬** لتدفقات الاختبار.
 
 1. حدد السمة المطابقة من القائمة المنسدلة **معرف العميل في النتائج**‬ التي تحدد العملاء، ثم حدد **حفظ**.
-   تحتاج إلى اختيار سمة من إخراج الاستدلال بقيم تشبه عمود معرف العميل الخاص بكيان العميل. إذا لم يكن لديك مثل هذا العمود في مجموعة البيانات، فاختر السمة التي تعرف الصف بشكل فريد.
+   اختر سمة من إخراج الاستدلال بقيم تشبه عمود معرف العميل الخاص بكيان العميل. إذا لم يكن لديك مثل هذا العمود في مجموعة البيانات، فاختر السمة التي تعرف الصف بشكل فريد.
 
 ## <a name="run-a-workflow"></a>تشغيل سير عمل
 
@@ -113,5 +119,28 @@ ms.locfileid: "5267218"
 
 سيتم حذف سير عملك. يستمر [الكيان](entities.md) الذي تم إنشاؤه عند إنشاء سير العمل، ويمكن عرضه‏‎ من صفحة **الكيانات**.
 
+## <a name="results"></a>النتائج
+
+يتم تخزين النتائج من سير العمل في الكيان الذي تم تكوينه أثناء مرحلة معلمة إخراج النموذج. يمكنك الوصول إلى هذه البيانات من [صفحة الكيانات](entities.md) أو من خلال [الوصول إلى API](apis.md).
+
+### <a name="api-access"></a>الوصول إلى API
+
+كي يتمكن استعلام OData المحدد من الحصول على بيانات من كيان نموذج مخصص، استخدم التنسيق التالي:
+
+`https://api.ci.ai.dynamics.com/v1/instances/<your instance id>/data/<custom model output entity name>%3Ffilter%3DCustomerId%20eq%20'<guid value>'`
+
+1. استبدل `<your instance id>` بمعرف بيئة Customer Insights، الذي يمكن العثور عليه في شريط العناوين في المستعرض عند الوصول إلى Customer Insights.
+
+1. استبدل `<custom model output entity>` باسم الكيان الذي قمت بتوفيره أثناء خطوة معلمات إخراج النموذج لتكوين النموذج المخصص.
+
+1. استبدل `<guid value>` بمعرف العميل للعميل الذي ترغب في الوصول إلى سجله. يمكنك العثور على هذا المعرف عادةً في [صفحة ملفات تعريف العملاء](customer-profiles.md) في حقل معرف العميل.
+
+## <a name="frequently-asked-questions"></a>الأسئلة المتداولة
+
+- لماذا لا يمكنني رؤية مساري عند إعداد سير عمل نموذج مخصص؟    
+  تحدث هذه المشكلة بشكل متكرر بسبب مشكلة في تكوين المسار. تأكد من [تكوين معلمة الإدخال](azure-machine-learning-experiments.md#dataset-configuration) وأيضًا من تكوين [معلمات مخزن بيانات الإخراج ومعلمة مسار الإخراج‬](azure-machine-learning-experiments.md#import-pipeline-data-into-customer-insights).
+
+- ما معنى الخطأ "لا يمكن حفظ سير عمل التحليل الذكي‬"؟    
+  يرى المستخدمون رسالة الخطأ هذه عادةً إذا لم يكن لديهم امتيازات وصول المسؤول المالك أو المستخدم في مساحة العمل. يحتاج المستخدم إلى مستوى أعلى من الأذونات لتمكين Customer Insights من معالجة سير العمل كخدمة بدلاً من استخدام بيانات اعتماد المستخدم لعمليات التشغيل اللاحقة لسير العمل.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

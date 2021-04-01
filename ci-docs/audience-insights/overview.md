@@ -2,19 +2,19 @@
 title: نظرة عامة على رؤى الجمهور في Dynamics 365 Customer Insights
 description: نظرة عامة على رؤى الجمهور في Dynamics 365 Customer Insights.
 ms.date: 01/18/2021
-ms.reviewer: nimagen
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: overview
-author: m-hartmann
-ms.author: mhart
+author: NimrodMagen
+ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 735aae12abebd2d6d9b6aedb5835164834f480c0
-ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
+ms.openlocfilehash: 146994b739748c615ca002add4e64216da6c1dea
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "5476979"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598614"
 ---
 # <a name="audience-insights-for-dynamics-365-customer-insights-overview"></a>نظرة عامة على رؤى الجمهور في Dynamics 365 Customer Insights
 
@@ -25,7 +25,7 @@ ms.locfileid: "5476979"
 - **إزالة مخازن البيانات وتوحيد بيانات العملاء**
 
   - تمكن من توصيل بياناتك وتوحيدها بسهولة — اعمل على إحضار بيانات تعاملية وسلوكية ورصدية من [مصادر بيانات شائعة باستخدام الموصلات المبنية بشكل مسبق](data-sources.md).
-  - تمكّن من تحويل بيانات العملاء بطريقة ذكية—أنشئ ملفات تعريف موحدة للعملاء بما يتطابق مع [نموذج البيانات العامة‬](https://docs.microsoft.com/common-data-model/). اعمل على حل هويات العملاء بواسطة التوصيات المستندة إلى AI/ML.
+  - تمكّن من تحويل بيانات العملاء بطريقة ذكية—أنشئ ملفات تعريف موحدة للعملاء بما يتطابق مع [نموذج البيانات العامة‬](/common-data-model/). اعمل على حل هويات العملاء بواسطة التوصيات المستندة إلى AI/ML.
 
 - **الإثراء بواسطة معلومات الجمهور الموجودة في Microsoft Graph**
 
@@ -42,7 +42,7 @@ ms.locfileid: "5476979"
 - **محللو البيانات/المسؤولون:**
 
   - الوصول إلى مجموعه ثرية من الموصلات لاستيعاب كل بيانات العملاء.
-  - القدرة على توحيد بيانات العملاء وتحويلها إلى تنسيق‏‎ [نموذج البيانات العامة](https://docs.microsoft.com/common-data-model/).
+  - القدرة على توحيد بيانات العملاء وتحويلها إلى تنسيق‏‎ [نموذج البيانات العامة](/common-data-model/).
   - إثراء معلومات العملاء بواسطة العارف الدقيقة من معلومات الجمهور الموجودة في Microsoft Graph، مثل صلات العلامات التجارية‬ والاهتمامات.
   - تجربة تكوين وتصحيح "النقرات من دون تعليمات برمجية" للمساعدة على تكوين رؤى الجمهور بسهولة وتحديد المشكلات المحتملة.
   - تنظيف وتوحيد بيانات العملاء عبر مصادر مختلفة بواسطة التوصيات التي يتم تشغيلها بواسطة AI.  
