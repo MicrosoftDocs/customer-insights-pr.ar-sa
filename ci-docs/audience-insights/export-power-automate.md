@@ -1,20 +1,20 @@
 ---
 title: موصل Power Automate  | Microsoft Docs
-description: إنشاء عمليات سير العمل في Microsoft Power Automate من Dynamics 365 Customer Insights.
+description: إنشاء عمليات سير المهام في Microsoft Power Automate من Dynamics 365 Customer Insights.
 ms.date: 01/20/2021
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: philk
+author: phkieffer
+ms.author: philk
 manager: shellyha
-ms.openlocfilehash: fb1df4e9ab1f78300b8ec1f8dfdfbfbac0e71447
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: e973bb11b31c9e70b695ebec8aa2700fdaa5e44f
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5268808"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5597909"
 ---
 # <a name="power-automate-connector-preview"></a>موصل Power Automate (معاينة)
 
@@ -34,7 +34,7 @@ ms.locfileid: "5268808"
 [تكوين المشغلات في Power Automate](https://flow.microsoft.com/connectors/shared_customerinsights/dynamics-365-customer-insights-connector/).
 
 ## <a name="power-automate-actions"></a>إجراءات Power Automate
-يوفر موصل Power Automate إجراءات أخرى بخلاف المشغلات المتوفرة. لمزيد من المعلومات، راجع [Dynamics 365 Customer Insights Connector](https://docs.microsoft.com/connectors/customerinsights/).
+يوفر موصل Power Automate إجراءات أخرى بخلاف المشغلات المتوفرة. لمزيد من المعلومات، راجع [Dynamics 365 Customer Insights Connector](/connectors/customerinsights/).
 
 ## <a name="create-a-power-automate-flow"></a>إنشاء سير مهام Power Automate
 
@@ -44,7 +44,7 @@ ms.locfileid: "5268808"
 
 1. يفتح موصل Customer Insights (إصدار أولي) في Power Automate. **سجل دخولك إلى** to Power Automate.
 
-1. اختر أحد المشغلات المتوفرة وأضف المزيد من الخطوات إلى سير المهام الجديد. لمزيد من المعلومات، راجع [إنشاء سير مهام في السحابة في Power Automate](https://docs.microsoft.com/power-automate/get-started-logic-flow).
+1. اختر أحد المشغلات المتوفرة وأضف المزيد من الخطوات إلى سير المهام الجديد. لمزيد من المعلومات، راجع [إنشاء سير مهام في السحابة في Power Automate](/power-automate/get-started-logic-flow).
 
 أمثلة حول كيفية استخدام سير المهام: 
 - نشر رسالة إلى قناة Microsoft Teams في حالة فشل تحديث مصدر بيانات. 

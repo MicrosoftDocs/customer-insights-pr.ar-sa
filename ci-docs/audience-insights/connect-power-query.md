@@ -2,23 +2,23 @@
 title: استيعاب البيانات من خلال موصل Power Query
 description: موصلات لمصادر البيانات تستند إلى Power Query.
 ms.date: 09/29/2020
-ms.reviewer: adkuppa
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: adkuppa
+ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: d51a7efa5fd9f7336d1662500eb804a674738493
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: b9a1b30e37c3792aa7bdfcfc177da9e8a32c324d
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267752"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596897"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>الاتصال بمصدر بيانات Power Query
 
-يوفر Power Query مجموعة واسعة من الموصلات لاستيعاب البيانات. معظم هذه الموصلات مدعومة من Dynamics 365 Customer Insights. عادةً ما تتبع إضافة مصادر البيانات استنادًا إلى موصلات Power Query الخطوات الموضحة في القسم التالي. ومع ذلك ، بناءً على الموصل الذي تستخدمه ، يلزم توفر معلومات مختلفة. لمزيد من المعلومات ، راجع الوثائق الخاصة بالموصلات الفردية في [مرجع موصل Power Query](https://docs.microsoft.com/power-query/connectors/).
+يوفر Power Query مجموعة واسعة من الموصلات لاستيعاب البيانات. معظم هذه الموصلات مدعومة من Dynamics 365 Customer Insights. عادةً ما تتبع إضافة مصادر البيانات استنادًا إلى موصلات Power Query الخطوات الموضحة في القسم التالي. ومع ذلك ، بناءً على الموصل الذي تستخدمه ، يلزم توفر معلومات مختلفة. لمزيد من المعلومات ، راجع الوثائق الخاصة بالموصلات الفردية في [مرجع موصل Power Query](/power-query/connectors/).
 
 ## <a name="create-a-new-data-source"></a>إنشاء مصدر بيانات جديد
 
@@ -44,7 +44,7 @@ ms.locfileid: "5267752"
    > [!div class="mx-imgBorder"]
    > ![مربع حوار تحرير الاستعلامات](media/data-manager-configure-edit-queries.png "مربع حوار تحرير الاستعلامات")
 
-1. يُمكنك أيضًا تحويل بياناتك. حدد كيانًا لتحريره أو تحويله. استخدم الخيارات الموجودة في نافذة Power Query لتطبيق عمليات التحويل. يتم سرد كل عملية نقل ضمن **الخطوات المطبقة**. كما يوفر Power Query العديد من خيارات التحويل التي تم إنشاؤها مسبقا. لمزيد من المعلومات، راجع [عمليات تحويل Power Query](https://docs.microsoft.com/power-query/power-query-what-is-power-query#transformations).
+1. يُمكنك أيضًا تحويل بياناتك. حدد كيانًا لتحريره أو تحويله. استخدم الخيارات الموجودة في نافذة Power Query لتطبيق عمليات التحويل. يتم سرد كل عملية نقل ضمن **الخطوات المطبقة**. كما يوفر Power Query العديد من خيارات التحويل التي تم إنشاؤها مسبقا. لمزيد من المعلومات، راجع [عمليات تحويل Power Query](/power-query/power-query-what-is-power-query#transformations).
 
 1. يُمكن إضافة كيانات إضافية لمصدر بياناتك عن طريق تحديد **الحصول على بيانات** في مربع حوار **تحرير الاستعلامات**.
 
@@ -59,7 +59,7 @@ ms.locfileid: "5267752"
 
 ## <a name="available-power-query-data-sources"></a>مصادر بيانات Power Query المتوفرة
 
-راجع [مرجع موصل Power Query](https://docs.microsoft.com/power-query/connectors/) للحصول على قائمة محدثة بالموصلات التي يمكنك تحديدها لاستيراد البيانات إلى Customer Insights. 
+راجع [مرجع موصل Power Query](/power-query/connectors/) للحصول على قائمة محدثة بالموصلات التي يمكنك تحديدها لاستيراد البيانات إلى Customer Insights. 
 
 تتوفر الموصلات التي تتضمن علامة اختيار في عمود **Customer Insights (تدفقات البيانات)** لإنشاء مصادر بيانات جديدة استنادًا إلى Power Query. راجع وثائق موصل معين لمعرفة المزيد حول متطلباته الأساسية وقيوده وتفاصيل أخرى.
 

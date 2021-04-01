@@ -6,15 +6,15 @@ ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: m-hartmann
-ms.author: mhart
-ms.reviewer: ameetj
+ms.author: ameetj
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 8a861d62bdfee6a3a82468fe1ab4a3fbbdad43d4
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 71881f7e1f9448fe0a7d6d92b8102b8b42de7c2a
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5270188"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598323"
 ---
 # <a name="use-models-based-on-azure-machine-learning-studio-classic"></a>استخدم النماذج استنادًا إلى استوديو التعلم الآلي من Azure (كلاسيكي)‬
 
@@ -37,7 +37,7 @@ ms.locfileid: "5270188"
 
 1. ابحث عن **مساحة عمل Machine Learning Studio** وحدد **إنشاء**.
 
-1. أدخل التفاصيل المطلوبة [لإنشاء مساحة العمل](https://docs.microsoft.com/azure/machine-learning/studio/create-workspace). اختر **طبقة تسعير خطة خدمة الويب** وفقًا لحجم البيانات التي تخطط لاستيرادها. للحصول على أفضل أداء، حدد **الموقع** الأقرب اليك من الناحية الجغرافية.
+1. أدخل التفاصيل المطلوبة [لإنشاء مساحة العمل](/azure/machine-learning/studio/create-workspace). اختر **طبقة تسعير خطة خدمة الويب** وفقًا لحجم البيانات التي تخطط لاستيرادها. للحصول على أفضل أداء، حدد **الموقع** الأقرب اليك من الناحية الجغرافية.
 
 1. وبعد إنشاء المورد، ستظهر لوحة معلومات مساحة عمل Machine Learning Studio. حدد **تشغيل Machine Learning Studio**.
 
@@ -65,7 +65,7 @@ ms.locfileid: "5270188"
 
    ![إعداد خدمة ويب تنبؤية](media/predictive-webservice-control.png)
 
-1. وبمجرد نجاح تجربة خدمة الويب التنبؤية، يمكنك نشرها للجدولة التلقائية. لجعل خدمة الويب تعمل مع Customer Insights، حدد **نشر خدمة الويب** > **معاينة نشر خدمة ويب [جديدة]**. [معرفة المزيد حول نشر خدمة الويب](https://docs.microsoft.com/azure/machine-learning/studio/deploy-a-machine-learning-web-service).
+1. وبمجرد نجاح تجربة خدمة الويب التنبؤية، يمكنك نشرها للجدولة التلقائية. لجعل خدمة الويب تعمل مع Customer Insights، حدد **نشر خدمة الويب** > **معاينة نشر خدمة ويب [جديدة]**. [معرفة المزيد حول نشر خدمة الويب](/azure/machine-learning/studio/deploy-a-machine-learning-web-service).
 
    ![نشر خدمة ويب تنبؤية](media/predictive-webservice-deploy.png)
 
@@ -116,7 +116,7 @@ ms.locfileid: "5270188"
 
 ![نموذج خسارة العملاء في Azure Machine Learning Studio](media/azure-machine-learning-model.png)
 
-كما أننا نقوم بتطبيق تقنية تسمى **أهمية ميزة التبادل**، وهي جانب مهم من تحسين النموذج. النماذج المضمنة لها تأثير بسيط للغاية على المعارف الدقيقة لأي ميزة محددة في التنبؤ النهائي. وتستخدم حاسبة أهمية الميزة خوارزمية مخصصة لحساب تأثير الميزات الفردية على النتيجة الخاصة بنموذج معين. تتم تسوية أهمية الميزة بين + 1 إلى-1. يعني التأثير السلبي أن الميزة المقابلة لها تأثير معاكس على النتيجة ويجب إزالتها من النموذج. يشير التأثير الإيجابي إلى أن الميزة تساهم بدرجة كبيرة في التنبؤ. ولا تعتبر هذه القيم معاملات ارتباط لأنها مقاييس مختلفة. للحصول علي مزيد من المعلومات، راجع [أهمية ميزة التبادل](https://docs.microsoft.com/azure/machine-learning/studio-module-reference/permutation-feature-importance).
+كما أننا نقوم بتطبيق تقنية تسمى **أهمية ميزة التبادل**، وهي جانب مهم من تحسين النموذج. النماذج المضمنة لها تأثير بسيط للغاية على المعارف الدقيقة لأي ميزة محددة في التنبؤ النهائي. وتستخدم حاسبة أهمية الميزة خوارزمية مخصصة لحساب تأثير الميزات الفردية على النتيجة الخاصة بنموذج معين. تتم تسوية أهمية الميزة بين + 1 إلى-1. يعني التأثير السلبي أن الميزة المقابلة لها تأثير معاكس على النتيجة ويجب إزالتها من النموذج. يشير التأثير الإيجابي إلى أن الميزة تساهم بدرجة كبيرة في التنبؤ. ولا تعتبر هذه القيم معاملات ارتباط لأنها مقاييس مختلفة. للحصول علي مزيد من المعلومات، راجع [أهمية ميزة التبادل](/azure/machine-learning/studio-module-reference/permutation-feature-importance).
 
 تتوفر [تجربة خسارة العملاء بالكامل في Azure AI Gallery](https://gallery.azure.ai/Experiment/Hotel-Churn-Predictive-Exp).
 
@@ -168,7 +168,7 @@ ms.locfileid: "5270188"
 
 ## <a name="integrate-custom-models"></a>دمج النماذج المخصصة
 
-لاستخدام هذه التنبؤات في Customer Insights، يتعين عليك **تصدير** التنبؤات مع معرفات العملاء. [قم بتصديرها إلى نفس موقع مساحة تخزين Azure Blob نفسها](https://docs.microsoft.com/azure/storage/common/storage-import-export-data-from-blobs) التي تقوم بتصدير البيانات المصدر إليها. يمكن جدولة خدمة ويب تنبؤية للتشغيل بانتظام وتحديث النقاط.
+لاستخدام هذه التنبؤات في Customer Insights، يتعين عليك **تصدير** التنبؤات مع معرفات العملاء. [قم بتصديرها إلى نفس موقع مساحة تخزين Azure Blob نفسها](/azure/storage/common/storage-import-export-data-from-blobs) التي تقوم بتصدير البيانات المصدر إليها. يمكن جدولة خدمة ويب تنبؤية للتشغيل بانتظام وتحديث النقاط.
 
 يمكن استخدام البيانات التي يقوم النموذج المخصص بإنشائها لتحسين بيانات العملاء بشكل أكبر. لمزيد من المعلومات، راجع [نماذج التعلم الآلي المخصصة](custom-models.md).
 

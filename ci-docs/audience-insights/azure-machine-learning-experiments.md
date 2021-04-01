@@ -6,15 +6,15 @@ ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: naravill
-ms.author: mhart
-ms.reviewer: m-hartmann
+ms.author: naravill
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c166015b92596da0c6097e3d25e89579a5186ce0
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: edd2cf488b52cef87b09b90336e48fdc7f470a68
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267890"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5597403"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>استخدام نماذج قائمة على التعلم الآلي من Azure
 
@@ -29,9 +29,9 @@ ms.locfileid: "5267890"
 
 ## <a name="set-up-azure-machine-learning-workspace"></a>إعداد مساحة عمل التعلم الآلي من Azure‬
 
-1. راجع [إنشاء مساحة عمل التعلم الآلي من Azure](https://docs.microsoft.com/azure/machine-learning/concept-workspace#-create-a-workspace) للحصول على خيارات مختلفة لإنشاء مساحة العمل. للحصول على أفضل أداء، قم بإنشاء مساحة العمل في منطقه Azure الأقرب جغرافيًا من بيئة Customer Insights.
+1. راجع [إنشاء مساحة عمل التعلم الآلي من Azure](/azure/machine-learning/concept-workspace#-create-a-workspace) للحصول على خيارات مختلفة لإنشاء مساحة العمل. للحصول على أفضل أداء، قم بإنشاء مساحة العمل في منطقه Azure الأقرب جغرافيًا من بيئة Customer Insights.
 
-1. انتقل إلى مساحة العمل من خلال [استوديو التعلم الآلي من Azure](https://ml.azure.com/). هناك الكثير من [الطرق للتفاعل](https://docs.microsoft.com/azure/machine-learning/concept-workspace#tools-for-workspace-interaction) مع مساحة عملك.
+1. انتقل إلى مساحة العمل من خلال [استوديو التعلم الآلي من Azure](https://ml.azure.com/). هناك الكثير من [الطرق للتفاعل](/azure/machine-learning/concept-workspace#tools-for-workspace-interaction) مع مساحة عملك.
 
 ## <a name="work-with-azure-machine-learning-designer"></a>العمل مع مصمم التعلم الآلي من Azure
 
@@ -39,13 +39,13 @@ ms.locfileid: "5267890"
    
 ## <a name="working-with-azure-machine-learning-sdk"></a>العمل مع SDK التعلم الآلي من Azure
 
-يستخدم علماء البيانات ومطورو الذكاء الاصطناعي [SDK‏‎ التعلم الآلي من Azure](https://docs.microsoft.com/python/api/overview/azure/ml/?view=azure-ml-py&preserve-view=true) لبناء سير عمل التعلم الآلي. في الوقت الحالي، لا يمكن دمج النماذج التي تم تدريبها باستخدام SDK مباشرةً مع Customer Insights. يلزم وجود تدفقات استدلال دُفعية تستهلك هذا النموذج للتكامل مع Customer Insights.
+يستخدم علماء البيانات ومطورو الذكاء الاصطناعي [SDK‏‎ التعلم الآلي من Azure](/python/api/overview/azure/ml/?preserve-view=true&view=azure-ml-py) لبناء سير عمل التعلم الآلي. في الوقت الحالي، لا يمكن دمج النماذج التي تم تدريبها باستخدام SDK مباشرةً مع Customer Insights. يلزم وجود تدفقات استدلال دُفعية تستهلك هذا النموذج للتكامل مع Customer Insights.
 
 ## <a name="batch-pipeline-requirements-to-integrate-with-customer-insights"></a>متطلبات تدفقات الاستدلال الدُفعية للتكامل مع Customer Insights
 
 ### <a name="dataset-configuration"></a>تكوين مجموعة البيانات
 
-تحتاج إلى إنشاء مجموعات بيانات لاستخدام بيانات الكيان من Customer Insights إلى تدفقات الاستدلال الدُفعية. يجب تسجيل مجموعات البيانات هذه في مساحة العمل. في الوقت الحالي، ندعم فقط [مجموعات البيانات الجدولية](https://docs.microsoft.com/azure/machine-learning/how-to-create-register-datasets#tabulardataset) بتنسيق csv. يجب تعيين معلمة لمجموعات البيانات التي تتطابق مع كيان البيانات كمعلمة تدفقات.
+تحتاج إلى إنشاء مجموعات بيانات لاستخدام بيانات الكيان من Customer Insights إلى تدفقات الاستدلال الدُفعية. يجب تسجيل مجموعات البيانات هذه في مساحة العمل. في الوقت الحالي، ندعم فقط [مجموعات البيانات الجدولية](/azure/machine-learning/how-to-create-register-datasets#tabulardataset) بتنسيق csv. يجب تعيين معلمة لمجموعات البيانات التي تتطابق مع كيان البيانات كمعلمة تدفقات.
    
 * معلمات مجموعة البيانات في المصمم
    
@@ -76,7 +76,7 @@ ms.locfileid: "5267890"
 
 ### <a name="import-pipeline-data-into-customer-insights"></a>استيراد بيانات التدفقات إلى Customer Insights
 
-* يوفر المصمم [الوحدة النمطية لتصدير البيانات](https://docs.microsoft.com/azure/machine-learning/algorithm-module-reference/export-data) التي تتيح لك تصدير إخراج التدفقات إلى مساحة تخزين Azure. في الوقت الحالي، يجب أن تستخدم الوحدة النمطية نوع متجر البيانات **مساحة تخزين Azure Blob** وتعيين معلمة **متجر البيانات** و **المسار** النسبي. يتجاوز Customer Insights المعلمتين أثناء تنفيذ التدفقات مع متجر بيانات ومسار يمكن للمنتج الوصول إليه.
+* يوفر المصمم [الوحدة النمطية لتصدير البيانات](/azure/machine-learning/algorithm-module-reference/export-data) التي تتيح لك تصدير إخراج التدفقات إلى مساحة تخزين Azure. في الوقت الحالي، يجب أن تستخدم الوحدة النمطية نوع متجر البيانات **مساحة تخزين Azure Blob** وتعيين معلمة **متجر البيانات** و **المسار** النسبي. يتجاوز Customer Insights المعلمتين أثناء تنفيذ التدفقات مع متجر بيانات ومسار يمكن للمنتج الوصول إليه.
    > [!div class="mx-imgBorder"]
    > ![تكوين الوحدة النمطية لتصدير البيانات](media/intelligence-designer-importdata.png "تكوين الوحدة النمطية لتصدير البيانات")
    

@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: eebbac1370a847869d98beaf70db49b809d762e7
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: c670b0065a2833a6dc311d9e86d2b351140382ce
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267706"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596483"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-gen2-account-with-an-azure-service-principal-for-audience-insights"></a>الاتصال بحساب Azure Data Lake Storage Gen2 بواسطة كيان خدمة Azure لرؤى الجمهور
 
@@ -23,7 +23,7 @@ ms.locfileid: "5267706"
 يمكنك استخدام كيان الخدمة من أجل [إضافة أو تحرير مجلد نموذج البيانات العامة كمصدر بيانات](connect-common-data-model.md) بشكل آمن أو [إنشاء بيئة جديدة أو تحديث بيئة موجودة](manage-environments.md#create-an-environment-in-an-existing-organization).
 
 > [!IMPORTANT]
-> - يجب أن يكون حساب التخزين Azure Data Lake Gen2 الذي ينوي استخدام كيان الخدمة [ممكّنًا لاستخدام مساحة الاسم الهرمية](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-namespace).
+> - يجب أن يكون حساب التخزين Azure Data Lake Gen2 الذي ينوي استخدام كيان الخدمة [ممكّنًا لاستخدام مساحة الاسم الهرمية](/azure/storage/blobs/data-lake-storage-namespace).
 > - تحتاج إلى أذونات المسؤول لاشتراكك في Azure لإنشاء كيان الخدمة.
 
 ## <a name="create-azure-service-principal-for-audience-insights"></a>إنشاء كيان خدمة Azure لرؤى الجمهور‬
@@ -48,7 +48,7 @@ ms.locfileid: "5267706"
 
 ### <a name="create-a-new-service-principal"></a>إنشاء كيان خدمة جديد
 
-1. ثبّت الإصدار الأخير من **Azure Active Directory PowerShell for Graph**. لمزيد من المعلومات، راجع [تثبيت Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2).
+1. ثبّت الإصدار الأخير من **Azure Active Directory PowerShell for Graph**. لمزيد من المعلومات، راجع [تثبيت Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
    - علي جهاز الكمبيوتر، حدد مفتاح Windows على لوحة المفاتيح وابحث عن **Windows PowerShell** و **تشغيل كمسؤول**.
    
    - في نافذة PowerShell التي تفتح، أدخل `Install-Module AzureAD`.

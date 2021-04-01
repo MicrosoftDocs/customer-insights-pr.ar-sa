@@ -2,19 +2,19 @@
 title: تثبيت واستخدام الوظيفة الإضافية لبطاقة عميل
 description: تثبيت وتكوين الوظيفة الإضافية لبطاقة عميل لـ Dynamics 365 Customer Insights
 ms.date: 01/20/2021
-ms.reviewer: philk
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: pkieffer
+ms.author: philk
 manager: shellyha
-ms.openlocfilehash: a6d5b49380ed129cf147698a16f5f3f597bf7fbc
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: f3c4a01f9ce7749eeee72f7901620dae7cb9b8d3
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5268028"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5597311"
 ---
 # <a name="customer-card-add-in-preview"></a>الوظيفة الإضافية لبطاقة عميل (معاينة)
 
