@@ -1,7 +1,7 @@
 ---
 title: استخدام مصادر بيانات لاستيعاب البيانات
 description: تعرف على كيفية استيراد البيانات من مصادر متعددة.
-ms.date: 11/03/2020
+ms.date: 04/12/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 780dc61a82d6ed9856a37dc8f164fa946d982bbe
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 0fc13d3ac0a5176637b6fe481dabe0b2aec11649
+ms.sourcegitcommit: d89b19b2a3497722b78362aeee688ae7e94915d9
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595931"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5887878"
 ---
 # <a name="data-sources-overview"></a>نظرة عامة مصادر البيانات
 
@@ -32,8 +32,15 @@ ms.locfileid: "5595931"
 - [من مجلد نموذج البيانات العامة](connect-common-data-model.md)
 - [من مخزن Common Data Service الخاص بك](connect-common-data-service-lake.md)
 
-> [!NOTE]
-> لا يمكنك إضافة بيانات من مصادر البيانات المحلية حتى الآن.
+## <a name="add-data-from-on-premises-data-sources"></a>إضافة البيانات من مصادر البيانات المحلية
+
+يتم دعم استيعاب البيانات من مصادر البيانات المحلية في Audience Insights استنادًا إلى تدفقات بيانات Power Platform. يمكن تمكين تدفقات البيانات في Customer Insights عن طريق [توفير عنوان URL لبيئة Microsoft Dataverse](manage-environments.md#create-an-environment-in-an-existing-organization) عند إعداد البيئة.
+
+ستستخدم مصادر البيانات التي تم إنشاؤها بعد ربط بيئة Dataverse بـ Customer Insights [تدفقات بيانات Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) بشكل افتراضي. تدعم تدفقات البيانات الاتصال المحلي باستخدام بوابات البيانات. قم بإزالة وإعادة إنشاء مصادر البيانات التي كانت موجودة قبل ربط بيئة Dataverse لاستخدام بوابات البيانات المحلية.
+
+ستظهر بوابات البيانات من بيئة Power BI أو Power Apps موجودة ويمكنك إعادة استخدامها في Customer Insights. تعرض صفحة مصادر البيانات ارتباطات للانتقال إلى بيئة Power Platform، حيث يمكنك عرض وتكوين بوابات البيانات المحلية.
+
+:::image type="content" source="media/data-sources-onpremises-gateways.png" alt-text="لقطة شاشة لصفحة مصادر البيانات تُظهر الارتباطات التي تشير إلى بيئة Power Platform.":::
 
 ## <a name="review-ingested-data"></a>مراجعة البيانات المستوعبة
 
@@ -65,7 +72,7 @@ ms.locfileid: "5595931"
 
 2. حدد علامة القطع الرأس المجاورة لمصدر البيانات الذي تريد تحديثه، وحدد **تحديث** من القائمة المنسدلة.
 
-3. تم تشغيل مصدر البيانات الآن للحصول على تحديث يدوي. سيؤدي تحديث مصدر البيانات إلى تحديث مخطط الكيان بالإضافة إلى البيانات الخاصة بكافة الكيانات المحددة في مصدر البيانات.
+3. تم تشغيل مصدر البيانات الآن للحصول على تحديث يدوي. سيؤدي تحديث مصدر البيانات إلى تحديث كل من مخطط الكيان والبيانات لجميع الكيانات المحددة في مصدر البيانات.
 
 4. حدد **إيقاف التحديث** إذا كنت تريد إلغاء تحديث موجود وسيعود مصدر البيانات إلى حالة التحديث الأخيرة.
 

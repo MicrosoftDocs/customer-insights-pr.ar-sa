@@ -1,7 +1,7 @@
 ---
 title: إثراء البيانات بواسطة خدمات إثراء البيانات من طرف ثالث HERE Technologies
 description: معلومات عامة حول خدمات إثراء البيانات من طرف ثالث HERE Technologies.
-ms.date: 12/10/2020
+ms.date: 04/09/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 8e8d6bfea4e0df54682501f60759c24c893444af
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 5d1f037377010153045c9255d2d01f98ebf1fdfd
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597725"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5896035"
 ---
 # <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>إثراء ملفات تعريف العملاء بواسطة HERE Technologies (معاينة)
 
@@ -26,35 +26,54 @@ ms.locfileid: "5597725"
 
 - لديك اشتراك نشط في HERE Technologies. للحصول على اشتراك، يمكنك [التسجيل هنا](https://developer.here.com/sign-up?utm_medium=referral&utm_source=Microsoft-Dynamics-CI&create=Freemium-Basic) أو [الاتصال بشركة HERE Technologies](https://developer.here.com/help?utm_medium=referral&utm_source=Microsoft-Dynamics-CI#how-can-we-help-you) مباشرةً. [اعرف المزيد حول إثراء الموقع من HERE Technologies.](https://developer.here.com/location-enrichment?cid=Dev-MicrosoftDynamics-DB-0-Dev-&utm_source=MicrosoftDynamics&utm_medium=referral&utm_campaign=Online_Dev_ReferralMicrosoft)
 
-- لديك مفتاح API لـ HERE Technologies.
+- يتوفر [اتصال](connections.md) HERE *أو* لديك أذونات [المسؤول](permissions.md#administrator) ومفتاح واجهة برمجة تطبيقات HERE Technologies.
 
-- لديك أذونات [المسؤول](permissions.md#administrator).
+## <a name="configure-the-enrichment"></a>تكوين الإثراء
 
-## <a name="configuration"></a>التكوين
+1. انتقل إلى **بيانات** > **إثراء**. 
 
-1. انتقل إلى **بيانات** > **إثراء**.
-
-1. حدد **إثراء بياناتي** على الإطار المتجانب HERE Technologies‬.
+1. حدد **إثراء بياناتي** في الإطار المتجانب HERE Technologies وحدد **الشروع في العمل**.
 
    > [!div class="mx-imgBorder"]
    > ![الإطار المتجانب HERE Technologies](media/HERE-tile.png "الإطار المتجانب HERE Technologies")
 
-1. أدخل **مفتاح HERE Technologies API** نشطًا. راجع وقدم موافقتك على **خصوصية البيانات والتوافق‬** من خلال تحديد خانة الاختيار **أوافق**. 
+1. حدد [اتصال](connections.md) من القائمة المنسدلة. اتصل بالمسؤول إذا لم يكن هناك اتصال متوفر. إذا كنت أحد المسؤول، يمكنك إنشاء اتصال بتحديد **إضافة اتصال**. اختر **HERE Technologies** من القائمة المنسدلة. 
 
-1. أكد الإدخالين عن طريق تحديد **اتصال بـ HERE**.
+1. حدد **الاتصال بـ HERE Technologies** لتأكيد التحديد.
 
-1.  حدد **إضافة بيانات** واختر **مجموعة بيانات العميل** التي ترغب في إثرائها بواسطة بيانات الموقع من HERE Technologies. يمكنك تحديد كيان **العميل** لإثراء جميع ملفات تعريف العملاء أو تحديد كيان شريحة لإثراء فقط ملفات تعريف العملاء الموجودة في تلك الشريحة.
+1.  حدد **التالي** واختر **مجموعة بيانات العميل** التي تريد إثراؤها باستخدام بيانات الموقع من HERE Technologies. يمكنك تحديد كيان **العميل** لإثراء جميع ملفات تعريف العملاء أو تحديد كيان شريحة لإثراء فقط ملفات تعريف العملاء الموجودة في تلك الشريحة.
 
     :::image type="content" source="media/enrichment-HERE-configuration-customer-data-set.png" alt-text="لقطة شاشة عند اختيار مجموعة بيانات العميل.":::
 
-1. اختر إذا كنت تريد تعيين الحقول إلى العنوان الرئيسي و/أو الثانوي. يمكنك تحديد تعيين الحقول للعنوانين (على سبيل المثال، عنوان المنزل وعنوان العمل) واعمل على إثراء ملفات التعريف للعنوانين على حدة. حدد **التالي**.
+1. اختر إذا كنت تريد تعيين الحقول إلى العنوان الرئيسي و/أو الثانوي. يمكنك تحديد تعيين حقل لكل من العناوين وإثراء ملفات التعريف لكلا العناوين بشكل منفصل. على سبيل المثال، إذا كان هناك المنزل وعنوان العمل. حدد **التالي**.
 
 1. حدد الحقول التي سيتم استخدامها من ملفات التعريف الموحدة للبحث عن بيانات الموقع المطابقة من تقنيات HERE يجب تعبئة الحقلين **الشارع 1** و **الرمز البريدي** للعنوان الرئيسي و/أو الثانوي المحدد.‬ للحصول على دقة مطابقة أعلى، يمكن إضافة المزيد من الحقول.
 
    > [!div class="mx-imgBorder"]
    > ![صفحة تكوين إثراء HERE Technologies](media/enrichment-HERE-configuration.png "صفحة تكوين إثراء HERE Technologies")
 
-1. حدد **تطبيق** لإكمال تعيين الحقول.
+1. حدد **التالي** لإكمال تعيين الحقل.
+
+1. قدم اسمًا لعملية الإثراء. 
+
+1. حدد **حفظ الإثراء** بعد مراجعة اختياراتك.
+
+## <a name="configure-the-connection-for-here-technologies"></a>تكوين الاتصال لـ HERE technologies 
+
+يلزم أن تكون المسؤول لتكوين الاتصالات. حدد **إضافة اتصال** عند تكوين عملية إثراء *أو* انتقل إلى **المسؤول** > **الاتصالات** وحدد **إعداد** في تجانب HERE Technologies.
+
+1. أدخل اسما للاتصال في مربع **اسم العرض**.
+
+1. قم بتوفير مفتاح واجهة برمجة تطبيقات صالح لـ HERE Technologies.
+
+1. راجع وقدم موافقتك على **خصوصية البيانات والتوافق‬** من خلال تحديد خانة الاختيار **أوافق**
+
+1. حدد **التحقق** للتحقق من التكوين.
+
+1. بعد إكمال التحقق، حدد **حفظ**.
+
+> [!div class="mx-imgBorder"]
+   > ![صفحة تكوين الاتصال بـ HERE technologies](media/enrichment-HERE-connection.png "صفحة تكوين الاتصال بـ HERE technologies")
 
 ## <a name="enrichment-results"></a>نتائج الإثراء
 

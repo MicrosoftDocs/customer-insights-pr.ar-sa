@@ -1,7 +1,7 @@
 ---
 title: إثراء ملفات تعريف العملاء الموحدة
 description: استخدم القدرات لإثراء بيانات العملاء.
-ms.date: 11/02/2020
+ms.date: 04/09/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 36e6f7f8fcd64fc2591e913910918b83bf27567b
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 10c338b89a6f9971912d05986c105cba1221b01b
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597679"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5895989"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>الإثراء لملفات تعريف العملاء (معاينة)
 
@@ -27,8 +27,8 @@ ms.locfileid: "5597679"
 
 في علامة التبويب **اكتشاف**، ستجد عمليات الإثراء التالية:
 
-- [العلامات التجارية](enrichment-microsoft-graph.md) مقدمة من Microsoft Graph
-- [الاهتمامات](enrichment-microsoft-graph.md) مقدمة من Microsoft Graph
+- [العلامات التجارية](enrichment-microsoft.md) الموفرة بواسطة Microsoft
+- [الاهتمامات](enrichment-microsoft.md) الموفرة بواسطة Microsoft
 - [بيانات الشركة](enrichment-leadspace.md) مقدمة من Leadspace
 - [الخصائص السكانية](enrichment-experian.md) تم توفيرها بواسطة Experian
 - [بيانات الموقع](enrichment-here.md) مقدمة من HERE Technologies
@@ -40,7 +40,7 @@ ms.locfileid: "5597679"
 
 انتقل إلى **‏‫عمليات الإثراء** للاطلاع على كل ‏‫عمليات الإثراء التي تم تكوينها. يتم تمثيل كل عملية من ‏‫عمليات الإثراء كصف يتضمن معلومات إضافية حول ‏‫عملية الإثراء.
 
-حدد ‏‫عملية إثراء للاطلاع على الخيارات المتوفرة. ويمكنك بدلاً من ذلك تحديد علامة القطع (...) على عنصر قائمة لمشاهدة الخيارات.
+حدد ‏‫عملية إثراء للاطلاع على الخيارات المتوفرة. يمكنك أيضًا تحديد علامة الحذف (...) على عنصر قائمة لمشاهدة الخيارات.
 
 :::image type="content" source="media/enrichment-hub-options-run.png" alt-text="خيارات إدارة عمليات الإثراء في قائمة عمليات الإثراء":::
 
@@ -52,5 +52,12 @@ ms.locfileid: "5597679"
 
 يمكنك تشغيل أو إلغاء تنشيط العديد من عمليات الإثراء مرة واحدة عن طريق تحديدها في القائمة. خيارات العرض والتحرير غير متاحة كإجراء مجمع ولا تعمل إلا على عملية إثراء واحدة في كل مرة.
 
+## <a name="enrichments-and-connections"></a>عمليات الإثراء والاتصالات
+
+يتم تكوين عمليات إثراء الأطراف الثالثة باستخدام [الاتصالات](connections.md)، التي يقوم المسؤول بإعدادها باستخدام بيانات الاعتماد ويقدم الموافقة على عمليات نقل البيانات. يمكن للمسؤولين والمساهمين استخدام الاتصال لتكوين عمليات الإثراء.  
+
+## <a name="multiple-enrichments-of-the-same-type"></a>عمليات إثراء متعددة من نفس النوع
+
+يتم تحديد الكيان الذي سيتم إثراءه أثناء تكوين المنشط، والذي يسمح لك بإثراء مجموعة فرعية فقط من ملفات التعريف الخاصة بك. بالنسبة إلى المثال، قم بإثراء البيانات فقط لشرائح معينة. يمكنك تكوين العديد من عمليات الإثراء من نفس النوع وإعادة استخدام نفس الاتصال. سيكون لبعض عمليات الإثراء حدود لعدد عمليات الإثراء من نفس النوع التي يمكن إنشاؤها. يمكن رؤية الحدود والاستخدام الحالي على صفحة **الإثراء**.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

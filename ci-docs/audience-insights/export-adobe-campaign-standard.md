@@ -1,7 +1,7 @@
 ---
 title: تصدير بيانات Customer Insights إلى Adobe Campaign Standard
 description: اعرف كيفية استخدام شرائح رؤى الجمهور في Adobe Campaign Standard.
-ms.date: 02/26/2021
+ms.date: 03/29/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: a5d0154c3d7c473dcba03fac0847bafcf97de2f2
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: b6c010d84119c2fa8b3ef99017c65f9939bf28c4
+ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596299"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5760265"
 ---
 # <a name="use-customer-insights-segments-in-adobe-campaign-standard-preview"></a>استخدام شرائح Customer Insights في Adobe Campaign Standard (إصدار أولي)
 
@@ -48,15 +48,21 @@ ms.locfileid: "5596299"
 
 ## <a name="export-your-target-audience"></a>تصدير الجمهور المستهدف
 
+### <a name="configure-a-connection"></a>تكوين اتصال
+
 ومن خلال تحديد الجمهور المستهدف، يمكننا تكوين التصدير من رؤى الجمهور إلى حساب Azure Blob Storage.
 
-1. في رؤى الجمهور، انتقل إلى **البيانات‏‎** > **وجهات التصدير‬**.
+1. من رؤى الجمهور، انتقل إلى **المسؤول** > **الاتصالات**.
 
-1. في الإطار المتجانب **حملة Adobe‎**، حدد **إعداد**.
+1. حدد **إضافة اتصال** واختر **حملة Adobe** لتكوين الاتصال أو حدد **إعداد** في تجانب **حملة Adobe**
 
    :::image type="content" source="media/adobe-campaign-standard-tile.png" alt-text="الإطار المتجانب لتكوين Adobe Campaign Standard.":::
 
-1. أدخل **اسمًا معروضًا** لوجهة التصدير الجديدة هذه، ثم أدخل **اسم الحساب** و **مفتاح الحساب** و **الحاوية** لحساب Azure Blob Storage الذي تريد تصدير الشريحة إليه.  
+1. اعط اتصالك اسمًا يمكن التعرف عليه في حقل **الاسم المعروض**. يصف الاسم ونوع الاتصال هذا الاتصال. ننصح باختيار اسم يوضح الغرض والهدف من الاتصال.
+
+1. اختر الشخص الذي يمكنه استخدام هذا الاتصال. إذا لم تتخذ أي إجراء، فإن الإعداد الافتراضي سيكونالمسؤولين. لمزيد من المعلومات، راجع [الأذونات اللازمة لتكوين تصدير](export-destinations.md#set-up-a-new-export).
+
+1. أدخل **اسم الحساب**، و **مفتاح الحساب**، و **الحاوية** لحساب تخزين Azure Blob حيث تريد تصدير الشريحة إليه.  
       
    :::image type="content" source="media/azure-blob-configuration.png" alt-text="لقطة شاشة لتكوين حساب التخزين. "::: 
 
@@ -64,7 +70,17 @@ ms.locfileid: "5596299"
 
    - لمعرفة كيفية إنشاء حاوية، راجع [إنشاء حاوية](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
 
-1. حدد **التالي**.
+1. حدد **حفظ** لإكمال الاتصال.
+
+### <a name="configure-an-export"></a>تكوين تصدير
+
+يمكنك تكوين هذا التصدير إذا كان لديك حق الوصول إلى اتصال من هذا النوع. لمزيد من المعلومات، راجع [الأذونات اللازمة لتكوين تصدير](export-destinations.md#set-up-a-new-export).
+
+1. انتقل إلى **البيانات** > **التصديرات**.
+
+1. لإنشاء عملية تصدير جديدة، حدد **إضافة تصدير**.
+
+1. في حقل **الاتصال للتصدير**، اختر اتصالاً من قسم حملة Adobe. إذا لم تشاهد اسم المقطع هذا، لن تكون هناك اتصالات من هذا النوع متوفرة لك.
 
 1. اختر الشريحة التي تريد تصديرها. في هذا المثال، هي **ChurnProneCustomers**.
 
@@ -83,11 +99,9 @@ ms.locfileid: "5596299"
 
 1. حدد **حفظ**.
 
-بعد حفظ وجهة التصدير، يمكك العثور عليه في **المسؤول** > **التصديرات‬** > **وجهات التصدير الخاصة بي‬**.
+بعد حفظ وجهة التصدير، تجدها في **البيانات** > **عمليات التصدير**.
 
-:::image type="content" source="media/export-destination-adobe-campaign-standard.png" alt-text="لقطة شاشة مع قائمة تصديرات وعينة شريحة مميزة.":::
-
-يمكنك الآن [تصدير الشريحة عند الطلب](export-destinations.md#export-data-on-demand). سيعمل التصدير أيضًا مع كل [تحديث مجدول](system.md).
+يمكنك الآن [تصدير الشريحة عند الطلب](export-destinations.md#run-exports-on-demand). سيعمل التصدير أيضًا مع كل [تحديث مجدول](system.md).
 
 > [!NOTE]
 > تأكد من أن عدد السجلات في الشريحة المصدّرة هو ضمن الحد المسموح به في ترخيص Adobe Campaign Standard.

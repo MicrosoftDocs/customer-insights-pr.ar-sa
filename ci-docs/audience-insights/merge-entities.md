@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 737c593353878a5e322488d00de5dc5db5befda9
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 4ad06a0baf57e612fc0e0214dfd23d28e7d2b6be
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597817"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5896495"
 ---
 # <a name="merge-entities"></a>دمج الكيانات
 
@@ -83,7 +83,7 @@ ms.locfileid: "5597817"
 
 ## <a name="next-step"></a>الخطوة التالية
 
-قم بتكوين [الأنشطة](activities.md)، [‏‫الإثراء‬](enrichment-microsoft-graph.md)، أو [العلاقات](relationships.md) لمزيد من الرؤى حول عملائك.
+قم بتكوين [الأنشطة](activities.md)، [‏‫الإثراء‬](enrichment-hub.md)، أو [العلاقات](relationships.md) لمزيد من الرؤى حول عملائك.
 
 إذا كنت قد قمت بالفعل بتكوين الأنشطة أو الإثراء أو العلاقات أو إذا قمت بتحديد الشرائح، فإنه ستتم معالجتها تلقائيًا لاستخدام أحدث بيانات العميل.
 

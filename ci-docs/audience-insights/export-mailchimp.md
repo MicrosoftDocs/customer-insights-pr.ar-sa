@@ -1,7 +1,7 @@
 ---
 title: تصدير بيانات Customer Insights إلى Mailchimp
-description: اعرف كيفية تكوين الاتصال بـ Mailchimp.
-ms.date: 10/26/2020
+description: تعرف على كيفية تهيئة الاتصال والتصدير إلى Mailchimp.
+ms.date: 03/03/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,71 +9,78 @@ ms.topic: how-to
 author: phkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 9f86616731c3cc3d26370727103ea9c5d4288c8d
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: b94a8e8b6bb867ca04a64007d592b22fbd700618
+ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5598185"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5759862"
 ---
-# <a name="connector-for-mailchimp-preview"></a>موصل Mailchimp (معاينة)
+# <a name="export-segment-lists-to-mailchimp-preview"></a>تصدير قوائم الشرائح إلى Mailchimp (إصدار أولي)
 
 يمكنك تصدير شرائح من ملفات تعريف العملاء الموحدة إلى Mailchimp لإنشاء رسائل إخبارية وحملات بواسطة البريد الإلكتروني.
 
-## <a name="prerequisites"></a>المتطلبات الأساسية
+## <a name="prerequisites-for-connection"></a>المتطلبات الأساسية للاتصال
 
 -   لديك [حساب Mailchimp](https://mailchimp.com/) وبيانات اعتماد مسؤول مطابقة.
 -   هناك شرائح جمهور موجودة في Mailchimp والمعرفات المناظرة. لمزيد من المعلومات، راجع [شرائح جمهور Mailchimp](https://mailchimp.com/help/create-audience/).
 -   لقد قمت [بتكوين الشرائح](segments.md)
 -   تحتوي ملفات تعريف العملاء الموحدة في الشرائح المصدّرة على حقل يمثل عنوان البريد الإلكتروني.
 
-## <a name="connect-to-mailchimp"></a>الاتصال بـ Mailchimp
+## <a name="known-limitations"></a>القيود المعروفة
 
-1. انتقل إلى **المسؤول** > **وجهات التصدير**.
+- حتى مليون من ملفات التعريف لكل تصدير إلى Mailchimp.
+- يقتصر التصدير إلى Mailchimp على الشرائح.
+- قد يستغرق تصدير الشرائح التي يصل حجم ملفاتها إلى 1 مليون ملف تعريف ما يصل إلى ثلاث ساعات. 
+- يتوقف عدد ملفات التعريف التي يمكنك تصديرها إلى Mailchimp على العقد مع Mailchimp، وهذا العدد مقيد بالعقد.
 
-1. أسفل **Mailchimp**، حدد **إعداد**.
+## <a name="set-up-connection-to-mailchimp"></a>إعداد الاتصال بـ Mailchimp
 
-1. في حقل **الاسم المعروض**، أدخل اسمًا سهل التمييز لوجهة التصدير.
+1. انتقل إلى **المسؤول** > **الاتصالات**.
+
+1. حدد **إضافة اتصال** واختر **Autopilot** لتكوين الاتصال.
+
+1. اعط اتصالك اسمًا يمكن التعرف عليه في حقل **الاسم المعروض**. يصف الاسم ونوع الاتصال هذا الاتصال. ننصح باختيار اسم يوضح الغرض والهدف من الاتصال.
+
+1. اختر الشخص الذي يمكنه استخدام هذا الاتصال. إذا لم تتخذ أي إجراء، فإن الإعداد الافتراضي سيكونالمسؤولين. لمزيد من المعلومات، راجع [السماح للمساهمين باستخدام اتصال للتصديرات](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. حدد **أوافق** لتأكيد **خصوصية البيانات والتوافق‬**.
 
-1. أدخل **[معرف جمهور Mailchimp](https://mailchimp.com/help/find-audience-id/)** وحدد **اتصال** لبدء الاتصال بـ Mailchimp.
+1. حدد **الاتصال** لبدء الاتصال بـ Mailchimp.
 
 1. حدد **المصادقة مع Mailchimp** وقد بيانات اعتماد Mailchimp.
 
 1. حدد **إضافة نفسك كمستخدم تصدير** ووفر بيانات اعتماد Customer Insights.
 
-   :::image type="content" source="media/export-connect-mailchimp.png" alt-text="لقطة شاشة التصدير لاتصال Mailchimp":::
-
-1. حدد **التالي** لتكوين التصدير.
+1. حدد **حفظ** لإكمال الاتصال. 
 
 ## <a name="configure-the-connector"></a>تكوين الموصل
 
-1. في القسم **مطابقة البيانات**، في حقل **البريد الإلكتروني**، حدد الحقل في ملف تعريف العميل الموحد الذي يمثل عنوان البريد الإلكتروني للعميل. 
+يمكنك تكوين هذا التصدير إذا كان لديك حق الوصول إلى اتصال من هذا النوع. لمزيد من المعلومات، راجع [الأذونات اللازمة لتكوين تصدير](export-destinations.md#set-up-a-new-export).
 
-1. بشكل اختياري، يمكنك تصدير **الاسم الأول** و **اسم العائلة** كحقول إضافية لإنشاء المزيد من رسائل البريد الإلكتروني المخصصة. حدد **إضافة سمة** لتعيين هذه الحقول.
+1. انتقل إلى **البيانات**> **التصديرات**.
+
+1. لإنشاء اتصال جديد، حدد **إضافة وجهة**.
+
+1. في حقل **الاتصال للتصدير**، اختر اتصالاً من قسم Mailchimp. إذا لم تشاهد اسم المقطع هذا، لن تكون هناك اتصالات من هذا النوع متوفرة لك.
+
+1. أدخل **[معرف جمهور Mailchimp](https://mailchimp.com/help/find-audience-id/)**
+
+3. في القسم **مطابقة البيانات**، في حقل **البريد الإلكتروني**، حدد الحقل في ملف تعريف العميل الموحد الذي يمثل عنوان البريد الإلكتروني للعميل. 
+
+1. بشكل اختياري، يمكنك تصدير **الاسم الأول** و **اسم العائلة** لإنشاء المزيد من رسائل البريد الإلكتروني المخصصة. حدد **إضافة سمة** لتعيين هذه الحقول.
 
 1. حدد الشرائح التي تريد تصديرها. يمكنك تصدير ما يصل إلى مليون من ملفات تعريف العملاء إلى Mailchimp.
 
-   :::image type="content" source="media/export-segments-mailchimp.png" alt-text="حدد الحقول والشرائح لتصديرها إلى Mailchimp":::
-
 1. حدد **حفظ**.
 
-## <a name="export-the-data"></a>تصدير البيانات
+لا تعمل عملية التصدير التي يتم حفظها على التصدير في الحال.
 
-يمكنك [تصدير البيانات عند الطلب](export-destinations.md). سيعمل التصدير أيضًا مع كل [تحديث مجدول](system.md#schedule-tab). في Mailchimp، يمكنك الآن البحث عن الشرائح أسفل [شرائح جمهور Mailchimp](https://mailchimp.com/help/create-audience/).
-
-## <a name="known-limitations"></a>القيود المعروفة
-
-- حتى مليون من ملفات التعريف لكل تصدير إلى Mailchimp.
-- يقتصر التصدير إلى Mailchimp على الشرائح.
-- قد تستغرق عملية تصدير الشرائح التي تتضمن ما يصل إلى مليون ملف تعريف بشكل إجمالي ثلاث ساعات كحدٍ أقصى نتيجة للقيود من جانب الموفر. 
-- يتوقف عدد ملفات التعريف التي يمكنك تصديرها إلى Mailchimp على العقد مع Mailchimp، وهذا العدد مقيد بالعقد.
+يتم تشغيل عملية التصدير مع كل [تحديث مجدول](system.md#schedule-tab). يمكنك أيضًا [تصدير البيانات عند الطلب](export-destinations.md#run-exports-on-demand). 
 
 ## <a name="data-privacy-and-compliance"></a>خصوصية البيانات والتوافق
 
 عند تمكين Dynamics 365 Customer Insights لإرسال البيانات إلى Mailchimp، تسمح أنت بنقل البيانات خارج حدود الامتثال في Dynamics 365 Customer Insights، بما في ذلك البيانات الحساسة على الأرجح مثل البيانات الشخصية. ستقوم شركة Microsoft بنقل هذه البيانات وفقًا لتعليماتك، ولكنك مسؤول عن ضمان قيام Mailchimp بتلبية أي التزامات تتعلق بالخصوصية أو الأمان قد تكون لديك. لمزيد من المعلومات، راجع [بيان خصوصية Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
 بإمكان مسؤول Dynamics 365 Customer Insights إزالة وجهة التصدير هذه في أي وقت لإيقاف استخدام هذه الوظيفة.
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

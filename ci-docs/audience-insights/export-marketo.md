@@ -1,7 +1,7 @@
 ---
 title: تصدير بيانات Customer Insights إلى Marketo
-description: اعرف كيفية تكوين الاتصال بـ Marketo.
-ms.date: 11/12/2020
+description: تعرف على كيفية تهيئة الاتصال والتصدير إلى Marketo.
+ms.date: 03/03/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,59 +9,23 @@ ms.topic: how-to
 author: phkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 74d19a0448123904210c26f7b8760d00296c9cfd
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 01290d5fae7af1737b73373d75e334ae1ed67d37
+ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597955"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5759805"
 ---
-# <a name="connector-for-marketo-preview"></a>موصل Marketo (معاينة)
+# <a name="export-segments-to-marketo-preview"></a>تصدير شرائح إلى Marketo (إصدار أولي)
 
 يمكنك تصدير الشرائح ملفات تعريف العملاء الموحدة لإنشاء الحملات وتقديم تسويق عبر البريد الإلكتروني واستخدام مجموعات محددة من العملاء باستخدام Marketo.
 
-## <a name="prerequisites"></a>المتطلبات الأساسية
+## <a name="prerequisites-for-connection"></a>المتطلبات الأساسية للاتصال
 
 -   لديك [حساب Marketo](https://login.marketo.com/) وبيانات اعتماد مسؤول مطابقة.
 -   هناك قوائم موجودة في Marketo والمعرفات المناظرة. لمزيد من المعلومات، راجع [قوائم Marketo](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists).
 -   لقد قمت [بتكوين الشرائح](segments.md).
 -   تحتوي ملفات تعريف العملاء الموحدة في الشرائح المصدّرة على حقل يمثل عنوان البريد الإلكتروني.
-
-## <a name="connect-to-marketo"></a>الاتصال بـ Marketo
-
-1. انتقل إلى **المسؤول** > **وجهات التصدير**.
-
-1. أسفل **Marketo**، حدد **إعداد**.
-
-1. في حقل **الاسم المعروض**، أدخل اسمًا سهل التمييز لوجهة التصدير.
-
-1. أدخل **[معرف عميل Marketo، وسر العميل واسم مضيف نقطة نهاية REST](https://developers.marketo.com/rest-api/authentication/)**.
-
-1. أدخل **[معرف قائمة Marketo](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)** 
-
-1. حدد **أوافق** لتأكيد **خصوصية البيانات والتوافق‬** وحدد **اتصال** لتهيئة الاتصال بـ Marketo.
-
-1. حدد **إضافة نفسك كمستخدم تصدير** ووفر بيانات اعتماد Customer Insights.
-
-   :::image type="content" source="media/export-connect-marketo.png" alt-text="لقطة شاشة التصدير لاتصال Marketo":::
-
-1. حدد **التالي** لتكوين التصدير.
-
-## <a name="configure-the-connector"></a>تكوين الموصل
-
-1. في القسم **مطابقة البيانات**، في حقل **البريد الإلكتروني**، حدد الحقل في ملف تعريف العميل الموحد الذي يمثل عنوان البريد الإلكتروني للعميل. 
-
-1. بشكل اختياري، يمكنك تصدير **الاسم الأول** و **اسم العائلة** و **المدينة** و **الولاية** و **البلد/المنطقة** كحقول إضافية لإنشاء المزيد من رسائل البريد الإلكتروني المخصصة. حدد **إضافة سمة** لتعيين هذه الحقول.
-
-1. حدد الشرائح التي تريد تصديرها. يمكنك تصدير ما يصل إلى مليون من ملفات تعريف العملاء إلى Marketo.
-
-   :::image type="content" source="media/export-segment-marketo.png" alt-text="حدد الحقول والشرائح لتصديرها إلى Marketo":::
-
-1. حدد **حفظ**.
-
-## <a name="export-the-data"></a>تصدير البيانات
-
-يمكنك [تصدير البيانات عند الطلب](export-destinations.md). سيعمل التصدير أيضًا مع كل [تحديث مجدول](system.md#schedule-tab). في Marketo، يمكنك الآن البحث عن الشرائح أسفل [قوائم Marketo](ttps://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists).
 
 ## <a name="known-limitations"></a>القيود المعروفة
 
@@ -69,6 +33,49 @@ ms.locfileid: "5597955"
 - يقتصر التصدير إلى Marketo على الشرائح.
 - تستغرق عملية تصدير الشرائح التي تتضمن مليون ملف تعريف بشكل إجمالي حتى 3 ساعات. 
 - يتوقف عدد ملفات التعريف التي يمكنك تصديرها إلى Marketo على العقد مع Marketo، وهذا العدد مقيد بالعقد.
+
+## <a name="set-up-connection-to-marketo"></a>إعداد الاتصال بـ Marketo
+
+1. انتقل إلى **المسؤول** > **الاتصالات**.
+
+1. حدد **إضافة اتصال** واختر **Marketo** لتكوين الاتصال.
+
+1. اعط اتصالك اسمًا يمكن التعرف عليه في حقل **الاسم المعروض**. يصف الاسم ونوع الاتصال هذا الاتصال. ننصح باختيار اسم يوضح الغرض والهدف من الاتصال.
+
+1. اختر الشخص الذي يمكنه استخدام هذا الاتصال. إذا لم تتخذ أي إجراء، فإن الإعداد الافتراضي سيكونالمسؤولين. لمزيد من المعلومات، راجع [السماح للمساهمين باستخدام اتصال للتصديرات](connections.md#allow-contributors-to-use-a-connection-for-exports).
+
+1. أدخل **[معرف عميل Marketo، وسر العميل واسم مضيف نقطة نهاية REST](https://developers.marketo.com/rest-api/authentication/)**.
+
+1. حدد **أوافق** لتأكيد **خصوصية البيانات والتوافق‬** وحدد **اتصال** لتهيئة الاتصال بـ Marketo.
+
+1. حدد **إضافة نفسك كمستخدم تصدير** ووفر بيانات اعتماد Customer Insights.
+
+1. حدد **حفظ** لإكمال الاتصال.
+
+## <a name="configure-an-export"></a>تكوين تصدير
+
+يمكنك تكوين هذا التصدير إذا كان لديك حق الوصول إلى اتصال من هذا النوع. لمزيد من المعلومات، راجع [الأذونات اللازمة لتكوين تصدير](export-destinations.md#set-up-a-new-export).
+
+1. انتقل إلى **البيانات** > **التصديرات**.
+
+1. لإنشاء اتصال جديد، حدد **إضافة وجهة**.
+
+1. في حقل **الاتصال للتصدير**، اختر اتصالاً من قسم Marketo. إذا لم تشاهد اسم المقطع هذا، لن تكون هناك اتصالات من هذا النوع متوفرة لك.
+
+1. أدخل **[معرف قائمة Marketo](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)** 
+
+1. في القسم **مطابقة البيانات**، في حقل **البريد الإلكتروني**، حدد الحقل في ملف تعريف العميل الموحد الذي يمثل عنوان البريد الإلكتروني للعميل. 
+
+1. بشكل اختياري، يمكنك تصدير **الاسم الأول**، و **اسم العائلة**، و **المدينة**، و **الحالة**، و **البلد/المنطقة** لإنشاء المزيد من رسائل البريد الإلكتروني المخصصة. حدد **إضافة سمة** لتعيين هذه الحقول.
+
+1. حدد الشرائح التي تريد تصديرها. يمكنك تصدير ما يصل إلى مليون من ملفات تعريف العملاء إلى Marketo.
+
+1. حدد **حفظ**.
+
+لا تعمل عملية التصدير التي يتم حفظها على التصدير في الحال.
+
+يتم تشغيل عملية التصدير مع كل [تحديث مجدول](system.md#schedule-tab). يمكنك أيضًا [تصدير البيانات عند الطلب](export-destinations.md#run-exports-on-demand). في Marketo، يمكنك الآن البحث عن الشرائح أسفل [قوائم Marketo](ttps://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists).
+
 
 ## <a name="data-privacy-and-compliance"></a>خصوصية البيانات والتوافق
 
