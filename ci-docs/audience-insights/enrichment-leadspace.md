@@ -1,7 +1,7 @@
 ---
 title: إثراء ملفات تعريف الشركات بواسطة خدمات إثراء البيانات من طرف ثالث Leadspace‬
 description: معلومات عامة حول خدمات إثراء البيانات من طرف ثالث Leadspace.
-ms.date: 11/24/2020
+ms.date: 04/09/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,63 +9,84 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 41c56aece043c2d7658fd2655713e1e98775edec
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: ccf4f661ecffb281556a4545b1f26ee809c697cd
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597633"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5895897"
 ---
-# <a name="enrichment-of-company-profiles-with-leadspace-preview"></a><span data-ttu-id="decf9-103">إثراء ملفات تعريف الشركات من خلال Leadspace (معاينة)</span><span class="sxs-lookup"><span data-stu-id="decf9-103">Enrichment of company profiles with Leadspace (preview)</span></span>
+# <a name="enrichment-of-company-profiles-with-leadspace-preview"></a><span data-ttu-id="b0a4f-103">إثراء ملفات تعريف الشركات من خلال Leadspace (معاينة)</span><span class="sxs-lookup"><span data-stu-id="b0a4f-103">Enrichment of company profiles with Leadspace (preview)</span></span>
 
-<span data-ttu-id="decf9-104">Leadspace هي شركة مختصة في علوم البيانات توفر نظامًا أساسيًا لبيانات العميل من عمل لعمل.</span><span class="sxs-lookup"><span data-stu-id="decf9-104">Leadspace is a data science company that provides a B2B Customer Data Platform.</span></span> <span data-ttu-id="decf9-105">وهي تمكن العملاء من خلال ملفات تعريف العملاء الموحدة للشركات من إثراء بياناتهم.</span><span class="sxs-lookup"><span data-stu-id="decf9-105">It enables customers with unified customer profiles for companies to enrich their data.</span></span> <span data-ttu-id="decf9-106">يتضمن الإثراء سمات إضافية مثل حجم الشركة والموقع والصناعة والمزيد.</span><span class="sxs-lookup"><span data-stu-id="decf9-106">Enrichments include additional attributes such as company size, location, industry, and more.</span></span>
+<span data-ttu-id="b0a4f-104">Leadspace هي شركة مختصة في علوم البيانات توفر نظامًا أساسيًا لبيانات العميل من عمل لعمل.</span><span class="sxs-lookup"><span data-stu-id="b0a4f-104">Leadspace is a data science company that provides a B2B Customer Data Platform.</span></span> <span data-ttu-id="b0a4f-105">وهي تمكن العملاء من خلال ملفات تعريف العملاء الموحدة للشركات من إثراء بياناتهم.</span><span class="sxs-lookup"><span data-stu-id="b0a4f-105">It enables customers with unified customer profiles for companies to enrich their data.</span></span> <span data-ttu-id="b0a4f-106">تشمل عمليات الإثراء المزيد من السمات مثل حجم الشركة والموقع والصناعة والمزيد.</span><span class="sxs-lookup"><span data-stu-id="b0a4f-106">Enrichments include more attributes such as company size, location, industry, and more.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="decf9-107">المتطلبات الأساسية</span><span class="sxs-lookup"><span data-stu-id="decf9-107">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="b0a4f-107">المتطلبات الأساسية</span><span class="sxs-lookup"><span data-stu-id="b0a4f-107">Prerequisites</span></span>
 
-<span data-ttu-id="decf9-108">لتكوين Leadspace، يجب استيفاء المتطلبات الأساسية التالية:</span><span class="sxs-lookup"><span data-stu-id="decf9-108">To configure Leadspace, the following prerequisites must be met:</span></span>
+<span data-ttu-id="b0a4f-108">لتكوين Leadspace، يجب استيفاء المتطلبات الأساسية التالية:</span><span class="sxs-lookup"><span data-stu-id="b0a4f-108">To configure Leadspace, the following prerequisites must be met:</span></span>
 
-- <span data-ttu-id="decf9-109">لديك ترخيص Leadspace نشط و"المفتاح الدائم" (يشار اليه باسم **الرمز المميز لـ Leadspace**).</span><span class="sxs-lookup"><span data-stu-id="decf9-109">You have an active Leadspace license and the “perpetual key” (referred to as **Leadspace token**).</span></span> <span data-ttu-id="decf9-110">تواصل مباشرةً مع [Leadspace](https://www.leadspace.com/products/leadspace-on-demand/) للحصول على تفاصيل حول منتجاتهم.</span><span class="sxs-lookup"><span data-stu-id="decf9-110">Contact directly [Leadspace](https://www.leadspace.com/products/leadspace-on-demand/) for details about their product.</span></span>
-- <span data-ttu-id="decf9-111">لديك أذونات [المسؤول](permissions.md#administrator).</span><span class="sxs-lookup"><span data-stu-id="decf9-111">You have [Administrator](permissions.md#administrator) permissions.</span></span>
-- <span data-ttu-id="decf9-112">لديك [ملفات تعريف عملاء موحدة](customer-profiles.md) للشركات.</span><span class="sxs-lookup"><span data-stu-id="decf9-112">You have [unified customer profiles](customer-profiles.md) for companies.</span></span>
+- <span data-ttu-id="b0a4f-109">لديك ترخيص Leadspace نشط.</span><span class="sxs-lookup"><span data-stu-id="b0a4f-109">You have an active Leadspace license.</span></span>
+- <span data-ttu-id="b0a4f-110">لديك [ملفات تعريف عملاء موحدة](customer-profiles.md) للشركات.</span><span class="sxs-lookup"><span data-stu-id="b0a4f-110">You have [unified customer profiles](customer-profiles.md) for companies.</span></span>
+- <span data-ttu-id="b0a4f-111">تم بالفعل تكوين اتصال Leadspace بواسطة مسؤول أو لديك أذونات [المسؤول](permissions.md#administrator) و "المفتاح الدائم" (المشار إليه بـ **رمز Leadspace المميز**).</span><span class="sxs-lookup"><span data-stu-id="b0a4f-111">A Leadspace connection has already been configured by an administrator or you have [administrator](permissions.md#administrator) permissions and the “perpetual key” (referred to as **Leadspace token**).</span></span> <span data-ttu-id="b0a4f-112">اتصل بـ [Leadspace](https://www.leadspace.com/products/leadspace-on-demand/) مباشرةً للاطلاع على تفاصيل حول منتجها.</span><span class="sxs-lookup"><span data-stu-id="b0a4f-112">Contact [Leadspace](https://www.leadspace.com/products/leadspace-on-demand/) directly for details about their product.</span></span>
 
-## <a name="configuration"></a><span data-ttu-id="decf9-113">التكوين</span><span class="sxs-lookup"><span data-stu-id="decf9-113">Configuration</span></span>
+## <a name="configure-the-enrichment"></a><span data-ttu-id="b0a4f-113">تكوين الإثراء</span><span class="sxs-lookup"><span data-stu-id="b0a4f-113">Configure the enrichment</span></span>
 
-1. <span data-ttu-id="decf9-114">في رؤى الجمهور، انتقل إلى **البيانات‏‎** > **الإثراء**.</span><span class="sxs-lookup"><span data-stu-id="decf9-114">In audience insights, go to **Data** > **Enrichment**.</span></span>
+1. <span data-ttu-id="b0a4f-114">في رؤى الجمهور، انتقل إلى **البيانات‏‎** > **الإثراء**.</span><span class="sxs-lookup"><span data-stu-id="b0a4f-114">In audience insights, go to **Data** > **Enrichment**.</span></span>
 
-1. <span data-ttu-id="decf9-115">حدد **إثراء بياناتي** على تجانب Leadspace.</span><span class="sxs-lookup"><span data-stu-id="decf9-115">Select **Enrich my data** on the Leadspace tile.</span></span>
+1. <span data-ttu-id="b0a4f-115">حدد **إثراء بياناتي** في الإطار المتجانب Leadspace وحدد **الشروع في العمل**.</span><span class="sxs-lookup"><span data-stu-id="b0a4f-115">Select **Enrich my data** on the Leadspace tile and select **Get started**.</span></span>
 
    :::image type="content" source="media/leadspace-tile.png" alt-text="لقطة شاشة للإطار المتجانب Leadspace.":::
 
-1. <span data-ttu-id="decf9-117">حدد **الشروع في العمل**، ثم أدخل **الرمز المميز لـ Leadspace** (المفتاح الدائم).</span><span class="sxs-lookup"><span data-stu-id="decf9-117">Select **Get Started** and then enter an active **Leadspace token** (perpetual key).</span></span> <span data-ttu-id="decf9-118">راجع وقدم موافقتك على **خصوصية البيانات والتوافق‬** من خلال تحديد خانة الاختيار **أوافق**.</span><span class="sxs-lookup"><span data-stu-id="decf9-118">Review and provide your consent for **Data privacy and compliance** by selecting the **I agree** checkbox.</span></span> <span data-ttu-id="decf9-119">أكد الإدخالين عن طريق تحديد **اتصال بـ Leadspace‎**.</span><span class="sxs-lookup"><span data-stu-id="decf9-119">Confirm both inputs by selecting **Connect to Leadspace**.</span></span>
+1. <span data-ttu-id="b0a4f-117">حدد [اتصال](connections.md) من القائمة المنسدلة.</span><span class="sxs-lookup"><span data-stu-id="b0a4f-117">Select a [connection](connections.md) from the drop-down.</span></span> <span data-ttu-id="b0a4f-118">اتصل بالمسؤول إذا لم يكن هناك اتصال متوفر.</span><span class="sxs-lookup"><span data-stu-id="b0a4f-118">Contact an administrator if no connection is available.</span></span> <span data-ttu-id="b0a4f-119">إذا كنت أحد المسؤول، يمكنك إنشاء اتصال بتحديد **إضافة اتصال** واختيار **Leadspace**.</span><span class="sxs-lookup"><span data-stu-id="b0a4f-119">If you are an administrator, you can create a connection by selecting **Add connection** and choosing **Leadspace**.</span></span> 
 
-1. <span data-ttu-id="decf9-120">حدد **تعيين البيانات** واختر مجموعة بيانات العميل التي ترغب في إثرائها بواسطة بيانات الشركة من Leadspace.</span><span class="sxs-lookup"><span data-stu-id="decf9-120">Select **Map data** and choose the data set you want to enrich with company data from Leadspace.</span></span> <span data-ttu-id="decf9-121">يمكنك تحديد كيان *العميل* لإثراء جميع ملفات تعريف العملاء أو تحديد كيان شريحة لإثراء فقط ملفات تعريف العملاء الموجودة في تلك الشريحة.</span><span class="sxs-lookup"><span data-stu-id="decf9-121">You can select the *Customer* entity to enrich all your customer profiles or select a segment entity to enrich only customer profiles contained in that segment.</span></span>
+1. <span data-ttu-id="b0a4f-120">حدد **الاتصال بـ Leadspace** لتأكيد الاتصال.</span><span class="sxs-lookup"><span data-stu-id="b0a4f-120">Select **Connect to Leadspace** to confirm the connection.</span></span>
 
-   :::image type="content" source="media/enrichment-leadspace-select-segment.png" alt-text="اختر بين ملف تعريف العميل وإثراء الشرائح.":::
+1. <span data-ttu-id="b0a4f-121">حدد **التالي** واختر **مجموعة بيانات العميل** التي تريد إثراؤها باستخدام بيانات الشركة من Leadspace.</span><span class="sxs-lookup"><span data-stu-id="b0a4f-121">Select **Next** and choose the **Customer data set** you want to enrich with company data from Leadspace.</span></span> <span data-ttu-id="b0a4f-122">يمكنك تحديد كيان **العميل** لإثراء جميع ملفات تعريف العملاء أو تحديد كيان شريحة لإثراء فقط ملفات تعريف العملاء الموجودة في تلك الشريحة.</span><span class="sxs-lookup"><span data-stu-id="b0a4f-122">You can select the **Customer** entity to enrich all your customer profiles or select a segment entity to enrich only customer profiles contained in that segment.</span></span>
 
-1. <span data-ttu-id="decf9-123">انقر فوق **التالي** وحدد الحقول من ملفات التعريف الموحدة التي سيتم استخدامها للبحث عن بيانات الشركة المطابقة من Leadspace.</span><span class="sxs-lookup"><span data-stu-id="decf9-123">Click **Next** and define which fields from your unified profiles should be used to look for matching company data from Leadspace.</span></span> <span data-ttu-id="decf9-124">الحقل **اسم الشركة** مطلوب.</span><span class="sxs-lookup"><span data-stu-id="decf9-124">The **Name of company** field is required.</span></span> <span data-ttu-id="decf9-125">للحصول على دقة مطابقه أعلى، يمكن إضافة الحقلين **موقع ويب للشركة** و **موقع الشركة**.</span><span class="sxs-lookup"><span data-stu-id="decf9-125">For a higher match accuracy, up to two other fields, **Company website** and **Company location**, can be added.</span></span>
+    :::image type="content" source="media/enrichment-Leadspace-configuration-customer-data-set.png" alt-text="لقطة شاشة عند اختيار مجموعة بيانات العميل.":::
+
+1. <span data-ttu-id="b0a4f-124">حدد **التالي** وحدد الحقول من ملفات التعريف الموحدة المستخدمة للبحث عن بيانات الشركة المطابقة من Leadspace.</span><span class="sxs-lookup"><span data-stu-id="b0a4f-124">Select **Next** and define which fields from your unified profiles are used to look for matching company data from Leadspace.</span></span> <span data-ttu-id="b0a4f-125">الحقل **اسم الشركة** مطلوب.</span><span class="sxs-lookup"><span data-stu-id="b0a4f-125">The **Name of company** field is required.</span></span> <span data-ttu-id="b0a4f-126">للحصول على دقة مطابقه أعلى، يمكن إضافة الحقلين **موقع ويب للشركة** و **موقع الشركة**.</span><span class="sxs-lookup"><span data-stu-id="b0a4f-126">For a higher match accuracy, up to two other fields, **Company website** and **Company location**, can be added.</span></span>
 
    :::image type="content" source="media/enrichment-leadspace-mapping.png" alt-text="جزء تعيين حقول Leadspace.":::
+
+1. <span data-ttu-id="b0a4f-128">حدد **التالي** لإكمال تعيين الحقل.</span><span class="sxs-lookup"><span data-stu-id="b0a4f-128">Select **Next** to complete the field mapping.</span></span>
+
+1. <span data-ttu-id="b0a4f-129">قدم اسمًا لعملية الإثراء وحدد **حفظ الإثراء** بعد مراجعة خياراتك.</span><span class="sxs-lookup"><span data-stu-id="b0a4f-129">Provide a name for the enrichment and select **Save enrichment** after reviewing your choices.</span></span>
+
+
+## <a name="configure-the-connection-for-leadspace"></a><span data-ttu-id="b0a4f-130">تكوين الاتصال لـ Leadspace</span><span class="sxs-lookup"><span data-stu-id="b0a4f-130">Configure the connection for Leadspace</span></span> 
+
+<span data-ttu-id="b0a4f-131">يلزم أن تكون المسؤول لتكوين الاتصالات.</span><span class="sxs-lookup"><span data-stu-id="b0a4f-131">You need to be an administrator to configure connections.</span></span> <span data-ttu-id="b0a4f-132">حدد **إضافة اتصال** عند تكوين عملية إثراء *أو* انتقل إلى **المسؤول** > **الاتصالات** وحدد **إعداد** في تجانب Leadspace.</span><span class="sxs-lookup"><span data-stu-id="b0a4f-132">Select **Add connection** when configuring an enrichment *or* go to **Admin** > **Connections** and select **Set up** on the Leadspace tile.</span></span>
+
+1. <span data-ttu-id="b0a4f-133">حدد **بدء الاستخدام‬**</span><span class="sxs-lookup"><span data-stu-id="b0a4f-133">Select **Get Started**</span></span> 
+
+1. <span data-ttu-id="b0a4f-134">أدخل اسما للاتصال في مربع **اسم العرض**.</span><span class="sxs-lookup"><span data-stu-id="b0a4f-134">Enter a name for the connection in the **Display name** box.</span></span>
+
+1. <span data-ttu-id="b0a4f-135">قدم رمز Leadspace مميزًا وصالحًا.</span><span class="sxs-lookup"><span data-stu-id="b0a4f-135">Provide a valid Leadspace token.</span></span>
+
+1. <span data-ttu-id="b0a4f-136">راجع وقدم موافقتك على **خصوصية البيانات والتوافق‬** من خلال تحديد خانة الاختيار **أوافق**</span><span class="sxs-lookup"><span data-stu-id="b0a4f-136">Review and provide your consent for **Data privacy and compliance** by selecting the **I agree** checkbox</span></span>
+
+1. <span data-ttu-id="b0a4f-137">حدد **التحقق** للتحقق من التكوين.</span><span class="sxs-lookup"><span data-stu-id="b0a4f-137">Select **Verify** to validate the configuration.</span></span>
+
+1. <span data-ttu-id="b0a4f-138">بعد إكمال التحقق، حدد **حفظ**.</span><span class="sxs-lookup"><span data-stu-id="b0a4f-138">After completing the verification, select **Save**.</span></span>
    
-1. <span data-ttu-id="decf9-127">حدد **تطبيق** لإكمال تعيين الحقول.</span><span class="sxs-lookup"><span data-stu-id="decf9-127">Select **Apply** to complete the field mapping.</span></span>
+   :::image type="content" source="media/enrichment-Leadspace-connection.png" alt-text="صفحة تكوين الاتصال بـ Leadspace.":::
 
-1. <span data-ttu-id="decf9-128">حدد **تشغيل** لإثراء ملفات تعريف الشركة.</span><span class="sxs-lookup"><span data-stu-id="decf9-128">Select **Run** to enrich the company profiles.</span></span> <span data-ttu-id="decf9-129">تتوقف الفترة التي يستغرقها الإثراء على عدد ملفات تعريف العملاء الموحدة.</span><span class="sxs-lookup"><span data-stu-id="decf9-129">How long an enrichment takes depends on the number of unified customer profiles.</span></span>
+## <a name="enrichment-results"></a><span data-ttu-id="b0a4f-140">نتائج الإثراء</span><span class="sxs-lookup"><span data-stu-id="b0a4f-140">Enrichment results</span></span>
 
-## <a name="enrichment-results"></a><span data-ttu-id="decf9-130">نتائج الإثراء</span><span class="sxs-lookup"><span data-stu-id="decf9-130">Enrichment results</span></span>
+<span data-ttu-id="b0a4f-141">بعد تحديث الإثراء، يمكنك مراجعة بيانات الشركة التي تم إثراؤها حديثًا والموجودة ضمن [عمليات الإثراء الخاصة بي‬](enrichment-hub.md).</span><span class="sxs-lookup"><span data-stu-id="b0a4f-141">After refreshing the enrichment, you can review the newly enriched company data under [My enrichments](enrichment-hub.md).</span></span> <span data-ttu-id="b0a4f-142">يمكنك العثور على وقت آخر تحديث وعدد ملفات تعريف التي تم إثراؤها.</span><span class="sxs-lookup"><span data-stu-id="b0a4f-142">You can find the time of the last update and the number of enriched profiles.</span></span>
 
-<span data-ttu-id="decf9-131">بعد تحديث الإثراء، يمكنك مراجعة بيانات الشركة التي تم إثراؤها حديثًا والموجودة ضمن [عمليات الإثراء الخاصة بي‬](enrichment-hub.md).</span><span class="sxs-lookup"><span data-stu-id="decf9-131">After refreshing the enrichment, you can review the newly enriched company data under [My enrichments](enrichment-hub.md).</span></span> <span data-ttu-id="decf9-132">يمكنك العثور على وقت آخر تحديث وعدد ملفات تعريف التي تم إثراؤها.</span><span class="sxs-lookup"><span data-stu-id="decf9-132">You can find the time of the last update and the number of enriched profiles.</span></span>
+<span data-ttu-id="b0a4f-143">يمكنك الوصول إلى عرض مفصل لكل ملف تعريف تم إثراؤه من خلال تحديد **عرض البيانات التي تم إثراؤها**.</span><span class="sxs-lookup"><span data-stu-id="b0a4f-143">You can access a detailed view of each enriched profile by selecting **View enriched data**.</span></span>
 
-<span data-ttu-id="decf9-133">يمكنك الوصول إلى عرض مفصل لكل ملف تعريف تم إثراؤه من خلال تحديد **عرض البيانات التي تم إثراؤها**.</span><span class="sxs-lookup"><span data-stu-id="decf9-133">You can access a detailed view of each enriched profile by selecting **View enriched data**.</span></span>
+<span data-ttu-id="b0a4f-144">لمزيد من المعلومات، راجع [مؤشرات الأداء الأساسية API لـ Leadspace](https://support.leadspace.com/hc/en-us/sections/201997649-API).</span><span class="sxs-lookup"><span data-stu-id="b0a4f-144">For more information, see [Leadspace APIs](https://support.leadspace.com/hc/en-us/sections/201997649-API).</span></span>
 
-<span data-ttu-id="decf9-134">لمزيد من المعلومات، راجع [مؤشرات الأداء الأساسية API لـ Leadspace](https://support.leadspace.com/hc/en-us/sections/201997649-API).</span><span class="sxs-lookup"><span data-stu-id="decf9-134">For more information, see [Leadspace APIs](https://support.leadspace.com/hc/en-us/sections/201997649-API).</span></span>
+## <a name="next-steps"></a><span data-ttu-id="b0a4f-145">الخطوات التالية</span><span class="sxs-lookup"><span data-stu-id="b0a4f-145">Next steps</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="decf9-135">الخطوات التالية</span><span class="sxs-lookup"><span data-stu-id="decf9-135">Next steps</span></span>
+<span data-ttu-id="b0a4f-146">قم بالبناء أعلى بيانات العملاء التي تم إثرائها.</span><span class="sxs-lookup"><span data-stu-id="b0a4f-146">Build on top of your enriched customer data.</span></span> <span data-ttu-id="b0a4f-147">أنشئ [الشرائح](segments.md)، و[المقاييس](measures.md)، وقم كذلك [بتصدير البيانات](export-destinations.md) لتقديم تجارب مخصصة لعملائك.</span><span class="sxs-lookup"><span data-stu-id="b0a4f-147">Create [segments](segments.md), [measures](measures.md), and even [export the data](export-destinations.md) to deliver personalized experiences to your customers.</span></span>
 
-<span data-ttu-id="decf9-136">قم بالبناء أعلى بيانات العملاء التي تم إثرائها.</span><span class="sxs-lookup"><span data-stu-id="decf9-136">Build on top of your enriched customer data.</span></span> <span data-ttu-id="decf9-137">أنشئ [الشرائح](segments.md)، و[المقاييس](measures.md)، وقم كذلك [بتصدير البيانات](export-destinations.md) لتقديم تجارب مخصصة لعملائك.</span><span class="sxs-lookup"><span data-stu-id="decf9-137">Create [segments](segments.md), [measures](measures.md), and even [export the data](export-destinations.md) to deliver personalized experiences to your customers.</span></span>
+## <a name="data-privacy-and-compliance"></a><span data-ttu-id="b0a4f-148">خصوصية البيانات والتوافق</span><span class="sxs-lookup"><span data-stu-id="b0a4f-148">Data privacy and compliance</span></span>
 
-## <a name="data-privacy-and-compliance"></a><span data-ttu-id="decf9-138">خصوصية البيانات والتوافق</span><span class="sxs-lookup"><span data-stu-id="decf9-138">Data privacy and compliance</span></span>
-
-<span data-ttu-id="decf9-139">عند تمكين Dynamics 365 Customer Insights لإرسال البيانات إلى Leadspace، تسمح أنت بنقل البيانات خارج حدود الامتثال في Dynamics 365 Customer Insights، بما في ذلك البيانات الحساسة على الأرجح مثل البيانات الشخصية.</span><span class="sxs-lookup"><span data-stu-id="decf9-139">When you enable Dynamics 365 Customer Insights to transmit data to Leadspace, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data.</span></span> <span data-ttu-id="decf9-140">ستقوم شركة Microsoft بنقل هذه البيانات وفقًا لتعليماتك، ولكنك مسؤول عن ضمان قيام Leadspace بتلبية أي التزامات تتعلق بالخصوصية أو الأمان قد تكون لديك.</span><span class="sxs-lookup"><span data-stu-id="decf9-140">Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Leadspace meets any privacy or security obligations you may have.</span></span> <span data-ttu-id="decf9-141">لمزيد من المعلومات، راجع [بيان خصوصية Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).</span><span class="sxs-lookup"><span data-stu-id="decf9-141">For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).</span></span>
-<span data-ttu-id="decf9-142">بإمكان مسؤول Dynamics 365 Customer Insights إزالة هذا الإثراء في أي وقت لإيقاف استخدام هذه الوظيفة.</span><span class="sxs-lookup"><span data-stu-id="decf9-142">Your Dynamics 365 Customer Insights Administrator can remove this enrichment at any time to discontinue use of this functionality.</span></span>
+<span data-ttu-id="b0a4f-149">عند تمكين Dynamics 365 Customer Insights لإرسال البيانات إلى Leadspace، تسمح أنت بنقل البيانات خارج حدود الامتثال في Dynamics 365 Customer Insights، بما في ذلك البيانات الحساسة على الأرجح مثل البيانات الشخصية.</span><span class="sxs-lookup"><span data-stu-id="b0a4f-149">When you enable Dynamics 365 Customer Insights to transmit data to Leadspace, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data.</span></span> <span data-ttu-id="b0a4f-150">ستقوم شركة Microsoft بنقل هذه البيانات وفقًا لتعليماتك، ولكنك مسؤول عن ضمان قيام Leadspace بتلبية أي التزامات تتعلق بالخصوصية أو الأمان قد تكون لديك.</span><span class="sxs-lookup"><span data-stu-id="b0a4f-150">Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Leadspace meets any privacy or security obligations you may have.</span></span> <span data-ttu-id="b0a4f-151">لمزيد من المعلومات، راجع [بيان خصوصية Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).</span><span class="sxs-lookup"><span data-stu-id="b0a4f-151">For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).</span></span>
+<span data-ttu-id="b0a4f-152">بإمكان مسؤول Dynamics 365 Customer Insights إزالة هذا الإثراء في أي وقت لإيقاف استخدام هذه الوظيفة.</span><span class="sxs-lookup"><span data-stu-id="b0a4f-152">Your Dynamics 365 Customer Insights Administrator can remove this enrichment at any time to discontinue use of this functionality.</span></span>
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
