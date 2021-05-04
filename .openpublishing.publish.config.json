@@ -15,11 +15,26 @@
       "template_folder": "_themes"
     },
     {
-      "open_to_public_contributors": false
+      "docset_name": "product360",
+      "build_source_folder": "topics",
+      "build_output_subfolder": "product360",
+      "locale": "ar-sa",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
     }
   ],
-  "notification_subscribers": [],
-  "sync_notification_subscribers": [],
+  "notification_subscribers": [
+    "bigoswam@microsoft.com"
+  ],
+  "sync_notification_subscribers": [
+    "bigoswam@microsoft.com"
+  ],
   "branches_to_filter": [
     "live-sxs",
     "main-sxs"
@@ -36,6 +51,12 @@
       "branch_mapping": {}
     },
     {
+      "path_to_root": "_themes.pdf",
+      "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+      "branch": "master",
+      "branch_mapping": {}
+    },
+    {
       "path_to_root": "_repo.en-us",
       "url": "https://github.com/MicrosoftDocs/customer-insights-pr",
       "branch": "live",
@@ -43,12 +64,6 @@
         "live": "live",
         "main": "main"
       }
-    },
-    {
-      "path_to_root": "_themes.pdf",
-      "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
-      "branch": "master",
-      "branch_mapping": {}
     }
   ],
   "branch_target_mapping": {
