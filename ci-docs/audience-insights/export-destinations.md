@@ -6,22 +6,19 @@ ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: phkieffer
+author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 354ce9ef30fe918975d06290430996c84f8bd3f7
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: c1078ed0ba259a6e9cde3c7ede3570890ae48e67
+ms.sourcegitcommit: 33a8e21b3bf6521bdb8346f81f79fce88091ddfd
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5896127"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6016575"
 ---
 # <a name="exports-preview-overview"></a>نظرة عامة على عمليات التصدير (إصدار أولي)
 
 تعرض صفحة **عمليات التصدير** كل عمليات التصدير التي تم تكوينها. تشترك عمليات التصدير في بيانات محددة مع تطبيقات متعددة. يمكن أن تتضمن ملفات تعريف العملاء أو الكيانات، والتخططات، وتفاصيل التعيين. تتطلب كل عملية تصدير [اتصالاً، والإعداد بواسطة مسؤول، لإدارة المصادقة والوصول](connections.md).
-
-> [!NOTE]
-> حتى مارس 2021، تقوم عمليات التصدير بإنشاء اتصال بالخدمة المقابلة تلقائيًا. تتطلب عمليات التصدير الآن [اتصالاً يتم إنشاؤه ومشاركته بواسطة المسؤول](connections.md) قبل أن تتمكن من إنشائها.
 
 انتقل إلى **البيانات** > **عمليات التصدير** لعرض صفحة عمليات التصدير. يكون لجميع أدوار المستخدمين حق الوصول لعرض عمليات التصدير التي تم تكوينها. استخدم حقل البحث في شريط الأوامر للبحث عن عمليات تصدير من خلال اسمها أو اسمها أو نوع الاتصال الخاص بها.
 

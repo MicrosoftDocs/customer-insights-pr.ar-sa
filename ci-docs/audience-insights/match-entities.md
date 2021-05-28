@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 2eb84c44aa530346a73ba720106734d705a45f23
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 2155042d86cda0cffee1588760a06d6c7eb7077e
+ms.sourcegitcommit: fcc94f55dc2dce84eae188d582801dc47696c9cc
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595548"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085606"
 ---
 # <a name="match-entities"></a>تطابق الكيانات
 
@@ -103,6 +103,18 @@ ms.locfileid: "5595548"
 
 > [!NOTE]
 > يعتد ترتيب القواعد أمراً مهماً. تحاول خوارزمية المطابقة إجراء المطابقة بالاستناد إلى قاعدتك الأولى، وتتابع إلى القاعدة الثانية فقط في حالة عدم تحديد أي مطابقات مع القاعدة الأولى.
+
+### <a name="change-the-entity-order-in-match-rules"></a>تغيير ترتيب الكيان في قواعد المطابقة
+
+يمكنك إعادة ترتيب الكيانات لقواعد المطابقة لتغيير الترتيب الذي تتم معالجتها به. سوف تتم إزالة القواعد التي تكون متضاربة بسبب تغيير الأمر. يجب عليك إعادة إنشاء القواعد التي تمت إزالتها باستخدام تكوين محدث.
+
+1. انتقل إلى **البيانات** > **توحيد** > **مطابقة** وحدد **تحرير**.
+
+1. من جزء **تحرير القاعدة**، قم بتحديد عنصر تحكم **التحرك لأعلى/لأسفل** أو قم بسحب وإفلات الكيانات لتغيير الترتيب.
+
+   :::image type="content" source="media/reorder-match-rules.png" alt-text="الخيارات لتغيير ترتيب معالجة كيانات في مرحلة المطابقة.":::
+
+1. حدد **تم** لحفظ القاعدة.
 
 ## <a name="define-deduplication-on-a-match-entity"></a>تعريف إلغاء التكرار على كيان مطابقة
 

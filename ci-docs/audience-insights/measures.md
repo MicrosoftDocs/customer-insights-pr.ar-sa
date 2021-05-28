@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: wameng
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 9a94a32a04f2a8beb661c27271fe96f23d998722
-ms.sourcegitcommit: d89b19b2a3497722b78362aeee688ae7e94915d9
+ms.openlocfilehash: 402e5ef3515bce0e6f56788781b7bd909738aaa6
+ms.sourcegitcommit: b833e333745d321edeaf96d3ed14458cbce02ff1
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5887924"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6049234"
 ---
 # <a name="define-and-manage-measures"></a>تحديد المقاييس وإدارتها
 
@@ -34,7 +34,7 @@ ms.locfileid: "5887924"
 
 1. حدد **تحرير الاسم** وقدم **اسمًا** للمقياس. 
    > [!NOTE]
-   > إذا كان تكوين المقياس الجديد يتضمن حقلين فقط، على سبيل المثال، CustomerID وحساب واحد، سيُضاف الإخراج كعمود جديد إلى الكيان الذي تم إنشاؤه من قبل النظام والمسمى Customer_Measure. وستتمكن من رؤية قيمة المقياس في ملف تعريف العميل الموحد. ستقوم المقاييس الأخرى بإنشاء كيانات خاصة بها.
+   > إذا كان تكوين القياس الجديد الخاص بك يتكون من حقلين فقط، على سبيل المثال، CustomerID وحساب واحد، فسيتم إضافة الإخراج كعمود جديد إلى الكيان الذي تم إنشاؤه من قبل النظام والمسمى Customer_Measure. وستتمكن من رؤية قيمة المقياس في ملف تعريف العميل الموحد. ستقوم المقاييس الأخرى بإنشاء كيانات خاصة بها.
 
 1. في منطقة التكوين، اختر وظيفة التجميع من القائمة المنسدلة **تحديد الوظيفة**. تتضمن وظائف التجميع ما يلي: 
    - **Sum**
