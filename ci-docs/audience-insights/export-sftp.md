@@ -9,14 +9,14 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 3663a48955f0b1db8a96e25403e5f8947bc6a220
-ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
+ms.openlocfilehash: 000b44dc8e5cc419132bd17e359fbdd5879caf1b
+ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5976877"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "6124303"
 ---
-# <a name="export-segment-lists-and-other-data-to-sftp-preview"></a>تصدير قوائم الشرائح والبيانات الأخرى إلى SFTP (إصدار أولي)
+# <a name="export-segments-and-other-data-to-sftp-preview"></a>تصدير الشرائح والبيانات الأخرى إلى SFTP (إصدار أولي)
 
 استخدم بيانات العميل في تطبيقات طرف ثالث من خلال تصديرها إلى موقع بروتوكول نقل الملفات الآمنة (SFTP).
 

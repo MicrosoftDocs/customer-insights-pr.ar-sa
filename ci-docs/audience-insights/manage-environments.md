@@ -1,7 +1,7 @@
 ---
 title: إنشاء بيئات وإدارتها
 description: تعرف على كيفية تسجيل الاشتراك في الخدمة وكيفية إدارة البيئات.
-ms.date: 03/26/2021
+ms.date: 06/15/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 8cc1401251ed7c45c598bd4a8fb33a9709fabbc8
-ms.sourcegitcommit: d89b19b2a3497722b78362aeee688ae7e94915d9
+ms.openlocfilehash: 06310ea6fc72f26e21e185a6abcb5d19d4b201f6
+ms.sourcegitcommit: e5425f060c8d80f9510283dc610ce70a4e709b1e
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5887970"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "6259083"
 ---
 # <a name="manage-environments"></a>إدارة البيئات
 
@@ -76,9 +76,9 @@ ms.locfileid: "5887970"
    > نحن ندعم فقط حسابات تخزين Azure Data Lake Gen2 من منطقة Azure نفسها التي حددتها عند إنشاء البيئة.
    > نحن ندعم فقط حسابات التخزين الممكّنة لمساحة الاسماء الهرمية Azure Data لـ Azure Data Lake Gen2.
 
-   - بالنسبة إلى الخيار Azure Data Lake Storage Gen2، يمكنك الاختيار بين استخدام خيار قائم على الموارد وخيار قائم على الاشتراكات للمصادقة. لمزيد من المعلومات، راجع [توصيل رؤى الجمهور بحساب Azure Data Lake Storage Gen2 بواسطة كيان خدمة Azure](connect-service-principal.md). لا يمكن تغيير اسم **الحاوية** وسيكون "customerinsights".
+   - بالنسبة إلى الخيار Azure Data Lake Storage Gen2، يمكنك الاختيار بين استخدام خيار قائم على الموارد وخيار قائم على الاشتراكات للمصادقة. لمزيد من المعلومات، راجع [توصيل رؤى الجمهور بحساب Azure Data Lake Storage Gen2 بواسطة كيان خدمة Azure](connect-service-principal.md). لا يمكن تغيير اسم **الحاوية** وسيكون `customerinsights`.
    
-   - إذا كنت تريد استخدام [التنبؤات](predictions.md)، فقم بتكوين مشاركة البيانات مع التطبيقات والحلول القائمة على Microsoft Dataverse، أو قم بتمكين عرض البيانات من مصادر البيانات المحلية، وقم بتوفير عنوان URL لبيئة Microsoft Dataverse ضمن **تكوين مشاركة البيانات مع Microsoft Dataverse وتمكين الإمكانات الإضافية**. حدد **تمكين مشاركة البيانات** لمشاركة بيانات إخراج Customer Insights مع Data Lake مُدار في Microsoft Dataverse
+   - إذا أردت استخدام [التنبؤات](predictions.md) أو تكوين مشاركة البيانات مع Microsoft Dataverse أو تمكين استيعاب البيانات من مصادر البيانات المحلية أو توفير عنوان URL لبيئة Microsoft Dataverse ضمن **تكوين مشاركة البيانات مع Microsoft Dataverse وتمكين إمكانيات إضافية‬**. حدد **تمكين مشاركة البيانات** لمشاركة بيانات إخراج Customer Insights مع Data Lake مُدار في Microsoft Dataverse
 
      > [!NOTE]
      > - في الوقت الحالي، مشاركة البيانات مع Data Lake مُدار في Microsoft Dataverse غير مدعوم عندما تحفظ جميع البيانات إلى Azure Data Lake Storage الخاص بك.
@@ -87,7 +87,7 @@ ms.locfileid: "5887970"
      > [!div class="mx-imgBorder"]
      > ![خيارات التكوين لتمكين مشاركة البيانات مع Microsoft Dataverse](media/datasharing-with-DataverseMDL.png)
 
-   عند تشغيل العمليات، مثل استيعاب البيانات أو إنشاء الشرائح، سيتم إنشاء مجلدات مناظرة في حساب التخزين الذي حددته أعلاه. سيتم إنشاء ملفات البيانات وملفات model.json وستُضاف إلى المجلدات الفرعية المقابلة استنادًا إلى العملية التي تقوم بتشغيلها.
+   عند تشغيل العمليات، مثل استيعاب البيانات أو إنشاء الشرائح، سيتم إنشاء مجلدات مناظرة في حساب التخزين الذي حددته أعلاه. سيتم إنشاء ملفات البيانات وملفات model.json وإضافتها إلى المجلدات بالاستناد إلى اسم العملية.
 
    إذا قمت بإنشاء العديد من بيئات Customer Insights واخترت حفظ كيانات المخرجات من هذه البيئات الموجودة في حساب التخزين، سيتم إنشاء مجلدات منفصلة لكل بيئة تتضمن ci_<environmentid> في الحاوية.
 
@@ -146,7 +146,7 @@ ms.locfileid: "5887970"
    > - في الوقت الحالي، مشاركة البيانات مع Data Lake مُدار في Microsoft Dataverse غير مدعوم عندما تحفظ جميع البيانات إلى Azure Data Lake Storage الخاص بك.
    > - [التنبؤ بالقيم المفقودة في كيان](predictions.md) غير مدعوم حاليًا عند قيامك بتمكين مشاركة البيانات مع Data Lake المُدار في Microsoft Dataverse.
 
-   بمجرد قيامك بتمكين مشاركة البيانات مع Microsoft Dataverse، سيتم تشغيل التحديث الكامل لمصادر البيانات والعمليات الأخرى. إذا كانت العمليات قيد التشغيل حاليًا وقائمة الانتظار، فلن ترى خيار تمكين مشاركة البيانات مع Microsoft Dataverse. يمكنك الانتظار حتى يتم إكمال هذه العمليات أو إلغاؤها لتمكين مشاركة البيانات. 
+   بعد تمكين مشاركة البيانات مع Microsoft Dataverse، سيبدأ التحديث الكامل لمصادر البيانات وستبدأ عمليات أخرى. إذا كانت العمليات قيد التشغيل حاليًا، لن يظهر خيار تمكين مشاركة البيانات مع Microsoft Dataverse. انتظر حتى إكمال هذه العمليات أو إلغائها لتمكين مشاركة البيانات. 
    
    :::image type="content" source="media/datasharing-with-DataverseMDL.png" alt-text="خيارات التكوين لتمكين مشاركة البيانات مع Microsoft Dataverse.":::
    
