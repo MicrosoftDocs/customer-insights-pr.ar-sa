@@ -72,7 +72,7 @@
           href: audience-insights/enrichment-here.md
         - name: الإثراء باستخدام Leadspace
           href: audience-insights/enrichment-leadspace.md
-        - name: الإثراء مع Experian
+        - name: الإثراء باستخدام Experian
           href: audience-insights/enrichment-experian.md
         - name: إثراء البيانات باستخدام الاستيراد المخصص لبروتوكول SFTP
           href: audience-insights/enrichment-SFTP-custom-import.md
@@ -136,6 +136,8 @@
           items:
             - name: نظرة عامة على عمليات التصدير
               href: audience-insights/export-destinations.md
+            - name: الحملة النشطة
+              href: audience-insights/export-active-campaign.md
             - name: AdRoll
               href: audience-insights/export-adroll.md
             - name: Autopilot
@@ -178,8 +180,12 @@
               href: audience-insights/export-omnisend.md
             - name: RollWorks
               href: audience-insights/export-rollworks.md
+            - name: Salesforce Marketing Cloud
+              href: audience-insights/export-salesforce.md
             - name: SendGrid
               href: audience-insights/export-sendgrid.md
+            - name: SendInBlue
+              href: audience-insights/export-sendinblue.md
             - name: Snapchat
               href: audience-insights/export-snapchat.md
             - name: SFTP
@@ -234,14 +240,14 @@
       href: engagement-insights/overview.md
     - name: إصدار تجريبي مجاني
       href: 'https://pi.dynamics.com/'
-    - name: 'البدء '
+    - name: تم البدء
       items:
-        - name: 'البدء '
+        - name: تم البدء
           href: engagement-insights/get-started.md
         - name: إنشاء مساحة عمل
           href: engagement-insights/create-workspace.md
-        - name: تجهيز موقعك على الويب
-          href: engagement-insights/instrument-website.md
+        - name: التقاط الأحداث من مواقع الويب وتطبيقات الجوال
+          href: engagement-insights/developer-resources.md
         - name: المفاهيم والمصطلحات
           href: engagement-insights/glossary.md
     - name: الأحداث
@@ -272,10 +278,18 @@
       items:
         - name: نظرة عامة على موارد المطوّرين
           href: engagement-insights/developer-resources.md
-        - name: البرنامج التعليمي لـ SDK الويب
+        - name: البرنامج التعليمي لـ SDK على الويب
           href: engagement-insights/advanced-SDK-implementation.md
         - name: عينة SDK الويب
           href: engagement-insights/websdk-sample.md
+        - name: البرنامج التعليمي لـ Android SDK
+          href: engagement-insights/get-started-android.md
+        - name: عينة Android SDK
+          href: engagement-insights/androidsdk-sample.md
+        - name: البرنامج التعليمي لـ iOS SDK
+          href: engagement-insights/get-started-ios.md
+        - name: عينة iOS SDK
+          href: engagement-insights/iossdk-sample.md
     - name: الإدارة
       items:
         - name: الأدوار والأذونات
