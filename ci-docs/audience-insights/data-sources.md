@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 3c0b4690e18285aa37eef481b3cfac951884ead6
-ms.sourcegitcommit: fcc94f55dc2dce84eae188d582801dc47696c9cc
+ms.openlocfilehash: 54dd7b629d4b4e7f640b932b0f9246e0602f46bd
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "6085514"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304680"
 ---
 # <a name="data-sources-overview"></a>نظرة عامة مصادر البيانات
 
@@ -30,15 +30,15 @@ ms.locfileid: "6085514"
 
 - [عبر العشرات من موصلات Power Query](connect-power-query.md)
 - [من مجلد نموذج البيانات العامة](connect-common-data-model.md)
-- [من مخزن Common Data Service الخاص بك](connect-common-data-service-lake.md)
+- [من مخزن Microsoft Dataverse الخاص بك](connect-common-data-service-lake.md)
 
 ## <a name="add-data-from-on-premises-data-sources"></a>إضافة البيانات من مصادر البيانات المحلية
 
-يتم دعم استيعاب البيانات من مصادر البيانات المحلية في Audience Insights استنادًا إلى تدفقات بيانات Power Platform. يمكن تمكين تدفقات البيانات في Customer Insights عن طريق [توفير عنوان URL لبيئة Microsoft Dataverse](manage-environments.md#create-an-environment-in-an-existing-organization) عند إعداد البيئة.
+يتم دعم استيعاب البيانات من مصادر البيانات المحلية في Audience Insights استنادًا إلى تدفقات بيانات Microsoft Power Platform. يمكن تمكين تدفقات البيانات في Customer Insights عن طريق [توفير عنوان URL لبيئة Microsoft Dataverse](manage-environments.md#create-an-environment-in-an-existing-organization) عند إعداد البيئة.
 
-ستستخدم مصادر البيانات التي تم إنشاؤها بعد ربط بيئة Dataverse بـ Customer Insights [تدفقات بيانات Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) بشكل افتراضي. تدعم تدفقات البيانات الاتصال المحلي باستخدام بوابة البيانات. قم بإزالة وإعادة إنشاء مصادر البيانات التي كانت موجودة قبل ربط بيئة Dataverse لأجل [استخدام بوابات البيانات المحلية](/powerapps/maker/data-platform/using-dataflows-with-on-premises-data.md).
+ستستخدم مصادر البيانات التي تم إنشاؤها بعد ربط بيئة Dataverse بـ Customer Insights [تدفقات بيانات Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) بشكل افتراضي. تدعم تدفقات البيانات الاتصال المحلي باستخدام بوابة البيانات. قم بإزالة وإعادة إنشاء مصادر البيانات التي كانت موجودة قبل ربط بيئة Dataverse لأجل [استخدام بوابات البيانات المحلية](/data-integration/gateway/service-gateway-app.md).
 
-ستظهر بوابات البيانات من بيئة Power BI أو Power Apps موجودة ويمكنك إعادة استخدامها في Customer Insights. تعرض صفحة مصادر البيانات ارتباطات للانتقال إلى بيئة Power Platform، حيث يمكنك عرض وتكوين بوابات البيانات المحلية.
+ستظهر بوابات البيانات من بيئة Power BI أو Power Apps موجودة ويمكنك إعادة استخدامها في Customer Insights. تعرض صفحة مصادر البيانات ارتباطات للوصول إلى بيئةMicrosoft Power Platform ، حيث يمكنك عرض محلي بوابات البيانات المحلية وتكوينها.
 
 ## <a name="review-ingested-data"></a>مراجعة البيانات المستوعبة
 
@@ -56,7 +56,7 @@ ms.locfileid: "6085514"
 
 حدد القيمة في عمود **الحالة** لأي مصدر بيانات لمراجعة المزيد من التفاصيل. في جزء **تفاصيل التقدم**، قم بتوسيع **مصادر البيانات**. حدد **راجع التفاصيل** لمراجعة المزيد من التفاصيل حول حالة التحديث، بما في ذلك تفاصيل الخطأ وتحديثات عملية انتقال البيانات من الخادم‬‬.
 
-قد يستغرق تحميل البيانات بعض الوقت. بعد الانتهاء من التحديث بنجاح، يُمكنك مراجعة البيانات المستوعبة من صفحة **الكيانات**. للمزيد من المعلومات، راجع [التفاصيل](entities.md).
+قد يستغرق تحميل البيانات وقتا. بعد الانتهاء من التحديث بنجاح، يُمكنك مراجعة البيانات المستوعبة من صفحة **الكيانات**. للمزيد من المعلومات، راجع [التفاصيل](entities.md).
 
 ## <a name="refresh-a-data-source"></a>تحديث مصدر البيانات
 
@@ -68,7 +68,7 @@ ms.locfileid: "6085514"
 
 1. في رؤى الجمهور، انتقل إلى **البيانات‏‎** > **مصادر البيانات**.
 
-2. حدد علامة القطع الرأس المجاورة لمصدر البيانات الذي تريد تحديثه، وحدد **تحديث** من القائمة المنسدلة.
+2. حدد الخصاص العمودي بجوار القائمة مصدر البيانات ترغب في تحديثها وحدد **تحديث** من القائمة المنسدلة.
 
 3. تم تشغيل مصدر البيانات الآن للحصول على تحديث يدوي. سيؤدي تحديث مصدر البيانات إلى تحديث كل من مخطط الكيان والبيانات لجميع الكيانات المحددة في مصدر البيانات.
 
@@ -78,7 +78,7 @@ ms.locfileid: "6085514"
 
 1. في رؤى الجمهور، انتقل إلى **البيانات‏‎** > **مصادر البيانات**.
 
-2. حدد علامة الحذف الرأسية المجاورة لمصدر البيانات الذي تريد إزالته وحدد **حذف** من القائمة المنسدلة.
+2. حدد الخصاص العمودي بجوار القائمة مصدر البيانات ترغب في إزالتها وحدد **حذف** من القائمة المنسدلة.
 
 3. قم بتأكيد الحذف.
 

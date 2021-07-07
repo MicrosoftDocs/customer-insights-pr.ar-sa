@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 6cb7bd62bf0f61e6dc5811b20e5011e4a086c743
-ms.sourcegitcommit: 84283d523a891298fca8aaf629d9f9ab2a1bc067
+ms.openlocfilehash: 336cab8619c0b80b7b8a38035cae99620baf2873
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6111371"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306241"
 ---
 # <a name="segments-overview"></a>نظرة عامة على الشرائح
 
@@ -38,7 +38,7 @@ ms.locfileid: "6111371"
 
 يتم تمثيل كل شريحة بصف يشتمل على معلومات إضافية حول الشريحة.
 
-:::image type="content" source="media/segments-selected-segment.png" alt-text="شريحة محددة مع قائمة منسدلة للخيارات والخيارات المتاحة.":::
+:::image type="content" source="media/segments-selected-segment.png" alt-text="شريحة محددة مع قائمة خيارات منسدلة وخيارات متوفرة.":::
 
 تتوفر الإجراءات التالية عند تحديد أحد الأجزاء:
 
@@ -68,7 +68,7 @@ ms.locfileid: "6111371"
 
 1. حدد **إظهار المزيد [...]** للشريحة التي تريد تصديرها.
 
-1. حدد **إدارة عمليات التصدير** من القائمة المنسدلة للإجراءات.
+1. حدد **إدارة عمليات التصدير** من قائمة الإجراءات المنسدلة.
 
 1. تفتح الصفحة **عمليات التصدير (إصدار أولي) للشريحة**. يمكنك رؤية جميع عمليات التصدير المكونة وقد تم تجميعها حسب عمليات التصدير التي تحتوي على الشريحة الحالية أو لا تحتوي عليها.
 

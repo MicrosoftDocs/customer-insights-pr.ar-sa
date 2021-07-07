@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 90ebcaab896c628b04e751ad9857e924749895e7
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 2856888d6ac64d5daabcc5a234f13bc6f88bb3df
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595318"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306058"
 ---
 # <a name="segment-insights-preview"></a>نتائج تحليلات الشرائح (معاينة)
 
@@ -50,7 +50,7 @@ ms.locfileid: "5595318"
 
 - عدد الأعضاء الذين يتراكب مع الشرائح المحددة للتحليل.
 - عدد الأعضاء المضمن في إحدى الشرائح وليس في باقي الشرائح.
-- إذا قمت بتحديد حقول أثناء تكوين تحليل التراكب، فسوف تعثر عليها في علامات التبويب المناظرة. يمكنك استخدام القائمة المنسدلة للتصفية لتحديد أي مستوى سمة اهتمام وسيعرض الجدول في الأسفل البيانات المناظرة.
+- إذا قمت بتحديد حقول أثناء تكوين تحليل التراكب، فسوف تعثر عليها في علامات التبويب المناظرة. يمكنك استخدام منسدلة عامل التصفية لتحديد أي مستوى سمة اهتمام وسوف يظهر الجدول في الجزء السفلي البيانات المقابلة.
 
 ## <a name="segment-differentiators"></a>عوامل تمييز الشرائح
 

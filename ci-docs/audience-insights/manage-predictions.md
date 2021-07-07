@@ -9,12 +9,12 @@ ms.topic: how-to
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: b935be08199f20e83bceb3317985b0e1dc120016
-ms.sourcegitcommit: 6b07c9c3102761be162e4842f3c9fbc19f948a9b
+ms.openlocfilehash: dccb8dcca8f65f64973e46fed9d83034d58282e2
+ms.sourcegitcommit: bcc47d15d4f0eacf008e4dbc09baac7f062b3ca8
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6095680"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "6315862"
 ---
 # <a name="manage-predictions"></a>إدارة التنبؤات
 
@@ -35,9 +35,6 @@ ms.locfileid: "6095680"
 يوفر تقرير إمكانية استخدام بيانات الإدخال طريقة عرض مدمجة للأخطاء والتحذيرات التي قد تقوم التنبؤات الجاهزة بإنشائها. كما يقدم توصيات حول كيفية تحسين أداء النموذج.
 
 يتوفر التقرير بعد أن يستكمل النموذج عملية تدريبه. يتم إنشاؤه لكل نموذج بشكل منفصل، بصرف النظر عما إذا كان قد اكتمل بنجاح أم لا.
-
-> [!NOTE]
-> في الوقت الحالي، تعمل هذه الميزة فقط مع نموذج خسارة الحركة‬.
 
 ### <a name="view-the-input-data-usability-report"></a>عرض تقرير إمكانية استخدام بيانات الإدخال
 

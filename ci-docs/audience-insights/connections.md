@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 106dbc26f95b309821d738e1484b1eaa79dd225b
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: 17e04b243e9b3d4375c86f5a890a18be35956835
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5896081"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304956"
 ---
 # <a name="connections-preview-overview"></a>نظرة عامة على الاتصالات (إصدار أولي)
 
@@ -74,7 +74,9 @@ ms.locfileid: "5896081"
 
 ## <a name="remove-a-connection"></a>إزالة اتصال
 
-إذا كان الاتصال الذي تقوم بإزالته مستخدما بواسطة الوحدات الخاصة أو التصدير، يجب أولا تحويلها إلى برنامج أو إزالتها. سيرشدك مربع الحوار "إزالة" إلى المراجع أو عمليات التصدير ذات الصلة. تصبح عمليات التصدير والتصدير التي تم تحويلها إلى منتجات غير نشطة. يمكنك إعادة تنشيطها عن طريق إضافة اتصال آخر إليها في صفحة [عمليات الإثراء](enrichment-hub.md) أو [التصديرات](export-destinations.md).
+إذا كان الاتصال الذي تقوم بإزالته مستخدما بواسطة الوحدات الخاصة أو التصدير، يجب أولا تحويلها إلى برنامج أو إزالتها. سيرشدك مربع الحوار "إزالة" إلى المراجع أو عمليات التصدير ذات الصلة. 
+
+تصبح عمليات التصدير والتصدير التي تم تحويلها إلى منتجات غير نشطة. يمكنك إعادة تنشيطها عن طريق إضافة اتصال آخر إليها في صفحة [عمليات الإثراء](enrichment-hub.md) أو [التصديرات](export-destinations.md).
 
 1. انتقل إلى **المسؤول** > **الاتصالات (إصدار أولي)**.
 

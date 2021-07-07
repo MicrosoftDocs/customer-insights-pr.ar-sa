@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: b6c010d84119c2fa8b3ef99017c65f9939bf28c4
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: 917ab9559416f3ee0ffd66e471e590e8da3faffc
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5760265"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305370"
 ---
 # <a name="use-customer-insights-segments-in-adobe-campaign-standard-preview"></a>استخدام شرائح Customer Insights في Adobe Campaign Standard (إصدار أولي)
 
-بصفتك مستخدم رؤى الجمهور في Dynamics 365 Customer Insights، من المحتمل أن تكون قد أنشأت شرائح لزيادة مستوى فعالية حملاتك التسويقية من خلال استهداف شرائح جمهور ذات صلة. لاستخدام شريحة من رؤى الجمهور في Adobe Experience Platform وتطبيقات مثل Adobe Campaign Standard، يلزمك اتباع بعض الخطوات الملخصة في هذه المقالة.
+كمستخدم لمعلومات الجمهور في Dynamics 365 Customer Insights، ربما قمت بإنشاء شرائح لجعل حملات التسويق أكثر فعالية من خلال استهداف الجماهير ذات الصلة. لاستخدام شريحة من رؤى الجمهور في Adobe Experience Platform وتطبيقات مثل Adobe Campaign Standard، يلزمك اتباع بعض الخطوات الملخصة في هذه المقالة.
 
 :::image type="content" source="media/ACS-flow.png" alt-text="مخطط العملية للخطوات الملخصة في هذه المقالة.":::
 
@@ -28,7 +28,7 @@ ms.locfileid: "5760265"
 -   ترخيص Adobe Campaign Standard
 -   حساب Azure Blob Storage
 
-## <a name="campaign-overview"></a>نظرة عامة حول الحملة
+## <a name="campaign-overview"></a>نظرة عامة على الحملة
 
 لتكوين فهم أفضل لكيفية استخدام شرائح من رؤى الجمهور في Adobe Experience Platform، سنلقي نظرة على عينة حملة وهمية.
 
@@ -54,7 +54,7 @@ ms.locfileid: "5760265"
 
 1. من رؤى الجمهور، انتقل إلى **المسؤول** > **الاتصالات**.
 
-1. حدد **إضافة اتصال** واختر **حملة Adobe** لتكوين الاتصال أو حدد **إعداد** في تجانب **حملة Adobe**
+1. حدد **إضافة اتصال** واختر **حملة Adobe** لتكوين الاتصال أو حدد **إعداد** في تجانب **حملة Adobe**.
 
    :::image type="content" source="media/adobe-campaign-standard-tile.png" alt-text="الإطار المتجانب لتكوين Adobe Campaign Standard.":::
 
@@ -80,7 +80,7 @@ ms.locfileid: "5760265"
 
 1. لإنشاء عملية تصدير جديدة، حدد **إضافة تصدير**.
 
-1. في حقل **الاتصال للتصدير**، اختر اتصالاً من قسم حملة Adobe. إذا لم تشاهد اسم المقطع هذا، لن تكون هناك اتصالات من هذا النوع متوفرة لك.
+1. في حقل **الاتصال للتصدير**، اختر اتصالاً من قسم حملة Adobe. إذا لم تشاهد اسم المقطع هذا، فلا توجد اتصالات من هذا النوع متوفرة لك.
 
 1. اختر الشريحة التي تريد تصديرها. في هذا المثال، هي **ChurnProneCustomers**.
 
@@ -118,7 +118,7 @@ ms.locfileid: "5760265"
 
 لاستخدام الشريحة في Adobe Campaign Standard، يلزمنا توسيع مخطط ملف التعريف في Adobe Campaign Standard بحيث يتضمن حقلين إضافيين. اعرف كيفية [توسيع مورد ملف التعريف](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/use-cases--extending-resources/extending-the-profile-resource-with-a-new-field.html#developing) باستخدام حقول جديدة في Adobe Campaign Standard.
 
-في المثال الذي قدمناه، هذه الحقول هي *اسم الشريحة وتاريخ الشريحة (اختياري).*
+في المثال الذي قدمناه، هذه الحقول هي *اسم الشريحة وتاريخ الشريحة (اختياري)*.
 
 سوف نستخدم هذه الحقول لتحديد ملفات التعريف في Adobe Campaign Standard التي نريد استهدافها لهذه الحملة.
 
@@ -128,7 +128,7 @@ ms.locfileid: "5760265"
 
 الآن وقد تم تنظيم كل شيء، نحتاج إلى استيراد بيانات الجمهور التي قمنا بإعدادها من رؤى الجمهور إلى Adobe Campaign Standard لإنشاء ملفات تعريف. اعرف [كيفية استيراد ملفات التعريفي في Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/managing-profiles/creating-profiles.html#profiles-and-audiences) باستخدام سير عمل.
 
-تم تكوين سير عمل الاستيراد في الصورة أدناه كي يتم تشغيله كل 8 ساعات ويبحث عن شرائح الجمهور المصدّرة (ملف csv. في Azure Blob Storage). يستخرج سير العمل محتوى ملف csv. في ترتيب أعمدة محدد. تم بناء سير العمل هذا لتنفيذ معالجة أخطاء أساسية والتأكد من أن كل سجل يحتوي على عنوان بريد إلكتروني قبل ترحيل البيانات إلى Adobe Campaign Standard. كما يستخرج سير العمل اسم الشريحة من اسم الملف قبل تحديثها وإدراجها داخل بيانات ملف تعريف ACS.
+تم تكوين سير عمل الاستيراد في الصورة أدناه ليدار كل ثمان ساعات ويبحث عن شرائح audience insights المصدرة (ملف csv. في مساحة تخزين Azure Blob). يستخرج سير العمل محتوى ملف csv. في ترتيب أعمدة محدد. تم بناء سير العمل هذا لتنفيذ معالجة أخطاء أساسية والتأكد من أن كل سجل يحتوي على عنوان بريد إلكتروني قبل ترحيل البيانات إلى Adobe Campaign Standard. يستخرج سير العمل أيضًا اسم المقطع من اسم الملف قبل تحويله إلى بيانات ملف تعريف Adobe Campaign Standard.
 
 :::image type="content" source="media/ACS-import-workflow.png" alt-text="لقطة شاشة لسير عمل عملية استيراد في واجهة مستخدم Adobe Campaign Standard.":::
 

@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 2155042d86cda0cffee1588760a06d6c7eb7077e
-ms.sourcegitcommit: fcc94f55dc2dce84eae188d582801dc47696c9cc
+ms.openlocfilehash: 50b11e7d6f62d7a25eb25a0f2b1c4ad7d859def1
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "6085606"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306012"
 ---
 # <a name="match-entities"></a>تطابق الكيانات
 
@@ -209,7 +209,7 @@ ms.locfileid: "6085606"
 
 يمكنك إعادة تكوين معظم معلمات المطابقة وضبطها.
 
-:::image type="content" source="media/match-rules-management.png" alt-text="لقطة شاشة للقائمة المنسدلة مع خيارات قاعدة المطابقة.":::
+:::image type="content" source="media/match-rules-management.png" alt-text="لقطة شاشة من القائمة المنسدلة باستخدام خيارات قاعدة تطابق.":::
 
 - **قم بتغيير ترتيب القواعد** إذا قمت بتعريف قواعد متعددة. يمكنك إعادة ترتيب قواعد مطابقة عن طريق تحديد الخيارين **تحريك لأعلى** و **تحريك لأسفل** أو عن طريق السحب والإفلات.
 

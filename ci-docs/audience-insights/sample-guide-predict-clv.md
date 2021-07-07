@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: yashlundia
 ms.author: yalundia
 manager: shellyha
-ms.openlocfilehash: 73d294a285b4ad706bec7fe925c1daa0b839ddd6
-ms.sourcegitcommit: 7b6189e47ed1f87e7ce35d40e4cf7a6730f31ef2
+ms.openlocfilehash: 19c1fbadb79ba22c0dc11aa7c3b5b2415add70a7
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6129929"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306333"
 ---
 # <a name="customer-lifetime-value-clv-prediction-sample-guide"></a>الدليل النموذجي لتنبؤات القيمة العمرية للعميل (CLV)
 
@@ -123,7 +123,7 @@ ms.locfileid: "6129929"
 
 1. انتقل إلى علامة التبويب **مطابقة** وحدد **تعيين الأمر**.
 
-1. من القائمة المنسدلة **أساسي**، اختر **eCommerceContacts : eCommerce** كمصدر أساسي وقم بتضمين جميع السجلات.
+1. في القائمة المنسدلة **الرئيسية**، اختر **eCommerceContacts : eCommerce** باعتباره المصدر الرئيسي وقم بتضمين جميع السجلات.
 
 1. في القائمة المنسدلة **الكيان 2**، اختر **loyCustomers : LoyaltyScheme** وقم بتضمين جميع السجلات.
 
@@ -133,16 +133,16 @@ ms.locfileid: "6129929"
 
 1. أضف الشرط الأول باستخدام FullName.
 
-   - لخيار eCommerceContacts، حدد **FullName‎** في القائمة المنسدلة.
-   - لخيار loyCustomers، حدد **FullName‎** في القائمة المنسدلة.
-   - حدد القائمة المنسدلة **تسوية**، واختر **النوع (الهاتف والاسم والعنوان و...)**.
+   - بالنسبة إلى eCommerceContacts، حدد **FullName** في القائمة المنسدلة.
+   - بالنسبة إلى loyCustomers، حدد **FullName** في القائمة المنسدلة.
+   - حدد القائمة المنسدلة **عادي** واختر **النوع (الهاتف، الاسم، العنوان، ...)**.
    - عيّن **مستوى الدقة**: **أساسي** و **قيمة**: **عالي**.
 
 1. أدخل الاسم **FullName, Email** للقاعدة الجديدة.
 
    - أضف شرطًا ثانيًا لعنوان البريد الإلكتروني من خلال تحديد **إضافة شرط**
-   - للكيان eCommerceContacts، حدد **EMail** في القائمة المنسدلة.
-   - للكيان loyCustomers، حدد **EMail** في القائمة المنسدلة.
+   - بالنسبة للكيان eCommerceContacts، اختر **البريد الإلكتروني** في القائمة المنسدلة.
+   - بالنسبة للكيان loyCustomers، اختر **البريد الإلكتروني** في القائمة المنسدلة.
    - اترك الخيار "تسوية" فارغًا.
    - عيّن **مستوى الدقة**: **أساسي** و **قيمة**: **عالي**.
 

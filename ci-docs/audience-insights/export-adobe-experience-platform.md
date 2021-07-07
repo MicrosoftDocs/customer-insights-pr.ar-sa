@@ -1,6 +1,6 @@
 ---
 title: تصدير بيانات Customer Insights إلى Adobe Experience Platform
-description: اعرف كيفية استخدام شرائح رؤى الجمهور في Adobe Experience Platform.
+description: تعرف على كيفية استخدام معلومات الجمهور في Adobe Experience Platform.
 ms.date: 03/29/2021
 ms.reviewer: mhart
 ms.service: customer-insights
@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 884f4d30f354bed29909d57be84dce4c8e46965a
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: 1045d0e373fd5ea8987684e51bd9a07b7b535ee3
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5760085"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305508"
 ---
 # <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>استخدام شرائح Customer Insights في Adobe Experience Platform (إصدار أولي)
 
-بصفتك مستخدم رؤى الجمهور في Dynamics 365 Customer Insights، من المحتمل أن تكون قد أنشأت شرائح لزيادة مستوى فعالية حملاتك التسويقية من خلال استهداف شرائح جمهور ذات صلة. لاستخدام شريحة من رؤى الجمهور في Adobe Experience Platform وتطبيقات مثل Adobe Campaign Standard، يلزمك اتباع بعض الخطوات الملخصة في هذه المقالة.
+كمستخدم لمعلومات الجمهور في Dynamics 365 Customer Insights، ربما قمت بإنشاء شرائح لجعل حملات التسويق أكثر فعالية من خلال استهداف الجماهير ذات الصلة. لاستخدام شريحة من رؤى الجمهور في Adobe Experience Platform وتطبيقات مثل Adobe Campaign Standard، يلزمك اتباع بعض الخطوات الملخصة في هذه المقالة.
 
 :::image type="content" source="media/AEP-flow.png" alt-text="مخطط العملية للخطوات الملخصة في هذه المقالة.":::
 
@@ -55,9 +55,9 @@ ms.locfileid: "5760085"
 
 1. انتقل إلى **المسؤول** > **الاتصالات**.
 
-1. حدد **إضافة اتصال** واختر **مساحة تخزين Azure Blob Storage** أو حدد **إعداد** في تجانب **مساحة تخزين Azure Blob Storage**:
+1. حدد **إضافة اتصال** واختر **مساحة تخزين Azure Blob** أو حدد **إعداد** في تجانب **مساحة تخزين Azure Blob** لتكوين الاتصال.
 
-   :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="الإطار المتجانب لتكوين Azure Blob Storage."::: لتكوين الاتصال.
+   :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="الإطار المتجانب لتكوين Azure Blob Storage."::: 
 
 1. اعط اتصالك اسمًا يمكن التعرف عليه في حقل **الاسم المعروض**. يصف الاسم ونوع الاتصال هذا الاتصال. ننصح باختيار اسم يوضح الغرض والهدف من الاتصال.
 
@@ -80,7 +80,7 @@ ms.locfileid: "5760085"
 
 1. لإنشاء عملية تصدير جديدة، حدد **إضافة تصدير**.
 
-1. في حقل **الاتصال للتصدير**، اختر اتصالاً من قسم مساحة تخزين Azure Blob Storage, إذا لم تشاهد اسم المقطع هذا، لن تكون هناك اتصالات من هذا النوع متوفرة لك.
+1. في حقل **الاتصال للتصدير**، اختر اتصالاً من قسم مساحة تخزين Azure Blob Storage, إذا لم تشاهد اسم المقطع هذا، فلا توجد اتصالات من هذا النوع متوفرة لك.
 
 1. اختر الشريحة التي تريد تصديرها. في هذا المثال، هي **ChurnProneCustomers**.
 
@@ -123,7 +123,8 @@ ms.locfileid: "5760085"
 
 لإرسال البريد الإلكتروني لهذه الحملة، سوف نستخدم Adobe Campaign Standard. بعد استيراد البيانات إلى Adobe Experience Platform، يلزمنا [إنشاء جمهور](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) في Adobe Campaign Standard باستخدام البيانات في Adobe Experience Platform.
 
-اعرف كيفية [استخدام منشئ الشرائح](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/working-with-adobe-experience-platform/aep-using-segment-builder.html#building-a-segment) في Adobe Campaign Standard لتعريف جمهور استنادًا إلى البيانات في Adobe Experience Platform.
+
+اعرف كيفية [استخدام منشئ الشرائح](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/audience-destinations/aep-using-segment-builder.html) في Adobe Campaign Standard لتعريف جمهور استنادًا إلى البيانات في Adobe Experience Platform.
 
 ## <a name="create-and-send-the-email-using-adobe-campaign-standard"></a>إنشاء البريد الإلكتروني وإرساله باستخدام Adobe Campaign Standard
 

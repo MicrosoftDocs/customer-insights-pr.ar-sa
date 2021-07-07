@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 87fb517e9f0b380f9721f77470dceb3bcb7e5616
-ms.sourcegitcommit: 55c00ea61c78db7b3b54894c01afb3246dff31c8
+ms.openlocfilehash: 82f6f363497f8f1b45fa84acd49bcaed332e60e8
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "5700652"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305602"
 ---
 # <a name="custom-machine-learning-models"></a>نماذج التعلم الآلي المخصصة
 
@@ -72,7 +72,7 @@ ms.locfileid: "5700652"
       > [!div class="mx-imgBorder"]
       > ![جزء معلمات إخراج النموذج](media/intelligence-screen3-outputparameters.png "جزء معلمات إخراج النموذج")
 
-1. حدد السمة المطابقة من القائمة المنسدلة **معرف العميل في النتائج**‬ التي تحدد العملاء، ثم حدد **حفظ**.
+1. حدد السمة المطابقة من القائمة المنسدلة **معرف العميل في النتائج** التي تحدد العملاء، وحدد **حفظ**.
 
    > [!div class="mx-imgBorder"]
    > ![ربط النتائج بجزء بيانات العميل](media/intelligence-screen4-relatetocustomer.png "ربط النتائج بجزء بيانات العميل")
@@ -100,7 +100,7 @@ ms.locfileid: "5700652"
       1. حدد **اسم معلمة مخزن بيانات الإخراج‬** لتدفقات الاختبار.
       1. حدد **اسم معلمة مسار الإخراج‬‬** لتدفقات الاختبار.
 
-1. حدد السمة المطابقة من القائمة المنسدلة **معرف العميل في النتائج**‬ التي تحدد العملاء، ثم حدد **حفظ**.
+1. حدد السمة المطابقة من القائمة المنسدلة **معرف العميل في النتائج** التي تحدد العملاء، وحدد **حفظ**.
    اختر سمة من إخراج الاستدلال بقيم تشبه عمود معرف العميل الخاص بكيان العميل. إذا لم يكن لديك مثل هذا العمود في مجموعة البيانات، فاختر السمة التي تعرف الصف بشكل فريد.
 
 ## <a name="run-a-workflow"></a>تشغيل سير عمل

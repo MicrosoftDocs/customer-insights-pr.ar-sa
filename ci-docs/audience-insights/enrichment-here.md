@@ -1,5 +1,5 @@
 ---
-title: إثراء البيانات بواسطة خدمات إثراء البيانات من طرف ثالث HERE Technologies
+title: الإثراء باستخدام HERE Technologies لجهة خارجية
 description: معلومات عامة حول خدمات إثراء البيانات من طرف ثالث HERE Technologies.
 ms.date: 04/09/2021
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 5d1f037377010153045c9255d2d01f98ebf1fdfd
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: b3c1da0f541efb85b2ca9d87a2e3b97bbfb6ca7f
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5896035"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305278"
 ---
 # <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>إثراء ملفات تعريف العملاء بواسطة HERE Technologies (معاينة)
 
@@ -26,7 +26,7 @@ ms.locfileid: "5896035"
 
 - لديك اشتراك نشط في HERE Technologies. للحصول على اشتراك، يمكنك [التسجيل هنا](https://developer.here.com/sign-up?utm_medium=referral&utm_source=Microsoft-Dynamics-CI&create=Freemium-Basic) أو [الاتصال بشركة HERE Technologies](https://developer.here.com/help?utm_medium=referral&utm_source=Microsoft-Dynamics-CI#how-can-we-help-you) مباشرةً. [اعرف المزيد حول إثراء الموقع من HERE Technologies.](https://developer.here.com/location-enrichment?cid=Dev-MicrosoftDynamics-DB-0-Dev-&utm_source=MicrosoftDynamics&utm_medium=referral&utm_campaign=Online_Dev_ReferralMicrosoft)
 
-- يتوفر [اتصال](connections.md) HERE *أو* لديك أذونات [المسؤول](permissions.md#administrator) ومفتاح واجهة برمجة تطبيقات HERE Technologies.
+- يتوفر [اتصال](connections.md) HERE *أو* لديك أذونات [المسؤول](permissions.md#administrator) ومفتاح HERE Technologies API.
 
 ## <a name="configure-the-enrichment"></a>تكوين الإثراء
 
@@ -37,7 +37,7 @@ ms.locfileid: "5896035"
    > [!div class="mx-imgBorder"]
    > ![الإطار المتجانب HERE Technologies](media/HERE-tile.png "الإطار المتجانب HERE Technologies")
 
-1. حدد [اتصال](connections.md) من القائمة المنسدلة. اتصل بالمسؤول إذا لم يكن هناك اتصال متوفر. إذا كنت أحد المسؤول، يمكنك إنشاء اتصال بتحديد **إضافة اتصال**. اختر **HERE Technologies** من القائمة المنسدلة. 
+1. حدد [اتصالاً](connections.md) من القائمة المنسدلة. اتصل بالمسؤول إذا لم يكن هناك اتصال متوفر. إذا كنت أحد المسؤول، يمكنك إنشاء اتصال بتحديد **إضافة اتصال**. اختر **HERE Technologies** من القائمة المنسدلة. 
 
 1. حدد **الاتصال بـ HERE Technologies** لتأكيد التحديد.
 
@@ -58,7 +58,7 @@ ms.locfileid: "5896035"
 
 1. حدد **حفظ الإثراء** بعد مراجعة اختياراتك.
 
-## <a name="configure-the-connection-for-here-technologies"></a>تكوين الاتصال لـ HERE technologies 
+## <a name="configure-the-connection-for-here-technologies"></a>تكوين الاتصال لـ HERE Technologies 
 
 يلزم أن تكون المسؤول لتكوين الاتصالات. حدد **إضافة اتصال** عند تكوين عملية إثراء *أو* انتقل إلى **المسؤول** > **الاتصالات** وحدد **إعداد** في تجانب HERE Technologies.
 
@@ -66,13 +66,13 @@ ms.locfileid: "5896035"
 
 1. قم بتوفير مفتاح واجهة برمجة تطبيقات صالح لـ HERE Technologies.
 
-1. راجع وقدم موافقتك على **خصوصية البيانات والتوافق‬** من خلال تحديد خانة الاختيار **أوافق**
+1. راجع **خصوصية البيانات والامتثال** وقدم الموافقة عليها بتحديد **أوافق**.
 
 1. حدد **التحقق** للتحقق من التكوين.
 
 1. بعد إكمال التحقق، حدد **حفظ**.
 
-> [!div class="mx-imgBorder"]
+   > [!div class="mx-imgBorder"]
    > ![صفحة تكوين الاتصال بـ HERE technologies](media/enrichment-HERE-connection.png "صفحة تكوين الاتصال بـ HERE technologies")
 
 ## <a name="enrichment-results"></a>نتائج الإثراء
@@ -85,7 +85,7 @@ ms.locfileid: "5896035"
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-قم بالبناء أعلى بيانات العملاء التي تم إثرائها. أنشئ [الشرائح](segments.md)، و[المقاييس](measures.md)، وقم كذلك [بتصدير البيانات](export-destinations.md) لتقديم تجارب مخصصة لعملائك.
+قم بالبناء أعلى بيانات العملاء التي تم إثرائها. أنشئ [الشرائح](segments.md) و[القياسات](measures.md) وحتى [تصدير البيانات](export-destinations.md) لتسليم تجارب مخصصة لعملائك.
 
 ## <a name="data-privacy-and-compliance"></a>خصوصية البيانات والتوافق
 
