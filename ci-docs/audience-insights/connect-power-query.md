@@ -9,12 +9,12 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: 50c231070ff9930c1ea82971bf4f8541a89d5027
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: b37bb5dfeed2326784ef276a93a04bec626aaf6e
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305875"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554667"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>الاتصال بمصدر بيانات Power Query
 
@@ -42,7 +42,7 @@ ms.locfileid: "6305875"
 1. يتيح لك مربع الحوار **Power Query - تحرير الاستعلامات** مراجعة البيانات وتحسينها. تظهر الكيانات التي حددتها الأنظمة في مصدر بياناتك المحدد في الجزء الأيمن.
 
    > [!div class="mx-imgBorder"]
-   > ![مربع حوار تحرير الاستعلامات](media/data-manager-configure-edit-queries.png "مربع حوار تحرير الاستعلامات")
+   > ![مربع حوار تحرير الاستعلامات.](media/data-manager-configure-edit-queries.png "مربع حوار تحرير الاستعلامات")
 
 1. يُمكنك أيضًا تحويل بياناتك. حدد كيانًا لتحريره أو تحويله. استخدم الخيارات الموجودة في نافذة Power Query لتطبيق عمليات التحويل. يتم سرد كل عملية نقل ضمن **الخطوات المطبقة**. كما يوفر Power Query العديد من خيارات التحويل التي تم إنشاؤها مسبقا. لمزيد من المعلومات، راجع [عمليات تحويل Power Query](/power-query/power-query-what-is-power-query#transformations).
 
@@ -75,7 +75,7 @@ ms.locfileid: "6305875"
 2. حدد الخصاص العمودي بجوار القائمة مصدر البيانات ترغب في تغييرها وحدد **تحرير** من القائمة المنسدلة.
 
    > [!div class="mx-imgBorder"]
-   > ![خيار التحرير](media/edit-option-data-sources.png "خيار التحرير")
+   > ![خيار التحرير.](media/edit-option-data-sources.png "خيار التحرير")
 
 3. قم بتطبيق التغييرات والتحويلات في مربع حوار **Power Query - تحرير الاستعلامات** كما هو موضح في قسم [إنشاء مصدر بيانات جديد](#create-a-new-data-source).
 

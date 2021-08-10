@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: b3c1da0f541efb85b2ca9d87a2e3b97bbfb6ca7f
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 00be15367001a5f4342d60bb284726ef7154d05c
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305278"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555291"
 ---
 # <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>إثراء ملفات تعريف العملاء بواسطة HERE Technologies (معاينة)
 
@@ -35,7 +35,7 @@ ms.locfileid: "6305278"
 1. حدد **إثراء بياناتي** في الإطار المتجانب HERE Technologies وحدد **الشروع في العمل**.
 
    > [!div class="mx-imgBorder"]
-   > ![الإطار المتجانب HERE Technologies](media/HERE-tile.png "الإطار المتجانب HERE Technologies")
+   > ![الإطار المتجانب HERE Technologies.](media/HERE-tile.png "الإطار المتجانب HERE Technologies")
 
 1. حدد [اتصالاً](connections.md) من القائمة المنسدلة. اتصل بالمسؤول إذا لم يكن هناك اتصال متوفر. إذا كنت أحد المسؤول، يمكنك إنشاء اتصال بتحديد **إضافة اتصال**. اختر **HERE Technologies** من القائمة المنسدلة. 
 
@@ -50,7 +50,7 @@ ms.locfileid: "6305278"
 1. حدد الحقول التي سيتم استخدامها من ملفات التعريف الموحدة للبحث عن بيانات الموقع المطابقة من تقنيات HERE يجب تعبئة الحقلين **الشارع 1** و **الرمز البريدي** للعنوان الرئيسي و/أو الثانوي المحدد.‬ للحصول على دقة مطابقة أعلى، يمكن إضافة المزيد من الحقول.
 
    > [!div class="mx-imgBorder"]
-   > ![صفحة تكوين إثراء HERE Technologies](media/enrichment-HERE-configuration.png "صفحة تكوين إثراء HERE Technologies")
+   > ![صفحة تكوين إثراء HERE Technologies.](media/enrichment-HERE-configuration.png "صفحة تكوين إثراء HERE Technologies")
 
 1. حدد **التالي** لإكمال تعيين الحقل.
 
@@ -73,7 +73,7 @@ ms.locfileid: "6305278"
 1. بعد إكمال التحقق، حدد **حفظ**.
 
    > [!div class="mx-imgBorder"]
-   > ![صفحة تكوين الاتصال بـ HERE technologies](media/enrichment-HERE-connection.png "صفحة تكوين الاتصال بـ HERE technologies")
+   > ![صفحة تكوين الاتصال بـ HERE technologies.](media/enrichment-HERE-connection.png "صفحة تكوين الاتصال بـ HERE technologies")
 
 ## <a name="enrichment-results"></a>نتائج الإثراء
 

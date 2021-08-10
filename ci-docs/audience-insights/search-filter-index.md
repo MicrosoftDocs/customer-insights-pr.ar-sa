@@ -9,19 +9,19 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: b6cc0ad1a47a6c00e3bf220271f42870fc53621b
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: a6131d4dddce48b0fba153bcefe5631e0d22d808
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597127"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554005"
 ---
 # <a name="customer-profiles-search--filter-index"></a>ملفات تعريف العملاء: فهرس البحث & التصفيه
 
 تكون نتيجة توحيد بيانات عميلك هو كيان ملف تعريف العميل الذي يوفر طريقة عرض موحدة إلى إجمالي قاعدة العملاء الخاصة بك. لـ [البحث بسرعة عن عميل مُعين أو مجموعة عملاء](customer-profiles.md)، يُمكنك تكوين إمكانيات **البحث** و **التصفية** على صفحة **العملاء**. اقرأ للتعرف على كيف يُمكن للمسؤولين تحرير السمات في صفحة **مؤشر البحث والتصفية** ، المتاح للمستخدمين للبحث والتصفية.
 
 > [!div class="mx-imgBorder"]
-> ![عامل تصفية البحث](media/search-filter.png "عامل تصفية البحث")
+> ![عامل تصفية البحث.](media/search-filter.png "عامل تصفية البحث")
 
 ## <a name="add-fields-and-specify-attributes"></a>إضافة حقول وتحديد سمات
 

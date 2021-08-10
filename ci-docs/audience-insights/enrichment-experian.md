@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 7c82fe92b3351a782a4fa6510300d870b742d042
-ms.sourcegitcommit: 42b3bce1e20e7cc707d232844dacfeed3d6fc096
+ms.openlocfilehash: abe9ee447745081e3c462d44e5901b6dac919adf
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "6309804"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555337"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>إثراء ملفات تعريف العملاء بخصائص سكانية من Experian (معاينة)
 
@@ -39,7 +39,7 @@ Experian هي شركة رائدة على مستوى العالم في مجال �
 1. حدد **إثراء البيانات** في تجانب Experian.
 
    > [!div class="mx-imgBorder"]
-   > ![Experian متجانبة أخرى](media/experian-tile.png "Experian tile")
+   > الإطار المتجانب ![Experian.](media/experian-tile.png "Experian tile")
    > 
 
 1. حدد [اتصالاً](connections.md) من القائمة المنسدلة. اتصل بالمسؤول إذا لم يكن هناك اتصال متوفر. إذا كنت أحد المسؤول، يمكنك إنشاء اتصال عن طريق تحديد **إضافة اتصال** واختيار Experian من القائمة المنسدلة. 

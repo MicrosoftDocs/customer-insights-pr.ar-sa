@@ -9,12 +9,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 822082d661863e737ea3d3a749a6c878db766967
-ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
+ms.openlocfilehash: 7ee57aa9e86ebf9bd1989d88750642f0b01bd4bf
+ms.sourcegitcommit: f18635c29bb25d9e424a3f5825dc2696278450cf
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5977361"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "6327348"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>تصدير البيانات إلى Azure Synapse Analytics (معاينة)
 
@@ -74,8 +74,10 @@ Azure Synapse iهو خدمة تحليلات تعمل على تسريع وقت ا
 1. قم بتوفير **اسم العرض** يمكن التعرف عليه لعملية التصدير الخاصة بك و **اسم قاعدة البيانات**.
 
 1. حدد الكيانات التي ترغب في تصديرها إلى Azure Synapse Analytics.
+   > [!NOTE]
+   > لا يتم دعم مصادر البيانات المستندة إلى [مجلد ‏‫نموذج البيانات العامة](connect-common-data-model.md).
 
-1. حدد **حفظ**.
+2. حدد **حفظ**.
 
 لا تعمل عملية التصدير التي يتم حفظها على التصدير في الحال.
 

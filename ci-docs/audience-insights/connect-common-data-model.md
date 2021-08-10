@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 385406b706890d741fec2694c190c0fada7809d7
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 49bab0605197912cd4b81ff193b914599a092792
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596529"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554878"
 ---
 # <a name="connect-to-a-common-data-model-folder-using-an-azure-data-lake-account"></a>الاتصال بمجلد نموذج البيانات العامة باستخدام حساب Azure Data Lake
 
@@ -45,7 +45,7 @@ ms.locfileid: "5596529"
 
 1. يمكنك الاختيار بين استخدام خيار قائم على الموارد وخيار قائم على الاشتراكات للمصادقة. لمزيد من المعلومات، راجع [توصيل رؤى الجمهور بحساب Azure Data Lake Storage Gen2 بواسطة كيان خدمة Azure](connect-service-principal.md). أدخل معلومات **الحاوية** وحدد **التالي**.
    > [!div class="mx-imgBorder"]
-   > ![مربع حوار لإدخال تفاصيل اتصال جديدة لـ Azure Data Lake‎](media/enter-new-storage-details.png)
+   > ![مربع حوار لإدخال تفاصيل اتصال جديدة لـ Azure Data Lake‎.](media/enter-new-storage-details.png)
    > [!NOTE]
    > ستحتاج إلى أحد الأدوار التالية إما في الحاوية أو حساب التخزين المشار إليه أعلاه لتكون قادرًا على الاتصال بمصدر بيانات أو إنشاء مصدر بيانات:
    >  - قارئ بيانات مخزن البيانات الثنائية الكبيرة
@@ -58,11 +58,11 @@ ms.locfileid: "5596529"
 
 1. ستحصل على قائمة بالكيانات المتوفرة في ملف model.json أو manifest.json المحدد. يمكنك المراجعة والتحديد من قائمة الكيانات المتاحة وحدد **حفظ**. سيتم استيعاب جميع الكيانات المحددة من مصدر البيانات الجديد.
    > [!div class="mx-imgBorder"]
-   > ![مربع حوار يعرض قائمة بالكيانات من ملف model.json](media/review-entities.png)
+   > ![مربع حوار يعرض قائمة بالكيانات من ملف model.json.](media/review-entities.png)
 
 8. أشر إلى كيانات البيانات الذي تريد تمكين ‏‫تعريف البيانات‬ لها وحدد **حفظ**. تتيح ملفات تعريف البيانات التحليلات والإمكانيات الأخرى. يمكنك تحديد الكيان بالكامل الذي يحدد كافة السمات من الكيان، أو تحديد سمات معينة من اختيارك. بشكل افتراضي، لا يتم تمكين أي كيان لتعريف البيانات.
    > [!div class="mx-imgBorder"]
-   > ![مربع الحوار يعرض تعريف البيانات](media/dataprofiling-entities.png)
+   > ![مربع الحوار يعرض تعريف البيانات.](media/dataprofiling-entities.png)
 
 9. بعد حفظ التحديدات، تفتح صفحة **مصادر البيانات**. من المفترض أن ترى الآن مجلد نموذج البيانات العامة كمصدر بيانات.
 
@@ -81,12 +81,12 @@ ms.locfileid: "5596529"
 
 4. بشكل اختياري، قم بتحديث **مفتاح الوصول** وحدد **التالي**.
 
-   ![مربع حوار لتحرير مفتاح وصول وتحديثه لمصدر بيانات موجود](media/edit-access-key.png)
+   ![مربع حوار لتحرير مفتاح وصول وتحديثه لمصدر بيانات موجود.](media/edit-access-key.png)
 
 5. بشكل اختياري، يمكنك التحديث من اتصال مفتاح حساب باتصال قائم على الموارد أو اتصال قائم على الاشتراكات. لمزيد من المعلومات، راجع [توصيل رؤى الجمهور بحساب Azure Data Lake Storage Gen2 بواسطة كيان خدمة Azure](connect-service-principal.md). لا يمكنك **تغيير** معلومات الحاوية عند تحديث الاتصال.
    > [!div class="mx-imgBorder"]
 
-   > ![مربع حوار لإدخال تفاصيل اتصال Azure Data Lake بحساب تخزين موجود](media/enter-existing-storage-details.png)
+   > ![مربع حوار لإدخال تفاصيل اتصال Azure Data Lake بحساب تخزين موجود.](media/enter-existing-storage-details.png)
 
    > [!NOTE]
    > ستحتاج إلى أحد الأدوار التالية إما في الحاوية أو حساب التخزين المشار إليه أعلاه لتكون قادرًا على الاتصال بمصدر بيانات أو إنشاء مصدر بيانات:

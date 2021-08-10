@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: c9adb4d7db74573d0512ae7a68a0e7ab51c994a0
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 8ab55d101f98169b8f794ce580ddd0a71ede6642
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304588"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554602"
 ---
 # <a name="customer-profiles"></a>ملفات تعريف العملاء
 
@@ -23,11 +23,11 @@ ms.locfileid: "6304588"
 يمكن أن يكون العملاء أفرادًا أو مؤسسات (معاينة). يتم تمثيل كل ملف تعريف لأحد العملاء أو المؤسسات بإطار متجانب. حدد إطارًا للإطلاع على معلومات إضافية حول ذلك العميل المحدد أو المؤسسة المحددة. استخدم عناصر التحكم في الترقيم في الجزء السفلي من الصفحة لعرض السجلات الإضافية.
 
 > [!div class="mx-imgBorder"] 
-> ![ملف تعريف العميل متاجرة عمل-مستهلك](media/profiles-customers.png "ملف تعريف العميل متاجرة عمل-مستهلك")
+> ![ملفات تعريف العميل متاجرة عمل-مستهلك.](media/profiles-customers.png "ملف تعريف العميل متاجرة عمل-مستهلك")
 
 المؤسسات (معاينة)
 > [!div class="mx-imgBorder"] 
-> ![ملفات تعريف العميل متاجرة عمل-مستهلك](media/profile-customers-b2b.png "ملفات تعريف العميل متاجرة عمل-مستهلك")
+> ![ملفات تعريف العميل متاجرة عمل-عمل.](media/profile-customers-b2b.png "ملفات تعريف العميل متاجرة عمل-مستهلك")
 
 > [!NOTE]
 > إذا لم تتمكن من رؤية الإطارات المتجانبه عند تحديد **العملاء** في التنقل، سيحتاج المسؤول إلى [تعريف سمة واحدة قابلة للبحث على الأقل](search-filter-index.md) في **فهرس البحث & التصفية**.
@@ -47,7 +47,7 @@ ms.locfileid: "6304588"
 2. حدد الخانات الموجودة بحانب السمات التي تريد تصفية العملاء حسبها.
 
    > [!div class="mx-imgBorder"] 
-   > ![ملفات تعريف العملاء](media/profiles-customers3.png "ملفات تعريف العملاء")
+   > ![ملفات تعريف العملاء.](media/profiles-customers3.png "ملفات تعريف العملاء")
 
 3. قم بإزالة عوامل التصفية من خلال تحديد **مسح عوامل التصفية** في صفحة **العملاء**.
 

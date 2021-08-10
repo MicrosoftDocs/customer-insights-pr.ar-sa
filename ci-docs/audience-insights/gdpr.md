@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 9c453c9b416bff0e6362a8ccf7ff534f4efa1e00
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: e832fbbdfb59cb06d98715223edca438d2c3a7f2
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597495"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554282"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>طلبات حقوق صاحب البيانات (DSR) بموجب GDPR
 
@@ -40,7 +40,7 @@ ms.locfileid: "5597495"
    2. تحقق من حالة مصدر البيانات تحت **الحالة**. تعني علامة الاختيار أن التحديث تم بنجاح. يعني المثلث التحذيري حدوث خطأ ما. في حالة ظهور المثلث التحذيري، اتصل بـ D365CI@microsoft.com.
 
 > [!div class="mx-imgBorder"]
-> ![معالجة طلبات الحذف لبيانات العملاء](media/gdpr-data-sources.png "معالجة طلبات الحذف لبيانات العملاء")
+> ![معالجة طلبات حذف GDPR لبيانات العملاء.](media/gdpr-data-sources.png "معالجة طلبات الحذف لبيانات العملاء")
 
 #### <a name="manage-delete-requests-for-user-data"></a>إدارة طلبات الحذف لبيانات المستخدم
 
@@ -52,7 +52,7 @@ ms.locfileid: "5597495"
 4. حدد **إزالة**.
 
 > [!div class="mx-imgBorder"]
-> ![التعامل مع طلبات الحذف من GDPR لبيانات المستخدم](media/gdpr-permissions.png "التعامل مع طلبات الحذف من GDPR لبيانات المستخدم")
+> ![امعالجة طلبات حذف GDPR لبيانات المستخدم.](media/gdpr-permissions.png "التعامل مع طلبات الحذف من GDPR لبيانات المستخدم")
 
 ## <a name="responding-to-gdpr-data-subject-export-requests"></a>الاستجابة لطلبات التصدير من أصحاب البيانات (DSR) في GDPR
 

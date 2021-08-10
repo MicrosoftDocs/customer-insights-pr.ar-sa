@@ -9,12 +9,12 @@ ms.topic: how-to
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: 3fa91553fd50a22ab62b5a2b1e3f13b9483776a8
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 2ab5a9059991611a2959a19cc688d232ec782e1e
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5598139"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554097"
 ---
 # <a name="microsoft-power-apps-connector-preview"></a>موصل Microsoft Power Apps (معاينة)
 
@@ -56,12 +56,12 @@ ms.locfileid: "5598139"
 1. قم بإضافة عنصر تحكم **المعرض** إلى تطبيق تقوم بإنشاءه.
 
 > [!div class="mx-imgBorder"]
-> ![إضافة عنصر معرض](media/connector-powerapps9.png "إضافة عنصر معرض")
+> ![إضافة عنصر معرض.](media/connector-powerapps9.png "إضافة عنصر معرض")
 
 1. قم بتحديد **العميل** كمصدر البيانات للعناصر.
 
     > [!div class="mx-imgBorder"]
-    > ![تحديد مصدر بيانات](media/choose-datasource-powerapps.png "تحديد مصدر بيانات")
+    > ![تحديد مصدر بيانات.](media/choose-datasource-powerapps.png "تحديد مصدر بيانات")
 
 1. يُمكنك تغيير لوحة البيانات الموجودة على اليمين لتحديد أي حقول كيان العميل الذي سوف يتم عرضه في المعرض.
 

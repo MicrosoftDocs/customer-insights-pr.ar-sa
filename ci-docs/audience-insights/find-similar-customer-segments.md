@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: f588f45ed11efffbb335003642a4b92810153017
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 96fbd18a20e0df7abd4e79ff77e2c3a396e33ccc
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596759"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554189"
 ---
 # <a name="similar-customers-preview"></a>العملاء المماثلون (معاينة)
 
@@ -50,7 +50,7 @@ ms.locfileid: "5596759"
 بعد معالجه الشريحة المماثلة، ستجد الشريحة الجديدة مدرجة في صفحة **الشرائح**.
 
 > [!div class="mx-imgBorder"]
-> ![شريحة العملاء المماثلين](media/expanded-segment.png "شريحة العملاء المماثلين")
+> ![شريحة العملاء المماثلين.](media/expanded-segment.png "شريحة العملاء المماثلين")
 
 حدد **عرض** في شريط الإجراءات لفتح تفاصيل الشريحة. تحتوي طريقه العرض هذه على معلومات حول توزيع النتائج عبر [عدد نقاط التماثل](#about-similarity-scores). كما ستجد قيم عدد نقاط التماثل في **معاينة أعضاء الشريحة**.
 

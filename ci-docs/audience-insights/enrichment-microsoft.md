@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 1b11c325649b91ebb47cde924227eacedae64b7a
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 3b10fb23cca03ed918aa7fd46478b568d5ebbf1a
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305140"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555475"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>إثراء ملفات تعريف العملاء بالعلامات التجارية وصلات الاهتمامات (معاينة)
 
@@ -27,7 +27,7 @@ ms.locfileid: "6305140"
 لتكوين أثراء لصلات الاهتمامات، انتقل إلى علامة التبويب **اكتشاف** وحدد **إثراء بياناتي** في تجانب **الاهتمامات**.
 
    > [!div class="mx-imgBorder"]
-   > ![الإطارات المتجانبة للعلامات التجارية والاهتمامات](media/BrandsInterest-tile-Hub.png "الإطارات المتجانبة للعلامات التجارية والمصالح")
+   > ![الإطارات المتجانبة للعلامات التجارية والاهتمامات.](media/BrandsInterest-tile-Hub.png "الإطارات المتجانبة للعلامات التجارية والمصالح")
 
 ## <a name="how-we-determine-affinities"></a>كيف يمكن تحديد التشابهات
 
@@ -123,7 +123,7 @@ ms.locfileid: "6305140"
 
 بعد تشغيل عملية الإثراء، انتقل إلى **عمليات الإثراء الخاصة بي** لمراجعة إجمالي عدد العملاء الذين تم إثرائهم وتصنيف العلامات التجارية أو الاهتمامات في ملفات تعريف العملاء الذين تم إثرائهم.
 
-:::image type="content" source="media/my-enrichments.png" alt-text="معاينه النتائج بعد تشغيل عمليه الإثراء":::
+:::image type="content" source="media/my-enrichments.png" alt-text="معاينه النتائج بعد تشغيل عمليه الإثراء.":::
 
 راجع البيانات التي تم إثرائها من خلال تحديد **عرض البيانات التي تم إثراؤها‬** في المخطط. تنتقل بيانات العلامات التجارية التي تم إثرائها إلى الكيان **BrandAffinityFromMicrosoft**. بيانات الاهتمامات في الكيان **InterestAffinityFromMicrosoft**. كما ستجد هذه الكيانات المدرجة في مجموعه **الإثراء**  في **البيانات** > **الكيانات**.
 
@@ -131,7 +131,7 @@ ms.locfileid: "6305140"
 
 كما يمكن عرض أوجه تشابه العلامات التجارية والاهتمامات في بطاقات العملاء الفردية. انتقل إلى **العملاء** وحدد ملف التعريف الخاص بالعميل. وفي بطاقة العملاء، ستجد مخططات لكل من العلامات التجارية أو الاهتمام التي لها صلة بالأشخاص في ملف التعريف السكاني لهذا العميل.
 
-:::image type="content" source="media/enrichment-customer-card.png" alt-text="بطاقة العملاء مع البيانات التي تم إثراؤها":::
+:::image type="content" source="media/enrichment-customer-card.png" alt-text="بطاقة العملاء مع البيانات التي تم إثراؤها.":::
 
 ## <a name="next-steps"></a>الخطوات التالية
 

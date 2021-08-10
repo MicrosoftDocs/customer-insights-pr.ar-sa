@@ -9,12 +9,12 @@ author: naravill
 ms.author: naravill
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: edd2cf488b52cef87b09b90336e48fdc7f470a68
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 3f97e22687ae4f5536d492bac83bdf9c711e2c94
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597403"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554419"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>استخدام نماذج قائمة على التعلم الآلي من Azure
 
@@ -52,7 +52,7 @@ ms.locfileid: "5597403"
      في المصمم، افتح **تحديد أعمدة في مجموعة البيانات**، وحدد **تعيين كمعلمة تدفق** حيث توفر اسمًا للمعلمة.
 
      > [!div class="mx-imgBorder"]
-     > ![تعيين معلمات مجموعة البيانات في المصمم](media/intelligence-designer-dataset-parameters.png "تعيين معلمات مجموعة البيانات في المصمم")
+     > ![تعيين معلمات مجموعة البيانات في المصمم.](media/intelligence-designer-dataset-parameters.png "تعيين معلمات مجموعة البيانات في المصمم")
    
 * معلمة مجموعة البيانات في SDK‏ (Python)
    
@@ -78,7 +78,7 @@ ms.locfileid: "5597403"
 
 * يوفر المصمم [الوحدة النمطية لتصدير البيانات](/azure/machine-learning/algorithm-module-reference/export-data) التي تتيح لك تصدير إخراج التدفقات إلى مساحة تخزين Azure. في الوقت الحالي، يجب أن تستخدم الوحدة النمطية نوع متجر البيانات **مساحة تخزين Azure Blob** وتعيين معلمة **متجر البيانات** و **المسار** النسبي. يتجاوز Customer Insights المعلمتين أثناء تنفيذ التدفقات مع متجر بيانات ومسار يمكن للمنتج الوصول إليه.
    > [!div class="mx-imgBorder"]
-   > ![تكوين الوحدة النمطية لتصدير البيانات](media/intelligence-designer-importdata.png "تكوين الوحدة النمطية لتصدير البيانات")
+   > ![تكوين الوحدة النمطية لتصدير البيانات.](media/intelligence-designer-importdata.png "تكوين الوحدة النمطية لتصدير البيانات")
    
 * عند كتابة إخراج الاستدلال باستخدام التعليمات البرمجية، يمكنك تحميل الإخراج إلى مسار داخل *متجر بيانات مسجل* في مساحة العمل. إذا تم تعيين معلمات للمسار ومتجر البيانات في التدفقات، فسيتمكن Customer insights من قراءة إخراج الاستدلال واستيراده. في الوقت الحالي، يتم دعم إخراج جدولي فردي بتنسيق csv. يجب أن يتضمن المسار الدليل واسم الملف.
 

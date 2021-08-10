@@ -1,7 +1,7 @@
 ---
 title: الصفحة الرئيسية في رؤى الجمهور
 description: ابدأ استكشاف التطبيق على الصفحة الرئيسية.
-ms.date: 01/07/2021
+ms.date: 07/22/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,58 +9,19 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: bf9080c564850bca0c239b7317eed2fc0f77d9f3
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 4072c724213486751ae96d38549fbcb6397b32c4
+ms.sourcegitcommit: 5c9c54ffe045017c19f0042437ada2c101dcaa0f
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597219"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6650348"
 ---
-# <a name="create-a-new-environment"></a>إنشاء بيئة جديدة
-
-## <a name="create-a-trial-environment"></a>إنشاء بيئة تجريبية
-
-يمكنك التسجيل للحصول على نسخة تجريبية من [صفحة تسجيل الاشتراك في النسخة التجريبية](https://dynamics.microsoft.com/get-started/free-trial/?appname=customerinsights). 
-
-> [!NOTE]
-> تنتهي صلاحيه النسخ التجريبية بعد 30 يوما.
-
-1. اختر خيار **تسجيل الاشتراك في النسخة التجريبية المجانية** وحدد **تسجيل الاشتراك الآن**.
-
-1. أدخل عنوان البريد الإلكتروني الخاص بالعمل أو المدرسة ، وأخبرنا بالمزيد عن نفسك واختر **التالي**.
-
-   :::image type="content" source="media/trial-signup-dialog.png" alt-text="مربع للتسجيل للحصول على مثيل تجريبي":::
-
-1. أدخل **اسمًا** لبيئتك الجديدة. 
-
-1. حدد نوع النسخة التجريبية.
-
-1. اختر **المنطقة** لبيئتك.
-
-1. اختياريًا ، لمسؤولي مؤسسة Dynamics 365: حدد **الإعدادات المتقدمة** وادخل عنوان URL لمؤسستك لاستخدام ميزات التنبؤ مثل خسارة العملاء.
-
-1. حدد **إنشاء**. 
-
-بعد إنشاء البيئة، ستري بيئة **العرض التوضيحي** التي تتيح لك إمكانيه استكشاف التطبيق الذي يحتوي على بيانات وهمية. يمكنك تغيير عينة البيانات لتطابق الصناعة الخاصة بك. حدد رمز **الإعدادات** في الرأس وحدد **إعدادات العرض التوضيحي**. بالإضافة إلى ذلك، يمكنك تغيير السمة المرئية. 
-
-يمكنك [التبديل إلى البيئة](#switch-environments) التي أنشأتها أثناء عملية تسجيل الاشتراك للعمل بالبيانات الخاصة بك.
-
-## <a name="create-a-new-production-or-sandbox-environment"></a>إنشاء بيئة إنتاج أو اختبار معزولة
-
-في بيئتك، حدد منتقي **البيئات** في رأس التطبيق وحدد **جديد**.
-
-اتبع الخطوات كما لو كنت تقوم [بإنشاء بيئة تجريبية](#create-a-trial-environment). افتراضيا، يتم تخزين البيانات في مخزن البيانات المدار بواسطة Customer Insights. يمكنك الحصول على خيار إضافي عند تحديد **الإعدادات المتقدمة** لتخزين البيانات في Azure Data Lake الخاص بك. قم بتوفير اسم حسابك ومفتاح الحساب لإنشاء اتصال بـ Azure Data Lake. 
-
-> [!IMPORTANT]
-> من خلال حفظ البيانات في Azure Data Lake Storage، فإنك توافق على نقل البيانات وتخزينها في الموقع الجغرافي المناسب لحساب تخزين Azure هذا، والذي قد يختلف عن مكان تخزين البيانات في Dynamics 365 Customer Insights. [اعرف المزيد في مركز توثيق Microsoft.](https://www.microsoft.com/trust-center)
-
-## <a name="explore-the-home-page"></a>استكشاف الصفحة الرئيسية
+# <a name="explore-the-home-page"></a>استكشاف الصفحة الرئيسية
 
 يمكنك [الوصول إلى رؤى الجمهور من Dynamics 365 Customer Insights](https://home.ci.ai.dynamics.com/) على عنوان URL التالي: [https://home.ci.ai.dynamics.com/](https://home.ci.ai.dynamics.com/).
 تعرض **الصفحة الرئيسية** نظرة عامة على الشرائح والمقاييس وبيانات الإثراء (إذا تم تكوينها) بعد إكمال مراحل [التعيين](map-entities.md)، و[المطابقة](match-entities.md) و[الدمج](merge-entities.md).
 
-> [!div class="mx-imgBorder"] 
-> ![المعلومات في الصفحة الرئيسية](media/home-page-insights.png "المعلومات في الصفحة الرئيسية")
+:::image type="content" source="media/home-page-insights.png" alt-text="لقطة شاشة للشاشة الرئيسية توضح عينة الرؤى.":::
 
 أسفل **الشرائح الأخيرة**، يمكنك رؤية مجموعات من العملاء استنادًا إلى السمات الديمغرافية أو السلوكية أو سمات المعاملات التي قمت بتعريفها. يساعدك [إنشاء الشرائح](segments.md) على تجميع قاعدة العملاء واستهداف أنشطة أعمالك بشكل أفضل.
 
@@ -68,18 +29,8 @@ ms.locfileid: "5597219"
 
 يسرد القسم **عمليات الإثراء الحديثة** نتائج تشغيل عمليات الإثراء التي اكتملت مؤخرًا. تضيف [عمليات الإثراء](enrichment-hub.md) معلومات حول قاعدة عملائك. على سبيل المثال، من خلال فهم الاهتمامات والعلامات التجارية التي ينجذبون لها.
 
-## <a name="switch-environments"></a>تبديل البيئات
-
-حدد عنصر تحكم **البيئة** في الركن السفلي العلوي من الصفحة لتغيير البيئات.
-
-> [!div class="mx-imgBorder"] 
-> ![تبديل البيئة](media/home-page-environment-switcher.png "تبديل البيئة")
-
-يمكن للمسؤولين إنشاء [بيئات متعددة](manage-environments.md) وأدارتها. قد يكون الحفاظ على أكثر من بيئة أمرًا مفيدًا، على سبيل المثال، إذا كانت مؤسستك تعمل بشكل دولي، وكانت تحتاج إلى تقسيم البيانات والمعارف الدقيقة بطرق مختلفة.
-
 ## <a name="next-step"></a>الخطوة التالية
 
 لرؤية المعارف الخاصة بك على الصفحة الرئيسية، ستحتاج أولا إلى [إضافة مصادر بيانات](data-sources.md) و[توحيد](data-unification.md) البيانات لإنشاء ملفات تعريف العملاء.
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

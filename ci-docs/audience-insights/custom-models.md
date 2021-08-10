@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 82f6f363497f8f1b45fa84acd49bcaed332e60e8
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: 72ccb2d86c698939d0ff018b4d36203e793df9ae
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305602"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554832"
 ---
 # <a name="custom-machine-learning-models"></a>نماذج التعلم الآلي المخصصة
 
@@ -42,7 +42,7 @@ ms.locfileid: "6305602"
 1. امنح الطراز المخصص اسمًا يمكن التعرف عليه في حقل **الاسم**.
 
    > [!div class="mx-imgBorder"]
-   > ![لقطة شاشة لجزء سير العمل الجديد](media/new-workflowv2.png "لقطة شاشة لجزء سير العمل الجديد")
+   > ![لقطة شاشة لجزء سير العمل الجديد.](media/new-workflowv2.png "لقطة شاشة لجزء سير العمل الجديد")
 
 1. حدد المؤسسة التي تحتوي على خدمة ويب في **المستأجر الذي يحتوي على خدمة الويب الخاصة بك**.
 
@@ -59,7 +59,7 @@ ms.locfileid: "6305602"
    > سيطبق سير عمل النموذج المخصص الاستكشافات لتعيين حقول إدخال خدمة ويب على سمات الكيان بالاستناد إلى اسم ونوع بيانات الحقل. ستشاهد رسالة خطأ إذا تعذر تعيين حقل خدمة ويب إلى كيان.
 
    > [!div class="mx-imgBorder"]
-   > ![تكوين سير عمل](media/intelligence-screen2-updated.png "تكوين سير عمل")
+   > ![تكوين سير عمل.](media/intelligence-screen2-updated.png "تكوين سير عمل")
 
 1. في خطوة **معلمات إخراج النموذج**، قم بتعيين الخصائص التالية:
    - استوديو التعلم الآلي (كلاسيكي)
@@ -70,12 +70,12 @@ ms.locfileid: "6305602"
       1. حدد **اسم معلمة مسار الإخراج‬‬** للتدفقات الدُفعية من القائمة المنسدلة.
 
       > [!div class="mx-imgBorder"]
-      > ![جزء معلمات إخراج النموذج](media/intelligence-screen3-outputparameters.png "جزء معلمات إخراج النموذج")
+      > ![جزء معلمات إخراج النموذج.](media/intelligence-screen3-outputparameters.png "جزء معلمات إخراج النموذج")
 
 1. حدد السمة المطابقة من القائمة المنسدلة **معرف العميل في النتائج** التي تحدد العملاء، وحدد **حفظ**.
 
    > [!div class="mx-imgBorder"]
-   > ![ربط النتائج بجزء بيانات العميل](media/intelligence-screen4-relatetocustomer.png "ربط النتائج بجزء بيانات العميل")
+   > ![ربط النتائج بجزء بيانات العميل.](media/intelligence-screen4-relatetocustomer.png "ربط النتائج بجزء بيانات العميل")
 
 1. ستشاهد شاشة **سير العمل المحفوظ** مع تفاصيل حول سير العمل.    
    إذا قمت بتكوين سير عمل لتدفق التعلم الآلي من Azure، فستتصل رؤى الجمهور بمساحة العمل التي تحتوي على التدفق. ستحصل رؤى الجمهور على دور **المساهم** في مساحة عمل Azure.

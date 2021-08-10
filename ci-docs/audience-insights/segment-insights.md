@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 2856888d6ac64d5daabcc5a234f13bc6f88bb3df
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: 0803be651662480ddf1fd22952f6a69ee1603001
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6306058"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554969"
 ---
 # <a name="segment-insights-preview"></a>نتائج تحليلات الشرائح (معاينة)
 
@@ -44,7 +44,7 @@ ms.locfileid: "6306058"
 بعد إكمال التحليل، ابحث عن التفاصيل حول نتيجة التحليلات هذه على **الشرائح** > **نتائج التحليلات (معاينة)**.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="media/segment-overlap.png" alt-text="تفاصيل نتيجة تحليلات تراكب الشرائح":::
+> :::image type="content" source="media/segment-overlap.png" alt-text="تفاصيل نتيجة تحليلات تراكب الشرائح.":::
 
 حدد نتيجة تحليلات لرؤية نتائج التحليلات:
 
@@ -77,7 +77,7 @@ ms.locfileid: "6306058"
 بعد إكمال التحليل، ابحث عن التفاصيل حول نتيجة التحليلات هذه على **الشرائح** > **نتائج التحليلات (معاينة)**.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="media/segment-differentiators.png" alt-text="تفاصيل نتيجة تحليلات أداة تفاضل الشرائح":::
+> :::image type="content" source="media/segment-differentiators.png" alt-text="تفاصيل نتيجة تحليلات أداة تفاضل الشرائح.":::
 
 حدد نتيجة تحليلات لرؤية نتائج التحليلات. يتضمن تحليل أداة التفاضل علامتي تبويب. تسرد علامة التبويب **السمات** سمات ملف التعريف التي تعتبر أدوات تفاضل. تسرد علامة التبويب **المقاييس** أدوات التفاضل. تتضمن كل علامة تبويب التفاصيل التالية:
 
