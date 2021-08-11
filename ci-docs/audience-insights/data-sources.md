@@ -9,12 +9,13 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 54dd7b629d4b4e7f640b932b0f9246e0602f46bd
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.custom: intro-internal
+ms.openlocfilehash: 0a017a37777adaaf7de079cf481ec10c70c7adba
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304680"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692419"
 ---
 # <a name="data-sources-overview"></a>نظرة عامة مصادر البيانات
 
@@ -30,13 +31,13 @@ ms.locfileid: "6304680"
 
 - [عبر العشرات من موصلات Power Query](connect-power-query.md)
 - [من مجلد نموذج البيانات العامة](connect-common-data-model.md)
-- [من مخزن Microsoft Dataverse الخاص بك](connect-common-data-service-lake.md)
+- [من مخزن Microsoft Dataverse الخاص بك](connect-dataverse-managed-lake.md)
 
 ## <a name="add-data-from-on-premises-data-sources"></a>إضافة البيانات من مصادر البيانات المحلية
 
-يتم دعم استيعاب البيانات من مصادر البيانات المحلية في Audience Insights استنادًا إلى تدفقات بيانات Microsoft Power Platform. يمكن تمكين تدفقات البيانات في Customer Insights عن طريق [توفير عنوان URL لبيئة Microsoft Dataverse](manage-environments.md#create-an-environment-in-an-existing-organization) عند إعداد البيئة.
+يتم دعم استيعاب البيانات من مصادر البيانات المحلية في Audience Insights استنادًا إلى تدفقات بيانات Microsoft Power Platform. يمكن تمكين تدفقات البيانات في Customer Insights عن طريق [توفير عنوان URL لبيئة Microsoft Dataverse](get-started-paid.md) عند إعداد البيئة.
 
-ستستخدم مصادر البيانات التي تم إنشاؤها بعد ربط بيئة Dataverse بـ Customer Insights [تدفقات بيانات Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) بشكل افتراضي. تدعم تدفقات البيانات الاتصال المحلي باستخدام بوابة البيانات. قم بإزالة وإعادة إنشاء مصادر البيانات التي كانت موجودة قبل ربط بيئة Dataverse لأجل [استخدام بوابات البيانات المحلية](/data-integration/gateway/service-gateway-app.md).
+ستستخدم مصادر البيانات التي تم إنشاؤها بعد ربط بيئة Dataverse بـ Customer Insights [تدفقات بيانات Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) بشكل افتراضي. تدعم تدفقات البيانات الاتصال المحلي باستخدام بوابة البيانات. قم بإزالة وإعادة إنشاء مصادر البيانات التي كانت موجودة قبل ربط بيئة Dataverse لأجل [استخدام بوابات البيانات المحلية](/data-integration/gateway/service-gateway-app).
 
 ستظهر بوابات البيانات من بيئة Power BI أو Power Apps موجودة ويمكنك إعادة استخدامها في Customer Insights. تعرض صفحة مصادر البيانات ارتباطات للوصول إلى بيئةMicrosoft Power Platform ، حيث يمكنك عرض محلي بوابات البيانات المحلية وتكوينها.
 
@@ -45,9 +46,9 @@ ms.locfileid: "6304680"
 سترى اسم كل مصدر بيانات تم إدخاله وحالته وآخر مرة تم فيها تحديث البيانات لهذا المصدر. يمكنك فرز قائمة مصادر البيانات حسب كل عمود.
 
 > [!div class="mx-imgBorder"]
-> ![مصدر بيانات تمت إضافته](media/configure-data-datasource-added.png "مصدر بيانات تمت إضافته")
+> ![مصدر بيانات تمت إضافته.](media/configure-data-datasource-added.png "مصدر بيانات تمت إضافته")
 
-|الحالة   |الوصف   |
+|‏الحالة  |الوصف   |
 |---------|---------|
 |تمت بنجاح   |يتم استيعاب مصادر البيانات بنجاح إذا تم ذكر الوقت في العمود **تم تحديثه**.
 |لم تبدأ   |لا يحتوي مصدر البيانات على بيانات تم استيعابها أو ما زالت في وضع المسودة.         |

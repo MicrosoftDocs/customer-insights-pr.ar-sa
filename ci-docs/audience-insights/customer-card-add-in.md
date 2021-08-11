@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 88492943ddbf9ae30c64d92b261433b74f34f682
-ms.sourcegitcommit: d74430270f1b754322287c4f045d7febdae35be2
+ms.openlocfilehash: 6a7137730ab8cc43bc93daf647d9d55d02d96cd8
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6059572"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692189"
 ---
 # <a name="customer-card-add-in-preview"></a>الوظيفة الإضافية لبطاقة عميل (معاينة)
 
@@ -25,7 +25,7 @@ ms.locfileid: "6059572"
 ## <a name="prerequisites"></a>المتطلبات الأساسية
 
 - تعمل هذه الوظيفة الإضافية فقط مع تطبيقات Dynamics 365 التي تعتمد على نموذج، مثل Sales أو Customer Service الإصدار 9.0 وما يليه.
-- لكي يتم تعيين بيانات Dynamics 365 إلى ملفات تعريف العملاء لمعلومات الجمهور يلزم [استيعابها من تطبيق Dynamics 365 باستخدام موصل Common Data Service](connect-power-query.md).
+- لكي يتم تعيين بيانات Dynamics 365 إلى ملفات تعريف العملاء لمعلومات الجمهور يلزم [استيعابها من تطبيق Dynamics 365 باستخدام موصل Microsoft Dataverse](connect-power-query.md).
 - كافة مستخدمي Dynamics 365 من الوظيفة الإضافية لبطاقة العميل يجب [إضافتهم كمستخدمين](permissions.md) في معلومات الجمهور لرؤية البيانات.
 - [إمكانيات البحث والتصفية المكونة](search-filter-index.md) في معلومات الجمهور تكون مطلوبة للبحث عن البيانات للعمل.
 - يعتمد كل عنصر تحكم من الوظيفة الإضافية على بيانات محددة في معلومات الجمهور:
@@ -50,7 +50,7 @@ ms.locfileid: "6059572"
 1. حدد الارتباط **اسم العرض** لحل **Dynamics 365 Customer Insights الوظيفة الإضافية لبطاقة العميل (معاينة)**.
 
    > [!div class="mx-imgBorder"]
-   > ![تحديد اسم العرض](media/select-display-name.png "تحديد اسم العرض")
+   > ![تحديد اسم العرض.](media/select-display-name.png "تحديد اسم العرض")
 
 1. حدد **تسجيل الدخول** وأدخل بيانات الاعتماد الخاصة بحساب المسؤول الذي تستخدمه لتكوين Customer Insights.
 
@@ -64,7 +64,7 @@ ms.locfileid: "6059572"
    - للتعيين مع حساب، حدد الحقل الموجود في كيان العميل الذي يتطابق مع معرف كيان الحساب.
 
    > [!div class="mx-imgBorder"]
-   > ![حقل مُعرف جهة الاتصال](media/contact-id-field.png "حقل مُعرف جهة الاتصال")
+   > ![حقل مُعرف جهة الاتصال.](media/contact-id-field.png "حقل مُعرف جهة الاتصال")
 
 1. حدد **حفظ التكوين** لحفظ الإعدادات.
 
@@ -83,7 +83,7 @@ ms.locfileid: "6059572"
 1. حدد جهة الاتصال التي ترغب في إضافة عناصر تحكم بطاقة العميل إليها.
 
     > [!div class="mx-imgBorder"]
-    > ![تحديد نموذج جهة اتصال](media/contact-active-forms.png "تحديد نموذج جهة اتصال")
+    > ![تحديد نموذج جهة اتصال.](media/contact-active-forms.png "تحديد نموذج جهة اتصال")
 
 1. لإضافة عنصر تحكم، في مُحرر النماذج، قم بسحب أي حقل من **مستكشف الحقول** إلى حيث تريد أن يظهر عنصر التحكم.
 
@@ -110,7 +110,7 @@ ms.locfileid: "6059572"
 
 1. حدد **تطبيق ترقية الحل** في شريط الإجراءات.
 
-   :::image type="content" source="media/customer-card-add-in-upgrade.png" alt-text="ترقية الحل في منطقة التخصيص في تطبيقات Dynamics 365":::
+   :::image type="content" source="media/customer-card-add-in-upgrade.png" alt-text="ترقية الحل في منطقة التخصيص في تطبيقات Dynamics 365.":::
 
 1. بعد بدء عملية الترقية، سوف تشاهد مؤشر تحميل حتى تكتمل الترقية. إذا لم يكن هناك إصدار جديد، فإن الترقية ستعرض رسالة خطأ.
 

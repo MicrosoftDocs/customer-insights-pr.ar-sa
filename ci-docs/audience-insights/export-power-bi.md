@@ -1,7 +1,7 @@
 ---
 title: موصل Power BI
 description: تعرّ على كيفية استخدام موصل Dynamics 365 Customer Insights في Power BI.
-ms.date: 09/21/2020
+ms.date: 07/23/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: e43e2f9dbc84ebfbf2154990a752740f973296cb
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: faeb95bd7d2fe3cb220308cdee559b3347c5af54
+ms.sourcegitcommit: f98b6b2058f384365f222d1f9ba0cc9ce801f09d
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596023"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "6661086"
 ---
 # <a name="connector-for-power-bi-preview"></a>موصل لـ Power BI (معاينة)
 
@@ -39,7 +39,7 @@ ms.locfileid: "5596023"
 
 1. في مربع الحوار **المتصفح**. سترى قائمة بجميع البيئات التي يمكنك الوصول إليها. قم بتوسيع بيئة وافتح أي واحد من المجلدات (الكيانات والمقاييس والشرائح وعمليات الإثراء). على سبيل المثال، افتح مجلد **الكيانات** لرؤية كافة الكيانات التي يمكنك استيرادها.
 
-   متصفح موصل ![Power BI](media/power-bi-navigator.png "متصفح موصل Power BI")
+   مستعرض موصل ![Power BI.](media/power-bi-navigator.png "متصفح موصل Power BI")
 
 1. حدد خانات الاختيار المجاورة للكيانات التي سيتم تضمينها **وتحميلها**. يُمكنك تحديد كيانات متعددة من البيئات المتعددة.
 
@@ -68,5 +68,11 @@ ms.locfileid: "5596023"
 3. قم بإزالة أية علاقات مكررة تم تحديدها.
 
 بعد إزالة العلاقات المكررة، حاول تكوين موصل Power BI مرة أخرى. من المفترض أن تصبح البيئة متاحة الآن.
+
+### <a name="errors-on-date-fields-when-loading-entities-in-power-bi-desktop"></a>أخطاء في حقول التاريخ عند تحميل الكيانات في Power BI Desktop
+
+عند تحميل كيانات تحتوي على حقول بتنسيق تاريخ مثل MM/DD/YYYY، يمكن أن تواجه أخطاء بسبب عدم تطابق التنسيقات المحلية. يحدث عدم التطابق هذا عندما يكون ملف Power BI Desktop معينًا على إعداد محلي آخر غير English (الولايات المتحدة)، وذلك لأن حقول التاريخ معلومات الجمهور يتم حفظها بتنسيق الولايات المتحدة.
+
+يحتوي ملف Power BI Desktop على إعداد محلي واحد، والذي يتم تطبيقه عند استرداد البيانات. قم بتفسير حقول التاريخ هذه بشكل صحيح، وقم بتعيين إعداد محلي لملف BPI إلى English (الولايات المتحدة). [تعرف على كيفية تغيير اللغة المحلية لملف Power BI desktop](/power-bi/fundamentals/supported-languages-countries-regions.md#choose-the-locale-for-importing-data-into-power-bi-desktop).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

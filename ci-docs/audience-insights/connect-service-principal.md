@@ -9,18 +9,18 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c670b0065a2833a6dc311d9e86d2b351140382ce
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: cc94ad49f12067d513db4663bff60620d6501eb0
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596483"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692097"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-gen2-account-with-an-azure-service-principal-for-audience-insights"></a>الاتصال بحساب Azure Data Lake Storage Gen2 بواسطة كيان خدمة Azure لرؤى الجمهور
 
 يجب أن تكون دائمًا الأدوات المؤتمتة التي تستخدم خدمات Azure ذات أذونات مقيدة. بدلاً من قيام التطبيقات بتسجيل الدخول كمستخدم له امتيازات كاملة، يقدم Azure كيانات الخدمة. اقرأ لمعرفة كيفية توصيل رؤى الجمهور بواسطة حساب Azure Data Lake Storage Gen2 يستخدم كيان خدمة Azure بدلاً من مفاتيح حساب تخزين. 
 
-يمكنك استخدام كيان الخدمة من أجل [إضافة أو تحرير مجلد نموذج البيانات العامة كمصدر بيانات](connect-common-data-model.md) بشكل آمن أو [إنشاء بيئة جديدة أو تحديث بيئة موجودة](manage-environments.md#create-an-environment-in-an-existing-organization).
+يمكنك استخدام كيان الخدمة من أجل [إضافة أو تحرير مجلد نموذج البيانات العامة كمصدر بيانات](connect-common-data-model.md) بشكل آمن أو [إنشاء بيئة جديدة أو تحديث بيئة موجودة](get-started-paid.md).
 
 > [!IMPORTANT]
 > - يجب أن يكون حساب التخزين Azure Data Lake Gen2 الذي ينوي استخدام كيان الخدمة [ممكّنًا لاستخدام مساحة الاسم الهرمية](/azure/storage/blobs/data-lake-storage-namespace).
@@ -81,7 +81,7 @@ ms.locfileid: "5596483"
 
 ## <a name="enter-the-azure-resource-id-or-the-azure-subscription-details-in-the-storage-account-attachment-to-audience-insights"></a>أدخل معرف مورد Azure أو تفاصيل اشتراك Azure في مرفق حساب التخزين في رؤى الجمهور.
 
-قم بإرفاق حساب Azure Data Lake Storage في رؤى الجمهور [لتخزين بيانات الإخراج](manage-environments.md) أو [لاستخدامه كمصدر بيانات](connect-common-data-service-lake.md). يتيح لك تحديد خيار Azure Data Lake الاختيار بين طريقة تستند إلى الموارد أو طريقة تستند إلى الاشتراكات.
+قم بإرفاق حساب Azure Data Lake Storage في رؤى الجمهور [لتخزين بيانات الإخراج](manage-environments.md) أو [لاستخدامه كمصدر بيانات](connect-dataverse-managed-lake.md). يتيح لك تحديد خيار Azure Data Lake الاختيار بين طريقة تستند إلى الموارد أو طريقة تستند إلى الاشتراكات.
 
 اتبع الخطوات أدناه لتقديم المعلومات المطلوبة بالطريقة المحددة.
 

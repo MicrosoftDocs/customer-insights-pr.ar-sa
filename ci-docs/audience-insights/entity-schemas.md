@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 6667e411a1b56e13105a6b59b7b5d249bc8141ea
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: e21f8a9422357fbc5c9425f91f3ba241c9dec9d8
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596345"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692235"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>مخططات الكيانات في نموذج البيانات العامة
 
@@ -24,7 +24,7 @@ ms.locfileid: "5596345"
 
 يسمح نموذج البيانات المشتركة هذا للعاملين على دمج التطبيقات والبيانات بالتعاون بشكل أسهل من خلال توفير تعريف موحد للبيانات. يتضمن نموذج البيانات العامة نظام بيانات تعريف غنيًا بالكيانات القياسية والعلاقات والتدرجات الهرمية والسمات والمزيد. وهو نشأ من تطبيقات Dynamics 365 وذو مصدر مفتوح على GitHub مع أكثر من 260 كيانًا قياسيًا. يساهم نظام كبير من شركاء داخليين وخارجيين في المفاهيم الخاصة بالمجال لنموذج البيانات العامة.
 
-تقوم أنظمة وأنظمة أساسية متعددة بتطبيق نموذج البيانات العامة اليوم، بما في ذلك تدفقات بيانات Power BI وAzure Data Services. وهي مدعومة في Common Data Service وDynamics 365 وPower Apps وPower BI وخدمات Azure القادمة، مما يساعد على تراكم القيمة باتجاه [مبادرة البيانات المفتوحة](https://www.microsoft.com/open-data-initiative).
+تقوم أنظمة وأنظمة أساسية متعددة بتطبيق نموذج البيانات العامة في الوقت الحالي، بما في ذلك تدفقات البيانات من Power BI وخدمات بيانات Azure. ويُعد ذلك مدعومًا بالفعل في Microsoft Dataverse، وDynamics 365، وPower Apps، وPower BI، خدمات بيانات Azure القادمة، والتي تكتسب قيمة مباشرة نحو [مبادرة البيانات المفتوحة](https://www.microsoft.com/open-data-initiative)
 
 ## <a name="customer-insights-entity-schemas"></a>مخططات كيانات Customer Insights
 
@@ -44,7 +44,7 @@ ms.locfileid: "5596345"
 
 يمكنك عرض الكيانات في [متصفح كيانات نموذج البيانات العامة](https://microsoft.github.io/CDM/). حدد الزر **تحميل من GitHub!** وانتقل إلى **foundationCommon** > **crmCommon** > **solutions** > **customerInsights** حيث ستعثر على كيانات Customer Insights وتعريفاتها.
 > [!div class="mx-imgBorder"]
-> ![متصفح كيانات CDS يعرض كيان CustomerActivity](media/CDM-entity-navigator.png "متصفح كيانات CDS يعرض كيان CustomerActivity")
+> ![يعرض مستعرض كيان CDM كيان CustomerActivity.](media/CDM-entity-navigator.png "متصفح كيانات CDS يعرض كيان CustomerActivity")
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

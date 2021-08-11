@@ -2,6 +2,8 @@
   href: index.yml
 - name: نظرة عامة على المنتج
   href: overview.md
+- name: إنشاء إصدار تجريبي
+  href: audience-insights/get-started-trial.md
 - name: الوصول إلى بيئتك
   href: 'https://home.ci.ai.dynamics.com/'
 - name: رؤى الجمهور
@@ -10,12 +12,10 @@
       href: audience-insights/index.yml
     - name: نظرة عامة على القدرات
       href: audience-insights/overview.md
-    - name: إصدار تجريبي مجاني
-      href: 'https://dynamics.microsoft.com/get-started/?appname=customerinsights'
     - name: الميزات الجديدة والمحدثة
       href: audience-insights/whats-new-audience-insights.md
     - name: إنشاء بيئة جديدة
-      href: audience-insights/home.md
+      href: audience-insights/get-started-paid.md
     - name: التعرف على الوحدات النمطية
       items:
         - name: استيعاب البيانات
@@ -34,8 +34,8 @@
           href: audience-insights/connect-power-query.md
         - name: إضافة مجلد نموذج بيانات عامة كمصدر بيانات
           href: audience-insights/connect-common-data-model.md
-        - name: إضافة مستودع البيانات المُدارة في Common Data Service
-          href: audience-insights/connect-common-data-service-lake.md
+        - name: إضافة مستودع البيانات المُدارة في Dataverse
+          href: audience-insights/connect-dataverse-managed-lake.md
         - name: التحديث التزايدي لمصادر البيانات
           href: audience-insights/incremental-refresh-data-sources.md
         - name: استيعاب بيانات الوقت الحقيقي
@@ -76,11 +76,11 @@
           href: audience-insights/enrichment-experian.md
         - name: إثراء البيانات باستخدام الاستيراد المخصص لبروتوكول SFTP
           href: audience-insights/enrichment-SFTP-custom-import.md
-    - name: الشرائح والمقاييس
+    - name: المقاطع
       items:
         - name: نظرة عامة على الشرائح
           href: audience-insights/segments.md
-        - name: إنشاء الشرائح ومجموعات العملاء
+        - name: إنشاء شرائح
           href: audience-insights/segment-builder.md
         - name: الشرائح المقترحة استنادا إلى القياسات
           href: audience-insights/suggested-segments.md
@@ -254,6 +254,8 @@
       items:
         - name: إنشاء أحداث وتعديلها
           href: engagement-insights/refined-events.md
+        - name: التعرف على أحداث الويب من الزائرين المصادق عليهم مسبقًا
+          href: engagement-insights/unknown-to-known.md
         - name: تصدير الأحداث
           href: engagement-insights/export-events.md
     - name: التقارير
@@ -304,6 +306,8 @@
       items:
         - name: حذف البيانات الشخصية وتصديرها
           href: engagement-insights/delete-export-personal-data.md
+    - name: التوفر الإقليمي
+      href: engagement-insights/regional-availability.md
     - name: حدود الخدمة
       href: engagement-insights/quotas.md
 - name: الاتصال بفريق الدعم
