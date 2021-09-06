@@ -1,6 +1,6 @@
 ---
 title: تصدير بيانات Customer Insights إلى Adobe Experience Platform
-description: تعرف على كيفية استخدام معلومات الجمهور في Adobe Experience Platform.
+description: تعرف على كيفية استخدام شرائح رؤى الجمهور في Adobe Experience Platform.
 ms.date: 03/29/2021
 ms.reviewer: mhart
 ms.service: customer-insights
@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 1045d0e373fd5ea8987684e51bd9a07b7b535ee3
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: fac976a49b1b5c5485b75e1262135738c913bd2230be7df8aa0ec12c59734053
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305508"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7032101"
 ---
 # <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>استخدام شرائح Customer Insights في Adobe Experience Platform (إصدار أولي)
 
-كمستخدم لمعلومات الجمهور في Dynamics 365 Customer Insights، ربما قمت بإنشاء شرائح لجعل حملات التسويق أكثر فعالية من خلال استهداف الجماهير ذات الصلة. لاستخدام شريحة من رؤى الجمهور في Adobe Experience Platform وتطبيقات مثل Adobe Campaign Standard، يلزمك اتباع بعض الخطوات الملخصة في هذه المقالة.
+كمستخدم لمعلومات الجمهور في Dynamics 365 Customer Insights، ربما قمت بإنشاء شرائح لجعل حملات التسويق أكثر فعالية من خلال استهداف الجماهير ذات الصلة. لاستخدام شريحة من رؤى الجمهور في Adobe Experience Platform وتطبيقات مثل Adobe Campaign Standard، عليك اتباع بعض الخطوات التي تم توضيحها في هذا المقال.
 
 :::image type="content" source="media/AEP-flow.png" alt-text="مخطط العملية للخطوات الملخصة في هذه المقالة.":::
 
@@ -33,7 +33,7 @@ ms.locfileid: "6305508"
 
 لتكوين فهم أفضل لكيفية استخدام شرائح من رؤى الجمهور في Adobe Experience Platform، سنلقي نظرة على عينة حملة وهمية.
 
-لنفترض أن شركتك تقدم خدمة شهرية قائمة على اشتراك لعملائك في الولايات المتحدة. تريد تحديد العملاء الذين من المقرر تجديد اشتراكاتهم في الأيام الثمانية القادمة، ولكنهم لم يجددوا اشتراكهم بعد. للمحافظة على هؤلاء العملاء، تريد إرسال عرض ترويجي لهم عبر البريد الإلكتروني، باستخدام Adobe Experience Platform.
+لنفترض أن شركتك تقدم خدمة شهرية قائمة على اشتراك لعملائك في الولايات المتحدة. تريد تحديد العملاء الذين من المقرر تجديد اشتراكاتهم في الأيام الثمانية القادمة، ولكنهم لم يجددوا اشتراكهم بعد. للمحافظة على هؤلاء العملاء، ترغب في إرسال عرض ترويجي لهم عبر البريد الإلكتروني، باستخدام Adobe Experience Platform.
 
 في هذا المثال، نريد تشغيل حملة البريد الإلكتروني الترويجية مرة واحدة. لا تتناول هذه المقالة حالة استخدام تشغيل الحملة أكثر من مرة.
 
@@ -93,7 +93,7 @@ ms.locfileid: "6305508"
 يمكنك الآن [تصدير الشريحة عند الطلب](export-destinations.md#run-exports-on-demand). سيعمل التصدير أيضًا مع كل [تحديث مجدول](system.md).
 
 > [!NOTE]
-> تأكد من أن عدد السجلات في الشريحة المصدّرة هو ضمن الحد المسموح به في ترخيص Adobe Campaign Standard.
+> تأكد من أن عدد السجلات في الشريحة التي تم تصديرها يقع ضمن الحد المسموح به في ترخيص Adobe Campaign Standard.
 
 يتم تخزين البيانات المصدّرة في حاوية Azure Blob storage التي قمت بتكوينها أعلاه. يتم إنشاء مسار المجلد التالي بشكل تلقائي في حاويتك:
 
@@ -107,27 +107,27 @@ ms.locfileid: "6305508"
 
 ## <a name="define-experience-data-model-xdm-in-adobe-experience-platform"></a>تعريف نموذج بيانات التجربة (XDM) في Adobe Experience Platform
 
-قبل أن يمكن استخدام البيانات المصدّرة من رؤى الجمهور داخل Adobe Experience Platform، نحتاج إلى تعريف مخطط نموذج بيانات التجربة و[تكوين البيانات لملف تعريف العميل في الوقت الحقيقي](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html#tutorials).
+قبل استخدام البيانات التي تم تصديرها من رؤى الجمهور داخل Adobe Experience Platform، علينا تحديد مخطط نموذج بيانات التجربة و[تكوين البيانات لملف تعريف العميل في الوقت الحقيقي](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html#tutorials).
 
 تعرف على [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) وافهم [أساسيات تركيب المخطط](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#schema).
 
-## <a name="import-data-into-adobe-experience-platform"></a>استيراد البيانات إلى Adobe Experience Platform
+## <a name="import-data-into-adobe-experience-platform"></a>استيراد البيانات في Adobe Experience Platform
 
-الآن وقد تم تنظيم كل شيء، نحتاج إلى استيراد بيانات الجمهور التي قمنا بإعدادها من رؤى الجمهور إلى Adobe Experience Platform.
+الآن وقد تم إعداد كل شيء، نريد استيراد بيانات الجمهور التي قمنا بتحضيرها من رؤى الجمهور إلى Adobe Experience Platform.
 
 أولاً، [أنشئ اتصال مصدر Azure Blob Storage](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/blob.html#getting-started).    
 
-بعد تعريف اتصال المصدر، يمكنك [تكوين تدفق بيانات](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html#ui-tutorials) لاتصال دُفعي لمساحة تخزين سحابية لاستيراد إخراج الشرائح من رؤى الجمهور إلى Adobe Experience Platform.
+عد تعريف الاتصال المصدر، يمكنك [تكوين تدفق بيانات](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html#ui-tutorials) لاتصال دفعي بمساحة التخزين في السحابة لاستيراد إخراج الشرائح من رؤى الجمهور إلى Adobe Experience Platform.
 
 ## <a name="create-an-audience-in-adobe-campaign-standard"></a>إنشاء جمهور في Adobe Campaign Standard
 
-لإرسال البريد الإلكتروني لهذه الحملة، سوف نستخدم Adobe Campaign Standard. بعد استيراد البيانات إلى Adobe Experience Platform، يلزمنا [إنشاء جمهور](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) في Adobe Campaign Standard باستخدام البيانات في Adobe Experience Platform.
+لإرسال البريد الإلكتروني لهذه الحملة، سوف نستخدم Adobe Campaign Standard. بعد استيراد البيانات إلى Adobe Experience Platform، علينا [إنشاء جمهور](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) في Adobe Campaign Standard باستخدام البيانات في Adobe Experience Platform.
 
 
-اعرف كيفية [استخدام منشئ الشرائح](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/audience-destinations/aep-using-segment-builder.html) في Adobe Campaign Standard لتعريف جمهور استنادًا إلى البيانات في Adobe Experience Platform.
+تعرف على كيفية [استخدام منشئ الشرائح](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/audience-destinations/aep-using-segment-builder.html) في Adobe Campaign Standard لتعريف جمهور بالاستناد إلى البيانات الموجودة في Adobe Experience Platform.
 
 ## <a name="create-and-send-the-email-using-adobe-campaign-standard"></a>إنشاء البريد الإلكتروني وإرساله باستخدام Adobe Campaign Standard
 
 أنشئ محتوى البريد الإلكتروني، ثم [اختبر وأرسل](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/get-started-sending-messages.html#preparing-and-testing-messages) البريد الإلكتروني.
 
-:::image type="content" source="media/contoso-sample-email.jpg" alt-text="عينة بريد إلكتروني مع عرض التجديد من Adobe Campaign Standard.":::
+:::image type="content" source="media/contoso-sample-email.jpg" alt-text="عينة بريد إلكتروني مع عرض تجديد من Adobe Campaign Standard.":::
