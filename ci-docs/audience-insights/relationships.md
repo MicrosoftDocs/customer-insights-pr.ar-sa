@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
-ms.openlocfilehash: d5b9566ec88096fec31d8e164a51598159ec26d4
-ms.sourcegitcommit: ece48f80a7b470fb33cd36e3096b4f1e9190433a
+ms.openlocfilehash: 1853fcd8db2918a0b4a19fa0934e2f0ddbcf6d093c85fdf2068a13f954035dec
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "6171148"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7035215"
 ---
 # <a name="relationships-between-entities"></a>العلاقات بين الكيانات
 
@@ -82,7 +82,7 @@ ms.locfileid: "6171148"
 
 ### <a name="explore-the-relationship-visualizer"></a>استكشاف المصور المرئي للعلاقات
 
-يعرض المصور المرئي للعلاقات مخطط شبكة يتضمن العلاقات الموجودة بين الكيانات المتصلة وعلاقاتها الأساسية.
+يعرض المصور المرئي للعلاقات مخطط شبكة يتضمن العلاقات الموجودة بين الكيانات المتصلة وعلاقاتها الأساسية. كما أنه يتصوّر مسار العلاقة.
 
 لتخصيص طريقة العرض، يمكنك تغيير موقع المربعات من خلال سحبها إلى اللوحة.
 
@@ -92,6 +92,20 @@ ms.locfileid: "6171148"
 - **تصدير كصورة**: حفظ طريقة العرض الحالية كملف صورة.
 - **تغيير إلى تخطيط أفقي/عمودي**: اختر محاذاة الكيانات والعلاقات.
 - **تحرير**: تحديث خصائص العلاقات المخصصة في جزء التحرير وحفظ التغييرات.
+
+### <a name="relationship-path"></a>مسار العلاقة
+
+يصف مسار العلاقة الكيانات المتصلة بالعلاقات بين كيان مصدر وكيان هدف. ويتم استخدامه عند إنشاء شريحة أو مقياس يتضمن كيانات أخرى غير كيان ملف التعريف الموحد، وهناك خيارات متعددة للوصول إلى كيان ملف التعريف الموحد.
+
+يقوم مسار العلاقة بإعلام النظام عن العلاقات التي يجب المرور عبرها للوصول إلى كيان ملف التعريف الموحد. قد تؤدي مسارات علاقات مختلفة إلى الحصول على نتائج مختلفة.
+
+على سبيل المثال، يتضمن الكيان *eCommerce_eCommercePurchases* العلاقات التالية بكيان *عميل* ملف التعريف الموحد:
+
+- eCommerce_eCommercePurchases > العميل
+- eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > العميل
+- eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > loyaltyScheme_loyCustomers > العميل 
+
+يحدد مسار العلاقة الكيانات التي يمكنك استخدامها عند إنشاء قواعد للمقاييس أو الشرائح. من المرجح أن يؤدي تحديد الخيار الذي يتضمن مسار العلاقة الأطول إلى الحصول على نتائج أقل لأن السجلات المتطابقة يجب أن تكون جزءًا من جميع الكيانات. في هذا المثال، يجب على العميل شراء بضائع عبر التجارة الإلكترونية(eCommerce_eCommercePurchases)، وعند نقطة بيع (POS_posPurchases)، والمشاركة في برنامج ولاء (loyaltyScheme_loyCustomers). وعند تحديد الخيار الأول، من المرجح أن تحصل على المزيد من النتائج لأن العملاء يحتاجون فقط إلى الوجود في كيان إضافي واحد.
 
 ## <a name="manage-existing-relationships"></a>إدارة العلاقات الموجودة 
 
@@ -105,6 +119,6 @@ ms.locfileid: "6171148"
 
 ## <a name="next-step"></a>الخطوة التالية
 
-يتم استخدام علاقات النظام والعلاقات المخصصة من أجل [إنشاء شرائح](segments.md) بالاستناد إلى مصادر بيانات متعددة لم تعد معزولة.
+تُستخدم علاقات النظام والعلاقات المخصصة بهدف [إنشاء شرائح](segments.md) و[مقاييس](measures.md) بالاستناد إلى مصادر بيانات متعددة لم تعد منعزلة.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,17 +4,17 @@ metadata:
   author: m-hartmann
   description: ابحث عن مقالات ذات صلة لبدء العمل مع محتوى التعليمات.
   ms.author: mhart
-  ms.date: 10/29/2020
+  ms.date: 07/30/2021
   ms.service: customer-insights
   ms.topic: landing-page
-  ms.openlocfilehash: e9c4aa3347d6f477751804790bd3dc9b20eb5dbe
-  ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+  ms.openlocfilehash: 1446a2bcb24739187a37b2024c9a6070ab008989d722ebf84ef5259ec2ee4d5c
+  ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
   ms.translationtype: HT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 03/15/2021
-  ms.locfileid: "5598436"
+  ms.lasthandoff: 08/10/2021
+  ms.locfileid: "7036541"
 title: وثائق Dynamics 365 Customer Insights
-summary: ابحث عن موارد مفيدة للشروع في العمل والتعرف على ميزات وقدرات Customer Insights.
+summary: اعثر على موارد مفيدة للشروع في العمل وتعرف على ميزات وإمكانيات Customer Insights.
 landingContent:
 - title: تعرّف على Customer Insights
   linkLists:
@@ -23,16 +23,16 @@ landingContent:
     - text: نظرة عامة على Customer Insights
       url: overview.md
     - text: خطط الإصدار
-      url: /dynamics365-release-plan/2020wave2/customer-data-platform/dynamics365-customer-insights/planned-features
-    - text: الوصول إلى بيئتك
-      url: https://home.ci.ai.dynamics.com/
+      url: /dynamics365-release-plan/
+    - text: اكتشاف CDP
+      url: https://dynamics.microsoft.com/ai/customer-insights/
 - title: الشروع في العمل مع رؤى الجمهور
   linkLists:
   - linkListType: get-started
     links:
     - text: التسجيل للحصول على إصدار تجريبي
       url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
-    - text: الجديد‬
+    - text: ما الجديد
       url: audience-insights/whats-new-audience-insights.md
     - text: وثائق رؤى الجمهور
       url: audience-insights/index.yml

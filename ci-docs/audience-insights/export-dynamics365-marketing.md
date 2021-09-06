@@ -1,7 +1,7 @@
 ---
 title: تصدير بيانات Customer Insights إلى Dynamics 365 Marketing
 description: تعرف على كيفية تكوين الاتصال والتصدير إلى Dynamics 365 Marketing.
-ms.date: 03/03/2021
+ms.date: 08/24/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,18 +9,20 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: bd8189f8daee1a6aea75e75e116186f62a360ba4
-ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
+ms.openlocfilehash: b8e63a738abaf4fbb902e3edbf83f5a815978478
+ms.sourcegitcommit: 8e89575fe2acb4b289fc157fa7c4c29caf9be967
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "6692465"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7417189"
 ---
 # <a name="use-segments-in-dynamics-365-marketing-preview"></a>استخدام الشرائح في Dynamics 365 Marketing (إصدار أولي)
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-استخدم [الشرائح](segments.md) لإنشاء حملات وتحسين مجموعات محددة من العملاء باستخدام Dynamics 365 Marketing. لمزيد من المعلومات ، راجع [استخدام الشرائح من Dynamics 365 Customer Insights مع Dynamics 365 Marketing](/dynamics365/marketing/customer-insights-segments)
+استخدم [الشرائح](segments.md) لإنشاء حملات وتحسين مجموعات محددة من العملاء باستخدام Dynamics 365 Marketing. لمزيد من المعلومات، راجع [استخدام الشرائح من Dynamics 365 Customer Insights مع Dynamics 365 Marketing](/dynamics365/marketing/customer-insights-segments).
+
+إذا كنت تستخدم الإمكانيات الجديدة في Dynamics 365 Marketing لتنسيق رحلة العميل في الوقت الحقيقي في مؤسسة Dataverse، فلست بحاجة إلى إنشاء تصدير قياسي إلى Dynamics 365 Marketing. تتوفر جهات الاتصال والشرائح من رؤى الجمهور بشكل مباشر في Dynamics 365 Marketing بعد توصيل Marketing وCustomer Insights. قبل حذف التقارير الموجودة، راجع الوثائق حول [كيفية توصيل رؤى الجمهور وتنسيق رحلة العميل في Dynamics 365 Marketing](/dynamics365/marketing/real-time-marketing-ci-profile).
 
 ## <a name="prerequisite-for-a-connection"></a>المتطلبات الأساسية لاتصال
 

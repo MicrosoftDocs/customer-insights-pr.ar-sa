@@ -166,6 +166,8 @@
               href: audience-insights/export-facebook.md
             - name: Google Ads
               href: audience-insights/export-google-ads.md
+            - name: Klaviyo
+              href: audience-insights/export-klaviyo.md
             - name: إعلانات LinkedIn
               href: audience-insights/export-linkedin-ads.md
             - name: LiveRamp
@@ -310,5 +312,13 @@
       href: engagement-insights/regional-availability.md
     - name: حدود الخدمة
       href: engagement-insights/quotas.md
-- name: الاتصال بفريق الدعم
-  href: 'https://admin.powerplatform.microsoft.com/support'
+- name: دمج رؤى الجمهور ورؤى المشاركة
+  items:
+    - name: ربط رؤى الجمهور ورؤى المشاركة
+      href: engagement-insights/integrate-audience-insights-engagement-insights.md
+    - name: استخدام شرائح رؤى الجمهور في تقارير رؤى المشاركة
+      href: engagement-insights/integrate-audience-insights-segments.md
+    - name: استخدام الأبعاد السكانية لتقسيم البيانات السلوكية
+      href: engagement-insights/curate-dimensions.md
+- name: الحصول على ال
+  href: 'https://dynamics.microsoft.com/en-us/support/'
