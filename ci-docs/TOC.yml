@@ -14,8 +14,14 @@
       href: audience-insights/overview.md
     - name: الميزات الجديدة والمحدثة
       href: audience-insights/whats-new-audience-insights.md
-    - name: إنشاء بيئة جديدة
-      href: audience-insights/get-started-paid.md
+    - name: تم البدء
+      items:
+        - name: دليل التشغيل السريع
+          href: audience-insights/get-started.md
+        - name: إنشاء بيئة جديدة
+          href: audience-insights/get-started-paid.md
+        - name: استكشاف رؤى الجمهور
+          href: audience-insights/home.md
     - name: التعرف على الوحدات النمطية
       items:
         - name: استيعاب البيانات
@@ -68,6 +74,8 @@
           href: audience-insights/enrichment-microsoft.md
         - name: العناوين المحسنة
           href: audience-insights/enrichment-enhanced-addresses.md
+        - name: الإثراء باستخدام خرائط Azure
+          href: audience-insights/enrichment-azure-maps.md
         - name: إثراء بياناتك مع HERE Technologies
           href: audience-insights/enrichment-here.md
         - name: الإثراء باستخدام Leadspace
@@ -230,21 +238,15 @@
           href: audience-insights/apis.md
         - name: مراجع API
           href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
-    - name: حدود الخدمة
-      href: audience-insights/service-limits.md
-    - name: طلبات DSR ضمن GDPR
-      href: audience-insights/gdpr.md
-- name: معلومات المشاركة (معاينة)
+- name: معلومات المشاركة (إصدار أولي)
   items:
     - name: مركز التعليمات
       href: engagement-insights/index.yml
     - name: نظرة عامة على القدرات
       href: engagement-insights/overview.md
-    - name: إصدار تجريبي مجاني
-      href: 'https://pi.dynamics.com/'
     - name: تم البدء
       items:
-        - name: تم البدء
+        - name: دليل التشغيل السريع
           href: engagement-insights/get-started.md
         - name: إنشاء مساحة عمل
           href: engagement-insights/create-workspace.md
@@ -300,18 +302,10 @@
           href: engagement-insights/user-roles.md
         - name: إدارة البيئات ومساحات العمل
           href: engagement-insights/manage-environments-workspaces.md
-        - name: تكوين الاتصالات
-          href: engagement-insights/configure-connections.md
         - name: إدارة ملفات تعريف الارتباط وموافقة المستخدم
           href: engagement-insights/user-consent-storage.md
-    - name: GDPR
-      items:
-        - name: حذف البيانات الشخصية وتصديرها
-          href: engagement-insights/delete-export-personal-data.md
     - name: التوفر الإقليمي
       href: engagement-insights/regional-availability.md
-    - name: حدود الخدمة
-      href: engagement-insights/quotas.md
 - name: دمج رؤى الجمهور ورؤى المشاركة
   items:
     - name: ربط رؤى الجمهور ورؤى المشاركة
@@ -320,5 +314,9 @@
       href: engagement-insights/integrate-audience-insights-segments.md
     - name: استخدام الأبعاد السكانية لتقسيم البيانات السلوكية
       href: engagement-insights/curate-dimensions.md
+- name: حدود الخدمة
+  href: service-limits.md
+- name: حقوق وطلبات DSR
+  href: dsr-rights-requests.md
 - name: الحصول على ال
-  href: 'https://dynamics.microsoft.com/en-us/support/'
+  href: 'https://dynamics.microsoft.com/support/'

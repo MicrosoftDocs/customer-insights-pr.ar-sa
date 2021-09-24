@@ -1,19 +1,19 @@
 ---
 title: إنشاء ارتباط بين رؤى الجمهور ورؤى المشاركة
 description: أنشئ ارتباطًا نشطًا بين رؤى الجمهور ورؤى المشاركة لتمكين المشاركة ثنائية الاتجاه للبيانات.
-ms.date: 07/22/2021
+ms.date: 09/08/2021
 ms.service: customer-insights
 ms.topic: conceptual
 author: mkisel
 ms.author: mkisel
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 870209a7e19fec464ec41462a02365771bd653bd
-ms.sourcegitcommit: 1c396394470df8e68c2fafe3106567536ff87194
+ms.openlocfilehash: 0fdbc93292291814b2e1a62fee2c5ff796ae14e2
+ms.sourcegitcommit: 4e5b7ec50c7612765a9ec2c8673e0cc43b357abb
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "7460997"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "7487091"
 ---
 # <a name="create-a-link-between-audience-insights-and-engagement-insights"></a>إنشاء ارتباط بين رؤى الجمهور ورؤى المشاركة
 
@@ -26,14 +26,14 @@ ms.locfileid: "7460997"
 ## <a name="prerequisites"></a>المتطلبات الأساسية
 
 - يجب تخزين ملفات تعريف رؤى الجمهور في حساب Azure Data Lake Storage تملكه أو في مستودع بيانات مدار في [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro.md)&ndash;. 
-
+- يجب أن تحتوي بيئة رؤى الجمهور على بيئة Dataverse مرتبطة. وإذا كانت هذه البيئة تستخدم أيضًا Dataverse لتخزين البيانات، فتأكد من تحديد خيار **تمكين مشاركة البيانات** في رؤى الجمهور. لمزيد من المعلومات، راجع [إنشاء وتكوين بيئة مدفوعة في رؤى الجمهور](../audience-insights/get-started-paid.md).
 - تحتاج إلى أذونات المسؤول لبيئات كل من رؤى المشاركة ورؤى الجمهور.
-
 - يجب أن تكون البيئات المرتبطة في نفس المنطقة الجغرافية.
 
 > [!NOTE]
 > - إذا كان اشتراكك في رؤى الجمهور عبارة عن إصدار تجريبي يستخدم مستودع بيانات يُدار داخليًا بواسطة رؤى الجمهور، فاتصل بـ [pirequest@microsoft.com](mailto:pirequest@microsoft.com) للحصول على المساعدة. 
-> - إذا كانت بيئة رؤى الجمهور تستخدم Azure Data Lake Storage الخاصة بك لتخزين البيانات، فعليك إضافة كيان خدمة من Azure لرؤى المشاركة إلى حساب التخزين الخاص بك. للاطلاع على التفاصيل، انتقل إلى [الاتصال بحساب Azure Data Lake Storage باستخدام كيان خدمة من Azure لرؤى الجمهور](../audience-insights/connect-service-principal.md). علاوةً على ذلك، يجب أن تتوفر لبيئة رؤى الجمهور بيئة [Dataverse مقترنة](../audience-insights/get-started-paid.md). 
+> - إذا كانت بيئة رؤى الجمهور تستخدم Azure Data Lake Storage الخاصة بك لتخزين البيانات، فعليك إضافة كيان خدمة من Azure لرؤى المشاركة إلى حساب التخزين الخاص بك. للاطلاع على التفاصيل، انتقل إلى [الاتصال بحساب Azure Data Lake Storage باستخدام كيان خدمة من Azure لرؤى الجمهور](../audience-insights/connect-service-principal.md). 
+
 
 ## <a name="create-an-environment-link"></a>إنشاء ارتباط بيئة
 
@@ -75,6 +75,7 @@ ms.locfileid: "7460997"
 
    > [!IMPORTANT]
    > إذا لم تقم بإضافة مستخدمين بشكل واضح في هذه الخطوة، فسيتم إخفاء البيانات عن المستخدمين في رؤى المشاركة.
+   > كي تظهر شرائح رؤى الجمهور في رؤى المشاركة، يجب عليك أولاً [تشغيل عمليات الدمج والعمليات النهائية](../audience-insights/merge-entities.md). تعد العمليات النهائية مهمة لأنها تنشئ جدولاُ فريدًا يعمل على تحضير شرائح رؤى الجمهور لمشاركتها مع رؤى المشاركة. (في حالة جدولة عملية للنظام، فستتضمن تلقائيًا عمليات نهائية.)
 
 1. راجع تحديدك، ثم حدد **إنهاء**.
 

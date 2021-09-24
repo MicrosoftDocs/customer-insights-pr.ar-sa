@@ -1,7 +1,7 @@
 ---
 title: الميزات الجديدة والقادمة
 description: معلومات حول الميزات والتحسينات وإصلاحات الأخطاء الجديدة.
-ms.date: 07/19/2021
+ms.date: 08/31/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: 3412213bcf3a4174baf28c6b4d38f5febded18707c355d236d5082698c4c0db7
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: fcc45c24e9d89516dba9964ee16f57caf439eff0
+ms.sourcegitcommit: 2abe9b661b8c3c01e9730c629e383402e3f6a655
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035947"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7465189"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>ما الجديد في قدرة رؤى الجمهور في Dynamics 365 Customer Insights
 
@@ -26,6 +26,15 @@ ms.locfileid: "7035947"
 
 > [!TIP]
 > لإرسال طلبات الميزات واقتراحات حول المنتجات والتصويت عليها، انتقل إلى [مدخل أفكار تطبيق Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="august-2021-updates"></a>تحديثات أغسطس 2021
+
+تتضمن التحديثات في يوليو وأغسطس 2021 ميزة جديدة وترقيات للأداء وإصلاحات للأخطاء.
+
+### <a name="extensibility"></a>إمكانية التوسعة
+
+- **تصدير المقاطع إلى Klaviyo** قمنا بتوسيع [وجهات التصدير لدينا لتشمل Klaviyo](export-klaviyo.md). يمكنك الآن تصدير المقاطع لإنشاء حملات وتسويق عبر البريد الإلكتروني واستخدام مجموعات محددة من العملاء مع Klaviyo. 
+
 
 ## <a name="june-2021-updates"></a>تحديثات يونيه 2021
 
