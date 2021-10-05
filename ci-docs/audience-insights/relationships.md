@@ -1,20 +1,20 @@
 ---
 title: العلاقات بين الكيانات ومسارات الكيانات
 description: إنشاء العلاقات بين الكيانات من مصادر بيانات متعددة وإدارتها.
-ms.date: 06/01/2020
+ms.date: 09/27/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: MichelleDevaney
-ms.author: midevane
+author: CadeSanthaMSFT
+ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: 1853fcd8db2918a0b4a19fa0934e2f0ddbcf6d093c85fdf2068a13f954035dec
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: c639cfca30cf1b57ada7d728311210b7210a37ac
+ms.sourcegitcommit: f72d5b86dfdc7282c6c1918b1ab3962d7a1c9852
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035215"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "7557336"
 ---
 # <a name="relationships-between-entities"></a>العلاقات بين الكيانات
 
@@ -93,11 +93,11 @@ ms.locfileid: "7035215"
 - **تغيير إلى تخطيط أفقي/عمودي**: اختر محاذاة الكيانات والعلاقات.
 - **تحرير**: تحديث خصائص العلاقات المخصصة في جزء التحرير وحفظ التغييرات.
 
-### <a name="relationship-path"></a>مسار العلاقة
+## <a name="relationship-paths"></a>مسارات العلاقة
 
-يصف مسار العلاقة الكيانات المتصلة بالعلاقات بين كيان مصدر وكيان هدف. ويتم استخدامه عند إنشاء شريحة أو مقياس يتضمن كيانات أخرى غير كيان ملف التعريف الموحد، وهناك خيارات متعددة للوصول إلى كيان ملف التعريف الموحد.
+يصف مسار العلاقة الكيانات المرتبطة بالعلاقات بين كيان مصدر وكيان هدف. ويتم استخدامه عند إنشاء شريحة أو مقياس يتضمن كيانات أخرى غير كيان ملف التعريف الموحد، وهناك خيارات متعددة للوصول إلى كيان ملف التعريف الموحد. 
 
-يقوم مسار العلاقة بإعلام النظام عن العلاقات التي يجب المرور عبرها للوصول إلى كيان ملف التعريف الموحد. قد تؤدي مسارات علاقات مختلفة إلى الحصول على نتائج مختلفة.
+ويعلم مسار العلاقة النظام بالعلاقات للوصول إلى كيان ملف التعريف الموحد. قد تؤدي مسارات علاقات مختلفة إلى الحصول على نتائج مختلفة.
 
 على سبيل المثال، يتضمن الكيان *eCommerce_eCommercePurchases* العلاقات التالية بكيان *عميل* ملف التعريف الموحد:
 
@@ -105,7 +105,43 @@ ms.locfileid: "7035215"
 - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > العميل
 - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > loyaltyScheme_loyCustomers > العميل 
 
-يحدد مسار العلاقة الكيانات التي يمكنك استخدامها عند إنشاء قواعد للمقاييس أو الشرائح. من المرجح أن يؤدي تحديد الخيار الذي يتضمن مسار العلاقة الأطول إلى الحصول على نتائج أقل لأن السجلات المتطابقة يجب أن تكون جزءًا من جميع الكيانات. في هذا المثال، يجب على العميل شراء بضائع عبر التجارة الإلكترونية(eCommerce_eCommercePurchases)، وعند نقطة بيع (POS_posPurchases)، والمشاركة في برنامج ولاء (loyaltyScheme_loyCustomers). وعند تحديد الخيار الأول، من المرجح أن تحصل على المزيد من النتائج لأن العملاء يحتاجون فقط إلى الوجود في كيان إضافي واحد.
+يحدد مسار العلاقة الكيانات التي يمكنك استخدامها عند إنشاء قواعد للقياسات أو المقاطع. من المرجح أن يؤدي تحديد الخيار الذي يتضمن مسار العلاقة الأطول إلى الحصول على نتائج أقل لأن السجلات المتطابقة يجب أن تكون جزءًا من جميع الكيانات. في هذا المثال، يجب على العميل شراء بضائع عبر التجارة الإلكترونية(eCommerce_eCommercePurchases)، وعند نقطة بيع (POS_posPurchases)، والمشاركة في برنامج ولاء (loyaltyScheme_loyCustomers). وعند تحديد الخيار الأول، من المرجح أن تحصل على المزيد من النتائج لأن العملاء يحتاجون فقط إلى الوجود في كيان إضافي واحد.
+
+### <a name="direct-relationship"></a>علاقة مباشرة
+
+يتم تصنيف العلاقة باعتبارها **علاقة مباشرة** عندما يرتبط كيان مصدر بكيان هدف بعلاقة واحدة فقط.
+
+على سبيل المثال، إذا كان كيان نشاط يسمى *eCommerce_eCommercePurchases* يتصل بكيان هدف *eCommerce_eCommerceContacts* من خلال *ContactId* فقط، فهذه علاقة مباشرة.
+
+:::image type="content" source="media/direct_Relationship.png" alt-text="يتصل الكيان المصدر مباشرة بالكيان الهدف.":::
+
+#### <a name="multi-path-relationship"></a>علاقة متعددة المسارات
+
+**العلاقة متعددة المسارات** هي نوع خاص من العلاقات المباشرة التي تربط كيان المصدر بأكثر من كيان هدف.
+
+على سبيل المثال، إذا كان هناك كيان نشط يسمى *eCommerce_eCommercePurchases* يتصل بكيانين مستهدفين، فإن كلاً من *eCommerce_eCommerceContacts* و *loyaltyScheme_loyCustomers*، يمثلان علاقة متعددة المسارات.
+
+:::image type="content" source="media/multi-path_relationship.png" alt-text="يتصل الكيان المصدر مباشرة بأكثر من كيان هدف واحد من خلال علاقة متعددة التنقلات.":::
+
+### <a name="indirect-relationship"></a>علاقة غير مباشرة
+
+يتم تصنيف العلاقة باعتبارها **علاقة غير مباشرة** عندما يرتبط كيان المصدر بواحد أو أكثر من الكيانات الإضافية قبل الارتباط بكيان مستهدف.
+
+#### <a name="multi-hop-relationship"></a>علاقة متعددة التنقلات
+
+*العلاقة متعددة التنقلات* عبارة عن *علاقة غير مباشرة* يسمح لك بتوصيل كيان مصدر بكيان مستهدف من خلال واحد أو أكثر من الكيانات الوسيطة الأخرى.
+
+على سبيل المثال، إذا كان هناك كيان نشاط يسمى *eCommerce_eCommercePurchasesWest* يتصل بكيان وسيط يسمى *eCommerce_eCommercePurchasesEast* ويتصل بكيان مستهدف يسمى *eCommerce_eCommerceContacts*، فهذه علاقة متعددة التنقلات.
+
+:::image type="content" source="media/multi-hop_relationship.png" alt-text="يتصل الكيان المصدر مباشرة بكيان هدف من خلال كيان وسيط.":::
+
+### <a name="multi-hop-multi-path-relationship"></a>العلاقة متعددة التنقلات، متعددة المسارات
+
+يمكن استخدام مسارات متعددة العلاقات والتنقلات معًا لإنشاء **علاقات متعددة التنقلات والمسارات**. يجمع هذا النوع الخاص بين وظائف العلاقات **متعددة التنقلات** و **متعددة المسارات**. كما يتيح لك الاتصال بأكثر من كيان هدف أثناء استخدام الكيانات الوسيطة.
+
+على سبيل المثال، إذا كان هناك كيان نشاط يسمى *eCommerce_eCommercePurchasesWest* يتصل بكيان وسيط يسمى *eCommerce_eCommercePurchasesEast* ثم يتصل بكيانين مستهدفين، وهما *eCommerce_eCommerceContacts* و *loyaltyScheme_loyCustomers*، فهذه علاقة متعددة التنقلات والمسارات.
+
+:::image type="content" source="media/multi-hop_multi-path_relationship.png" alt-text="يتصل الكيان المصدر مباشرة بكيان هدف واحد ويتصل بكيان هدف آخر من خلال كيان وسيط.":::
 
 ## <a name="manage-existing-relationships"></a>إدارة العلاقات الموجودة 
 

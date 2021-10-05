@@ -242,7 +242,7 @@
   items:
     - name: مركز التعليمات
       href: engagement-insights/index.yml
-    - name: نظرة عامة على القدرات
+    - name: نبذة عن معلومات المشاركة
       href: engagement-insights/overview.md
     - name: تم البدء
       items:
@@ -306,7 +306,7 @@
           href: engagement-insights/user-consent-storage.md
     - name: التوفر الإقليمي
       href: engagement-insights/regional-availability.md
-- name: دمج رؤى الجمهور ورؤى المشاركة
+- name: مشاركة البيانات بين الإمكانات
   items:
     - name: ربط رؤى الجمهور ورؤى المشاركة
       href: engagement-insights/integrate-audience-insights-engagement-insights.md
@@ -318,5 +318,3 @@
   href: service-limits.md
 - name: حقوق وطلبات DSR
   href: dsr-rights-requests.md
-- name: الحصول على ال
-  href: 'https://dynamics.microsoft.com/support/'

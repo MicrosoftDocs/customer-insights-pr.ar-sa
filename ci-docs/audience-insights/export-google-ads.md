@@ -1,7 +1,7 @@
 ---
 title: تصدير بيانات Customer Insights إلى Google Ads
 description: تعرف على كيفية تهيئة الاتصال والتصدير إلى Google Ads.
-ms.date: 03/03/2021
+ms.date: 09/27/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,16 +9,19 @@ author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 5977b3de9fbb0d97c0912e2ada6a313b0ab92498adf9cdbed48191c0e5143567
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: c958f58c927b76364f305dad8f524dde29b2a638
+ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031641"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "7558914"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>تصدير شرائح إلى Google Ads (إصدار أولي)
 
 تصدير أجزاء من الملفات الشخصية الموحدة للعملاء إلى قائمة جمهور Google Ads واستخدامها للإعلان على بحث Google و Gmail وYouTube وشبكة عرض Google. 
+
+> [!IMPORTANT]
+> في الوقت الحالي، لا يمكنك إنشاء اتصال جديد وتصدير البيانات إلى Google Ads إلا إذا كان لديك بالفعل رمز مميز لمطور Google Ads معتمد. نظرا إلى التغييرات في النهج، سنقوم بتحديث تصدير Google Ads قريبًا وتوفير خيار تصدير لا يتطلب رمز مميز للمطور لضمان استمرار خبرتك وتبسيط عملية التصدير إلى Google Ads. يوصى بعدم إعداد مزيد من الاتصالات إلى Google Ads لتسهيل التبديل إلى خيار التصدير الجديد.
 
 ## <a name="prerequisites-for-connection"></a>المتطلبات الأساسية للاتصال
 

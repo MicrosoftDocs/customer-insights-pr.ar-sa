@@ -4,27 +4,27 @@ description: يمكنك العثور على معلومات حول SDKs وكيف�
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 06/23/2021
+ms.date: 09/27/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: how-to
 ms.manager: shellyha
-ms.openlocfilehash: 5880e9507cc192424989c7fc9c2733ac5d770a7be8a2b42a446ffd8681fa7612
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 2e2df207802f8de501661d247bd80d6cc792636f
+ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036267"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "7558696"
 ---
 # <a name="developer-resources-overview"></a>نظرة عامة على موارد المطوّرين
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-يسرد هذا المقال كافة نماذج التعليمات البرمجية المتاحة والعينات كمرجع سريع. احصل على التعليمة البرمجية لمرسل الأحداث ل النظام الأساسي الخاص بك واتبع البرامج التعليمية. 
+تسرد هذه المقالة جميع القصاصات البرمجية لأدوات تطوير البرامج (SDK) ونماذج للمطورين لمشاركة البيانات مع Dynamics 365 Customer Insights. احصل على التعليمة البرمجية للأحداث الخاصة بالنظام الأساسي الخاص بك من خلال اتباع البرامج التعليمية.
 
 ## <a name="capture-events-from-websites"></a>التقاط الأحداث من مواقع ويب
 
-- [كيفية إضافة مقتطف التعليمة البرمجية على موقع ويب](instrument-website.md)
+- [تجهيز موقع ويب](instrument-website.md)
 - [عينة SDK الويب](websdk-sample.md)
 - [أجهزة SDK متقدمة على الويب](advanced-SDK-implementation.md)
 
