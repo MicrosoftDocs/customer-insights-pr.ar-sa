@@ -1,7 +1,7 @@
 ---
 title: إنشاء بيئات وإدارتها
 description: تعرف على كيفية تسجيل الاشتراك في الخدمة وكيفية إدارة البيئات.
-ms.date: 07/22/2021
+ms.date: 10/14/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: e3f99f8f151aea5f120084382babd5e46e109545a4f63aafc51c3ecb1400cc33
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: ce2fdd435a81bb04148057554c5958e3ab59f125
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034161"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645110"
 ---
 # <a name="manage-environments"></a>إدارة البيئات
 
@@ -26,7 +26,7 @@ ms.locfileid: "7034161"
 
 :::image type="content" source="media/home-page-environment-switcher.png" alt-text="لقطة شاشة لعنصر تحكم تبديل البيئات.":::
 
-يجوز للمسؤولين [إنشاء](get-started-paid.md) بيئات وإدارتها.
+يجوز للمسؤولين [إنشاء](create-environment.md) بيئات وإدارتها.
 
 ## <a name="edit-an-existing-environment"></a>تحرير بيئة موجودة
 
@@ -36,23 +36,9 @@ ms.locfileid: "7034161"
 
 2.  حدد الأيقونة **تحرير**.
 
-3. في مربع **تحرير البيئة**، يمكنك تحديث **الاسم المعروض** للبيئات، ولكن لا يمكنك تغيير **المنطقة** أو **النوع**.
+3. في مربع **تحرير البيئة**، يمكنك تحديث إعدادات البيئة.
 
-4. في حالة تكوين بيئة لتخزين بيانات في Azure Data Lake Storage، يمكنك تحديث **مفتاح الحساب**. ومع ذلك ، لا يمكنك تغيير **اسم الحساب** أو اسم **الحاوية**.
-
-5. بشكل اختياري، يمكنك التحديث من اتصال قائم على مفتاح الحساب إلى اتصال قائم على الموارد أو اتصال قائم على الاشتراكات. بعد الانتهاء من الترقية، لا يمكنك الرجوع إلى مفتاح الحساب بعد التحديث. لمزيد من المعلومات، راجع [توصيل رؤى الجمهور بحساب Azure Data Lake Storage Gen2 بواسطة كيان خدمة Azure](connect-service-principal.md). لا يمكنك **تغيير** معلومات الحاوية عند تحديث الاتصال.
-
-6. بشكل اختياري، يمكنك توفير عنوان URL لبيئة Microsoft Dataverse ضمن **تكوين مشاركة البيانات مع Microsoft Dataverse وتمكين الإمكانات الإضافية**. تتضمن هذه الإمكانات مشاركة البيانات مع التطبيقات والحلول المستندة إلى Microsoft Dataverse، أو استيعاب البيانات من مصادر البيانات المحلية، أو استخدام [التنبؤات](predictions.md). حدد **تمكين مشاركة البيانات** لمشاركة بيانات إخراج Customer Insights مع Data Lake مُدار في Microsoft Dataverse.
-
-   > [!NOTE]
-   > - في الوقت الحالي، مشاركة البيانات مع Data Lake مُدار في Microsoft Dataverse غير مدعوم عندما تحفظ جميع البيانات إلى Azure Data Lake Storage الخاص بك.
-   > - لا يتم حاليًا دعم [التنبؤ بالقيم المفقودة في أحد الكيانات](predictions.md) وتقارير PowerBI المضمنة في رؤى الجمهور (إذا تم تمكينها في بيئتك) عند تمكين مشاركة البيانات مع data lake المُدارة بواسطة Microsoft Dataverse.
-
-   بعد تمكين مشاركة البيانات مع Microsoft Dataverse، سيبدأ التحديث الكامل لمصادر البيانات وستبدأ عمليات أخرى. إذا كانت العمليات قيد التشغيل حاليًا، لن يظهر خيار تمكين مشاركة البيانات مع Microsoft Dataverse. انتظر حتى إكمال هذه العمليات أو إلغائها لتمكين مشاركة البيانات. 
-   
-   :::image type="content" source="media/datasharing-with-DataverseMDL.png" alt-text="خيارات التكوين لتمكين مشاركة البيانات مع Microsoft Dataverse.":::
-   
-   عند تشغيل العمليات، مثل استيعاب البيانات أو إنشاء الشرائح، سيتم إنشاء مجلدات مناظرة في حساب التخزين الذي حددته أعلاه. سيتم إنشاء ملفات البيانات وملفات model.json وإضافتها إلى المجلدات الفرعية ذات الصلة، اعتمادًا على العملية التي تقوم بتشغيلها.
+لمزيد من المعلومات حول إعدادات البيئة، راجع [إنشاء بيئة جديدة](create-environment.md).
 
 ## <a name="copy-the-environment-configuration"></a>نسخ تكوين البيئة
 

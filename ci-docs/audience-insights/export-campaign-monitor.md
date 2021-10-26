@@ -1,7 +1,7 @@
 ---
 title: تصدير بيانات Customer Insights إلى Campaign Monitor
 description: تعرف على كيفية تهيئة الاتصال والتصدير إلى Campaign Monitor.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: d2cc3ec944faa1d77ffb44e8abb422d753c5625d0ccef75cbb7efb14cb7c3741
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 063de14c4ffd51b3afd89786606d7b37626695dc
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031871"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618965"
 ---
 # <a name="export-segments-to-campaign-monitor-preview"></a>تصدير الشرائح إلى Campaign Monitor (إصدار أولي)
 
@@ -28,10 +28,10 @@ ms.locfileid: "7031871"
 
 ## <a name="known-limitations"></a>القيود المعروفة
 
-- يمكنك تصدير حتى 1 مليوت ملف تعريف لكل تصدير إلى Campaign Monitor.
+- يمكنك تصدير ما يصل إلى مليون ملف تعريف عميل لكل عملية تصدير إلى Campaign Monitor.
 - يقتصر التصدير إلى Campaign Monitor على الشرائح.
-- قد يستغرق تصدير ما يصل إلى مليون ملف تعريف إلى Campaign Monitor ما يصل إلى 20 دقيقة حتى الاكتمال. 
-- عدد الملفات الشخصية التي يمكنك تصديرها إلى Campaign Monitor يعتمد ويقتصر على عقدك مع Campaign Monitor.
+- يمكن أن يستغرق تصدير ما يصل إلى مليون ملف تعريف عميل إلى Campaign Monitor ما يصل إلى 20 دقيقة حتى يكتمل. 
+- يعتمد عدد ملفات تعريف العملاء التي يمكنك تصديرها إلى Campaign Monitor ومحدودًا على عقدك مع Campaign Monitor.
 
 ## <a name="set-up-connection-to-campaign-monitor"></a>إعداد الاتصال بـ Campaign Monitor
 
@@ -66,7 +66,7 @@ ms.locfileid: "7031871"
 1. أدخل [**معرف قائمة Campaign Monitor**](https://www.campaignmonitor.com/api/getting-started/#your-list-id).    
    [إنشاء مفتاح واجهة برمجة التطبيقات](https://www.campaignmonitor.com/api/getting-started/) من **إعدادات الحساب** في Campaign Monitor أولاً لعرض معرف قائمة واجهة برمجة التطبيقات.  
 
-3. في القسم **مطابقة البيانات**، في حقل **البريد الإلكتروني**، حدد الحقل في ملف تعريف العميل الموحد الذي يمثل عنوان البريد الإلكتروني للعميل. يلزم تصدير شرائح إلى Campaign Monitor.
+1. في قسم **مطابقة البيانات** في حقل **البريد الإلكتروني**، حدد الحقل الذي يمثل عنوان البريد الإلكتروني للعميل. يلزم تصدير شرائح إلى Campaign Monitor.
 
 1. حدد **حفظ**.
 

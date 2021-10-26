@@ -1,7 +1,7 @@
 ---
 title: بيانات Customer Insights في Microsoft Dataverse
 description: استخدم كيانات Customer Insights كجداول في Microsoft Dataverse.
-ms.date: 06/15/2021
+ms.date: 10/14/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 45535a7368b89e19a91f08fcd825bda9d57a8709653104bf4043c29ffa14d0b8
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 9855ff6908001dd18bc19a286fc56620d0a127e5
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032880"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645202"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>استخدام بيانات Customer Insights في Microsoft Dataverse
 
@@ -24,11 +24,7 @@ ms.locfileid: "7032880"
 
 **المؤسسات ذات بيئات Dataverse موجودة**
 
-بإمكان المؤسسات التي تستخدم Dataverse [استخدام إحدى بيئات Dataverse الموجودة لديها](get-started-paid.md) عندما يقوم المسؤول بإعداد رؤى الجمهور. ومن خلال توفير عنوان URL لبيئة Dataverse، فهو يتصل ببيئة رؤى الجمهور الجديدة. لضمان أفضل أداء ممكن، يجب استضافة Customer Insights وبيئات Dataverse في نفس المنطقة.
-
-لإرفاق بيئة Dataverse، قم بتوسيع **الإعدادات المتقدمة** عند إنشاء بيئة رؤى الجمهور. قدّم **عنوان URL لبيئة Microsoft Dataverse** وحدد خانة الاختيار **تمكين مشاركة البيانات**.
-
-:::image type="content" source="media/Datasharing-with-DataverseMDL.png" alt-text="Alt.":::
+بإمكان المؤسسات التي تستخدم Dataverse [استخدام إحدى بيئات Dataverse الموجودة لديها](create-environment.md) عندما يقوم المسؤول بإعداد رؤى الجمهور. ومن خلال توفير عنوان URL لبيئة Dataverse، فهو يتصل ببيئة رؤى الجمهور الجديدة. لضمان أفضل أداء ممكن، يجب استضافة Customer Insights وبيئات Dataverse في نفس المنطقة.
 
 **مؤسسة جديدة**
 

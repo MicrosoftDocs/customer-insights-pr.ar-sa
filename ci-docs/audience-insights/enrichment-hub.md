@@ -1,7 +1,7 @@
 ---
 title: إثراء ملفات تعريف العملاء الموحدة
 description: استخدم القدرات لإثراء بيانات العملاء.
-ms.date: 08/31/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 992c45e30e2dff00f5207290940b56b2fe1c08ad
-ms.sourcegitcommit: b9a81c2acd42d774669d2db3d0430c7d81de991c
+ms.openlocfilehash: 5d5e12ee44dfa40c470738eaee5c68fdf23d1b2d
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "7469928"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617539"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>الإثراء لملفات تعريف العملاء (معاينة)
 
@@ -27,16 +27,26 @@ ms.locfileid: "7469928"
 
 يجب أن يكون لديك أذونات المساهم أو المسؤول لإنشاء أو تحرير عمليات الإثراء. لمزيد من المعلومات، راجع [الأذونات](permissions.md).
 
-في علامة التبويب **اكتشاف**، ستجد عمليات الإثراء التالية:
+في علامة التبويب **اكتشاف**، ستجد جميع خيارات الإثراء المدعومة.
 
-- تم توفير [خرائط Azure](enrichment-azure-maps.md) بواسطة Microsoft
+# <a name="individual-customers-b2c"></a>[المستهلكون الفرديون (متاجرة عمل-مستهلك‬)](#tab/b2c)
+
 - [العلامات التجارية](enrichment-microsoft.md) الموفرة بواسطة Microsoft
 - [الاهتمامات](enrichment-microsoft.md) الموفرة بواسطة Microsoft
-- [العناوين المحسنة](enrichment-enhanced-addresses.md) التي تقدمها Microsoft
-- [بيانات الشركة](enrichment-leadspace.md) مقدمة من Leadspace
+- [العناوين المحسنة](enrichment-enhanced-addresses.md) التي تقدمها Microsoft 
 - [الخصائص السكانية](enrichment-experian.md) الموفرة بواسطة Experian
-- [بيانات الموقع](enrichment-here.md) مقدمة من HERE Technologies
-- [البيانات المخصصة](enrichment-SFTP-custom-import.md) عبر بروتوكول نقل الملفات الآمن (SFTP)‬
+- [البيانات المخصصة](enrichment-SFTP-custom-import.md) عبر بروتوكول نقل الملفات الآمن (SFTP)‬ 
+- تم توفير [خرائط Azure](enrichment-azure-maps.md) بواسطة Microsoft
+
+# <a name="business-accounts-b2b"></a>[حسابات الأعمال (متاجرة عمل-عمل)](#tab/b2b)
+
+- [بيانات الشركة](enrichment-leadspace.md) مقدمة من Leadspace
+- [العناوين المحسنة](enrichment-enhanced-addresses.md) التي تقدمها Microsoft 
+- [بيانات الموقع](enrichment-here.md) مقدمة من HERE Technologies 
+- [البيانات المخصصة](enrichment-SFTP-custom-import.md) عبر بروتوكول نقل الملفات الآمن (SFTP)‬ 
+- تم توفير [خرائط Azure](enrichment-azure-maps.md) بواسطة Microsoft
+
+---
 
 في علامة التبويب **عمليات الإثراء الخاصة بي‬**، يمكنك رؤية عمليات الإثراء الذي قمت بتكوينها وتحرير خصائصها.
 
@@ -58,7 +68,7 @@ ms.locfileid: "7469928"
 
 ## <a name="enrichments-and-connections"></a>عمليات الإثراء والاتصالات
 
-يتم تكوين عمليات إثراء الأطراف الثالثة باستخدام [الاتصالات](connections.md)، التي يقوم المسؤول بإعدادها باستخدام بيانات الاعتماد ويقدم الموافقة على عمليات نقل البيانات. يمكن للمسؤولين والمساهمين استخدام الاتصال لتكوين عمليات الإثراء.  
+يتم تكوين عمليات إثراء الأطراف الثالثة باستخدام [الاتصالات](connections.md)، التي يقوم المسؤول بإعدادها باستخدام بيانات الاعتماد ويقدم الموافقة على عمليات نقل البيانات. يمكن للمسؤولين والمساهمين استخدام الاتصالات لتكوين عمليات الإثراء.  
 
 ## <a name="multiple-enrichments-of-the-same-type"></a>عمليات إثراء متعددة من نفس النوع
 

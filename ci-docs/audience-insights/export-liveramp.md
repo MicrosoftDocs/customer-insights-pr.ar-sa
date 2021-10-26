@@ -1,7 +1,7 @@
 ---
 title: موصل LiveRamp
 description: تعرف على كيفية تهيئة الاتصال والتصدير إلى LiveRamp.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 7940db3efacad62ba16099849b3e3ca00d2a5cc1ed31e15a34209c0797e6ae13
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: f9a0a88fb58897e4d279c181f4cdb4f6c852da60
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035629"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618919"
 ---
 # <a name="export-segments-to-liverampreg-preview"></a>تصدير شرائح إلى LiveRamp&reg; (إصدار أولي)
 
@@ -58,7 +58,7 @@ ms.locfileid: "7035629"
    > [!div class="mx-imgBorder"]
    > ![موصل LiveRamp مع تعيين السمات.](media/export-liveramp-segments.png "موصل LiveRamp مع تعيين السمات")
 
-1. قم بتعيين السمات المناظرة من كيان العميل الموحد لمعرف المفتاح المحدد.
+1. قم بتعيين السمات المقابلة من كيان *العميل* لمعرف المفتاح المحدد.
 
 1. حدد **إضافة سمة** لتعيين مزيد من السمات لإرسالها إلى LiveRamp.
 

@@ -9,12 +9,12 @@ author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c958f58c927b76364f305dad8f524dde29b2a638
-ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
+ms.openlocfilehash: ce9579f3d31207e666665237fd8935bb86889f8d
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "7558914"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617877"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>تصدير شرائح إلى Google Ads (إصدار أولي)
 
@@ -35,9 +35,9 @@ ms.locfileid: "7558914"
 
 ## <a name="known-limitations"></a>القيود المعروفة
 
-- حتى مليون من ملفات التعريف لكل تصدير إلى Google Ads.
+- ما يصل إلى مليون ملف تعريف لكل عميل لكل عملية تصدير إلى Google Ads.
 - يقتصر التصدير إلى Google Ads على الشرائح.
-- قد تستغرق عملية تصدير الشرائح التي تتضمن ما يصل إلى مليون ملف تعريف بشكل إجمالي 5 دقائق كحدٍ أقصى نتيجة للقيود من جانب الموفر. 
+- يمكن أن يستغرق تصدير مقاطع بإجمالي مليون ملف تعريف عميل ما يصل إلى 5 دقائق بسبب القيود من جانب المزود. 
 - قد يستغرق التطابق في Google Ads ما يصل إلى 48 ساعة.
 
 ## <a name="set-up-connection-to-google-ads"></a>إعداد الاتصال بGoogle Ads
@@ -74,7 +74,7 @@ ms.locfileid: "7558914"
 
 1. أدخل **[معرف جمهور Google Ads](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)** وحدد **اتصال** لبدء الاتصال بـ Google Ads.
 
-1. في القسم **مطابقة البيانات**، في حقل **البريد الإلكتروني**، حدد الحقل في ملف تعريف العميل الموحد الذي يمثل عنوان البريد الإلكتروني للعميل.
+1. في قسم **مطابقة البيانات** في حقل **البريد الإلكتروني**، حدد الحقل الذي يمثل عنوان البريد الإلكتروني للعميل.
 
 1. حدد الشرائح التي تريد تصديرها. يمكنك تصدير ما يصل إلى مليون من ملفات تعريف العملاء إلى Google Ads.
 

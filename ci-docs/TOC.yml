@@ -2,8 +2,14 @@
   href: index.yml
 - name: نظرة عامة على المنتج
   href: overview.md
-- name: إنشاء إصدار تجريبي
-  href: audience-insights/get-started-trial.md
+- name: إصدار تجريبي مجاني
+  items:
+    - name: التسجيل للحصول على إصدار تجريبي مجاني
+      href: trial-signup.md
+    - name: الأسئلة الشائعة للنسخة التجريبية
+      href: trial-FAQ.md
+- name: الشروع في العمل باستخدام ترخيص مدفوع
+  href: paid-license.md
 - name: الوصول إلى بيئتك
   href: 'https://home.ci.ai.dynamics.com/'
 - name: رؤى الجمهور
@@ -19,9 +25,11 @@
         - name: دليل التشغيل السريع
           href: audience-insights/get-started.md
         - name: إنشاء بيئة جديدة
-          href: audience-insights/get-started-paid.md
+          href: audience-insights/create-environment.md
         - name: استكشاف رؤى الجمهور
           href: audience-insights/home.md
+    - name: العمل باستخدام حسابات العمل
+      href: audience-insights/work-with-business-accounts.md
     - name: التعرف على الوحدات النمطية
       items:
         - name: استيعاب البيانات
@@ -66,6 +74,8 @@
           href: audience-insights/relationships.md
         - name: سرد أنشطة العميل
           href: audience-insights/activities.md
+        - name: تحديد التعيينات الدلالية
+          href: audience-insights/semantic-mappings.md
     - name: إثراء البيانات
       items:
         - name: إثراء ملفات تعريف العملاء
@@ -114,7 +124,7 @@
               href: audience-insights/predict-product-recommendation.md
             - name: التنبؤ بخسارة الاشتراك
               href: audience-insights/predict-subscription-churn.md
-            - name: التنبؤ بخسارة المعاملة
+            - name: التنبؤ بخسارة الحركة
               href: audience-insights/predict-transactional-churn.md
             - name: استخدام نماذج مخصصة من التعلم الآلي من Azure
               href: audience-insights/custom-models.md
@@ -126,7 +136,7 @@
               href: audience-insights/sample-guide-predict-clv.md
             - name: دليل نموذج التنبؤ بخسارة الاشتراك‬
               href: audience-insights/sample-guide-predict-subscription-churn.md
-            - name: دليل نموذج التنبؤ بخسارة المعاملة
+            - name: نموذج دليل للتنبؤ بخسارة الحركة
               href: audience-insights/sample-guide-predict-transactional-churn.md
             - name: دليل عينة التنبؤ بتوصيات المنتج
               href: audience-insights/sample-guide-predict-product-recommendation.md
@@ -222,10 +232,14 @@
           href: audience-insights/connections.md
         - name: إدارة بيئات متعددة
           href: audience-insights/manage-environments.md
-        - name: الاتصال بحساب تخزين ADLS باستخدام كيان خدمة
-          href: audience-insights/connect-service-principal.md
         - name: اللغات المدعومة
           href: audience-insights/supported-languages.md
+        - name: الأمان
+          items:
+            - name: جلب Key Vault الخاص بك
+              href: audience-insights/use-azure-key-vault.md
+            - name: الاتصال بحساب تخزين ADLS باستخدام كيان خدمة
+              href: audience-insights/connect-service-principal.md
     - name: إمكانية التوسعة
       items:
         - name: تكامل بيانات الويب من رؤى المشاركة
@@ -248,6 +262,8 @@
       items:
         - name: دليل التشغيل السريع
           href: engagement-insights/get-started.md
+        - name: إنشاء بيئة
+          href: engagement-insights/create-new-environment.md
         - name: إنشاء مساحة عمل
           href: engagement-insights/create-workspace.md
         - name: التقاط الأحداث من مواقع الويب وتطبيقات الجوال

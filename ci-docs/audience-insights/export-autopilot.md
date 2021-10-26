@@ -1,7 +1,7 @@
 ---
 title: تصدير بيانات Customer Insights إلى Autopilot
 description: تعرف على كيفية تهيئة الاتصال والتصدير إلى إعلانات Autopilot.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: c9ada8a6f4e4546990a1360567b400033050119c4c4c9a3df1af8fcaab75e157
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 4cceb64484e8e257a90b8cbaedff4419659bb399
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032009"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618413"
 ---
 # <a name="export-segments-to-autopilot-preview"></a>تصدير شرائح إلى Autopilot (إصدار أولي)
 
@@ -28,10 +28,10 @@ ms.locfileid: "7032009"
 
 ## <a name="known-limitations"></a>القيود المعروفة
 
-- يمكنك تصدير ما يصل إلى ‎100'000 من ملفات تعريف العملاء إلى Autopilot.
+- يمكنك تصدير ما يصل إلى 100000 ملف تعريف عميل في المجموع إلى Autopilot.
 - يقتصر التصدير إلى Autopilot على الشرائح.
-- قد يحتاج اكتمال تصدير حتى ‎100'000 ملف تعريف إلى Autopilot إلى ساعات قليلة. 
-- يتوقف عدد ملفات التعريف التي يمكنك تصديرها إلى Autopilot على العقد مع Autopilot، وهذا العدد مقيد بالعقد.
+- يمكن أن يستغرق تصدير ما يصل إلى 100000 من ملفات تعريف العملاء إلى Autopilot ما يصل إلى بضع ساعات حتى يكتمل. 
+- عدد ملفات تعريف العملاء التي يمكنك تصديرها إلى Autopilot يعتمد ويقتصر على عقدك مع Autopilot.
 
 ## <a name="set-up-connection-to-autopilot"></a>إعداد الاتصال بـ Autopilot
 
@@ -43,7 +43,7 @@ ms.locfileid: "7032009"
 
 1. اختر الشخص الذي يمكنه استخدام هذا الاتصال. إذا لم تتخذ أي إجراء، فإن الإعداد الافتراضي سيكونالمسؤولين. لمزيد من المعلومات، راجع [السماح للمساهمين باستخدام اتصال للتصديرات](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-3. أدخل [مفتاح واجهة برمجة تطبيقات Autopilot](https://autopilot.docs.apiary.io/#).
+1. أدخل [مفتاح واجهة برمجة تطبيقات Autopilot](https://autopilot.docs.apiary.io/#).
 
 1. حدد **أوافق** لتأكيد **خصوصية البيانات والتوافق‬**.
 
@@ -63,7 +63,7 @@ ms.locfileid: "7032009"
 
 1. في حقل **الاتصال للتصدير**، اختر اتصالاً من قسم Autopilot. إذا لم تشاهد اسم المقطع هذا، لن تكون هناك اتصالات من هذا النوع متوفرة لك.
 
-3. في القسم **مطابقة البيانات**، في حقل **البريد الإلكتروني**، حدد الحقل في ملف تعريف العميل الموحد الذي يمثل عنوان البريد الإلكتروني للعميل. كرر نفس الخطوات للحقول الاختيارية الأخرى مثل **الاسم الأول** و **اسم العائلة**.
+1. في قسم **مطابقة البيانات** في حقل **البريد الإلكتروني**، حدد الحقل الذي يمثل عنوان البريد الإلكتروني للعميل. كرر نفس الخطوات للحقول الاختيارية الأخرى مثل **الاسم الأول** و **اسم العائلة**.
 
 1. حدد الشرائح التي تريد تصديرها. نحن **نوصي بعدم تصدير أكثر من ‎100'000 من ملفات تعريف العملاء بشكل إجمالي** إلى Autopilot. 
 

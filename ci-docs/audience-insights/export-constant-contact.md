@@ -1,7 +1,7 @@
 ---
 title: تصدير بيانات Customer Insights إلى Constant Contact
 description: تعرف على كيفية تهيئة الاتصال والتصدير إلى Constant Contact.
-ms.date: 03/22/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 30dfe4d6c2374ba9979827ea70a71c52a1334b45dd3e36ccb1de90fae0c61ad9
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: b25e4f11e21d059c2d867e925c0ae5635a87addc
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031825"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7619103"
 ---
 # <a name="export-segments-to-constant-contact-preview"></a>تصدير الشرائح إلى Constant Contact (إصدار أولي)
 
@@ -28,10 +28,10 @@ ms.locfileid: "7031825"
 
 ## <a name="known-limitations"></a>القيود المعروفة
 
-- يمكنك تصدير حتى 1 مليوت ملف تعريف لكل تصدير إلى Constant Contact.
+- يمكنك تصدير ما يصل إلى مليون ملف تعريف عميل لكل عملية تصدير إلى Constant Contact.
 - يقتصر التصدير إلى Constant Contact على الشرائح.
-- قد يستغرق تصدير ما يصل إلى مليون ملف تعريف إلى Constant Contact ما يصل إلى 1 ساعة حتى الاكتمال. 
-- عدد الملفات الشخصية التي يمكنك تصديرها إلى Constant Contact يعتمد ويقتصر على عقدك مع Constant Contact.
+- يمكن أن يستغرق تصدير ما يصل إلى مليون ملف تعريف عميل إلى Constant Contact ما يصل إلى ساعة واحدة حتى يكتمل. 
+- يعتمد عدد ملفات تعريف العملاء التي يمكنك تصديرها إلى Constant Contact ومحدودًا على عقدك مع Constant Contact.
 
 ## <a name="set-up-connection-to-constant-contact"></a>إعداد الاتصال بـ Constant Contact
 
@@ -65,7 +65,7 @@ ms.locfileid: "7031825"
 
 1. أدخل [**معرف قائمة Constant Contact**](https://app.constantcontact.com/pages/contacts/ui#lists). افتح قائمة في Constant Contact للعثور على معرف القائمة في URL.
 
-1. في القسم **مطابقة البيانات**، في حقل **البريد الإلكتروني**، حدد الحقل في ملف تعريف العميل الموحد الذي يمثل عنوان البريد الإلكتروني للعميل. يلزم تصدير شرائح إلى Constant Contact.
+1. في قسم **مطابقة البيانات** في حقل **البريد الإلكتروني**، حدد الحقل الذي يمثل عنوان البريد الإلكتروني للعميل. يلزم تصدير شرائح إلى Constant Contact.
 
 1. بشكل اختياري، يمكنك تصدير الاسم الأول واسم العائلة كحقول إضافية لإنشاء المزيد من رسائل البريد الإلكتروني المخصصة. حدد **إضافة سمة** لتعيين هذه الحقول.
 

@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: fcc45c24e9d89516dba9964ee16f57caf439eff0
-ms.sourcegitcommit: 2abe9b661b8c3c01e9730c629e383402e3f6a655
+ms.openlocfilehash: 5262ad20019e90e73ab121a5ab90e602c1a32b7e
+ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7465189"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7606026"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>ما الجديد في قدرة رؤى الجمهور في Dynamics 365 Customer Insights
 
@@ -26,6 +26,20 @@ ms.locfileid: "7465189"
 
 > [!TIP]
 > لإرسال طلبات الميزات واقتراحات حول المنتجات والتصويت عليها، انتقل إلى [مدخل أفكار تطبيق Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="september-2021-updates"></a>تحديثات سبتمبر 2021
+
+تتضمن التحديثات في سبتمبر 2021 ميزات جديدة وترقيات للأداء وإصلاحات للأخطاء.
+
+### <a name="activities"></a>الأنشطة
+
+- **تحسينات المخططات الزمنية للأنشطة** لقد قمنا بتمديد عوامل تصفية الجدول الزمني للنشاط في ملفات تعريف العملاء. بالإضافة إلى ذلك، يمكنك استخدام لوحة التصفية الجديدة للتصفية حسب نوع النشاط والتاريخ. يمكن تصفية التواريخ بشروط مختلفة. لمزيد من المعلومات، راجع [عرض المخططات الزمنية للنشاط على ملفات تعريف العملاء](activities.md#view-activity-timelines-on-customer-profiles).
+
+### <a name="relationships"></a>العلاقات
+
+- **دعم علاقة القفزات المتعددة** استخدم العلاقات متعددة القفزات عند تكوين الأنشطة وتحديد العلاقات بين الكيانات. تستخدم العلاقات متعددة المراحل كيانًا وسيطًا لربط كيانين. عند تكوين نشاط، يمكنك استخدام علاقة متعددة المراحل لربط كيان نشاطك بكيان وسيط ثم بكيان عميل. يمكنك دمج العلاقات متعددة القفزات مع العلاقات متعددة المسارات. لمزيد من المعلومات، راجع [العلاقة متعددة المراحل](relationships.md#multi-hop-relationship).
+
+- **دعم العلاقة متعددة المسارات** استخدم العلاقات متعددة المسارات عند تكوين الأنشطة وتحديد العلاقات بين الكيانات. العلاقات متعددة المسارات تربط كيان المصدر بأكثر من كيان واحد. عند تكوين نشاط، يمكنك استخدام علاقة متعددة المسارات لربط كيان النشاط بأكثر من كيان عميل واحد. يمكنك دمج العلاقات متعددة المسارات مع العلاقات متعددة المراحل. لمزيد من المعلومات، راجع [العلاقة متعددة المسارات](relationships.md#multi-path-relationship).
 
 ## <a name="august-2021-updates"></a>تحديثات أغسطس 2021
 

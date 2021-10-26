@@ -1,7 +1,7 @@
 ---
 title: الصفحة الرئيسية في رؤى الجمهور
 description: ابدأ استكشاف التطبيق على الصفحة الرئيسية.
-ms.date: 08/26/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 55c0313d1dbf7fb6774c058a6784cf02821d9133
-ms.sourcegitcommit: b9a81c2acd42d774669d2db3d0430c7d81de991c
+ms.openlocfilehash: 4ab5497024cb15b103e96b0fc9a2e0739fd4691c
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "7469927"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617677"
 ---
 # <a name="explore-audience-insights"></a>استكشاف رؤى الجمهور
 
@@ -23,7 +23,7 @@ ms.locfileid: "7469927"
 
 :::image type="content" source="media/home-page.png" alt-text="لقطة شاشة للشاشة الرئيسية توضح عينة الرؤى.":::
 
-1 - التبديل بين إمكانات Customer Insights 2 - استخدام الجزء الأيمن للتنقل بين المناطق المختلفة 3 - اكتشاف البيئة التي تعمل فيها وتدير البيئات كمسؤول 4 - تحديد الإعدادات الشخصية لـ Customer Insights
+1 - قم التبديل بين إمكانات Customer Insights ‏2 - استخدم الجزء الأيمن للتنقل بين المناطق المختلفة واختيار الجمهور المستهدف الأساسي 3 - اكتشف البيئة التي تعمل فيها وتدير البيئات كمسؤول 4 - حدد الإعدادات الشخصية لـ Customer Insights
 
 أسفل **الشرائح الأخيرة**، يمكنك رؤية مجموعات من العملاء استنادًا إلى السمات الديمغرافية أو السلوكية أو سمات المعاملات التي قمت بتعريفها. يساعدك [إنشاء الشرائح](segments.md) على تجميع قاعدة العملاء واستهداف أنشطة أعمالك بشكل أفضل.
 

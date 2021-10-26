@@ -1,7 +1,7 @@
 ---
 title: موصل Power Apps
 description: الاتصال بـ Power Apps وPower Automate.
-ms.date: 01/19/2021
+ms.date: 10/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: fc0af656cd5b436d9efd65b2a2c75dde9c9deb9dbcdd56ffc6a960f5878a631f
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 985e6c85795fba8ca3063cdffc7f9012e798856a
+ms.sourcegitcommit: 5d82e5b808517e0e99fdfdd7e4a4422a5b8ebd5c
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031733"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "7623207"
 ---
 # <a name="microsoft-power-apps-connector-preview"></a>موصل Microsoft Power Apps (معاينة)
 
@@ -30,48 +30,47 @@ ms.locfileid: "7031733"
 
 بعد إضافة Customer Insights كاتصال بيانات، يمكنك اختيار الكيانات التالية في Power Apps:
 
-- العميل: لاستخدام بيانات من [ملف تعريف العميل الموحد](customer-profiles.md).
-- UnifiedActivity: لعرض [المخطط الزمني للنشاط](activities.md) على التطبيق.
+- **العميل**: لاستخدام البيانات من [ملف تعريف العميل الموحد](customer-profiles.md).
+- **UnifiedActivity**: لعرض [مخطط زمني النشاط ](activities.md) في التطبيق.
+- **ContactProfile**: لعرض جهات اتصال العميل. هذا الكيان متاح فقط في بيئات رؤى الجمهور لحسابات الأعمال.
 
 ## <a name="limitations"></a>القيود
 
 ### <a name="retrievable-entities"></a>الكيانات القابلة للاسترداد
 
-يمكنك فقط استرداد كيانات **العميل** و **UnifiedActivity** و **الشرائح** من خلال موصل Power Apps. تظهر الكيانات الأخرى لأن الموصل الأساسي يدعمها من خلال المشغلات الموجودة في Power Automate.  
+يمكنك فقط استرداد كيانات **العميل**، و **UnifiedActivity**، و **المقاطع**، و **ContactProfile** من خلال موصل Power Apps. إن ContactProfile متاح فقط في مثيل رؤى الجمهور لحسابات الأعمال. تظهر الكيانات الأخرى لأن الموصل الأساسي يدعمها من خلال المشغلات الموجودة في Power Automate.
 
 ### <a name="delegation"></a>تفويض
 
-يعمل التفويض لكيان العميل وكيان UnifiedActivity. 
+يعمل التفويض لكيان **العميل** وكيان **UnifiedActivity**. 
 
 - تفويض كيان **العميل** entity: لاستخدام التفويض لهذا الكيان، يجب فهرسة الحقول في [فهرس البحث والتصفية](search-filter-index.md).  
-
 - تفويض لكيان **UnifiedActivity**: يعمل التفويض لهذا الكيان فقط للحقلين **ActivityId** و **CustomerId**.  
+- تفويض **ContactProfile**: يعمل تفويض هذا الكيان فقط للحقلين **ContactId** و **CustomerId**. إن ContactProfile متاح فقط في بيئات رؤى الجمهور لحسابات الأعمال.
 
-- لمزيد من المعلومات حول التفويض، راجع [الوظائف والعمليات القابلة للتفويض في Power Apps](/connectors/commondataservice/#power-apps-delegable-functions-and-operations-for-the-cds-for-apps). 
+لمزيد من المعلومات حول التفويض، انتقل إلى [ووظائف وعمليات Power Apps القابلة للتفويض](/powerapps/maker/canvas-apps/delegation-overview). 
 
 ## <a name="example-gallery-control"></a>مثال على عنصر تحكم المعرض
 
-على سبيل المثال، يمكنك إضافة ملفات تعريف العملاء إلى [عنصر تحكم المعرض](/powerapps/maker/canvas-apps/add-gallery).
+يمكنك إضافة ملفات تعريف العملاء إلى [عنصر تحكم المعرض](/powerapps/maker/canvas-apps/add-gallery).
 
-1. قم بإضافة عنصر تحكم **المعرض** إلى تطبيق تقوم بإنشاءه.
-
-> [!div class="mx-imgBorder"]
-> ![إضافة عنصر معرض.](media/connector-powerapps9.png "إضافة عنصر معرض")
-
-1. قم بتحديد **العميل** كمصدر البيانات للعناصر.
+1. قم بإضافة عنصر تحكم **المعرض** إلى تطبيق تقوم بإنشائه.
 
     > [!div class="mx-imgBorder"]
-    > ![تحديد مصدر بيانات.](media/choose-datasource-powerapps.png "تحديد مصدر بيانات")
+    > ![إضافة عنصر معرض.](media/connector-powerapps9.png "إضافة عنصر معرض.")
 
-1. يُمكنك تغيير لوحة البيانات الموجودة على اليمين لتحديد أي حقول كيان العميل الذي سوف يتم عرضه في المعرض.
+2. قم بتحديد **العميل** كمصدر البيانات للعناصر.
 
-1. إذا كنت ترغب في إظهار أي حقل من العميل المُحدد في المعرض، فقم بملء خاصية النص للتسمية:  **{Name_of_the_gallery}.{property_name}** مُحدد
+    > [!div class="mx-imgBorder"]
+    > ![تحديد مصدر بيانات.](media/choose-datasource-powerapps.png "تحديد مصدر بيانات.")
 
-    مثال: Gallery1.Selected.address1_city
+3. يُمكنك تغيير لوحة البيانات الموجودة على اليمين لتحديد أي حقول كيان العميل الذي سوف يتم عرضه في المعرض.
 
-1. لعرض المخطط الزمني الموحد لعميل، قم بإضافة عنصر معرض، وإضافة خاصية العناصر: **Filter('UnifiedActivity', CustomerId = {Customer_Id})**
+4. إذا كنت ترغب في إظهار أي حقل من العميل المُحدد في المعرض، فقم بملء خاصية **النص** للتسمية باستخدام **{Name_of_the_gallery}.محدد.{property_name}**  
+    - على سبيل المثال: _Gallery1.Selected.address1_city_
 
-    مثال: Filter('UnifiedActivity', CustomerId = Gallery1.Selected.CustomerId)
+5. لعرض المخطط الزمني الموحد لعميل، قم بإضافة عنصر معرض، وإضافة خاصية **العناصر** باستخدام **Filter('UnifiedActivity', CustomerId = {Customer_Id})**  
+    - على سبيل المثال: _Filter('UnifiedActivity', CustomerId = Gallery1.Selected.CustomerId)_
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: تصدير بيانات Customer Insights إلى RollWorks
 description: تعرف على كيفية تهيئة الاتصال والتصدير إلى RollWorks.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: d8ce4d867835dcb7cf56c6fffff4e25d1f5c109af0e401fc0eb8b3a7427c1de4
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: f8f6a79db9cb4bb109c03a464d9f8c7f3b862ad5
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034574"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617312"
 ---
 # <a name="export-segments-to-rollworks-preview"></a>تصدير الشرائح إلى RollWorks (إصدار أولي)
 
@@ -28,11 +28,11 @@ ms.locfileid: "7034574"
 
 ## <a name="known-limitations"></a>القيود المعروفة
 
-- يمكنك تصدير حتى 250000 ملف تعريف لكل تصدير إلى RollWorks.
-- لا يمكنك تصدير الشرائح التي يقل عدد ملفات تعريفها عن 100 ملف تعريف إلى RollWorks. 
+- يمكنك تصدير ما يصل إلى 250 ألف ملف تعريف عميل في كل عملية تصدير إلى RollWorks.
+- لا يمكنك تصدير شرائح تحتوي على أقل من 100 ملف تعريف عميل إلى RollWorks. 
 - يقتصر التصدير إلى RollWorks على الشرائح.
-- يمكن أن يستغرق تصدير ما يصل إلى 250 ألف ملف تعريف إلى RollWorks ما يصل إلى 10 دقائق حتى يكتمل. 
-- عدد الملفات الشخصية التي يمكنك تصديرها إلى RollWorks يعتمد ويقتصر على عقدك مع RollWorks.
+- يمكن أن يستغرق تصدير ما يصل إلى 250 ألف ملف تعريف عميل إلى RollWorks ما يصل إلى 10 دقائق حتى يكتمل. 
+- عدد ملفات تعريف العملاء التي يمكنك تصديرها إلى RollWorks يعتمد ويقتصر على عقدك مع RollWorks.
 
 ## <a name="set-up-connection-to-rollworks"></a>إعداد الاتصال بـ RollWorks
 
@@ -66,7 +66,7 @@ ms.locfileid: "7034574"
 
 1. أدخل **معرف معلن RollWorks** [RollWorks للإعلان](https://help.adroll.com/hc/articles/212011838-Advertiser-Profiles).
 
-3. في القسم **مطابقة البيانات**، في حقل **البريد الإلكتروني**، حدد الحقل في ملف تعريف العميل الموحد الذي يمثل عنوان البريد الإلكتروني للعميل. يلزم تصدير شرائح إلى RollWorks.
+1. في قسم **مطابقة البيانات** في حقل **البريد الإلكتروني**، حدد الحقل الذي يمثل عنوان البريد الإلكتروني للعميل. يلزم تصدير شرائح إلى RollWorks.
 
 1. حدد الشرائح التي تريد تصديرها. حدد شريحة تتضمن 100 عضو على الأقل. لا يمكنك تصدير شرائح أصغر. بالإضافة إلى ذلك، فإن الحد الأقصى لحجم شريحة ما لتصديرها هو ‎250'000 عضو لكل عملية تصدير. 
 

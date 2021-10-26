@@ -1,7 +1,7 @@
 ---
 title: تصدير بيانات Customer Insights إلى SendGrid
 description: تعرف على كيفية تهيئة الاتصال والتصدير إلى SendGrid.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 03df2ab5fce1da1f4f662e1975533f2b538b47dbdd5cf96aae4f1007163e3729
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: da3da5ea68d178deab3b9ab31dd810dee610f607
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036085"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617815"
 ---
 # <a name="export-segments-to-sendgrid-preview"></a>تصدير شرائح إلى SendGrid (إصدار أولي)
 
@@ -29,10 +29,10 @@ ms.locfileid: "7036085"
 
 ## <a name="known-limitations"></a>القيود المعروفة
 
-- حتى ‎100'000 من ملفات التعريف بشكل إجمالي إلى SendGrid.
+- ما يصل إلى 100000 ملف تعريف عميل في المجموع إلى SendGrid.
 - يقتصر التصدير إلى SendGrid على الشرائح.
-- قد يحتاج اكتمال تصدير حتى ‎100'000 ملف تعريف إلى SendGrid إلى ساعات قليلة. 
-- يتوقف عدد ملفات التعريف التي يمكنك تصديرها إلى SendGrid على العقد مع SendGrid، وهذا العدد مقيد بالعقد.
+- يمكن أن يستغرق تصدير ما يصل إلى 100000 من ملفات تعريف العملاء إلى SendGrid ما يصل إلى بضع ساعات حتى يكتمل. 
+- عدد ملفات تعريف العملاء التي يمكنك تصديرها إلى SendGrid يعتمد ويقتصر على عقدك مع SendGrid.
 
 ## <a name="set-up-connection-to-sendgrid"></a>إعداد الاتصال بـ SendGrid
 
@@ -66,7 +66,7 @@ ms.locfileid: "7036085"
 
 1. أدخل **[معرف قائمة SendGrid](https://sendgrid.com/docs/ui/managing-contacts/create-and-manage-contacts/#manage-contacts)**
 
-1. في القسم **مطابقة البيانات**، في حقل **البريد الإلكتروني**، حدد الحقل في ملف تعريف العميل الموحد الذي يمثل عنوان البريد الإلكتروني للعميل. كرر نفس الخطوات للحقول الاختيارية الأخرى مثل **الاسم الأول** و **اسم العائلة** و **البلد/المنطقة** و **الولاية** و **المدينة** و **الرمز البريدي**.
+1. في قسم **مطابقة البيانات** في حقل **البريد الإلكتروني**، حدد الحقل الذي يمثل عنوان البريد الإلكتروني للعميل. كرر نفس الخطوات للحقول الاختيارية الأخرى مثل **الاسم الأول** و **اسم العائلة** و **البلد/المنطقة** و **الولاية** و **المدينة** و **الرمز البريدي**.
 
 1. حدد الشرائح التي تريد تصديرها. نحن **نوصي بعدم تصدير أكثر من ‎100'000 من ملفات تعريف العملاء بشكل إجمالي** إلى SendGrid. 
 

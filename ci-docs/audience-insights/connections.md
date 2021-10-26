@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 37c5d152a4cc91a90df8db387d25923ed150e238bc6b54c54f7bba59fbd48c82
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 3689c7016454ed44e22b4d4ff5a338836a8fe288
+ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033202"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605933"
 ---
 # <a name="connections-preview-overview"></a>نظرة عامة على الاتصالات (إصدار أولي)
 
@@ -47,6 +47,7 @@ ms.locfileid: "7033202"
 1. في جزء **إعداد الاتصال**، قم بتقديم التفاصيل المطلوبة. 
    1. يصف **اسم العرض** ونوع الاتصال الاتصال. ننصح باختيار اسم يوضح الغرض والهدف من هذا الاتصال.
    1. تعتمد الحقول تحديدا على الخدمة التي تتصل بها. يمكنك التعرف على تفاصيل نوع اتصال محدد حول المقالة حول الخدمة الهدف.
+   1. إذا كنت [تستخدم Key Vault الخاص بك](use-azure-key-vault.md) لتخزين الأسرار، فقم بتنشيط **استخدام Key Vault** واختيار السر من القائمة.
 
 1. لإنشاء الاتصال، حدد **حفظ**.
 
@@ -93,3 +94,6 @@ ms.locfileid: "7033202"
 
 1. لتأكيد الحذف، حدد **إزالة**.
 
+## <a name="set-up-connections-with-secrets-managed-by-your-own-key-vault"></a>إعداد اتصالات مع الأسرار التي يديرها Key Vault الخاص بك
+
+تحتاج بعض الاتصالات إلى أسرار مثل مفاتيح API أو كلمات المرور. تدعم بعض الاتصالات الأسرار المخزنة في Key Vault الخاص بك. تعرف على المزيد حول الاتصالات المدعومة وكيفية إعداد [Key Vault الخاص بك للحصول على رؤى الجمهور](use-azure-key-vault.md).

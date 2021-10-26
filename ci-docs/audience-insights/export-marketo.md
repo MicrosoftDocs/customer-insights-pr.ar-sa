@@ -1,7 +1,7 @@
 ---
 title: تصدير بيانات Customer Insights إلى Marketo
 description: تعرف على كيفية تهيئة الاتصال والتصدير إلى Marketo.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 0d5eaa769973c861d89287bba0ed29509ab2efc653bdd8e177cc49b3560c698e
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 71a16bd71a58b5cc0a6a2ed421561d91f782dd8e
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033477"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7619149"
 ---
 # <a name="export-segments-to-marketo-preview"></a>تصدير شرائح إلى Marketo (إصدار أولي)
 
@@ -29,10 +29,10 @@ ms.locfileid: "7033477"
 
 ## <a name="known-limitations"></a>القيود المعروفة
 
-- حتى مليون من ملفات التعريف لكل تصدير إلى Marketo.
+- ما يصل إلى مليون ملف تعريف عميل لكل عملية تصدير إلى Marketo.
 - يقتصر التصدير إلى Marketo على الشرائح.
-- تستغرق عملية تصدير الشرائح التي تتضمن مليون ملف تعريف بشكل إجمالي حتى 3 ساعات. 
-- يتوقف عدد ملفات التعريف التي يمكنك تصديرها إلى Marketo على العقد مع Marketo، وهذا العدد مقيد بالعقد.
+- يمكن أن يستغرق تصدير مقاطع بإجمالي مليون ملف تعريف عميل ما يصل إلى 3 ساعات. 
+- عدد ملفات تعريف العملاء التي يمكنك تصديرها إلى Marketo يعتمد ويقتصر على عقدك مع Marketo.
 
 ## <a name="set-up-connection-to-marketo"></a>إعداد الاتصال بـ Marketo
 
@@ -64,7 +64,7 @@ ms.locfileid: "7033477"
 
 1. أدخل **[معرف قائمة Marketo](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)** الخاص بك. معرف القائمة هو قيمة رقمية خالصة. على سبيل المثال، إذا كان معرف قائمة Marketo هو ST12345A7، فأزل الحرف قبل الأرقام وبعدها وأدخل `12345`. 
 
-1. في القسم **مطابقة البيانات**، في حقل **البريد الإلكتروني**، حدد الحقل في ملف تعريف العميل الموحد الذي يمثل عنوان البريد الإلكتروني للعميل. 
+1. في قسم **مطابقة البيانات** في حقل **البريد الإلكتروني**، حدد الحقل الذي يمثل عنوان البريد الإلكتروني للعميل. 
 
 1. بشكل اختياري، يمكنك تصدير **الاسم الأول**، و **اسم العائلة**، و **المدينة**، و **الحالة**، و **البلد/المنطقة** لإنشاء المزيد من رسائل البريد الإلكتروني المخصصة. حدد **إضافة سمة** لتعيين هذه الحقول.
 

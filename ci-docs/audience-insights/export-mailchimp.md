@@ -1,7 +1,7 @@
 ---
 title: تصدير بيانات Customer Insights إلى Mailchimp
 description: تعرف على كيفية تهيئة الاتصال والتصدير إلى Mailchimp.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: a6bdf43bb40345b868bf2e7d2c91de169c8ba841ba77f732f455f4c4d496a7f5
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 94a9fead56ce8c40b35d4eb41ebdc0d672798dce
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033523"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618597"
 ---
 # <a name="export-segments-to-mailchimp-preview"></a>تصدير الشرائح إلى Mailchimp (إصدار أولي)
 
@@ -29,10 +29,10 @@ ms.locfileid: "7033523"
 
 ## <a name="known-limitations"></a>القيود المعروفة
 
-- حتى مليون من ملفات التعريف لكل تصدير إلى Mailchimp.
+- ما يصل إلى مليون ملف تعريف عميل لكل عملية تصدير إلى Mailchimp.
 - يقتصر التصدير إلى Mailchimp على الشرائح.
-- قد يستغرق تصدير الشرائح التي يصل حجم ملفاتها إلى 1 مليون ملف تعريف ما يصل إلى ثلاث ساعات. 
-- يتوقف عدد ملفات التعريف التي يمكنك تصديرها إلى Mailchimp على العقد مع Mailchimp، وهذا العدد مقيد بالعقد.
+- يمكن أن يستغرق تصدير ما يصل إلى 500000 ملف تعريف عميل إلى Microsoft Advertising ما يصل إلى 10 دقائق حتى يكتمل. 
+- عدد ملفات تعريف العملاء التي يمكنك تصديرها إلى Mailchimp يعتمد ويقتصر على عقدك مع Mailchimp.
 
 ## <a name="set-up-connection-to-mailchimp"></a>إعداد الاتصال بـ Mailchimp
 
@@ -66,7 +66,7 @@ ms.locfileid: "7033523"
 
 1. أدخل **[معرف جمهور Mailchimp](https://mailchimp.com/help/find-audience-id/)**
 
-3. في القسم **مطابقة البيانات**، في حقل **البريد الإلكتروني**، حدد الحقل في ملف تعريف العميل الموحد الذي يمثل عنوان البريد الإلكتروني للعميل. 
+1. في قسم **مطابقة البيانات** في حقل **البريد الإلكتروني**، حدد الحقل الذي يمثل عنوان البريد الإلكتروني للعميل. 
 
 1. بشكل اختياري، يمكنك تصدير **الاسم الأول** و **اسم العائلة** لإنشاء المزيد من رسائل البريد الإلكتروني المخصصة. حدد **إضافة سمة** لتعيين هذه الحقول.
 

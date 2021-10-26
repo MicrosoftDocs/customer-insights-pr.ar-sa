@@ -4,17 +4,17 @@ description: تعرف على كيفية تخصيص عينة SDK على الوي�
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 10/30/2020
+ms.date: 10/01/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: 97e50a51231bcf05f3e381397f0cf41e49afc10e3c3674d7c709c8f521979e12
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 545f4a7e9660e339dee1070ad727d5d398eb6254
+ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036587"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7606168"
 ---
 # <a name="run-the-web-sdk-sample-for-dynamics-365-customer-insights-engagement-insights-capability"></a>تشغيل نموذج SDK على الويب للحصول على إمكانية رؤى الارتباط Dynamics 365 Customer Insights
 
@@ -26,7 +26,7 @@ ms.locfileid: "7036587"
 
 - تثبيت [Visual Studio Code](https://code.visualstudio.com/).
 - [قم بتثبيت امتداد خادم Live](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) في Visual Studio Code واطلع على كيفية تشغيل خادم مباشر.
-- يجب أن يكون لديك [مفتاح الحذف](instrument-website.md).
+- يجب أن يكون لديك [مساحة عمل معلومات المشاركة](create-workspace.md).
 
 ## <a name="run-sample"></a>تشغيل عينة
 
@@ -36,7 +36,11 @@ ms.locfileid: "7036587"
 
 1. افتح المجلد المفكوك في Visual Studio Code.
 
-1. في الملف `ei_websdk_sample.html`، استبدل السلسلة "INGESTION_KEY" بمفتاح الاستيعاب من مدخل إمكانية رؤى الارتباط، واسم السلسلة "NAME" بالاسم العام الذي تريد SDK أن يتم فتحه على الفور. تأكد من استبدال جميع التكرارات.
+1. انتقل إلى مدخل معلومات المشاركة لمساحة العمل الخاصة بك. حدد **المسؤول** > **مساحة العمل**  ثم **دليل التثبيت**. اتبع الخيار الأول وحدد **نسخ التعليمات البرمجية** لنسخ قصاصة التعليمات البرمجية لـ JavaScript.
+
+1. في ملف `ei_websdk_sample.html`، الصق قصاصة التعليمات البرمجية الذي نسخته للتو أسفل هذا السطر:
+
+   - <- لصق القصاصة البرمجية لـ JAVASCRIPT من معلومات المشاركة في البوابة أدناه أسفل هذا السطر ->
 
 1. افتح الملف `ei_websdk_sample.html` باستخدام خادم Live Server في Visual Studio Code عن طريق تحديد **تشغيل مباشر** من شريط الحالة.
 
