@@ -10,12 +10,12 @@ author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 95afd1fedb98a451e4978ee66be2ea98ad7a4a76
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: 914af46d2d82f3556d149f2836680c902f826d50
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645658"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673306"
 ---
 # <a name="create-an-environment-in-audience-insights"></a>إنشاء بيئة في رؤى الجماهير
 
@@ -46,7 +46,7 @@ ms.locfileid: "7645658"
 
 أدخل التفاصيل التالية:
    - **الاسم**: اسم لهذه البيئة. يتم ملء هذا الحقل بشكل مسبق إذا قمت بالنسخ من بيئة موجودة، ولكن يمكنك تغييره.
-   - **اختيار أعمالك**: اختر الجمهور الأساسي للبيئة الجديدة. يمكنك العمل مع العملاء الفرديين (متاجرة عمل-مستهلك) أو [حسابات الأعمال](work-with-business-accounts.md) (متاجرة عمل-عمل).
+   - **اختر عملك**: اختر الجمهور الأساسي للبيئة الجديدة. يمكنك العمل مع العملاء الفرديين (متاجرة عمل-مستهلك) أو [حسابات الأعمال](work-with-business-accounts.md) (شركة إلى شركة).
    - **النوع**: قم بتحديد ما إذا كنت ترغب في إنشاء بيئة إنتاج أو بيئة اختبار معزولة. لا تسمح بيئات الاختبار المعزولة بتحديث البيانات المجدولة وتكون مخصصة للتنفيذ والاختبار المسبق. تستخدم بيئات Sandbox نفس الجمهور الأساسي مثل بيئة الإنتاج المحددة حاليًا.
    - **المنطقة**: المنطقة التي يتم فيها نشر الخدمة واستضافتها.
 
@@ -54,7 +54,7 @@ ms.locfileid: "7645658"
 
 في خطوة **تخزين البيانات**، اختر مكان تخزين البيانات من رؤى الجمهور.
 
-سيكون لديك خياران: **مساحة تخزين Customer Insights** ‏(Azure Data Lake مُدارة بواسطة Customer Insights) و **Azure Data Lake Storage** (Azure Data Lake Storage الخاص بك). يكون خيار مساحة تخزين Customer Insights محددًا بشكل افتراضي.
+سيكون لديك خياران: **مساحة تخزين Customer Insights** ‏(مستودع بيانات Azure مُدار بواسطة فريق Customer Insights) **وAzure Data Lake Storage** (Azure Data Lake Storage الخاص بك). يكون خيار مساحة تخزين Customer Insights محددًا بشكل افتراضي.
 
 :::image type="content" source="media/data-storage-environment.png" alt-text="اختر Azure Data Lake Storage لتخزين بيانات رؤى الجمهور فيه.":::
 
@@ -66,7 +66,7 @@ ms.locfileid: "7645658"
 > - حسابات Azure Data Lake Storage من نفس منطقة Azure التي قمت بتحديدها عند إنشاء البيئة.
 > - حسابات Azure Data Lake Storage التي قامت بتمكين *مساحة اسم التدرج الهرمي*.
 
-بالنسبة لخيار Azure Data Lake Storage، يمكنك الاختيار بين خيار مستند إلى المورد أو خيار مستند إلى الاشتراك للمصادقة. لمزيد من المعلومات، راجع [توصيل رؤى الجمهور بحساب Azure Data Lake Storage Gen2 بواسطة كيان خدمة Azure](connect-service-principal.md). اسم **الحاوية** سيكون `customerinsights` ولا يمكن تغييره.
+بالنسبة لخيار Azure Data Lake Storage، يمكنك الاختيار بين خيار مستند إلى المورد أو خيار مستند إلى الاشتراك للمصادقة. لمزيد من المعلومات، راجع [الاتصال بحساب Azure Data Lake Storage باستخدام كيان Azure service](connect-service-principal.md). اسم **الحاوية** سيكون `customerinsights` ولا يمكن تغييره.
 
 عند اكتمال عمليات النظام مثل نقل البيانات، يقوم النظام بإنشاء مجلدات مقابلة في حساب التخزين الذي حددته. يتم إنشاء ملفات البيانات وملفات *model.json* وإضافتها إلى المجلدات استنادًا إلى اسم العملية.
 
@@ -76,14 +76,14 @@ ms.locfileid: "7645658"
    
 تتيح لك خطوة **Microsoft Dataverse** توصيل Customer Insights ببيئة Dataverse الخاصة بك.
 
-لاستخدام [نماذج التنبؤ الجاهزة](predictions-overview.md#out-of-box-models)، قم بتكوين مشاركة البيانات باستخدام Dataverse. أو يمكنك تمكين عرض البيانات من مصادر البيانات المحلية، مما يوفر عنوان URL لبيئة Microsoft Dataverse التي تديرها مؤسستك. حدد **تمكين مشاركة البيانات** لمشاركة بيانات إخراج Customer Insights مع Data Lake مُدار في Dataverse
+لاستخدام [نماذج التنبؤ الجاهزة](predictions-overview.md#out-of-box-models)، قم بتكوين مشاركة البيانات باستخدام Dataverse. أو يمكنك تمكين عرض البيانات من مصادر البيانات المحلية، مما يوفر عنوان URL لبيئة Microsoft Dataverse التي تديرها مؤسستك. حدِّد **تمكين مشاركة البيانات** لمشاركة بيانات إخراج Customer Insights مع مستودع بيانات مُدار بواسطة Dataverse.
 
 :::image type="content" source="media/dataverse-data-sharing.png" alt-text="خيارات التكوين لتمكين مشاركة البيانات مع Microsoft Dataverse.":::
 
 > [!NOTE]
 > لا يدعم Customer Insights سيناريوهات مشاركة البيانات التالية:
-> - إذا قمت بحفظ جميع البيانات في Azure Data Lake Storage الخاص بك، فلن تتمكن من تمكين مشاركة البيانات باستخدام Data Lake المُدار بواسطة Microsoft Dataverse.
-> - إذا قمت بتمكين مشاركة البيانات باستخدام Data Lake المُدار بواسطة Microsoft Dataverse، فلن تتمكن من [إنشاء قيم تم التنبؤ بها أو مفقودة في كيان](predictions.md).
+> - إذا قمت بحفظ جميع البيانات في Azure Data Lake Storage الخاص بك، فلن تتمكن من تمكين مشاركة البيانات باستخدام مستودع بيانات مُدار بواسطة Dataverse.
+> - إذا قمت بتمكين مشاركة البيانات باستخدام Dataverse، فلن تتمكن من [إنشاء قيم تم التنبؤ بها أو مفقودة في إحدى الكيانات](predictions.md).
 
 ### <a name="step-4-finalize-the-settings"></a>الخطوة 4: إنهاء الإعدادات
 
@@ -93,10 +93,10 @@ ms.locfileid: "7645658"
 
 ## <a name="work-with-your-new-environment"></a>التعامل مع بيئتك الجديدة
 
-راجع المقالات التالية لمساعدتك في البدء في تكوين Customer Insights. 
+راجع المقالات التالية من أجل مساعدتك على الشروع في تكوين Customer Insights: 
 
 - [إضافة مزيد من المستخدمين وتعيين الأذونات](permissions.md).
 - [استيعاب مصادر البيانات](data-sources.md) وتشغيلها عبر [عملية توحيد البيانات](data-unification.md) للحصول على [ملفات تعريف موحدة للعملاء](customer-profiles.md).
 - [إثراء ملفات التعريف الموحدة للعملاء](enrichment-hub.md) أو [تشغيل النماذج التنبؤية](predictions-overview.md)
-- [إنشاء شرائح](segments.md) لتجميع العملاء، ومراجعة [القياسات](measures.md) لمؤشرات KPIs.
+- [إنشاء مقاطع](segments.md) لتصنيف العملاء ضمن مجموعة، [والقياسات](measures.md) لمراجعة مؤشرات KPI.
 - [إعداد الاتصالات](connections.md) و [التصديرات](export-destinations.md) لمعالجة مجموعات فرعية من بياناتك في تطبيقات أخرى.

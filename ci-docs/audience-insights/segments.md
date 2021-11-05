@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 6840f4bc345b0821fb2349666130b39d542878e7
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: ac33a6dcde4c710cecd3c6836aad3e26ce5c7de6
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617309"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673744"
 ---
 # <a name="segments-overview"></a>نظرة عامة على الشرائح
 
@@ -26,7 +26,7 @@ ms.locfileid: "7617309"
 
 هناك العديد من الطرق لإنشاء شريحة جديدة: 
 
-# <a name="individual-customers-b2c"></a>[المستهلكون الفرديون (متاجرة عمل-مستهلك‬)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[المستهلكون الفرديون (B-to-C)](#tab/b2c)
 
 - مقطع معقد مع منشئ المقطع: [إنشاء الخاص بك](segment-builder.md#create-a-new-segment) 
 - شرائح بسيطة بمشغل واحد: [شريحة سريعة](segment-builder.md#quick-segments) 
@@ -34,7 +34,7 @@ ms.locfileid: "7617309"
 - اقتراحات مدعومة بالذكاء الاصطناعي تستند إلى قياسات أو سمات: [الشرائح المقترحة لتحسين القياسات](suggested-segments.md) 
 - الاقتراحات المستندة إلى الأنشطة: [الشرائح المقترحة استنادا إلى نشاط العميل](suggested-segments-activity.md) 
 
-# <a name="business-accounts-b2b"></a>[حسابات الأعمال (متاجرة عمل-عمل)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[حسابات الأعمال (B-to-B)](#tab/b2b)
 
 - مقطع معقد مع منشئ المقطع: [إنشاء الخاص بك](segment-builder.md#create-a-new-segment)
 

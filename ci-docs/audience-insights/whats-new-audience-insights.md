@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: 5262ad20019e90e73ab121a5ab90e602c1a32b7e
-ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
+ms.openlocfilehash: e501df8701493a1c5b83c4d06da3a73fd226165f
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7606026"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673783"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>ما الجديد في قدرة رؤى الجمهور في Dynamics 365 Customer Insights
 
@@ -166,7 +166,7 @@ ms.locfileid: "7606026"
 - **تصدير الشرائح إلى Constant Contact** قمنا بتوسيع وجهات التصدير الخاصة به لتضمين Constant Contact. يمكنك الآن تصدير شرائح من قوائم Customer Insights إلى قوائم Constant Contact واستخدامها كخط أساسي لحملات التسويق.   
    لمزيد من المعلومات، راجع [تصدير إلى Constant Contact](export-constant-contact.md).
 
-- **تصدير الشرائح إلى RollWorks** قمنا بتوسيع وجهات التصدير الخاصة به لتضمين RollWorks. يمكنك الآن تصدير شرائح من Customer Insights إلى جماهير RollWorks واستخدامها كخط أساسي لإعلانات متاجرة عمل-عمل.    
+- **تصدير الشرائح إلى RollWorks** قمنا بتوسيع وجهات التصدير الخاصة به لتضمين RollWorks. يمكنك الآن تصدير مقاطع من Customer Insights إلى جمهور RollWorks واستخدامه كخط أساسي لإعلاناتك الخاصة بمتاجرة شركة إلى شركة.    
    لمزيد من المعلومات، راجع [تصدير البيانات إلى RollWorks](export-rollworks.md).
 
 - **تصدير الشرائح إلى Snapchat** قمنا بتوسيع وجهات التصدير الخاصة به لتضمين Snapchat. يمكنك الآن تصدير شرائح من Customer Insights إلى جماهير Snapchat واستخدامها كخط أساسي للإعلانات.     

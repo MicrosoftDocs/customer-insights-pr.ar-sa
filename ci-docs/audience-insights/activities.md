@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: c250efcd54ec126c0726b22a971cdedd89760d6b
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: bcb8d42963719f5d225556c31b3fc06db8573e5b
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617953"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673121"
 ---
 # <a name="customer-activities"></a>أنشطة العملاء
 
@@ -49,7 +49,7 @@ ms.locfileid: "7617953"
    :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="قم بتحديد علاقة الكيان.":::
 
    > [!TIP]
-   > في بيئات متاجرة عمل-عمل، يمكنك الاختيار بين كيانات الحساب والكيانات الأخرى. إذا قمت بتحديد كيان حساب، فسيتم تعيين مسار العلاقة تلقائيًا. بالنسبة للكيانات الأخرى، يجب عليك تحديد مسار العلاقة عبر واحد أو أكثر من الكيانات الوسيطة حتى تصل إلى كيان حساب.
+   > في بيئات شركة إلى شركة، يمكنك الاختيار بين كيانات الحساب والكيانات الأخرى. إذا قمت بتحديد كيان حساب، فسيتم تعيين مسار العلاقة تلقائيًا. بالنسبة للكيانات الأخرى، يجب عليك تحديد مسار العلاقة عبر واحد أو أكثر من الكيانات الوسيطة حتى تصل إلى كيان حساب.
 
 1. حدد **التالي** للذهاب إلى الخطوة التالية. 
 

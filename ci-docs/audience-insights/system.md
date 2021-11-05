@@ -1,7 +1,7 @@
 ---
 title: تكوين النظام في رؤى الجمهور
 description: تعرف على إعدادات النظام في قدرة رؤى الجمهور في Dynamics 365 Customer Insights.
-ms.date: 02/12/2021
+ms.date: 10/15/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 2af8728009b4f1d53ebc2557bab8c79537a0dc5dda54477493ab1ad16f3f9a8a
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 3ce767939b8fedf676dc569ede47104ecfe930dd
+ms.sourcegitcommit: cd9f9a9d3da71c5420ef5c4c6ead91bc820d17a9
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035867"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "7651824"
 ---
 # <a name="system-configuration"></a>تكوين النظام
 
@@ -24,9 +24,9 @@ ms.locfileid: "7035867"
 - [استخدام واجهة برمجة التطبيقات](#api-usage-tab)
 - [حول](#about-tab)
 - [عام ](#general-tab)
+- [الأمان](#security-tab)
 
-> [!div class="mx-imgBorder"]
-> ![صفحة النظام.](media/system-tabs.png "صفحة النظام")
+:::image type="content" source="media/system-tabs.png" alt-text="علامات تبويب الإعدادات في صفحة النظام.":::
 
 ## <a name="status-tab"></a>علامة التبويب "الحالة"
 
@@ -84,9 +84,15 @@ ms.locfileid: "7035867"
 
 ## <a name="general-tab"></a>علامة التبويب عام
 
-هناك خياران في علامة التبويب **عام**،  **اللغة** و **‏‫تنسيق البلد/المنطقة‬**.
+يمكنك تغيير اللغة وتنسيق البلد/المنطقة في علامة التبويب **عام.**
 
-يدعم التطبيق [عددًا من اللغات](supported-languages.md). لتغيير اللغة المفضلة الخاصة بك، اختر **لغة** من القائمة المنسدلة.
+يدعم Customer Insights [عددًا من اللغات](/dynamics365/get-started/availability). يستخدم التطبيق تفضيلات لغتك لعرض عناصر مثل القائمة ونص التسمية ورسائل النظام بلغتك المفضلة.
+
+البيانات والمعلومات المستوردة التي أدخلتها يدويًا غير مترجمة.
+
+### <a name="update-the-settings"></a>تحديث الإعدادات
+
+لتغيير اللغة المفضلة الخاصة بك، اختر **لغة** من القائمة المنسدلة.
 
 لتغيير التنسيق المفضل للتواريخ والوقت والأرقام، استخدم القائمة المنسدلة **تنسيق البلد/المنطقة**. يتم عرض معاينة التنسيق ضمن هذا الحقل. سيقوم النظام تلقائيًا باقتراح تحديد عند اختيار لغة جديدة.
 
@@ -105,6 +111,13 @@ ms.locfileid: "7035867"
 
    تحتوي العمليات التي تستخدم [استيعاب البيانات في الحقيقي](real-time-data-ingestion.md) على زر مع نظام منظار لعرض استخدام API في الوقت الحقيقي. حدد الزر لفتح جزء جانبي يحتوي على تفاصيل الاستخدام الخاصة باستخدام API في الوقت الحقيقي في البيئة الحالية.   
    استخدم المرعب **تجميع حسب** تجميع حسب **استخدام واجهة API في الوقت الحقيقي** لاختيار أفضل طريقة لتقديم تفاعلاتك الوقت الحقيقي. يمكنك تجميع البيانات حسب أسلوب واجهة برمجة التطبيقات (API)، أو اسم الكيان المؤهل (الكيان المضمن)، والذي تم إنشاؤه بواسطة (مصدر الحدث)، أو النتيجة (النجاح أو الفشل) أو رموز الخطأ. تتوفر البيانات كمخطط تاريخي وكجدول.
+
+## <a name="security-tab"></a>علامة التبويب "الأمان"
+
+تسمح لك علامة التبويب **الأمان** بربط [Azure key vault لديك](/azure/key-vault/general/basic-concepts) بالبيئة وإدارته.
+يمكن استخدام مخزن المفاتيح المخصص لتنظيم الأسرار واستخدامها في حدود امتثال المؤسسة. يمكن لرؤى الجمهور استخدام الأسرار الموجودة في Azure Key Vault [لإعداد الاتصالات](connections.md) بأنظمة الجهات الخارجية.
+
+لمزيد من المعلومات، راجع [جلب Azure key vault الخاص بك](use-azure-key-vault.md).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

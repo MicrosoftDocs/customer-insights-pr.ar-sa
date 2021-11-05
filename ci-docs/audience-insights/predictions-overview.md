@@ -10,12 +10,12 @@ author: zacookmsft
 ms.author: zacook
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: be452e4f1515f637f6edbc3ae3aaf6a3d3471489
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: 63e22bf9a457ea43c65132643681cffb295ae7e5
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7618816"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673946"
 ---
 # <a name="predictions-overview"></a>نظرة عامة حول التبنؤات
 
@@ -25,14 +25,14 @@ ms.locfileid: "7618816"
 
 تشكّل النماذج المعرّفة مسبقًا أسهل طريقة لبدء التنبؤ بالبيانات، ويُشار إلى هذه النماذج في أغلب الأحيان بالنماذج الجاهزة. فهي تتطلب فقط بيانات وبنية معينة لتوليد الرؤى بسرعة. تتوفر حاليًا النماذج التالية: 
 
-# <a name="individual-customers-b2c"></a>[المستهلكون الفرديون (متاجرة عمل-مستهلك‬)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[المستهلكون الفرديون (B-to-C)](#tab/b2c)
 
 - [القيمة العمرية للعميل](predict-customer-lifetime-value.md): توقع الإيرادات المحتملة للعميل طوال التفاعل الكامل مع نشاط تجاري.
 - [توصية المنتج](predict-product-recommendation.md): تقترح مجموعات من توصيات المنتجات التنبؤية بالاستناد إلى سلوك الشراء والعملاء الذين لديهم أنماط شراء مماثلة.
 - [خسارة الاشتراك‬](predict-subscription-churn.md): التنبؤ بما إذا كان العميل عرضة لخطر التوقف عن استخدام خدمات أو منتجات الاشتراك الخاصة بشركتك.
 - [خسارة الحركة](predict-transactional-churn.md): التنبؤ بما إذا كان العميل سيتوقف عن شراء المنتجات والخدمات في إطار زمني معين.
 
-# <a name="business-accounts-b2b"></a>[حسابات الأعمال (متاجرة عمل-عمل)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[حسابات الأعمال (B-to-B)](#tab/b2b)
 
 - [خسارة الحركة](predict-transactional-churn.md): التنبؤ بما إذا كان العميل سيتوقف عن شراء المنتجات والخدمات في إطار زمني معين.
 

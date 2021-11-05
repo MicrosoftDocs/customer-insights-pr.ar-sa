@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 5d5e12ee44dfa40c470738eaee5c68fdf23d1b2d
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: bc0128c222c032e8cfe35e6f3baa0ea722bce7cb
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617539"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7672983"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>الإثراء لملفات تعريف العملاء (معاينة)
 
@@ -29,7 +29,7 @@ ms.locfileid: "7617539"
 
 في علامة التبويب **اكتشاف**، ستجد جميع خيارات الإثراء المدعومة.
 
-# <a name="individual-customers-b2c"></a>[المستهلكون الفرديون (متاجرة عمل-مستهلك‬)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[المستهلكون الفرديون (B-to-C)](#tab/b2c)
 
 - [العلامات التجارية](enrichment-microsoft.md) الموفرة بواسطة Microsoft
 - [الاهتمامات](enrichment-microsoft.md) الموفرة بواسطة Microsoft
@@ -38,7 +38,7 @@ ms.locfileid: "7617539"
 - [البيانات المخصصة](enrichment-SFTP-custom-import.md) عبر بروتوكول نقل الملفات الآمن (SFTP)‬ 
 - تم توفير [خرائط Azure](enrichment-azure-maps.md) بواسطة Microsoft
 
-# <a name="business-accounts-b2b"></a>[حسابات الأعمال (متاجرة عمل-عمل)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[حسابات الأعمال (B-to-B)](#tab/b2b)
 
 - [بيانات الشركة](enrichment-leadspace.md) مقدمة من Leadspace
 - [العناوين المحسنة](enrichment-enhanced-addresses.md) التي تقدمها Microsoft 

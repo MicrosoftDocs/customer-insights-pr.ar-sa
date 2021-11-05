@@ -1,7 +1,7 @@
 ---
 title: ابدأ بحسابات الأعمال باعتبارها الجمهور المستهدف الأساسي
 description: تعرف على حسابات الأعمال باعتبارها الجمهور المستهدف الأساسي Dynamics 365 Customer Insights.
-ms.date: 09/30/2021
+ms.date: 10/19/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,16 +9,16 @@ author: m-hartmann
 ms.author: wimohabb
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: ea036cf3a3623a314a6d0d7da85b2c30c030ccea
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: ac5ae950a44f7f32e3cb9fdc0ffad05b78fddef0
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7644972"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673671"
 ---
 # <a name="work-with-business-accounts-in-audience-insights"></a>العمل مع حسابات الأعمال في رؤى الجمهور
 
-تتيح لك إمكانية رؤى الجمهور في Dynamics 365 Customer Insights تكوين بيئتك لجماهير مستهدفة أساسية مختلفة: العملاء الفرديون (متاجرة عمل-مستهلك) وحسابات الأعمال (متاجرة عمل-عمل). في سيناريوهات متاجرة عمل-مستهلك، تتركز البيانات حول الأفراد. بالنسبة إلى متاجرة عمل-عمل، فإن الجمهور المستهدف الأساسي هو الحسابات - المؤسسات أو الشركات - وجهات الاتصال. تساعدك هذه المقالة على البدء في بيئة لحسابات الأعمال. يسرد الاختلافات في مناطق الميزات في رؤى الجمهور، اعتمادًا على تركيز بيئتك. لمزيد من المعلومات حول الاختلافات، راجع مستندات مناطق المعالم. 
+تتيح لك إمكانية تحليلات الجمهور في Dynamics 365 Customer Insights تكوين بيئتك للجماهير المستهدفة الأساسية المختلفة: العملاء الفرديين (متاجرة عمل-مستهلك) وحسابات الأعمال (متاجرة شركة إلى شركة). في سيناريوهات متاجرة عمل-مستهلك، تتركز البيانات حول الأفراد. بالنسبة إلى متاجرة شركة إلى شركة، فإن الجمهور المستهدف الرئيسي هو الحسابات والمؤسسات أو الشركات وجهات الاتصال. تساعدك هذه المقالة على البدء في بيئة لحسابات الأعمال. يسرد الاختلافات في مناطق الميزات في رؤى الجمهور، اعتمادًا على تركيز بيئتك. لمزيد من المعلومات حول الاختلافات، راجع مستندات مناطق المعالم. 
 
 ## <a name="create-an-environment-for-business-accounts"></a>إنشاء بيئة لحسابات الأعمال
 
@@ -32,7 +32,7 @@ ms.locfileid: "7644972"
 
 إذا كانت مؤسستك تحتفظ ببيئات للعملاء الفرديين وحسابات الأعمال، فيمكنك استخدام المحول في الجزء الأيمن لاختيار الجمهور المستهدف الأساسي.
 
-:::image type="content" source="media/switch-primary-target-audience.PNG" alt-text="المبدل لتغيير الجمهور المستهدف الأساسي بين العملاء الفرديين وحسابات الأعمال.":::
+:::image type="content" source="media/switch-primary-target-audience.png" alt-text="المبدل لتغيير الجمهور المستهدف الأساسي بين العملاء الفرديين وحسابات الأعمال.":::
 
 ## <a name="supported-feature-areas"></a>مناطق الميزات المدعومة
 
