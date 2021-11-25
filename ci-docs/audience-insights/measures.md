@@ -1,7 +1,7 @@
 ---
 title: إنشاء المقاييس وإدارتها
 description: حدد المقاييس لتحليل أداء شركتك وإظهاره.
-ms.date: 09/30/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: wameng
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: d77d1901fee4771537554c05d3963316d0fb37cb
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: f6be11bd97be71bc0c3a58eaee4d8ed45f535877
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673354"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732710"
 ---
 # <a name="define-and-manage-measures"></a>تحديد المقاييس وإدارتها
 
@@ -238,8 +238,7 @@ ms.locfileid: "7673354"
 - **حذف** المقياس.
 - **تنشيط** أو **إلغاء التنشيط**. لن يتم تحديث الإجراءات غير النشطة أثناء [تحديث مجدول](system.md#schedule-tab).
 
-> [!TIP]
-> هناك [ستة أنواع للحالة](system.md#status-types) للمهام/العمليات. بالإضافة إلى ذلك، تعتمد معظم العمليات [على العمليات اللاحقة الأخرى](system.md#refresh-policies). يمكنك تحديد حالة العملية لمعرفة تفاصيل التقدم الخاصة بالمهمة بأكملها. بعد تحديد **راجع التفاصيل** بالنسبة لإحدى مهام الوظيفة، ستجد معلومات إضافية: وقت المعالجة، وتاريخ المعالجة الأخير، وجميع الأخطاء والتحذيرات المرتبطة بالمهمة.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="next-step"></a>الخطوة التالية
 

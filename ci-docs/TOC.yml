@@ -84,6 +84,8 @@
           href: audience-insights/enrichment-microsoft.md
         - name: العناوين المحسنة
           href: audience-insights/enrichment-enhanced-addresses.md
+        - name: تحسين بيانات الشركة
+          href: audience-insights/enrichment-enhanced-company-data.md
         - name: الإثراء باستخدام خرائط Azure
           href: audience-insights/enrichment-azure-maps.md
         - name: إثراء بياناتك مع HERE Technologies
@@ -250,6 +252,40 @@
           href: audience-insights/apis.md
         - name: مراجع API
           href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
+- name: إدارة الموافقة (إصدار أولي)
+  items:
+    - name: مركز التعليمات
+      href: consent-management/index.yml
+    - name: نظرة عامة على القدرات
+      href: consent-management/overview.md
+    - name: تم البدء
+      items:
+        - name: تم البدء
+          href: consent-management/get-started.md
+        - name: المفاهيم والمصطلحات
+          href: consent-management/glossary.md
+    - name: استيراد بيانات الموافقة
+      items:
+        - name: استيراد بيانات الموافقة
+          href: consent-management/import-consent-data.md
+        - name: تعيين بيانات الموافقة وتطبيق تفضيلات الموافقة
+          href: consent-management/set-consent-rules.md
+    - name: إدارة بيانات الموافقة
+      items:
+        - name: تمكين قواعد الموافقة في تحليلات الجماهير
+          href: audience-insights/activate-consent.md
+        - name: إدارة قواعد الموافقة الافتراضية باستخدام مقاطع تحليلات الجماهير
+          href: audience-insights/change-default-consent-rules.md
+    - name: إدارة الإعدادات والمستخدمين
+      items:
+        - name: تكوين إعدادات النظام
+          href: consent-management/system-settings.md
+        - name: إدارة المستخدمين والأذونات
+          href: consent-management/manage-users.md
+    - name: استخدام بيانات الموافقة
+      items:
+        - name: إنشاء توقعات باستخدام بيانات الموافقة
+          href: consent-management/predictions-consent-data.md
 - name: معلومات المشاركة (إصدار أولي)
   items:
     - name: مركز التعليمات

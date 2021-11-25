@@ -1,7 +1,7 @@
 ---
 title: استيعاب البيانات من خلال موصل Power Query
 description: موصلات لمصادر البيانات تستند إلى Power Query.
-ms.date: 09/29/2020
+ms.date: 11/01/2020
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: ab6edc3f33ebacb81f55c0882a78c5827b4384ed
-ms.sourcegitcommit: 1565f4f7b4e131ede6ae089c5d21a79b02bba645
+ms.openlocfilehash: 5d54d33c235e646644e8874e5b0c28898dcff11a
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "7643478"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732202"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>الاتصال بمصدر بيانات Power Query
 
@@ -79,6 +79,8 @@ ms.locfileid: "7643478"
    > [!div class="mx-imgBorder"]
    > ![خيار التحرير.](media/edit-option-data-sources.png "خيار التحرير")
 
+   [!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+   
 3. قم بتطبيق التغييرات والتحويلات في مربع حوار **Power Query - تحرير الاستعلامات** كما هو موضح في قسم [إنشاء مصدر بيانات جديد](#create-a-new-data-source).
 
 4. حدد **حفظ** في Power Query بعد إكمال عمليات التحرير الخاصة بك لحفظ التغييرات التي أجريتها.

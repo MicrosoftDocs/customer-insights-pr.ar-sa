@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 8404515a20529c00708d84813f3a022ad98c45362a2f1e68d7aa890d085071a9
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 7201ed9e5315d73e6b9c25b4bc4c4e4ed839a215
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033569"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732248"
 ---
 # <a name="work-with-customer-insights-apis"></a>التعامل مع واجهات API في Customer Insights
 
@@ -135,7 +135,7 @@ ms.locfileid: "7033569"
 
 1. استخدم [مكتبة المصادقة من Microsoft (MSAL)](/azure/active-directory/develop/msal-overview) للحصول على `AccessToken` باستخدام [تسجيل تطبيق Azure](#create-a-new-app-registration-in-the-azure-portal) موجود.
 
-1. بعد المصادقة على رمز مميز بنجاح والحصول عليه، قم بإنشاء `HttpClient` جديد أو استخدام واحد موجود مع تعيين **"التخويل" DefaultRequestHeaders** الإضافي إلى **الحامل <access token>** وتعيين **Ocp-Apim-Subscription-Key** إلى [**مفتاح الاشتراك** من بيئة Customer Insights](#get-started-trying-the-customer-insights-apis).   
+1. بعد المصادقة بنجاح والحصول على رمز، قم ببناء رمز جديد أو استخدم `HttpClient` مع إعداد **DefaultRequestHeaders "Authorization** على **رمز وصول الحامل** وإعداد **Ocp-Apim-Subscription-Key** على [**مفتاح الاشتراك**](#get-started-trying-the-customer-insights-apis) من بيئة Customer Insights الخاصة بك.   
  
    أعد تعيين رأس **التفويض** عندما يكون مناسبًا. على سبيل المثال، عند انتهاء صلاحية الرمز المميز.
 

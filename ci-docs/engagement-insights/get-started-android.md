@@ -4,17 +4,17 @@ description: تعرف على كيفية تخصيص وتشغيل Android SDK
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 09/15/2021
+ms.date: 10/19/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: a060ac60db71a7b0fb8c0d7a3b0e266004fbee6a
-ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
+ms.openlocfilehash: c678c2dafbb77926269b5602bca363c678ec6b3f
+ms.sourcegitcommit: ef823f3d7fa28d3a90cfde9409be9465ffa2cf09
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7494258"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "7655326"
 ---
 # <a name="get-started-with-the-android-sdk"></a>الشروع في العمل باستخدام Android SDK
 
@@ -42,12 +42,12 @@ ms.locfileid: "7494258"
 
 - إذا لم يكن لديك مساحة عمل موجودة، فحدد **مساحة عمل جديدة** واتبع الخطوات اللازمة لإنشاء [مساحة عمل جديدة](create-workspace.md).
 
-- بعد إنشاء مساحة عمل، انتقل إلى **المسؤول** > **مساحة العمل**، ثم حدد **دليل التثبيت**. 
+- بعد إنشاء مساحة عمل، انتقل إلى **المسؤول** > **مساحة العمل**، ثم حدد **دليل التثبيت**.
 
 ## <a name="configure-the-sdk"></a>تكوين SDK
 
 وبمجرد تنزيل SDK، يمكنك العمل معه في Android Studio لتمكين الأحداث وتحديدها. هناك طريقتان للقيام بذلك:
-### <a name="option-1-using-jitpack-recommended"></a>الخيار 1: استخدام JitPack (مستحسن)
+### <a name="option-1-use-jitpack-recommended"></a>الخيار 1: استخدام JitPack (مستحسن)
 1. أضف مستودع JitPack إلى الجذر الخاص بك `build.gradle`:
     ```gradle
     allprojects {
@@ -61,12 +61,12 @@ ms.locfileid: "7494258"
 1. أضف التبعية:
     ```gradle
     dependencies {
-        implementation 'com.github.microsoft:engagementinsights-sdk-android:1.0.0'
+        implementation 'com.github.microsoft:engagementinsights-sdk-android:v1.0.0'
         api 'com.google.code.gson:gson:2.8.1'
     }
     ```
 
-### <a name="option-2-using-download-link"></a>الخيار 2: استخدام ارتباط التنزيل
+### <a name="option-2-use-download-link"></a>الخيار 2. استخدام ارتباط التنزيل
 1. قم بتنزيل [Android SDKلمعلومات المشاركة](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-android-sdk.zip)، وضع ملف `eiandroidsdk-debug.aar` في مجلد `libs`.
 
 1. افتح ملف `build.gradle` على مستوى المشروع وأضف المقتطفات التالية:
@@ -83,22 +83,23 @@ ms.locfileid: "7494258"
     }
     ```
 
-1. أضف إذن للشبكة والإنترنت في ملف `AndroidManifest.xml` الخاص بك والموجود ضمن مجلد `manifests`. 
+## <a name="enable-auto-instrumentation"></a>تمكين الأدوات التلقائية
+
+1. أضف إذن للشبكة والإنترنت في ملف `AndroidManifest.xml` الخاص بك والموجود ضمن مجلد `manifests`.
     ```xml
     <manifest>
         ...
         <uses-permission android:name="android.permission.INTERNET" />
         <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     ```
-    
-1. قم بإعداد تكوين SDK لمعلومات المشاركة من خلال ملف `AndroidManifest.xml` الخاص بك. 
 
-## <a name="enable-auto-instrumentation"></a>تمكين الأدوات التلقائية
+1. قم بإعداد تكوين SDK لمعلومات المشاركة من خلال ملف `AndroidManifest.xml` الخاص بك.
+
 1. انسخ قصاصة XML البرمجية من **دليل التثبيت**. يجب تعبئة `Your-Ingestion-Key` تلقائيًا.
 
    > [!NOTE]
    > لست بحاجة إلى استبدال قسم `${applicationId}`. يتم ملؤه تلقائيًا.
-   
+
 
    ```xml
    <application>
@@ -116,20 +117,24 @@ ms.locfileid: "7494258"
    </application>
    ```
 
-1. قم بتمكين أو تعطيل الالتقاط التلقائي لـ `View` الأحداث عن طريق تعيين حقل `autoCapture` إلى `true` أو `false`. يلزم إضافة أحداث `Action` يدويًا في الوقت الحالي.
+1. قم بتمكين أو تعطيل الالتقاط التلقائي لـ `View` الأحداث عن طريق تعيين حقل `autoCapture` إلى `true` أو `false`. 
+
+   >[!NOTE]
+   >يجب إضافة أحداث `Action` بشكل يدوي.
 
 1. (اختياري) تتضمن التكوينات الأخرى تعيين عنوان URL لمجمع نقطة النهاية. يمكن إضافتها ضمن بيانات تعريف مفتاح الإدخال في `AndroidManifest.xml`:
-    ```xml
+
+   ```xml
         <meta-data
             android:name="com.microsoft.engagementinsights.endpointUrl"
             android:value="https://some-endpoint-url.com" />
-    ```
+   ```
 
 ## <a name="implement-custom-events"></a>تنفيذ الأحداث المخصصة
 
 بعد تهيئة SDK، يمكنك العمل مع الأحداث خصائصها في بيئة `MainActivity`.
 
-    
+
 Java:
 ```java
 Analytics analytics = new Analytics();
@@ -141,7 +146,7 @@ var analytics = Analytics()
 ```
 
 ### <a name="set-property-for-all-events-optional"></a>تعيين الخاصية لكل الأحداث (اختياري)
-    
+
 Java:
 ```java
 analytics.setProperty("year", 2021);

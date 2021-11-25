@@ -1,7 +1,7 @@
 ---
 title: الشرائح في معلومات الجمهور
 description: نظرة عامة على الشرائح وكيفية إنشائها وإدارتها.
-ms.date: 09/30/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: ac33a6dcde4c710cecd3c6836aad3e26ce5c7de6
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: 56978c984a91e85e86956e7eac1d59609c349b6a
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673744"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732572"
 ---
 # <a name="segments-overview"></a>نظرة عامة على الشرائح
 
@@ -65,8 +65,7 @@ ms.locfileid: "7673744"
 
 يمكنك تحديث كل الشرائح مرة واحدة من خلال تحديد **تحديث الكل** في صفحة **الشرائح** أو يمكنك تحديث شريحة واحدة أو عدة شرائح عندما تقوم بتحديدها واختيار **تحديث** من الخيارات. وبدلاً من ذلك، يمكنك تكوين تحديث متكرر في **المسؤول** > **النظام** > **جدولة**.
 
-> [!TIP]
-> هناك [ستة أنواع للحالة](system.md#status-types) للمهام/العمليات. بالإضافة إلى ذلك، تعتمد معظم العمليات [على العمليات اللاحقة الأخرى](system.md#refresh-policies). يمكنك تحديد حالة العملية لمعرفة تفاصيل التقدم الخاصة بالمهمة بأكملها. بعد تحديد **الاطلاع على التفاصيل** لإحدى مهام الوظيفة، يمكنك العثور علي معلومات اضافيه: وقت المعالجة، وتاريخ آخر معالجه، وكافة الأخطاء والتحذيرات المقترنة بالمهمة.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="export-segments"></a>شرائح التصدير
 
@@ -105,5 +104,6 @@ ms.locfileid: "7673744"
 > تعتمد الحقول التي تظهر في هذه القائمة على سمات كيانات المقطع الخاص بك.
 >
 >تعتبر القائمة معاينة لأعضاء المقطع المطابق وعرض أول 100 سجل للمقطع الخاص بك بحيث يمكنك تقييمها بسرعة ومراجعة التعريفات إذا لزم الأمر. لرؤية جميع السجلات المتطابقة، يتعين عليك [تصدير المقطع](export-destinations.md).
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)] 

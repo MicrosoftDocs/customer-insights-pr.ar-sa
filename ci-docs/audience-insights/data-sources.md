@@ -1,7 +1,7 @@
 ---
 title: استخدام مصادر بيانات لاستيعاب البيانات
 description: تعرف على كيفية استيراد البيانات من مصادر متعددة.
-ms.date: 04/12/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: de31e1f25c08d0bcb5341c5f465b1999de48acf3
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: 27cbd0346b1219c7812f4b90327dd27b645c2b8e
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645339"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732111"
 ---
 # <a name="data-sources-overview"></a>نظرة عامة مصادر البيانات
 
@@ -48,14 +48,7 @@ ms.locfileid: "7645339"
 > [!div class="mx-imgBorder"]
 > ![مصدر بيانات تمت إضافته.](media/configure-data-datasource-added.png "مصدر بيانات تمت إضافته")
 
-|‏الحالة  |الوصف   |
-|---------|---------|
-|تمت بنجاح   |يتم استيعاب مصادر البيانات بنجاح إذا تم ذكر الوقت في العمود **تم تحديثه**.
-|لم تبدأ   |لا يحتوي مصدر البيانات على بيانات تم استيعابها أو ما زالت في وضع المسودة.         |
-|تحديث    |استيعاب البيانات قيد التقدم. يُمكنك إلغاء هذه العملية من خلال تحديد **إيقاف التحديث** في عمود **إجراءات**. يؤدي إيقاف عملية تحديث مصدر البيانات إلى إرجاعها إلى حالة التحديث الأخيرة.       |
-|‏‏فاشلة     |تسبب استيعاب البيانات في تشغيل أخطاء.         |
-
-حدد القيمة في عمود **الحالة** لأي مصدر بيانات لمراجعة المزيد من التفاصيل. في جزء **تفاصيل التقدم**، قم بتوسيع **مصادر البيانات**. حدد **راجع التفاصيل** لمراجعة المزيد من التفاصيل حول حالة التحديث، بما في ذلك تفاصيل الخطأ وتحديثات عملية انتقال البيانات من الخادم‬‬.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 قد يستغرق تحميل البيانات وقتا. بعد الانتهاء من التحديث بنجاح، يُمكنك مراجعة البيانات المستوعبة من صفحة **الكيانات**. للمزيد من المعلومات، راجع [التفاصيل](entities.md).
 

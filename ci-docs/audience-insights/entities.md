@@ -1,7 +1,7 @@
 ---
 title: الكيانات ومجموعات البيانات
 description: عرض البيانات في صفحة الكيانات.
-ms.date: 04/16/2020
+ms.date: 11/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 137de726b243b501491fcbe7866820aaee26097fcf379270c423c277374ae9a4
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 2a207a3dcad4bf192efb6ee1554195f10b19670b
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033799"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732064"
 ---
 # <a name="entities-in-audience-insights"></a>الكيانات في رؤى الجمهور
 
@@ -26,9 +26,10 @@ ms.locfileid: "7033799"
 - **المصدر**: نوع مصدر البيانات المستوعبة في الكيان
 - **مُنشأ بواسطة**: اسم الشخص الذي أنشأ الكيان
 - **تم الإنشاء**: تاريخ ووقت إنشاء الكيان
-- **تم التحديث بواسطة**: اسم الشخص الذي قام بتحديث الكيان
-- **التحديث الأخير**: تاريخ ووقت آخر تحديث للكيان
-- **آخر تحديث**: تاريخ ووقت آخر تحديث للبيانات
+- **تحديث**: اسم الشخص الذي قام بتحديث الكيان.
+- **الحالة:** تفاصيل حول آخر تحديث للكيان
+
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="explore-a-specific-entitys-data"></a>استكشاف بيانات كيان معين
 

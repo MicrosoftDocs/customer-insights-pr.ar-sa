@@ -1,7 +1,7 @@
 ---
 title: أنشطة العملاء
 description: تحديد أنشطة العملاء وعرضها في جدول زمني على ملفات تعريف العملاء.
-ms.date: 09/27/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: bcb8d42963719f5d225556c31b3fc06db8573e5b
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: c99ec2e7d5e4bf32a509bbe4c0c53999129b2305
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673121"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732409"
 ---
 # <a name="customer-activities"></a>أنشطة العملاء
 
@@ -82,9 +82,7 @@ ms.locfileid: "7673121"
 
 1. في صفحة **الأنشطة**، حدد **تشغيل** لمعالجة النشاط. 
 
-> [!TIP]
-> هناك [ستة أنواع للحالة](system.md#status-types) للمهام/العمليات. بالإضافة إلى ذلك، تعتمد معظم العمليات [على العمليات اللاحقة الأخرى](system.md#refresh-policies). يمكنك تحديد حالة العملية لمعرفة تفاصيل التقدم الخاصة بالمهمة بأكملها. بعد تحديد **الاطلاع على التفاصيل** لإحدى مهام الوظيفة، يمكنك العثور علي معلومات اضافيه: وقت المعالجة ، وتاريخ آخر معالجه ، وكافة الأخطاء والتحذيرات المقترنة بالمهمة.
-
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="manage-existing-activities"></a>إدارة الأنشطة الموجودة
 

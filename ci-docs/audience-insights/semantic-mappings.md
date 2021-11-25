@@ -1,7 +1,7 @@
 ---
 title: التعيينات الدلالية (إصدار أولي)
 description: نظرة عامة على التعيينات الدلالية وكيفية استخدامها.
-ms.date: 09/28/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: b0884b8b6a2c5abe4b3967d1b57d11a3a6d65c5b
-ms.sourcegitcommit: 5d82e5b808517e0e99fdfdd7e4a4422a5b8ebd5c
+ms.openlocfilehash: f23c622572ff9f967eca07de7898419d1ffc18b0
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "7622919"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731926"
 ---
 # <a name="semantic-mappings"></a>التعيينات الدلالية
 
@@ -75,8 +75,7 @@ ms.locfileid: "7622919"
 
 1. لتشغيل تعيين دلالي في وقت لاحق، حدد التعيين الدلالي وحدد **تحديث**.
 
-> [!TIP]
-> هناك [ستة أنواع للحالة](system.md#status-types) للمهام/العمليات. بالإضافة إلى ذلك، تعتمد معظم العمليات [على العمليات اللاحقة الأخرى](system.md#refresh-policies). يمكنك تحديد حالة العملية لمعرفة تفاصيل التقدم الخاصة بالمهمة بأكملها. بعد تحديد **الاطلاع على التفاصيل** لإحدى مهام الوظيفة، يمكنك العثور علي معلومات اضافيه: وقت المعالجة، وتاريخ آخر معالجه، وكافة الأخطاء والتحذيرات المقترنة بالمهمة.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="manage-existing-semantic-mappings"></a>إدارة التعيينات الدلالية الموجودة
 
@@ -91,5 +90,6 @@ ms.locfileid: "7622919"
 - **إعادة التسمية**: فتح مربع حوار حيث يمكنك إدخال اسم مختلف للتعيين الدلالي المحدد. حدد **حفظ** لتطبيق التغييرات التي أجريتها.
 
 - **حذف**: فتح مربع حوار لتأكيد حذف التعيين الدلالي المحدد. يمكنك أيضًا حذف أكثر من تعيين دلالي مرة واحدة عن طريق تحديد التعيينات الدلالية وأيقونة الحذف. حدد **حذف** لتأكيد الحذف.
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

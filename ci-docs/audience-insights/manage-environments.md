@@ -1,7 +1,7 @@
 ---
 title: إنشاء بيئات وإدارتها
 description: تعرف على كيفية تسجيل الاشتراك في الخدمة وكيفية إدارة البيئات.
-ms.date: 10/14/2021
+ms.date: 11/12/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 2d977ef4eb585e26b36139681552db22d84759c9
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: 65c6a68f550c2873ec30c6ac54f1752d880ce12c
+ms.sourcegitcommit: fb9f118b4e16b5aabb3e503463efca21718f5d72
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673717"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "7799622"
 ---
 # <a name="manage-environments"></a>إدارة البيئات
 
@@ -39,6 +39,19 @@ ms.locfileid: "7673717"
 3. في مربع **تحرير البيئة**، يمكنك تحديث إعدادات البيئة.
 
 لمزيد من المعلومات حول إعدادات البيئة، راجع [إنشاء بيئة جديدة](create-environment.md).
+
+## <a name="connect-to-microsoft-dataverse"></a>الاتصال بـ Microsoft Dataverse
+   
+تتيح لك خطوة **Microsoft Dataverse** توصيل Customer Insights ببيئة Dataverse الخاصة بك.
+
+لاستخدام [نماذج التنبؤ الجاهزة](predictions-overview.md#out-of-box-models)، قم بتكوين مشاركة البيانات باستخدام Dataverse. أو يمكنك تمكين عرض البيانات من مصادر البيانات المحلية، مما يوفر عنوان URL لبيئة Microsoft Dataverse التي تديرها مؤسستك. حدِّد **تمكين مشاركة البيانات** لمشاركة بيانات إخراج Customer Insights مع مستودع بيانات مُدار بواسطة Dataverse.
+
+:::image type="content" source="media/dataverse-data-sharing.png" alt-text="خيارات التكوين لتمكين مشاركة البيانات مع Microsoft Dataverse.":::
+
+> [!NOTE]
+> لا يدعم Customer Insights سيناريوهات مشاركة البيانات التالية:
+> - إذا قمت بحفظ جميع البيانات في Azure Data Lake Storage الخاص بك، فلن تتمكن من تمكين مشاركة البيانات باستخدام مستودع بيانات مُدار بواسطة Dataverse.
+> - إذا قمت بتمكين مشاركة البيانات باستخدام Dataverse، فلن تتمكن من [إنشاء قيم تم التنبؤ بها أو مفقودة في إحدى الكيانات](predictions.md).
 
 ## <a name="copy-the-environment-configuration"></a>نسخ تكوين البيئة
 

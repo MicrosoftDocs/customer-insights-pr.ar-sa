@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: eba7871faf304d5945191b5b9bc215243b4f8a05
-ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
+ms.openlocfilehash: eb25e050b8aa768e6e1d8d4c5adce6095cccc346
+ms.sourcegitcommit: 31a9b531dacd3a6465b3030c704ff5c085b7e122
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483637"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7791967"
 ---
 # <a name="service-limits-in-customer-insights-capabilities"></a>حدود الخدمة في إمكانات Customer Insights
 
@@ -26,7 +26,7 @@ ms.locfileid: "7483637"
 
 | المنطقة  | الحدود  | ملاحظات  |
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
-| الشرائح والمقاييس | 100 شريحة أو مقياس. | لا يمكن أن يتجاوز إجمالي عدد [الشرائح](audience-insights/segments.md) و[المقاييس](audience-insights/measures.md) مجتمعة 100.  |
+| المقاطع والمقاييس والتنبؤات | 300  | لا يمكن أن يتجاوز إجمالي عدد [المقاطع](audience-insights/segments.md)، و[القياسات](audience-insights/measures.md)، و[التنبؤات](audience-insights/predictions.md) المجمعة 300.  |
 | العلاقات | 20 مستوى من التعمق في العلاقات في مسارات الكيانات. | عند إنشاء [شرائح](audience-insights/segments.md) أو [قياسات](audience-insights/measures.md) باستخدام واجهة منشئ البيانات، يمكن أن تكون لمسارات الكيانات ما يصل إلى 20 نقطة علاقة بين كيان البدء والكيان الهدف.  |
 
 

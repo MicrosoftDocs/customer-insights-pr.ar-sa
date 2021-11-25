@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 6faaeb6a1ee34c3e5c8e7d465b37cee589bc920c
-ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
+ms.openlocfilehash: c116f7ce208c0288851a4b2230e27784ba3a5337
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483636"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732664"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>طلبات حقوق صاحب البيانات (DSR) بموجب GDPR
 
@@ -79,7 +79,14 @@ ms.locfileid: "7483636"
 2. قم بالإقرار بتأكيد تصدير البيانات للمستخدم المطلوب.
 3. استلام البيانات المُصدرة من خلال عنوان البريد الإلكتروني لمسؤول المستأجر.
 
-## <a name="engagement-insights"></a>معلومات المشاركة
+## <a name="consent-management-preview"></a>إدارة الموافقة (إصدار أولي)
+
+لا تقوم إمكانية إدارة الموافقة بجمع بيانات المستخدم مباشرة. فهو يقوم فقط باستيراد بيانات الموافقة التي يتم تقديمها بواسطة المستخدمين في التطبيقات الأخرى، ثم يقوم بمعالجة تلك البيانات.
+
+لإزالة بيانات الموافقة الخاصة لمستخدمين معينين، قم بإزالتها في مصادر البيانات التي تم حذفها إلى إمكانية إدارة الموافقة. وبعد تحديث مصدر البيانات، سيتم حذف البيانات التي تمت إزالتها في مركز الموافقة أيضا. التطبيقات التي تستخدم كيان الموافقة ستحذف البيانات التي تمت إزالتها من المصدر بعد [التحديث](audience-insights/system.md#refresh-processes). يوصى بتحديث مصادر البيانات بسرعة بعد الاستجابة لطلب موضوع بيانات لإزالة بيانات المستخدم من كافة العمليات والتطبيقات الأخرى.
+
+
+## <a name="engagement-insights-preview"></a>معلومات المشاركة (إصدار أولي)
 
 ### <a name="deleting-and-exporting-event-data-containing-end-user-identifiable-information"></a>حذف بيانات الأحداث التي تحتوي على معلومات تعريف المستخدم النهائي وتصديرها
 

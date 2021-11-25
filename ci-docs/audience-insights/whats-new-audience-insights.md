@@ -1,7 +1,7 @@
 ---
 title: الميزات الجديدة والقادمة
 description: معلومات حول الميزات والتحسينات وإصلاحات الأخطاء الجديدة.
-ms.date: 08/31/2021
+ms.date: 11/04/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: e501df8701493a1c5b83c4d06da3a73fd226165f
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: f7e2645e1608ea83b5d3af1073a5d6f6e97eec8f
+ms.sourcegitcommit: 2a0947cffb52eaf885aa2e50c95b3693f7e4c589
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673783"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7753101"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>ما الجديد في قدرة رؤى الجمهور في Dynamics 365 Customer Insights
 
@@ -26,6 +26,41 @@ ms.locfileid: "7673783"
 
 > [!TIP]
 > لإرسال طلبات الميزات واقتراحات حول المنتجات والتصويت عليها، انتقل إلى [مدخل أفكار تطبيق Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="october-2021-updates"></a>تحديثات أكتوبر 2021
+
+تتضمن التحديثات في أكتوبر 2021 ميزات جديدة وترقيات للأداء وإصلاحات للأخطاء.
+
+### <a name="b-to-b"></a>B-to-B
+
+يمكنك العمل مع حسابات الأعمال وجهات الاتصال ذات الصلة بها في Customer Insights، بدءا من أكتوبر 2021. قبل ذلك، كان التطبيق في الغالب مصمما نحو المستهلكين الأفراد. تم تحديث مناطق الميزات العديدة لدعم سيناريوهات B-to-B أعلى نوع بيئة جديد. للحصول على نظرة عامة حول ميزات B-to-B المدعومة، راجع [العمل مع حسابات الأعمال الجمهور الرؤى](work-with-business-accounts.md).
+
+تسلط الأقسام التالية الضوء على بعض المناطق الرئيسية التي تم استخدامها لدعم حسابات الأعمال والمستهلكين الأفراد.
+
+#### <a name="export-segments-based-on-business-accounts"></a>تصدير شرائح استنادا إلى حسابات الأعمال
+
+وتتوفر كافة عمليات التصدير الجمهور في سياق حسابات الأعمال. تتطلب معظم عمليات تصدير المقاطع تكوينًا إضافيًا و[معلومات جهة اتصال متوقعة](segment-builder.md#create-a-new-segment) في الأجزاء الأساسية لتكون صالحة لحسابات الأعمال. لمزيد من المعلومات، راجع [تصدير المقاطع](export-destinations.md#export-segments).
+
+#### <a name="use-the-linkedin-ads-export-with-business-accounts"></a>استخدام تصدير إعلانات LinkedIn مع حسابات الأعمال
+
+يتوفر تصدير إعلانات LinkedIn الآن لاستهداف جهات الاتصال والشركة في سياق حسابات الأعمال. عند تحديد استهداف الشركة كمركز أساسي لتصدير LinkedIn، يمكنك تصدير شرائح مبنية على حسابات الأعمال دون الحاجة إلى معلومات الاتصال بالمشروع. لمزيد من المعلومات، انتقل إلى المستندات المتعلقة [بتصدير إعلانات LinkedIn](export-linkedin-ads.md) والفرق بين [استهداف جهة الاتصال](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting)و[استهداف الشركة](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting). 
+
+#### <a name="create-measures-based-on-business-accounts-and-their-hierarchy"></a>إنشاء إجراءات استنادا إلى حسابات الأعمال وتسلسلها الهرمي
+
+يتيح لك منشئ المقاييس إنشاء قياسات حول حسابات الأعمال واستخدام معلومات التسلسل الهرمي بشكل اختياري. يتم استخدام معلومات التسلسل الهرمي في جمع حساب مقياس عبر الحساب وجميع الحسابات الفرعية المرتبطة به. على سبيل المثال، يمكنك إنشاء قياسات مثل إجمالي الإيراد لكل مجموعة من حسابات الأعمال المحددة حسب التسلسل الهرمي. لمزيد من المعلومات، راجع [تحديد المقاييس وإدارتها](measures.md).
+
+#### <a name="create-segments-based-on-business-accounts-and-their-hierarchy"></a>إنشاء المقاطع استنادا إلى حسابات الأعمال وتسلسلها الهرمي
+
+ويمكنك منشئ الشرائح من إنشاء شرائح من حسابات الأعمال التي تتضمن بشكل اختياري معلومات جهة اتصال لكل حساب في مقطع ما. إذا كان لديك هيكل حساب تم إعداده، يمكنك استخدام معلومات التسلسل الهرمي للحساب في إنشاء الشرائح. لمزيد من المعلومات، راجع [إنشاء مقطع جديد](segment-builder.md#create-a-new-segment).
+
+#### <a name="retain-your-business-accounts-with-deep-insights-to-their-churn-tendency"></a>الاحتفاظ وحسابات الأعمال برؤى ثاقبة إلى هذه الحسابات المهمة
+
+يدعم نموذج تنبؤ العملاء الآن حسابات الأعمال أيضا. يمكن تقييم مخاطر حدوث هذا الأمر، ليس فقط بالنسبة للحساب ولكن أيضا لمجمع من الحساب ومنتج أو فئة خدمة يشترونها منك. تساعدك هذه الإضافة على فهم ما إذا كان من المرجح أن يتوقف أي حساب عن الشراء منك بشكل عام أو لفئة معينة من البضائع أو الخدمات فقط. ولمساعدتك على استخدام الذكاء الاصطناعي النموذج، فإنه يسرد أيضا الأسباب التي من أجلها من المرجح أن ينتهى الحساب. لمزيد من المعلومات، راجع [تنبؤ المعاملة (إصدار أولي)](predict-transactional-churn.md).
+
+#### <a name="see-contacts-of-a-business-account-in-customer-view"></a>راجع جهات اتصال حساب الأعمال في طريقة عرض العميل
+
+إذا تم تعيين حسابات الأعمال إلى حسابات مرتبطة، يعرض تطبيق Customer Insights جهات الاتصال ذات الصلة هذه كجزء من عرض تفاصيل العميل. لمزيد من المعلومات، راجع [ملفات تعريف العميل](customer-profiles.md).
+
 
 ## <a name="september-2021-updates"></a>تحديثات سبتمبر 2021
 

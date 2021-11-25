@@ -1,7 +1,7 @@
 ---
 title: دمج الكيانات في توحيد البيانات
 description: دمج الكيانات لإنشاء ملفات تعريف العملاء الموحدة.
-ms.date: 10/10/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.reviewer: mhart
 manager: shellyha
 searchScope:
 - ci-merge
-ms.openlocfilehash: 6b3002b21ea043315e50724ec103aef8a3ced98e
-ms.sourcegitcommit: 37182127b93b90846cc91fbeb26dd7a18cf5610a
+ms.openlocfilehash: c218f9c1a1b7711ee48419470bf6c352450ffc0c
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7648238"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732756"
 ---
 # <a name="merge-entities"></a>دمج الكيانات
 
@@ -187,10 +187,9 @@ ms.locfileid: "7648238"
 
 لإجراء مزيد من التغييرات ثم إعادة تشغيل الخطوة، يمكنك إلغاء الدمج قيد التقدم. حدد النص **جار التحديث...** وحدد **مهمة الإلغاء** في أسفل الجزء الجانبي الذي يظهر.
 
-> [!TIP]
-> بعد تشغيل عملية الدمج، حدد حالة العملية لفتح جزء **تفاصيل المهمة**. إنه يعطي نظرة عامة حول وقت المعالجة وآخر تاريخ للمعالجة وجميع الأخطاء والتحذيرات المقترنة بالمهمة. حدد **‏‫راجع التفاصيل** لمعرفة الكيانات المشاركة في عملية المطابقة، وما إذا نجح حل التعارض، وإذا تم نشر التحديثات بنجاح.  
-> هناك [ستة أنواع للحالة](system.md#status-types) للمهام/العمليات. بالإضافة إلى ذلك، تعتمد معظم العمليات [على العمليات اللاحقة الأخرى](system.md#refresh-policies).  
-> :::image type="content" source="media/process-detail-path.png" alt-text="مسار التنقل لأسفل للوصول إلى تفاصيل العملية من ارتباط حالة المهمة.":::
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+
+:::image type="content" source="media/process-detail-path.png" alt-text="مسار التنقل لأسفل للوصول إلى تفاصيل العملية من ارتباط حالة المهمة.":::
 
 ## <a name="next-step"></a>الخطوة التالية
 

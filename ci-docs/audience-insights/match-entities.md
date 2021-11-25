@@ -1,7 +1,7 @@
 ---
 title: مطابقة الكيانات لتوحيد البيانات
 description: تطابق الكيانات لدمج مجموعات البيانات وإنشاء ملفات تعريف العملاء الموحدة.
-ms.date: 02/23/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.reviewer: mhart
 manager: shellyha
 searchScope:
 - ci-match
-ms.openlocfilehash: 67e17495fa6da1cfac7ee4ee165e798364f6cb27
-ms.sourcegitcommit: 37182127b93b90846cc91fbeb26dd7a18cf5610a
+ms.openlocfilehash: cabeddbc9d485108d166e6355175a01721b75a55
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7648175"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732618"
 ---
 # <a name="match-entities"></a>تطابق الكيانات
 
@@ -180,10 +180,7 @@ ms.locfileid: "7648175"
 
 ستجد نتيجة عملية التشغيل الناجحة، كيان ملف تعريف العميل الموحد، في صفحة **الكيانات**. يطلق على كيان العميل الموحد اسم **العملاء** في قسم **ملفات التعريف**. تقوم أول عملية تشغيل مطابقة ناجحة بإنشاء كيان *العميل* الموحد. تعمل كافة عمليات تشغيل المطابقات اللاحقة على توسيع هذا الكيان.
 
-> [!TIP]
-> بعد تشغيل عملية المطابقة، حدد حالة العملية لفتح جزء **تفاصيل المهمة**. إنه يعطي نظرة عامة حول وقت المعالجة وآخر تاريخ للمعالجة وجميع الأخطاء والتحذيرات المقترنة بالمهمة. حدد **‏‫راجع التفاصيل** لمعرفة الكيانات المشاركة في عملية المطابقة، والقواعد التي تم تطبيقها عليها، وما إذا كانت التحديثات قد تم نشرها بنجاح.  
-> هناك [ستة أنواع للحالة](system.md#status-types) للمهام/العمليات. بالإضافة إلى ذلك، تعتمد معظم العمليات [على العمليات اللاحقة الأخرى](system.md#refresh-policies).  
-> :::image type="content" source="media/process-detail-path.png" alt-text="مسار التنقل لأسفل للوصول إلى تفاصيل العملية من ارتباط حالة المهمة.":::
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="review-and-validate-your-matches"></a>مراجعة المطابقات والتحقق من صحتها
 
