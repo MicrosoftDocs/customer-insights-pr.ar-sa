@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 948a7e980df5714034009c92282e78cf2bdcb231
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: 867a6541734746f75a35faaa8d3861e0479d6114
+ms.sourcegitcommit: 9558ff772ee6c944fcb8db4bfc8cda13b38a1bff
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7618275"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7866872"
 ---
 # <a name="export-segments-to-linkedin-ads-preview"></a>تصدير شرائح إلى إعلانات LinkedIn (إصدار أولي)
 
@@ -28,6 +28,7 @@ ms.locfileid: "7618275"
 
 ## <a name="known-limitations"></a>القيود المعروفة
 
+- يجب أن تحتوي شريحتك في Customer Insights على 300 ملف تعريف فريد على الأقل. 
 - يمكنك تصدير ما يصل إلى 100 ألف ملف تعريف عميل لكل عملية تصدير إلى إعلانات LinkedIn.
 - يقتصر التصدير إلى إعلانات LinkedIn على الشرائح.
 - يمكن أن يستغرق تصدير ما يصل إلى 100 ألف ملف تعريف عميل إلى إعلانات LinkedIn ما يصل إلى 10 دقائق حتى يكتمل. 

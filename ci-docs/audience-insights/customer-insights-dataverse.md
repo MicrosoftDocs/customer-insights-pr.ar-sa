@@ -1,7 +1,7 @@
 ---
 title: بيانات Customer Insights في Microsoft Dataverse
 description: استخدم كيانات Customer Insights كجداول في Microsoft Dataverse.
-ms.date: 10/14/2021
+ms.date: 11/25/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 9855ff6908001dd18bc19a286fc56620d0a127e5
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: 6f74559b34a95ed976a4e353c2dbabe59e1a8839
+ms.sourcegitcommit: 9558ff772ee6c944fcb8db4bfc8cda13b38a1bff
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645202"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7866918"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>استخدام بيانات Customer Insights في Microsoft Dataverse
 
@@ -45,6 +45,7 @@ ms.locfileid: "7645202"
 - [CustomerMeasure](#customermeasure)
 - [الإثراء](#enrichment)
 - [التنبؤ](#prediction)
+- [عضوية المقطع](#segment-membership)
 
 
 ### <a name="customerprofile"></a>ملف تعريف العميل
@@ -121,3 +122,16 @@ ms.locfileid: "7645202"
 | القيم               | سلسلة JSON | قائمة السمات التي ينتجها النموذج |
 | msdynci_predictionid | GUID        | GUID المؤكد الناشئ عن msdynci_identifier | 
 | msdynci_identifier   | السلسلة‬      |  `Model|ModelProvider|CustomerId`                      |
+
+### <a name="segment-membership"></a>عضوية المقطع
+
+يحتوي هذا الجدول على معلومات عضوية المقطع لملفات تعريف العملاء.
+
+| Column        | كتابة | الوصف                         |
+|--------------------|--------------|-----------------------------|
+| Customerid        | السلسلة‬       | معرف ملف تعريف العميل        |
+| SegmentProvider      | السلسلة‬       | التطبيق الذي ينشر المقاطع. الافتراضي: رؤى الجمهور         |
+| SegmentMembershipType | السلسلة‬       | نوع العميل لسجل عضوية المقطع هذا. يدعم أنواعًا متعددة مثل العميل أو جهة الاتصال أو الحساب. الافتراضي: العميل  |
+| المقاطع       | سلسلة JSON  | قائمة الأقسام الفريدة التي ينتمي إليها ملف تعريف العميل      |
+| msdynci_identifier  | السلسلة‬   | معرّف فريد لسجل عضوية المقطع. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
+| msdynci_segmentmembershipid | معرف Guid      | تم إنشاء GUID الحتمي من `msdynci_identifier`          |
