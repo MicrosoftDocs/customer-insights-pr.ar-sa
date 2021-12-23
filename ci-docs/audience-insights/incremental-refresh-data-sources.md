@@ -1,7 +1,7 @@
 ---
 title: التحديث التزايدي لمصادر البيانات المستندة إلى Power Query
 description: قم بتحديث البيانات الجديدة والمحدثة لمصادر البيانات الكبيرة استناداً إلى Power Query.
-ms.date: 09/28/2020
+ms.date: 12/06/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,14 +9,16 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: d204228f8d6881cbf0e7fac6609bf50dd5296610
-ms.sourcegitcommit: 42692a815695b9fdc93b9358eae09f2c3e97293c
+ms.openlocfilehash: f614d701aeb06720a60b14549a7fe666f8fe0617
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7377818"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900239"
 ---
 # <a name="incremental-refresh-for-data-sources-based-on-power-query"></a>تحديث تزايدي لمصادر البيانات المستندة إلى Power Query
+
+يناقش هذا المقال كيفية تكوين تحديث تزايدي لمصادر البيانات استنادًا إلى Power Query.
 
 يوفر التحديث التزايدي لمصادر البيانات المزايا التالية:
 
@@ -30,9 +32,9 @@ ms.locfileid: "7377818"
 
 1. [إنشاء مصدر بيانات جديد استنادًا إلى Power Query](connect-power-query.md).
 
-1. قدم اسمًا لمصدر البيانات.
+1. قدم **اسمًا** لمصدر البيانات.
 
-1. حدد مصدر بيانات يدعم التحديث التزايدي، مثل قاعدة بيانات Azure SQL.
+1. حدد مصدر بيانات يدعم التحديث التزايدي، مثل [قاعدة بيانات Azure SQL](/power-query/connectors/azuresqldatabase).
 
 1. حدد الكيانات أو الجداول المراد استيعابها.
 

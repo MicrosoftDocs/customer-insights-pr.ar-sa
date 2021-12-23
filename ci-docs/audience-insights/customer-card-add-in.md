@@ -1,20 +1,20 @@
 ---
-title: الوظيفة الإضافية لبطاقة العميل في تطبيقات Dynamics 365
+title: الوظيفة الإضافية لبطاقة عميل تطبيقات Dynamics 365 (فيديو)
 description: إظهار البيانات من معلومات الجمهور في تطبيقات Dynamics 365 باستخدام هذه الوظيفة الإضافية.
-ms.date: 09/30/2021
+ms.date: 12/07/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: pkieffer
-ms.author: philk
+author: Nils-2m
+ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: dbcdcbea8ffd1755b58c322233c08c70a065db36
-ms.sourcegitcommit: 31a9b531dacd3a6465b3030c704ff5c085b7e122
+ms.openlocfilehash: e15d73bfc7af2cd9c8b5d983f01922459ec4a2ee
+ms.sourcegitcommit: 12910882ca990ec0e890ed4deaf3dac7e01621e5
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7792013"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "7903971"
 ---
 # <a name="customer-card-add-in-preview"></a>الوظيفة الإضافية لبطاقة عميل (معاينة)
 
@@ -34,7 +34,7 @@ ms.locfileid: "7792013"
   - **التحكم في القياس**: يتطلب [القياسات المكونة](measures.md) من نوع سمات العميل.
   - **تحكم الذكاء**: يتطلب بيانات تم إنشاؤها باستخدام [التنبؤات](predictions.md) أو [النماذج المخصصة](custom-models.md).
   - **التحكم في تفاصيل العميل**: جميع الحقول من ملف التعريف متاحة في ملف تعريف العميل الموحد.
-  - **عنصر تحكم الإثراء**: يتطلب تطبيق [عمليات الإثراء](enrichment-hub.md) النشطة على ملفات تعريف العملاء. تدعم الوظيفة الإضافية للبطاقة هذه التحسينات: [العلامات التجارية](enrichment-microsoft.md) الموفرة بواسطة Microsoft، [الاهتمامات](enrichment-microsoft.md) الموفرة بواسطة Microsoft.
+  - **عنصر تحكم الإثراء**: يتطلب تطبيق [عمليات الإثراء](enrichment-hub.md) النشطة على ملفات تعريف العملاء. تدعم هذه الوظائف الإضافية للبطاقة هذه الإثراءات: [العلامات التجارية](enrichment-microsoft.md) المقدمة من Microsoft، [والاهتمامات](enrichment-microsoft.md) المقدمة من Microsoft، و[بيانات تفاعل Office](enrichment-office.md) المقدمة من Microsoft.
   - **التحكم في جهات الاتصال**: يتطلب تعريف الكيان الدلالي لنوع جهات الاتصال.
   - **التحكم في المخطط الزمني**: يتطلب [الأنشطة المكونة](activities.md).
 

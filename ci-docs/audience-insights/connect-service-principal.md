@@ -1,7 +1,7 @@
 ---
 title: الاتصال بحساب Azure Data Lake Storage باستخدام كيان خدمة
 description: استخدم كيان خدمة من Azure للاتصال بمستودع بياناتك.
-ms.date: 09/08/2021
+ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,26 +9,26 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: b901d799dbd73841a6ddbae754c4e4275f61146a
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: faef3583337fd495e7baf40b0a208f1d9f10281a
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645156"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900227"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>الاتصال بحساب Azure Data Lake Storage باستخدام كيان خدمة من Azure
 
-يجب أن تكون دائمًا الأدوات المؤتمتة التي تستخدم خدمات Azure ذات أذونات مقيدة. بدلاً من قيام التطبيقات بتسجيل الدخول كمستخدم له امتيازات كاملة، يقدم Azure كيانات الخدمة. اقرأ لمعرفة كيفية توصيل Dynamics 365 Customer Insights بحساب Azure Data Lake Storage باستخدام كيان خدمة من Azure بدلاً من مفاتيح حساب التخزين. 
+يناقش هذا المقال كيفية اتصال Dynamics 365 Customer Insights بحساب Azure Data Lake Storage باستخدام أساسي خدمة Azure بدلاً من مفاتيح حساب التخزين. 
 
-يمكنك استخدام كيان الخدمة كي تتمكن من [إضافة نموذج بيانات عامة أو تحريره كمصدر بيانات](connect-common-data-model.md) أو [إنشاء بيئة أو تحديثها](create-environment.md) بطريقة آمنة.
+يجب أن تكون دائمًا الأدوات المؤتمتة التي تستخدم خدمات Azure ذات أذونات مقيدة. بدلاً من قيام التطبيقات بتسجيل الدخول كمستخدم له امتيازات كاملة، يقدم Azure كيانات الخدمة. يمكنك استخدام أساسيات الخدمة لـ [إضافة مجلد "نموذج البيانات العامة" أو تحريره بأمان كمصدر بيانات](connect-common-data-model.md) أو [إنشاء بيئة أو تحديثها](create-environment.md).
 
 > [!IMPORTANT]
 > - يجب أن يحتوي حساب Data Lake Storage الذي سيستخدم أساس الخدمة على [مساحة اسم هرمية ممكّنة](/azure/storage/blobs/data-lake-storage-namespace).
-> - تحتاج إلى أذونات المسؤول لاشتراكك في Azure لإنشاء كيان الخدمة.
+> - تحتاج إلى أذونات المسؤول لاشتراك Azure لإنشاء أساسي خدمة.
 
 ## <a name="create-an-azure-service-principal-for-customer-insights"></a>إنشاء كيان خدمة من Azure لـ Customer Insights
 
-قبل إنشاء كيان خدمة جديد لرؤى الجمهور أو رؤى المشاركة، تحقق مما إذا كان موجودًا بالفعل في مؤسستك.
+قبل إنشاء أساسي خدمة جديد لـ Customer Insights، تحقق مما إذا كان موجودًا بالفعل في مؤسستك.
 
 ### <a name="look-for-an-existing-service-principal"></a>البحث عن كيان خدمة موجود
 

@@ -1,7 +1,7 @@
 ---
 title: نماذج التعلم الآلي المخصصة | Microsoft Docs
 description: استخدم النماذج المخصصة من خدمة التعلم الآلي من Azure في Dynamics 365 Customer Insights.
-ms.date: 03/22/2021
+ms.date: 12/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,14 +9,20 @@ ms.topic: tutorial
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 187995cdf4d92a0609f8abb4c792e698ad4342cdb1f578744136add1bfcf3a53
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 47e2e5109ef8f21a782f6c8f87088009f8a40fdf
+ms.sourcegitcommit: 58651d33e0a7d438a2587c9ceeaf7ff58ae3b648
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032926"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "7881768"
 ---
 # <a name="custom-machine-learning-models"></a>نماذج التعلم الآلي المخصصة
+
+> [!NOTE]
+> سوف ينتهي دعم استوديو التعلم الآلي (الكلاسيكي) في 31 أغسطس 2024. من المستحسن الانتقال إلى [التعلم الآلي من Azure](/azure/machine-learning/overview-what-is-azure-machine-learning) بحلول ذلك التاريخ.
+>
+> اعتبارًا من 1 ديسمبر 2021، لن تتمكن من إنشاء موارد جديدة لاستوديو التعلم الآلي (الكلاسيكي). حتى 31 أغسطس 2024، يمكنك متابعة استخدام موارد استوديو التعلم الآلي (الكلاسيكي). لمزيد من المعلومات، انظر [الترحيل إلى التعلم الآلي من Azure](/azure/machine-learning/migrate-overview).
+
 
 يتيح لك **الذكاء‏‎** > **النماذج المخصصة** إدارة سير العمل استنادًا إلى نماذج التعلم الآلي من Azure. تساعدك مهام سير العمل علي اختيار البيانات التي ترغب في إنشاء رؤى منها وتعيين النتائج إلى بيانات العميل الموحدة. لمزيد من المعلومات حول إنشاء نماذج تعلم آلي مخصصة، راجع [استخدام النماذج المستندة إلى التعلم الآلي من Azure](azure-machine-learning-experiments.md).
 
@@ -24,9 +30,9 @@ ms.locfileid: "7032926"
 
 تقدم التنبؤات قدرات لإنشاء تجارب عملاء أفضل وتحسين قدرات الأعمال وتدفقات الإيرادات. نوصي بضرورة موازنة قيمة التنبؤ في مقابل تأثيره والأخطاء المقصودة التي قد يتم تقديمها بطريقة معنوية. اعرف المزيد حول الطريقة التي تعمل Microsoft من خلالها على [معالجة الذكاء الاصطناعي المسؤول](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1%3aprimaryr6). يمكنك أيضًا التعرف على [تقنيات وعمليات التعلم الآلي المسؤول](/azure/machine-learning/concept-responsible-ml) الخاص بالتعلم الآلي من Azure.
 
-## <a name="prerequisites"></a>المتطلبات الأساسية
+## <a name="prerequisites"></a>المتطلبات
 
-- في الوقت الحالي، تدعم هذه الميزة خدمات الويب المنشورة عبر [استوديو التعلم الآلي (كلاسيكي)‬](https://studio.azureml.net)و [التدفقات الدُفعية للتعلم الآلي من Azure‬](/azure/machine-learning/concept-ml-pipelines).
+- تدعم هذه الميزة خدمات الويب المنشورة من خلال [مسارات دفعة التعلم الآلي من Azure](/azure/machine-learning/concept-ml-pipelines).
 
 - تحتاج إلى حساب تخزين Azure Data Lake Gen2 المقترن بمثيل استوديو Azure لاستخدام هذه الميزة. لمزيد من المعلومات، راجع [إنشاء حساب تخزين Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-quickstart-create-account).
 
@@ -48,11 +54,10 @@ ms.locfileid: "7032926"
 
 1. إذا كان اشتراك التعلم الآلي من Azure الخاص بك في مستأجر مختلف عن Customer Insights فحدد **تسجيل الدخول** باستخدام بيانات الاعتماد الخاصة بالمؤسسة المحددة.
 
-1. حدد **مساحات العمل** المقترنة بخدمة الويب. هناك قسمان مذكوران، أحدهما التعلم الآلي من Azure v1 (استوديو التعلم الآلي (كلاسيكي)) والتعلم الآلي من Azure v2 (التعلم الآلي من Azure). إذا لم تكن متأكدًا من مساحة العمل المناسبة لخدمة الويب استوديو التعلم الآلي (كلاسيكي)‬، فحدد **أي واحد**.
+1. حدد **مساحات العمل** المقترنة بخدمة الويب. 
 
-1. اختر خدمة الويب استوديو التعلم الآلي (كلاسيكي) او تدفقات التعلم الآلي من Azure في القائمة المنسدلة **خدمة الويب التي تحتوي على نموذجك‬**. ثم حدد **التالي**.
-   - اعرف المزيد حول [نشر خدمة ويب في استوديو التعلم الآلي (كلاسيكي)](/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service)
-   - اعرف المزيد حول [نشر التدفقات في التعلم الآلي من Azure باستخدام المصمم](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) أو [SDK](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). يجب نشر التدفق تحت [نقطة نهاية التدفق](/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
+1. اختر مسار التعلم الآلي من Azure في القائمة المنسدلة **خدمة الويب التي تحتوي على النموذج**. ثم حدد **التالي**.    
+   اعرف المزيد حول [نشر التدفقات في التعلم الآلي من Azure باستخدام المصمم](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) أو [SDK](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). يجب نشر التدفق تحت [نقطة نهاية التدفق](/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
 
 1. لكل **إدخال خدمة ويب**‬، حدد **الكيان** المطابق من رؤى الجمهور، وحدد **التالي**.
    > [!NOTE]
@@ -62,9 +67,6 @@ ms.locfileid: "7032926"
    > ![تكوين سير عمل.](media/intelligence-screen2-updated.png "تكوين سير عمل")
 
 1. في خطوة **معلمات إخراج النموذج**، قم بتعيين الخصائص التالية:
-   - استوديو التعلم الآلي (كلاسيكي)
-      1. أدخل إخراج **اسم الكيان** الذي تريد ان تتدفق فيه نتائج إخراج خدمة الويب.
-   - التعلم الآلي من Azure
       1. أدخل إخراج **اسم الكيان** الذي تريد ان تتدفق فيه نتائج إخراج التدفقات.
       1. حدد **اسم معلمة مخزن بيانات الإخراج‬** للتدفقات الدُفعية من القائمة المنسدلة.
       1. حدد **اسم معلمة مسار الإخراج‬‬** للتدفقات الدُفعية من القائمة المنسدلة.
@@ -93,9 +95,6 @@ ms.locfileid: "7032926"
 1. لكل **إدخال خدمة ويب**‬، يمكنك تحديث **الكيان** المطابق من رؤى الجمهور. ثم حدد **التالي**.
 
 1. في خطوة **معلمات إخراج النموذج**، قم بتعيين الخصائص التالية:
-   - استوديو التعلم الآلي (كلاسيكي)
-      1. أدخل إخراج **اسم الكيان** الذي تريد ان تتدفق فيه نتائج إخراج خدمة الويب.
-   - التعلم الآلي من Azure
       1. أدخل إخراج **اسم الكيان** الذي تريد ان تتدفق فيه نتائج إخراج التدفقات.
       1. حدد **اسم معلمة مخزن بيانات الإخراج‬** لتدفقات الاختبار.
       1. حدد **اسم معلمة مسار الإخراج‬‬** لتدفقات الاختبار.
