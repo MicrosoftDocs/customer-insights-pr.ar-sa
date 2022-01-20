@@ -1,5 +1,5 @@
 ---
-title: تصدير بيانات Customer Insights إلى مضيفي SFTP (فيديو)
+title: تصدير بيانات Customer Insights إلى مضيفي SFTP (يحتوي على فيديو)
 description: تعرف على كيفية تهيئة الاتصال والتصدير إلى موقع SFTP.
 ms.date: 03/03/2021
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: bb73c49cf87657b71e0c2f5934662b062eeffb21
-ms.sourcegitcommit: 12910882ca990ec0e890ed4deaf3dac7e01621e5
+ms.openlocfilehash: 542bd908010cf0a8ccc12f15d54e0a3d5b72f189
+ms.sourcegitcommit: 9132fdf54070cc551ab878378078e6285852818f
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "7904102"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "7934871"
 ---
 # <a name="export-segments-and-other-data-to-sftp-preview"></a>تصدير الشرائح والبيانات الأخرى إلى SFTP (إصدار أولي)
 
@@ -28,6 +28,7 @@ ms.locfileid: "7904102"
 
 ## <a name="known-limitations"></a>القيود المعروفة
 
+- وجهات SFTP خلف جدران الحماية غير مدعومة حاليًا. 
 - يعتمد وقت تشغيل أي تصدير على أداء النظام. نوصي بمركزين لوحدة المعالجة المركزية وذاكرة بسعة غيغابايت واحد كحدٍ أدنى لتكوين الخادم. 
 - قد يستغرق تصدير الكيانات مع 100 مليون من ملفات تعريف العملاء 90 دقيقة عند استخدام الحد الأدنى من التكوين الموصى به من مركزين لوحدة المعالجة المركزية وذاكرة بسعة غيغابايت واحد. 
 

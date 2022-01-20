@@ -1,7 +1,7 @@
 ---
-title: الوظيفة الإضافية لبطاقة عميل تطبيقات Dynamics 365 (فيديو)
+title: الوظيفة الإضافية لبطاقة عميل تطبيقات Dynamics 365 (يحتوي على فيديو)
 description: إظهار البيانات من معلومات الجمهور في تطبيقات Dynamics 365 باستخدام هذه الوظيفة الإضافية.
-ms.date: 12/07/2021
+ms.date: 12/22/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: e15d73bfc7af2cd9c8b5d983f01922459ec4a2ee
-ms.sourcegitcommit: 12910882ca990ec0e890ed4deaf3dac7e01621e5
+ms.openlocfilehash: 3927b5a13a5f9b4d2b39c7f0b389bc51cafeb213
+ms.sourcegitcommit: 3811dede65946c37aa7ed3cc364251f20ffd4d17
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "7903971"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "7945411"
 ---
 # <a name="customer-card-add-in-preview"></a>الوظيفة الإضافية لبطاقة عميل (معاينة)
 
@@ -27,12 +27,12 @@ ms.locfileid: "7903971"
 ## <a name="prerequisites"></a>المتطلبات الأساسية
 
 - تعمل هذه الوظيفة الإضافية فقط مع تطبيقات Dynamics 365 التي تعتمد على نموذج، مثل Sales أو Customer Service الإصدار 9.0 وما يليه.
-- لكي يتم تعيين بيانات Dynamics 365 إلى ملفات تعريف العملاء لمعلومات الجمهور يلزم [استيعابها من تطبيق Dynamics 365 باستخدام موصل Microsoft Dataverse](connect-power-query.md).
+- لكي يتم تعيين بيانات Dynamics 365 إلى ملفات تعريف العملاء لمعلومات الجمهور، نوصي بأن [استيعابها من تطبيق Dynamics 365 باستخدام موصل Microsoft Dataverse](connect-power-query.md). إذا كنت تستخدم طريقة مختلفة لاستيعاب جهات اتصال (أو حسابات) Dynamics 365، فلا بد من التأكد من أن الحقل `contactid` (أو `accountid`) قد تم تعيينه كـ [مفتاح أساسي لمصدر البيانات هذا في خطوة الخريطة لعملية توحيد البيانات](map-entities.md#select-primary-key-and-semantic-type-for-attributes). 
 - كافة مستخدمي Dynamics 365 من الوظيفة الإضافية لبطاقة العميل يجب [إضافتهم كمستخدمين](permissions.md) في معلومات الجمهور لرؤية البيانات.
 - [إمكانيات البحث والتصفية المكونة](search-filter-index.md) في معلومات الجمهور تكون مطلوبة للبحث عن البيانات للعمل.
 - يعتمد كل عنصر تحكم من الوظيفة الإضافية على بيانات محددة في معلومات الجمهور. تتوفر بعض البيانات وعناصر التحكم فقط في بيئات من أنواع معينة. سيخبرك تكوين الوظيفة الإضافية في حالة عدم توفر عنصر تحكم بسبب نوع البيئة المحدد. اعرف المزيد حول [حالات استخدام البيئات](work-with-business-accounts.md).
   - **التحكم في القياس**: يتطلب [القياسات المكونة](measures.md) من نوع سمات العميل.
-  - **تحكم الذكاء**: يتطلب بيانات تم إنشاؤها باستخدام [التنبؤات](predictions.md) أو [النماذج المخصصة](custom-models.md).
+  - **التحكم في المعلومات المهنية**: يتطلب بيانات تم إنشاؤها باستخدام [التنبؤات أو النماذج المخصصة](predictions-overview.md).
   - **التحكم في تفاصيل العميل**: جميع الحقول من ملف التعريف متاحة في ملف تعريف العميل الموحد.
   - **عنصر تحكم الإثراء**: يتطلب تطبيق [عمليات الإثراء](enrichment-hub.md) النشطة على ملفات تعريف العملاء. تدعم هذه الوظائف الإضافية للبطاقة هذه الإثراءات: [العلامات التجارية](enrichment-microsoft.md) المقدمة من Microsoft، [والاهتمامات](enrichment-microsoft.md) المقدمة من Microsoft، و[بيانات تفاعل Office](enrichment-office.md) المقدمة من Microsoft.
   - **التحكم في جهات الاتصال**: يتطلب تعريف الكيان الدلالي لنوع جهات الاتصال.

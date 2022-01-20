@@ -80,7 +80,7 @@
       items:
         - name: إثراء ملفات تعريف العملاء
           href: audience-insights/enrichment-hub.md
-        - name: صلات العلامات التجارية والاهتمامات
+        - name: العلامات التجارية والاهتمامات
           href: audience-insights/enrichment-microsoft.md
         - name: العناوين المحسنة
           href: audience-insights/enrichment-enhanced-addresses.md
@@ -130,6 +130,8 @@
               href: audience-insights/predict-subscription-churn.md
             - name: التنبؤ بخسارة الحركة
               href: audience-insights/predict-transactional-churn.md
+            - name: تحليل التوجه في ملاحظات العملاء
+              href: audience-insights/sentiment-analysis.md
             - name: استخدام نماذج مخصصة من التعلم الآلي من Azure
               href: audience-insights/custom-models.md
             - name: إكمال البيانات المفقودة جزئيًا
