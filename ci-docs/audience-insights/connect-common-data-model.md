@@ -1,7 +1,7 @@
 ---
 title: توصيل بيانات نموذج البيانات العامة بحساب Azure Data Lake
 description: اعمل مع بيانات نموذج البيانات العامة باستخدام Azure Data Lake Storage.
-ms.date: 12/06/2021
+ms.date: 01/25/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,13 +9,8 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 5f9010f78ea4c24094e0df4f8e153fb832e05cc8
-ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
-ms.translationtype: HT
-ms.contentlocale: ar-SA
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900181"
 ---
+
 # <a name="connect-to-a-common-data-model-folder-using-an-azure-data-lake-account"></a>الاتصال بمجلد نموذج البيانات العامة باستخدام حساب Azure Data Lake
 
 توفر هذه المقالة معلومات حول كيفية استيعاب البيانات من مجلد نموذج البيانات العامة باستخدام حساب Azure Data Lake Storage Gen2.
@@ -25,6 +20,8 @@ ms.locfileid: "7900181"
 - يجب أن تتبع البيانات الموجودة في Azure Data Lake معيار نموذج البيانات العامة. التنسيقات الأخرى غير مدعومة في الوقت الحالي.
 
 - يدعم استيعاب البيانات حسابات التخزين Azure Data Lake *Gen2* بشكل حصري. لا يمكنك استخدام حسابات تخزين Azure Data Lake Gen1 لاستيعاب البيانات.
+
+- يجب أن يكون لدى حساب Azure Data Lake storage ميزة [مساحة الاسم الهرمي](/azure/storage/blobs/data-lake-storage-namespace) ممكّنة.
 
 - للمصادقة مع كيان خدمة Azure، تأكد من تكوينه في المستأجر. لمزيد من المعلومات، راجع [توصيل رؤى الجمهور بحساب Azure Data Lake Storage Gen2 بواسطة كيان خدمة Azure](connect-service-principal.md).
 

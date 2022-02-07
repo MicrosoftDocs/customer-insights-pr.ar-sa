@@ -9,16 +9,11 @@ ms.topic: conceptual
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: 3927b5a13a5f9b4d2b39c7f0b389bc51cafeb213
-ms.sourcegitcommit: 3811dede65946c37aa7ed3cc364251f20ffd4d17
-ms.translationtype: HT
-ms.contentlocale: ar-SA
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "7945411"
 ---
+
 # <a name="customer-card-add-in-preview"></a>الوظيفة الإضافية لبطاقة عميل (معاينة)
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 احصل على طريقة عرض 360 درجة لعملائك مباشرةً في تطبيقات Dynamics 365. مع تثبيت الوظيفة الإضافية لبطاقة العميل في تطبيق Dynamics 365 مدعوم، يمكنك اختيار عرض حقول ملف تعريف العميل والرؤى والمخطط الزمني للنشاط. سوف تسترد الوظيفة الإضافية البيانات من Customer Insights دون التأثير على البيانات في تطبيق Dynamics 365 المتصل.
 

@@ -9,16 +9,11 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 66d846c3e9404ca7993cae742ea6e16833233fba
-ms.sourcegitcommit: 205f931ec671a0ab1850f2c1c94df3307ffb62c9
-ms.translationtype: HT
-ms.contentlocale: ar-SA
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7380727"
 ---
+
 # <a name="entity-schemas-in-common-data-model"></a>مخططات الكيانات في نموذج البيانات العامة
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 [نموذج البيانات العامة](/common-data-model/) عبارة عن مواصفة تعريفية وتعريف للكيانات القياسية التي تمثل المفاهيم والأنشطة المستخدمة بشكل عام عبر تطبيقات الأعمال والإنتاجية. ويتوسع هذا النموذج ليشمل البيانات الرصدية والتحليلية. يوفر نموذج البيانات العامة كيانات أعمال محددة بطريقة واضحة ونمطية وقابلة للتوسعة — مثل الحساب ووحدة العمل والحالة وجهة الاتصال والعميل المتوقع والفرصة والمنتج — بالإضافة إلى التفاعلات مع المورّدين والعاملين والعملاء — مثل الأنشطة واتفاقيات مستوى الخدمة. بإمكان أي كان البناء على تعريفات نموذج البيانات العامة وتوسيعها للحصول على أفكار إضافية خاصة بالأعمال.
 
