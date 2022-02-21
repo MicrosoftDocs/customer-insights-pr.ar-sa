@@ -8,12 +8,12 @@ author: mkisel
 ms.author: mkisel
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: db38778c0da862e119f9b374e07c82ead0d3a4f2
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: 6aadd6b5018f63362f86c0e3e3ce085e94c47391
+ms.sourcegitcommit: 5dd32dc2b18027cf2aa954356dded4bc6aab9801
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645566"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8115998"
 ---
 # <a name="create-a-link-between-audience-insights-and-engagement-insights"></a>إنشاء ارتباط بين رؤى الجمهور ورؤى المشاركة
 
@@ -25,7 +25,7 @@ ms.locfileid: "7645566"
 
 ## <a name="prerequisites"></a>المتطلبات الأساسية
 
-- يجب تخزين ملفات تعريف رؤى الجمهور في حساب Azure Data Lake Storage تملكه أو في مستودع بيانات مدار في [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro.md)&ndash;. 
+- يجب تخزين ملفات تعريف رؤى الجمهور في حساب Azure Data Lake Storage تملكه أو في مستودع بيانات مدار في [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro)&ndash;. 
 - يجب أن تحتوي بيئة رؤى الجمهور على بيئة Dataverse مرتبطة. وإذا كانت هذه البيئة تستخدم أيضًا Dataverse لتخزين البيانات، فتأكد من تحديد خيار **تمكين مشاركة البيانات** في رؤى الجمهور. لمزيد من المعلومات، راجع [إنشاء وتكوين بيئة في رؤى الجمهور](../audience-insights/create-environment.md).
 - تحتاج إلى أذونات المسؤول لبيئات كل من رؤى المشاركة ورؤى الجمهور.
 - يجب أن تكون البيئات المرتبطة في نفس المنطقة الجغرافية.

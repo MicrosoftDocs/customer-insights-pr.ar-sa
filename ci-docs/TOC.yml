@@ -2,6 +2,22 @@
   href: index.yml
 - name: نظرة عامة على المنتج
   href: overview.md
+- name: كتالوج التعلم
+  items:
+    - name: تم البدء
+      href: /learn/modules/get-started-customer-data-platform/
+    - name: استيعاب البيانات
+      href: /learn/modules/ingest-data-customer-insights/
+    - name: إنشاء ملف تعريف العميل الموحد
+      href: /learn/modules/unified-customer-profile/
+    - name: العمل مع رؤى الجمهور
+      href: /learn/modules/working-with-customer-insights/
+    - name: إثراء البيانات وإجراء التنبؤات
+      href: /learn/modules/enrich-data/
+    - name: إدارة الاتصالات الخارجية
+      href: /learn/modules/configure-third-party-connections/
+    - name: إدارة Customer Insights
+      href: /learn/modules/administer-customer-data-platform/
 - name: إصدار تجريبي مجاني
   items:
     - name: التسجيل للحصول على إصدار تجريبي مجاني
@@ -30,16 +46,6 @@
           href: audience-insights/home.md
     - name: العمل باستخدام حسابات العمل
       href: audience-insights/work-with-business-accounts.md
-    - name: التعرف على الوحدات النمطية
-      items:
-        - name: استيعاب البيانات
-          href: /learn/modules/ingest-data-customer-insights/
-        - name: إنشاء ملف تعريف العميل الموحد
-          href: /learn/modules/unified-customer-profile/
-        - name: التعامل مع التطبيق
-          href: /learn/modules/working-with-customer-insights/
-        - name: إثراء البيانات والتنبؤات
-          href: /learn/modules/enrich-data/
     - name: مصادر البيانات
       items:
         - name: نظرة عامة مصادر البيانات
@@ -372,3 +378,5 @@
   href: service-limits.md
 - name: حقوق وطلبات DSR
   href: dsr-rights-requests.md
+- name: الحصول على ال
+  href: /power-platform/admin/get-help-support

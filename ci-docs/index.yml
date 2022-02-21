@@ -4,15 +4,15 @@ metadata:
   author: m-hartmann
   description: ابحث عن مقالات ذات صلة لبدء العمل مع محتوى التعليمات.
   ms.author: mhart
-  ms.date: 07/30/2021
+  ms.date: 03/02/2022
   ms.service: customer-insights
   ms.topic: landing-page
-  ms.openlocfilehash: e6a658f43b382934ee9b9b55c54fc1dff3f4df72
-  ms.sourcegitcommit: 3bafa27adae113948636b30c7462e0af060c7131
+  ms.openlocfilehash: e154b37f57bb2765f48a9f6b38f86dffcb05f403
+  ms.sourcegitcommit: a371fc1e75b2321e45d3f972a3ac84c725f8cc38
   ms.translationtype: HT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 09/17/2021
-  ms.locfileid: "7498580"
+  ms.lasthandoff: 02/10/2022
+  ms.locfileid: "8107183"
 title: وثائق Dynamics 365 Customer Insights
 summary: اعثر على موارد مفيدة للشروع في العمل وتعرف على ميزات وإمكانيات Customer Insights.
 landingContent:
@@ -23,9 +23,13 @@ landingContent:
     - text: نظرة عامة على Customer Insights
       url: overview.md
     - text: خطط الإصدار
-      url: /dynamics365-release-plan/
+      url: /dynamics365/release-plans/
     - text: اكتشاف CDP
       url: https://dynamics.microsoft.com/ai/customer-insights/
+  - linkListType: learn
+    links:
+    - text: مسار تعليم Customer Insights
+      url: /learn/paths/build-customer-insights/
 - title: الشروع في العمل باستخدام Customer Insights
   linkLists:
   - linkListType: get-started
@@ -34,8 +38,26 @@ landingContent:
       url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
     - text: ما الجديد في رؤى الجمهور
       url: audience-insights/whats-new-audience-insights.md
-    - text: ما الجديد في معلومات المشاركة
-      url: https://docs.microsoft.com/dynamics365-release-plan/2021wave1/customer-data-platform/engagement-insights/planned-features
+    - text: دليل التشغيل السريع
+      url: audience-insights/get-started.md
+  - linkListType: learn
+    links:
+    - text: تم البدء
+      url: /learn/modules/get-started-customer-data-platform/
+- title: إدارة رؤى الجمهور
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: تكوين النظام
+      url: audience-insights/system.md
+    - text: تحديد أذونات المستخدم
+      url: audience-insights/permissions.md
+    - text: إدارة بيئات متعددة
+      url: audience-insights/manage-environments.md
+  - linkListType: learn
+    links:
+    - text: إدارة Customer Insights
+      url: /learn/modules/administer-customer-data-platform/
 - title: الاتصال
   linkLists:
   - linkListType: overview
@@ -66,16 +88,6 @@ landingContent:
       url: audience-insights/customer-card-add-in.md
     - text: موصل Power BI
       url: audience-insights/export-power-bi.md
-- title: إدارة رؤى الجمهور
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: تكوين النظام
-      url: audience-insights/system.md
-    - text: تحديد أذونات المستخدم
-      url: audience-insights/permissions.md
-    - text: إدارة بيئات متعددة
-      url: audience-insights/manage-environments.md
 - title: حول رؤى المشاركة (معاينة)
   linkLists:
   - linkListType: overview

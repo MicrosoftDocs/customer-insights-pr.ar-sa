@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 7201ed9e5315d73e6b9c25b4bc4c4e4ed839a215
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.openlocfilehash: 413746e1896928d2c648ba59d67d4247a173da57
+ms.sourcegitcommit: 21854bb66ffa53948f659886f2e131236539ae88
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732248"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "8100124"
 ---
 # <a name="work-with-customer-insights-apis"></a>التعامل مع واجهات API في Customer Insights
 
@@ -35,7 +35,7 @@ ms.locfileid: "7732248"
  
    يؤدي تمكين واجهات API إلى إنشاء مفتاح اشتراك أساسي وثانوي للمثيل الذي يتم استخدامه في طلبات API. يمكنك إعادة إنشاء المفاتيح بتحديد **إعادة إنشاء الأساسي** أو **إعادة إنشاء الثانوي** على **المسؤول** > **الأذونات** > **واجهات API**.
 
-   :::image type="content" source="media/enable-apis.gif" alt-text="تمكين واجهات برمجة تطبيقات Customer Insights.":::
+<!--  :::image type="content" source="media/enable-apis.gif" alt-text="Enable Customer Insights APIs."::: -->
 
 1. حدد **استكشاف واجهات API** [لتجربة واجهات API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
 
@@ -49,7 +49,7 @@ ms.locfileid: "7732248"
 
 ستظهر استجابة HTTP تحته.
 
-   :::image type="content" source="media/try-apis.gif" alt-text="كيفية اختبار واجهات برمجة التطبيقات.":::
+<!--   :::image type="content" source="media/try-apis.gif" alt-text="How to test the APIs."::: -->
 
 ## <a name="create-a-new-app-registration-in-the-azure-portal"></a>إنشاء تسجيل تطبيق جديد في مدخل Azure
 
@@ -65,7 +65,7 @@ ms.locfileid: "7732248"
 
 1. على تسجيل التطبيق الجديد، انتقل إلى **أذونات واجهة API**.
 
-   :::image type="content" source="media/app-registration-1.gif" alt-text="كيفية تعيين أذونات API في تسجيل التطبيق.":::
+<!--   :::image type="content" source="media/app-registration-1.gif" alt-text="How to set API permissions in App registration."::: -->
 
 1. حدد **إضافة إذن**، وحدد **Customer Insights** في الجزء الجانبي.
 
@@ -77,7 +77,7 @@ ms.locfileid: "7732248"
 
 يمكنك استخدام معرف التطبيق/العميل لتسجيل التطبيق هذا باستخدام مكتبة المصادقة من Microsoft (MSAL) للحصول علي رمز مميز حامل لإرساله مع طلبك إلى API.
 
-:::image type="content" source="media/grant-admin-consent.gif" alt-text="كيفية منح موافقة المسؤول.":::
+<!-- :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent."::: -->
 
 لمزيد من المعلومات حول MSAL، انظر [نظرة عامة على مكتبة المصادقة من Microsoft‏ (MSAL)](/azure/active-directory/develop/msal-overview).
 
@@ -103,7 +103,7 @@ ms.locfileid: "7732248"
 
 1. حدد **منح موافقة المسؤول ل...** لإكمال تسجيل التطبيق.
 
-   :::image type="content" source="media/grant-admin-consent.gif" alt-text="كيفية منح موافقة المسؤول.":::
+ <!--  :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent."::: -->
 
 1. في النهاية، يتعين علينا إضافة اسم تسجيل التطبيق كمستخدم في Customer Insights.  
    
@@ -129,7 +129,7 @@ ms.locfileid: "7732248"
  
    أو بدلاً من ذلك، يمكنك تشغيل هذا الأمر في **NuGet Package Manager Console**: `Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
 
-   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="إضافة حزمة NuGet إلى مشروع Visual Studio.":::
+ <!--  :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Add NuGet package to Visual Studio project."::: -->
 
 #### <a name="use-the-c-client-library"></a>استخدام مكتبة العملاء C#
 
@@ -141,7 +141,7 @@ ms.locfileid: "7732248"
 
 1. قم بتمرير `HttpClient` هذا إلى بناء عميل `CustomerInsights`.
 
-   :::image type="content" source="media/httpclient-sample.png" alt-text="عينة httpclient.":::
+<!--   :::image type="content" source="media/httpclient-sample.png" alt-text="Sample of httpclient."::: -->
 
 1. يمكنك إجراء استدعاءات مع العميل "لأساليب التوسيع"، على سبيل المثال، `GetAllInstancesAsync`. إذا كان الوصول إلى `Microsoft.Rest.HttpOperationResponse` الأساسي مفضلاً، فاستخدم "أساليب رسالة http"، على سبيل المثال `GetAllInstancesWithHttpMessagesAsync`.
 

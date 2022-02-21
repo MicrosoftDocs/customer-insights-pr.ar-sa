@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: faef3583337fd495e7baf40b0a208f1d9f10281a
-ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
+ms.openlocfilehash: 1af01e5579f85d7c8bc8976a003f53ef2dd280d1
+ms.sourcegitcommit: b7189b8621e66ee738e4164d4b3ce2af0def3f51
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900227"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "8088102"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>الاتصال بحساب Azure Data Lake Storage باستخدام كيان خدمة من Azure
 
@@ -23,7 +23,7 @@ ms.locfileid: "7900227"
 يجب أن تكون دائمًا الأدوات المؤتمتة التي تستخدم خدمات Azure ذات أذونات مقيدة. بدلاً من قيام التطبيقات بتسجيل الدخول كمستخدم له امتيازات كاملة، يقدم Azure كيانات الخدمة. يمكنك استخدام أساسيات الخدمة لـ [إضافة مجلد "نموذج البيانات العامة" أو تحريره بأمان كمصدر بيانات](connect-common-data-model.md) أو [إنشاء بيئة أو تحديثها](create-environment.md).
 
 > [!IMPORTANT]
-> - يجب أن يحتوي حساب Data Lake Storage الذي سيستخدم أساس الخدمة على [مساحة اسم هرمية ممكّنة](/azure/storage/blobs/data-lake-storage-namespace).
+> - يجب أن يكون حساب Data Lake Storage الذي سيستخدم مدير الخدمة Gen2 وأن يكون به [مساحة اسم تدرج هرمي ممكّن](/azure/storage/blobs/data-lake-storage-namespace). حسابات تخزين Azure Data Lake Gen1 غير مدعومة.
 > - تحتاج إلى أذونات المسؤول لاشتراك Azure لإنشاء أساسي خدمة.
 
 ## <a name="create-an-azure-service-principal-for-customer-insights"></a>إنشاء كيان خدمة من Azure لـ Customer Insights

@@ -1,7 +1,7 @@
 ---
 title: الميزات الجديدة والقادمة
 description: معلومات حول الميزات والتحسينات وإصلاحات الأخطاء الجديدة.
-ms.date: 01/27/2022
+ms.date: 03/02/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,8 +9,13 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
+ms.openlocfilehash: 0e25ed4e4e25b130fda410d4ba1c78caded7f0f9
+ms.sourcegitcommit: b7189b8621e66ee738e4164d4b3ce2af0def3f51
+ms.translationtype: HT
+ms.contentlocale: ar-SA
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "8088269"
 ---
-
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>ما الجديد في قدرة رؤى الجمهور في Dynamics 365 Customer Insights
 
 
@@ -21,6 +26,17 @@ manager: shellyha
 
 > [!TIP]
 > لإرسال طلبات الميزات واقتراحات حول المنتجات والتصويت عليها، انتقل إلى [مدخل أفكار تطبيق Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+
+## <a name="january-2022-updates"></a>تحديثات يناير 2022
+
+تتضمن التحديثات في يناير 2022 ميزات جديدة وترقيات للأداء وإصلاحات للأخطاء.
+
+### <a name="sentiment-analysis-of-your-customers-feedback"></a>تحليل التوجه لملاحظات عملائك
+
+توفر Customer Insights ميزة جديدة مدعومة بالذكاء الاصطناعي لتجميع توجهات العملاء وتحديد جوانب عمل معينة كفرص للتحسينات المستهدفة. من خلال تحليل التعليقات المكتوبة لعملائك، يمكنك الحصول على رؤى دقيقة بتكلفة منخفضة. تحليل التوجه المدعوم من نماذج معالجة اللغة الطبيعية (NLP) التي تولد رؤيتين مشتقتين لكل معرف عميل. درجة التوجه (من -5 إلى 5) وقائمة بجوانب الأعمال القابلة للتطبيق. 
+
+لمزيد من المعلومات، راجع [تحليل التوجه في تعليقات العملاء (إصدار أولي)](sentiment-analysis.md).
 
 
 ## <a name="december-2021-updates"></a>تحديثات ديسمبر 2021
@@ -37,7 +53,7 @@ manager: shellyha
 
 استخدم البيانات من Microsoft Office 365 لإثراء ملفات تعريف حساب العميل لديك برؤى حول التفاعلات من خلال تطبيقات Office 365. تتكون بيانات التفاعل من نشاط البريد الإلكتروني والاجتماع، والتي يتم تجميعها على مستوى الحساب. على سبيل المثال، عدد رسائل البريد الإلكتروني من حساب تجاري أو عدد الاجتماعات مع الحساب. لا يتم مشاركة أي بيانات حول المستخدمين الفرديين. يتوفر هذا الإثراء في المناطق التالية: المملكة المتحدة، وأوروبا، وأمريكا الشمالية.
 
-لمزيد من المعلومات، راجع [‏‫إثراء ملفات تعريف العملاء ببيانات التفاعل (إصدار أولي)‬](enrichment-office.md)
+لمزيد من المعلومات، راجع [‏‫إثراء ملفات تعريف العملاء ببيانات المشاركة (إصدار أولي)‬](enrichment-office.md).
 
 ### <a name="advanced-data-unification-features"></a>ميزات توحيد البيانات المتقدمة
 
