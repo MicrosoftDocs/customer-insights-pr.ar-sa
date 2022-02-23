@@ -9,8 +9,13 @@ ms.topic: conceptual
 author: wmelewong
 ms.author: wameng
 manager: shellyha
+ms.openlocfilehash: 8a4473c1c395bbcf8efa2bfa24cddb82e1784279
+ms.sourcegitcommit: 15ec8c5f54242feda9489e7665726ec5e0983dc9
+ms.translationtype: HT
+ms.contentlocale: ar-SA
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8008749"
 ---
-
 # <a name="analyze-sentiment-in-customer-feedback-preview"></a>تحليل التوجه في ملاحظات العملاء (إصدار أولي)
 
 يتوقع العملاء الحصول على منتجات وخدمات وتجارب ذات جودة عالية في هذه الأيام. خاصة العملاء الذين يشاركون ملاحظاتهم. من الصعب جدًا على المؤسسات أن تقوم بتحليل حجم بيانات متزايد دون تقليل الدقة أو تكلفة العمالة العالية. يقدم Dynamics 365 Customer Insights نموذج تحليل اتجاه لملاحظات العملاء الذي يمكّن المؤسسات من تحليل بياناتها بدقة أكبر وتكلفة أقل.

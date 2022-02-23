@@ -10,9 +10,14 @@ ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 searchScope:
-  - ci-merge
+- ci-merge
+ms.openlocfilehash: eb08ab38d23bf22a17896b63c93e6821431b002a
+ms.sourcegitcommit: 3807202283dd116a30f900a163d8141db621e5a8
+ms.translationtype: HT
+ms.contentlocale: ar-SA
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "8046547"
 ---
-
 # <a name="merge-entities"></a>دمج الكيانات
 
 تُعتبر مرحلة الدمج هي المرحلة الأخيرة في عملية توحيد البيانات. والغرض منها هو التوفيق بين البيانات المتعارضة. قد تتضمن أمثلة البيانات المتعارضة اسم عميل موجود في اثنين من مجموعات البيانات الخاصة بك ولكن يظهر بشكل مختلف قليلاً في كل من ("Grant Marshall" مقابل "Grant Marshall")، أو رقم هاتف يختلف في التنسيق (617-803-091X مقابل 617803091X). يتم دمج نقاط البيانات المتعارضة هذه على أساس كل سمة على حدة.
