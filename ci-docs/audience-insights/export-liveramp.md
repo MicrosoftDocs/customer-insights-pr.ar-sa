@@ -1,39 +1,37 @@
 ---
 title: موصل LiveRamp
-description: تعرف على كيفية تهيئة الاتصال والتصدير إلى LiveRamp.
-ms.date: 10/08/2021
-ms.reviewer: mhart
+description: تعرف على كيفية تصدير البيانات إلى LiveRamp.
+ms.date: 12/02/2020
+ms.reviewer: kishorem
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: how-to
-author: kishorem-ms
-ms.author: kishorem
+ms.topic: conceptual
+author: m-hartmann
+ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: f9a0a88fb58897e4d279c181f4cdb4f6c852da60
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: 86aa8c66a47ee61741082c95f05d2e5ce3f06f35
+ms.sourcegitcommit: 334633cbd58f5659d20b4f87252c1a10cc7130db
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7618919"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4667168"
 ---
-# <a name="export-segments-to-liverampreg-preview"></a>تصدير شرائح إلى LiveRamp&reg; (إصدار أولي)
+# <a name="liverampreg-connector-preview"></a>موصل&reg; LiveRamp‏‎ (معاينة)
 
-قم بتنشيط البيانات في LiveRamp للاتصال بما يزيد على 500 نظام أساسي عبر أجهزة الكمبيوتر الرقمية، والوسائط الاجتماعية، وأجهزة التلفاز. استخدام بياناتك في LiveRamp لاستهداف الحملات الإعلانية وإزالتها وتخصيصها.
+قم بتنشيط بياناتك في LiveRamp‏‎ للاتصال بأكثر من 500 نظام أساسي عبر الأنظمة البيئية الرقمية والاجتماعية والتلفزيونية. استخدام بياناتك في LiveRamp لاستهداف الحملات الإعلانية وإزالتها وتخصيصها.
 
-## <a name="prerequisites-for-a-connection"></a>المتطلبات الأساسية لاتصال
+## <a name="prerequisites"></a>المتطلبات الأساسية
 
 - تحتاج إلى اشتراك LiveRamp لاستخدام هذا الموصل.
 - للحصول على اشتراك، [اتصل بـ LiveRamp‎](https://liveramp.com/contact/) بشكل مباشر. [اعرف المزيد حول LiveRamp Onboarding‎](https://liveramp.com/our-platform/data-onboarding/).
 
-## <a name="set-up-connection-to-liveramp"></a>إعداد الاتصال بـ LiveRamp
+## <a name="connect-to-liveramp"></a>الاتصال بـ LiveRamp‎
 
-1. انتقل إلى **المسؤول** > **الاتصالات**.
+1. في رؤى الجمهور، انتقل إلى **البيانات‏‎** > **وجهات التصدير‬**.
 
-1. حدد **إضافة اتصال** واختر **LiveRamp** لتكوين الاتصال.
+1. في الإطار المتجانب **LiveRamp‎**، حدد **إعداد**.
 
-1. اعط اتصالك اسمًا يمكن التعرف عليه في حقل **الاسم المعروض**. يصف الاسم ونوع الاتصال هذا الاتصال. ننصح باختيار اسم يوضح الغرض والهدف من الاتصال.
-
-1. اختر الشخص الذي يمكنه استخدام هذا الاتصال. إذا لم تتخذ أي إجراء، فإن الإعداد الافتراضي سيكونالمسؤولين. لمزيد من المعلومات، راجع [السماح للمساهمين باستخدام اتصال للتصديرات](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. في حقل **الاسم المعروض**، أدخل اسمًا للوجهة سهل التمييز.
 
 1. أدخل **اسم المستخدم** و **كلمة المرور** لحساب LiveRamp Secure FTP (SFTP).
 قد تختلف بيانات الاعتماد هذه عن بيانات اعتماد LiveRamp Onboarding.
@@ -42,25 +40,15 @@ ms.locfileid: "7618919"
 
 1. وبعد التحقق الناجح، قدم موافقتك على **خصوصية البيانات والتوافق‬** من خلال تحديد خانة الاختيار **أوافق**.
 
-1. حدد **حفظ** لإكمال الاتصال.
+1. حدد **التالي** لإعداد موصل LiveRamp.
 
-## <a name="configure-an-export"></a>تكوين تصدير
-
-يمكنك تكوين هذا التصدير إذا كان لديك حق الوصول إلى اتصال من هذا النوع. لمزيد من المعلومات، راجع [الأذونات اللازمة لتكوين تصدير](export-destinations.md#set-up-a-new-export).
-
-1. انتقل إلى **البيانات** > **التصديرات**.
-
-1. لإنشاء اتصال جديد، حدد **إضافة وجهة**.
-
-1. في حقل **الاتصال للتصدير**، اختر اتصالاً من قسم LiveRamp. إذا لم تشاهد اسم المقطع هذا، لن تكون هناك اتصالات من هذا النوع متوفرة لك.
+## <a name="configure-the-connector"></a>تكوين الموصل
 
 1. في الحقل **اختيار معرف المفتاح**، حدد **البريد الإلكتروني** أو **الاسم والعنوان** أو **الهاتف** لإرساله إلى LiveRamp لحل الهوية.
-   > [!div class="mx-imgBorder"]
-   > ![موصل LiveRamp مع تعيين السمات.](media/export-liveramp-segments.png "موصل LiveRamp مع تعيين السمات")
 
-1. قم بتعيين السمات المقابلة من كيان *العميل* لمعرف المفتاح المحدد.
+1. قم بتعيين السمات المناظرة من كيان العميل الموحد لمعرف المفتاح المحدد.
 
-1. حدد **إضافة سمة** لتعيين مزيد من السمات لإرسالها إلى LiveRamp.
+1. حدد **إضافة سمة** لتعيين سمات إضافية لإرسالها إلى LiveRamp.
 
    > [!TIP]
    > من المحتمل أن يؤدي إرسال المزيد من سمات معرف المفتاح إلى LiveRamp للحصول على معدل تطابق أعلى.
@@ -69,14 +57,15 @@ ms.locfileid: "7618919"
 
 1. حدد **حفظ**.
 
-لا تعمل عملية التصدير التي يتم حفظها على التصدير في الحال.
+> [!div class="mx-imgBorder"]
+> ![موصل LiveRamp مع تعيين السمات](media/export-liveramp-segments.png "موصل LiveRamp مع تعيين السمات")
 
-يتم تشغيل عملية التصدير مع كل [تحديث مجدول](system.md#schedule-tab). يمكنك أيضًا [تصدير البيانات عند الطلب](export-destinations.md#run-exports-on-demand). 
+## <a name="export-the-data"></a>تصدير البيانات
 
+سيبدأ التصدير بعد قليل إذا تم استكمال جميع المتطلبات الأساسية للتصدير. سيعمل التصدير أيضًا مع كل [تحديث مجدول](system.md#schedule-tab).
+بعد اكتمال التصدير بنجاح، يمكنك تسجيل الدخول إلى LiveRamp Onboarding لتنشيط البيانات وتوزيعها.
 
 ## <a name="data-privacy-and-compliance"></a>خصوصية البيانات والتوافق
 
 عند تمكين Dynamics 365 Customer Insights لإرسال البيانات إلى Liveramp، تسمح أنت بنقل البيانات خارج حدود الامتثال في Dynamics 365 Customer Insights، بما في ذلك البيانات الحساسة على الأرجح مثل البيانات الشخصية. ستقوم شركة Microsoft بنقل هذه البيانات وفقًا لتعليماتك، ولكنك مسؤول عن ضمان قيام Liveramp بتلبية أي التزامات تتعلق بالخصوصية أو الأمان قد تكون لديك. لمزيد من المعلومات، راجع [بيان خصوصية Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
 بإمكان مسؤول Dynamics 365 Customer Insights إزالة وجهة التصدير هذه في أي وقت لإيقاف استخدام هذه الوظيفة.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

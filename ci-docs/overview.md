@@ -7,12 +7,13 @@ ms.date: 07/30/2021
 ms.service: customer-insights
 ms.topic: overview
 ms.manager: shellyha
-ms.openlocfilehash: b2dc5a1159f8baea1fa3c686de5ac294842b3e26
-ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
+ms.custom: intro-internal
+ms.openlocfilehash: 651bd151a77b9d7f44d5fcca15da0f131b9fb3f07ffc89bfac9c0aa6f799e9b1
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7977552"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7036495"
 ---
 # <a name="product-overview-for-dynamics-365-customer-insights"></a>نظرة عامة على المنتج Dynamics 365 Customer Insights
 
@@ -32,10 +33,5 @@ ms.locfileid: "7977552"
 1. في جزء التنقل، حدد **جميع التطبيقات** لفتح النافذة **اختيار تركيزك‬**.
 1. حدد **الانتقال الآن** للانتقال إلى الإمكانيات التي تختارها.
 
-## <a name="pricing-and-licensing"></a>التسعير والترخيص
-
-يتم ترخيص Customer Insights لكل مستأجر وتتضمن إمكانيات متعددة. يمكنك شراء سعة إضافية وترخيص إضافي لزيادة الحصة النسبية الافتراضية. 
-- [نظرة عامة على التسعير](https://dynamics.microsoft.com/ai/customer-insights/pricing/)
-- القدرة الإنتاجية والاستحقاقات: [دليل ترخيص Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

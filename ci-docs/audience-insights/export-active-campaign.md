@@ -1,7 +1,7 @@
 ---
 title: تصدير بيانات Customer Insights إلى ActiveCampaign
 description: تعرف على كيفية تهيئة الاتصال والتصدير إلى ActiveCampaign.
-ms.date: 10/08/2021
+ms.date: 06/29/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 4fbdd5a51a3df35d31ad072eef64d20ee967d7ee
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: 6d85fa9836618e27f7f3da6ce17c07b4bc89e187
+ms.sourcegitcommit: 057079532e31c12bac36f374857ba3dc847d6ad0
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7618137"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "6314569"
 ---
 # <a name="export-segments-to-activecampaign-preview"></a>تصدير شرائح إلى ActiveCampaign (معاينة)
 
@@ -28,9 +28,9 @@ ms.locfileid: "7618137"
 
 ## <a name="known-limitations"></a>القيود المعروفة
 
-- يمكنك تصدير ما يصل إلى مليون ملف تعريف عميل لكل عملية تصدير إلى ActiveCampaign ويمكن أن يستغرق الأمر ما يصل إلى 90 دقيقة حتى يكتمل.
+- يمكن تصدير ما يصل إلى مليون ملف تعريف لكل عملية تصدير إلى ActiveCampaign وقد يستغرق حتى 90 دقيقة حتى تكتمل.
 - يقتصر التصدير إلى ActiveCampaign على الشرائح.
-- يعتمد عدد ملفات تعريف العملاء التي يمكنك تصديرها إلى ActiveCampaign على عقدك مع ActiveCampaign.
+- يعتمد عدد ملفات التعريف التي يمكنك تصديرها إلى ActiveCampaign على العقد الخاص بك مع ActiveCampaign.
 
 ## <a name="set-up-connection-to-activecampaign"></a>إعداد اتصال بـ ActiveCampaign
 
@@ -64,7 +64,7 @@ ms.locfileid: "7618137"
 
 1. أدخل [**معرف قائمة ActiveCampaign**](https://help.activecampaign.com/hc/articles/360000030559-How-to-create-a-list-in-ActiveCampaign).    
 
-1. في قسم **مطابقة البيانات** في حقل **البريد الإلكتروني**، حدد الحقل الذي يمثل عنوان البريد الإلكتروني للعميل. مطلوب لتصدير الشرائح إلى ActiveCampaign. بشكل اختياري، يمكنك تصدير الاسم الأول، واسم العائلة، والهاتف لإنشاء المزيد من رسائل البريد الإلكتروني المخصصة. حدد إضافة سمة لتعيين هذه الحقول.
+3. في القسم **مطابقة البيانات**، في حقل **البريد الإلكتروني**، حدد الحقل في ملف تعريف العميل الموحد الذي يمثل عنوان البريد الإلكتروني للعميل. مطلوب لتصدير الشرائح إلى ActiveCampaign. بشكل اختياري، يمكنك تصدير الاسم الأول، واسم العائلة، والهاتف لإنشاء المزيد من رسائل البريد الإلكتروني المخصصة. حدد إضافة سمة لتعيين هذه الحقول.
 
 1. حدد **حفظ**.
 

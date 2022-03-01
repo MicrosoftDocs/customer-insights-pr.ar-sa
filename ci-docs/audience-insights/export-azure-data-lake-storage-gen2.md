@@ -1,65 +1,43 @@
 ---
 title: تصدير بيانات Customer Insights إلى Azure Data Lake Storage Gen2
 description: اعرف كيفية تكوين الاتصال بـ Azure Data Lake Storage Gen2.
-ms.date: 10/06/2021
-ms.reviewer: mhart
+ms.date: 02/04/2021
+ms.reviewer: sthe
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: stefanie-msft
-ms.author: sthe
+author: m-hartmann
+ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 934c396559d4c4be8e640917d2265805753eb62d
-ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
+ms.openlocfilehash: b00c3d6178150cbc93fe800779f094809d4dc67b
+ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605887"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5477163"
 ---
-# <a name="export-segment-list-and-other-data-to-azure-data-lake-storage-gen2-preview"></a>تصدير قائمة المقاطع والبيانات الأخرى إلى Azure Data Lake Storage ‏Gen2 (إصدار أولي)
+# <a name="connector-for-azure-data-lake-storage-gen2-preview"></a>موصل Azure Data Lake Storage Gen2 (إصدار أولي)
 
-قم بتخزين بيانات Customer Insights في حساب Data Lake Storage Gen2 أو استخدمها لنقل بياناتك إلى تطبيقات أخرى.
+خزّن بيانات Customer Insights في Azure Data Lake Storage Gen2 أو استخدمها لنقل بياناتك إلى تطبيقات أخرى.
 
-## <a name="known-limitations"></a>القيود المعروفة
+## <a name="configure-the-connector-for-azure-data-lake-storage-gen2"></a>تكوين موصل Azure Data Lake Storage Gen2
 
-1. بالنسبة إلى Azure Data Lake Storage ‏Gen2 يمكنك الاختيار بين [الأداء القياسي ومستوى الأداء المتميز](/azure/storage/blobs/create-data-lake-storage-account) عند إنشاء حساب تخزين لمستودع البيانات الخاص بك. إذا اخترت مستوى الأداء المتميز، فحدد كائنات الكتل الثنائية المتميزة كنوع حساب. 
+1. في رؤى الجمهور، انتقل إلى **البيانات‏‎** > **وجهات التصدير‬**.
 
+1. أسفل **Azure Data Lake Storage Gen2**، حدد **إعداد‏‎**.
 
-## <a name="set-up-the-connection-to-azure-data-lake-storage-gen2"></a>إعداد الاتصال بـ Azure Data Lake Storage ‏Gen2 
-
-
-1. انتقل إلى **المسؤول** > **الاتصالات**.
-
-1. حدد **إضافة اتصال** واختر **Azure Data Lake Gen 2** لتكوين الاتصال.
-
-1. اعط اتصالك اسمًا يمكن التعرف عليه في حقل **الاسم المعروض**. يصف الاسم ونوع الاتصال هذا الاتصال. ننصح باختيار اسم يوضح الغرض والهدف من الاتصال.
-
-1. اختر الشخص الذي يمكنه استخدام هذا الاتصال. إذا لم تتخذ أي إجراء، فإن الإعداد الافتراضي سيكونالمسؤولين. لمزيد من المعلومات، راجع [السماح للمساهمين باستخدام اتصال للتصديرات](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. في حقل **الاسم المعروض**، أدخل اسمًا للوجهة سهل التمييز.
 
 1. أدخل **اسم الحساب**، و **مفتاح الحساب**، و **الحاوية** لـ Azure Data Lake Storage Gen2.
-    - لمعرفة كيفية إنشاء حساب تخزين لاستخدامه مع Azure Data Lake Storage Gen2، راجع [إنشاء حساب تخزين](/azure/storage/blobs/create-data-lake-storage-account). 
-    - لمعرفة المزيد حول اسم حساب تخزين Azure Data Lake Gen2 ومفتاح الحساب، راجع [إدارة إعدادات حساب التخزين في مدخل Azure](/azure/storage/common/storage-account-manage).
+    - لمعرفة كيفية إنشاء حساب تخزين لاستخدامه مع Azure Data Lake Storage Gen2، راجع [إنشاء حساب تخزين](https://docs.microsoft.com/azure/storage/blobs/create-data-lake-storage-account). 
+    - لمعرفة المزيد حول كيفية العثور على اسم حساب تخزين Azure Data Lake Gen2 ومفتاح الحساب، راجع [إدارة إعدادات حساب التخزين في مدخل Azure](https://docs.microsoft.com/azure/storage/common/storage-account-manage).
 
-1. حدد **حفظ** لإكمال الاتصال. 
-
-## <a name="configure-an-export"></a>تكوين تصدير
-
-يمكنك تكوين هذا التصدير إذا كان لديك حق الوصول إلى اتصال من هذا النوع. لمزيد من المعلومات، راجع [الأذونات اللازمة لتكوين تصدير](export-destinations.md#set-up-a-new-export).
-
-1. انتقل إلى **البيانات** > **التصديرات**.
-
-1. لإنشاء عملية تصدير جديدة، حدد **إضافة تصدير**.
-
-1. في حقل **الاتصال للتصدير**، اختر اتصالاً من قسم **Azure Data Lake**. إذا لم تشاهد اسم المقطع هذا، لن تكون هناك اتصالات من هذا النوع متوفرة لك.
+1. حدد **التالي**.
 
 1. حدد المربع إلى جانب كل كيان تريد تصديره إلى هذه الوجهة.
 
 1. حدد **حفظ**.
 
-لا تعمل عملية التصدير التي يتم حفظها على التصدير في الحال.
+## <a name="export-the-data"></a>تصدير البيانات
 
-يتم تشغيل عملية التصدير مع كل [تحديث مجدول](system.md#schedule-tab). يمكنك أيضًا [تصدير البيانات عند الطلب](export-destinations.md#run-exports-on-demand). 
-
-يتم تخزين البيانات المصدرة في حاوية تخزين Azure Data Lake Gen 2 التي قمت بتكوينها. 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+يمكنك [تصدير البيانات عند الطلب](export-destinations.md#export-data-on-demand). سيعمل التصدير أيضًا مع كل [تحديث مجدول](system.md#schedule-tab).

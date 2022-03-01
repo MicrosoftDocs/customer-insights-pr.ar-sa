@@ -1,7 +1,7 @@
 ---
 title: تصدير بيانات Customer Insights إلى Microsoft Advertising
 description: تعرف على كيفية تكوين الاتصال والتصدير إلى Microsoft Advertising.
-ms.date: 10/08/2021
+ms.date: 05/12/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 12fd221acb7c0eed443c9b860aca42dcb2b3788c
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: c2ac92de2718cf7f0622b407bf198a7a7e50a37b
+ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7618045"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "6124444"
 ---
 # <a name="export-segments-to-microsoft-advertising-preview"></a>تصدير شرائح إلى Microsoft Advertising (إصدار أولي)
 
@@ -29,9 +29,9 @@ ms.locfileid: "7618045"
 
 ## <a name="known-limitations"></a>القيود المعروفة
 
-- يمكنك تصدير ما يصل إلى 500000 ملف تعريف عميل لكل عملية تصدير إلى Microsoft Advertising.
+- يمكنك تصدير حتى 500 ألف ملف تعريف لكل تصدير إلى Microsoft Advertising.
 - يقتصر التصدير إلى Microsoft Advertising على الشرائح.
-- يمكن أن يستغرق تصدير ما يصل إلى 500000 ملف تعريف عميل إلى Microsoft Advertising ما يصل إلى 10 دقائق حتى يكتمل. 
+- قد يستغرق استكمال تصدير ما يصل إلى 500 ألف ملف تعريف إلى Microsoft Advertising ما يصل إلى 10 دقائق. 
 
 
 ## <a name="set-up-the-connection-to-microsoft-advertising"></a>إعداد الاتصال بـ Microsoft Advertising
@@ -68,7 +68,7 @@ ms.locfileid: "7618045"
 
 1. أدخل **معرف العميل ومعرف الحساب لـ Microsoft Advertising**. يمكنك العثور على معرف العميل (`cid`) ومعرف الحساب (`aid`) في معلمات عنوان URL عندما تسجل دخولك إلى Microsoft Advertising.
 
-1. في قسم **مطابقة البيانات** في حقل **البريد الإلكتروني**، حدد الحقل بعنوان البريد الإلكتروني للعميل. يلزم تصدير الشرائح إلى Microsoft Advertising.
+1. في قسم **مطابقة البيانات**، في حقل **البريد الإلكتروني**، حدد الحقل في ملف تعريف العميل الموحد باستخدام عنوان البريد الإلكتروني الخاص بالعميل. يلزم تصدير الشرائح إلى Microsoft Advertising.
 
 1. حدد **حفظ**.
 

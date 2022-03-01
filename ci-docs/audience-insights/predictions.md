@@ -1,7 +1,7 @@
 ---
 title: إكمال البيانات الجزئية باستخدام التنبؤ
 description: استخدم التنبؤات لملء بيانات العميل غير المكتملة.
-ms.date: 11/01/2021
+ms.date: 05/05/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,17 +9,16 @@ author: zacookmsft
 ms.author: zacook
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 3100acf383d85c00a6ff0a8ebc54e038bd813427
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.openlocfilehash: 31b9b1b709540896c1dbc19f974df4ab056a7b8d
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732342"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692511"
 ---
-# <a name="complete-your-partial-data-with-predictions-deprecated"></a>أكمل بياناتك الجزئية بالتنبؤات (مهمل)
+# <a name="complete-your-partial-data-with-predictions"></a>أكمل البيانات الجزئية باستخدام التنبؤات
 
-> [!IMPORTANT]
-> سيتم **إهمال** هذه الميزة في **5 نوفمبر 2021**. ستستمر عمليات التنفيذ الحالية في العمل حتى تتم إزالة الميزة، ولكن لن تتمكن من إنشاء عمليات تكامل جديدة باستخدام الإرشادات أدناه.
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 تتيح لك التنبؤات إنشاء القيم المتوقعة التي يمكنها تحسين فهمك لعميل ما بسهولة. في صفحة **الذكاء** > **التنبؤات**، يمكنك تحديد **التنبؤات الخاصة بي‬** لرؤية التنبؤات التي قمت بتكوينها في أجزاء أخرى من رؤى الجمهور، والسماح لك بتخصيصها بشكل أكبر.
 
@@ -36,7 +35,7 @@ ms.locfileid: "7732342"
 
 2. يتم إرفاق بيئة معلومات الجمهور الخاصة بك بمثيل Dataverse الخاص بك.
 
-لمزيد من المعلومات، راجع [إنشاء بيئة جديدة](create-environment.md).
+إذا كنت تقوم [بإنشاء البيئة الأولى](get-started-paid.md)، قم بتكيونها في مربع الحوار **إنشاء بيئة** وحدد **خيارات متقدمة**. إذا كنت قد قمت بإنشاء بيئة بالفعل، انتقل إلى الإعدادات الخاصة بها وحدد **خيارات متقدمة**. في كلا الحالتين، في قسم **استخدام التنبؤات**، أدخل عنوان URL لمثيل Dataverse الذي ترغب في إرفاق البيئة به.
 
 ## <a name="create-a-prediction-in-the-customer-entity"></a>إنشاء تنبؤ في كيان العميل
 
@@ -61,8 +60,6 @@ ms.locfileid: "7732342"
    > ![مثال يوضح قيم الحقول المعينة إلى الفئات.](media/intelligence-categorymapping.png "مثال يوضح قيم الحقول المعينة إلى الفئات")
 
 8. قم بتحديد **تم** وستتم معالجة التنبؤ. ستستغرق عملية المعالجة بعض الوقت، وذلك وفقًا لحجم البيانات وتعقيدها. ستتوافر النتائج متوفرة في كيان جديد استنادًا إلى **اسم كيان الإخراج** للتنبؤ الذي قمت بإنشاءه.
-
-[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="create-a-prediction-while-creating-a-segment"></a>إنشاء تنبؤ أثناء إنشاء مقطع
 

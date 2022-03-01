@@ -1,5 +1,5 @@
 ---
-title: تصدير بيانات Customer Insights إلى مضيفي SFTP (يحتوي على فيديو)
+title: تصدير بيانات Customer Insights إلى مضيفي SFTP
 description: تعرف على كيفية تهيئة الاتصال والتصدير إلى موقع SFTP.
 ms.date: 03/03/2021
 ms.reviewer: mhart
@@ -9,18 +9,16 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 542bd908010cf0a8ccc12f15d54e0a3d5b72f189
-ms.sourcegitcommit: 9132fdf54070cc551ab878378078e6285852818f
+ms.openlocfilehash: b19ca6b8085846785682046f83d0ed4758269e5b98303692c703d995407ca7dd
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7934871"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7035445"
 ---
 # <a name="export-segments-and-other-data-to-sftp-preview"></a>تصدير الشرائح والبيانات الأخرى إلى SFTP (إصدار أولي)
 
 استخدم بيانات العميل في تطبيقات طرف ثالث من خلال تصديرها إلى موقع بروتوكول نقل الملفات الآمنة (SFTP).
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWO94X]
 
 ## <a name="prerequisites-for-connection"></a>المتطلبات الأساسية للاتصال
 
@@ -28,7 +26,6 @@ ms.locfileid: "7934871"
 
 ## <a name="known-limitations"></a>القيود المعروفة
 
-- وجهات SFTP خلف جدران الحماية غير مدعومة حاليًا. 
 - يعتمد وقت تشغيل أي تصدير على أداء النظام. نوصي بمركزين لوحدة المعالجة المركزية وذاكرة بسعة غيغابايت واحد كحدٍ أدنى لتكوين الخادم. 
 - قد يستغرق تصدير الكيانات مع 100 مليون من ملفات تعريف العملاء 90 دقيقة عند استخدام الحد الأدنى من التكوين الموصى به من مركزين لوحدة المعالجة المركزية وذاكرة بسعة غيغابايت واحد. 
 

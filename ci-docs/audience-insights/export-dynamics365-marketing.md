@@ -1,7 +1,7 @@
 ---
 title: تصدير بيانات Customer Insights إلى Dynamics 365 Marketing
 description: تعرف على كيفية تكوين الاتصال والتصدير إلى Dynamics 365 Marketing.
-ms.date: 08/24/2021
+ms.date: 03/03/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,20 +9,18 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: e2ec9f1cc11fdab5ff313bb3041d2b158ed6ca67
-ms.sourcegitcommit: 3807202283dd116a30f900a163d8141db621e5a8
+ms.openlocfilehash: bd8189f8daee1a6aea75e75e116186f62a360ba4
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "8046632"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692465"
 ---
 # <a name="use-segments-in-dynamics-365-marketing-preview"></a>استخدام الشرائح في Dynamics 365 Marketing (إصدار أولي)
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-
-استخدم [الشرائح](segments.md) لإنشاء حملات وتحسين مجموعات محددة من العملاء باستخدام Dynamics 365 Marketing. لمزيد من المعلومات، راجع [استخدام الشرائح من Dynamics 365 Customer Insights مع Dynamics 365 Marketing](/dynamics365/marketing/customer-insights-segments).
-
-إذا كنت تستخدم الإمكانيات الجديدة في Dynamics 365 Marketing لتنسيق رحلة العميل في الوقت الحقيقي في مؤسسة Dataverse، فلست بحاجة إلى إنشاء تصدير قياسي إلى Dynamics 365 Marketing. تتوفر جهات الاتصال والشرائح من رؤى الجمهور بشكل مباشر في Dynamics 365 Marketing بعد توصيل Marketing وCustomer Insights. قبل حذف التقارير الموجودة، راجع الوثائق حول [كيفية توصيل رؤى الجمهور وتنسيق رحلة العميل في Dynamics 365 Marketing](/dynamics365/marketing/real-time-marketing-ci-profile).
+استخدم [الشرائح](segments.md) لإنشاء حملات وتحسين مجموعات محددة من العملاء باستخدام Dynamics 365 Marketing. لمزيد من المعلومات ، راجع [استخدام الشرائح من Dynamics 365 Customer Insights مع Dynamics 365 Marketing](/dynamics365/marketing/customer-insights-segments)
 
 ## <a name="prerequisite-for-a-connection"></a>المتطلبات الأساسية لاتصال
 
@@ -45,7 +43,7 @@ ms.locfileid: "8046632"
 
 1. في القسم **حساب مسؤول الخادم**، حدد **تسجيل الدخول** واختر حساب Dynamics 365 Marketing‎.
 
-1. تعيين حقل معرف جهة الاتصال في كيان العميل إلى معرف جهة اتصال Dynamics 365.
+1. عيّن حقل معرف العميل إلى معرف جهة الاتصال في Dynamics 365.
 
 1. حدد **حفظ** لإكمال الاتصال. 
 

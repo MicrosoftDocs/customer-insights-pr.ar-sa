@@ -2,30 +2,8 @@
   href: index.yml
 - name: نظرة عامة على المنتج
   href: overview.md
-- name: كتالوج التعلم
-  items:
-    - name: تم البدء
-      href: /learn/modules/get-started-customer-data-platform/
-    - name: استيعاب البيانات
-      href: /learn/modules/ingest-data-customer-insights/
-    - name: إنشاء ملف تعريف العميل الموحد
-      href: /learn/modules/unified-customer-profile/
-    - name: العمل مع رؤى الجمهور
-      href: /learn/modules/working-with-customer-insights/
-    - name: إثراء البيانات وإجراء التنبؤات
-      href: /learn/modules/enrich-data/
-    - name: إدارة الاتصالات الخارجية
-      href: /learn/modules/configure-third-party-connections/
-    - name: إدارة Customer Insights
-      href: /learn/modules/administer-customer-data-platform/
-- name: إصدار تجريبي مجاني
-  items:
-    - name: التسجيل للحصول على إصدار تجريبي مجاني
-      href: trial-signup.md
-    - name: الأسئلة الشائعة للنسخة التجريبية
-      href: trial-FAQ.md
-- name: الشروع في العمل باستخدام ترخيص مدفوع
-  href: paid-license.md
+- name: إنشاء إصدار تجريبي
+  href: audience-insights/get-started-trial.md
 - name: الوصول إلى بيئتك
   href: 'https://home.ci.ai.dynamics.com/'
 - name: رؤى الجمهور
@@ -41,11 +19,19 @@
         - name: دليل التشغيل السريع
           href: audience-insights/get-started.md
         - name: إنشاء بيئة جديدة
-          href: audience-insights/create-environment.md
+          href: audience-insights/get-started-paid.md
         - name: استكشاف رؤى الجمهور
           href: audience-insights/home.md
-    - name: العمل باستخدام حسابات العمل
-      href: audience-insights/work-with-business-accounts.md
+    - name: التعرف على الوحدات النمطية
+      items:
+        - name: استيعاب البيانات
+          href: /learn/modules/ingest-data-customer-insights/
+        - name: إنشاء ملف تعريف العميل الموحد
+          href: /learn/modules/unified-customer-profile/
+        - name: التعامل مع التطبيق
+          href: /learn/modules/working-with-customer-insights/
+        - name: إثراء البيانات والتنبؤات
+          href: /learn/modules/enrich-data/
     - name: مصادر البيانات
       items:
         - name: نظرة عامة مصادر البيانات
@@ -80,18 +66,14 @@
           href: audience-insights/relationships.md
         - name: سرد أنشطة العميل
           href: audience-insights/activities.md
-        - name: تحديد التعيينات الدلالية
-          href: audience-insights/semantic-mappings.md
     - name: إثراء البيانات
       items:
         - name: إثراء ملفات تعريف العملاء
           href: audience-insights/enrichment-hub.md
-        - name: العلامات التجارية والاهتمامات
+        - name: صلات العلامات التجارية والاهتمامات
           href: audience-insights/enrichment-microsoft.md
         - name: العناوين المحسنة
           href: audience-insights/enrichment-enhanced-addresses.md
-        - name: بيانات الشركة المحسنة
-          href: audience-insights/enrichment-enhanced-company-data.md
         - name: الإثراء باستخدام خرائط Azure
           href: audience-insights/enrichment-azure-maps.md
         - name: إثراء بياناتك مع HERE Technologies
@@ -100,8 +82,6 @@
           href: audience-insights/enrichment-leadspace.md
         - name: الإثراء باستخدام Experian
           href: audience-insights/enrichment-experian.md
-        - name: الإثراء مع بيانات Office 365
-          href: audience-insights/enrichment-office.md
         - name: إثراء البيانات باستخدام الاستيراد المخصص لبروتوكول SFTP
           href: audience-insights/enrichment-SFTP-custom-import.md
     - name: المقاطع
@@ -134,10 +114,8 @@
               href: audience-insights/predict-product-recommendation.md
             - name: التنبؤ بخسارة الاشتراك
               href: audience-insights/predict-subscription-churn.md
-            - name: التنبؤ بخسارة الحركة
+            - name: التنبؤ بخسارة المعاملة
               href: audience-insights/predict-transactional-churn.md
-            - name: تحليل التوجه في ملاحظات العملاء
-              href: audience-insights/sentiment-analysis.md
             - name: استخدام نماذج مخصصة من التعلم الآلي من Azure
               href: audience-insights/custom-models.md
             - name: إكمال البيانات المفقودة جزئيًا
@@ -148,12 +126,14 @@
               href: audience-insights/sample-guide-predict-clv.md
             - name: دليل نموذج التنبؤ بخسارة الاشتراك‬
               href: audience-insights/sample-guide-predict-subscription-churn.md
-            - name: نموذج دليل للتنبؤ بخسارة الحركة
+            - name: دليل نموذج التنبؤ بخسارة المعاملة
               href: audience-insights/sample-guide-predict-transactional-churn.md
             - name: دليل عينة التنبؤ بتوصيات المنتج
               href: audience-insights/sample-guide-predict-product-recommendation.md
             - name: تجارب باستخدام ‏‫التعلم الآلي من Azure‬
               href: audience-insights/azure-machine-learning-experiments.md
+            - name: التجارب بواسطة استوديو التعلم الآلي من Azure
+              href: audience-insights/machine-learning-studio-experiments.md
         - name: إدارة التنبؤات
           href: audience-insights/manage-predictions.md
         - name: إنشاء شرائح استنادًا إلى التنبؤات
@@ -242,14 +222,10 @@
           href: audience-insights/connections.md
         - name: إدارة بيئات متعددة
           href: audience-insights/manage-environments.md
-        - name: الأمان
-          items:
-            - name: جلب Key Vault الخاص بك
-              href: audience-insights/use-azure-key-vault.md
-            - name: الاتصال بحساب تخزين ADLS باستخدام كيان خدمة
-              href: audience-insights/connect-service-principal.md
-            - name: تصدير سجلات التشخيص
-              href: audience-insights/diagnostics.md
+        - name: الاتصال بحساب تخزين ADLS باستخدام كيان خدمة
+          href: audience-insights/connect-service-principal.md
+        - name: اللغات المدعومة
+          href: audience-insights/supported-languages.md
     - name: إمكانية التوسعة
       items:
         - name: تكامل بيانات الويب من رؤى المشاركة
@@ -262,40 +238,6 @@
           href: audience-insights/apis.md
         - name: مراجع API
           href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
-- name: إدارة الموافقة (إصدار أولي)
-  items:
-    - name: مركز التعليمات
-      href: consent-management/index.yml
-    - name: نظرة عامة على القدرات
-      href: consent-management/overview.md
-    - name: تم البدء
-      items:
-        - name: تم البدء
-          href: consent-management/get-started.md
-        - name: المفاهيم والمصطلحات
-          href: consent-management/glossary.md
-    - name: استيراد بيانات الموافقة
-      items:
-        - name: استيراد بيانات الموافقة
-          href: consent-management/import-consent-data.md
-        - name: تعيين بيانات الموافقة وتطبيق تفضيلات الموافقة
-          href: consent-management/set-consent-rules.md
-    - name: إدارة بيانات الموافقة
-      items:
-        - name: تمكين قواعد الموافقة في تحليلات الجماهير
-          href: audience-insights/activate-consent.md
-        - name: إدارة قواعد الموافقة الافتراضية باستخدام مقاطع تحليلات الجماهير
-          href: audience-insights/change-default-consent-rules.md
-    - name: إدارة الإعدادات والمستخدمين
-      items:
-        - name: تكوين إعدادات النظام
-          href: consent-management/system-settings.md
-        - name: إدارة المستخدمين والأذونات
-          href: consent-management/manage-users.md
-    - name: استخدام بيانات الموافقة
-      items:
-        - name: إنشاء توقعات باستخدام بيانات الموافقة
-          href: consent-management/predictions-consent-data.md
 - name: معلومات المشاركة (إصدار أولي)
   items:
     - name: مركز التعليمات
@@ -306,8 +248,6 @@
       items:
         - name: دليل التشغيل السريع
           href: engagement-insights/get-started.md
-        - name: إنشاء بيئة
-          href: engagement-insights/create-new-environment.md
         - name: إنشاء مساحة عمل
           href: engagement-insights/create-workspace.md
         - name: التقاط الأحداث من مواقع الويب وتطبيقات الجوال
@@ -378,5 +318,3 @@
   href: service-limits.md
 - name: حقوق وطلبات DSR
   href: dsr-rights-requests.md
-- name: الحصول على ال
-  href: /power-platform/admin/get-help-support

@@ -3,18 +3,18 @@ title: الأسئلة الشائعة حول الإصدار التجريبي - Dy
 description: حلول للأسئلة المتداولة المتعلقة بإعداد الإصدار التجريبي من Customer Insights وإدارته. تعرف على كيفية حل المشكلات الخاصة بالنظام الأساسي والتطبيق.
 author: m-hartmann
 ms.author: mhart
-ms.date: 02/10/2022
+ms.date: 09/30/2021
 ms.topic: get-started
 ms.service: customer-insights
 ms.custom: template-trial-faq
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: f63ed39ba8c710d0c0149e0944efaafe27e7b9bb
-ms.sourcegitcommit: 5dd32dc2b18027cf2aa954356dded4bc6aab9801
+ms.openlocfilehash: 2837ae13b4150310193a2d09d59aed66b4a69c69
+ms.sourcegitcommit: e6020c178a61beb0ee31a031c11ded914d10d995
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8115952"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "7642840"
 ---
 # <a name="dynamics-365-customer-insights-trial-faq"></a>الأسئلة المتداولة حول الإصدار التجريبي من Dynamics 365 Customer Insights
 
@@ -24,7 +24,7 @@ ms.locfileid: "8115952"
 
 إن هذا التطبيق عبارة عن خدمة مستندة إلى السحابة لا تتطلب برامج خاصة غير مستعرض ويب محدث، على الرغم من تطبيق بعض القيود. للحصول على أفضل تجربة تجريبية، تجنب الوصول إلى موقع الإصدار التجريبي في وضع التصفح المتخفي واختر موقع التجربة الأقرب إليك. [تعرف على المزيد حول متطلبات تطبيق الويب.](/power-platform/admin/web-application-requirements)
 
-### <a name="how-do-i-sign-up-for-the-trial-without-a-microsoft-365-tenant"></a>كيف يمكنني التسجيل للحصول على الإصدار التجريبي دون مستأجر Microsoft 365؟
+### <a name="how-do-i-sign-up-for-the-trial-without-a-microsoft-365-tenant"></a>كيف يمكنني التسجيل للحصول الإصدار التجريبي دون مستأجر Microsoft 365؟
 
 يمكنك إدخال عنوان بريد إلكتروني لغير العمل وسوف نقوم بإنشاء حساب ومستأجر لك.
 
@@ -43,7 +43,7 @@ ms.locfileid: "8115952"
 
 ### <a name="how-do-i-add-more-users-to-a-trial"></a>كيف أضيف المزيد من المستخدمين إلى إصدار تجريبي؟
 
-لإضافة مستخدمين، انتقل إلى [مركز مسؤولي Microsoft 365](https://admin.microsoft.com) باستخدام حساب مسؤول الإصدار التجريبي. اتبع [إرشادات مركز الإدارة](/microsoft-365/admin/add-users/add-users) لإضافة مستخدمين إلى حد ترخيص الإصدار التجريبي. إذا كان المستخدم الذي تضيفه لديه بالفعل حساب Microsoft 365، فقم بتعيين دور أمان مناسب له في مؤسسة الإصدار التجريبي. ولمزيد من المعلومات، راجع [تعيين دور أمان إلى مستخدم](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user).
+لإضافة مستخدمين، انتقل إلى [مركز إدارة Microsoft 365](https://admin.microsoft.com) باستخدام حساب مسؤول الإصدار التجريبي. اتبع [إرشادات مركز الإدارة](/microsoft-365/admin/add-users/add-users) لإضافة مستخدمين إلى حد ترخيص الإصدار التجريبي. إذا كان المستخدم الذي تضيفه لديه بالفعل حساب Microsoft 365، فقم بتعيين دور أمان مناسب له في مؤسسة الإصدار التجريبي. ولمزيد من المعلومات، راجع [تعيين دور أمان إلى مستخدم](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user).
 
 ### <a name="how-many-users-can-i-add-to-my-trial-environment"></a>ما المستخدمين الذين يمكنني إضافتهم إلى بيئة الإصدار التجريبي؟
 
@@ -63,7 +63,7 @@ ms.locfileid: "8115952"
 
 بشكل عام،نوصي بالبدء من جديد مع بياناتك الخاصة عند الترقية إلى الإصدار المدفوع لـ Customer Insights. 
 
-اختياريًا، إذا كنت تستخدم رؤى الجمهور فقط، فيمكنك نسخ بياناتك من بيئة تجريبية إذا قمت بشراء Customer Insights. يجب أن تكون المسؤول عن الإصدار التجريبي من Customer Insights والمسؤول العمومي لمستأجر Microsoft 365 الخاص بك، أو مسؤول Dynamics 365 في مؤسستك لترحيل الإعدادات من بيئة تجريبية إلى بيئة مدفوعة الأجر. 
+اختياريًا، إذا كنت تستخدم رؤى الجمهور فقط، فيمكنك نسخ بياناتك من بيئة تجريبية إذا قمت بشراء Customer Insights. يجب أن تكون مسؤول الإصدار التجريبي لـ Customer Insights والمسؤول العمومي لمستأجر Microsoft 365 الخاص بك، أو مسؤول Dynamics 365 في مؤسستك لترحيل الإعدادات من بيئة تجريبية إلى بيئة مدفوعة. 
 
 بعد تسجيل الدخول إلى مثيل Customer Insights المدفوع لأول مرة، يطلب منك إنشاء بيئة جديدة. أثناء هذه العملية، يمكنك اختيار نسخ التكوين من بيئة موجودة وترحيل معظم الإعدادات. إذا كانت لديك الأذونات المذكورة أعلاه، ستظهر بيئة الإصدار التجريبي في هذه القائمة. لمزيد من المعلومات، راجع [نسخ تكوين البيئة](audience-insights/manage-environments.md#copy-the-environment-configuration).
 
@@ -82,13 +82,12 @@ ms.locfileid: "8115952"
 
 تتوفر معظم ميزات إمكانات Customer Insights في الإصدار التجريبي.
 
-الميزات التالية **غير متوفرة**: 
+الميزة التالية غير متوفرة: 
 - لا يمكنك إنشاء بيئات جديدة تستخدم حساب تخزين Azure Data Lake الخاص بك.
-- لا يمكنك حذف بيئة الإصدار التجريبي. 
 
 ### <a name="how-long-does-the-trial-last"></a>ما الفترة التي يستمر خلالها الإصدار التجريبي؟
 
-يستمر الإصدار التجريبي من Customer Insights لمدة 30 يومًا. يمكنك تمديد فترة الإصدار التجريبي مرة واحدة بعد 23 يومًا عند تسجيل الدخول إلى بيئة الإصدار التجريبي الخاصة بك.
+يستمر الإصدار التجريبي من Customer Insights لمدة 30 يومًا. يمكنك تمديد الفترة التجريبية مرة واحدة بعد 23 يومًا عند تسجيل الدخول إلى البيئة التجريبية الخاصة بك.
 
 ### <a name="how-do-i-remove-sample-data-from-the-trial"></a>كيف يمكنني إزالة عينة البيانات من الإصدار التجريبي؟
 

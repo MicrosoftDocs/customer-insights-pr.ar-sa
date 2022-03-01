@@ -1,7 +1,7 @@
 ---
 title: تصدير بيانات Customer Insights إلى Azure Synapse Analytics
 description: تعرف على كيفية تهيئة الاتصال بـ Azure Synapse Analytics.
-ms.date: 01/05/2022
+ms.date: 04/12/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 6f630b8fb03bf615ada6d40fe27a91975d0c856e
-ms.sourcegitcommit: cb71e39de9b891c24bd5cd9c014eb3eeb537ac24
+ms.openlocfilehash: 7ee57aa9e86ebf9bd1989d88750642f0b01bd4bf
+ms.sourcegitcommit: f18635c29bb25d9e424a3f5825dc2696278450cf
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7951026"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "6327348"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>تصدير البيانات إلى Azure Synapse Analytics (معاينة)
 
@@ -49,8 +49,6 @@ Azure Synapse iهو خدمة تحليلات تعمل على تسريع وقت ا
 
 ### <a name="configure-a-connection"></a>تكوين اتصال
 
-لإنشاء اتصال، يحتاج كل من كيان الخدمة وحساب المستخدم في Customer Insights إلى أذونات **قارئ** في *مجموعة الموارد* التي توجد بها مساحة عمل Synapse Analytics. بالإضافة إلى ذلك، يحتاج كل من كيان الخدمة والمستخدم في مساحة عمل Synapse Analytics إلى أذونات **مسؤول Synapse**. 
-
 1. انتقل إلى **المسؤول** > **الاتصالات**.
 
 1. حدد **إضافة اتصال** واختر **Azure Synapse Analytics** أو حدد **إعداد** في تجانب **Azure Synapse Analytics** لتكوين الاتصال.
@@ -65,7 +63,7 @@ Azure Synapse iهو خدمة تحليلات تعمل على تسريع وقت ا
 
 ### <a name="configure-an-export"></a>تكوين تصدير
 
-يمكنك تكوين هذا التصدير إذا كان لديك حق الوصول إلى اتصال من هذا النوع. لتكوين التصدير من خلال اتصال مشترك، ستحتاج على الأقل إلى الحصول على أذونات **المساهم** في Customer Insights. لمزيد من المعلومات، راجع [الأذونات اللازمة لتكوين تصدير](export-destinations.md#set-up-a-new-export).
+يمكنك تكوين هذا التصدير إذا كان لديك حق الوصول إلى اتصال من هذا النوع. لمزيد من المعلومات، راجع [الأذونات اللازمة لتكوين تصدير](export-destinations.md#set-up-a-new-export).
 
 1. انتقل إلى **البيانات** > **التصديرات**.
 
@@ -84,8 +82,6 @@ Azure Synapse iهو خدمة تحليلات تعمل على تسريع وقت ا
 لا تعمل عملية التصدير التي يتم حفظها على التصدير في الحال.
 
 يتم تشغيل عملية التصدير مع كل [تحديث مجدول](system.md#schedule-tab). يمكنك أيضًا [تصدير البيانات عند الطلب](export-destinations.md#run-exports-on-demand).
-
-للاستعلام عن البيانات التي تم تصديرها إلى Synapse Analytics، تحتاج إلى وصول **‏‫قارئ بيانات التخزين كبيرة الحجم‬** إلى التخزين الوجهة في مساحة عمل عمليات التصدير. 
 
 ### <a name="update-an-export"></a>تحديث عملية تصدير
 

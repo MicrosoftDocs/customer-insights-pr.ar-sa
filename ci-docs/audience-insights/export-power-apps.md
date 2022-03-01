@@ -1,20 +1,20 @@
 ---
 title: موصل Power Apps
 description: الاتصال بـ Power Apps وPower Automate.
-ms.date: 10/01/2021
-ms.reviewer: mhart
+ms.date: 08/21/2020
+ms.reviewer: nikeller
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: how-to
-author: Nils-2m
-ms.author: nikeller
+ms.topic: conceptual
+author: m-hartmann
+ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 985e6c85795fba8ca3063cdffc7f9012e798856a
-ms.sourcegitcommit: 5d82e5b808517e0e99fdfdd7e4a4422a5b8ebd5c
+ms.openlocfilehash: b6ec103e29e218b2f27bfc1193300ea793a6b30b
+ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "7623207"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4404897"
 ---
 # <a name="microsoft-power-apps-connector-preview"></a>موصل Microsoft Power Apps (معاينة)
 
@@ -22,55 +22,53 @@ ms.locfileid: "7623207"
 
 ## <a name="connect-power-apps-and-dynamics-365-customer-insights"></a>توصيل Power Apps وDynamics 365 Customer Insights
 
-يُعد Customer Insights بمثابة واحدًا من العديد من [المصادر المتوفرة للبيانات الموجودة في Power Apps](/powerapps/maker/canvas-apps/working-with-data-sources).
+يُعد Customer Insights بمثابة واحدًا من العديد من [المصادر المتوفرة للبيانات الموجودة في Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-data-sources).
 
-ارجع إلى وثائق Power Apps لمعرفة كيفية [إضافة اتصال بيانات إلى تطبيق](/powerapps/maker/canvas-apps/add-data-connection). يمستحسن أيضًا مراجعة [كيفية استخدام Power Apps تفويض لمعالجة مجموعات البيانات الكبيرة في تطبيقات اللوحة](/powerapps/maker/canvas-apps/delegation-overview).
+ارجع إلى وثائق Power Apps لمعرفة كيفية [إضافة اتصال بيانات إلى تطبيق](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-data-connection). يمستحسن أيضًا مراجعة [كيفية استخدام Power Apps تفويض لمعالجة مجموعات البيانات الكبيرة في تطبيقات اللوحة](https://docs.microsoft.com/powerapps/maker/canvas-apps/delegation-overview).
 
 ## <a name="available-entities"></a>الكيانات المتوفرة
 
 بعد إضافة Customer Insights كاتصال بيانات، يمكنك اختيار الكيانات التالية في Power Apps:
 
-- **العميل**: لاستخدام البيانات من [ملف تعريف العميل الموحد](customer-profiles.md).
-- **UnifiedActivity**: لعرض [مخطط زمني النشاط ](activities.md) في التطبيق.
-- **ContactProfile**: لعرض جهات اتصال العميل. هذا الكيان متاح فقط في بيئات رؤى الجمهور لحسابات الأعمال.
+- العميل: لاستخدام بيانات من [ملف تعريف العميل الموحد](customer-profiles.md).
+- نشاط العميل الموحد: لعرض [المخطط الزمني للنشاط](activities.md) على التطبيق.
 
 ## <a name="limitations"></a>القيود
 
 ### <a name="retrievable-entities"></a>الكيانات القابلة للاسترداد
 
-يمكنك فقط استرداد كيانات **العميل**، و **UnifiedActivity**، و **المقاطع**، و **ContactProfile** من خلال موصل Power Apps. إن ContactProfile متاح فقط في مثيل رؤى الجمهور لحسابات الأعمال. تظهر الكيانات الأخرى لأن الموصل الأساسي يدعمها من خلال المشغلات الموجودة في Power Automate.
+يمكنك فقط استرداد كيانات **العميل** و **UnifiedActivity** و **الشرائح** من خلال موصل Power Apps. تظهر الكيانات الأخرى لأن الموصل الأساسي يدعمها من خلال المشغلات الموجودة في Power Automate.  
 
 ### <a name="delegation"></a>تفويض
 
-يعمل التفويض لكيان **العميل** وكيان **UnifiedActivity**. 
+يعمل التفويض لكيان العميل وكيان UnifiedActivity. 
 
 - تفويض كيان **العميل** entity: لاستخدام التفويض لهذا الكيان، يجب فهرسة الحقول في [فهرس البحث والتصفية](search-filter-index.md).  
-- تفويض لكيان **UnifiedActivity**: يعمل التفويض لهذا الكيان فقط للحقلين **ActivityId** و **CustomerId**.  
-- تفويض **ContactProfile**: يعمل تفويض هذا الكيان فقط للحقلين **ContactId** و **CustomerId**. إن ContactProfile متاح فقط في بيئات رؤى الجمهور لحسابات الأعمال.
 
-لمزيد من المعلومات حول التفويض، انتقل إلى [ووظائف وعمليات Power Apps القابلة للتفويض](/powerapps/maker/canvas-apps/delegation-overview). 
+- تفويض لكيان **UnifiedActivity**: يعمل التفويض لهذا الكيان فقط للحقلين **ActivityId** و **CustomerId**.  
+
+- لمزيد من المعلومات حول التفويض، راجع [الوظائف والعمليات القابلة للتفويض في Power Apps](https://docs.microsoft.com/connectors/commondataservice/#power-apps-delegable-functions-and-operations-for-the-cds-for-apps). 
 
 ## <a name="example-gallery-control"></a>مثال على عنصر تحكم المعرض
 
-يمكنك إضافة ملفات تعريف العملاء إلى [عنصر تحكم المعرض](/powerapps/maker/canvas-apps/add-gallery).
+على سبيل المثال، يمكنك إضافة ملفات تعريف العملاء إلى [عنصر تحكم المعرض](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-gallery).
 
-1. قم بإضافة عنصر تحكم **المعرض** إلى تطبيق تقوم بإنشائه.
+1. قم بإضافة عنصر تحكم **المعرض** إلى تطبيق تقوم بإنشاءه.
+
+> [!div class="mx-imgBorder"]
+> ![إضافة عنصر معرض](media/connector-powerapps9.png "إضافة عنصر معرض")
+
+1. قم بتحديد **العميل** كمصدر البيانات للعناصر.
 
     > [!div class="mx-imgBorder"]
-    > ![إضافة عنصر معرض.](media/connector-powerapps9.png "إضافة عنصر معرض.")
+    > ![تحديد مصدر بيانات](media/choose-datasource-powerapps.png "تحديد مصدر بيانات")
 
-2. قم بتحديد **العميل** كمصدر البيانات للعناصر.
+1. يُمكنك تغيير لوحة البيانات الموجودة على اليمين لتحديد أي حقول كيان العميل الذي سوف يتم عرضه في المعرض.
 
-    > [!div class="mx-imgBorder"]
-    > ![تحديد مصدر بيانات.](media/choose-datasource-powerapps.png "تحديد مصدر بيانات.")
+1. إذا كنت ترغب في إظهار أي حقل من العميل المُحدد في المعرض، فقم بملء خاصية النص للتسمية:  **{Name_of_the_gallery}.{property_name}** مُحدد
 
-3. يُمكنك تغيير لوحة البيانات الموجودة على اليمين لتحديد أي حقول كيان العميل الذي سوف يتم عرضه في المعرض.
+    مثال: Gallery1.Selected.address1_city
 
-4. إذا كنت ترغب في إظهار أي حقل من العميل المُحدد في المعرض، فقم بملء خاصية **النص** للتسمية باستخدام **{Name_of_the_gallery}.محدد.{property_name}**  
-    - على سبيل المثال: _Gallery1.Selected.address1_city_
+1. لعرض المخطط الزمني الموحد لعميل، قم بإضافة عنصر معرض، وإضافة خاصية العناصر: **Filter('UnifiedActivity', CustomerId = {Customer_Id})**
 
-5. لعرض المخطط الزمني الموحد لعميل، قم بإضافة عنصر معرض، وإضافة خاصية **العناصر** باستخدام **Filter('UnifiedActivity', CustomerId = {Customer_Id})**  
-    - على سبيل المثال: _Filter('UnifiedActivity', CustomerId = Gallery1.Selected.CustomerId)_
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+    مثال: Filter('UnifiedActivity', CustomerId = Gallery1.Selected.CustomerId)

@@ -1,7 +1,7 @@
 ---
 title: الوظيفة الإضافية لبطاقة عميل تطبيقات Dynamics 365 (يحتوي على فيديو)
 description: إظهار البيانات من معلومات الجمهور في تطبيقات Dynamics 365 باستخدام هذه الوظيفة الإضافية.
-ms.date: 02/02/2022
+ms.date: 12/22/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: ce6c8fab84fd4c5dfc9f78b91dde3483a1d358c1
-ms.sourcegitcommit: 11308ed275b4b25a35576eccfcae9dda9e2c2784
+ms.openlocfilehash: 98597600c2a39f8bb707af8461df4736f913e6bc
+ms.sourcegitcommit: 3807202283dd116a30f900a163d8141db621e5a8
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8085191"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "8046455"
 ---
 # <a name="customer-card-add-in-preview"></a>الوظيفة الإضافية لبطاقة عميل (معاينة)
 
@@ -118,26 +118,5 @@ ms.locfileid: "8085191"
 
 1. بعد بدء عملية الترقية، سوف تشاهد مؤشر تحميل حتى تكتمل الترقية. إذا لم يكن هناك إصدار جديد، فإن الترقية ستعرض رسالة خطأ.
 
-## <a name="troubleshooting"></a>استكشاف الأخطاء وإصلاحها
-
-### <a name="controls-from-customer-card-add-in-dont-find-data"></a>لا تعثر عناصر التحكم من الوظيفة الإضافية لبطاقة العميل على البيانات
-
-**المشكلة:**
-
-حتى مع تكوين حقول المعرفات بشكل صحيح، لا يمكن لعناصر التحكم العثور على بيانات لأي عميل.  
-
-**الحل:**
-
-1. تأكد من تكوين الوظيفة الإضافية للبطاقة وفقًا للإرشادات: [تكوين الوظيفة الإضافية لبطاقة العميل](#configure-the-customer-card-add-in) 
-
-1. راجع تكوين استيعاب البيانات. قم بتحرير مصدر البيانات لنظام Dynamics 365 الذي يحتوي على معرّف GUID لجهة الاتصال. إذا تم عرض GUID لمعرف جهة الاتصال بأحرف كبيرة في محرر Power Query، فجرب ما يلي: 
-    1. قم بتحرير مصدر البيانات لفتح مصدر البيانات في محرر Power Query.
-    1. حدد عمود معرف جهة الاتصال.
-    1. حدد **التحويل** في شريط الرأس لرؤية الإجراءات المتوفرة.
-    1. حدد **أحرف صغيرة**. تحقق من صحة ما إذا كانت معرفات GUID في الجدول أصبحت الآن صغيرة.
-    1. احفظ مصدر البيانات.
-    1. شغّل استيعاب البيانات وتوحيدها وعمليات نقل البيانات لنشر التغييرات على المعرف الفريد العمومي (GUID). 
-
-بعد الانتهاء من التحديث الكامل، يجب أن تعرض عناصر التحكم في الوظيفة الإضافية لبطاقة العميل البيانات المتوقعة. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

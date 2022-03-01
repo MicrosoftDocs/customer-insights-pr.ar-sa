@@ -1,27 +1,27 @@
 ---
 title: روبوت لـ Microsoft Teams
 description: ابحث عن ملفات تعريف العملاء الموحدة في Microsoft Teams بمساعدة الروبوت.
-ms.date: 10/08/2021
+ms.date: 04/21/2020
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: how-to
+ms.topic: conceptual
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 6a9575de922bc2ff9c9d2212b99b4c0c8b61ab0e
-ms.sourcegitcommit: 15b1521041149716f8031cfa6d0dc61a56a5e2ff
+ms.openlocfilehash: 45ea23fbefe5f1d44c3961183b76d2cc5c45355e
+ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7967803"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4404928"
 ---
 # <a name="teams-bot-for-dynamics-365-customer-insights-preview"></a>روبوت Teams في Dynamics 365 Customer Insights (معاينة)
 
 اتصل بتطبيق Microsoft Teams لتمكين الروبوت من البحث عن ملفات تعريف العملاء الموحدة في قنوات Teams.
 
 > [!div class="mx-imgBorder"]
-> ![يعرض روبوت Teams سجل العميل.](media/teams-bot.png "روبوت Teams يعرض سجل عميل")
+> ![روبوت Teams يعرض سجل عميل](media/teams-bot.png "روبوت Teams يعرض سجل عميل")
 
 ## <a name="prerequisites"></a>المتطلبات الأساسية
 
@@ -31,10 +31,7 @@ ms.locfileid: "7967803"
 - اكتملت [عملية التوحيد](data-unification.md).
 - تُضاف الحقول إلى [فهرس البحث والتصفية](search-filter-index.md).
 - يوجد Customer Insights وTeams في المؤسسة نفسها.
-- بيئتك لديها الجمهور المستهدف الأساسي الذي تم تعيينه للعملاء الفرديين. حسابات الأعمال غير مدعومة.
 
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRElj]
 ## <a name="configure-the-bot"></a>تكوين الروبوت
 
 1. في رؤى الجمهور، انتقل إلى **البيانات‏‎** > **وجهات التصدير‬**.
@@ -55,6 +52,3 @@ ms.locfileid: "7967803"
 - إذا كانت مؤسستك تحتفظ ببيئات Customer Insights متعددة في نفس المؤسسة، فيمكنك إدخال **switchinstance** لاختيار البيئة التي تريد توصيل الروبوت بها.
 
 - أدخل **تعليمات** لرؤية قائمة بالأوامر المتوفرة للروبوت.  
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

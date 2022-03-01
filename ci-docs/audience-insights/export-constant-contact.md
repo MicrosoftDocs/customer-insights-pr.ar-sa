@@ -1,7 +1,7 @@
 ---
 title: تصدير بيانات Customer Insights إلى Constant Contact
 description: تعرف على كيفية تهيئة الاتصال والتصدير إلى Constant Contact.
-ms.date: 10/08/2021
+ms.date: 03/22/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,14 +9,14 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: b25e4f11e21d059c2d867e925c0ae5635a87addc
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: 3a9372cc4ffa4fb112a96b1286aee9dc35059a50
+ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7619103"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5760456"
 ---
-# <a name="export-segments-to-constant-contact-preview"></a>تصدير الشرائح إلى Constant Contact (إصدار أولي)
+# <a name="export-segment-lists-to-constant-contact-preview"></a>تصدير قوائم الشرائح إلى Constant Contact (إصدار أولي)
 
 قم بتصدير شرائح ملفات تعريف العملاء الموحدة إلى Constant Contact واستخدامها في أنشطة التسويق. 
 
@@ -28,10 +28,10 @@ ms.locfileid: "7619103"
 
 ## <a name="known-limitations"></a>القيود المعروفة
 
-- يمكنك تصدير ما يصل إلى مليون ملف تعريف عميل لكل عملية تصدير إلى Constant Contact.
+- يمكنك تصدير حتى 1 مليوت ملف تعريف لكل تصدير إلى Constant Contact.
 - يقتصر التصدير إلى Constant Contact على الشرائح.
-- يمكن أن يستغرق تصدير ما يصل إلى مليون ملف تعريف عميل إلى Constant Contact ما يصل إلى ساعة واحدة حتى يكتمل. 
-- يعتمد عدد ملفات تعريف العملاء التي يمكنك تصديرها إلى Constant Contact ومحدودًا على عقدك مع Constant Contact.
+- قد يستغرق تصدير ما يصل إلى مليون ملف تعريف إلى Constant Contact ما يصل إلى 1 ساعة حتى الاكتمال. 
+- عدد الملفات الشخصية التي يمكنك تصديرها إلى Constant Contact يعتمد ويقتصر على عقدك مع Constant Contact.
 
 ## <a name="set-up-connection-to-constant-contact"></a>إعداد الاتصال بـ Constant Contact
 
@@ -47,7 +47,7 @@ ms.locfileid: "7619103"
 
 1. حدد **الاتصال** لبدء الاتصال بـ Constant Contact.
 
-1. حدد **المصادقة مع Constant Contact** ووفر بيانات اعتماد المسؤول الخاصة بك لـ Constant Contact. 
+1. حدد **المصادقة مع AdRoll** ووفر بيانات اعتماد المسؤول الخاصة بك لـ Constant Contact. 
 
 1. حدد **إضافة نفسك كمستخدم تصدير** ووفر بيانات اعتماد Customer Insights.
 
@@ -65,7 +65,7 @@ ms.locfileid: "7619103"
 
 1. أدخل [**معرف قائمة Constant Contact**](https://app.constantcontact.com/pages/contacts/ui#lists). افتح قائمة في Constant Contact للعثور على معرف القائمة في URL.
 
-1. في قسم **مطابقة البيانات** في حقل **البريد الإلكتروني**، حدد الحقل الذي يمثل عنوان البريد الإلكتروني للعميل. يلزم تصدير شرائح إلى Constant Contact.
+1. في القسم **مطابقة البيانات**، في حقل **البريد الإلكتروني**، حدد الحقل في ملف تعريف العميل الموحد الذي يمثل عنوان البريد الإلكتروني للعميل. يلزم تصدير شرائح إلى Constant Contact.
 
 1. بشكل اختياري، يمكنك تصدير الاسم الأول واسم العائلة كحقول إضافية لإنشاء المزيد من رسائل البريد الإلكتروني المخصصة. حدد **إضافة سمة** لتعيين هذه الحقول.
 

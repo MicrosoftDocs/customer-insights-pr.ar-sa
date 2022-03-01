@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: fa1d4ffd9f77e128b5d804e4562e964561f4684f
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: f92b36ac5364ea8586f9cbba7ba03178641555c0
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7618639"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304634"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>إثراء ملفات تعريف العملاء بواسطة البيانات المخصصة (معاينة)
 
@@ -45,8 +45,6 @@ ms.locfileid: "7618639"
 
     :::image type="content" source="media/enrichment-SFTP-path-and-filename.png" alt-text="لقطة شاشة عند إدخال موقع البيانات.":::
 
-1. حدد **التالي** واختر مجموعة بيانات العملاء. يمكن أن يكون هذا إما جميع ملفات تعريف العملاء أو مقطعًا.
-
 1. حدد **التالي** وأدخل اسمًا للإثراء واسمًا لكيان الإخراج. 
 
 1. حدد **حفظ الإثراء** بعد مراجعة اختياراتك.
@@ -66,7 +64,7 @@ ms.locfileid: "7618639"
 1. بمجرد الانتهاء من التحقق، يمكن حفظ الاتصال بتحديد **حفظ**.
 
    > [!div class="mx-imgBorder"]
-   > ![صفحة تكوين اتصال Experian.](media/enrichment-SFTP-connection.png "صفحة تكوين اتصال Experian")
+   > ![صفحة تكوين اتصال Experian](media/enrichment-SFTP-connection.png "صفحة تكوين اتصال Experian")
 
 
 ## <a name="defining-field-mappings"></a>تعريف تعيينات الحقول 
@@ -125,6 +123,6 @@ ms.locfileid: "7618639"
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
+قم بالبناء أعلى بيانات العملاء التي تم إثرائها. أنشئ [الشرائح](segments.md) و[القياسات](measures.md) و[تصدير البيانات](export-destinations.md) لتسليم تجارب مخصصة لعملائك.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
