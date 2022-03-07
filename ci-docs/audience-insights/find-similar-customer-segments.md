@@ -1,20 +1,23 @@
 ---
-title: البحث عن عملاء مماثلين بواسطة الذكاء الاصطناعي
+title: البحث عن عملاء متشابهين باستخدام الذكاء الاصطناعي (يحتوي على فيديو)
 description: يمكنك العثور على شرائح من العملاء المماثلين باستخدام الذكاء الاصطناعي.
 ms.date: 06/25/2020
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 7c447609bd54de0780dd14aae9f05c7c24b8cce5
-ms.sourcegitcommit: fb9f118b4e16b5aabb3e503463efca21718f5d72
+searchScope:
+- ci-segment-builder
+- ci-segment-insights
+- customerInsights
+ms.openlocfilehash: 5626b980ad8802aae9657052e3ca51a70c49baf9
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "7799668"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355229"
 ---
 # <a name="similar-customers-preview"></a>العملاء المماثلون (معاينة)
 

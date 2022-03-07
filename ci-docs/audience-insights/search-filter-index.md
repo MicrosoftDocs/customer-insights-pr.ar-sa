@@ -1,27 +1,30 @@
 ---
 title: بحث عن ملفات تعريف العملاء وتصفيتها
 description: البحث سريعًا عن معلومات حول ملفات تعريف العملاء الموحدة والتصفية لسمات مُحددة.
-ms.date: 01/19/2021
+ms.date: 11/01/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: a6131d4dddce48b0fba153bcefe5631e0d22d808
-ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
+searchScope:
+- ci-search-filter
+- customerInsights
+ms.openlocfilehash: 4445f44b87a5947c3dfcf43ddb49dca9f25b69aa
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6554005"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354493"
 ---
 # <a name="customer-profiles-search--filter-index"></a>ملفات تعريف العملاء: فهرس البحث & التصفيه
 
 تكون نتيجة توحيد بيانات عميلك هو كيان ملف تعريف العميل الذي يوفر طريقة عرض موحدة إلى إجمالي قاعدة العملاء الخاصة بك. لـ [البحث بسرعة عن عميل مُعين أو مجموعة عملاء](customer-profiles.md)، يُمكنك تكوين إمكانيات **البحث** و **التصفية** على صفحة **العملاء**. اقرأ للتعرف على كيف يُمكن للمسؤولين تحرير السمات في صفحة **مؤشر البحث والتصفية** ، المتاح للمستخدمين للبحث والتصفية.
 
-> [!div class="mx-imgBorder"]
-> ![عامل تصفية البحث.](media/search-filter.png "عامل تصفية البحث")
+   :::image type="content" source="media/search-filter.png" alt-text="عامل تصفية البحث":::
+
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="add-fields-and-specify-attributes"></a>إضافة حقول وتحديد سمات
 
@@ -56,11 +59,11 @@ ms.locfileid: "6554005"
 
 2. حدد **حفظ** لتطبيق التغييرات التي أجريتها.
 
-3. حدد **تشغيل** بُمجرد أن تكون مستعدًا لتطبيق إعداداتك.
+3. حدد **تشغيل** بُمجرد أن تكون مستعدًا لتطبيق إعداداتك. بعد معالجة التغييرات، يمكنك العثور عليها في [بطاقات العملاء على صفحة العميل](customer-profiles.md). 
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-انتقل إلى صفحة **العملاء** للبحث عن ملفات تعريف العملاء أو استخدم الحقول المفهرسة لمشاهدة مجموعة فرعية من كافة ملفات تعريف العملاء.
+راجع [صفحة ملفات التعريف الموحدة](customer-profiles.md) للبحث عن ملفات التعريف أو استخدم الحقول المفهرسة لرؤية مجموعة فرعية من جميع ملفات التعريف الموحدة.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -5,16 +5,15 @@ author: jusali
 ms.reviewer: mhart
 ms.author: jusali
 ms.date: 10/01/2021
-ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: how-to
 ms.manager: shellyha
-ms.openlocfilehash: 816f948331a06794c15000eb779f93cc7fdda202
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: 76b3466afd84aa439ea55afe90ae037825884f2d
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645294"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8229061"
 ---
 # <a name="create-a-new-workspace-and-add-members"></a>إنشاء مساحة عمل جديدة وإضافة الأعضاء
 
@@ -26,11 +25,11 @@ ms.locfileid: "7645294"
 
 ## <a name="create-a-new-workspace"></a>إنشاء مساحة عمل جديدة
 
-وتتضمن عملية إنشاء مساحة عمل إعداد *البيئة* لتنظيم مساحة العمل الخاصة بك. البيئة هي مساحة يمكن أن تحتوي على مساحة عمل واحدة أو أكثر. يمكنك استخدام بيئة لإدارة مساحات العمل والاتصالات مع إمكانية رؤى الجمهور من Customer Insights.
+وتتضمن عملية إنشاء مساحة عمل إعداد *البيئة* لتنظيم مساحة العمل الخاصة بك. البيئة هي مساحة يمكن أن تحتوي على مساحة عمل واحدة أو أكثر. يمكنك استخدام بيئة لإدارة مساحة العمل والاتصالات مع إمكانية الجمهور الرؤى.
 
-1. حدد **جديد** من مفتاح تبديل مساحة العمل.
+1. حدد **+جديد** من مفتاح تبديل مساحة العمل.
 
-   :::image type="content" source="media/new-workspace.png" alt-text="صفحة Customer insights مصحوبة بوسيلة الشرح‬ في جزء التنقل والوصف":::
+   :::image type="content" source="media/new-workspace.png" alt-text="صفحة Customer Insights مع شرح في جزء التنقل والوصف":::
 
 1. في جزء **مساحة العمل**، أدخل **اسم مساحة العمل**.
 

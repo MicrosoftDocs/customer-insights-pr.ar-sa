@@ -2,21 +2,20 @@
 title: دليل نموذج التنبؤ بخسارة المعاملة
 description: استخدم هذا النموذج للتعرف على النموذج الجاهز للتنبؤ بخسارة المعاملة‬.
 ms.date: 11/19/2020
-ms.reviewer: digranad
-ms.service: customer-insights
+ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: tutorial
-author: m-hartmann
-ms.author: mhart
+author: diegogranados117
+ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: 81540ad2f490cf566f031233543b3cb6aa838033
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 93841358d110bd16c7b7f8beb079bed704b22260
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269774"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354585"
 ---
-# <a name="transactional-churn-prediction-preview-sample-guide"></a>دليل نموذج التنبؤ بخسارة المعاملة (معاينة)
+# <a name="transactional-churn-prediction-sample-guide"></a>دليل نموذج التنبؤ بخسارة المعاملة
 
 سيرشدك هذا الدليل عبر مثال شامل للتنبؤ بخسارة المعاملة في Customer Insights باستخدام البيانات المتوفرة أدناه. جميع البيانات المستخدمة في هذا الدليل ليست بيانات عملاء حقيقية وهي عبارة عن جزء من مجموعة البيانات الموجودة في بيئة *العرض التوضيحي* ضمن اشتراك Customer Insights.
 
@@ -31,7 +30,7 @@ ms.locfileid: "5269774"
 
 ## <a name="task-1---ingest-data"></a>المهمة 1 - استيعاب البيانات
 
-راجع المقالات [حول استيعاب البيانات](data-sources.md) و[استيراد مصادر البيانات باستخدام موصلات Power Query](connect-power-query.md) على وجه التحديد. تفترض المعلومات التالية أنك ملمّ باستيعاب البيانات بشكل عام. 
+راجع المقالات المتعلقة [باستيعاب البيانات](data-sources.md) واستيراد [مصادر البيانات باستخدام موصلات Power Query ](connect-power-query.md). تفترض المعلومات التالية أنك ملمّ باستيعاب البيانات بشكل عام. 
 
 ### <a name="ingest-customer-data-from-ecommerce-platform"></a>استيعاب بيانات العملاء من النظام الأساسي للتجارة الإلكترونية
 
@@ -46,8 +45,7 @@ ms.locfileid: "5269774"
    - **DateOfBirth**: التاريخ
    - **CreatedOn**: التاريخ/الوقت/المنطقة
 
-   [!div class="mx-imgBorder"]
-   ![تحويل DoB إلى تاريخ](media/ecommerce-dob-date.PNG "تحويل تاريخ الولادة إلى تاريخ")
+   :::image type="content" source="media/ecommerce-dob-date.PNG" alt-text="تحويل DoB إلى تاريخ.":::
 
 1. في حقل **الاسم‏‎** في الجزء الأيمن، أعد تسمية مصدر البيانات من **استعلام** إلى **eCommerceContacts**
 
@@ -109,7 +107,7 @@ ms.locfileid: "5269774"
 
 1. انتقل إلى علامة التبويب **مطابقة** وحدد **تعيين الأمر**.
 
-1. من القائمة المنسدلة **أساسي**، اختر **eCommerceContacts : eCommerce** كمصدر أساسي وقم بتضمين جميع السجلات.
+1. في القائمة المنسدلة **الرئيسية**، اختر **eCommerceContacts : eCommerce** باعتباره المصدر الرئيسي وقم بتضمين جميع السجلات.
 
 1. في القائمة المنسدلة **الكيان 2**، اختر **loyCustomers : LoyaltyScheme** وقم بتضمين جميع السجلات.
 
@@ -119,16 +117,16 @@ ms.locfileid: "5269774"
 
 1. أضف الشرط الأول باستخدام FullName.
 
-   * لخيار eCommerceContacts، حدد **FullName‎** في القائمة المنسدلة.
-   * لخيار loyCustomers، حدد **FullName‎** في القائمة المنسدلة.
+   * بالنسبة إلى eCommerceContacts، حدد **FullName** في القائمة المنسدلة.
+   * بالنسبة إلى loyCustomers، حدد **FullName** في القائمة المنسدلة.
    * حدد القائمة المنسدلة **تسوية**، واختر **النوع (الهاتف والاسم والعنوان و...)**.
    * عيّن **مستوى الدقة**: **أساسي** و **قيمة**: **عالي**.
 
 1. أدخل الاسم **FullName, Email** للقاعدة الجديدة.
 
    * أضف شرطًا ثانيًا لعنوان البريد الإلكتروني من خلال تحديد **إضافة شرط**
-   * للكيان eCommerceContacts، حدد **EMail** في القائمة المنسدلة.
-   * للكيان loyCustomers، حدد **EMail** في القائمة المنسدلة. 
+   * بالنسبة للكيان eCommerceContacts، اختر **البريد الإلكتروني** في القائمة المنسدلة.
+   * بالنسبة للكيان loyCustomers، اختر **البريد الإلكتروني** في القائمة المنسدلة. 
    * اترك الخيار "تسوية" فارغًا. 
    * عيّن **مستوى الدقة**: **أساسي** و **قيمة**: **عالي**.
 
@@ -150,7 +148,7 @@ ms.locfileid: "5269774"
 
 ## <a name="task-3---configure-transaction-churn-prediction"></a>المهمة 3 - تكوين التنبؤ بخسارة المعاملة‬
 
-من خلال وضع ملفات تعريف العملاء الموحدة، يمكننا الآن تشغيل التنبؤ بخسارة الاشتراك. للحصول على خطوات تفصيلية، راجع المقالة [التنبؤ بخسارة الاشتراك (معاينة)](predict-subscription-churn.md). 
+من خلال وضع ملفات تعريف العملاء الموحدة، يمكننا الآن تشغيل التنبؤ بخسارة الاشتراك. للحصول على خطوات تفصيلية، راجع مقالة [توقع خسارة الاشتراك](predict-subscription-churn.md). 
 
 1. انتقل إلى **الذكاء** > **اكتشاف** وحدد لاستخدام **نموذج خسارة العملاء**.
 

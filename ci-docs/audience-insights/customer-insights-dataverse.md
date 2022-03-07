@@ -1,20 +1,22 @@
 ---
 title: بيانات Customer Insights في Microsoft Dataverse
 description: استخدم كيانات Customer Insights كجداول في Microsoft Dataverse.
-ms.date: 06/15/2021
+ms.date: 11/25/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 220e01a06711a5d35b8df09e265017a6d8fd0490
-ms.sourcegitcommit: 5c9c54ffe045017c19f0042437ada2c101dcaa0f
+searchScope:
+- ci-system-diagnostic
+- customerInsights
+ms.openlocfilehash: 9f730f5856221592cddf34b714beeaca24c52130
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "6650026"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355413"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>استخدام بيانات Customer Insights في Microsoft Dataverse
 
@@ -24,11 +26,7 @@ ms.locfileid: "6650026"
 
 **المؤسسات ذات بيئات Dataverse موجودة**
 
-بإمكان المؤسسات التي تستخدم Dataverse [استخدام إحدى بيئات Dataverse الموجودة لديها](get-started-paid.md) عندما يقوم المسؤول بإعداد رؤى الجمهور. ومن خلال توفير عنوان URL لبيئة Dataverse، فهو يتصل ببيئة رؤى الجمهور الجديدة. لضمان أفضل أداء ممكن، يجب استضافة Customer Insights وبيئات Dataverse في نفس المنطقة.
-
-لإرفاق بيئة Dataverse، قم بتوسيع **الإعدادات المتقدمة** عند إنشاء بيئة رؤى الجمهور. قدّم **عنوان URL لبيئة Microsoft Dataverse** وحدد خانة الاختيار **تمكين مشاركة البيانات**.
-
-:::image type="content" source="media/Datasharing-with-DataverseMDL.png" alt-text="Alt.":::
+بإمكان المؤسسات التي تستخدم Dataverse [استخدام إحدى بيئات Dataverse الموجودة لديها](create-environment.md) عندما يقوم المسؤول بإعداد رؤى الجمهور. ومن خلال توفير عنوان URL لبيئة Dataverse، فهو يتصل ببيئة رؤى الجمهور الجديدة. لضمان أفضل أداء ممكن، يجب استضافة Customer Insights وبيئات Dataverse في نفس المنطقة.
 
 **مؤسسة جديدة**
 
@@ -49,6 +47,7 @@ ms.locfileid: "6650026"
 - [CustomerMeasure](#customermeasure)
 - [الإثراء](#enrichment)
 - [التنبؤ](#prediction)
+- [عضوية المقطع](#segment-membership)
 
 
 ### <a name="customerprofile"></a>ملف تعريف العميل
@@ -125,3 +124,16 @@ ms.locfileid: "6650026"
 | القيم               | سلسلة JSON | قائمة السمات التي ينتجها النموذج |
 | msdynci_predictionid | GUID        | GUID المؤكد الناشئ عن msdynci_identifier | 
 | msdynci_identifier   | السلسلة‬      |  `Model|ModelProvider|CustomerId`                      |
+
+### <a name="segment-membership"></a>عضوية المقطع
+
+يحتوي هذا الجدول على معلومات عضوية المقطع لملفات تعريف العملاء.
+
+| Column        | كتابة | الوصف                         |
+|--------------------|--------------|-----------------------------|
+| Customerid        | السلسلة‬       | معرف ملف تعريف العميل        |
+| SegmentProvider      | السلسلة‬       | التطبيق الذي ينشر المقاطع. الافتراضي: رؤى الجمهور         |
+| SegmentMembershipType | السلسلة‬       | نوع العميل لسجل عضوية المقطع هذا. يدعم أنواعًا متعددة مثل العميل أو جهة الاتصال أو الحساب. الافتراضي: العميل  |
+| المقاطع       | سلسلة JSON  | قائمة الأقسام الفريدة التي ينتمي إليها ملف تعريف العميل      |
+| msdynci_identifier  | السلسلة‬   | معرّف فريد لسجل عضوية المقطع. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
+| msdynci_segmentmembershipid | معرف Guid      | تم إنشاء GUID الحتمي من `msdynci_identifier`          |

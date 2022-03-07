@@ -2,21 +2,23 @@
 title: تكامل بيانات الويب من رؤى المشاركة مع رؤى الجمهور
 description: إحضار معلومات ويب حول العملاء من رؤى المشاركة إلى رؤى الجمهور.
 ms.date: 06/24/2021
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c2789a7d1379e0cf56511b272a763c904d8a3d347058ea9e029aaff0f723a028
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 037e264658bc354618cff56a89645ef7552aeb13
+ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033753"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8350529"
 ---
 # <a name="integrate-web-data-from-engagement-insights-with-audience-insights"></a>تكامل بيانات الويب من رؤى المشاركة مع رؤى الجمهور
+
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../engagement-insights/includes/cc-beta-prerelease-disclaimer.md)]
 
 يستخدم العملاء في أغلب الأحيان مواقع الويب للقيام بمعاملاتهم اليومية عبر الإنترنت. إن إمكانية معلومات المشاركة (المعاينة) في Dynamics 365 Customer Insights هي حل مفيد لتكامل بيانات الويب كمصدر. بالإضافة إلى البيانات الخاصة بالمعاملات أو البيانات السكانية أو السلوكية، يمكننا رؤية أنشطة على الويب في ملفات تعريف العملاء الموحدة. يمكننا استخدام ملفات التعريف هذه للحصول على رؤى إضافية مثل الشرائح أو القياسات أو التنبؤات الجمهور التنشيط.
 

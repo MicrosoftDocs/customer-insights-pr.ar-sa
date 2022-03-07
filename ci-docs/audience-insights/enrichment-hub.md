@@ -1,21 +1,25 @@
 ---
 title: إثراء ملفات تعريف العملاء الموحدة
 description: استخدم القدرات لإثراء بيانات العملاء.
-ms.date: 09/30/2021
+ms.date: 02/07/2022
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: bc0128c222c032e8cfe35e6f3baa0ea722bce7cb
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+searchScope:
+- ci-enrichments
+- ci-enrichment-details
+- ci-enrichment-wizard
+- customerInsights
+ms.openlocfilehash: e8cac35ccf7012524dc22cb4a499dc605dd66346
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7672983"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355367"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>الإثراء لملفات تعريف العملاء (معاينة)
 
@@ -37,14 +41,17 @@ ms.locfileid: "7672983"
 - [الخصائص السكانية](enrichment-experian.md) الموفرة بواسطة Experian
 - [البيانات المخصصة](enrichment-SFTP-custom-import.md) عبر بروتوكول نقل الملفات الآمن (SFTP)‬ 
 - تم توفير [خرائط Azure](enrichment-azure-maps.md) بواسطة Microsoft
+- [بيانات الموقع](enrichment-here.md) مقدمة من HERE Technologies 
 
 # <a name="business-accounts-b-to-b"></a>[حسابات الأعمال (B-to-B)](#tab/b2b)
 
 - [بيانات الشركة](enrichment-leadspace.md) مقدمة من Leadspace
 - [العناوين المحسنة](enrichment-enhanced-addresses.md) التي تقدمها Microsoft 
+- [بيانات الشركة المحسنة](enrichment-enhanced-company-data.md) المقدمة من Microsoft
 - [بيانات الموقع](enrichment-here.md) مقدمة من HERE Technologies 
 - [البيانات المخصصة](enrichment-SFTP-custom-import.md) عبر بروتوكول نقل الملفات الآمن (SFTP)‬ 
 - تم توفير [خرائط Azure](enrichment-azure-maps.md) بواسطة Microsoft
+- [بيانات تفاعل الحساب](enrichment-office.md) المقدمة من Microsoft
 
 ---
 

@@ -1,43 +1,49 @@
 ---
 title: استخدام مصادر بيانات لاستيعاب البيانات
 description: تعرف على كيفية استيراد البيانات من مصادر متعددة.
-ms.date: 04/12/2021
-ms.service: customer-insights
+ms.date: 12/06/2021
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: overview
 author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.custom: intro-internal
-ms.openlocfilehash: de31e1f25c08d0bcb5341c5f465b1999de48acf3
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+searchScope:
+- ci-data-sources
+- ci-create-data-source
+- customerInsights
+ms.openlocfilehash: e7bcf82c4fe3625ef791ec2b0a7651be0356a006
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645339"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354033"
 ---
 # <a name="data-sources-overview"></a>نظرة عامة مصادر البيانات
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 تتصل قدرة رؤى الجمهور في Dynamics 365 Customer Insights بالبيانات من مجموعة واسعة من المصادر. غالبًا ما يشار إلى الاتصال بمصدر البيانات على أنه عملية *استيعاب بيانات*. بعد استيعاب البيانات، يمكنك [توحيدها](data-unification.md) واتخاذ إجراءات بشأنها.
 
 ## <a name="add-a-data-source"></a>إضافة مصدر بيانات
 
-راجع المقالات التفصيلية حول كيفيه أضافه مصدر البيانات، وذلك حسب الخيار الذي تختاره.
+راجع المقالات المفصلة المتعلقة بكيفية إضافة قائمة مصدر بيانات، حسب الخيار الذي تختاره.
 
-يمكنك إضافة مصدر البيانات بثلاثة طرق رئيسية:
+يمكنك إضافة عناصر البيانات التالية:
 
-- [عبر العشرات من موصلات Power Query](connect-power-query.md)
+- [من خلال عشرات الموصلات من Power Query](connect-power-query.md)
 - [من مجلد نموذج البيانات العامة](connect-common-data-model.md)
 - [من مخزن Microsoft Dataverse الخاص بك](connect-dataverse-managed-lake.md)
+- [من خلال قاعدة بيانات Azure Synapse Analytics ](connect-synapse.md)
+
+> [!NOTE]
+> إذا كنت تستخدم الإصدار التجريبي، فإن قسم طرق الاستيراد يتضمن خيار **مكتبة بيانات Customer Insights**. اختر هذا الخيار لتحديد عينة مجموعة بيانات متوفرة لصناعات متنوعة. لمزيد من المعلومات، راجع [Dynamics 365 Customer Insights إصدار تجريبي](../trial-signup.md).
 
 ## <a name="add-data-from-on-premises-data-sources"></a>إضافة البيانات من مصادر البيانات المحلية
 
-يتم دعم استيعاب البيانات من مصادر البيانات المحلية في Audience Insights استنادًا إلى تدفقات بيانات Microsoft Power Platform. يمكن تمكين تدفقات البيانات في Customer Insights عن طريق [توفير عنوان URL لبيئة Microsoft Dataverse](create-environment.md) عند إعداد البيئة.
+يتم دعم استيعاب البيانات من مصادر البيانات المحلية في Audience Insights استنادًا إلى تدفقات بيانات Microsoft Power Platform. يمكنك تمكين تدفقات البيانات في Customer Insights من خلال [توفير عنوان URL لبيئة Microsoft Dataverse](create-environment.md) عند إعداد البيئة.
 
-ستستخدم مصادر البيانات التي تم إنشاؤها بعد ربط بيئة Dataverse بـ Customer Insights [تدفقات بيانات Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) بشكل افتراضي. تدعم تدفقات البيانات الاتصال المحلي باستخدام بوابة البيانات. قم بإزالة وإعادة إنشاء مصادر البيانات التي كانت موجودة قبل ربط بيئة Dataverse لأجل [استخدام بوابات البيانات المحلية](/data-integration/gateway/service-gateway-app).
+تستخدم مصادر البيانات التي يتم إنشاؤها بعد ربط بيئة Dataverse مع Customer Insights تدفقات بيانات [Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) بشكل افتراضي. تدعم تدفقات البيانات الاتصال المحلي باستخدام بوابة البيانات. يمكنك إزالة وإعادة إنشاء مصادر البيانات التي كانت موجودة قبل اقتران بيئة Dataverse[باستخدام بوابات البيانات الداخلية](/data-integration/gateway/service-gateway-app).
 
 ستظهر بوابات البيانات من بيئة Power BI أو Power Apps موجودة ويمكنك إعادة استخدامها في Customer Insights. تعرض صفحة مصادر البيانات ارتباطات للوصول إلى بيئةMicrosoft Power Platform ، حيث يمكنك عرض محلي بوابات البيانات المحلية وتكوينها.
 
@@ -48,14 +54,7 @@ ms.locfileid: "7645339"
 > [!div class="mx-imgBorder"]
 > ![مصدر بيانات تمت إضافته.](media/configure-data-datasource-added.png "مصدر بيانات تمت إضافته")
 
-|‏الحالة  |الوصف   |
-|---------|---------|
-|تمت بنجاح   |يتم استيعاب مصادر البيانات بنجاح إذا تم ذكر الوقت في العمود **تم تحديثه**.
-|لم تبدأ   |لا يحتوي مصدر البيانات على بيانات تم استيعابها أو ما زالت في وضع المسودة.         |
-|تحديث    |استيعاب البيانات قيد التقدم. يُمكنك إلغاء هذه العملية من خلال تحديد **إيقاف التحديث** في عمود **إجراءات**. يؤدي إيقاف عملية تحديث مصدر البيانات إلى إرجاعها إلى حالة التحديث الأخيرة.       |
-|‏‏فاشلة     |تسبب استيعاب البيانات في تشغيل أخطاء.         |
-
-حدد القيمة في عمود **الحالة** لأي مصدر بيانات لمراجعة المزيد من التفاصيل. في جزء **تفاصيل التقدم**، قم بتوسيع **مصادر البيانات**. حدد **راجع التفاصيل** لمراجعة المزيد من التفاصيل حول حالة التحديث، بما في ذلك تفاصيل الخطأ وتحديثات عملية انتقال البيانات من الخادم‬‬.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 قد يستغرق تحميل البيانات وقتا. بعد الانتهاء من التحديث بنجاح، يُمكنك مراجعة البيانات المستوعبة من صفحة **الكيانات**. للمزيد من المعلومات، راجع [التفاصيل](entities.md).
 

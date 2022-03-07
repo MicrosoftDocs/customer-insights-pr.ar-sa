@@ -1,92 +1,29 @@
 ### YamlMime:Landing
-title: إمكانية معلومات المشاركة في Dynamics 365 Customer Insights (إصدار أولي)
-summary: جمع البيانات لمواقع الويب الخاصة بك. فهم تفاعلات العملاء واستخدامهم عبر مواقعك، بشكل تفاعلي. استخدم التكامل العميق بين رؤى المشاركة والرؤى الجمهور لإثراء تحليلاتك السلوكية في الوقت الفعلي من خلال تقارير ملف تعريف العميل. إثراء ملفات تعريف العملاء من خلال أنشطة الويب للحصول على بيانات سلوكية في الوقت الفعلي إلى جانب بيانات العملاء ذات الصلة. تحويل عملك للحصول على قيمة فورية من بيانات العملاء.
+title: وقت انتهاء الإصدار الأولي لمعلومات التفاعل
+summary: انتهى الإصدار الأولي لقدرة معلومات التفاعل Dynamics 365 Customer Insights في 15 فبراير 2022. يعني هذا التغيير أن تجربة الإصدار التجريبي لـ Customer Insights لم تعد تتضمن القدرة على إنشاء مسارات أو وظائف إعداد تقارير أخرى. نحن ندعوك لاستكشاف وتقييم الميزات الأخرى العديدة لـ Customer Insights، وهو النظام الأساسي لبيانات عملاء Microsoft (CDP). الرجاء الاتصال بفريق حساب Microsoft الخاص بك مباشرة إذا كانت لديك أي أسئلة بشأن انتهاء الإصدار الأولي للقدرة. سيبقيك فريق الحساب الخاص بك على إطلاع بشأن عمليات الإطلاق القادمة. شكرًا لك!
 metadata:
   title: وثائق معلومات المشاركة (الإصدار الأولي)
   description: مركز المساعدة مع الارتباطات الرئيسية لرؤى المشاركة.
-  ms.service: customer-insights
   ms.subservice: engagement-insights
   ms.topic: hub-page
   author: m-hartmann
   ms.author: mhart
   ms.reviewer: mhart
   ms.date: 09/15/2021
-  ms.openlocfilehash: 0ec5a31a968fc97deeeef3ef444bb558a4ff2b65
-  ms.sourcegitcommit: a371fc1e75b2321e45d3f972a3ac84c725f8cc38
+  ms.openlocfilehash: 99933c69c791da12815ebee3edb6413276b19b09
+  ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
   ms.translationtype: HT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 02/10/2022
-  ms.locfileid: "8107231"
+  ms.lasthandoff: 02/25/2022
+  ms.locfileid: "8350446"
 landingContent:
-- title: حول
+- title: الاتصال
   linkLists:
   - linkListType: overview
     links:
-    - text: مزايا الإمكانات
-      url: overview.md
-    - text: مسرد المصطلحات
-      url: glossary.md
-    - text: خطط الإصدار
-      url: /dynamics365/release-plans/
-- title: إعداد
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: تم البدء
-      url: get-started.md
-    - text: إنشاء مساحة عمل
-      url: create-workspace.md
-    - text: تجهيز موقعك على الويب
-      url: instrument-website.md
-- title: عرض التقارير وتصفيتها
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: عرض التقارير
-      url: view-reports.md
-    - text: عرض تقرير ملفات التعريف الموحدة
-      url: profile-reports.md
-    - text: استخدام مقاطع الجماهير لتصفية التقارير
-      url: integrate-audience-insights-segments.md
-- title: تحليل
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: إنشاء تقارير الأنابيب
-      url: funnel-reports.md
-    - text: تحليل البيانات السلوكية
-      url: curate-dimensions.md
-    - text: إنشاء تقارير مخصصة
-      url: custom-reports.md
-    - text: إنشاء الأحداث المُحسّنة
-      url: refined-events.md
-    - text: تصدير الأحداث
-      url: export-events.md
-- title: موارد المطورين
-  linkLists:
-  - linkListType: reference
-    links:
-    - text: موارد المطورين
-      url: developer-resources.md
-    - text: عينة WebSDK
-      url: websdk-sample.md
-    - text: سيناريوهات SDK ويب متقدمة
-      url: advanced-SDK-implementation.md
-    - text: عينة Android SDK
-      url: get-started-android.md
-    - text: عينة iOS SDK
-      url: get-started-ios.md
-- title: الإدارة
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: إدارة البيئات ومساحات العمل
-      url: manage-environments-workspaces.md
-    - text: الاتصال بمعلومات الجمهور
-      url: integrate-audience-insights-engagement-insights.md
-    - text: إدارة ملفات تعريف الارتباط وموافقة المستخدم
-      url: user-consent-storage.md
-    - text: حذف البيانات الشخصية وتصديرها
-      url: delete-export-personal-data.md
-    - text: حدود الخدمة
-      url: ../service-limits.md
+    - text: الانضمام إلى مجتمع Dynamics 365
+      url: https://go.microsoft.com/fwlink/?linkid=2073991
+    - text: مشاركة أفكارك
+      url: https://go.microsoft.com/fwlink/?linkid=2074172
+    - text: الإبلاغ عن مشكلة
+      url: https://go.microsoft.com/fwlink/?linkid=2079641

@@ -2,18 +2,17 @@
 title: استخدام الأبعاد السكانية لتقسيم البيانات السلوكية (أبعاد منظمة)
 description: استخدم الأبعاد المنظمة لملف التعريف الموحد لتمكين خصائص ملف تعريف العميل لرؤى الجمهور.
 ms.date: 07/27/2021
-ms.service: customer-insights
 ms.topic: conceptual
 author: mkisel
 ms.author: mkisel
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 50bb800c9e097d03cc6f26f79819c741ab5e8baf
-ms.sourcegitcommit: 1c396394470df8e68c2fafe3106567536ff87194
+ms.openlocfilehash: 95395e09bc0ba5ba93138957c62105f31c709e91
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "7461087"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8232951"
 ---
 # <a name="use-demographic-dimensions-for-splitting-behavioral-data"></a>استخدام الأبعاد السكانية لتقسيم البيانات السلوكية
 
@@ -29,7 +28,7 @@ ms.locfileid: "7461087"
 - بيئة رؤى مشاركة حيث توجد لديك بيانات ملف تعريف العملاء المرتبطة ببيئة رؤى الجمهور حيث يتم إنشاء ملفات تعريف العملاء. مزيد من المعلومات: [إنشاء ارتباط بين رؤى الجمهور ورؤى المشاركة](integrate-audience-insights-engagement-insights.md)
 
 > [!NOTE]
-> بعد إنشاء ارتباط بين بيئات رؤى الجمهور وبيئات رؤى المشاركة، قد تحتاج فقط إلى بيانات خاصة بخصائص ملف تعريف العميل، والتي يمكن أن تكون مفيدة كأبعاد في رؤى المشاركة. لمزيد من المعلومات، انتقل إلى [تمكين سمات وشرائح ملفات التعريف الموحدة لرؤى الجمهور](integrate-audience-insights-engagement-insights.md#enable-audience-insights-unified-profiles-attributes-and-segments).<!--note from editor: Suggested. -->
+> بعد إنشاء ارتباط بين بيئات رؤى الجمهور وبيئات رؤى المشاركة، قد تحتاج فقط إلى بيانات خاصة بخصائص ملف تعريف العميل، والتي يمكن أن تكون مفيدة كأبعاد في رؤى المشاركة. لمزيد من المعلومات، انتقل إلى [تمكين سمات وشرائح ملفات التعريف الموحدة لرؤى الجمهور](integrate-audience-insights-engagement-insights.md#enable-audience-insights-unified-profiles-attributes-and-segments).
 
 ## <a name="create-a-new-custom-report"></a>إنشاء تقرير مخصص جديد
 

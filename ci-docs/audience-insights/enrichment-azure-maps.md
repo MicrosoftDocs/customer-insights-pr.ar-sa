@@ -3,18 +3,17 @@ title: إثراء ملفات تعريف العملاء ببيانات الموق
 description: معلومات عامة حول إثراء الطرف الأول لخرائط Azure.
 ms.date: 08/31/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 63f241c27ec86f357c83a301d6797f9ff87c2241
-ms.sourcegitcommit: 2acda3c5adf40bc3f5bbb4b2b4b6c22f84371da7
+ms.openlocfilehash: cb1c0778a398ef6d338ce6cf9e199eae0c344a5c
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "7466746"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8226433"
 ---
 # <a name="enrichment-of-customer-profiles-with-azure-maps-preview"></a>إثراء ملفات تعريف العملاء باستخدام خرائط Azure (إصدار أولي)
 
@@ -80,13 +79,13 @@ ms.locfileid: "7466746"
 
 لبدء عملية الإثراء، حدد **تشغيل** من شريط الأوامر. يمكنك أيضًا السماح للنظام بتشغيل الإثراء تلقائيًا كجزء من [التحديث المجدول](system.md#schedule-tab). يعتمد وقت المعالجة على حجم بيانات العميل وأوقات استجابة واجهة برمجة التطبيقات.
 
-بعد اكتمال عملية الإثراء، يمكنك مراجعة بيانات ملفات تعريف العملاء التي تم إثراؤها حديثًا ضمن **عمليات الإثراء الخاصة بي**. بالإضافة إلى ذلك ، ستجد وقت التحديث الأخير وعدد ملفات التعريف التي تم إثراؤها.
+بعد اكتمال عملية الإثراء، يمكنك مراجعة بيانات ملفات تعريف العملاء التي تم إثراؤها حديثًا ضمن **عمليات الإثراء الخاصة بي**. بالإضافة إلى ذلك، ستجد وقت التحديث الأخير وعدد ملفات التعريف التي تم إثراؤها.
 
 يمكنك الوصول إلى عرض مفصل لكل ملف تعريف تم إثراؤه من خلال تحديد **عرض البيانات التي تم إثراؤها**.
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-قم بالبناء أعلى بيانات العملاء التي تم إثرائها. أنشئ [الشرائح](segments.md)، و[المقاييس](measures.md)، وقم كذلك [بتصدير البيانات](export-destinations.md) لتقديم تجارب مخصصة لعملائك.
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 ## <a name="data-privacy-and-compliance"></a>خصوصية البيانات والتوافق
 

@@ -1,27 +1,26 @@
 ---
 title: روبوت لـ Microsoft Teams
 description: ابحث عن ملفات تعريف العملاء الموحدة في Microsoft Teams بمساعدة الروبوت.
-ms.date: 04/21/2020
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 03299610fd41a7e142e3c9723fad56ce7f90e083
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: d6b016c1ec35e26ce6449333234edfd218bc9354
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267936"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8232086"
 ---
 # <a name="teams-bot-for-dynamics-365-customer-insights-preview"></a>روبوت Teams في Dynamics 365 Customer Insights (معاينة)
 
 اتصل بتطبيق Microsoft Teams لتمكين الروبوت من البحث عن ملفات تعريف العملاء الموحدة في قنوات Teams.
 
 > [!div class="mx-imgBorder"]
-> ![روبوت Teams يعرض سجل عميل](media/teams-bot.png "روبوت Teams يعرض سجل عميل")
+> ![يعرض روبوت Teams سجل العميل.](media/teams-bot.png "روبوت Teams يعرض سجل عميل")
 
 ## <a name="prerequisites"></a>المتطلبات الأساسية
 
@@ -31,7 +30,10 @@ ms.locfileid: "5267936"
 - اكتملت [عملية التوحيد](data-unification.md).
 - تُضاف الحقول إلى [فهرس البحث والتصفية](search-filter-index.md).
 - يوجد Customer Insights وTeams في المؤسسة نفسها.
+- بيئتك لديها الجمهور المستهدف الأساسي الذي تم تعيينه للعملاء الفرديين. حسابات الأعمال غير مدعومة.
 
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRElj]
 ## <a name="configure-the-bot"></a>تكوين الروبوت
 
 1. في رؤى الجمهور، انتقل إلى **البيانات‏‎** > **وجهات التصدير‬**.

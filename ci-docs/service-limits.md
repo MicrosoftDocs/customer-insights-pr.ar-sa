@@ -2,19 +2,18 @@
 title: حدود الخدمة في Dynamics 365 Customer Insights
 description: فهم الحدود والقيود.
 ms.date: 09/03/2021
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: eb25e050b8aa768e6e1d8d4c5adce6095cccc346
-ms.sourcegitcommit: 31a9b531dacd3a6465b3030c704ff5c085b7e122
+ms.openlocfilehash: 9bf8f03b785fb3035e3fc979a3304d4e98fd8d28
+ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7791967"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8350391"
 ---
 # <a name="service-limits-in-customer-insights-capabilities"></a>حدود الخدمة في إمكانات Customer Insights
 
@@ -22,27 +21,25 @@ ms.locfileid: "7791967"
 
 ## <a name="audience-insights"></a>رؤى الجمهور
 
-### <a name="service-limits-in-dynamics-365-customer-insights-audience-insights-capability"></a>حدود الخدمة في قدرة رؤى الجمهور في Dynamics 365 Customer Insights
-
-| المنطقة  | الحدود  | ملاحظات  |
+| المساحة  | الحدود  | ملاحظات  |
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
 | المقاطع والمقاييس والتنبؤات | 300  | لا يمكن أن يتجاوز إجمالي عدد [المقاطع](audience-insights/segments.md)، و[القياسات](audience-insights/measures.md)، و[التنبؤات](audience-insights/predictions.md) المجمعة 300.  |
 | العلاقات | 20 مستوى من التعمق في العلاقات في مسارات الكيانات. | عند إنشاء [شرائح](audience-insights/segments.md) أو [قياسات](audience-insights/measures.md) باستخدام واجهة منشئ البيانات، يمكن أن تكون لمسارات الكيانات ما يصل إلى 20 نقطة علاقة بين كيان البدء والكيان الهدف.  |
 
+<!--
+## Engagement insights
 
-## <a name="engagement-insights"></a>معلومات المشاركة
+### Workspace and event quotas
 
-### <a name="workspace-and-event-quotas"></a>مساحة العمل والحصص النسبية للأحداث
+Engagement insights is a highly scalable application that can support millions of events per second. During public preview, events have a volume threshold. There's also a limit to the number of workspaces in an organization.
 
-رؤى المشاركة هو تطبيق قابل للتوسعة للغاية يمكنه دعم ملايين الأحداث في الثانية. أثناء المعاينة العامة، يكون للأحداث حد وحدة تخزين. هناك أيضا حد لعدد مساحات العمل في المؤسسة.
+### Engagement insights limits
 
-### <a name="engagement-insights-limits"></a>قيود رؤى المشاركة
+- Maximum event volume per workspace  = 100 events per second
 
-- الحد الأقصى لحجم الحدث لكل مساحة عمل = 100 حدث في الثانية
+- Maximum number of workspaces per organization = 100
 
-- الحد الأقصى لعدد مساحات العمل لكل مؤسسة = 100
-
-عندما تتجاوز الأحداث العتبة، يمكن أن يؤدي ذلك إلى فقدان البيانات في التقارير استنادا إلى تلك الأحداث. يمكنك [الاتصال بالدعم](https://go.microsoft.com/fwlink/?linkid=2145734) لطلب زيادة في مستوى الصوت قبل تجاوز الحدود. وسنعمل معك لتحديد حاجتك لزيادة حجم الطلب ودعمه.
-
+When events exceed the threshold, it can lead to loss of data in reports based on those events. You can [contact support](https://go.microsoft.com/fwlink/?linkid=2145734) to request a volume increase before you exceed limits. We'll work with you to determine your need for a volume increase and support your request.
+-->
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

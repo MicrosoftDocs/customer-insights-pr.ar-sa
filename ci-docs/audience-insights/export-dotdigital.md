@@ -1,43 +1,49 @@
 ---
 title: تصدير بيانات Customer Insights إلى DotDigital
-description: اعرف كيفية تكوين الاتصال بـ DotDigital.
-ms.date: 11/14/2020
-ms.reviewer: philk
-ms.service: customer-insights
+description: تعرف على كيفية تهيئة الاتصال والتصدير إلى إعلانات DotDigital.
+ms.date: 10/08/2021
+ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: pkieffer
+ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 573a22e24f84c65fc4d21faf823cace801cc7ea3
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: f9302e17c07238d837dcafb82baecb5aedda17de
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269084"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8231602"
 ---
-# <a name="connector-for-dotdigital-preview"></a>موصل DotDigital (معاينة)
+# <a name="export-segments-to-dotdigital-preview"></a>تصدير الشرائح إلى DotDigital (إصدار أولي)
 
 يمكنك تصدير شرائح من ملفات تعريف العملاء الموحدة إلى دفاتر عناوين DotDigital واستخدامها للحملات والتسويق بواسطة البريد الإلكتروني ولإنشاء شرائح العملاء بواسطة DotDigital. 
 
-## <a name="prerequisites"></a>المتطلبات الأساسية
+## <a name="prerequisites-for-a-connection"></a>المتطلبات الأساسية لاتصال
 
--   لديك [حساب DotDigital](https://dotdigital.com/) وبيانات اعتماد مسؤول مطابقة.
+-   لديك [حساب DotDigital](https://dotdigital.com/) وأنشأت [مستخدم API](https://support.dotdigital.com/hc/articles/115001718730-How-do-I-create-an-API-user). ستحتاج إلى استخدام بيانات اعتماد مستخدم API لإنشاء اتصال
 -   هناك دفاتر عناوين موجودة في DotDigital والمعرفات المناظرة. يمكن العثور على المعرف في URL عندما تقوم بتحديد وفتح دفتر عناوين. لمزيد من المعلومات، راجع [دفاتر عناوين DotDigital](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book).
 -   لقد قمت [بتكوين الشرائح](segments.md) في رؤى الجمهور.
 -   تحتوي ملفات تعريف العملاء الموحدة في الشرائح المصدّرة على حقل يمثل عنوان البريد الإلكتروني.
 
-## <a name="connect-to-dotdigital"></a>الاتصال بـ DotDigital
+## <a name="known-limitations"></a>القيود المعروفة
 
-1. انتقل إلى **المسؤول** > **وجهات التصدير**.
+- ما يصل إلى مليون ملف تعريف لكل عميل لكل عملية تصدير إلى DotDigital.
+- يقتصر التصدير إلى DotDigital على الشرائح.
+- يمكن أن يستغرق تصدير مقاطع بإجمالي مليون ملف تعريف عميل ما يصل إلى 3 ساعات بسبب القيود من جانب المزود. 
+- يعتمد عدد ملفات تعريف العملاء التي يمكنك تصديرها إلى DotDigital ومحدودًا على عقدك مع DotDigital.
 
-1. أسفل **DotDigital**، حدد **إعداد**.
+## <a name="set-up-connection-to-dotdigital"></a>إعداد الاتصال بـ DotDigital
 
-1. في حقل **الاسم المعروض**، أدخل اسمًا سهل التمييز لوجهة التصدير.
+1. انتقل إلى **المسؤول** > **الاتصالات**.
 
-   :::image type="content" source="media/DotDigital_config.PNG" alt-text="جزء التكوين لتصدير DotDigital.":::
+1. حدد **إضافة اتصال** واختر **DotDigital** لتكوين الاتصال.
 
-1. أدخل **اسم المستخدم وكلمة المرور في DotDigital**.
+1. اعط اتصالك اسمًا يمكن التعرف عليه في حقل **الاسم المعروض**. يصف الاسم ونوع الاتصال هذا الاتصال. ننصح باختيار اسم يوضح الغرض والهدف من الاتصال.
+
+1. اختر الشخص الذي يمكنه استخدام هذا الاتصال. إذا لم تتخذ أي إجراء، فإن الإعداد الافتراضي سيكونالمسؤولين. لمزيد من المعلومات، راجع [السماح للمساهمين باستخدام اتصال للتصديرات](connections.md#allow-contributors-to-use-a-connection-for-exports).
+
+1. أدخل **اسم مستخدم وكلمة مرور واجهة برمجة تطبيقات DotDigital**. 
 
 1. أدخل **[معرف دفتر عناوين DotDigital](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book)**.
 
@@ -47,26 +53,31 @@ ms.locfileid: "5269084"
 
 1. حدد **إضافة نفسك كمستخدم تصدير** ووفر بيانات اعتماد Customer Insights.
 
-1. حدد **التالي** لتكوين التصدير.
+1. حدد **حفظ** لإكمال الاتصال. 
 
-## <a name="configure-the-connector"></a>تكوين الموصل
+## <a name="configure-an-export"></a>تكوين تصدير
 
-1. في القسم **مطابقة البيانات**، في حقل **البريد الإلكتروني**، حدد الحقل في ملف تعريف العميل الموحد الذي يمثل عنوان البريد الإلكتروني للعميل. كرر نفس الخطوات للحقول الاختيارية الأخرى مثل **الاسم الأول** و **اسم العائلة** و **الاسم الكامل** و **الجنس** و **الرمز البريدي**.
+يمكنك تكوين هذا التصدير إذا كان لديك حق الوصول إلى اتصال من هذا النوع. لمزيد من المعلومات، راجع [الأذونات اللازمة لتكوين تصدير](export-destinations.md#set-up-a-new-export).
+
+1. انتقل إلى **البيانات** > **التصديرات**.
+
+1. لإنشاء اتصال جديد، حدد **إضافة وجهة**.
+
+1. في حقل **الاتصال للتصدير**، اختر اتصالاً من قسم DotDigital. إذا لم تشاهد اسم المقطع هذا، لن تكون هناك اتصالات من هذا النوع متوفرة لك.
+
+
+1. في قسم **مطابقة البيانات** في حقل **البريد الإلكتروني**، حدد الحقل الذي يمثل عنوان البريد الإلكتروني للعميل. كرر نفس الخطوات للحقول الاختيارية الأخرى مثل **الاسم الأول** و **اسم العائلة** و **الاسم الكامل** و **الجنس** و **الرمز البريدي**.
 
 1. حدد الشرائح التي تريد تصديرها. يمكنك تصدير ما يصل إلى مليون من ملفات تعريف العملاء إلى DotDigital.
 
 1. حدد **حفظ**.
 
-## <a name="export-the-data"></a>تصدير البيانات
+لا تعمل عملية التصدير التي يتم حفظها على التصدير في الحال.
 
-يمكنك [تصدير البيانات عند الطلب](export-destinations.md). سيعمل التصدير أيضًا مع كل [تحديث مجدول](system.md#schedule-tab). في DotDigital، يمكنك الآن العثور على الشرائح في [دفاتر عناوين DotDigital](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book).
+يتم تشغيل عملية التصدير مع كل [تحديث مجدول](system.md#schedule-tab). يمكنك أيضًا [تصدير البيانات عند الطلب](export-destinations.md#run-exports-on-demand). 
+ 
+في DotDigital، يمكنك الآن العثور على الشرائح في [دفاتر عناوين DotDigital](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book).
 
-## <a name="known-limitations"></a>القيود المعروفة
-
-- حتى مليون من ملفات التعريف لكل تصدير إلى DotDigital.
-- يقتصر التصدير إلى DotDigital على الشرائح.
-- قد تستغرق عملية تصدير الشرائح التي تتضمن ما يصل إلى مليون ملف تعريف بشكل إجمالي ثلاث ساعات كحدٍ أقصى نتيجة للقيود من جانب الموفر. 
-- يتوقف عدد ملفات التعريف التي يمكنك تصديرها إلى DotDigital على العقد مع DotDigital، وهذا العدد مقيد بالعقد.
 
 ## <a name="data-privacy-and-compliance"></a>خصوصية البيانات والتوافق
 

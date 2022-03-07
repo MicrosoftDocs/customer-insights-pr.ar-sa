@@ -3,20 +3,22 @@ title: دليل نموذج التنبؤ بخسارة الاشتراك‬
 description: استخدم هذا النموذج للتعرف على النموذج الجاهز للتنبؤ بخسارة الاشتراك‬.
 ms.date: 11/19/2020
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
-author: diegogranados117
-ms.author: digranad
+author: m-hartmann
+ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: 324e5c19778230dd978b2f4e9156a2dd82b3d2bd
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+searchScope:
+- ci-create-prediction
+- customerInsights
+ms.openlocfilehash: 5de57155b47b74efa4c5ef2fe63a3c87505644be
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595502"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355597"
 ---
-# <a name="subscription-churn-prediction-preview-sample-guide"></a>دليل نموذج التنبؤ بخسارة الاشتراك‬ (معاينة)
+# <a name="subscription-churn-prediction-sample-guide"></a>دليل نموذج التنبؤ بخسارة الاشتراك‬
 
 سوف نرشدك عبر مثال شامل للتنبؤ بخسارة الاشتراك باستخدام البيانات المتوفرة أدناه. 
 
@@ -31,7 +33,7 @@ ms.locfileid: "5595502"
 
 ## <a name="task-1---ingest-data"></a>المهمة 1 - استيعاب البيانات
 
-راجع المقالات [حول استيعاب البيانات](data-sources.md) و[استيراد مصادر البيانات باستخدام موصلات Power Query](connect-power-query.md) على وجه التحديد. تفترض المعلومات التالية أنك ملمّ باستيعاب البيانات بشكل عام. 
+راجع المقالات المتعلقة [باستيعاب البيانات](data-sources.md) واستيراد [مصادر البيانات باستخدام موصلات Power Query ](connect-power-query.md). تفترض المعلومات التالية أنك ملمّ باستيعاب البيانات بشكل عام. 
 
 ### <a name="ingest-customer-data-from-ecommerce-platform"></a>استيعاب بيانات العملاء من النظام الأساسي للتجارة الإلكترونية
 
@@ -128,7 +130,7 @@ ms.locfileid: "5595502"
 
 1. انتقل إلى علامة التبويب **مطابقة** وحدد **تعيين الأمر**.
 
-1. من القائمة المنسدلة **أساسي**، اختر **eCommerceContacts : eCommerce** كمصدر أساسي وقم بتضمين جميع السجلات.
+1. في القائمة المنسدلة **الرئيسية**، اختر **eCommerceContacts : eCommerce** باعتباره المصدر الرئيسي وقم بتضمين جميع السجلات.
 
 1. في القائمة المنسدلة **الكيان 2**، اختر **loyCustomers : LoyaltyScheme** وقم بتضمين جميع السجلات.
 
@@ -138,16 +140,16 @@ ms.locfileid: "5595502"
 
 1. أضف الشرط الأول باستخدام FullName.
 
-   * لخيار eCommerceContacts، حدد **FullName‎** في القائمة المنسدلة.
-   * لخيار loyCustomers، حدد **FullName‎** في القائمة المنسدلة.
+   * بالنسبة إلى eCommerceContacts، حدد **FullName** في القائمة المنسدلة.
+   * بالنسبة إلى loyCustomers، حدد **FullName** في القائمة المنسدلة.
    * حدد القائمة المنسدلة **تسوية**، واختر **النوع (الهاتف والاسم والعنوان و...)**.
    * عيّن **مستوى الدقة**: **أساسي** و **قيمة**: **عالي**.
 
 1. أدخل الاسم **FullName, Email** للقاعدة الجديدة.
 
    * أضف شرطًا ثانيًا لعنوان البريد الإلكتروني من خلال تحديد **إضافة شرط**
-   * للكيان eCommerceContacts، حدد **EMail** في القائمة المنسدلة.
-   * للكيان loyCustomers، حدد **EMail** في القائمة المنسدلة. 
+   * بالنسبة للكيان eCommerceContacts، اختر **البريد الإلكتروني** في القائمة المنسدلة.
+   * بالنسبة للكيان loyCustomers، اختر **البريد الإلكتروني** في القائمة المنسدلة. 
    * اترك الخيار "تسوية" فارغًا. 
    * عيّن **مستوى الدقة**: **أساسي** و **قيمة**: **عالي**.
 
@@ -168,7 +170,7 @@ ms.locfileid: "5595502"
 
 ## <a name="task-3---configure-the-subscription-churn-prediction"></a>المهمة 3 - تكوين التنبؤ بخسارة الاشتراك
 
-من خلال وضع ملفات تعريف العملاء الموحدة، يمكننا الآن تشغيل التنبؤ بخسارة الاشتراك. للحصول على خطوات تفصيلية، راجع المقالة [التنبؤ بخسارة الاشتراك (معاينة)](predict-subscription-churn.md). 
+من خلال وضع ملفات تعريف العملاء الموحدة، يمكننا الآن تشغيل التنبؤ بخسارة الاشتراك. للحصول على خطوات تفصيلية، راجع مقالة [توقع خسارة الاشتراك](predict-subscription-churn.md). 
 
 1. انتقل إلى **الذكاء** > **اكتشاف** وحدد لاستخدام **نموذج خسارة العملاء**.
 

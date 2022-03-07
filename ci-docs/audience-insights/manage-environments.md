@@ -2,19 +2,21 @@
 title: إنشاء بيئات وإدارتها
 description: تعرف على كيفية تسجيل الاشتراك في الخدمة وكيفية إدارة البيئات.
 ms.date: 12/06/2021
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 8251cac9f95455b61eb0300b6c72cd4ab2969591
-ms.sourcegitcommit: 3807202283dd116a30f900a163d8141db621e5a8
+searchScope:
+- ci-system-about
+- customerInsights
+ms.openlocfilehash: d9e0ee726dbbfcf330022c4d95747551d3114e7e
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "8046317"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354263"
 ---
 # <a name="manage-environments"></a>إدارة البيئات
 
@@ -44,12 +46,12 @@ ms.locfileid: "8046317"
    
 تتيح لك خطوة **Microsoft Dataverse** توصيل Customer Insights ببيئة Dataverse الخاصة بك.
 
-لاستخدام [نماذج التنبؤ الجاهزة](predictions-overview.md#out-of-box-models)، قم بتكوين مشاركة البيانات باستخدام Dataverse. أو يمكنك تمكين عرض البيانات من مصادر البيانات المحلية، مما يوفر عنوان URL لبيئة Microsoft Dataverse التي تديرها مؤسستك. حدِّد **تمكين مشاركة البيانات** لمشاركة بيانات إخراج Customer Insights مع مستودع بيانات مُدار بواسطة Dataverse.
+لاستخدام [نماذج التنبؤ الجاهزة](predictions-overview.md#out-of-box-models)، قم بتكوين مشاركة البيانات باستخدام Dataverse. أو يمكنك تمكين عرض البيانات من مصادر البيانات المحلية، مما يوفر عنوان URL لبيئة Microsoft Dataverse التي تديرها مؤسستك.
 
 > [!IMPORTANT]
 > يجب أن تكون Customer Insights وDataverse في نفس المنطقة لتمكين مشاركة البيانات.
 
-:::image type="content" source="media/dataverse-data-sharing.png" alt-text="خيارات التكوين لتمكين مشاركة البيانات مع Microsoft Dataverse.":::
+:::image type="content" source="media/dataverse-provisioning.png" alt-text="خيارات التكوين لتمكين مشاركة البيانات مع Microsoft Dataverse.":::
 
 > [!NOTE]
 > لا يدعم Customer Insights سيناريوهات مشاركة البيانات التالية:

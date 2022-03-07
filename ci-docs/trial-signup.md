@@ -5,16 +5,15 @@ author: m-hartmann
 ms.author: mhart
 ms.date: 09/30/2021
 ms.topic: get-started
-ms.service: customer-insights
 ms.custom: template-trial-setup
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: dc1ea94ad55886c605d27caea031e00964f6f7c8
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: 1b50da077cb0584ca9f277b276d0e9ebb46b2c5d
+ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645475"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8350207"
 ---
 # <a name="sign-up-for-a-free-dynamics-365-customer-insights-trial"></a>التسجيل للحصول على إصدار تجريبي مجاني من Dynamics 365 Customer Insights
 
@@ -32,23 +31,12 @@ ms.locfileid: "7645475"
 
 تتضمن البيئة التجريبية الخاصة بك نفس ميزات الإصدار المدفوع. ترشدك الارتباطات أدناه عبر بعض الميزات الرئيسية.
 
-### <a name="audience-insights"></a>رؤى الجمهور
-
 - [بدء التشغيل السريع لرؤى الجمهور.](audience-insights/get-started.md)
 - [إضافة مزيد من المستخدمين وتعيين الأذونات.](audience-insights/permissions.md)
 - [استيعاب مصادر البيانات](audience-insights/data-sources.md) وتشغيلها عبر [عملية توحيد البيانات](audience-insights/data-unification.md) للحصول على [ملفات تعريف موحدة للعملاء](audience-insights/customer-profiles.md).
 - [إثراء ملفات التعريف الموحدة للعملاء](audience-insights/enrichment-hub.md) أو [تشغيل النماذج التنبؤية](audience-insights/predictions-overview.md)
 - [إنشاء مقاطع](audience-insights/segments.md) لتجميع العملاء، و[القياسات](audience-insights/measures.md) لمراجعة مؤشرات KPI.
 - إعداد [الاتصالات](audience-insights/connections.md) و [التصديرات](audience-insights/export-destinations.md) لمعالجة مجموعات فرعية من بياناتك في تطبيقات أخرى.
-
-### <a name="engagement-insights"></a>معلومات المشاركة
-
-- [بدء التشغيل السريع لمعلومات المشاركة.](engagement-insights/get-started.md)
-- [إنشاء مساحة عمل](engagement-insights/create-workspace.md) وإضافة الأعضاء.
-- [أضف الرمز إلى موقع الويب](engagement-insights/instrument-website.md) أو [تطبيق الأجهزة المحمولة](engagement-insights/developer-resources.md#capture-events-from-mobile-apps).
-- اعرض [تقريرًا في الوقت الحقيقي](engagement-insights/view-reports.md) أو أنشئ [تقارير مخصصة](engagement-insights/custom-reports.md).
-- [إنشاء أحداث مكررة](engagement-insights/refined-events.md) للتصدير.
-- [قم بتصدير البيانات](engagement-insights/export-events.md) إلى Azure Data Lake Storage.
 
 ## <a name="additional-resources"></a>الموارد الإضافية
 

@@ -1,22 +1,24 @@
 ---
-title: التحديث التزايدي لمصادر البيانات المستندة إلى Power Query
-description: قم بتحديث البيانات الجديدة والمحدثة لمصادر البيانات الكبيرة استناداً إلى Power Query.
+title: التحديث التزايدي لمصادر البيانات استنادًا إلى Power Query
+description: تحديث البيانات الجديدة والمحدثة لمصادر البيانات الكبيرة استنادًا إلى Power Query.
 ms.date: 12/06/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: f614d701aeb06720a60b14549a7fe666f8fe0617
-ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
+searchScope:
+- ci-system-schedule
+- customerInsights
+ms.openlocfilehash: 62632efda3c0c7e53fcdd8864b053ba93e2918bc
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900239"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8353665"
 ---
-# <a name="incremental-refresh-for-data-sources-based-on-power-query"></a>تحديث تزايدي لمصادر البيانات المستندة إلى Power Query
+# <a name="incremental-refresh-for-data-sources-based-on-power-query"></a>التحديث التزايدي لمصادر البيانات استنادًا إلى Power Query
 
 يناقش هذا المقال كيفية تكوين تحديث تزايدي لمصادر البيانات استنادًا إلى Power Query.
 
@@ -28,9 +30,9 @@ ms.locfileid: "7900239"
 
 ## <a name="configure-incremental-refresh"></a>تكوين التحديث التزايدي
 
-تسمح رؤى الجمهور بالتحديث التزايدي لمصادر البيانات التي تم استيرادها من خلال Power Query والتي تدعم الاستيعاب التزايدي. على سبيل المثال، قواعد بيانات Azure SQL مع حقول التاريخ والوقت، والتي تشير إلى تاريخ آخر تحديث لسجلات البيانات.
+تسمح معلومات الجمهور بالتحديث التزايدي لمصادر البيانات المستوردة من Power Query والتي تدعم الاستيعاب التزايدي. على سبيل المثال، قواعد بيانات Azure SQL مع حقول التاريخ والوقت، والتي تشير إلى تاريخ آخر تحديث لسجلات البيانات.
 
-1. [إنشاء مصدر بيانات جديد استنادًا إلى Power Query](connect-power-query.md).
+1. [إنشاء مصدر بيانات جديدة استنادًا إلى Power Query](connect-power-query.md).
 
 1. قدم **اسمًا** لمصدر البيانات.
 

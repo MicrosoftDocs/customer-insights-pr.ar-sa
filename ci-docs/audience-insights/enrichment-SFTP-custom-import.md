@@ -3,18 +3,17 @@ title: إثراء البيانات باستخدام الاستيراد المخ�
 description: معلومات عامة حول إثراء البيانات باستخدام الاستيراد المخصص لبروتوكول SFTP‬‬
 ms.date: 04/09/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 9331cf8057850e2fbe03622831f388e73056d938
-ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
+ms.openlocfilehash: e4b9a65eb50f75e0243fabfc10b501cf7acf4490
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6555383"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8229611"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>إثراء ملفات تعريف العملاء بواسطة البيانات المخصصة (معاينة)
 
@@ -44,6 +43,8 @@ ms.locfileid: "6555383"
 1.  حدد **التالي** وأدخل **المسار** و **اسم الملف** الخاصين بملف البيانات الذي تريد استيراده.
 
     :::image type="content" source="media/enrichment-SFTP-path-and-filename.png" alt-text="لقطة شاشة عند إدخال موقع البيانات.":::
+
+1. حدد **التالي** واختر مجموعة بيانات العملاء. يمكن أن يكون هذا إما جميع ملفات تعريف العملاء أو مقطعًا.
 
 1. حدد **التالي** وأدخل اسمًا للإثراء واسمًا لكيان الإخراج. 
 
@@ -123,6 +124,6 @@ ms.locfileid: "6555383"
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-قم بالبناء أعلى بيانات العملاء التي تم إثرائها. أنشئ [الشرائح](segments.md) و[القياسات](measures.md) و[تصدير البيانات](export-destinations.md) لتسليم تجارب مخصصة لعملائك.
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

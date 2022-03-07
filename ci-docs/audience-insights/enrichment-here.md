@@ -3,18 +3,17 @@ title: الإثراء باستخدام HERE Technologies لجهة خارجية
 description: معلومات عامة حول خدمات إثراء البيانات من طرف ثالث HERE Technologies.
 ms.date: 04/09/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 00be15367001a5f4342d60bb284726ef7154d05c
-ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
+ms.openlocfilehash: 1b46e8913c6d288b93cdf32e195b5e9387916e70
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6555291"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8230366"
 ---
 # <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>إثراء ملفات تعريف العملاء بواسطة HERE Technologies (معاينة)
 
@@ -79,13 +78,13 @@ ms.locfileid: "6555291"
 
 لبدء عملية الإثراء، حدد **تشغيل** من شريط الأوامر. يمكنك أيضًا السماح للنظام بتشغيل الإثراء تلقائيًا كجزء من [التحديث المجدول](system.md#schedule-tab). سيعتمد وقت المعالجة على حجم بيانات العملاء وأوقات استجابة API من HERE Technologies.
 
-بعد اكتمال عملية الإثراء، يمكنك مراجعة بيانات ملفات تعريف العملاء التي تم إثراؤها حديثًا ضمن **عمليات الإثراء الخاصة بي**. بالإضافة إلى ذلك ، ستجد وقت التحديث الأخير وعدد ملفات التعريف التي تم إثراؤها.
+بعد اكتمال عملية الإثراء، يمكنك مراجعة بيانات ملفات تعريف العملاء التي تم إثراؤها حديثًا ضمن **عمليات الإثراء الخاصة بي**. بالإضافة إلى ذلك، ستجد وقت التحديث الأخير وعدد ملفات التعريف التي تم إثراؤها.
 
 يمكنك الوصول إلى عرض مفصل لكل ملف تعريف تم إثراؤه من خلال تحديد **عرض البيانات التي تم إثراؤها**.
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-قم بالبناء أعلى بيانات العملاء التي تم إثرائها. أنشئ [الشرائح](segments.md) و[القياسات](measures.md) وحتى [تصدير البيانات](export-destinations.md) لتسليم تجارب مخصصة لعملائك.
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 ## <a name="data-privacy-and-compliance"></a>خصوصية البيانات والتوافق
 

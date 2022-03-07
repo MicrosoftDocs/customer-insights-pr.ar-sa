@@ -3,18 +3,20 @@ title: التعامل مع واجهات API
 description: استخدام واجهات API وفهم القيود.
 ms.date: 05/10/2021
 ms.reviewer: wimohabb
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 9326f821f9970ba2254ab804814e369abb677eb0
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+searchScope:
+- ci-system-api-usage
+- customerInsights
+ms.openlocfilehash: b1e022f8afb8b7dbb707636009b6a25ee242a4e0
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304726"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354769"
 ---
 # <a name="work-with-customer-insights-apis"></a>التعامل مع واجهات API في Customer Insights
 
@@ -35,7 +37,7 @@ ms.locfileid: "6304726"
  
    يؤدي تمكين واجهات API إلى إنشاء مفتاح اشتراك أساسي وثانوي للمثيل الذي يتم استخدامه في طلبات API. يمكنك إعادة إنشاء المفاتيح بتحديد **إعادة إنشاء الأساسي** أو **إعادة إنشاء الثانوي** على **المسؤول** > **الأذونات** > **واجهات API**.
 
-   :::image type="content" source="media/enable-apis.gif" alt-text="تمكين واجهات API في Customer Insights":::
+<!--  :::image type="content" source="media/enable-apis.gif" alt-text="Enable Customer Insights APIs."::: -->
 
 1. حدد **استكشاف واجهات API** [لتجربة واجهات API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
 
@@ -49,7 +51,7 @@ ms.locfileid: "6304726"
 
 ستظهر استجابة HTTP تحته.
 
-   :::image type="content" source="media/try-apis.gif" alt-text="كيفية اختبار واجهات برمجة التطبيقات.":::
+<!--   :::image type="content" source="media/try-apis.gif" alt-text="How to test the APIs."::: -->
 
 ## <a name="create-a-new-app-registration-in-the-azure-portal"></a>إنشاء تسجيل تطبيق جديد في مدخل Azure
 
@@ -65,7 +67,7 @@ ms.locfileid: "6304726"
 
 1. على تسجيل التطبيق الجديد، انتقل إلى **أذونات واجهة API**.
 
-   :::image type="content" source="media/app-registration-1.gif" alt-text="كيفية تعيين أذونات API في تسجيل التطبيق.":::
+<!--   :::image type="content" source="media/app-registration-1.gif" alt-text="How to set API permissions in App registration."::: -->
 
 1. حدد **إضافة إذن**، وحدد **Customer Insights** في الجزء الجانبي.
 
@@ -77,7 +79,7 @@ ms.locfileid: "6304726"
 
 يمكنك استخدام معرف التطبيق/العميل لتسجيل التطبيق هذا باستخدام مكتبة المصادقة من Microsoft (MSAL) للحصول علي رمز مميز حامل لإرساله مع طلبك إلى API.
 
-:::image type="content" source="media/grant-admin-consent.gif" alt-text="كيفية منح موافقة المسؤول.":::
+<!-- :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent."::: -->
 
 لمزيد من المعلومات حول MSAL، انظر [نظرة عامة على مكتبة المصادقة من Microsoft‏ (MSAL)](/azure/active-directory/develop/msal-overview).
 
@@ -103,7 +105,7 @@ ms.locfileid: "6304726"
 
 1. حدد **منح موافقة المسؤول ل...** لإكمال تسجيل التطبيق.
 
-   :::image type="content" source="media/grant-admin-consent.gif" alt-text="كيفية منح موافقة المسؤول.":::
+ <!--  :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent."::: -->
 
 1. في النهاية، يتعين علينا إضافة اسم تسجيل التطبيق كمستخدم في Customer Insights.  
    
@@ -129,25 +131,25 @@ ms.locfileid: "6304726"
  
    أو بدلاً من ذلك، يمكنك تشغيل هذا الأمر في **NuGet Package Manager Console**: `Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
 
-   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="إضافة حزمة NuGet إلى مشروع Visual Studio":::
+ <!--  :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Add NuGet package to Visual Studio project."::: -->
 
 #### <a name="use-the-c-client-library"></a>استخدام مكتبة العملاء C#
 
 1. استخدم [مكتبة المصادقة من Microsoft (MSAL)](/azure/active-directory/develop/msal-overview) للحصول على `AccessToken` باستخدام [تسجيل تطبيق Azure](#create-a-new-app-registration-in-the-azure-portal) موجود.
 
-1. بعد المصادقة على رمز مميز بنجاح والحصول عليه، قم بإنشاء `HttpClient` جديد أو استخدام واحد موجود مع تعيين **"التخويل" DefaultRequestHeaders** الإضافي إلى **الحامل <access token>** وتعيين **Ocp-Apim-Subscription-Key** إلى [**مفتاح الاشتراك** من بيئة Customer Insights](#get-started-trying-the-customer-insights-apis).   
+1. بعد المصادقة بنجاح والحصول على رمز، قم ببناء رمز جديد أو استخدم `HttpClient` مع إعداد **DefaultRequestHeaders "Authorization** على **رمز وصول الحامل** وإعداد **Ocp-Apim-Subscription-Key** على [**مفتاح الاشتراك**](#get-started-trying-the-customer-insights-apis) من بيئة Customer Insights الخاصة بك.   
  
-   أعد تعيين رأس **التفويض** عندما يكون مناسبًا. على سبيل المثال، عند انتهاء صلاحية الرمز المميز.
+   أعد تعيين رأس **التخويل** عندما يكون مناسبًا. على سبيل المثال، عند انتهاء صلاحية الرمز المميز.
 
 1. قم بتمرير `HttpClient` هذا إلى بناء عميل `CustomerInsights`.
 
-   :::image type="content" source="media/httpclient-sample.png" alt-text="عينة httpclient":::
+<!--   :::image type="content" source="media/httpclient-sample.png" alt-text="Sample of httpclient."::: -->
 
-1. يمكنك إجراء استدعاءات مع العميل "لأساليب التوسيع"، على سبيل المثال، `GetAllInstancesAsync`. إذا كان الوصول إلى `Microsoft.Rest.HttpOperationResponse` الأساسي مفضلاً، فاستخدم "أساليب رسالة http"، على سبيل المثال `GetAllInstancesWithHttpMessagesAsync`.
+1. يمكنك إجراء استدعاءات مع العميل "لطرق التوسيع"، على سبيل المثال، `GetAllInstancesAsync`. إذا كان الوصول إلى `Microsoft.Rest.HttpOperationResponse` الأساسي مفضلاً، فاستخدم "طرق رسالة http"، على سبيل المثال `GetAllInstancesWithHttpMessagesAsync`.
 
-1. من المحتمل أن تكون الاستجابة من النوع `object` لأنه باستطاعة الأسلوب إرجاع أنواع متعددة (على سبيل المثال ، `IList<InstanceInfo>` و `ApiErrorResult`). للتحقق من نوع الإرجاع، يمكنك تحويل الكائنات بأمان إلى أنواع الاستجابة المحددة في [صفحة تفاصيل واجهة API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights) لهذه العملية.    
+1. من المحتمل أن تكون الاستجابة من النوع `object` لأنه باستطاعة الطريقة إرجاع أنواع متعددة (على سبيل المثال ، `IList<InstanceInfo>` و `ApiErrorResult`). للتحقق من نوع الإرجاع، يمكنك تحويل الكائنات بأمان إلى أنواع الاستجابة المحددة في [صفحة تفاصيل واجهة API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights) لهذه العملية.    
    
-   إذا كانت هناك حاجة إلى مزيد من المعلومات حول الطلب، فاستخدم **أساليب رسالة http** للوصول إلى كائن الاستجابة الأولي.
+   إذا كانت هناك حاجة إلى مزيد من المعلومات حول الطلب، فاستخدم **طرق رسالة http** للوصول إلى كائن الاستجابة الأولي.
 
 ### <a name="nodejs-package"></a>حزمة NodeJS
 

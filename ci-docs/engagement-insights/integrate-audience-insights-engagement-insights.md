@@ -2,18 +2,17 @@
 title: إنشاء ارتباط بين رؤى الجمهور ورؤى المشاركة
 description: أنشئ ارتباطًا نشطًا بين رؤى الجمهور ورؤى المشاركة لتمكين المشاركة ثنائية الاتجاه للبيانات.
 ms.date: 09/08/2021
-ms.service: customer-insights
 ms.topic: conceptual
 author: mkisel
 ms.author: mkisel
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 6aadd6b5018f63362f86c0e3e3ce085e94c47391
-ms.sourcegitcommit: 5dd32dc2b18027cf2aa954356dded4bc6aab9801
+ms.openlocfilehash: 56adc206d83bc6e34a55f11383393b5ac66da531
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8115998"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8229856"
 ---
 # <a name="create-a-link-between-audience-insights-and-engagement-insights"></a>إنشاء ارتباط بين رؤى الجمهور ورؤى المشاركة
 
@@ -49,7 +48,7 @@ ms.locfileid: "8115998"
 
      :::image type="content" source="media/integrate2.png" alt-text="تحديد بيئة رؤى الجمهور.":::
 
-1. حدد بيئة رؤى الجمهور، ثم حدد ***التالي** للانتهاء. الآن، يمكنك تحديد ميزات اختيارية للبيئات المرتبطة.
+1. حدد بيئة رؤى الجمهور، ثم حدد **التالي** للانتهاء. الآن، يمكنك تحديد ميزات اختيارية للبيئات المرتبطة.
  
 ## <a name="enable-audience-insights-unified-profiles-attributes-and-segments"></a>تمكين سمات وشرائح ملفات التعريف الموحدة لرؤى الجمهور
 

@@ -1,20 +1,19 @@
 ---
-title: التحليل الدلالي لملاحظات العملاء
+title: تحليل التوجه لملاحظات العملاء
 description: تعرف على كيفية استخدام نموذج تحليل التوجه لملاحظات العملاء في Dynamics 365 Customer Insights.
 ms.date: 12/23/2021
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
 ms.topic: conceptual
 author: wmelewong
 ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: 05e530a1bc96c5fd9c7a3bc0197563d8fe330387
-ms.sourcegitcommit: cb71e39de9b891c24bd5cd9c014eb3eeb537ac24
+ms.openlocfilehash: b06613b00a512a31479f9d30d539a010e17d33ba
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7951071"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8231449"
 ---
 # <a name="analyze-sentiment-in-customer-feedback-preview"></a>تحليل التوجه في ملاحظات العملاء (إصدار أولي)
 
@@ -38,7 +37,7 @@ ms.locfileid: "7951071"
 
 نستخدم  **نموذجين لمعالجة اللغة الطبيعية (NLP)**: الأول يعين لكل تعليق ملاحظات نتيجة توجه. يربط النموذج الثاني كل ملاحظة بجميع جوانب الأعمال القابلة للتطبيق. يتم تدريب هذه النماذج على البيانات العامة من المصادر عبر وسائل التواصل الاجتماعي وفي تجارة التجزئة والمطاعم والمنتجات الاستهلاكية وصناعات السيارات.    
   
-- تتضمن جوانب الأعمال المحددة مسبقًا للنموذج للاقتران مع بيانات الملاحظات ما يلي:
+تتضمن جوانب الأعمال المحددة مسبقًا للنموذج للاقتران مع بيانات الملاحظات ما يلي:
 -   إدارة الحسابات
 -   السحب والدفع
 -   دعم العملاء

@@ -3,18 +3,17 @@ title: مخططات كيانات Customer Insights في نموذج البيان�
 description: العمل مع الكيانات في نموذج البيانات العامة.
 ms.date: 08/13/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 2cdbe11a1c0cc5d65434fb2ae3a3f38c18f31cf4
-ms.sourcegitcommit: 3807202283dd116a30f900a163d8141db621e5a8
+ms.openlocfilehash: f0af2a6d8a90ff01ea9d4eeb29f34113261fd0d4
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "8046475"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8230985"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>مخططات الكيانات في نموذج البيانات العامة
 

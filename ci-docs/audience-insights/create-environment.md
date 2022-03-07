@@ -1,21 +1,23 @@
 ---
 title: إنشاء البيئات في Customer Insights
 description: خطوات إنشاء البيئات باشتراك مرخص في Dynamics 365 Customer Insights.
-ms.date: 10/14/2021
+ms.date: 02/24/2022
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 914af46d2d82f3556d149f2836680c902f826d50
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+searchScope:
+- ci-home
+- customerInsights
+ms.openlocfilehash: c37afd5649f8cf40d5379f3d39d0cbd96cde3bd3
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673306"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354079"
 ---
 # <a name="create-an-environment-in-audience-insights"></a>إنشاء بيئة في رؤى الجماهير
 
@@ -28,7 +30,7 @@ ms.locfileid: "7673306"
 
 ## <a name="create-a-new-environment"></a>إنشاء بيئة جديدة
 
-بعد شراء ترخيص اشتراك لـ Customer Insights، يتلقى المسؤول العمومي لمستأجر Microsoft 365 رسالة بريد إلكتروني تدعوه لإنشاء البيئة. انتقل إلى [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start) لبدء الاستخدام. 
+بعد شراء ترخيص اشتراك لـ Customer Insights، يتلقى المسؤول العمومي لمستأجر Microsoft 365 بريدًا إلكترونيًا يدعوه لإنشاء البيئة. انتقل إلى [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start) لبدء الاستخدام. 
 
 تساعدك التجربة الموجهة من خلال الخطوات لجمع كل المعلومات المطلوبة لبيئة جديدة. تحتاج إلى [أذونات المسؤول](permissions.md) في رؤى الجمهور لإنشاء البيئات أو إدارتها.
 
@@ -64,7 +66,7 @@ ms.locfileid: "7673306"
 > يدعم Customer Insights حاليًا ما يلي:
 > - الكيانات التي تم تحليلها من تدفقات بيانات Power BI المخزنة في Data Lake مدار بواسطة Microsoft Dataverse.  
 > - حسابات Azure Data Lake Storage من نفس منطقة Azure التي قمت بتحديدها عند إنشاء البيئة.
-> - حسابات Azure Data Lake Storage التي قامت بتمكين *مساحة اسم التدرج الهرمي*.
+> - حسابات Azure Data Lake Storage التي هي Gen2 وقامت بتمكين *مساحة اسم التدرج الهرمي*. حسابات تخزين Azure Data Lake Gen1 غير مدعومة.
 
 بالنسبة لخيار Azure Data Lake Storage، يمكنك الاختيار بين خيار مستند إلى المورد أو خيار مستند إلى الاشتراك للمصادقة. لمزيد من المعلومات، راجع [الاتصال بحساب Azure Data Lake Storage باستخدام كيان Azure service](connect-service-principal.md). اسم **الحاوية** سيكون `customerinsights` ولا يمكن تغييره.
 
@@ -76,9 +78,14 @@ ms.locfileid: "7673306"
    
 تتيح لك خطوة **Microsoft Dataverse** توصيل Customer Insights ببيئة Dataverse الخاصة بك.
 
-لاستخدام [نماذج التنبؤ الجاهزة](predictions-overview.md#out-of-box-models)، قم بتكوين مشاركة البيانات باستخدام Dataverse. أو يمكنك تمكين عرض البيانات من مصادر البيانات المحلية، مما يوفر عنوان URL لبيئة Microsoft Dataverse التي تديرها مؤسستك. حدِّد **تمكين مشاركة البيانات** لمشاركة بيانات إخراج Customer Insights مع مستودع بيانات مُدار بواسطة Dataverse.
+توفير بيئة Microsoft Dataverse الخاصة بك لمشاركة البيانات (ملفات التعريف والمعلومات) مع تطبيقات الأعمال استنادًا إلى Dataverse مثل Dynamics 365 Marketing أو التطبيقات التي تستند إلى النموذج في Power Apps. اترك هذا الحقل فارغا إذا لم تكن لديك بيئة Dataverse الخاصة بك وسوف نقوم بتوفير حقل لك.
 
-:::image type="content" source="media/dataverse-data-sharing.png" alt-text="خيارات التكوين لتمكين مشاركة البيانات مع Microsoft Dataverse.":::
+كما يمكنك الاتصال ببيئة Dataverse الخاصة بك استيعاب البيانات من مصادر بيانات داخلية[ باستخدام تدفقات البيانات والبوابات Power Platform](data-sources.md#add-data-from-on-premises-data-sources). يمكنك أيضا استخدام [نمازج تنبؤ جاهزة](predictions-overview.md?tabs=b2c#out-of-box-models) من خلال الاتصال Dataverse ببيئة.
+
+> [!IMPORTANT]
+> يجب أن تكون Customer Insights وDataverse في نفس المنطقة لتمكين مشاركة البيانات.
+
+:::image type="content" source="media/dataverse-provisioning.png" alt-text="مشاركة البيانات مع Microsoft Dataverseتمكين تلقائي للمثيلات الجديدة الصافية.":::
 
 > [!NOTE]
 > لا يدعم Customer Insights سيناريوهات مشاركة البيانات التالية:

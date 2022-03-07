@@ -1,20 +1,19 @@
 ---
 title: موصل Power Automate  | Microsoft Docs
-description: إنشاء عمليات سير العمل في Microsoft Power Automate من Dynamics 365 Customer Insights.
-ms.date: 01/20/2021
-ms.service: customer-insights
+description: إنشاء عمليات سير المهام في Microsoft Power Automate من Dynamics 365 Customer Insights.
+ms.date: 06/24/2021
+ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: philk
+author: pkieffer
+ms.author: philk
 manager: shellyha
-ms.openlocfilehash: fb1df4e9ab1f78300b8ec1f8dfdfbfbac0e71447
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: dc9bbe22b7f10cf92f06cae18fbece9808b87dce
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5268808"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8226698"
 ---
 # <a name="power-automate-connector-preview"></a>موصل Power Automate (معاينة)
 
@@ -27,14 +26,15 @@ ms.locfileid: "5268808"
 - التشغيل عند فشل تحديث مصدر البيانات. 
 - التشغيل عند نجاح تحديث مصدر البيانات.
 - التشغيل عند تخطي الحد في شريحة. يقتصر التشغيل على تجاوز الحد.
-- التشغيل عند تخطي الحد في إجراء أعمال. يقتصر التشغيل على تجاوز الحد.
-- التشغيل عند اكتمال عملية تحديث كاملة (مصادر البيانات والشرائح والمقاييس,...).
+- التشغيل عند تخطي الحد في إجراء أعمال. يتم دعم فقط مقاييس العمل بدون بُعد. يقتصر التشغيل على تجاوز الحد.
+- التشغيل عند اكتمال عملية تحديث كاملة (مصادر البيانات والشرائح والمقاييس، ...).
 - تشغيل عند اكتمال تحديث عملية التوحيد (التعيين، المطابقة، الدمج).
 
-[تكوين المشغلات في Power Automate](https://flow.microsoft.com/connectors/shared_customerinsights/dynamics-365-customer-insights-connector/).
+[تكوين المشغلات في Power Automate.](https://flow.microsoft.com/connectors/shared_customerinsights/dynamics-365-customer-insights-connector/)
 
 ## <a name="power-automate-actions"></a>إجراءات Power Automate
-يوفر موصل Power Automate إجراءات أخرى بخلاف المشغلات المتوفرة. لمزيد من المعلومات، راجع [Dynamics 365 Customer Insights Connector](https://docs.microsoft.com/connectors/customerinsights/).
+
+يوفر موصل Power Automate إجراءات أخرى بخلاف المشغلات المتوفرة. لمزيد من المعلومات، راجع [Dynamics 365 Customer Insights Connector](/connectors/customerinsights/).
 
 ## <a name="create-a-power-automate-flow"></a>إنشاء سير مهام Power Automate
 
@@ -44,9 +44,9 @@ ms.locfileid: "5268808"
 
 1. يفتح موصل Customer Insights (إصدار أولي) في Power Automate. **سجل دخولك إلى** to Power Automate.
 
-1. اختر أحد المشغلات المتوفرة وأضف المزيد من الخطوات إلى سير المهام الجديد. لمزيد من المعلومات، راجع [إنشاء سير مهام في السحابة في Power Automate](https://docs.microsoft.com/power-automate/get-started-logic-flow).
+1. اختر أحد المشغلات المتوفرة وأضف المزيد من الخطوات إلى سير المهام الجديد. لمزيد من المعلومات، راجع [إنشاء سير مهام في السحابة في Power Automate](/power-automate/get-started-logic-flow).
 
-أمثلة حول كيفية استخدام سير المهام: 
+أمثلة على كيفية استخدام تدفقات: 
 - نشر رسالة إلى قناة Microsoft Teams في حالة فشل تحديث مصدر بيانات. 
 - إرسال بريد إلكتروني إلى مالكي البيانات عند تجاوز حد ما على الشريحة.
 

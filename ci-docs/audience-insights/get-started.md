@@ -5,17 +5,19 @@ ms.reviewer: mhart
 ms.author: mhart
 author: m-hartmann
 ms.date: 08/31/2021
-ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: aaaf1848df175469d8af07754ac153b777781ffb
-ms.sourcegitcommit: 971716c761871cee390519cacef617dac21ecd60
+searchScope:
+- ci-home
+- customerInsights
+ms.openlocfilehash: 2776b2292560f9ea61a06d2b1b7bc7811d35c860
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "7466561"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8353697"
 ---
 # <a name="get-started-with-dynamics-365-customer-insights-audience-insights-capability"></a>ابدأ بإمكانية رؤى الجمهور في Dynamics 365 Customer Insights
 
@@ -23,7 +25,7 @@ ms.locfileid: "7466561"
 
 ## <a name="step-1-create-an-environment"></a>الخطوة 1: إنشاء بيئة
 
-للبدء، عليك أولاً إنشاء بيئة للعمل فيها. إذا كانت مؤسستك قد اشترت ترخيصًا بالفعل، راجع [الشروع في العمل باشتراك مدفوع](get-started-paid.md). لبدء تشغيل إصدار تجريبي لرؤى الجمهور، راجع [إعداد بيئة إصدار تجريبي](get-started-trial.md). 
+للبدء، عليك أولاً إنشاء بيئة للعمل فيها. إذا كانت مؤسستك قد اشترت ترخيصًا بالفعل، فراجع [إنشاء بيئة](create-environment.md). لبدء تشغيل إصدار تجريبي لرؤى الجمهور، راجع [إعداد بيئة إصدار تجريبي](../trial-signup.md). 
 
 ## <a name="step-2-explore-audience-insights"></a>الخطوة 2: استكشاف رؤى الجمهور
 
@@ -37,7 +39,7 @@ ms.locfileid: "7466561"
 
 ملفات التعريف الموحدة هي الأساس للحصول على رؤى واتخاذ إجراءات بشأن البيانات. قم بإحضار البيانات من مصادر مختلفة وتشغيل عملية توحيد البيانات لدمج ملفات تعريف موحدة. حدد العلاقات بين الكيانات التي تم استيعابها باستخدام ميزات الإثراء لإضافة معلومات إلى ملفات التعريف. 
 
-1. استيعاب البيانات عن طريق إنشاء مصادر البيانات من خيارات متعددة. اختر من بين [موصلات Power Query](connect-power-query.md)، أو [مجلد نموذج البيانات العامة](connect-common-data-model.md)، أو [Microsoft Dataverse](connect-common-data-service-lake.md). 
+1. استيعاب البيانات عن طريق إنشاء مصادر البيانات من خيارات متعددة. اختر بين موصلات [Power Query ](connect-power-query.md)، أو [مجلد نموذج البيانات العامة](connect-common-data-model.md)، أو [Microsoft Dataverse](/dynamics365/customer-insights/audience-insights/connect-dataverse-managed-lake). 
 
 1. قم بتشغيل [عملية توحيد البيانات](data-unification.md) من خلال المرور على مراحل [الخريطة](map-entities.md)، و[المطابقة](match-entities.md)، و[الدمج](merge-entities.md).
 

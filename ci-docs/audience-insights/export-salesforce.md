@@ -1,20 +1,19 @@
 ---
 title: تصدير بيانات Customer Insights إلى Salesforce Marketing Cloud
 description: تعرف على كيفية تهيئة الاتصال والتصدير إلى Salesforce Marketing Cloud.
-ms.date: 06/24/2021
+ms.date: 07/23/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 123f8b2dbb6140785dec6c1b4164d2f513f66a53
-ms.sourcegitcommit: 057079532e31c12bac36f374857ba3dc847d6ad0
+ms.openlocfilehash: 17a608a64433cdc395e0b503a42b6290db5c39ec
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "6314567"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8230188"
 ---
 # <a name="export-segments-and-other-data-to-salesforce-marketing-cloud-preview"></a>تصدير الشرائح والبيانات الأخرى إلى Salesforce Marketing Cloud (معاينة)
 
@@ -23,11 +22,6 @@ ms.locfileid: "6314567"
 ## <a name="prerequisites-for-connection"></a>المتطلبات الأساسية للاتصال
 
 - توفر مضيف SFTP وبيانات اعتماد المسؤول المقابلة. [كيفية إعداد مواقع SFTP لـ Salesforce Marketing Cloud](https://help.salesforce.com/articleView?id=sf.mc_es_configure_enhanced_ftp.htm&type=5) 
-
-## <a name="known-limitations"></a>القيود المعروفة
-
-- يعتمد وقت تشغيل أي تصدير على أداء النظام. نوصي بمركزين لوحدة المعالجة المركزية وذاكرة بسعة غيغابايت واحد كحدٍ أدنى لتكوين الخادم. 
-- قد يستغرق تصدير الكيانات التي يصل حجم ملفات تعريف العملاء لها 100 مليون ملف تعريف 90 دقيقة عند استخدام الحد الأدنى من التكوين الموصى به. 
 
 ## <a name="set-up-the-connection-to-salesforce-marketing-cloud"></a>إعداد الاتصال بـ Salesforce Marketing Cloud
 
