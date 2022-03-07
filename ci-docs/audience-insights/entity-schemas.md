@@ -1,7 +1,7 @@
 ---
 title: مخططات كيانات Customer Insights في نموذج البيانات العامة
 description: العمل مع الكيانات في نموذج البيانات العامة.
-ms.date: 04/17/2020
+ms.date: 08/13/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: e21f8a9422357fbc5c9425f91f3ba241c9dec9d8
-ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
+ms.openlocfilehash: 2cdbe11a1c0cc5d65434fb2ae3a3f38c18f31cf4
+ms.sourcegitcommit: 3807202283dd116a30f900a163d8141db621e5a8
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "6692235"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "8046475"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>مخططات الكيانات في نموذج البيانات العامة
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 [نموذج البيانات العامة](/common-data-model/) عبارة عن مواصفة تعريفية وتعريف للكيانات القياسية التي تمثل المفاهيم والأنشطة المستخدمة بشكل عام عبر تطبيقات الأعمال والإنتاجية. ويتوسع هذا النموذج ليشمل البيانات الرصدية والتحليلية. يوفر نموذج البيانات العامة كيانات أعمال محددة بطريقة واضحة ونمطية وقابلة للتوسعة — مثل الحساب ووحدة العمل والحالة وجهة الاتصال والعميل المتوقع والفرصة والمنتج — بالإضافة إلى التفاعلات مع المورّدين والعاملين والعملاء — مثل الأنشطة واتفاقيات مستوى الخدمة. بإمكان أي كان البناء على تعريفات نموذج البيانات العامة وتوسيعها للحصول على أفكار إضافية خاصة بالأعمال.
 
@@ -42,7 +42,7 @@ ms.locfileid: "6692235"
 
 ## <a name="view-entities-using-the-common-data-model-entity-navigator"></a>عرض الكيانات باستخدام متصفح كيانات نموذج البيانات العامة
 
-يمكنك عرض الكيانات في [متصفح كيانات نموذج البيانات العامة](https://microsoft.github.io/CDM/). حدد الزر **تحميل من GitHub!** وانتقل إلى **foundationCommon** > **crmCommon** > **solutions** > **customerInsights** حيث ستعثر على كيانات Customer Insights وتعريفاتها.
+يمكنك عرض الكيانات في [متصفح كيانات نموذج البيانات العامة](https://microsoft.github.io/CDM/). حدد كيانًا من قسم تطبيق Insights للحصول على قائمة بكيانات Customer Insights وتعريفاتها.
 > [!div class="mx-imgBorder"]
 > ![يعرض مستعرض كيان CDM كيان CustomerActivity.](media/CDM-entity-navigator.png "متصفح كيانات CDS يعرض كيان CustomerActivity")
 

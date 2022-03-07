@@ -10,12 +10,12 @@ ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 5e8545bc9bf0d953150248fa859c6ca71a12f9cf
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: aaaf1848df175469d8af07754ac153b777781ffb
+ms.sourcegitcommit: 971716c761871cee390519cacef617dac21ecd60
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645248"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7466561"
 ---
 # <a name="get-started-with-dynamics-365-customer-insights-audience-insights-capability"></a>ابدأ بإمكانية رؤى الجمهور في Dynamics 365 Customer Insights
 
@@ -23,7 +23,7 @@ ms.locfileid: "7645248"
 
 ## <a name="step-1-create-an-environment"></a>الخطوة 1: إنشاء بيئة
 
-للبدء، عليك أولاً إنشاء بيئة للعمل فيها. إذا كانت مؤسستك قد اشترت ترخيصًا بالفعل، فراجع [إنشاء بيئة](create-environment.md). لبدء تشغيل إصدار تجريبي لرؤى الجمهور، راجع [إعداد بيئة إصدار تجريبي](../trial-signup.md). 
+للبدء، عليك أولاً إنشاء بيئة للعمل فيها. إذا كانت مؤسستك قد اشترت ترخيصًا بالفعل، راجع [الشروع في العمل باشتراك مدفوع](get-started-paid.md). لبدء تشغيل إصدار تجريبي لرؤى الجمهور، راجع [إعداد بيئة إصدار تجريبي](get-started-trial.md). 
 
 ## <a name="step-2-explore-audience-insights"></a>الخطوة 2: استكشاف رؤى الجمهور
 

@@ -6,16 +6,16 @@ metadata:
   description: مركز التعليمات مع ارتباطات رئيسية لرؤى الجمهور.
   ms.service: customer-insights
   ms.subservice: audience-insights
-  ms.topic: hub-page
+  ms.topic: landing-page
   author: m-hartmann
   ms.author: mhart
-  ms.date: 07/30/2021
-  ms.openlocfilehash: 3764ed7c7fc4bd0dfa89e8a574617a1eb6273c2e36f6e5daa5aeca2c919ba7b8
-  ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+  ms.date: 10/16/2020
+  ms.openlocfilehash: 9dcbbecf793cca2ef1d79d6fad7f3b420f5a8806
+  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
   ms.translationtype: HT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 08/10/2021
-  ms.locfileid: "7031365"
+  ms.lasthandoff: 11/03/2020
+  ms.locfileid: "4404931"
 landingContent:
 - title: حول رؤى الجمهور
   linkLists:
@@ -25,38 +25,38 @@ landingContent:
       url: overview.md
     - text: الميزات الجديدة والمحدثة
       url: whats-new-audience-insights.md
-    - text: اكتشاف رؤى الجمهور
-      url: https://dynamics.microsoft.com/ai/customer-insights/audience-insights-capability/
+    - text: موقع المجتمع
+      url: https://go.microsoft.com/fwlink/?linkid=2073991
+- title: استيعاب مصادر البيانات
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: إضافة مصدر بيانات
+      url: data-sources.md
+    - text: تحديث تزايدي
+      url: incremental-refresh-data-sources.md
+    - text: فهم الكيانات
+      url: entities.md
 - title: توحيد البيانات
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: نظرة عامة مصادر البيانات
-      url: data-sources.md
-    - text: نظرة عامة على التوحيد
-      url: data-unification.md
-    - text: فهم الكيانات
-      url: entities.md
-- title: إثراء البيانات وتحسينها
+    - text: المخطط
+      url: map-entities.md
+    - text: مطابقة
+      url: match-entities.md
+    - text: ‏‏دمج
+      url: merge-entities.md
+- title: تنقيح ملفات تعريف العملاء
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: إثراء ملفات تعريف العملاء
-      url: enrichment-hub.md
     - text: تكوين العلاقات
       url: relationships.md
     - text: سرد أنشطة العميل
       url: activities.md
-- title: الحصول على المعلومات
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: إنشاء شرائح
-      url: segments.md
-    - text: إنشاء مقاييس
-      url: measures.md
-    - text: إكمال البيانات بواسطة التنبؤات
-      url: predictions.md
+    - text: إحضار نماذج التعلم الآلي الخاصة بك
+      url: custom-models.md
 - title: تصدير بيانات العميل
   linkLists:
   - linkListType: how-to-guide

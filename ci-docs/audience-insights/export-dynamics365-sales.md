@@ -1,20 +1,20 @@
 ---
 title: تصدير بيانات Customer Insights إلى Dynamics 365 Sales
 description: تعرف على كيفية تكوين الاتصال بتطبيق Dynamics 365 Sales.
-ms.date: 08/21/2020
-ms.reviewer: philk
+ms.date: 02/01/2021
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+ms.topic: how-to
+author: phkieffer
+ms.author: philk
 manager: shellyha
-ms.openlocfilehash: af0824e69dfdf620a0ac756e32a9bd3dd85e5151
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 39ecdf528c6be4d8fb420a52a6ed998317e43bcd
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643802"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598093"
 ---
 # <a name="connector-for-dynamics-365-sales-preview"></a>موصل لتطبيق Dynamics 365 Sales (معاينة)
 
@@ -24,7 +24,10 @@ ms.locfileid: "4643802"
 
 ## <a name="prerequisite"></a>المتطلبات الأساسية
 
-سجلات جهات الاتصال [من Dynamics 365 Sales التي تم استيعابها باستخدام Common Data Service](connect-power-query.md).
+1. يجب أن تكون سجلات جهات الاتصال موجودة في Dynamics 365 Sales قبل تصدير شريحة من Customer Insights إلى Sales. اقرأ المزيد حول كيفية استيعاب جهات الاتصال في [Dynamics 365 Sales باستخدام Common Data Services](connect-power-query.md).
+
+   > [!NOTE]
+   > لن يؤدي تصدير الشرائح من رؤى الجمهور إلى Sales إلى إنشاء سجلات جهات اتصال جديدة في مثيلات Sales. يجب استيعاب سجلات جهات الاتصال من Sales في رؤى الجمهور واستخدامها كمصدر بيانات. كما يلزم تضمينها في كيان العميل الموحد من أجل تعيين معرفات العملاء إلى معرفات جهات الاتصال قبل أن يصبح تصدير الشرائح ممكنًا.
 
 ## <a name="configure-the-connector-for-sales"></a>تكوين موصل Sales
 
@@ -49,3 +52,6 @@ ms.locfileid: "4643802"
 ## <a name="export-the-data"></a>تصدير البيانات
 
 يمكنك [تصدير البيانات عند الطلب](export-destinations.md). سيعمل التصدير أيضًا مع كل [تحديث مجدول](system.md#schedule-tab).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

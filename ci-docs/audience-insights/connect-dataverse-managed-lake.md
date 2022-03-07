@@ -1,7 +1,7 @@
 ---
 title: الاتصال بالجداول في Microsoft Dataverse
 description: استيراد البيانات من مخزن البيانات المُدار بواسطة Microsoft Dataverse.
-ms.date: 07/23/2021
+ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,22 +9,25 @@ author: adkuppa
 ms.author: adkuppa
 manager: shellyha
 ms.reviewer: mhart
-ms.openlocfilehash: f92d64723e6a4d2fcebdbb3758519d4bfd4aeaf4
-ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
+ms.openlocfilehash: 436345d8932820eb4c517a9e9164b1377c1f62d3
+ms.sourcegitcommit: 3807202283dd116a30f900a163d8141db621e5a8
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "6692558"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "8046409"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>الاتصال بالبيانات في مستودع بيانات مُدار في Microsoft Dataverse
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-توفر هذه المقالة معلومات حول كيفية اتصال مستخدمي Dataverse بسرعة بكياناتهم التحليلية في حالة المستودع المُدار بواسطة Dataverse. يجب أن تكون مسؤولا في مؤسسة Dataverse للمتابعة والاطلاع على قائمة الكيانات المتوفرة في المخزن المُدار.
+
+يوفر هذا المقال معلومات حول كيفية اتصال مستخدمي Dataverse بسرعة بالكيانات التحليلية في مستودع مُدار لـ Microsoft Dataverse. 
+
+> [!NOTE]
+> يجب أن تكون مسؤولاً في مؤسسة Dataverse للمتابعة وعرض قائمة الكيانات المتوفرة في المستودع المُدار.
 
 ## <a name="important-considerations"></a>اعتبارات هامة
 
-قد يتم تخزين البيانات المخزنة في خدمات عبر الإنترنت مثل Azure Data Lake Storage في موقع يختلف عن الموقع حيث تتم معالجة البيانات أو تخزينها في Dynamics 365 Customer Insights. من خلال استيراد البيانات المخزنة في الخدمات عبر الإنترنت، توافق أنت على نقل هذه البيانات وتخزينها بواسطة Dynamics 365 Customer Insights. [اعرف المزيد في مركز توثيق Microsoft.](https://www.microsoft.com/trust-center)
+قد يتم تخزين البيانات المخزنة في خدمات عبر الإنترنت مثل Azure Data Lake Storage في موقع يختلف عن الموقع حيث تتم معالجة البيانات أو تخزينها في Dynamics 365 Customer Insights. من خلال استيراد البيانات المخزنة في الخدمات عبر الإنترنت أو الاتصال بها، فأنت توافق على نقل هذه البيانات وتخزينها بواسطة Dynamics 365 Customer Insights. [اعرف المزيد في مركز توثيق Microsoft](https://www.microsoft.com/trust-center).
 
 ## <a name="connect-to-a-dataverse-managed-lake"></a>الاتصال بمستودع بيانات مُدار في Dataverse
 
@@ -32,12 +35,9 @@ ms.locfileid: "6692558"
 
 2. حدد **إضافة مصدر بيانات**.
 
-3. حدد **الاتصال بالمستودع المُدار بواسطة Microsoft Dataverse** وحدد **التالي**.
+3. حدد **Microsoft Dataverse** وحدد **التالي**.
 
-4. أدخل **اسمًا** لمصدر البيانات، وحدد **التالي‏‎**. إرشادات الاسم: 
-   - يجب أن يبدأ الاسم بحرف
-   - استخدم الأحرف و الأرقام فقط. غير مسموح باستخدام الأحرف الخاصة والمسافات.
-   - استخدم ما بين 3 و64 حرفًا.
+4. أدخل **اسمًا** لمصدر البيانات، وحدد **التالي‏‎**. 
 
 5. قم بتوفير **عنوان الخادم** الخاص بمؤسسة Dataverse، وحدد **تسجيل الدخول**.
 

@@ -1,30 +1,28 @@
 ---
 title: الاتصال بحساب Azure Data Lake Storage Gen2 بواسطة كيان خدمة
-description: استخدم كيان خدمة في Azure لرؤى الجمهور للاتصال بمستودع بياناتك الخاص عند إرفاقه برؤى الجمهور.
-ms.date: 02/10/2021
+description: استخدم كيان خدمة في Azure لنتائج رؤى الجمهور للاتصال بمستودع بياناتك الخاصة عند إرفاقها برؤى الجمهور.
+ms.date: 11/24/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: how-to
+ms.topic: conceptual
 author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: cc94ad49f12067d513db4663bff60620d6501eb0
-ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
+ms.openlocfilehash: c2fae278d34fa02b9168ac70dfa8dd351653245e
+ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "6692097"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4644072"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-gen2-account-with-an-azure-service-principal-for-audience-insights"></a>الاتصال بحساب Azure Data Lake Storage Gen2 بواسطة كيان خدمة Azure لرؤى الجمهور
 
 يجب أن تكون دائمًا الأدوات المؤتمتة التي تستخدم خدمات Azure ذات أذونات مقيدة. بدلاً من قيام التطبيقات بتسجيل الدخول كمستخدم له امتيازات كاملة، يقدم Azure كيانات الخدمة. اقرأ لمعرفة كيفية توصيل رؤى الجمهور بواسطة حساب Azure Data Lake Storage Gen2 يستخدم كيان خدمة Azure بدلاً من مفاتيح حساب تخزين. 
 
-يمكنك استخدام كيان الخدمة من أجل [إضافة أو تحرير مجلد نموذج البيانات العامة كمصدر بيانات](connect-common-data-model.md) بشكل آمن أو [إنشاء بيئة جديدة أو تحديث بيئة موجودة](get-started-paid.md).
+يمكنك استخدام كيان الخدمة من أجل [إضافة أو تحرير مجلد نموذج البيانات العامة كمصدر بيانات](connect-common-data-model.md) بشكل آمن أو [إنشاء بيئة جديدة أو تحديث بيئة موجودة](manage-environments.md#create-an-environment-in-an-existing-organization).
 
-> [!IMPORTANT]
-> - يجب أن يكون حساب التخزين Azure Data Lake Gen2 الذي ينوي استخدام كيان الخدمة [ممكّنًا لاستخدام مساحة الاسم الهرمية](/azure/storage/blobs/data-lake-storage-namespace).
-> - تحتاج إلى أذونات المسؤول لاشتراكك في Azure لإنشاء كيان الخدمة.
+تحتاج إلى أذونات المسؤول لاشتراكك في Azure لإنشاء كيان الخدمة.
 
 ## <a name="create-azure-service-principal-for-audience-insights"></a>إنشاء كيان خدمة Azure لرؤى الجمهور‬
 
@@ -48,7 +46,7 @@ ms.locfileid: "6692097"
 
 ### <a name="create-a-new-service-principal"></a>إنشاء كيان خدمة جديد
 
-1. ثبّت الإصدار الأخير من **Azure Active Directory PowerShell for Graph**. لمزيد من المعلومات، راجع [تثبيت Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
+1. ثبّت الإصدار الأخير من **Azure Active Directory PowerShell for Graph**. لمزيد من المعلومات، راجع [تثبيت Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2).
    - علي جهاز الكمبيوتر، حدد مفتاح Windows على لوحة المفاتيح وابحث عن **Windows PowerShell** و **تشغيل كمسؤول**.
    
    - في نافذة PowerShell التي تفتح، أدخل `Install-Module AzureAD`.
@@ -81,11 +79,11 @@ ms.locfileid: "6692097"
 
 ## <a name="enter-the-azure-resource-id-or-the-azure-subscription-details-in-the-storage-account-attachment-to-audience-insights"></a>أدخل معرف مورد Azure أو تفاصيل اشتراك Azure في مرفق حساب التخزين في رؤى الجمهور.
 
-قم بإرفاق حساب Azure Data Lake Storage في رؤى الجمهور [لتخزين بيانات الإخراج](manage-environments.md) أو [لاستخدامه كمصدر بيانات](connect-dataverse-managed-lake.md). يتيح لك تحديد خيار Azure Data Lake الاختيار بين طريقة تستند إلى الموارد أو طريقة تستند إلى الاشتراكات.
+قم بإرفاق حساب Azure Data Lake Storage في رؤى الجمهور [لتخزين بيانات الإخراج](manage-environments.md) أو [لاستخدامه كمصدر بيانات](connect-common-data-service-lake.md). يتيح لك تحديد خيار Azure Data Lake الاختيار بين طريقة تستند إلى الموارد أو طريقة تستند إلى الاشتراكات.
 
 اتبع الخطوات أدناه لتقديم المعلومات المطلوبة بالطريقة المحددة.
 
-### <a name="resource-based-storage-account-connection"></a>‏‏اتصال حساب التخزين المستند إلى الموارد
+### <a name="resounce-based-storage-account-connection"></a>‏‏اتصال حساب التخزين المستند إلى الموارد
 
 1. انتقل إلى [مدخل مسؤول Azure](https://portal.azure.com)، ثم قم بتسجيل الدخول إلى اشتراكك وافتح حساب التخزين.
 
@@ -110,8 +108,7 @@ ms.locfileid: "6692097"
 1. راجع **اشتراك** حساب التخزين بالإضافة إلى **مجموعة الموارد** و **الاسم** للتأكد من أنك تحدد القيم الصحيحة في رؤى الجمهور.
 
 1. في رؤى الجمهور، اختر القيم أو الحقول المطابقة عند إرفاق حساب التخزين.
+
+   :::image type="content" source="media/ADLS-SP-SubscriptionConnection.png" alt-text="أدخل معلومات معرف مورد حساب التخزين.":::
    
 1. تابع تنفيذ الخطوات المتبقية في رؤى الجمهور لإرفاق حساب التخزين.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

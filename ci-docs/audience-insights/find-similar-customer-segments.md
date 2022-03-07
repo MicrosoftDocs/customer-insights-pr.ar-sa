@@ -9,16 +9,18 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: ee4d24ae0ae39c689956f70efe46c4226876484e6da6282dc874cec37bd287e2
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 7c447609bd54de0780dd14aae9f05c7c24b8cce5
+ms.sourcegitcommit: fb9f118b4e16b5aabb3e503463efca21718f5d72
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034501"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "7799668"
 ---
 # <a name="similar-customers-preview"></a>العملاء المماثلون (معاينة)
 
 تتيح لك هذه الميزة العثور على عملاء مماثلين في قاعدة عملائك باستخدام الذكاء الاصطناعي. تحتاج إلى إنشاء شريحة واحدة على الأقل لاستخدام هذه الميزة. يؤدي توسيع معايير شريحة موجودة إلى المساعدة في العثور على العملاء المماثلين لهذه الشريحة.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWOFou]
 
 > [!NOTE]
 > يستخدم الخيار *البحث عن عملاء مماثلين* وسائل مؤتمتة لتقييم البيانات واجراء التنبؤ استنادًا إلى تلك البيانات، وبالتالي يمكن استخدامه كطريقة لإنشاء ملفات التعريف، كهذا المصطلح المحدد بواسطة القانون العام لحماية البيانات (“GDPR”). قد يخضع استخدام العميل لهذه الميزة لمعالجة البيانات حسب قانون GDPR أو القوانين أو اللوائح الأخرى. إذا كنت مسؤولاً عن التأكد من أن استخدام Dynamics 365 Customer Insights، بما في ذلك التنبؤات، يتوافق مع كافة القوانين واللوائح المعمول بها، بما في ذلك القوانين المتعلقة بالخصوصية والبيانات الشخصية وبيانات المقاييس الحيوية وحماية البيانات وسرية الاتصالات.

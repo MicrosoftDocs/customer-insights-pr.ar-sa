@@ -1,7 +1,7 @@
 ---
 title: تصدير بيانات Customer Insights إلى Autopilot
-description: اعرف كيفية تكوين الاتصال بـ Autopilot.
-ms.date: 12/08/2020
+description: تعرف على كيفية تهيئة الاتصال والتصدير إلى إعلانات Autopilot.
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,34 +9,41 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 6d039c4afd84eaad942d214d4e6fb8ef7b1ec72a
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 4cceb64484e8e257a90b8cbaedff4419659bb399
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596101"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618413"
 ---
-# <a name="connector-for-autopilot-preview"></a>موصل Autopilot (إصدار أولي)
+# <a name="export-segments-to-autopilot-preview"></a>تصدير شرائح إلى Autopilot (إصدار أولي)
 
 يمكنك تصدير شرائح من ملفات تعريف العملاء الموحدة‬ إلى Autopilot واستخدامها في الحملات والتسويق عبر البريد الإلكتروني في Autopilot. 
 
-## <a name="prerequisites"></a>المتطلبات الأساسية
+## <a name="prerequisites-for-a-connection"></a>المتطلبات الأساسية لاتصال
 
 -   لديك [حساب Autopilot](https://www.autopilothq.com/) وبيانات اعتماد مسؤول مطابقة.
 -   لقد قمت [بتكوين الشرائح](segments.md) في رؤى الجمهور.
 -   تحتوي ملفات تعريف العملاء الموحدة في الشرائح المصدّرة على حقل يمثل عنوان البريد الإلكتروني.
 
-## <a name="connect-to-autopilot"></a>الاتصال بـ AutoPilot
+## <a name="known-limitations"></a>القيود المعروفة
 
-1. انتقل إلى **المسؤول** > **وجهات التصدير**.
+- يمكنك تصدير ما يصل إلى 100000 ملف تعريف عميل في المجموع إلى Autopilot.
+- يقتصر التصدير إلى Autopilot على الشرائح.
+- يمكن أن يستغرق تصدير ما يصل إلى 100000 من ملفات تعريف العملاء إلى Autopilot ما يصل إلى بضع ساعات حتى يكتمل. 
+- عدد ملفات تعريف العملاء التي يمكنك تصديرها إلى Autopilot يعتمد ويقتصر على عقدك مع Autopilot.
 
-1. أسفل **Autopilot**، حدد **إعداد**.
+## <a name="set-up-connection-to-autopilot"></a>إعداد الاتصال بـ Autopilot
 
-1. في حقل **الاسم المعروض**، أدخل اسمًا سهل التمييز لوجهة التصدير.
+1. انتقل إلى **المسؤول** > **الاتصالات**.
 
-   :::image type="content" source="media/export-autopilot.PNG" alt-text="جزء التكوين لاتصال Autopilot.":::
+1. حدد **إضافة اتصال** واختر **Autopilot** لتكوين الاتصال.
 
-1. أدخل **مفتاح Autopilot API** [مفتاح Autopilot API](https://autopilot.docs.apiary.io/#).
+1. اعط اتصالك اسمًا يمكن التعرف عليه في حقل **الاسم المعروض**. يصف الاسم ونوع الاتصال هذا الاتصال. ننصح باختيار اسم يوضح الغرض والهدف من الاتصال.
+
+1. اختر الشخص الذي يمكنه استخدام هذا الاتصال. إذا لم تتخذ أي إجراء، فإن الإعداد الافتراضي سيكونالمسؤولين. لمزيد من المعلومات، راجع [السماح للمساهمين باستخدام اتصال للتصديرات](connections.md#allow-contributors-to-use-a-connection-for-exports).
+
+1. أدخل [مفتاح واجهة برمجة تطبيقات Autopilot](https://autopilot.docs.apiary.io/#).
 
 1. حدد **أوافق** لتأكيد **خصوصية البيانات والتوافق‬**.
 
@@ -44,26 +51,27 @@ ms.locfileid: "5596101"
 
 1. حدد **إضافة نفسك كمستخدم تصدير** ووفر بيانات اعتماد Customer Insights.
 
-1. حدد **التالي** لتكوين التصدير.
+1. حدد **حفظ** لإكمال الاتصال.
 
-## <a name="configure-the-connector"></a>تكوين الموصل
+## <a name="configure-an-export"></a>تكوين تصدير
 
-1. في القسم **مطابقة البيانات**، في حقل **البريد الإلكتروني**، حدد الحقل في ملف تعريف العميل الموحد الذي يمثل عنوان البريد الإلكتروني للعميل. كرر نفس الخطوات للحقول الاختيارية الأخرى مثل **الاسم الأول** و **اسم العائلة**.
+يمكنك تكوين هذا التصدير إذا كان لديك حق الوصول إلى اتصال من هذا النوع. لمزيد من المعلومات، راجع [الأذونات اللازمة لتكوين تصدير](export-destinations.md#set-up-a-new-export).
+
+1. انتقل إلى **البيانات** > **التصديرات**.
+
+1. لإنشاء اتصال جديد، حدد **إضافة وجهة**.
+
+1. في حقل **الاتصال للتصدير**، اختر اتصالاً من قسم Autopilot. إذا لم تشاهد اسم المقطع هذا، لن تكون هناك اتصالات من هذا النوع متوفرة لك.
+
+1. في قسم **مطابقة البيانات** في حقل **البريد الإلكتروني**، حدد الحقل الذي يمثل عنوان البريد الإلكتروني للعميل. كرر نفس الخطوات للحقول الاختيارية الأخرى مثل **الاسم الأول** و **اسم العائلة**.
 
 1. حدد الشرائح التي تريد تصديرها. نحن **نوصي بعدم تصدير أكثر من ‎100'000 من ملفات تعريف العملاء بشكل إجمالي** إلى Autopilot. 
 
 1. حدد **حفظ**.
 
-## <a name="export-the-data"></a>تصدير البيانات
+لا تعمل عملية التصدير التي يتم حفظها على التصدير في الحال.
 
-يمكنك [تصدير البيانات عند الطلب](export-destinations.md). سيعمل التصدير أيضًا مع كل [تحديث مجدول](system.md#schedule-tab).
-
-## <a name="known-limitations"></a>القيود المعروفة
-
-- يمكنك تصدير ما يصل إلى ‎100'000 من ملفات تعريف العملاء إلى Autopilot.
-- يقتصر التصدير إلى Autopilot على الشرائح.
-- قد يحتاج اكتمال تصدير حتى ‎100'000 ملف تعريف إلى Autopilot إلى ساعات قليلة. 
-- يتوقف عدد ملفات التعريف التي يمكنك تصديرها إلى Autopilot على العقد مع Autopilot، وهذا العدد مقيد بالعقد.
+يتم تشغيل عملية التصدير مع كل [تحديث مجدول](system.md#schedule-tab). يمكنك أيضًا [تصدير البيانات عند الطلب](export-destinations.md#run-exports-on-demand). 
 
 ## <a name="data-privacy-and-compliance"></a>خصوصية البيانات والتوافق
 

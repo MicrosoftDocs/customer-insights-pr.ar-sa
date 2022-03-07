@@ -1,6 +1,6 @@
 ---
 title: تصدير بيانات Customer Insights إلى Adobe Campaign Standard
-description: تعرف على كيفية استخدام شرائح رؤى الجمهور في Adobe Campaign Standard.
+description: اعرف كيفية استخدام شرائح رؤى الجمهور في Adobe Campaign Standard.
 ms.date: 03/29/2021
 ms.reviewer: mhart
 ms.service: customer-insights
@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: d301b4f0cb875303fb3d373b77177acd1c1f5219cd6f23c2a1d29ce67a222eab
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 917ab9559416f3ee0ffd66e471e590e8da3faffc
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032147"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305370"
 ---
-# <a name="use-customer-insights-segments-in-adobe-campaign-standard-preview"></a>استخدم شرائح Customer Insights في Adobe Campaign Standard (إصدار أولي)
+# <a name="use-customer-insights-segments-in-adobe-campaign-standard-preview"></a>استخدام شرائح Customer Insights في Adobe Campaign Standard (إصدار أولي)
 
-كمستخدم لمعلومات الجمهور في Dynamics 365 Customer Insights، ربما قمت بإنشاء شرائح لجعل حملات التسويق أكثر فعالية من خلال استهداف الجماهير ذات الصلة. لاستخدام شريحة من رؤى الجمهور في Adobe Experience Platform وتطبيقات مثل Adobe Campaign Standard، عليك اتباع بعض الخطوات التي تم توضيحها في هذا المقال.
+كمستخدم لمعلومات الجمهور في Dynamics 365 Customer Insights، ربما قمت بإنشاء شرائح لجعل حملات التسويق أكثر فعالية من خلال استهداف الجماهير ذات الصلة. لاستخدام شريحة من رؤى الجمهور في Adobe Experience Platform وتطبيقات مثل Adobe Campaign Standard، يلزمك اتباع بعض الخطوات الملخصة في هذه المقالة.
 
 :::image type="content" source="media/ACS-flow.png" alt-text="مخطط العملية للخطوات الملخصة في هذه المقالة.":::
 
@@ -32,9 +32,9 @@ ms.locfileid: "7032147"
 
 لتكوين فهم أفضل لكيفية استخدام شرائح من رؤى الجمهور في Adobe Experience Platform، سنلقي نظرة على عينة حملة وهمية.
 
-لنفترض أن شركتك تقدم خدمة شهرية قائمة على اشتراك لعملائك في الولايات المتحدة. تريد تحديد العملاء الذين من المقرر تجديد اشتراكاتهم في الأيام الثمانية القادمة، ولكنهم لم يجددوا اشتراكهم بعد. للمحافظة على هؤلاء العملاء، ترغب في إرسال عرض ترويجي لهم عبر البريد الإلكتروني، باستخدام Adobe Campaign Standard.
+لنفترض أن شركتك تقدم خدمة شهرية قائمة على اشتراك لعملائك في الولايات المتحدة. تريد تحديد العملاء الذين من المقرر تجديد اشتراكاتهم في الأيام الثمانية القادمة، ولكنهم لم يجددوا اشتراكهم بعد. للمحافظة على هؤلاء العملاء، تريد إرسال عرض ترويجي لهم عبر البريد الإلكتروني، باستخدام Adobe Campaign Standard.
 
-في هذا المثال، نريد تشغيل حملة البريد الإلكتروني الترويجية مرة واحدة. لا تتناول هذه المقالة حالة استخدام تشغيل الحملة أكثر من مرة. ومع ذلك، يمكنك تموين رؤى الجمهور و Adobe Campaign Standard للعمل لسيناريو مكرر أيضًا.
+في هذا المثال، نريد تشغيل حملة البريد الإلكتروني الترويجية مرة واحدة. لا تتناول هذه المقالة حالة استخدام تشغيل الحملة أكثر من مرة. ومع ذلك، يمكنك تكوين رؤى الجمهور وAdobe Campaign Standard بحيث يعملان لسيناريو حملة متكررة أيضًا.
 
 ## <a name="identify-your-target-audience"></a>تحديد الجمهور المستهدف
 
@@ -54,7 +54,7 @@ ms.locfileid: "7032147"
 
 1. من رؤى الجمهور، انتقل إلى **المسؤول** > **الاتصالات**.
 
-1. حدد **إضافة اتصال** واختر **Adobe Campaign** لتكوين الاتصال أو حدد **إعداد** في الإطار المتجانب **Adobe Campaign**.
+1. حدد **إضافة اتصال** واختر **حملة Adobe** لتكوين الاتصال أو حدد **إعداد** في تجانب **حملة Adobe**.
 
    :::image type="content" source="media/adobe-campaign-standard-tile.png" alt-text="الإطار المتجانب لتكوين Adobe Campaign Standard.":::
 
@@ -80,7 +80,7 @@ ms.locfileid: "7032147"
 
 1. لإنشاء عملية تصدير جديدة، حدد **إضافة تصدير**.
 
-1. في الحقل **اتصال للتصدير**، اختر اتصالا من قسم Adobe Campaign. إذا لم تشاهد اسم المقطع هذا، فلا توجد اتصالات من هذا النوع متوفرة لك.
+1. في حقل **الاتصال للتصدير**، اختر اتصالاً من قسم حملة Adobe. إذا لم تشاهد اسم المقطع هذا، فلا توجد اتصالات من هذا النوع متوفرة لك.
 
 1. اختر الشريحة التي تريد تصديرها. في هذا المثال، هي **ChurnProneCustomers**.
 
@@ -88,14 +88,14 @@ ms.locfileid: "7032147"
 
 1. حدد **التالي**.
 
-1. سنقوم الآن بتعيين حقول **المصدر** من شريحة رؤى الجمهور إلى أسماء الحقول **الهدف** في مخطط ملف تعريف Adobe Campaign Standard.
+1. سنقوم الآن بتعيين حقول **المصدر** من شريحة رؤى الجمهور إلى أسماء حقول **الهدف** في مخطط ملف تعريف Adobe Campaign Standard.
 
    :::image type="content" source="media/ACS-field-mapping.png" alt-text="تعيين الحقول لموصل Adobe Campaign Standard.":::
 
-   إذا كنت ترغب في إضافة مزيد من السمات، فحدد **إضافة سمة**. بإمكان الاسم الهدف أن يكون مختلفًا عن اسم الحقل المصدر، بحيث يبقى بإمكانك تعيين إخراج الشريحة من رؤى الجمهور إلى Adobe Campaign Standard إذا لم تكن الحقول تحمل الأسماء نفسها في النظامين.
+   إذا كنت ترغب في إضافة مزيد من السمات، فحدد **إضافة سمة**. بإمكان اسم الحقل الهدف أن يكون مختلفًا عن اسم الحقل المصدر بحيث يبقى باستطاعتك تعيين إخراج الشرائح من رؤى الجمهور إلى Adobe Campaign Standard إذا لم يكن لدى الحقول الاسم نفسه في النظامين.
 
    > [!NOTE]
-   > يُستخدم عنوان البريد الإلكتروني كحقل هوية، ولكن يمكنك استخدام أي معرف آخر من ملف تعريف العميل لرؤى الجمهور لتعيين البيانات إلى Adobe Campaign Standard.
+   > يتم استخدام عنوان البريد الإلكتروني كحقل هوية، ولكن يمكنك استخدام أي معرف آخر من ملف تعريف عميل رؤى الجمهور لتعيين البيانات إلى Adobe Campaign Standard.
 
 1. حدد **حفظ**.
 
@@ -104,7 +104,7 @@ ms.locfileid: "7032147"
 يمكنك الآن [تصدير الشريحة عند الطلب](export-destinations.md#run-exports-on-demand). سيعمل التصدير أيضًا مع كل [تحديث مجدول](system.md).
 
 > [!NOTE]
-> تأكد من أن عدد السجلات في الشريحة التي تم تصديرها يقع ضمن الحد المسموح به في ترخيص Adobe Campaign Standard.
+> تأكد من أن عدد السجلات في الشريحة المصدّرة هو ضمن الحد المسموح به في ترخيص Adobe Campaign Standard.
 
 يتم تخزين البيانات المصدّرة في حاوية Azure Blob storage التي قمت بتكوينها أعلاه. يتم إنشاء مسار المجلد التالي بشكل تلقائي في حاويتك:
 
@@ -114,30 +114,30 @@ ms.locfileid: "7032147"
 
 ## <a name="configure-adobe-campaign-standard"></a>تكوين Adobe Campaign Standard
 
-تحتوي الشريحة، عند تصديرها من رؤى الجمهور، على الأعمدة التي حددتها أثناء تعريف وجهة التصدير في الخطوة السابقة. يمكن استخدام هذه البيانات من أجل [إنشاء ملفات تعريف في Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/managing-profiles/about-profiles.html#managing-profiles).
+تحتوي الشريحة، عند تصديرها من رؤى الجمهور، على الأعمدة التي حددتها أثناء تعريف وجهة التصدير في الخطوة السابقة. يمكن استخدام هذه البيانات في عملية [إنشاء ملفات تعريف في Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/managing-profiles/about-profiles.html#managing-profiles).
 
-لاستخدام الشريحة في Adobe Campaign Standard، علينا توسيع مخطط ملف التعريف في Adobe Campaign Standard بحيث يتضمن حقلين إضافيين. اعرف كيفية [توسيع مورد ملف التعريف](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/use-cases--extending-resources/extending-the-profile-resource-with-a-new-field.html#developing) بواسطة حقول جديدة في Adobe Campaign Standard.
+لاستخدام الشريحة في Adobe Campaign Standard، يلزمنا توسيع مخطط ملف التعريف في Adobe Campaign Standard بحيث يتضمن حقلين إضافيين. اعرف كيفية [توسيع مورد ملف التعريف](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/use-cases--extending-resources/extending-the-profile-resource-with-a-new-field.html#developing) باستخدام حقول جديدة في Adobe Campaign Standard.
 
 في المثال الذي قدمناه، هذه الحقول هي *اسم الشريحة وتاريخ الشريحة (اختياري)*.
 
-سوف نستخدم هذه الحقول لتحديد ملفات التعريف في Adobe Campaign Standard التي نريد استهدافها في هذه الحملة.
+سوف نستخدم هذه الحقول لتحديد ملفات التعريف في Adobe Campaign Standard التي نريد استهدافها لهذه الحملة.
 
-في حال عدم وجود أي سجلات أخرى في Adobe Campaign Standard، غير تلك التي تريد استيرادها، فيمكنك تخطي هذه الخطوة.
+إذا لم تكن هناك سجلات أخرى في Adobe Campaign Standard، غير تلك التي ستقوم باستيرادها، فيمكنك تخطي هذه الخطوة.
 
 ## <a name="import-data-into-adobe-campaign-standard"></a>استيراد البيانات إلى Adobe Campaign Standard
 
-الآن وقد تم إعداد كل شيء، نريد استيراد بيانات الجمهور التي قمنا بتحضيرها من رؤى الجمهور إلى Adobe Campaign Standard لإنشاء ملفات تعريف. اعرف [كيفية استيراد ملفات التعريف في Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/managing-profiles/creating-profiles.html#profiles-and-audiences) باستخدام سير عمل.
+الآن وقد تم تنظيم كل شيء، نحتاج إلى استيراد بيانات الجمهور التي قمنا بإعدادها من رؤى الجمهور إلى Adobe Campaign Standard لإنشاء ملفات تعريف. اعرف [كيفية استيراد ملفات التعريفي في Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/managing-profiles/creating-profiles.html#profiles-and-audiences) باستخدام سير عمل.
 
-تم تكوين سير عمل الاستيراد في الصورة أدناه ليدار كل ثمان ساعات ويبحث عن شرائح audience insights المصدرة (ملف csv. في مساحة تخزين Azure Blob). يستخرج سير العمل محتوى ملف csv. في ترتيب أعمدة محدد. تم بناء سير العمل هذا لإجراء معالجة أساسية للأخطاء والتأكد من وجود عنوان بريد إلكتروني لكل سجل الأساسية والتأكد من أن كل سجل يحتوي على عنوان بريد إلكتروني قبل استخدام البيانات في Adobe Campaign Standard. يستخرج سير العمل أيضًا اسم الشريحة من اسم الملف قبل تحويله إلى بيانات ملف تعريف Adobe Campaign Standard.
+تم تكوين سير عمل الاستيراد في الصورة أدناه ليدار كل ثمان ساعات ويبحث عن شرائح audience insights المصدرة (ملف csv. في مساحة تخزين Azure Blob). يستخرج سير العمل محتوى ملف csv. في ترتيب أعمدة محدد. تم بناء سير العمل هذا لتنفيذ معالجة أخطاء أساسية والتأكد من أن كل سجل يحتوي على عنوان بريد إلكتروني قبل ترحيل البيانات إلى Adobe Campaign Standard. يستخرج سير العمل أيضًا اسم المقطع من اسم الملف قبل تحويله إلى بيانات ملف تعريف Adobe Campaign Standard.
 
 :::image type="content" source="media/ACS-import-workflow.png" alt-text="لقطة شاشة لسير عمل عملية استيراد في واجهة مستخدم Adobe Campaign Standard.":::
 
 ## <a name="retrieve-the-audience-in-adobe-campaign-standard"></a>استرداد الجمهور في Adobe Campaign Standard
 
-بعد استيراد البيانات إلى Adobe Campaign Standard، يمكنك [إنشاء سير عمل](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/workflow-general-operation/building-a-workflow.html#managing-processes-and-data) و [استعلام](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/targeting-activities/query.html#managing-processes-and-data) العملاء بالاستناد إلى *اسم الشريحة* و *تاريخ الشريحة‏‎* لتحديد ملفات التعريف التي تم تحديدها لعينة حملتنا.
+بعد استيراد البيانات إلى Adobe Campaign Standard، [يمكنك إنشاء سير عمل](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/workflow-general-operation/building-a-workflow.html#managing-processes-and-data) و [استعلام](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/targeting-activities/query.html#managing-processes-and-data) العملاء استنادًا إلى *اسم الشريحة* و *تاريخ الشريحة* لتحديد ملفات التعريف التي تم تعريفها لعينة الحملة.
 
 ## <a name="create-and-send-the-email-using-adobe-campaign-standard"></a>إنشاء البريد الإلكتروني وإرساله باستخدام Adobe Campaign Standard
 
 أنشئ محتوى البريد الإلكتروني، ثم [اختبر وأرسل](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/get-started-sending-messages.html#preparing-and-testing-messages) البريد الإلكتروني.
 
-:::image type="content" source="media/contoso-sample-email.jpg" alt-text="عينة بريد إلكتروني مع عرض تجديد من Adobe Campaign Standard.":::
+:::image type="content" source="media/contoso-sample-email.jpg" alt-text="عينة بريد إلكتروني مع عرض التجديد من Adobe Campaign Standard.":::

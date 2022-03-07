@@ -1,7 +1,7 @@
 ---
 title: تصدير بيانات Customer Insights إلى إعلانات LinkedIn
 description: تعرف على كيفية تكوين الاتصال والتصدير إلى إعلانات LinkedIn.
-ms.date: 10/08/2021
+ms.date: 05/12/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 948a7e980df5714034009c92282e78cf2bdcb231
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: 2cfaa37fd0ac697f29665792bab27a925d8ea1eede0519d424524a7e5accbfeb
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7618275"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7034207"
 ---
 # <a name="export-segments-to-linkedin-ads-preview"></a>تصدير شرائح إلى إعلانات LinkedIn (إصدار أولي)
 
@@ -28,9 +28,9 @@ ms.locfileid: "7618275"
 
 ## <a name="known-limitations"></a>القيود المعروفة
 
-- يمكنك تصدير ما يصل إلى 100 ألف ملف تعريف عميل لكل عملية تصدير إلى إعلانات LinkedIn.
+- يمكنك تصدير حتى 100 ألف ملف تعريف لكل تصدير إلى إعلانات LinkedIn.
 - يقتصر التصدير إلى إعلانات LinkedIn على الشرائح.
-- يمكن أن يستغرق تصدير ما يصل إلى 100 ألف ملف تعريف عميل إلى إعلانات LinkedIn ما يصل إلى 10 دقائق حتى يكتمل. 
+- قد يستغرق استكمال تصدير ما يصل إلى 100 ألف ملف تعريف إلى إعلانات LinkedIn ما يصل إلى 10 دقائق. 
 
 ## <a name="set-up-the-connection-to-linkedin-ads"></a>إعداد الاتصال بإعلانات LinkedIn
 
@@ -66,7 +66,7 @@ ms.locfileid: "7618275"
 
 1. اختر ما إذا كنت تريد تصدير البيانات من أجل [استهداف جهات الاتصال](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) أو [استهداف الشركات](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting) على LinkedIn. 
 
-1. في قسم **مطابقة البيانات** لاستهداف جهات الاتصال، حدد حقلًا واحدًا على الأقل يمثل عنوان البريد الإلكتروني للعميل، إعلان Apple ID أو Google Ad ID أو Google User ID أو الاسم الأول والأخير. إذا اخترت استهداف الشركة، فحدد حقلًا واحدًا على الأقل يمثل اسم الشركة أو مجال البريد الإلكتروني أو عنوان URL لصفحة LinkedIn أو رمز الأسهم أو موقع الويب. يمكن تحديد حقول إضافية لتعريف التصدير بشكل أكبر. 
+1. في قسم **مطابقة البيانات**، حدد الحقل في ملف تعريف العميل الموحد الذي يمثل عنوان البريد الإلكتروني الخاص بالعميل. يلزم تصدير الشرائح إلى إعلانات LinkedIn.
 
 1. حدد الشرائح التي تريد تصديرها. سيتم إنشاء شرائح الجمهور المطابقة في LinkedIn Campaign Manager بشكل تلقائي باسم الشرائح التي حددتها للتصدير. سينتج عن كل شريحة جمهور مطابق منفصل. 
 

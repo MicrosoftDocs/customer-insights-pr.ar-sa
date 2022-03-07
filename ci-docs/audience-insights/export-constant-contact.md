@@ -9,14 +9,14 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 3a9372cc4ffa4fb112a96b1286aee9dc35059a50
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: 30dfe4d6c2374ba9979827ea70a71c52a1334b45dd3e36ccb1de90fae0c61ad9
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5760456"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7031825"
 ---
-# <a name="export-segment-lists-to-constant-contact-preview"></a>تصدير قوائم الشرائح إلى Constant Contact (إصدار أولي)
+# <a name="export-segments-to-constant-contact-preview"></a>تصدير الشرائح إلى Constant Contact (إصدار أولي)
 
 قم بتصدير شرائح ملفات تعريف العملاء الموحدة إلى Constant Contact واستخدامها في أنشطة التسويق. 
 
@@ -47,7 +47,7 @@ ms.locfileid: "5760456"
 
 1. حدد **الاتصال** لبدء الاتصال بـ Constant Contact.
 
-1. حدد **المصادقة مع AdRoll** ووفر بيانات اعتماد المسؤول الخاصة بك لـ Constant Contact. 
+1. حدد **المصادقة مع Constant Contact** ووفر بيانات اعتماد المسؤول الخاصة بك لـ Constant Contact. 
 
 1. حدد **إضافة نفسك كمستخدم تصدير** ووفر بيانات اعتماد Customer Insights.
 

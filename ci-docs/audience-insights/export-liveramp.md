@@ -2,19 +2,19 @@
 title: موصل LiveRamp
 description: تعرف على كيفية تصدير البيانات إلى LiveRamp.
 ms.date: 12/02/2020
-ms.reviewer: kishorem
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+ms.topic: how-to
+author: kishorem-ms
+ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 86aa8c66a47ee61741082c95f05d2e5ce3f06f35
-ms.sourcegitcommit: 334633cbd58f5659d20b4f87252c1a10cc7130db
+ms.openlocfilehash: 6ef4388b0e8ba8bc5866807765d8a872d41c9c14
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4667168"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5597541"
 ---
 # <a name="liverampreg-connector-preview"></a>موصل&reg; LiveRamp‏‎ (معاينة)
 
@@ -69,3 +69,5 @@ ms.locfileid: "4667168"
 
 عند تمكين Dynamics 365 Customer Insights لإرسال البيانات إلى Liveramp، تسمح أنت بنقل البيانات خارج حدود الامتثال في Dynamics 365 Customer Insights، بما في ذلك البيانات الحساسة على الأرجح مثل البيانات الشخصية. ستقوم شركة Microsoft بنقل هذه البيانات وفقًا لتعليماتك، ولكنك مسؤول عن ضمان قيام Liveramp بتلبية أي التزامات تتعلق بالخصوصية أو الأمان قد تكون لديك. لمزيد من المعلومات، راجع [بيان خصوصية Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
 بإمكان مسؤول Dynamics 365 Customer Insights إزالة وجهة التصدير هذه في أي وقت لإيقاف استخدام هذه الوظيفة.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

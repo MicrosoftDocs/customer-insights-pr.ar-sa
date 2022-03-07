@@ -1,7 +1,7 @@
 ---
 title: تجارب التعلم الآلي من Azure
 description: استخدم نماذج قائمة على التعلم الآلي من Azure في Dynamics 365 Customer Insights.
-ms.date: 12/02/2021
+ms.date: 11/30/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -9,16 +9,16 @@ author: naravill
 ms.author: naravill
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: e37eec503c9df83ef72497e22afa1266296e642c
-ms.sourcegitcommit: 58651d33e0a7d438a2587c9ceeaf7ff58ae3b648
+ms.openlocfilehash: 3f97e22687ae4f5536d492bac83bdf9c711e2c94
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "7881722"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554419"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>استخدام نماذج قائمة على التعلم الآلي من Azure
 
-إن البيانات الموحدة في Dynamics 365 Customer Insights عبارة عن مصدر لبناء نماذج التعلم الآلي التي يمكنها إنشاء المزيد من رؤى الأعمال. يتكامل Customer Insights مع التعلم الآلي من Azure لاستخدام النماذج المخصصة الخاصة بك.
+إن البيانات الموحدة في Dynamics 365 Customer Insights عبارة عن مصدر لبناء نماذج التعلم الآلي التي يمكنها إنشاء المزيد من رؤى الأعمال. يتكامل Customer Insights مع استوديو التعلم الآلي (كلاسيكي) والتعلم الآلي من Azure لاستخدام نماذجك المخصصة. يمكنك مراجعة [تجارب استوديو التعلم الآلي (كلاسيكي)‬](machine-learning-studio-experiments.md) للحصول على أمثلة عن تجارب مبنية على استوديو التعلم الآلي (كلاسيكي)‬. 
 
 ## <a name="prerequisites"></a>المتطلبات الأساسية
 
@@ -35,7 +35,7 @@ ms.locfileid: "7881722"
 
 ## <a name="work-with-azure-machine-learning-designer"></a>العمل مع مصمم التعلم الآلي من Azure
 
-يوفر مصمم التعلم الآلي من Azure لوحة مرئية حيث يمكنك سحب مجموعات البيانات والوحدات النمطية وإسقاطها. ويمكن دمج تدفقات دُفعية تم إنشاؤها من المصمم في Customer Insights إذا تم تكوينها وفقًا لذلك. 
+يوفر مصمم التعلم الآلي من Azure لوحة مرئية حيث يمكنك سحب وإفلات مجموعات البيانات والوحدات النمطية، بما يشبه استودي يشبه التعلم الآلي (كلاسيكي). ويمكن دمج تدفقات دُفعية تم إنشاؤها من المصمم في Customer Insights إذا تم تكوينها وفقًا لذلك. 
    
 ## <a name="working-with-azure-machine-learning-sdk"></a>العمل مع SDK التعلم الآلي من Azure
 

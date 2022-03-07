@@ -2,19 +2,19 @@
 title: قيود واستيعاب البيانات في الوقت الحقيقي
 description: معلومات عامة حول القدرات في الوقت الحقيقي في رؤى الجمهور.
 ms.date: 10/27/2020
-ms.reviewer: nikeller
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: Nils-2m
+ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: b00a72e6a67e33c8e70ccc6139c5e62020f9d3e1
-ms.sourcegitcommit: b50c754481d0af6d0cf4b550775d7b31d95846ef
+ms.openlocfilehash: 897c876306a39cd9d5842487b96cb2f0a8df7e656de0fb7f10fe8c7f53e2db6b
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/06/2020
-ms.locfileid: "4689159"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7035261"
 ---
 # <a name="real-time-data-ingestion-preview"></a>استيعاب بيانات الوقت الحقيقي (معاينة)
 
@@ -54,7 +54,7 @@ ms.locfileid: "4689159"
 
 هناك طريقتان للاتصال بواجهة برمجة التطبيقات (API) في الوقت الحقيقي:
 
-- [بشكل غير مباشر](#connect-via-the-dynamics-365-customer-insights-connector)، باستخدام الموصل [Dynamics 365 Customer Insights ](https://docs.microsoft.com/connectors/customerinsights/)
+- [بشكل غير مباشر](#connect-via-the-dynamics-365-customer-insights-connector)، باستخدام الموصل [Dynamics 365 Customer Insights ](/connectors/customerinsights/)
 - [بشكل مباشر](#connect-directly-to-the-real-time-api)، مع التعليمات البرمجية
 
 كلا الطريقتين تشارك المتطلبات الأساسية التالية:
@@ -66,13 +66,13 @@ ms.locfileid: "4689159"
 
 ## <a name="connect-via-the-dynamics-365-customer-insights-connector"></a>الاتصال عبر الموصل Dynamics 365 Customer Insights
 
-يمكن لواجهة برمجة التطبيقات (API) في الوقت الحقيقي أن تستوعب البيانات من موصل Power Platform مخصص، والموصل [Dynamics 365 Customer Insights](https://docs.microsoft.com/connectors/customerinsights/)، دون الحاجة إلى كتابة أي تعليمات برمجية ونشرها.    
-يمكن للموصل أن يقوم بالإجراءات الخاصة بالوقت الحقيقي نفسها كواجهة برمجة التطبيقات (API). تحتاج إلى ترخيص صالح للموصلات المتميزة. للحصول على مزيد من المعلومات، راجع الأسئلة المتداولة حول ترخيص [Power Apps و Power Automate](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq).
+يمكن لواجهة برمجة التطبيقات (API) في الوقت الحقيقي أن تستوعب البيانات من موصل Power Platform مخصص، والموصل [Dynamics 365 Customer Insights](/connectors/customerinsights/)، دون الحاجة إلى كتابة أي تعليمات برمجية ونشرها.    
+يمكن للموصل أن يقوم بالإجراءات الخاصة بالوقت الحقيقي نفسها كواجهة برمجة التطبيقات (API). تحتاج إلى ترخيص صالح للموصلات المتميزة. للحصول على مزيد من المعلومات، راجع الأسئلة المتداولة حول ترخيص [Power Apps و Power Automate](/power-platform/admin/powerapps-flow-licensing-faq).
 
-- Power Platform [Power Apps و/أو Power Automate](https://docs.microsoft.com/connectors/)
-- Azure [Logic Apps](https://docs.microsoft.com/azure/connectors/apis-list)
+- Power Platform [Power Apps و/أو Power Automate](/connectors/)
+- Azure [Logic Apps](/azure/connectors/apis-list)
 
-للحصول على تفاصيل حول إنشاء التدفقات، راجع وثائق [Power Automate ](https://docs.microsoft.com/power-automate/).
+للحصول على تفاصيل حول إنشاء التدفقات، راجع وثائق [Power Automate ](/power-automate/).
 
 ## <a name="connect-directly-to-the-real-time-api"></a>الاتصال مباشرة مع واجهة برمجة التطبيقات في الوقت الحقيقي
 
@@ -83,6 +83,7 @@ ms.locfileid: "4689159"
 
 ## <a name="understand-your-real-time-usage-with-telemetry"></a>فهم استخدام الوقت الحقيقي مع قياس تتبع الاستخدام
 
-يمكنك الحصول على نظرة عامة على حجم الطلبات لواجهة برمجة التطبيقات في الوقت الحقيقي ومعلومات حول المشكلات التي قد يواجهها النظام. يمكنك [الوصول إلى قياس تتبع الاستخدام في الوقت الحقيقي](system.md#api-usage-tab) من خلال الانتقال إلى **المسؤول** > **النظام** > **استخدام نظام واجهة برمجة التطبيقات**. في جدول **العمليات**، تحتوي الصفوف الخاصة بعمليات واجهة برمجه التطبيقات (API) التي تستخدم الأساليب في الوقت الحقيقي على زر لعرض استخدام API في الوقت الحقيقي. هذا الزر ممثل بواسطة رمز المناظير‬. حدد الزر لفتح جزء جانبي يحتوي على تفاصيل الاستخدام الخاصة باستخدام API في الوقت الحقيقي في البيئة الحالية.
+يمكنك الحصول على نظرة عامة على حجم الطلبات لواجهة برمجة التطبيقات في الوقت الحقيقي ومعلومات حول المشكلات التي قد يواجهها النظام. يمكنك الوصول إلى [بيانات تتبع الاستخدام في الوقت الحقيقي](system.md#api-usage-tab). 
 
-استخدم محدد **التجميع حسب** لاختيار كيفية عرض التفاعلات في الوقت الحقيقي بأفضل صورة على مخطط زمني يتراوح من آخر 24 ساعة إلى آخر 30 يومًا. يمكنك تجميع البيانات حسب أسلوب واجهة برمجة التطبيقات (API)، أو اسم الكيان المؤهل (الكيان المضمن)، والذي تم إنشاؤه بواسطة (مصدر الحدث)، أو النتيجة (النجاح أو الفشل) أو رموز الخطأ. تتوفر البيانات كمخطط تاريخي وكجدول.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
