@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: 5b22c1464b3f089551f485f98d6d93840ff77136
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 418575f724090628da8bd01e2569a4cb9e646337
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355875"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376492"
 ---
 # <a name="bring-your-own-azure-key-vault-preview"></a>جلب Azure key vault الخاص بك (إصدار أولي)
 
@@ -31,7 +31,7 @@ ms.locfileid: "8355875"
 
 - لديك اشتراك Azure نشط.
 
-- لديك دور [المسؤول](permissions.md#administrator) في معلومات الجمهور. لمعرفة المزيد [أذونات المستخدم في رؤى الجمهور](permissions.md#assign-roles-and-permissions).
+- لديك دور [المسؤول](permissions.md#admin) في معلومات الجمهور. لمعرفة المزيد [أذونات المستخدم في رؤى الجمهور](permissions.md#assign-roles-and-permissions).
 
 - لديك أدوار [المساهم](/azure/role-based-access-control/built-in-roles#contributor) و[مسؤول وصول المستخدم](/azure/role-based-access-control/built-in-roles#user-access-administrator) في المخزن الرئيسي أو مجموعة الموارد التي ينتمي إليها المخزن الرئيسي. لمزيد من المعلومات، راجع [إضافة أو إزالة تعيينات أدوار Azure باستخدام مدخل Azure](/azure/role-based-access-control/role-assignments-portal). إذا لم يكن لديك دور مسؤول وصول المستخدم في مخزن المفاتيح، فيجب عليك إعداد أذونات التحكم في الوصول المستند إلى الدور لمدير خدمة Azure لـ Dynamics 365 Customer Insights بشكل منفصل. اتبع الخطوات [لاستخدام مدير خدمة Azure](connect-service-principal.md) للمخزن الرئيسي الذي يجب ربطه.
 

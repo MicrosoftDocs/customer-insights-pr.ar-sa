@@ -1,7 +1,7 @@
 ---
 title: إثراء ملفات تعريف العملاء الموحدة
 description: استخدم القدرات لإثراء بيانات العملاء.
-ms.date: 02/07/2022
+ms.date: 02/18/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -14,12 +14,12 @@ searchScope:
 - ci-enrichment-details
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: e8cac35ccf7012524dc22cb4a499dc605dd66346
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: b44f5a4b74c63629811837b853b4e069dea63504
+ms.sourcegitcommit: bb1f9e96023490ab340c114f54200ab4dd48da78
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355367"
+ms.lasthandoff: 03/02/2022
+ms.locfileid: "8372686"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>الإثراء لملفات تعريف العملاء (معاينة)
 
@@ -42,6 +42,7 @@ ms.locfileid: "8355367"
 - [البيانات المخصصة](enrichment-SFTP-custom-import.md) عبر بروتوكول نقل الملفات الآمن (SFTP)‬ 
 - تم توفير [خرائط Azure](enrichment-azure-maps.md) بواسطة Microsoft
 - [بيانات الموقع](enrichment-here.md) مقدمة من HERE Technologies 
+- [الهوية](enrichment-liveramp.md) الموفرة بواسطة LiveRamp Abili
 
 # <a name="business-accounts-b-to-b"></a>[حسابات الأعمال (B-to-B)](#tab/b2b)
 
@@ -80,6 +81,10 @@ ms.locfileid: "8355367"
 ## <a name="multiple-enrichments-of-the-same-type"></a>عمليات إثراء متعددة من نفس النوع
 
 يتم تحديد الكيان الذي سيتم إثراءه أثناء تكوين المنشط، والذي يسمح لك بإثراء مجموعة فرعية فقط من ملفات التعريف الخاصة بك. على سبيل المثال، إثراء البيانات لشريحة معينة فقط. يمكنك تكوين العديد من عمليات الإثراء من نفس النوع وإعادة استخدام نفس الاتصال. سيكون لبعض عمليات الإثراء حدود لعدد عمليات الإثراء من نفس النوع التي يمكن إنشاؤها. يمكن رؤية الحدود والاستخدام الحالي على صفحة **الإثراء**.
+
+## <a name="enrich-data-sources-before-unification"></a>إثراء مصادر البيانات قبل التوحيد
+
+يمكنك إثراء بيانات العميل قبل توحيد البيانات للمساعدة في زيادة جودة مطابقة البيانات. لمزيد من المعلومات، راجع [إثراء مصدر البيانات](data-sources-enrichment.md).
 
 ## <a name="see-the-progress-of-the-enrichment-process"></a>اطلع على التقدم المحرز في عملية الإثراء
 

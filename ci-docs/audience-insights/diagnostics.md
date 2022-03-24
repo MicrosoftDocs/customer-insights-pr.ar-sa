@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 2e0801c2b6af591e48a7df485a8523903c07617c
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: d84ae8301bdf384c2484cdb1e7dd8eb75d406769
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354356"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376400"
 ---
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>إعادة توجيه السجل في Dynamics 365 Customer Insights باستخدام Azure Monitor (إصدار أولي)
 
@@ -37,7 +37,7 @@ ms.locfileid: "8354356"
 لتكوين التشخيصات في Customer Insights، يجب تلبية المتطلبات الأساسية التالية:
 
 - لديك [اشتراك Azure](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/) نشط.
-- لديك [أذونات المسؤول](permissions.md#administrator) في Customer Insights.
+- لديك [أذونات المسؤول](permissions.md#admin) في Customer Insights.
 - لديك دور **المساهم** و **مسؤول وصول المستخدم** على المورد الوجهة في Azure. قد يكون المورد حساب Azure Storage أو مركز أحداث Azure أو مساحة عمل Azure Log Analytics. لمزيد من المعلومات، راجع [إضافة أو إزالة تعيينات أدوار Azure باستخدام مدخل Azure](/azure/role-based-access-control/role-assignments-portal).
 - [تمت تلبية المتطلبات الوجهة](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) لـ Azure Storage أو مركز أحداث Azure أو Azure Log Analytics.
 - لديك على الأقل دور **قارئ** في مجموعة الموارد التي ينتمي إليها المورد.
@@ -132,7 +132,7 @@ ms.locfileid: "8354356"
 | `resultSignature` | السلسلة‬    | اختيارية          | حالة نتيجة الحدث. إذا كانت العملية مطابقة لاستدعاء واجهة برمجة تطبيقات REST، فهي رمز حالة HTTP.        | `200`             |
 | `durationMs`      | طويل      | اختيارية          | مدة العملية بالمللي ثانية.     | `133`     |
 | `callerIpAddress` | السلسلة‬    | اختيارية          | عنوان IP للمتصل، إذا كانت العملية تتوافق مع استدعاء API الذي يأتي من عنوان IP متاح للجمهور.                                                 | `144.318.99.233`         |
-| `identity`        | السلسلة‬    | اختيارية          | كائن JSON يصف هوية المستخدم أو التطبيق الذي قام بالعملية.       | راجع قسم [الهوية](#identity-schema).     |  |
+| `identity`        | السلسلة‬    | اختيارية          | كائن JSON يصف هوية المستخدم أو التطبيق الذي قام بالعملية.       | راجع قسم [الهوية](#identity-schema).     |  
 | `properties`      | السلسلة‬    | اختيارية          | كائن JSON مع مزيد من الخصائص لفئة معينة من الأحداث.      | راجع قسم [الخصائص](#api-properties-schema).    |
 | `level`           | السلسلة‬    | مطلوبة          | مستوى خطورة الحدث.    | `Informational` أو `Warning` أو `Error` أو `Critical`.           |
 | `uri`             | السلسلة‬    | اختيارية          | عنوان URI المطلق للطلب.    |               |
@@ -239,7 +239,7 @@ ms.locfileid: "8354356"
 | `properties.startTimestamp`                  | نعم       | نعم   | الطابع الزمني UTC `yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
 | `properties.endTimestamp`                    | نعم       | نعم   | الطابع الزمني UTC `yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
 | `properties.submittedTimestamp`              | نعم       | نعم   | الطابع الزمني UTC `yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
-| `properties.instanceId`                      | نعم       | نعم   | Customer Insights `instanceId`                                                                                                                                                                                                                              |  |
+| `properties.instanceId`                      | نعم       | نعم   | Customer Insights `instanceId`                                                                                                                                                                                                                              |  
 | `properties.identifier`                      | لا        | نعم   | - بالنسبة إلى OperationType = `Export`، يكون المعرف هو دليل تكوين التصدير. <br> - بالنسبة إلى OperationType = `Enrichment`، يكون هو دليل الإثراء <br> - بالنسبة إلى OperationType `Measures` و`Segmentation`، يكون المعرف هو اسم الكيان. |
 | `properties.friendlyName`                    | لا        | نعم   | الاسم سهل الاستخدام للمستخدم للتصدير أو الكيان الذي تمت معالجته.                                                                                                                                                                                           |
 | `properties.error`                           | لا        | نعم   | اختياري. رسالة خطأ بمزيد من التفاصيل.                                                                                                                                                                                                                  |

@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-export
 - customerInsights
-ms.openlocfilehash: cf680c21c55c71d99728be79fe68111dc89a79ec
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 4c1b5eaa3568b5c73013024d2da7e65276142f72
+ms.sourcegitcommit: d168a738a08adb8b4b2e410bdaa3716d7b63cc9b
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355000"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "8455814"
 ---
 # <a name="use-segments-in-dynamics-365-sales-preview"></a>استخدام الشرائح في Dynamics 365 Sales (إصدار أولي)
 
@@ -31,7 +31,7 @@ ms.locfileid: "8355000"
 
 ## <a name="prerequisite-for-connection"></a>المتطلبات الأساسية للاتصال
 
-1. يجب أن تكون سجلات جهات الاتصال موجودة في Dynamics 365 Sales قبل تصدير شريحة من Customer Insights إلى Sales. اقرأ المزيد حول كيفية استيعاب جهات الاتصال في [Dynamics 365 Sales باستخدام Microsoft Dataverse](connect-power-query.md).
+1. يجب أن تكون سجلات جهات الاتصال موجودة في Dynamics 365 Sales قبل تصدير شريحة من Customer Insights إلى Sales. اقرأ المزيد عن كيفية استيعاب جهات الاتصال من [Dynamics 365 Sales باستخدام Microsoft Dataverse](connect-dataverse-managed-lake.md).
 
    > [!NOTE]
    > لن يؤدي تصدير الشرائح من رؤى الجمهور إلى Sales إلى إنشاء سجلات جهات اتصال جديدة في مثيلات Sales. يجب استيعاب سجلات جهات الاتصال من Sales في رؤى الجمهور واستخدامها كمصدر بيانات. كما يلزم تضمينها في كيان العميل الموحد من أجل تعيين معرفات العملاء إلى معرفات جهات الاتصال قبل أن يصبح تصدير الشرائح ممكنًا.

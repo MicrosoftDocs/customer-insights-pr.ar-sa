@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahl
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 938a9de83fd8f5ff0c9ae815d626cdfa35228aba
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 47239bd7f0c89742cf9c673bb2ebe4c41d853233
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8228458"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376814"
 ---
 # <a name="enrich-customer-profiles-with-engagement-data-preview"></a>إثراء ملفات تعريف العملاء ببيانات التفاعل (إصدار أولي)
 
@@ -28,7 +28,7 @@ ms.locfileid: "8228458"
 - لديك ترخيص سحابة Office 365 نشط.
 - لديك [ملفات تعريف العملاء الموحدة](customer-profiles.md) استنادًا إلى [حسابات الأعمال](work-with-business-accounts.md).
 - يجب أن يكون لدى بيئة Customer Insights مؤسسة [Microsoft Dataverse مرفقة](create-environment.md#step-3-connect-to-microsoft-dataverse)بها.
-- لديك أذونات [المسؤول](permissions.md#administrator).
+- لديك أذونات [المسؤول](permissions.md#admin).
 - لديك أو يمكنك الحصول على موافقة من مسؤول مستأجر Office 365 لاستخدام بيانات Office 365 لتوفير **رؤى مستقبلية للمؤسسة** في تطبيقات Dynamics 365.
 
 ## <a name="configure-the-enrichment"></a>تكوين الإثراء

@@ -8,12 +8,12 @@ ms.topic: how-to
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: ae2a3b7c05e9ed860da31853c47af2aec8634e7a
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 18cc32a169e79794d2d3203d462620ab41efaafe
+ms.sourcegitcommit: d168a738a08adb8b4b2e410bdaa3716d7b63cc9b
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8229015"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "8455922"
 ---
 # <a name="microsoft-power-apps-connector-preview"></a>موصل Microsoft Power Apps (معاينة)
 
@@ -38,6 +38,8 @@ ms.locfileid: "8229015"
 ### <a name="retrievable-entities"></a>الكيانات القابلة للاسترداد
 
 يمكنك فقط استرداد كيانات **العميل**، و **UnifiedActivity**، و **المقاطع**، و **ContactProfile** من خلال موصل Power Apps. إن ContactProfile متاح فقط في مثيل رؤى الجمهور لحسابات الأعمال. تظهر الكيانات الأخرى لأن الموصل الأساسي يدعمها من خلال المشغلات الموجودة في Power Automate.
+
+يمكنك إجراء 100 مكالمة كحد أقصى لكل 60 ثانية. يمكنك استدعاء نقطة نهاية API عدة مرات باستخدام المعلمة $ skip. [تعرف على المزيد حول معلمة $skip](/connectors/customerinsights/#get-items-from-an-entity).
 
 ### <a name="delegation"></a>تفويض
 

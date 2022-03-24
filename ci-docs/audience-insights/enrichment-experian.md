@@ -8,12 +8,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: ad1023135516ca9c49818d19aa84df68d16b2e3c
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: efa26fa82a950063e074a4ab930ed95383c55334
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8229948"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376676"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>إثراء ملفات تعريف العملاء بخصائص سكانية من Experian (معاينة)
 
@@ -25,7 +25,7 @@ Experian هي شركة رائدة على مستوى العالم في مجال �
 
 - لديك اشتراك Experian نشط. للحصول على اشتراك، [اتصل بـ Experian](https://www.experian.com/marketing-services/contact) مباشرةً. [تعرف على المزيد حول إثراء البيانات في Experian](https://www.experian.com/marketing-services/microsoft?cmpid=ems_web_mci_cdppage).
 
-- تم بالفعل تكوين اتصال Experian بواسطة المسؤول *أو* تحصل على أذونات [المسؤول](permissions.md#administrator). كما تحتاج أيضا إلى "تعريف المستخدم" و"رقم الطرف" و"رقم النموذج" لحساب النقل الآمن (ST) الممكن لـ SSH الذي أنشاته Experian من أجلك.
+- تم بالفعل تكوين اتصال Experian بواسطة المسؤول *أو* تحصل على أذونات [المسؤول](permissions.md#admin). كما تحتاج أيضا إلى "تعريف المستخدم" و"رقم الطرف" و"رقم النموذج" لحساب النقل الآمن (ST) الممكن لـ SSH الذي أنشاته Experian من أجلك.
 
 ## <a name="supported-countriesregions"></a>البلدان/المناطق المدعومة
 

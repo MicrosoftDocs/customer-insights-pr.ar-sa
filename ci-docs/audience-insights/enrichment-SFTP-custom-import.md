@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: e4b9a65eb50f75e0243fabfc10b501cf7acf4490
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 042558af801a1d1fc365939d9aa42c09b98b2679
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8229611"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376538"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>إثراء ملفات تعريف العملاء بواسطة البيانات المخصصة (معاينة)
 
@@ -25,7 +25,7 @@ ms.locfileid: "8229611"
 
 - لديك اسم الملف وموقع (المسار) للملف المطلوب استيراده على مضيف SFTP.
 - يوجد ملف *model.json* الذي يحدد [خطط نموذج البيانات العامة](/common-data-model/) للبيانات المراد استيرادها. يجب أن يكون هذا الملف في الدليل نفسه حيث الملف الذي سيتم استيراده.
-- تم بالفعل تكوين اتصال SFTP بواسطة المسؤول *أو* تحصل على أذونات [المسؤول](permissions.md#administrator). سوف تحتاج إلى بيانات اعتماد المستخدم وعنوان URL رقم المنفذ لموقع SFTP حيث تريد استيراد البيانات منه.
+- تم بالفعل تكوين اتصال SFTP بواسطة المسؤول *أو* تحصل على أذونات [المسؤول](permissions.md#admin). سوف تحتاج إلى بيانات اعتماد المستخدم وعنوان URL رقم المنفذ لموقع SFTP حيث تريد استيراد البيانات منه.
 
 
 ## <a name="configure-the-import"></a>تكوين الاستيراد

@@ -1,7 +1,7 @@
 ---
 title: إدارة أذونات المستخدم
 description: تعرف على الأذونات وأدوار المستخدم.
-ms.date: 03/25/2021
+ms.date: 02/09/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -12,12 +12,12 @@ searchScope:
 - ci-permissions
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: a3d21d55d86950953611967bb66712312eb42b4b
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 85e1f4f93ac0e99ce6634dfc8fceab0c9a14885e
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355921"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376722"
 ---
 # <a name="user-permissions"></a>أذونات المستخدم
 
@@ -48,7 +48,7 @@ ms.locfileid: "8355921"
 - إدارة التكوين وإثراء ملفات تعريف العملاء من صفحة **الإثراء** (مع عمليات إثراء الطرف الأول فقط).
 - قم بإدارة وإنشاء عمليات التصدير بناءً على الاتصالات المشتركة مع المساهمين. [تعرف على المزيد حول كيف يسمح المسؤولون للمساهمين باستخدام اتصال لعمليات التصدير](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-## <a name="administrator"></a>المسؤول 
+## <a name="admin"></a>الإدارة
 
 - تكون جميع الأذونات متاحة للمساهم.
 - تغيير الإعدادات على صفحة **النظام**، بما في ذلك اللغة قيد التشغيل وجداول التحديث لعمليات النظام لديك.
@@ -60,6 +60,12 @@ ms.locfileid: "8355921"
 - قم بتثبيت واستخدام **الوظيفة الإضافية لبطاقة عميل**.
 - إضافة موصل **Power Apps** واستخدامه.
 - تمكين استخدام [واجهات API في Customer Insights](apis.md).
+- [تعيين ملكية البيئة](manage-environments.md#change-the-owner-of-an-environment) لمسؤول آخر.
+
+## <a name="admin-owner"></a>المسؤول (المالك)
+
+- جميع الأذونات المتاحة للمسؤول.
+- [أعد تعيين واحذف](manage-environments.md#reset-an-existing-environment) البيئة.
 
 ## <a name="assign-roles-and-permissions"></a>تعيين الأدوار والأذونات
 
