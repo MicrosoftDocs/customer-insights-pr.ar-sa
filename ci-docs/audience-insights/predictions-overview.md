@@ -1,20 +1,15 @@
 ---
 title: نظرة عامة حول سيناريوهات التنبؤ المدعومة
 description: سيناريوهات وخيارات التنبؤ التي يغطيها تطبيق Dynamics 365 Customer Insights.
-ms.date: 12/21/2021
+ms.date: 03/24/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: overview
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: c692785c7d81ab660ba2e07411e986c67c1a5d0a
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
-ms.translationtype: HT
-ms.contentlocale: ar-SA
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8228169"
 ---
+
 # <a name="predictions-overview"></a>نظرة عامة حول التبنؤات
 
 يأتي Dynamics 365 Customer Insights مع مجموعة متنوعة من الخيارات التي تستفيد من الذكاء الاصطناعي والتعلم الآلي للتنبؤ بالبيانات. 
@@ -36,6 +31,11 @@ ms.locfileid: "8228169"
 - [خسارة الحركة](predict-transactional-churn.md): التنبؤ بما إذا كان العميل سيتوقف عن شراء المنتجات والخدمات في إطار زمني معين.
 
 ---
+
+> [!TIP]
+> من المستحسن أن تقوم بتحديث النماذج الجاهزة بشكل منتظم من خلال البيانات المحدثة للتأكد من أنها تبلّغ بدقة حالة استخدام الأعمال الخاصة بك. يتم تحديث البيانات بشكل مخصص عندما يستوعب النظام مصادر البيانات الجديدة أو المحدثة. ومع ذلك، لن تقوم النماذج إلا بإعادة التكوين في هذه الحالة مع الاستمرار في استخدام بيانات التدريب الموجودة.
+> 
+> يمكنك تكوين **جدول تحديث** من خلال تعيين جدولة إعادة تدريب النموذج في تجربة التكوين. سيقوم النموذج بإعادة تدريب وإعادة اختيار هذه الجدولة، والتي يمكنك تغييرها في أي وقت.
 
 
 ## <a name="azure-machine-learning-integration"></a>تكامل التعلم الآلي من Azure

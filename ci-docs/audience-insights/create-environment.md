@@ -1,24 +1,19 @@
 ---
 title: إنشاء البيئات في Customer Insights
 description: خطوات إنشاء البيئات باشتراك مرخص في Dynamics 365 Customer Insights.
-ms.date: 02/24/2022
+ms.date: 03/28/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
-author: MichelleDevaney
-ms.author: midevane
+author: adkuppa
+ms.author: adkuppa
 manager: shellyha
 ms.custom: intro-internal
 searchScope:
-- ci-home
-- customerInsights
-ms.openlocfilehash: c37afd5649f8cf40d5379f3d39d0cbd96cde3bd3
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: HT
-ms.contentlocale: ar-SA
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354079"
+  - ci-home
+  - customerInsights
 ---
+
 # <a name="create-an-environment-in-audience-insights"></a>إنشاء بيئة في رؤى الجماهير
 
 تشرح هذه المقالة كيفية إنشاء بيئة جديدة بعد شراء مؤسستك لاشتراك Dynamics 365 Customer Insights. 
@@ -83,14 +78,16 @@ ms.locfileid: "8354079"
 كما يمكنك الاتصال ببيئة Dataverse الخاصة بك استيعاب البيانات من مصادر بيانات داخلية[ باستخدام تدفقات البيانات والبوابات Power Platform](data-sources.md#add-data-from-on-premises-data-sources). يمكنك أيضا استخدام [نمازج تنبؤ جاهزة](predictions-overview.md?tabs=b2c#out-of-box-models) من خلال الاتصال Dataverse ببيئة.
 
 > [!IMPORTANT]
-> يجب أن تكون Customer Insights وDataverse في نفس المنطقة لتمكين مشاركة البيانات.
+> 1. يجب أن تكون Customer Insights وDataverse في نفس المنطقة لتمكين مشاركة البيانات.
+> 1. يجب أن يكون لديك دور مسؤول عمومي في بيئة Dataverse. تحقق مما إذا كانت [بيئة Dataverse هذه مقترنة](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) بمجموعات أمان معينة وتأكد من إضافتك إلى مجموعات الأمان هذه.
+> 1. لا توجد بيئة Customer Insights موجودة مقترنة بالفعل ببيئة Dataverse هذه. تعرف على كيفية [إزالة اتصال موجود ببيئة Dataverse](manage-environments.md#remove-an-existing-connection-to-a-dataverse-environment).
 
 :::image type="content" source="media/dataverse-provisioning.png" alt-text="مشاركة البيانات مع Microsoft Dataverseتمكين تلقائي للمثيلات الجديدة الصافية.":::
 
-> [!NOTE]
-> لا يدعم Customer Insights سيناريوهات مشاركة البيانات التالية:
-> - إذا قمت بحفظ جميع البيانات في Azure Data Lake Storage الخاص بك، فلن تتمكن من تمكين مشاركة البيانات باستخدام مستودع بيانات مُدار بواسطة Dataverse.
-> - إذا قمت بتمكين مشاركة البيانات باستخدام Dataverse، فلن تتمكن من [إنشاء قيم تم التنبؤ بها أو مفقودة في إحدى الكيانات](predictions.md).
+لمزيد من المعلومات حول تمكين مشاركة البيانات باستخدام Microsoft Dataverse من Azure Data Lake Storage الخاص بك، راجع [الاتصال بـ Microsoft Dataverse](manage-environments.md#connect-to-microsoft-dataverse).
+
+لا يدعم Customer Insights سيناريوهات مشاركة البيانات التالية:
+- إذا قمت بتمكين مشاركة البيانات باستخدام Dataverse، فلن تتمكن من [إنشاء قيم تم التنبؤ بها أو مفقودة في إحدى الكيانات](predictions.md).
 
 ### <a name="step-4-finalize-the-settings"></a>الخطوة 4: إنهاء الإعدادات
 

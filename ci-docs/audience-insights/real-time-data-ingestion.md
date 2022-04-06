@@ -1,5 +1,5 @@
 ---
-title: قيود واستيعاب البيانات في الوقت الحقيقي
+title: استيعاب بيانات الوقت الحقيقي (إصدار أولي)
 description: معلومات عامة حول القدرات في الوقت الحقيقي في رؤى الجمهور.
 ms.date: 10/27/2020
 ms.reviewer: mhart
@@ -9,16 +9,11 @@ author: Nils-2m
 ms.author: nikeller
 manager: shellyha
 searchScope:
-- ci-system-api-usage
-- customerInsights
-ms.openlocfilehash: 2fe5279eee1b3b30f5bc21464c85fe5f86d342a0
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: HT
-ms.contentlocale: ar-SA
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355459"
+  - ci-system-api-usage
+  - customerInsights
 ---
-# <a name="real-time-data-ingestion-preview"></a>استيعاب بيانات الوقت الحقيقي (معاينة)
+
+# <a name="real-time-data-ingestion-preview"></a>استيعاب بيانات الوقت الحقيقي (إصدار أولي)
 
 تتيح لك الوظائف القريبة من الوقت الحقيقي رؤية، خلال ثواني، التفاعلات الأخيرة التي أجراها عملاؤك مع منتجاتك أو خدماتك.
 

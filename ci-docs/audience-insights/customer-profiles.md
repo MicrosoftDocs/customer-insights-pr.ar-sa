@@ -9,23 +9,20 @@ author: Nils-2m
 ms.author: nikeller
 manager: shellyha
 searchScope:
-- ci-customers-page
-- ci-customer-card
-- ci-activities
-- ci-activities-wizard
-- customerInsights
-ms.openlocfilehash: 3a17716508a14020c56640c7d68f300a9d721af4
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: HT
-ms.contentlocale: ar-SA
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354862"
+  - ci-customers-page
+  - ci-customer-card
+  - ci-activities
+  - ci-activities-wizard
+  - customerInsights
 ---
+
 # <a name="customer-profiles"></a>ملفات تعريف العملاء
 
 تعرض صفحة **العملاء** طريقة عرض مدمجة لملفات تعريف العميل الموحد. تتوفر ملفات تعريف العملاء بمجرد قيامك [بإنشاء كيان العميل الموحد](data-unification.md). تتيح لك الصفحة البحث عن العملاء وتحديد الفهرس لهذا البحث.
 
-بإمكان العملاء أن يكونوا أفراداً أو مؤسسات. يتم تمثيل كل ملف تعريف عميل بواسطة تجانب. استخدم عناصر التحكم في ترقيم الصفحات للحصول على المزيد من السجلات. تعرض البطاقة الحقول من كيان *العميل* كما هو محدد في **فهرس البحث والتصفية**. حدد مربعًا لعرض البيانات الخاصة بالعميل المحدد في صفحة مخصصة تسمى [صفحة تفاصيل العميل](customer-profiles.md#customer-details-page).
+بإمكان العملاء أن يكونوا أفراداً أو مؤسسات. يتم تمثيل كل ملف تعريف عميل بواسطة تجانب. استخدم عناصر التحكم في ترقيم الصفحات للحصول على المزيد من السجلات. تعرض البطاقة الحقول من كيان *العميل* كما هو محدد في **فهرس البحث والتصفية**. يتم اختيار ترتيب الحقول داخل كل بطاقة بواسطة النظام.
+
+حدد مربعًا لعرض البيانات الخاصة بالعميل المحدد في صفحة مخصصة تسمى [صفحة تفاصيل العميل](customer-profiles.md#customer-details-page).
 
 > [!div class="mx-imgBorder"] 
 > ![صفحة عملاء تُظهر تجانبات النتائج](media/customers-page-result-tiles-B2C.png "صفحة عملاء تُظهر تجانبات النتائج")

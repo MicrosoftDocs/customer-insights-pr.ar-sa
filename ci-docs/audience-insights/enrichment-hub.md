@@ -1,7 +1,7 @@
 ---
 title: إثراء ملفات تعريف العملاء الموحدة
 description: استخدم القدرات لإثراء بيانات العملاء.
-ms.date: 02/18/2022
+ms.date: 03/29/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -10,17 +10,12 @@ ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
 searchScope:
-- ci-enrichments
-- ci-enrichment-details
-- ci-enrichment-wizard
-- customerInsights
-ms.openlocfilehash: b44f5a4b74c63629811837b853b4e069dea63504
-ms.sourcegitcommit: bb1f9e96023490ab340c114f54200ab4dd48da78
-ms.translationtype: HT
-ms.contentlocale: ar-SA
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8372686"
+  - ci-enrichments
+  - ci-enrichment-details
+  - ci-enrichment-wizard
+  - customerInsights
 ---
+
 # <a name="enrichment-for-customer-profiles-preview"></a>الإثراء لملفات تعريف العملاء (معاينة)
 
 استخدم البيانات من مصادر مثل Microsoft والشركاء الآخرين لإثراء بيانات العملاء.
@@ -97,5 +92,19 @@ ms.locfileid: "8372686"
 1. في جزء **تفاصيل التقدم**، قم بتوسيع قسم **عمليات الإثراء**. 
 1. ضمن الإثراء الذي تريد أن ترى التقدم فيه، حدد **راجع التفاصيل**. 
 1. في جزء **تفاصيل المهمة**، حدد **إظهار التفاصيل** لمعرفة العمليات التي ينطوي عليها تحديث الإثراء وحالتها. 
+
+## <a name="enrichment-results"></a>نتائج الإثراء
+
+بعد اكتمال تشغيل الإثراء، يمكنك مراجعة نتائج الإثراء.
+
+1. انتقل إلى **بيانات** > **إثراء**. 
+1. حدد الإثراء الذي تريد معلومات عنه.
+
+تظهر عمليات الإثراء معلومات أساسية مثل عدد ملفات التعريف التي تم إثراؤها، وإصدار أولي لكيان الإثراء الذي تم إنشاؤه، وعدد ملفات التعريف التي تم إثراؤها مع مرور الوقت. يوفر **عدد العملاء الذين تم إثراؤهم بواسطة الحقل**، إن كان متوفرًا، التنقل لأسفل في تغطية كل حقل تم إثراؤه.
+
+:::image type="content" source="media/enrichments-results.png" alt-text="صفحة نتائج عمليات الإثراء.":::
+
+كما تظهر بعض عمليات الإثراء أيضًا معلومات خاصة بنوع الإثراء. راجع وثائق الإثراء ذي الصلة لمزيد من المعلومات.
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

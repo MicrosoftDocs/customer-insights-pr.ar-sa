@@ -1,42 +1,32 @@
 ---
 title: تصدير بيانات Customer Insights إلى Google Ads
 description: تعرف على كيفية تهيئة الاتصال والتصدير إلى Google Ads.
-ms.date: 09/27/2021
+ms.date: 03/31/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 28e2b35c5a47a025b8cdcccdb3f61c79878bf056
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
-ms.translationtype: HT
-ms.contentlocale: ar-SA
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8226994"
 ---
+
 # <a name="export-segments-to-google-ads-preview"></a>تصدير شرائح إلى Google Ads (إصدار أولي)
 
 تصدير أجزاء من الملفات الشخصية الموحدة للعملاء إلى قائمة جمهور Google Ads واستخدامها للإعلان على بحث Google و Gmail وYouTube وشبكة عرض Google. 
 
-> [!IMPORTANT]
-> في الوقت الحالي، لا يمكنك إنشاء اتصال جديد وتصدير البيانات إلى Google Ads إلا إذا كان لديك بالفعل رمز مميز لمطور Google Ads معتمد. نظرا إلى التغييرات في النهج، سنقوم بتحديث تصدير Google Ads قريبًا وتوفير خيار تصدير لا يتطلب رمز مميز للمطور لضمان استمرار خبرتك وتبسيط عملية التصدير إلى Google Ads. يوصى بعدم إعداد مزيد من الاتصالات إلى Google Ads لتسهيل التبديل إلى خيار التصدير الجديد.
 
 ## <a name="prerequisites-for-connection"></a>المتطلبات الأساسية للاتصال
 
 -   لديك [حساب Google Ads](https://ads.google.com/) وبيانات اعتماد مسؤول مطابقة.
--   لديك رمز [مطور Google Ads معتمد](https://developers.google.com/google-ads/api/docs/first-call/dev-token). 
 -   أنت تفي بمتطلبات [سياسة مطابقة العملاء](https://support.google.com/adspolicy/answer/6299717).
 -   أنت تفي بمتطلبات [أحجام قائمة تجديد النشاط التسويقي](https://support.google.com/google-ads/answer/7558048).
--   هناك شرائح جمهور موجودة في Google Ads والمعرفات المناظرة. لمزيد من المعلومات، راجع [شرائح جمهور Google Ads](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.).
 -   لقد قمت [بتكوين الشرائح](segments.md).
--   تحتوي ملفات تعريف العملاء الموحدة في الشرائح المصدّرة على حقول تمثل عنوان البريد الإلكتروني والاسم الأول واسم العائلة.
+-   تحتوي ‏‫Unified Customer Profiles‬ في المقاطع التي تم تصديرها على حقول تمثل عنوان البريد الإلكتروني أو الهاتف أو معرف معلن الجوال أو معرف مستخدم الطرف الثالث أو العنوان.
 
 ## <a name="known-limitations"></a>القيود المعروفة
 
-- ما يصل إلى مليون ملف تعريف لكل عميل لكل عملية تصدير إلى Google Ads.
 - يقتصر التصدير إلى Google Ads على الشرائح.
-- يمكن أن يستغرق تصدير مقاطع بإجمالي مليون ملف تعريف عميل ما يصل إلى 5 دقائق بسبب القيود من جانب المزود. 
+- يمكن أن يستغرق تصدير مقاطع بإجمالي مليون ملف تعريف عميل ما يصل إلى 30 دقيقة بسبب القيود من جانب موفر الخدمة. 
 - قد يستغرق التطابق في Google Ads ما يصل إلى 48 ساعة.
 
 ## <a name="set-up-connection-to-google-ads"></a>إعداد الاتصال بGoogle Ads
@@ -50,8 +40,6 @@ ms.locfileid: "8226994"
 1. اختر الشخص الذي يمكنه استخدام هذا الاتصال. إذا لم تتخذ أي إجراء، فإن الإعداد الافتراضي سيكونالمسؤولين. لمزيد من المعلومات، راجع [السماح للمساهمين باستخدام اتصال للتصديرات](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. أدخل **[معرف عميل Google Ads](https://support.google.com/google-ads/answer/1704344)**.
-
-1. أدخل **[الرمز المميز لمطور Google Ads الموافق عليه](https://developers.google.com/google-ads/api/docs/first-call/dev-token)**.
 
 1. حدد **أوافق** لتأكيد **خصوصية البيانات والتوافق‬**.
 
@@ -71,11 +59,11 @@ ms.locfileid: "8226994"
 
 1. في حقل **الاتصال للتصدير**، اختر اتصالاً من قسم Google Ads. إذا لم تشاهد اسم المقطع هذا، فلا توجد اتصالات من هذا النوع متوفرة لك.
 
-1. أدخل **[معرف جمهور Google Ads](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)** وحدد **اتصال** لبدء الاتصال بـ Google Ads.
+1. إذا كنت ترغب في إنشاء جمهور جديد، فاترك حقل معرف جمهور Google فارغًا. سنقوم تلقائيًا بإنشاء جمهور جديد في حساب Google Ads واستخدام اسم المقطع الذي تم تصديره. إذا كنت ترغب في تحديث جمهور Google Ads موجود، فأدخل [معرف جمهور Google Ads](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)
 
-1. في قسم **مطابقة البيانات** في حقل **البريد الإلكتروني**، حدد الحقل الذي يمثل عنوان البريد الإلكتروني للعميل.
+1. في مقطع **مطابقة البيانات**، حدد حقل بيانات واحدًا أو أكثر لتصديره، وحدد الحقل الذي يمثل حقول البيانات المقابلة في Customer Insights.
 
-1. حدد الشرائح التي تريد تصديرها. يمكنك تصدير ما يصل إلى مليون من ملفات تعريف العملاء إلى Google Ads.
+1. حدد الشرائح التي تريد تصديرها. 
 
 لا تعمل عملية التصدير التي يتم حفظها على التصدير في الحال.
 

@@ -9,15 +9,10 @@ author: brndkfr
 ms.author: bkief
 manager: shellyha
 searchScope:
-- ci-system-diagnostic
-- customerInsights
-ms.openlocfilehash: d84ae8301bdf384c2484cdb1e7dd8eb75d406769
-ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
-ms.translationtype: HT
-ms.contentlocale: ar-SA
-ms.lasthandoff: 03/03/2022
-ms.locfileid: "8376400"
+  - ci-system-diagnostic
+  - customerInsights
 ---
+
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>إعادة توجيه السجل في Dynamics 365 Customer Insights باستخدام Azure Monitor (إصدار أولي)
 
 توفر Dynamics 365 Customer Insights تكاملاً مباشرًا مع Azure Monitor. تسمح لك سجلات موارد Azure Monitor بمراقبة وإرسال السجلات إلى [Azure Storage](https://azure.microsoft.com/services/storage/)، أو [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview)، أو دفقها إلى [مراكز أحداث Azure](https://azure.microsoft.com/services/event-hubs/).
@@ -230,7 +225,7 @@ ms.locfileid: "8376400"
 | ------------------------------- | -------- | ---- | ----------- |
 | `properties.eventType`                       | نعم       | نعم   | `WorkflowEvent` دائمًا، يضع علامة على الحدث كحدث سير عمل.                                                                                                                                                                                                |
 | `properties.workflowJobId`                   | نعم       | نعم   | معرف تشغيل سير العمل. جميع أحداث سير العمل وأحداث المهام في تنفيذ سير العمل لها نفس `workflowJobId`.                                                                                                                                   |
-| `properties.operationType`                   | نعم       | نعم   | معرف العملية، راجع [أنواع العمليات].(#operation-types)                                                                                                                                                                                       |
+| `properties.operationType`                   | نعم       | نعم   | معرف العملية، راجع [أنواع العمليات](#operation-types).                                                                                                                                                                               |
 | `properties.tasksCount`                      | نعم       | لا    | سير العمل فقط. عدد المهام التي يطلقها سير العمل.                                                                                                                                                                                                       |
 | `properties.submittedBy`                     | نعم       | لا    | اختياري. أحداث سير العمل فقط. Azure Active Directory [objectId للمستخدم](/azure/marketplace/find-tenant-object-id#find-user-object-id) الذي قام بتشغيل سير العمل، انظر أيضًا `properties.workflowSubmissionKind`.                                   |
 | `properties.workflowType`                    | نعم       | لا    | تحديث `full` أو `incremental`.                                                                                                                                                                                                                            |

@@ -1,23 +1,18 @@
 ---
 title: إنشاء بيئات وإدارتها
 description: تعرف على كيفية تسجيل الاشتراك في الخدمة وكيفية إدارة البيئات.
-ms.date: 02/09/2022
+ms.date: 03/28/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 ms.reviewer: mhart
-author: NimrodMagen
-ms.author: nimagen
+author: adkuppa
+ms.author: adkuppa
 manager: shellyha
 searchScope:
-- ci-system-about
-- customerInsights
-ms.openlocfilehash: 4f4e5a8415f6c2128b0480edf67f317124eeeba9
-ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
-ms.translationtype: HT
-ms.contentlocale: ar-SA
-ms.lasthandoff: 03/03/2022
-ms.locfileid: "8376860"
+  - ci-system-about
+  - customerInsights
 ---
+
 # <a name="manage-environments"></a>إدارة البيئات
 
 ## <a name="switch-environments"></a>تبديل البيئات
@@ -42,23 +37,83 @@ ms.locfileid: "8376860"
 
 ## <a name="connect-to-microsoft-dataverse"></a>الاتصال بـ Microsoft Dataverse
    
-تتيح لك خطوة **Microsoft Dataverse** توصيل Customer Insights ببيئة Dataverse الخاصة بك.
+تتيح لك خطوة **Microsoft Dataverse** توصيل Customer Insights ببيئة Dataverse الخاصة بك. 
+
+توفير بيئة Microsoft Dataverse الخاصة بك لمشاركة البيانات (ملفات التعريف والمعلومات) مع تطبيقات الأعمال استنادًا إلى Dataverse مثل Dynamics 365 Marketing أو التطبيقات التي تستند إلى النموذج في Power Apps.
 
 لاستخدام [نماذج التنبؤ الجاهزة](predictions-overview.md#out-of-box-models)، قم بتكوين مشاركة البيانات باستخدام Dataverse. أو يمكنك تمكين عرض البيانات من مصادر البيانات المحلية، مما يوفر عنوان URL لبيئة Microsoft Dataverse التي تديرها مؤسستك.
 
+يؤدي تمكين مشاركة البيانات باستخدام Microsoft Dataverse من خلال تحديد خانة اختيار مشاركة البيانات إلى تشغيل تحديث كامل لمصادر البيانات وجميع العمليات الأخرى مرة واحدة.
+
 > [!IMPORTANT]
-> يجب أن تكون Customer Insights وDataverse في نفس المنطقة لتمكين مشاركة البيانات.
+> 1. يجب أن تكون Customer Insights وDataverse في نفس المنطقة لتمكين مشاركة البيانات.
+> 1. يجب أن يكون لديك دور مسؤول عمومي في بيئة Dataverse. تحقق مما إذا كانت [بيئة Dataverse هذه مقترنة](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) بمجموعات أمان معينة وتأكد من إضافتك إلى مجموعات الأمان هذه.
+> 1. لا توجد بيئة Customer Insights موجودة مقترنة بالفعل ببيئة Dataverse هذه. تعرف على كيفية [إزالة اتصال موجود ببيئة Dataverse](#remove-an-existing-connection-to-a-dataverse-environment).
 
-:::image type="content" source="media/dataverse-provisioning.png" alt-text="خيارات التكوين لتمكين مشاركة البيانات مع Microsoft Dataverse.":::
+:::image type="content" source="media/dataverse-enable-datasharing.png" alt-text="خيارات التكوين لتمكين مشاركة البيانات مع Microsoft Dataverse.":::
 
-> [!NOTE]
-> لا يدعم Customer Insights سيناريوهات مشاركة البيانات التالية:
-> - إذا قمت بحفظ جميع البيانات في Azure Data Lake Storage الخاص بك، فلن تتمكن من تمكين مشاركة البيانات باستخدام مستودع بيانات مُدار بواسطة Dataverse.
-> - إذا قمت بتمكين مشاركة البيانات باستخدام Dataverse، فلن تتمكن من [إنشاء قيم تم التنبؤ بها أو مفقودة في إحدى الكيانات](predictions.md).
+### <a name="enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview"></a>تمكين مشاركة البيانات باستخدام Dataverse من Azure Data Lake Storage الخاص بك (إصدار أولي)
+
+إذا كانت البيئة الخاصة بك مكونة لاستخدام Azure Data Lake Storage الخاص بك لتخزين بيانات Customer Insights، فإن تمكين مشاركة البيانات باستخدام Microsoft Dataverse يحتاج إلى تكوين إضافي.
+
+1. قم بإنشاء مجموعتي أمان في اشتراك Azure - مجموعة أمان **قارئ** ومجموعة أمان **المساهم** ثم قم بتعيين خدمة Microsoft Dataverse كمالك لمجموعتي الأمان.
+2. قم بإدارة قائمة التحكم بالوصول (ACL) في حاوية CustomerInsights في حساب موقع التخزين الخاص بك عبر مجموعتي الأمان هذه. أضف خدمة Microsoft Dataverse وأي تطبيقات أعمال مستندة إلى Dataverse مثل Dynamics 365 Marketing إلى مجموعة الأمان **قارئ** باستخدام أذونات **للقراءة فقط**. أضف تطبيق Customers Insights *فقط* إلى مجموعة أمان **المساهم** لمنح أذونات **القراءة والكتابة** لكتابة ملفات التعريف والرؤى.
+   
+#### <a name="prerequisites"></a>المتطلبات
+
+لتنفيذ البرامج النصية PowerShell، ستحتاج إلى استيراد الوحدات النمطية الثلاث التالية. 
+
+1. ثبّت الإصدار الأخير من [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
+   1. على الكمبيوتر، حدد مفتاح Windows على لوحة المفاتيح وابحث عن **Windows PowerShell** ثم حدد **تشغيل كمسؤول**.
+   1. في نافذة PowerShell التي تفتح، أدخل `Install-Module AzureAD`.
+2. استيراد ثلاث وحدات نمطية.
+    1. في نافذه Powershell، اكتب `Install-Module -Name Az.Accounts` واتبع الخطوات. 
+    1. كرر لـ `Install-Module -Name Az.Resources` و`Install-Module -Name Az.Storage`.
+
+#### <a name="configuration-steps"></a>خطوات التكوين
+
+1. قم بتنزيل برنامجي PowerShell النصيين اللذين تحتاج إلى تشغيلهما من [برنامج GitHub repo الخاص بمهندسنا](https://github.com/trin-msft/byol).
+    1. `CreateSecurityGroups.ps1`
+       - ولتشغيل برنامج PowerShell النصي هذا، تحتاج إلى أذونات *مسؤول مستأجر*. 
+       - ينشئ برنامج PowerShell النصي هذا مجموعتي أمان على اشتراك Azure الخاص بك. واحدة للمجموعة قارئ، وأخرى للمجموعة المساهم وسوف يجعل خدمة Microsoft Dataverse كمالك لكل من مجموعتي الأمان هاتين.
+       - نفذ برنامج PowerShell النصي هذا في Windows PowerShell من خلال توفير معرف اشتراك Azure الذي يحتوي على Azure Data Lake Storage. افتح برنامج PowerShell النصي في محرر لمراجعة المعلومات الإضافية والمنطق الذي تم تنفيذه.
+       - احفظ قيمتي معرفي مجموعتي الأمان اللذين تم إنشاؤهما بواسطة هذا البرنامج النصي، حيث سنستخدمهما في برنامج `ByolSetup.ps1` النصي.
+       
+        > [!NOTE]
+        > يمكن تعطيل إنشاء مجموعة الأمان في المستأجر الخاص بك. في هذه الحالة، يلزم إعداد يدوي كما يجب على مسؤول Azure AD[ تمكين إنشاء مجموعة أمان](/azure/active-directory/enterprise-users/groups-self-service-management).
+
+    2. `ByolSetup.ps1`
+        - تحتاج إلى أذونات *‏‫مالك بيانات التخزين كبيرة الحجم‬* في حساب موقع التخزين/مستوى الحاوية لتشغيل هذا البرنامج النصي، أو أن هذا البرنامج النصي سينشئ واحدًا لك. ويمكن إزالة تعيين الدور الخاص بك يدويًا بعد تشغيل البرنامج النصي بنجاح.
+        - يقوم برنامج PowerShell النصي هذا بإضافة عنصر التحكم بالوصول (ACAC) المطلوب المستند إلى الدور لخدمة Microsoft Dataverse وأي تطبيقات أعمال مستندة إلى Dataverse. كما يقوم أيضًا بتحديث قائمة مراقبة الوصول (ACL) في حاوية CustomerInsights لمجموعات الأمان التي تم إنشاؤها باستخدام برنامج `CreateSecurityGroups.ps1` النصي. ستحصل مجموعة المساهم على إذن *rwx* وستحصل مجموعة القُرّاء‬ على إذن *r-x* فقط.
+        - نفذ برنامج PowerShell النصي في Windows PowerShell من خلال توفير معرف اشتراك Azure الذي يحتوي على Azure Data Lake Storage، واسم حساب موقع التخزين، واسم مجموعة الموارد، وقيم معرف مجموعتي أمان القارئ والمساهم. افتح برنامج PowerShell النصي في محرر لمراجعة المعلومات الإضافية والمنطق الذي تم تنفيذه.
+        - انسخ سلسلة الإخراج بعد تشغيل البرنامج النصي بنجاح. تبدو سلسلة الإخراج كما يلي: `https: //DVBYODLDemo/customerinsights?rg=285f5727-a2ae-4afd-9549-64343a0gbabc&cg=720d2dae-4ac8-59f8-9e96-2fa675dbdabc`
+        
+2. أدخل سلسلة الإخراج المنسوخة من أعلى إلى حقل **معرف الأذونات** الخاص بخطوة تكوين البيئة لـ Microsoft Dataverse.
+
+:::image type="content" source="media/dataverse-enable-datasharing-BYODL.png" alt-text="خيارات التكوين لتمكين مشاركة البيانات من Azure Data Lake Storage الخاص بك باستخدام Microsoft Dataverse.":::
+
+لا يدعم Customer Insights سيناريوهات مشاركة البيانات التالية:
+- إذا قمت بتمكين مشاركة البيانات باستخدام Dataverse، فلن تتمكن من [إنشاء قيم تم التنبؤ بها أو مفقودة في إحدى الكيانات](predictions.md).
+- إذا قمت بتمكين مشاركة البيانات باستخدام Dataverse، فلن تتمكن من عرض أي تقارير PowerBI اختيارية مضمنة في بيئة Customer Insights الخاصة بك.
+
+### <a name="remove-an-existing-connection-to-a-dataverse-environment"></a>إزالة اتصال موجود ببيئة Dataverse
+
+عند الاتصال ببيئة Dataverse، فإن رسالة الخطأ **مؤسسة CDS هذه متصلة بمثيل Customer Insights** تعني أن بيئة Dataverse مستخدمة بالفعل في بيئة Customer Insights. يمكنك إزالة الاتصال الموجود كمسؤول عمومي على بيئة Dataverse. قد تستغرق عملية ملء التغييرات بضع ساعات.
+
+1. اذهب إلى [Power Apps](https://make.powerapps.com).
+1. حدد البيئة من منتقي البيئة.
+1. انتقل إلى **الحلول**
+1. قم بإزالة تثبيت أو حذف الحل الذي يسمى **‏‫الوظيفة الإضافية لبطاقة عميل Dynamics 365 Customer Insights (إصدار أولي)**.
+
+OR 
+
+1. افتح بيئة Dataverse الخاصة بك.
+1. انتقل إلى **الإعدادات المتقدمة** > **الحلول**.
+1. إزالة تثبيت حل **CustomerInsightsCustomerCard**.
 
 ## <a name="copy-the-environment-configuration"></a>نسخ تكوين البيئة
 
-عند إنشاء بيئة جديدة، يمكنك اختيار نسخ التكوين من بيئة موجودة. 
+كمسؤول، يمكنك اختيار نسخ التكوين من بيئة موجودة عند إنشاء بيئة جديدة. 
 
 :::image type="content" source="media/environment-settings-dialog.png" alt-text="لقطة شاشة من خيارات الإعدادات في إعدادات البيئة.":::
 
@@ -79,12 +134,14 @@ ms.locfileid: "8376860"
 - إدارة النماذج
 - تعيينات الأدوار
 
-*لا* يتم نسخ البيانات التالية:
+## <a name="set-up-a-copied-environment"></a>إعداد بيئة منسوخة
+
+عند نسخ تكوين البيئة، *لا* يتم نسخ البيانات التالية:
 
 - ملفات تعريف العملاء.
 - بيانات اعتماد مصدر البيانات. سيتعين عليك توفير بيانات الاعتماد لكل مصدر البيانات وتحديث مصادر البيانات يدويًا.
-
 - مصادر البيانات من مجلد نموذج البيانات العامة ومستودع بيانات مُدار بواسطة Dataverse. سيتعين عليك إنشاء مصادر البيانات هذه يدويًا باستخدام نفس الاسم كما في البيئة المصدر.
+- أسرار الاتصال المستخدمة لعمليات التصدير والإثراءات. يجب عليك مصادقة الاتصالات ثم إعادة تنشيط الإثراءات وعمليات التصدير. 
 
 عند نسخ بيئة، ستظهر لك رسالة تأكيد تفيد بأن البيئة الجديدة قد تم إنشاؤها. حدد **انتقال إلى مصادر البيانات** لرؤية قائمة مصادر البيانات.
 
@@ -95,6 +152,8 @@ ms.locfileid: "8376860"
 بعد تحديث مصادر البيانات، انتقل إلى **البيانات** > **توحيد**. هنا ستجد إعدادات من بيئة المصدر. قم بتحريرها حسب الحاجة أو حدد **تشغيل** لبدء عملية توحيد البيانات وإنشاء كيان العميل الموحد.
 
 عند اكتمال عملية توحيد البيانات، انتقل إلى **المقاييس** و **الشرائح** لتحديثها أيضًا.
+
+قبل إعادة تنشيط عمليات التصدير والإثراءات، انتقل إلى **المسؤول** > **الاتصالات** لإعادة مصادقة الاتصالات في بيئتك الجديدة.
 
 ## <a name="change-the-owner-of-an-environment"></a>تغيير مالك البيئة
 
@@ -139,6 +198,9 @@ ms.locfileid: "8376860"
 3. حدد الخيار **حذف**. 
 
 4.  لتأكيد الحذف، أدخل اسم البيئة وحدد **حذف**.
+
+> [!NOTE]
+> لا يعمل حذف بيئة على إزالة الاقتران إلى بيئة Dataverse. تعرف على كيفية [إزالة اتصال موجود ببيئة Dataverse](#remove-an-existing-connection-to-a-dataverse-environment).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
