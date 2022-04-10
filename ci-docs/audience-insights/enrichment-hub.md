@@ -10,12 +10,17 @@ ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
 searchScope:
-  - ci-enrichments
-  - ci-enrichment-details
-  - ci-enrichment-wizard
-  - customerInsights
+- ci-enrichments
+- ci-enrichment-details
+- ci-enrichment-wizard
+- customerInsights
+ms.openlocfilehash: 510a20306e793a5ba522a6ac0d9c7194f03472d2
+ms.sourcegitcommit: ae02ac950810242e2505d7d371b80210dc8a0777
+ms.translationtype: HT
+ms.contentlocale: ar-SA
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "8491932"
 ---
-
 # <a name="enrichment-for-customer-profiles-preview"></a>الإثراء لملفات تعريف العملاء (معاينة)
 
 استخدم البيانات من مصادر مثل Microsoft والشركاء الآخرين لإثراء بيانات العملاء.

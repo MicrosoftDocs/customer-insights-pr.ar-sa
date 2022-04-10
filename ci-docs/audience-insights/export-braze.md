@@ -8,8 +8,13 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
+ms.openlocfilehash: 8d7cf95c1f157c771b2d655346464e5af03d73b9
+ms.sourcegitcommit: 5bd07f3a1288f003704acd576741cf6aedc1ac33
+ms.translationtype: HT
+ms.contentlocale: ar-SA
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8524132"
 ---
-
 # <a name="export-segment-lists-to-braze-preview"></a>تصدير قوائم المقاطع إلى Braze (إصدار أولي)
 
 تصدير مقاطع من Unified Customer Profiles إلى Braze واستخدامها في أنشطة التسويق.

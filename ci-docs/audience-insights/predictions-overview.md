@@ -8,8 +8,13 @@ ms.topic: overview
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
+ms.openlocfilehash: 11b0efeecf8bea893272e67d29b1c6622771110c
+ms.sourcegitcommit: a5e4503cf9ce0cea562bab9389748d8ca1451f9d
+ms.translationtype: HT
+ms.contentlocale: ar-SA
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487478"
 ---
-
 # <a name="predictions-overview"></a>نظرة عامة حول التبنؤات
 
 يأتي Dynamics 365 Customer Insights مع مجموعة متنوعة من الخيارات التي تستفيد من الذكاء الاصطناعي والتعلم الآلي للتنبؤ بالبيانات. 

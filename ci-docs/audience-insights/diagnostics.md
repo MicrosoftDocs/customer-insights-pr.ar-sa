@@ -9,10 +9,15 @@ author: brndkfr
 ms.author: bkief
 manager: shellyha
 searchScope:
-  - ci-system-diagnostic
-  - customerInsights
+- ci-system-diagnostic
+- customerInsights
+ms.openlocfilehash: 18fc072d129be6b4fc5470b1057f592dc2638216
+ms.sourcegitcommit: 5bd07f3a1288f003704acd576741cf6aedc1ac33
+ms.translationtype: HT
+ms.contentlocale: ar-SA
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8523652"
 ---
-
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>إعادة توجيه السجل في Dynamics 365 Customer Insights باستخدام Azure Monitor (إصدار أولي)
 
 توفر Dynamics 365 Customer Insights تكاملاً مباشرًا مع Azure Monitor. تسمح لك سجلات موارد Azure Monitor بمراقبة وإرسال السجلات إلى [Azure Storage](https://azure.microsoft.com/services/storage/)، أو [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview)، أو دفقها إلى [مراكز أحداث Azure](https://azure.microsoft.com/services/event-hubs/).

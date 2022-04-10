@@ -9,10 +9,15 @@ ms.author: adkuppa
 manager: shellyha
 ms.reviewer: mhart
 searchScope:
-  - ci-dataverse
-  - customerInsights
+- ci-dataverse
+- customerInsights
+ms.openlocfilehash: 81412ea8259e690eb839676d82ab31847854a97e
+ms.sourcegitcommit: a8e99cf8b23ccc00d76c1dee22afd808a160a5c8
+ms.translationtype: HT
+ms.contentlocale: ar-SA
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8464050"
 ---
-
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>الاتصال بالبيانات في مستودع بيانات مُدار في Microsoft Dataverse
 
 يوفر هذا المقال معلومات حول كيفية اتصال مستخدمي Dataverse بسرعة بالكيانات التحليلية في مستودع مُدار لـ Microsoft Dataverse. 
