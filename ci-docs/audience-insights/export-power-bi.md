@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: dccc069a355725bae09c1fece9292b9aee374e6d
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 06c5bed74b82f9ae2a764a2eb363348e0edab531
+ms.sourcegitcommit: 4b2ad63aa7a4d4f31b573870bccbc40befe5f8fd
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8225499"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8552040"
 ---
 # <a name="connector-for-power-bi-preview"></a>موصل لـ Power BI (معاينة)
 
@@ -72,6 +72,6 @@ ms.locfileid: "8225499"
 
 عند تحميل كيانات تحتوي على حقول بتنسيق تاريخ مثل MM/DD/YYYY، يمكن أن تواجه أخطاء بسبب عدم تطابق التنسيقات المحلية. يحدث عدم التطابق هذا عندما يكون ملف Power BI Desktop معينًا على إعداد محلي آخر غير English (الولايات المتحدة)، وذلك لأن حقول التاريخ معلومات الجمهور يتم حفظها بتنسيق الولايات المتحدة.
 
-يحتوي ملف Power BI Desktop على إعداد محلي واحد، والذي يتم تطبيقه عند استرداد البيانات. قم بتفسير حقول التاريخ هذه بشكل صحيح، وقم بتعيين إعداد محلي لملف BPI إلى English (الولايات المتحدة). [تعرف على كيفية تغيير اللغة المحلية لملف Power BI desktop](/power-bi/fundamentals/supported-languages-countries-regions.md#choose-the-locale-for-importing-data-into-power-bi-desktop).
+يحتوي ملف Power BI Desktop على إعداد محلي واحد، والذي يتم تطبيقه عند استرداد البيانات. قم بتفسير حقول التاريخ هذه بشكل صحيح، وقم بتعيين إعداد محلي لملف BPI إلى English (الولايات المتحدة). [تعرف على كيفية تغيير اللغة المحلية لملف Power BI desktop](/power-bi/fundamentals/supported-languages-countries-regions#choose-the-language-or-locale-of-power-bi-desktop).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

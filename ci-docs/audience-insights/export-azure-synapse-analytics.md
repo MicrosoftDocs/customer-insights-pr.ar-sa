@@ -1,19 +1,19 @@
 ---
 title: تصدير بيانات Customer Insights إلى Azure Synapse Analytics
 description: تعرف على كيفية تكوين الاتصال بـ Azure Synapse Analytics.
-ms.date: 01/05/2022
+ms.date: 04/11/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 289c8d545f057b3f70679b485cf4350545c0587b
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 8ace9fbee4fbd8822629a39d5902e176f8511cb5
+ms.sourcegitcommit: 9f6733b2f2c273748c1e7b77f871e9b4e5a8666e
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8231296"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "8560371"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>تصدير البيانات إلى Azure Synapse Analytics (إصدار أولي)
 
@@ -28,21 +28,21 @@ Azure Synapse iهو خدمة تحليلات تعمل على تسريع وقت ا
 
 ## <a name="prerequisites-in-customer-insights"></a>المتطلبات الأساسية في Customer Insights
 
-* لديك دور **المسؤول** في معلومات الجمهور. اعرف المزيد حول [تعيين أذونات المستخدم في معلومات الجمهور](permissions.md#assign-roles-and-permissions)
+* يوجد لدى مستخدم حساب Azure Active Directory (AD) دور **المسؤول** في Customer Insights. اعرف المزيد حول [تعيين أذونات المستخدم في معلومات الجمهور](permissions.md#assign-roles-and-permissions)
 
 في Azure: 
 
 - اشتراك Azure نشط.
 
-- في حالة استخدام حساب Azure Data Lake Storage Gen2، فإن *مبدأ الخدمة لمعلومات الجمهور* يجتاج إلى إذن **مساهم بيانات مخزن البيانات الثنائية الكبيرة**. اعرف على المزيد حول [الاتصال بحساب Azure Data Lake Storage Gen2 باستخدام مبدأ خدمة Azure لمعلومات الجمهور](connect-service-principal.md). إن Data Lake Storage Gen2 **يجب** أن يتضمن [مساحة أسماء هرمية](/azure/storage/blobs/data-lake-storage-namespace) قيد التمكين.
+- إذا كنت تستخدم حساب Azure Data Lake Storage Gen2 جديدًا، يحتاج *كيان الخدمة لـ Customer Insights* إلى أذونات **مساهم بيانات مخزن البيانات الثنائية الكبيرة**. اعرف على المزيد حول [الاتصال بحساب Azure Data Lake Storage Gen2 باستخدام مبدأ خدمة Azure لمعلومات الجمهور](connect-service-principal.md). إن Data Lake Storage Gen2 **يجب** أن يتضمن [مساحة أسماء هرمية](/azure/storage/blobs/data-lake-storage-namespace) قيد التمكين.
 
-- في مجموعة الموارد التي توجد بها مساحة عمل Azure Synapse، فإن *مبدأ الخدمة* و *المستخدم لمعلومات الجمهور* يحتاج  تعيين أذونات **قارئ** له على الأقل. لمزيد من المعلومات، راجع [تعيين أدوار Azure باستخدام مدخل Azure](/azure/role-based-access-control/role-assignments-portal).
+- على مجموعة الموارد حيث توجد Azure Synapse workspace، يجب تعيين أذونات **القارئ** لكل من *كيان الخدمة* و *مستخدم Azure AD الذي لديه أذونات المسؤول في Customer Insights*. لمزيد من المعلومات، راجع [تعيين أدوار Azure باستخدام مدخل Azure](/azure/role-based-access-control/role-assignments-portal).
 
-- يحتاج *المستخدم* إلى أذونات **مساهم بيانات مخزن البيانات الثنائية الكبيرة** في حساب Azure Data Lake Storage Gen2 في المكان الذي توجد فيه البيانات وترتبط بمساحة عمل Azure Synapse. تعلم المزيد حول [استخدام مدخل Azure لتعيين دور Azure للوصول إلى بيانات الكائن الثنائي كبير الحجم والصف](/azure/storage/common/storage-auth-aad-rbac-portal) و[أذونات مساهم بيانات مخزن البيانات الثنائية الكبيرة](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
+- يحتاج *مستخدم Azure AD الذي لديه أذونات المسؤول في Customer Insights* إلى أذونات **مساهم بيانات مخزن البيانات الثنائية الكبيرة** على حساب Azure Data Lake Storage Gen2 حيث توجد البيانات وترتبط بـ Azure Synapse workspace. تعلم المزيد حول [استخدام مدخل Azure لتعيين دور Azure للوصول إلى بيانات الكائن الثنائي كبير الحجم والصف](/azure/storage/common/storage-auth-aad-rbac-portal) و[أذونات مساهم بيانات مخزن البيانات الثنائية الكبيرة](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
 - تحتاج *[الهوية المدارة بمساحة عمل Azure Synapse](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* إلى أذونات **مساهم بيانات مخزن البيانات الثنائية الكبيرة** في حساب Azure Data Lake Storage Gen2 في المكان الذي توجد فيه البيانات وترتبط بمساحة عمل Azure Synapse. تعلم المزيد حول [استخدام مدخل Azure لتعيين دور Azure للوصول إلى بيانات الكائن الثنائي كبير الحجم والصف](/azure/storage/common/storage-auth-aad-rbac-portal) و[أذونات مساهم بيانات مخزن البيانات الثنائية الكبيرة](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
-- في مساحة عمل Azure Synapse، يحتاج *مبدأ الخدمة لمعلومات الجمهور* إلى تعيين دور **مسؤول  Synapse**. لمزيد من المعلومات، راجع [كيفية إعداد عنصر تحكم الوصول لمساحة عمل Synapse](/azure/synapse-analytics/security/how-to-set-up-access-control) الخاصة بك.
+- في Azure Synapse workspace، يحتاج *كيان الخدمة لـ Customer Insights* إلى دور **مسؤول Synapse**. لمزيد من المعلومات، راجع [كيفية إعداد عنصر تحكم الوصول لمساحة عمل Synapse](/azure/synapse-analytics/security/how-to-set-up-access-control) الخاصة بك.
 
 ## <a name="set-up-the-connection-and-export-to-azure-synapse"></a>إعداد الاتصال والتصدير إلى Azure Synapse
 

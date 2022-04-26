@@ -44,6 +44,8 @@
           href: audience-insights/create-environment.md
         - name: استكشاف رؤى الجمهور
           href: audience-insights/home.md
+        - name: العمل مع العلامات والأعمدة
+          href: audience-insights/work-with-tags-columns.md
         - name: العمل باستخدام حسابات العمل
           href: audience-insights/work-with-business-accounts.md
     - name: مصادر البيانات

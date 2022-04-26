@@ -1,7 +1,7 @@
 ---
 title: بيانات Customer Insights في Microsoft Dataverse
 description: استخدم كيانات Customer Insights كجداول في Microsoft Dataverse.
-ms.date: 11/25/2021
+ms.date: 04/05/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -11,31 +11,33 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 9f730f5856221592cddf34b714beeaca24c52130
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: bbbbf2a7f5edb81ee75f6e33988cd4721134b6e7
+ms.sourcegitcommit: 0363559a1af7ae16da2a96b09d6a4a8a53a8cbb8
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355413"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8547610"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>استخدام بيانات Customer Insights في Microsoft Dataverse
 
-يوفر Customer Insights خيار جعل كيانات الإخراج متوفرة في [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro.md). يتيح هذا التكامل سهولة مشاركة البيانات والتطوير المخصص من خلال أسلوب قائم على التعليمات البرمجية منخفضة / بدون تعليمات برمجية. ستتوفر كيانات الإخراج كجداول في Dataverse. تمكّن هذه الجداول سيناريوهات مثل [عمليات سير العمل التلقائية عبر Power Automate](/power-automate/getting-started) و[التطبيقات التي تستند إلى النموذج](/powerapps/maker/model-driven-apps/) و[تطبيقات اللوحة](/powerapps/maker/canvas-apps/) عبر Power Apps. يمكنك استخدام البيانات لأي تطبيق آخر يستند إلى جداول Dataverse. يدعم التطبيق الحالي بشكل أساسي عمليات البحث حيث يمكن إحضار البيانات من كيانات رؤى الجمهور لمعرف عميل معين.
+يوفر Customer Insights خيار جعل كيانات الإخراج متوفرة في [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). يتيح هذا التكامل سهولة مشاركة البيانات والتطوير المخصص من خلال أسلوب قائم على التعليمات البرمجية المنخفضة / بدون تعليمات برمجية. تتوفر [كيانات الإخراج](#output-entities) كجداول في بيئة Dataverse. يمكنك استخدام البيانات لأي تطبيق آخر بالاستناد إلى جداول Dataverse. تمكّن هذه الجداول سيناريوهات مثل مهام سير العمل التلقائية من خلال Power Automate أو بناء التطبيقات باستخدام Power Apps. يدعم التنفيذ الحالي بشكل أساسي البحث عن المكان من حيث يمكن إحضار البيانات من كيانات Customer Insights المتوفرة لمعرف عميل معين.
 
 ## <a name="attach-a-dataverse-environment-to-customer-insights"></a>إرفاق بيئة Dataverse بـ Customer Insights
 
-**المؤسسات ذات بيئات Dataverse موجودة**
+**مؤسسة موجودة**
 
-بإمكان المؤسسات التي تستخدم Dataverse [استخدام إحدى بيئات Dataverse الموجودة لديها](create-environment.md) عندما يقوم المسؤول بإعداد رؤى الجمهور. ومن خلال توفير عنوان URL لبيئة Dataverse، فهو يتصل ببيئة رؤى الجمهور الجديدة. لضمان أفضل أداء ممكن، يجب استضافة Customer Insights وبيئات Dataverse في نفس المنطقة.
+بإمكان المسؤولين تكوين Customer Insights من أجل [استخدام بيئة Dataverse موجودة](create-environment.md) عند إنشاء بيئة Customer Insights. ومن خلال توفير عنوان URL لبيئة Dataverse، فهو يتصل ببيئة رؤى الجمهور الجديدة. يجب استضافة بيئات Customer Insights وDataverse في نفس المنطقة. 
+
+إذا كنت لا تريد استخدام بيئة Dataverse موجودة، فيقوم النظام بإنشاء بيئة جديدة لبيانات Customer Insights في المستأجر. 
+
+> [!NOTE]
+> إذا كانت مؤسساتك تستخدم Dataverse في المستأجر الخاص بها، فمن الضروري أن تتذكر أن  [إنشاء بيئة Dataverse يخضع لمراقبة المسؤول.](/power-platform/admin/control-environment-creation). على سبيل المثال، إذا كنت تقوم بإعداد بيئة جديدة لرؤى الجمهور جديدة باستخدام حساب مؤسستك وكان المسؤول قد عطل إنشاء بيئات Dataverse التجريبية للجميع باستثناء المسؤولين، فلا يمكنك إنشاء بيئة تجريبية جديدة.
+> 
+> سعة تخزين بيئات Dataverse التجريبية التي تم إنشاؤها في Customer Insights هي 3 غيغابايت لا يتم حسابها بالنسبة إلى السعة الإجمالية التي يجب للمستأجر الحصول عليها. يحق للاشتراكات المدفوعة الحصول على 15 غيغابايت لتخزين قاعدة البيانات و20 غيغابايت لتخزين الملفات في Dataverse.
 
 **مؤسسة جديدة**
 
-إذا قمت بإنشاء مؤسسة جديدة عند إعداد Customer Insights، فستحصل على بيئة Dataverse جديدة بشكل تلقائي.
-
-> [!NOTE]
-> إذا كانت مؤسساتك تستخدم Dataverse في المستأجر الخاص بها، فمن الضروري أن تتذكر أن  [إنشاء بيئة Dataverse يخضع لمراقبة المسؤول.](/power-platform/admin/control-environment-creation.md). على سبيل المثال، إذا كنت تقوم بإعداد بيئة جديدة لرؤى الجمهور جديدة باستخدام حساب مؤسستك وكان المسؤول قد عطل إنشاء بيئات Dataverse التجريبية للجميع باستثناء المسؤولين، فلا يمكنك إنشاء بيئة تجريبية جديدة.
-> 
-> سعة تخزين بيئات Dataverse التجريبية التي تم إنشاؤها في Customer Insights هي 3 غيغابايت لا يتم حسابها بالنسبة إلى السعة الإجمالية التي يجب للمستأجر الحصول عليها. يحق للاشتراكات المدفوعة الحصول على 15 غيغابايت لتخزين قاعدة البيانات و20 غيغابايت لتخزين الملفات في Dataverse.
+إذا قمت بإنشاء مؤسسة جديدة عند إعداد Customer Insights، فيقوم النظام تلقائيًا بإنشاء بيئة Dataverse جديدة في مؤسستك نيابة عنك.
 
 ## <a name="output-entities"></a>كيانات الإخراج
 
@@ -129,11 +131,11 @@ ms.locfileid: "8355413"
 
 يحتوي هذا الجدول على معلومات عضوية المقطع لملفات تعريف العملاء.
 
-| Column        | كتابة | الوصف                         |
+| Column        | كتابة | الوصف                         |
 |--------------------|--------------|-----------------------------|
-| Customerid        | السلسلة‬       | معرف ملف تعريف العميل        |
-| SegmentProvider      | السلسلة‬       | التطبيق الذي ينشر المقاطع. الافتراضي: رؤى الجمهور         |
-| SegmentMembershipType | السلسلة‬       | نوع العميل لسجل عضوية المقطع هذا. يدعم أنواعًا متعددة مثل العميل أو جهة الاتصال أو الحساب. الافتراضي: العميل  |
-| المقاطع       | سلسلة JSON  | قائمة الأقسام الفريدة التي ينتمي إليها ملف تعريف العميل      |
-| msdynci_identifier  | السلسلة‬   | معرّف فريد لسجل عضوية المقطع. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
+| Customerid        | السلسلة‬       | معرف ملف تعريف العميل        |
+| SegmentProvider      | السلسلة‬       | التطبيق الذي ينشر المقاطع. الافتراضي: رؤى الجمهور         |
+| SegmentMembershipType | السلسلة‬       | نوع العميل لسجل عضوية هذه الشريحة. يدعم أنواعًا متعددة مثل العميل أو جهة الاتصال أو الحساب. الافتراضي: العميل  |
+| المقاطع       | سلسلة JSON  | قائمة بالشرائح الفريدة التي ينتمي إليها ملف تعريف العميل      |
+| msdynci_identifier  | السلسلة‬   | المعرف الفريد لسجل عضوية الشريحة. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
 | msdynci_segmentmembershipid | معرف Guid      | تم إنشاء GUID الحتمي من `msdynci_identifier`          |

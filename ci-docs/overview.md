@@ -6,12 +6,12 @@ ms.author: mhart
 ms.date: 07/30/2021
 ms.topic: overview
 ms.manager: shellyha
-ms.openlocfilehash: 82b335388002158885fa55b61562db6c8370dc9d
-ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
+ms.openlocfilehash: ff3d23d00a565bf9e5693e7cd5db644ddfe4887e
+ms.sourcegitcommit: 9f6733b2f2c273748c1e7b77f871e9b4e5a8666e
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8350161"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "8560417"
 ---
 # <a name="product-overview-for-dynamics-365-customer-insights"></a>نظرة عامة على المنتج Dynamics 365 Customer Insights
 
@@ -19,7 +19,7 @@ ms.locfileid: "8350161"
 
 تساعدك [رؤى الجمهور](audience-insights/overview.md) على تحويل أعمالك إلى مؤسسة تركز على العملاء. تتوفر لدى محترفي المبيعات والتسويق والخدمة الرؤى المطلوبة لتخصيص التجارب. يمكنك توصيل البيانات من مصادر المعاملات والمصادر الرصدية والسلوكية لإنشاء طريقة عرض من 360 درجة للعملاء.‬ مراجعة النتائج بشكل أسرع من خلال CDP تم تصميمه لتقديم رؤى يمكن استخدامها. 
 
-[كانت معلومات التفاعل](engagement-insights/overview.md) عبارة عن قدرة إصدار أولي في Customer Insights تركز على تجميع أحداث الويب والهاتف للحصول على مزيد من المعلومات الإضافية، وانتهى الإصدار الأولي في 15 فبراير 2022.
+[كانت معلومات التفاعل](engagement-insights/overview.md) عبارة عن قدرة إصدار أولي في Customer Insights تركز على تجميع أحداث الويب والهاتف للحصول على مزيد من المعلومات الإضافية. انتهى الإصدار الأولي في 15 فبراير 2022.
  
 ## <a name="choose-a-capability"></a>اختيار إمكانية
 
