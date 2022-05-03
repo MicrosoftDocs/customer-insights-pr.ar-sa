@@ -8,12 +8,12 @@ ms.topic: get-started
 ms.custom: template-trial-faq
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: 9badd8370358b9f5745ba6347e8db42e89c5f3d3
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 4a269a223efa08f71db09eef2ec9a8f8a077f7a7
+ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8229479"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8641792"
 ---
 # <a name="dynamics-365-customer-insights-trial-faq"></a>الأسئلة المتداولة حول الإصدار التجريبي من Dynamics 365 Customer Insights
 
@@ -62,13 +62,13 @@ ms.locfileid: "8229479"
 
 بشكل عام،نوصي بالبدء من جديد مع بياناتك الخاصة عند الترقية إلى الإصدار المدفوع لـ Customer Insights. 
 
-اختياريًا، إذا كنت تستخدم رؤى الجمهور فقط، فيمكنك نسخ بياناتك من بيئة تجريبية إذا قمت بشراء Customer Insights. يجب أن تكون المسؤول عن الإصدار التجريبي من Customer Insights والمسؤول العمومي لمستأجر Microsoft 365 الخاص بك، أو مسؤول Dynamics 365 في مؤسستك لترحيل الإعدادات من بيئة تجريبية إلى بيئة مدفوعة الأجر. 
+اختياريًا، إذا كنت تستخدم Customer Insights فقط، فيمكنك نسخ بياناتك من بيئة تجريبية إذا قمت بشراء Customer Insights. يجب أن تكون المسؤول عن الإصدار التجريبي من Customer Insights والمسؤول العمومي لمستأجر Microsoft 365 الخاص بك، أو مسؤول Dynamics 365 في مؤسستك لترحيل الإعدادات من بيئة تجريبية إلى بيئة مدفوعة الأجر. 
 
-بعد تسجيل الدخول إلى مثيل Customer Insights المدفوع لأول مرة، يطلب منك إنشاء بيئة جديدة. أثناء هذه العملية، يمكنك اختيار نسخ التكوين من بيئة موجودة وترحيل معظم الإعدادات. إذا كانت لديك الأذونات المذكورة أعلاه، ستظهر بيئة الإصدار التجريبي في هذه القائمة. لمزيد من المعلومات، راجع [نسخ تكوين البيئة](audience-insights/manage-environments.md#copy-the-environment-configuration).
+بعد تسجيل الدخول إلى مثيل Customer Insights المدفوع لأول مرة، يطلب منك إنشاء بيئة جديدة. أثناء هذه العملية، يمكنك اختيار نسخ التكوين من بيئة موجودة وترحيل معظم الإعدادات. إذا كانت لديك الأذونات المذكورة أعلاه، ستظهر بيئة الإصدار التجريبي في هذه القائمة. لمزيد من المعلومات، راجع [نسخ تكوين البيئة](manage-environments.md#copy-the-environment-configuration).
 
 ### <a name="what-are-the-trial-limits-and-quotas"></a>ما حدود الإصدار التجريبي والحصص النسبية؟
 
-- لا يمكنك استخدام حساب تخزين Azure Data Lake الخاص بك لتخزين بيانات الإخراج أثناء تجربة رؤى الجمهور. ومع ذلك، يمكنك استيعاب البيانات من حساب مساحة تخزين Data Lake storage.
+- لا يمكنك استخدام Azure Data Lake storage الخاص بك لتخزين بيانات الإخراج أثناء التجربة المجانية لـ Customer Insights. ومع ذلك، يمكنك استيعاب البيانات من حساب مساحة تخزين Data Lake storage.
 - يمكنك تخزين بيانات تصل إلى 3 غيغابايت في بيئة Dataverse التي يتم توفيرها تلقائيًا عند بدء تشغيل الإصدار التجريبي لـ Customer Insights.
 
 ## <a name="customer-insights-specific-questions"></a>الأسئلة الخاصة بـ Customer Insights

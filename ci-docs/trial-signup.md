@@ -3,17 +3,17 @@ title: تسجيل الاشتراك في إصدار تجريبي مجاني - Dyn
 description: تعرف على كيفية التسجيل بسرعة وبدء تشغيل إصدار تجريبي مجاني من Customer Insights. استكشف التطبيق وابحث عن المزيد من موارد التعلم.
 author: m-hartmann
 ms.author: mhart
-ms.date: 09/30/2021
+ms.date: 04/12/2022
 ms.topic: get-started
 ms.custom: template-trial-setup
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: 1b50da077cb0584ca9f277b276d0e9ebb46b2c5d
-ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
+ms.openlocfilehash: 2f27dd4fd9df679696d72f2eccde262de3e4afc4
+ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8350207"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8641700"
 ---
 # <a name="sign-up-for-a-free-dynamics-365-customer-insights-trial"></a>التسجيل للحصول على إصدار تجريبي مجاني من Dynamics 365 Customer Insights
 
@@ -21,7 +21,7 @@ ms.locfileid: "8350207"
 
 **للتسجيل للحصول على الإصدار التجريبي**:
 
-1. انتقل إلى صفحة [نظرة عامة على الإصدار التجريبي](https://dynamics.microsoft.com/get-started/?appname=customerinsights) وحدد **تسجيل الاشتراك الآن**.
+1. انتقل إلى [صفحة نظرة عامة على الإصدار التجريبي](https://dynamics.microsoft.com/ai/customer-insights/) وحدد **جرب Customer Insights مجانًا**.
 1. اتبع الإرشادات التي تظهر على الشاشة لإدخال [البريد الإلكتروني المقترن بحساب Microsoft](https://support.microsoft.com/windows/what-is-a-microsoft-account-4a7c48e9-ff5a-e9c6-5a5c-1a57d66c3bfa) ومعلومات جهة الاتصال.
 1. قم بإجراء التحديدات واختر التركيز الخاص بك حتى تصل إلى صفحة البداية لقدرتك المحددة.
 
@@ -31,12 +31,12 @@ ms.locfileid: "8350207"
 
 تتضمن البيئة التجريبية الخاصة بك نفس ميزات الإصدار المدفوع. ترشدك الارتباطات أدناه عبر بعض الميزات الرئيسية.
 
-- [بدء التشغيل السريع لرؤى الجمهور.](audience-insights/get-started.md)
-- [إضافة مزيد من المستخدمين وتعيين الأذونات.](audience-insights/permissions.md)
-- [استيعاب مصادر البيانات](audience-insights/data-sources.md) وتشغيلها عبر [عملية توحيد البيانات](audience-insights/data-unification.md) للحصول على [ملفات تعريف موحدة للعملاء](audience-insights/customer-profiles.md).
-- [إثراء ملفات التعريف الموحدة للعملاء](audience-insights/enrichment-hub.md) أو [تشغيل النماذج التنبؤية](audience-insights/predictions-overview.md)
-- [إنشاء مقاطع](audience-insights/segments.md) لتجميع العملاء، و[القياسات](audience-insights/measures.md) لمراجعة مؤشرات KPI.
-- إعداد [الاتصالات](audience-insights/connections.md) و [التصديرات](audience-insights/export-destinations.md) لمعالجة مجموعات فرعية من بياناتك في تطبيقات أخرى.
+- [بدء استخدام Customer Insights.](get-started.md)
+- [إضافة مزيد من المستخدمين وتعيين الأذونات.](permissions.md)
+- [استيعاب مصادر البيانات](data-sources.md) وتشغيلها عبر [عملية توحيد البيانات](data-unification.md) للحصول على [ملفات تعريف موحدة للعملاء](customer-profiles.md).
+- [إثراء ملفات التعريف الموحدة للعملاء](enrichment-hub.md) أو [تشغيل النماذج التنبؤية](predictions-overview.md)
+- [إنشاء مقاطع](segments.md) لتجميع العملاء، و[القياسات](measures.md) لمراجعة مؤشرات KPI.
+- إعداد [الاتصالات](connections.md) و [التصديرات](export-destinations.md) لمعالجة مجموعات فرعية من بياناتك في تطبيقات أخرى.
 
 ## <a name="additional-resources"></a>الموارد الإضافية
 

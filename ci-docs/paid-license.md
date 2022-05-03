@@ -7,12 +7,12 @@ ms.date: 10/05/2021
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: fa6ea6e96de3d382c1426b383a057c8ce4f67ccf
-ms.sourcegitcommit: d168a738a08adb8b4b2e410bdaa3716d7b63cc9b
+ms.openlocfilehash: 8fcc1c97be87afe942aa3b5e23d1eb68008aa873
+ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "8455982"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8641838"
 ---
 # <a name="get-started-after-purchasing-customer-insights"></a>الشروع في العمل بعد شراء Customer Insights
 
@@ -34,9 +34,8 @@ ms.locfileid: "8455982"
 
 1. انتقل إلى [عنوان URL لتطبيق Customer Insights](https://home.ci.ai.dynamics.com).
 1. قم بتسجيل الدخول باستخدام حساب العمل أو المدرسة. 
-1. وافق على شروط الخدمة وقم بتعيين تفضيلات المحتوى لمثيل Customer Insights الخاص بك.
-1. اختر القدرة للتركيز عليها حتى تصل إلى صفحة البداية لقدرتك المختارة.
+1. وافق على شروط الخدمة وقم بتعيين تفضيلات المحتوى لبيئة Customer Insights الخاصة بك.
 
 ## <a name="create-your-own-environment"></a>إنشاء البيئة الخاصة بك
 
-بعد تسجيل الدخول لأول مرة، سترى بيئة بها عينة من البيانات. يمكنك استخدام هذه البيانات لاستكشاف الميزات والتعرف على التطبيق. لاستخدام بياناتك الخاصة، يجب إنشاء [بيئة](/dynamics365/customer-insights/audience-insights/create-environment).
+بعد تسجيل الدخول لأول مرة، سترى بيئة بها عينة من البيانات. يمكنك استخدام هذه البيانات لاستكشاف الميزات والتعرف على التطبيق. لاستخدام بياناتك الخاصة، يجب إنشاء [بيئة](create-environment.md).

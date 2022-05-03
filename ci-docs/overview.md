@@ -1,39 +1,41 @@
 ---
-title: نظرة عامة على المنتج
+title: نظرة عامة على المنتج Dynamics 365 Customer Insights
 author: m-hartmann
-description: احصل على نظرة عامة على Dynamics 365 Customer Insights وقدراته.
+description: يمكنك الحصول على نظرة عامة حول Dynamics 365 Customer Insights وميزاته الرئيسية.
 ms.author: mhart
-ms.date: 07/30/2021
+ms.date: 04/12/2022
 ms.topic: overview
 ms.manager: shellyha
-ms.openlocfilehash: ff3d23d00a565bf9e5693e7cd5db644ddfe4887e
-ms.sourcegitcommit: 9f6733b2f2c273748c1e7b77f871e9b4e5a8666e
+ms.openlocfilehash: 4d5b4ec61614877c26468ffe8d07f2448b43bac6
+ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "8560417"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8641884"
 ---
 # <a name="product-overview-for-dynamics-365-customer-insights"></a>نظرة عامة على المنتج Dynamics 365 Customer Insights
 
-إن [Dynamics 365 Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/) عبارة عن جزء من النظام الأساسي لبيانات العميل (CDP) يساعد على تسليم تجارب العملاء المخصصة. توفر إمكانيات النظام الأساسي رؤية حول عملائك وكيفية تفاعلهم مع نظامك الأساسي. يمكنك توحيد بيانات العملاء عبر مصادر متعددة للحصول على طريقة عرض فردية للعملاء.
+يُعد [Dynamics 365 Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/) بمثابة نظام بيانات العملاء (CDP) من Microsoft الذي يساعد على تقديم تجارب عملاء مخصصة. يوفر التطبيق طريقة عرض شاملة للعملاء في وقت قصير للغاية للحصول على نظرة متعمقة. احصل على نظرة شاملة لعملائك من خلال توحيد بيانات العملاء مع البيانات التشغيلية وبيانات إنترنت الأشياء (IoT) في الوقت الفعلي. إثراء ملفات تعريف العملاء من خلال مصادر بيانات أولى ومصدر بيانات طرف ثالث. 
 
-تساعدك [رؤى الجمهور](audience-insights/overview.md) على تحويل أعمالك إلى مؤسسة تركز على العملاء. تتوفر لدى محترفي المبيعات والتسويق والخدمة الرؤى المطلوبة لتخصيص التجارب. يمكنك توصيل البيانات من مصادر المعاملات والمصادر الرصدية والسلوكية لإنشاء طريقة عرض من 360 درجة للعملاء.‬ مراجعة النتائج بشكل أسرع من خلال CDP تم تصميمه لتقديم رؤى يمكن استخدامها. 
-
-[كانت معلومات التفاعل](engagement-insights/overview.md) عبارة عن قدرة إصدار أولي في Customer Insights تركز على تجميع أحداث الويب والهاتف للحصول على مزيد من المعلومات الإضافية. انتهى الإصدار الأولي في 15 فبراير 2022.
+يساعدك Customer Insights على تحويل أعمالك إلى مؤسسة تركز على العملاء من خلال تمكين متخصصي التسويق والمبيعات والخدمات لديك من تكييف تفاعلات 1:1 على نطاق واسع. يمكن استخدام عمليات التكامل بنظام تسليم المفتاح مع Microsoft وتطبيقات الطرف الثالث لتنشيط الرؤى في الوقت الفعلي لدفع الإجراءات الهادفة.
  
-## <a name="choose-a-capability"></a>اختيار إمكانية
+قم بتوصيل البيانات من مصادر البيانات الخاصة بالمعاملات والسلوكية والديموغرافية لإنشاء عروض 360 درجة للعملاء. يمكنك الاستفادة من الرؤى المبتكرة نماذج الذكاء الاصطناعي المنشأة مسبقًا أو قم ببناء نماذج مخصصة لـ AI/ML واختبارها ونشرها بسرعة باستخدام حلول تحليلات متقدمة على نطاق غير محدود.
 
-:::image type="content" source="engagement-insights/media/choose_focus.png" alt-text="صفحة Customer insights التي تتيح لك الانتقال إلى رؤى الجمهور أو رؤى المشاركة.":::
-
-لاختيار إمكانية
-
-1. في جزء التنقل، حدد **جميع التطبيقات** لفتح النافذة **اختيار تركيزك‬**.
-1. حدد **الانتقال الآن** للانتقال إلى الإمكانيات التي تختارها.
+احتفظ بالتحكم الكامل في بيانات العميل لضمان أعلى مستوى من إدارة البيانات ووتوافقها مع CDP للخدمة الذاتية والمؤسسة المضمنة في Microsoft Azure. دعم اللائحة العامة لحماية البيانات (GDPR) والمتطلبات التشريعية الأخرى ومعايير الصناعة من خلال أدوات إدارة الخصوصية والأمان والحوكمة والموافقة المضمنة.
 
 ## <a name="pricing-and-licensing"></a>التسعير والترخيص
+تم ترخيص Customer Insights لكل مستأجر ويتضمن قدرات من متاجرة عمل-مستهلك (B2C) ومن متاجرة عمل-عمل (B2B). يمكنك شراء سعة إضافية بتراخيص الوظائف الإضافية لزيادة عدد ملفات التعريف والحسابات.
 
-يتم ترخيص Customer Insights لكل مستأجر وتتضمن إمكانيات متعددة. يمكنك شراء سعة إضافية وترخيص إضافي لزيادة الحصة النسبية الافتراضية. 
 - [نظرة عامة على التسعير](https://dynamics.microsoft.com/ai/customer-insights/pricing/)
 - القدرة الإنتاجية والاستحقاقات: [دليل ترخيص Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544)
+- [موقع الترخيص المجمع من Microsoft](https://www.microsoft.com/licensing/how-to-buy/how-to-buy)
+
+## <a name="try-customer-insights-and-get-started"></a>جرب Customer Insights وابدأ التشغيل
+
+ابدأ [الإصدار التجريبي المجاني لتطبيق Customer Insights](https://signup.microsoft.com/create-account/signup?SKU=036c2481-aa8a-47cd-ab43-324f0c157c2d&ali=1&RU=https:%2F%2Fhome.ci.ai.dynamics.com%2Fstart%2Ftrial&products=036c2481-aa8a-47cd-ab43-324f0c157c2d) اليوم لاختبار التطبيق باستخدام بيانات عميلك. [تعرف على كيفية الوصول السريع إلى العديد من الميزات الرئيسية في التطبيق واستكشافها](trial-signup.md). 
+
+قم باستعراض [موارد التعلم المميزة](https://dynamics.microsoft.com/ai/customer-insights/resources/) بما في ذلك تقارير محللين ومستعرضات ويب حسب الطلب و‏‫قصص العملاء‬.
+
+تعرف على كيفية بناء فهم أكثر عمقًا لعملائك من خلال [دليل البدء](get-started.md) الخاص بنا.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
