@@ -1,19 +1,19 @@
 ---
 title: دليل نموذج التنبؤ بخسارة المعاملة
 description: استخدم هذا النموذج للتعرف على النموذج الجاهز للتنبؤ بخسارة المعاملة‬.
-ms.date: 11/19/2020
+ms.date: 05/11/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 05c221c634b8e0f582a6c6d3f4d90e971aa9707e
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 3edbf2a471313379c28db874d7f19c3265a23299
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645558"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8741303"
 ---
 # <a name="transactional-churn-prediction-sample-guide"></a>دليل نموذج التنبؤ بخسارة المعاملة
 
@@ -86,69 +86,13 @@ ms.locfileid: "8645558"
 
 1. احفظ مصدر البيانات.
 
-
 ## <a name="task-2---data-unification"></a>المهمة 2 - توحيد البيانات
 
-بعد استيعاب البيانات، نبدأ الآن عملية **التعيين، المطابقة، الدمج** لإنشاء ملف تعريف عميل موحد. لمزيد من المعلومات، راجع [توحيد البيانات](data-unification.md).
-
-### <a name="map"></a>المخطط
-
-1. بعد استيعاب البيانات، قم بتعيين جهات الاتصال من بيانات التجارة الإلكترونية والولاء إلى أنواع البيانات الشائعة. انتقل إلى **البيانات** > **توحيد** > **تعيين**.
-
-1. حدد الكيانات التي تمثل ملف تعريف العميل – **eCommerceContacts** و **loyCustomers**. 
-
-   :::image type="content" source="media/unify-ecommerce-loyalty.PNG" alt-text="توحيد مصادر بيانات التجارة الإلكترونية والولاء.":::
-
-1. حدد **ContactId** كمفتاح أساسي لـ **eCommerceContacts** و **LoyaltyID** كمفتاح أساسي لـ **loyCustomers**.
-
-   :::image type="content" source="media/unify-loyaltyid.PNG" alt-text="توحيد LoyaltyId كمفتاح أساسي.":::
-
-### <a name="match"></a>مطابقة
-
-1. انتقل إلى علامة التبويب **مطابقة** وحدد **تعيين الأمر**.
-
-1. في القائمة المنسدلة **الرئيسية**، اختر **eCommerceContacts : eCommerce** باعتباره المصدر الرئيسي وقم بتضمين جميع السجلات.
-
-1. في القائمة المنسدلة **الكيان 2**، اختر **loyCustomers : LoyaltyScheme** وقم بتضمين جميع السجلات.
-
-   :::image type="content" source="media/unify-match-order.PNG" alt-text="توحيد مطابقة التجارة الإلكترونية والولاء.":::
-
-1. حدد **إنشاء قاعدة جديدة**
-
-1. أضف الشرط الأول باستخدام FullName.
-
-   * بالنسبة إلى eCommerceContacts، حدد **FullName** في القائمة المنسدلة.
-   * بالنسبة إلى loyCustomers، حدد **FullName** في القائمة المنسدلة.
-   * حدد القائمة المنسدلة **تسوية**، واختر **النوع (الهاتف والاسم والعنوان و...)**.
-   * عيّن **مستوى الدقة**: **أساسي** و **قيمة**: **عالي**.
-
-1. أدخل الاسم **FullName, Email** للقاعدة الجديدة.
-
-   * أضف شرطًا ثانيًا لعنوان البريد الإلكتروني من خلال تحديد **إضافة شرط**
-   * بالنسبة للكيان eCommerceContacts، اختر **البريد الإلكتروني** في القائمة المنسدلة.
-   * بالنسبة للكيان loyCustomers، اختر **البريد الإلكتروني** في القائمة المنسدلة. 
-   * اترك الخيار "تسوية" فارغًا. 
-   * عيّن **مستوى الدقة**: **أساسي** و **قيمة**: **عالي**.
-
-   :::image type="content" source="media/unify-match-rule.PNG" alt-text="توحيد قاعدة مطابقة للاسم والبريد الإلكتروني.":::
-
-7. حدد **حفظ** و **تشغيل**.
-
-### <a name="merge"></a>‏‏دمج
-
-1. انقر فوق علامة التبويب **دمج**.
-
-1. على **ContactId** للكيان **loyCustomers** ، قم بتغيير الاسم المعروض إلى **ContactIdLOYALTY** لتمييزه عن المعرفات الأخرى التي تم استيعابها.
-
-   :::image type="content" source="media/unify-merge-contactid.PNG" alt-text="إعادة تسمية contactid من معرف الولاء.":::
-
-1. حدد **حفظ** و **تشغيل** لبدء عملية الدمج.
-
-
+[!INCLUDE [sample-guide-unification](includes/sample-guide-unification.md)]
 
 ## <a name="task-3---configure-transaction-churn-prediction"></a>المهمة 3 - تكوين التنبؤ بخسارة المعاملة‬
 
-من خلال وضع ملفات تعريف العملاء الموحدة، يمكننا الآن تشغيل التنبؤ بخسارة الاشتراك. للحصول على خطوات تفصيلية، راجع مقالة [توقع خسارة الاشتراك](predict-subscription-churn.md). 
+مع وجود ملفات تعريف العملاء الموحدة في مكانها الصحيح، يمكننا الآن تشغيل توقع خسارة الحركة. للحصول على خطوات تفصيلية، راجع مقالة [توقع خسارة الحركة](predict-transactional-churn.md). 
 
 1. انتقل إلى **الذكاء** > **اكتشاف** وحدد لاستخدام **نموذج خسارة العملاء**.
 
@@ -180,7 +124,7 @@ ms.locfileid: "8645558"
 
 ## <a name="task-4---review-model-results-and-explanations"></a>المهمة 4 - مراجعة نتائج وتفسيرات النماذج
 
-دع النموذج يكمل تدريب وتسجيل نقاط البيانات. يمكنك الآن مراجعة تفسيرات نموذج خسارة بالاشتراك. لمزيد من المعلومات، راجع [مراجعة حاله ونتائج التنبؤ](predict-subscription-churn.md#review-a-prediction-status-and-results).
+دع النموذج يكمل تدريب وتسجيل نقاط البيانات. يمكنك الآن مراجعة تفسيرات نموذج الخسارة. لمزيد من المعلومات، راجع [مراجعة حاله ونتائج التنبؤ](predict-transactional-churn.md#review-a-prediction-status-and-results).
 
 ## <a name="task-5---create-a-segment-of-high-churn-risk-customers"></a>المهمة 5 - إنشاء شريحة من العملاء مخاطر خسارتهم عالية
 
@@ -192,14 +136,12 @@ ms.locfileid: "8645558"
 
    :::image type="content" source="media/segment-intelligence.PNG" alt-text="إنشاء شريحة بواسطة إخراج النموذج.":::
 
-1. حدد نقطة النهاية **OOBSubscriptionChurnPrediction** وحدد الشريحة: 
+1. حدد نقطة نهاية **OOBeCommerceChurnPrediction** وحدد المقطع: 
    - الحقل: ChurnScore
    - عامل التشغيل: أكبر من
    - القيمة: 0.6
-   
-   :::image type="content" source="media/segment-setup-subs.PNG" alt-text="إعداد شريحة خسارة الاشتراك.":::
 
-لديك الآن شريحة يتم تحديثها بشكل ديناميكي مما يحدد العملاء الذين تبدو مخاطر خسارتهم عالية‬ لعمل الاشتراك هذا.
+لديك الآن شريحة يتم تحديثها ديناميكيًا والتي تحدد العملاء المعرضين للخسارة الكبيرة.
 
 لمزيد من المعلومات، راجع [إنشاء شرائح وإدارتها](segments.md).
 

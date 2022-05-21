@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: e155f75ffbc2c1bb228bece1b3e34846df794543
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 33a0562854e97b9ac5218e060f965996305627fd
+ms.sourcegitcommit: d45c00a5f6cb106714366af81e8070e7f53654b3
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645500"
+ms.lasthandoff: 05/15/2022
+ms.locfileid: "8757416"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>مخططات الكيانات في نموذج البيانات العامة
 
@@ -23,7 +23,7 @@ ms.locfileid: "8645500"
 
 يسمح نموذج البيانات المشتركة هذا للعاملين على دمج التطبيقات والبيانات بالتعاون بشكل أسهل من خلال توفير تعريف موحد للبيانات. يتضمن نموذج البيانات العامة نظام بيانات تعريف غنيًا بالكيانات القياسية والعلاقات والتدرجات الهرمية والسمات والمزيد. وهو نشأ من تطبيقات Dynamics 365 وذو مصدر مفتوح على GitHub مع أكثر من 260 كيانًا قياسيًا. يساهم نظام كبير من شركاء داخليين وخارجيين في المفاهيم الخاصة بالمجال لنموذج البيانات العامة.
 
-تقوم أنظمة وأنظمة أساسية متعددة بتطبيق نموذج البيانات العامة في الوقت الحالي، بما في ذلك تدفقات البيانات من Power BI وخدمات بيانات Azure. ويُعد ذلك مدعومًا بالفعل في Microsoft Dataverse، وDynamics 365، وPower Apps، وPower BI، خدمات بيانات Azure القادمة، والتي تكتسب قيمة مباشرة نحو [مبادرة البيانات المفتوحة](https://www.microsoft.com/open-data-initiative)
+تقوم أنظمة وأنظمة أساسية متعددة بتطبيق نموذج البيانات العامة في الوقت الحالي، بما في ذلك تدفقات البيانات من Power BI وخدمات بيانات Azure. ويُعد ذلك مدعومًا بالفعل في Microsoft Dataverse، وDynamics 365، وPower Apps، وPower BI، خدمات بيانات Azure القادمة، والتي تكتسب قيمة مباشرة نحو [مبادرة البيانات المفتوحة](https://dynamics.microsoft.com/en-us/open-data-initiative/)
 
 ## <a name="customer-insights-entity-schemas"></a>مخططات كيانات Customer Insights
 

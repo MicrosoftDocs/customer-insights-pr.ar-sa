@@ -12,12 +12,12 @@ searchScope:
 - ci-predictions
 - ci-custom-models
 - customerInsights
-ms.openlocfilehash: cca91f2bbe2fc64554199082a79c1b388a01ab52
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: e2cace3547a0b584dbf26ae5eecf86f3b256649f
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645544"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8740703"
 ---
 # <a name="complete-your-partial-data-with-predictions-deprecated"></a>أكمل بياناتك الجزئية بالتنبؤات (مهمل)
 
@@ -37,7 +37,7 @@ ms.locfileid: "8645544"
 
 1. لدى مؤسستك مثيل [تم إعداده في Microsoft Dataverse](/ai-builder/build-model#prerequisites) وهو موجود في نفس المؤسسة مثل Customer Insights.
 
-2. يتم إرفاق بيئة معلومات الجمهور الخاصة بك بمثيل Dataverse الخاص بك.
+2. يتم إرفاق بيئة Customer Insights بمثيل Dataverse الخاص بك.
 
 لمزيد من المعلومات، راجع [إنشاء بيئة جديدة](create-environment.md).
 

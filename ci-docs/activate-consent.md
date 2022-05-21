@@ -1,23 +1,22 @@
 ---
 title: تنشيط قواعد الموافقة للمقاطع
 description: اتبع هذه الخطوات لربط بيانات الموافقة وتنشيط عمليات التحقق من الموافقة في Dynamics 365 Customer Insights. يمكن للمسؤول أيضًا تعطيل عمليات التحقق من الموافقة.
-ms.date: 11/12/2021
-ms.subservice: audience-insights
+ms.date: 04/27/2022
 ms.topic: how-to
-author: smithy7
-ms.author: smithc
+author: anubhav-t
+ms.author: antando
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: bfa03f4b7b56b300a74ebd04721cd64b893879f1
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: f82e3a4031fee8bcaa88575cbd68b37385a7fffb
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645472"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755154"
 ---
 # <a name="activate-consent-rules"></a>تنشيط قواعد الموافقة
 
-يساعدك [مركز الموافقة (الإصدار الأولي)](consent-management/overview.md) على تخزين بيانات الموافقة من مصادر متعددة. استخدام كيان *الموافقة* الموحدة في تطبيق فحوصات الموافقة الافتراضية. بعد استيراد بيانات الموافقة في مركز الموافقة وتكوين القواعد للبيانات، تتم مزامنة كيان *الموافقة* تلقائيًا لـ Dynamics 365 Customer Insights.
+يساعدك [مركز الموافقة (الإصدار الأولي)](consent-management/overview.md) على تخزين بيانات الموافقة من مصادر متعددة. استخدام كيان *الموافقة* الموحدة في تطبيق فحوصات الموافقة الافتراضية. بعد استيراد بيانات الموافقة وتكوين قواعد التعيين، تتم مزامنة كيان *الموافقة* تلقائيًا مع Dynamics 365 Customer Insights.
 
 ## <a name="enable-consent-checks"></a>تمكين فحوصات الموافقة
 

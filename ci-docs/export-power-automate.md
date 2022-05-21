@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 409792bc3f12fca451ef038e3300758bdf9ecf3b
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: d22c4c785695b23a257a89f1ffa519fdc18b443e
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645553"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8741163"
 ---
 # <a name="power-automate-connector-preview"></a>موصل Power Automate (معاينة)
 
@@ -25,14 +25,14 @@ ms.locfileid: "8645553"
 
 ## <a name="power-automate-triggers"></a>Power Automate المشغلات
 
-استخدم المشغلات لإنشاء عمليات سير مهام في السحابة وأتمتة المهام المتكررة، مثل الإعلامات أو إجراءات أكثر تقدمًا. 
+استخدم المشغلات لإنشاء عمليات سير مهام في السحابة وأتمتة المهام المتكررة، مثل الإعلامات أو إجراءات أكثر تقدمًا.
 
-- التشغيل عند فشل تحديث مصدر البيانات. 
+- التشغيل عند فشل تحديث مصدر البيانات.
 - التشغيل عند نجاح تحديث مصدر البيانات.
 - التشغيل عند تخطي الحد في شريحة. يقتصر التشغيل على تجاوز الحد.
 - التشغيل عند تخطي الحد في إجراء أعمال. يتم دعم فقط مقاييس العمل بدون بُعد. يقتصر التشغيل على تجاوز الحد.
 - التشغيل عند اكتمال عملية تحديث كاملة (مصادر البيانات والشرائح والمقاييس، ...).
-- تشغيل عند اكتمال تحديث عملية التوحيد (التعيين، المطابقة، الدمج).
+- مشغل عند اكتمال تحديث عملية التوحيد.
 
 [تكوين المشغلات في Power Automate.](https://flow.microsoft.com/connectors/shared_customerinsights/dynamics-365-customer-insights-connector/)
 

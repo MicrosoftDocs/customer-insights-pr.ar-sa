@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 18fc072d129be6b4fc5470b1057f592dc2638216
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 03169f0218dfad55cf20ecaf1c1596c652e5f601
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645463"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755246"
 ---
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>إعادة توجيه السجل في Dynamics 365 Customer Insights باستخدام Azure Monitor (إصدار أولي)
 
@@ -27,8 +27,8 @@ ms.locfileid: "8645463"
 - **أحداث التدقيق**
   - **APIEvent** - يتيح إمكانية تعقب التغييرات الذي يتم عبر واجهة مستخدم Dynamics 365 Customer Insights.
 - **الأحداث التشغيلية**
-  - **WorkflowEvent** - سير العمل الذي يسمح للشخص بإعداد [مصادر البيانات](data-sources.md)، و[توحيد البيانات](data-unification.md) و[إثرائها](enrichment-hub.md) وأخيرًا [تصديرها](export-destinations.md) في أنظمة أخرى. يمكن القيام بكل هذه الخطوات بشكل فردي (على سبيل المثال، تشغيل عملية تصدير واحدة) أو بشكل منظم (على سبيل المثال، تحديث البيانات من مصادر البيانات التي تقوم بتشغيل عملية توحيد ستسحب عمليات الإثراء الإضافية وبمجرد الانتهاء، تقوم بتصدير البيانات إلى نظام آخر). لمزيد من التفاصيل، انظر [مخطط WorkflowEvent](#workflow-event-schema).
-  - **APIEvent** - كافة استدعاءات API إلى مثيل العملاء إلى Dynamics 365 Customer Insights. لمزيد من التفاصيل، انظر [مخطط APIEvent](#api-event-schema).
+  - **WorkflowEvent** - سير العمل الذي يسمح لك بإعداد [مصادر البيانات](data-sources.md)، و[توحيد البيانات](data-unification.md) و[إثرائها](enrichment-hub.md) وأخيرًا [تصديرها](export-destinations.md) في أنظمة أخرى. يمكن تنفيذ كل هذه الخطوات بشكل فردي (على سبيل المثال، تشغيل تصدير واحد). يمكن أيضًا تشغيل تنسيقه (على سبيل المثال، تحديث البيانات من مصادر البيانات التي تؤدي إلى بدء عملية التوحيد، والتي ستسحب عمليات الثراء وبمجرد الانتهاء من تصدير البيانات إلى نظام آخر). لمزيد من المعلومات، راجع [مخطط WorkflowEvent](#workflow-event-schema).
+  - **APIEvent** - كافة استدعاءات API إلى مثيل العملاء إلى Dynamics 365 Customer Insights. لمزيد من المعلومات، راجع [مخطط APIEvent](#api-event-schema).
 
 ## <a name="set-up-the-diagnostic-settings"></a>إعداد إعدادات التشخيص
 
@@ -182,7 +182,7 @@ ms.locfileid: "8645463"
 
 ### <a name="workflow-event-schema"></a>مخطط حدث سير العمل
 
-يحتوي سير العمل على خطوات متعددة. [استيعاب مصادر البيانات](data-sources.md)، [توحيد البيانات](data-unification.md)، [وإثراؤها](enrichment-hub.md)، و[تصديرها](export-destinations.md). يمكن تشغيل كل هذه الخطوات بشكل فردي أو تنظيمها باستخدام العمليات التالية. 
+يحتوي سير العمل على خطوات متعددة. [استيعاب مصادر البيانات](data-sources.md)، [توحيد البيانات](data-unification.md)، [وإثراؤها](enrichment-hub.md)، و[تصديرها](export-destinations.md). يمكن تشغيل كل هذه الخطوات بشكل فردي أو تنظيمها باستخدام العمليات التالية.
 
 #### <a name="operation-types"></a>أنواع العمليات
 
@@ -215,7 +215,7 @@ ms.locfileid: "8645463"
 | `time`          | الطابع الزمني | مطلوبة          | الطابع الزمني للحدث (UTC).                                                                                                                                 | `2020-09-08T09:48:14.8050869Z`                                                                                                                                           |
 | `resourceId`    | السلسلة‬    | مطلوبة          | ResourceId للمثيل الذي أطلق الحدث.                                                                                                            | `/SUBSCRIPTIONS/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX/RESOURCEGROUPS/<RESOURCEGROUPNAME>/`<br>`PROVIDERS/MICROSOFT.D365CUSTOMERINSIGHTS/`<br>`INSTANCES/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX` |
 | `operationName` | السلسلة‬    | مطلوبة          | اسم العملية التي يمثلها هذا الحدث. `{OperationType}.[WorkFlow|Task][Started|Completed]`. راجع [أنواع العمليات](#operation-types) كمرجع. | `Segmentation.WorkflowStarted`,<br> `Segmentation.TaskStarted`, <br> `Segmentation.TaskCompleted`, <br> `Segmentation.WorkflowCompleted`                                 |
-| `category`      | السلسلة‬    | مطلوبة          | فئة السجل للحدث. `Operational` دائمًا لأحداث سير العمل                                                                                           | `Operational`                                                                                                                                                            | 
+| `category`      | السلسلة‬    | مطلوبة          | فئة السجل للحدث. `Operational` دائمًا لأحداث سير العمل                                                                                           | `Operational`                                                                                                                                                            |
 | `resultType`    | السلسلة‬    | مطلوبة          | حالة الحدث. `Running`, `Skipped`, `Successful`, `Failure`                                                                                            |                                                                                                                                                                          |
 | `durationMs`    | طويل      | اختيارية          | مدة العملية بالمللي ثانية.                                                                                                                    | `133`                                                                                                                                                                    |
 | `properties`    | السلسلة‬    | اختيارية          | كائن JSON مع مزيد من الخصائص لفئة معينة من الأحداث.                                                                                        | راجع القسم الفرعي [خصائص سير العمل](#workflow-properties-schema)                                                                                                       |

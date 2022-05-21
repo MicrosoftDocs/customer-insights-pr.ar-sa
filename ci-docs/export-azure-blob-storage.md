@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 42095f369c47553e5ddf5fada54e559202c943a9
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 3d573a6c83b7f0b0c33e656eb383e20a96856b0b
+ms.sourcegitcommit: d45c00a5f6cb106714366af81e8070e7f53654b3
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645507"
+ms.lasthandoff: 05/15/2022
+ms.locfileid: "8757370"
 ---
 # <a name="export-segment-list-and-other-data-to-azure-blob-storage-preview"></a>تصدير قائمة الشرائح والبيانات الأخرى إلى مساحة تخزين Azure Blob Storage (إصدار أولي)
 
@@ -44,7 +44,7 @@ ms.locfileid: "8645507"
 يمكنك تكوين هذا التصدير إذا كان لديك حق الوصول إلى اتصال من هذا النوع. لمزيد من المعلومات، راجع [الأذونات اللازمة لتكوين تصدير](export-destinations.md#set-up-a-new-export).
 
 > [!IMPORTANT]
-> إذا قمت بتشغيل إعداد الحذف لحساب مساحة تخزين Azure Blob Storage، فستفشل عمليات التصدير. إيقاف تشغيل الحذف لتصدير البيانات إلى blobs. لمزيد من المعلومات، راجع [تمكين حذف blob](/azure/storage/blobs/soft-delete-blob-enable.md)
+> إذا قمت بتشغيل إعداد الحذف لحساب مساحة تخزين Azure Blob Storage، فستفشل عمليات التصدير. إيقاف تشغيل الحذف لتصدير البيانات إلى blobs. لمزيد من المعلومات، راجع [تمكين حذف blob](/azure/storage/blobs/soft-delete-blob-enable)
 
 1. انتقل إلى **البيانات** > **التصديرات**.
 

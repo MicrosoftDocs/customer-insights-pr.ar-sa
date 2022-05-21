@@ -12,12 +12,12 @@ searchScope:
 - ci-permissions
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: b80f07dfa734f4dd762bd711151a7045f24bed7d
-ms.sourcegitcommit: cf74b8c20d88eb96e1ac86e18cd44fe27aad5ab9
+ms.openlocfilehash: 74c7ff7cda8431c04dd34713becefa7e346331b4
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "8653552"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8740887"
 ---
 # <a name="user-permissions"></a>أذونات المستخدم
 
@@ -41,7 +41,7 @@ ms.locfileid: "8653552"
 
 - تكون جميع الأذونات متاحة للعارض.
 - تحميل البيانات وتحويلها باستخدام صفحة **مصادر البيانات**.
-- إكمال أقسام *توحيد البيانات*(**تعيين** و **مطابقة** و **دمج**) والتي ينتج عنها كيان ملف تعريف العميل الموحد.
+- أكمل ***توحيد البيانات** الذي ينتج عنه كيان ملف تعريف العميل الموحد.
 - تحديد **العلاقات** و **الأنشطة**.
 - إنشاء شرائح باستخدام صفحة **الشرائح**.
 - قم بإنشاء مقاييس باستخدام صفحة **المقاييس** .

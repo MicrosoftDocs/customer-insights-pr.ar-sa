@@ -1,8 +1,8 @@
 ---
 title: دليل نموذج التنبؤ بخسارة الاشتراك‬
 description: استخدم هذا النموذج للتعرف على النموذج الجاهز للتنبؤ بخسارة الاشتراك‬.
-ms.date: 11/19/2020
-ms.reviewer: mhart
+ms.date: 03/31/2022
+ms.reviewer: v-wendysmith
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: m-hartmann
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-create-prediction
 - customerInsights
-ms.openlocfilehash: 2aea6c62421b308705899e4f8af64f64bfcb2d3d
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 5a8eeafecacef3d0bb4a798b698cf490423ca98d
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645541"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8741395"
 ---
 # <a name="subscription-churn-prediction-sample-guide"></a>دليل نموذج التنبؤ بخسارة الاشتراك‬
 
@@ -112,61 +112,7 @@ ms.locfileid: "8645541"
 
 ## <a name="task-2---data-unification"></a>المهمة 2 - توحيد البيانات
 
-بعد استيعاب البيانات، نبدأ الآن عملية **التعيين، المطابقة، الدمج** لإنشاء ملف تعريف عميل موحد. لمزيد من المعلومات، راجع [توحيد البيانات](data-unification.md).
-
-### <a name="map"></a>المخطط
-
-1. بعد استيعاب البيانات، قم بتعيين جهات الاتصال من بيانات التجارة الإلكترونية والولاء إلى أنواع البيانات الشائعة. انتقل إلى **البيانات** > **توحيد** > **تعيين**.
-
-1. حدد الكيانات التي تمثل ملف تعريف العميل – **eCommerceContacts** و **loyCustomers**. 
-
-   :::image type="content" source="media/unify-ecommerce-loyalty.PNG" alt-text="توحيد مصادر بيانات التجارة الإلكترونية والولاء.":::
-
-1. حدد **ContactId** كمفتاح أساسي لـ **eCommerceContacts** و **LoyaltyID** كمفتاح أساسي لـ **loyCustomers**.
-
-   :::image type="content" source="media/unify-loyaltyid.PNG" alt-text="توحيد LoyaltyId كمفتاح أساسي.":::
-
-### <a name="match"></a>مطابقة
-
-1. انتقل إلى علامة التبويب **مطابقة** وحدد **تعيين الأمر**.
-
-1. في القائمة المنسدلة **الرئيسية**، اختر **eCommerceContacts : eCommerce** باعتباره المصدر الرئيسي وقم بتضمين جميع السجلات.
-
-1. في القائمة المنسدلة **الكيان 2**، اختر **loyCustomers : LoyaltyScheme** وقم بتضمين جميع السجلات.
-
-   :::image type="content" source="media/unify-match-order.PNG" alt-text="توحيد مطابقة التجارة الإلكترونية والولاء.":::
-
-1. حدد **إنشاء قاعدة جديدة**
-
-1. أضف الشرط الأول باستخدام FullName.
-
-   * بالنسبة إلى eCommerceContacts، حدد **FullName** في القائمة المنسدلة.
-   * بالنسبة إلى loyCustomers، حدد **FullName** في القائمة المنسدلة.
-   * حدد القائمة المنسدلة **تسوية**، واختر **النوع (الهاتف والاسم والعنوان و...)**.
-   * عيّن **مستوى الدقة**: **أساسي** و **قيمة**: **عالي**.
-
-1. أدخل الاسم **FullName, Email** للقاعدة الجديدة.
-
-   * أضف شرطًا ثانيًا لعنوان البريد الإلكتروني من خلال تحديد **إضافة شرط**
-   * بالنسبة للكيان eCommerceContacts، اختر **البريد الإلكتروني** في القائمة المنسدلة.
-   * بالنسبة للكيان loyCustomers، اختر **البريد الإلكتروني** في القائمة المنسدلة. 
-   * اترك الخيار "تسوية" فارغًا. 
-   * عيّن **مستوى الدقة**: **أساسي** و **قيمة**: **عالي**.
-
-   :::image type="content" source="media/unify-match-rule.PNG" alt-text="توحيد قاعدة مطابقة للاسم والبريد الإلكتروني.":::
-
-7. حدد **حفظ** و **تشغيل**.
-
-### <a name="merge"></a>‏‏دمج
-
-1. انقر فوق علامة التبويب **دمج**.
-
-1. على **ContactId** للكيان **loyCustomers** ، قم بتغيير الاسم المعروض إلى **ContactIdLOYALTY** لتمييزه عن المعرفات الأخرى التي تم استيعابها.
-
-   :::image type="content" source="media/unify-merge-contactid.PNG" alt-text="إعادة تسمية contactid من معرف الولاء.":::
-
-1. حدد **حفظ** و **تشغيل** لبدء عملية الدمج.
-
+[!INCLUDE [sample-guide-unification](includes/sample-guide-unification.md)]
 
 ## <a name="task-3---configure-the-subscription-churn-prediction"></a>المهمة 3 - تكوين التنبؤ بخسارة الاشتراك
 

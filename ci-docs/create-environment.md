@@ -12,12 +12,12 @@ ms.custom: intro-internal
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: 0efda9d2997bcfd069b6d2445b69d159d7d3e59b
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: c64ac94a7e0e743d3c13e32e394cc5d409420622
+ms.sourcegitcommit: c00441bc60b978e25f930b06c9d97b46fe462538
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645470"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8712886"
 ---
 # <a name="create-an-environment-in-customer-insights"></a>إنشاء بيئة في Customer Insights
 
@@ -63,8 +63,7 @@ ms.locfileid: "8645470"
 من خلال حفظ البيانات في Azure Data Lake Storage، فإنك توافق على أنه سيتم نقل البيانات وتخزينها في الموقع الجغرافي المناسب لحساب تخزين Azure هذا. قد يختلف هذا الموقع عن مكان تخزين البيانات في Dynamics 365 Customer Insights. اعرف المزيد في [مركز توثيق Microsoft](https://www.microsoft.com/trust-center).
 
 > [!NOTE]
-> يدعم Customer Insights حاليًا ما يلي:
-> - الكيانات التي تم تحليلها من تدفقات بيانات Power BI المخزنة في Data Lake مدار بواسطة Microsoft Dataverse.  
+> يدعم Customer Insights حاليًا ما يلي:  
 > - حسابات Azure Data Lake Storage من نفس منطقة Azure التي قمت بتحديدها عند إنشاء البيئة.
 > - حسابات Azure Data Lake Storage التي هي Gen2 وقامت بتمكين *مساحة اسم التدرج الهرمي*. حسابات تخزين Azure Data Lake Gen1 غير مدعومة.
 
@@ -80,7 +79,7 @@ ms.locfileid: "8645470"
 
 توفير بيئة Microsoft Dataverse الخاصة بك لمشاركة البيانات (ملفات التعريف والمعلومات) مع تطبيقات الأعمال استنادًا إلى Dataverse مثل Dynamics 365 Marketing أو التطبيقات التي تستند إلى النموذج في Power Apps. اترك هذا الحقل فارغا إذا لم تكن لديك بيئة Dataverse الخاصة بك وسوف نقوم بتوفير حقل لك.
 
-كما يمكنك الاتصال ببيئة Dataverse الخاصة بك استيعاب البيانات من مصادر بيانات داخلية[ باستخدام تدفقات البيانات والبوابات Power Platform](data-sources.md#add-data-from-on-premises-data-sources). يمكنك أيضا استخدام [نمازج تنبؤ جاهزة](predictions-overview.md?tabs=b2c#out-of-box-models) من خلال الاتصال Dataverse ببيئة.
+كما يمكنك الاتصال ببيئة Dataverse الخاصة بك استيعاب البيانات من مصادر بيانات داخلية[ باستخدام تدفقات البيانات والبوابات Power Platform](data-sources.md#add-data-from-on-premises-data-sources).
 
 > [!IMPORTANT]
 > 1. يجب أن تكون Customer Insights وDataverse في نفس المنطقة لتمكين مشاركة البيانات.

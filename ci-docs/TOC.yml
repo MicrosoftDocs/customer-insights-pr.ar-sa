@@ -66,12 +66,18 @@
   items:
     - name: نظرة عامة على توحيد البيانات
       href: data-unification.md
-    - name: تعيين الكيانات والسمات
+    - name: تحديد الحقول المصدر
       href: map-entities.md
-    - name: تطابق الكيانات
+    - name: إزالة السجلات المكررة
+      href: remove-duplicates.md
+    - name: شروط المطابقة
       href: match-entities.md
-    - name: دمج الكيانات
+    - name: توحيد حقول العملاء
       href: merge-entities.md
+    - name: مراجعة توحيد البيانات
+      href: review-unification.md
+    - name: تحديث إعدادات التوحيد
+      href: data-unification-update.md
 - name: إثراء البيانات
   items:
     - name: إثراء ملفات تعريف العملاء
@@ -282,6 +288,8 @@
       href: apis.md
     - name: مراجع API
       href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
+    - name: نماذج استعلامات OData
+      href: odata-examples.md
 - name: إدارة الموافقة (إصدار أولي)
   items:
     - name: مركز التعليمات

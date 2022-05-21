@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: ecc8bb3dbec1d4583c4bf2a58058145343945299
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: a460ec87ec85f0614f944d352588d4ca899f8120
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645489"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755434"
 ---
 # <a name="work-with-customer-insights-apis"></a>التعامل مع واجهات API في Customer Insights
 
@@ -25,7 +25,7 @@ ms.locfileid: "8645489"
 > [!IMPORTANT]
 > يمكن العثور على تفاصيل واجهات API هذه في [مرجع واجهات API‏‎ في Customer Insights](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). وهي تتضمن معلومات إضافية حول العمليات والمعلمات والاستجابات.
 
-تصف هذه المقالة كيفية الوصول إلى واجهات برمجة تطبيقات Customer Insights، وإنشاء تسجيل تطبيق Azure، والبدء في العمل مع مكتبات العميل المتوفرة.
+توضح هذه المقالة كيفية الوصول إلى واجهات برمجة تطبيقات Customer Insights، وإنشاء تسجيل تطبيق Azure، والبدء في مكتبات العملاء.
 
 ## <a name="get-started-trying-the-customer-insights-apis"></a>بدء تجربة واجهات API في Customer Insights
 
@@ -83,7 +83,7 @@ ms.locfileid: "8645489"
 
 لمزيد من المعلومات حول MSAL، انظر [نظرة عامة على مكتبة المصادقة من Microsoft‏ (MSAL)](/azure/active-directory/develop/msal-overview).
 
-لمزيد من المعلومات حول تسجيل التطبيق في Azure، راجع [تسجيل أحد التطبيقات](/azure/active-directory/develop/quickstart-register-app.md#register-an-application).
+لمزيد من المعلومات حول تسجيل التطبيق في Azure، راجع [تسجيل أحد التطبيقات](/graph/auth-register-app-v2).
 
 للحصول على معلومات حول استخدام واجهات برمجة التطبيقات في مكتبات عملائنا، راجع [مكتبات عميل Customer Insights](#customer-insights-client-libraries).
 
@@ -112,6 +112,10 @@ ms.locfileid: "8645489"
    افتح Customer Insights، وانتقل إلى **المسؤول** > **الأذونات** وحدد **إضافة مستخدم**.
 
 1. ابحث عن اسم تسجيل التطبيق، وحدده من نتائج البحث، وحدد **حفظ**.
+
+## <a name="sample-queries"></a>نماذج الاستعلامات
+
+لقد قمنا بتجميع قائمة قصيرة من نماذج استعلامات OData للعمل مع واجهات برمجة التطبيقات: [أمثلة على استعلامات OData](odata-examples.md).
 
 ## <a name="customer-insights-client-libraries"></a>مكتبات عملاء Customer Insights
 
@@ -147,7 +151,7 @@ ms.locfileid: "8645489"
 
 1. يمكنك إجراء استدعاءات مع العميل "لطرق التوسيع"، على سبيل المثال، `GetAllInstancesAsync`. إذا كان الوصول إلى `Microsoft.Rest.HttpOperationResponse` الأساسي مفضلاً، فاستخدم "طرق رسالة http"، على سبيل المثال `GetAllInstancesWithHttpMessagesAsync`.
 
-1. من المحتمل أن تكون الاستجابة من النوع `object` لأنه باستطاعة الطريقة إرجاع أنواع متعددة (على سبيل المثال ، `IList<InstanceInfo>` و `ApiErrorResult`). للتحقق من نوع الإرجاع، يمكنك تحويل الكائنات بأمان إلى أنواع الاستجابة المحددة في [صفحة تفاصيل واجهة API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights) لهذه العملية.    
+1. من المحتمل أن تكون الاستجابة من النوع `object` لأنه باستطاعة الطريقة إرجاع أنواع متعددة (على سبيل المثال ، `IList<InstanceInfo>` و `ApiErrorResult`). للتحقق من نوع الإرجاع، يمكنك استخدام الكائنات في أنواع الردود المحددة في [صفحة تفاصيل واجهة API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights) لهذه العملية.    
    
    إذا كانت هناك حاجة إلى مزيد من المعلومات حول الطلب، فاستخدم **طرق رسالة http** للوصول إلى كائن الاستجابة الأولي.
 

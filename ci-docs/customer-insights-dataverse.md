@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 85995cbd7f797810bfb6ecdc8a24d56542f0b5a9
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 1e629cd218b104b115f74f59a53a14e9d60fcc8a
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645468"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8741349"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>استخدام بيانات Customer Insights في Microsoft Dataverse
 
@@ -54,7 +54,7 @@ ms.locfileid: "8645468"
 
 ### <a name="customerprofile"></a>ملف تعريف العميل
 
-يحتوي هذا الجدول على ملف تعريف العميل الموحد من Customer Insights. يتوقف مخطط ملف تعريف العميل الموحد على الكيانات والسمات المستخدمة في عملية الدمج. يحتوي مخطط ملف تعريف العميل عادة على مجموعة فرعية من السمات من [تعريف نموذج البيانات العامة لـ CustomerProfile](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile).
+يحتوي هذا الجدول على ملف تعريف العميل الموحد من Customer Insights. يعتمد مخطط ملف تعريف العميل الموحد على الكيانات والسمات المستخدمة في عملية توحيد البيانات. يحتوي مخطط ملف تعريف العميل عادة على مجموعة فرعية من السمات من [تعريف نموذج البيانات العامة لـ CustomerProfile](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile).
 
 ### <a name="alternatekey"></a>AlternateKey
 

@@ -8,12 +8,12 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: v-wendysmith
 manager: shellyha
-ms.openlocfilehash: 56f6a8ad20224922f9968f0ad3b6a0e0a400214b
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: d1e14d2d4e718d71ccbd2afd259a350ad5c9e69a
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645465"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755670"
 ---
 # <a name="enrichment-for-data-sources-preview"></a>الإثراء لمصادر البيانات (إصدار أولي)
 
@@ -26,7 +26,7 @@ ms.locfileid: "8645465"
 1. انتقل إلى **البيانات** > **توحيد**. حدد الكيان الذي تريد إثرائه وحدد سمة واحدة كمفتاح أساسي للكيان. لمزيد من المعلومات، راجع [تحديد المفتاح الأساسي](map-entities.md#select-primary-key-and-semantic-type-for-attributes).
 
 1. انتقل إلى **البيانات** > **مصادر البيانات**.
- 
+
 1. حدد علامة الحذف العمودية بجوار مصدر البيانات الذي تريد إثرائه، ثم حدد **إثراء**.
 
    :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="صفحة إثراء مصادر البيانات.":::

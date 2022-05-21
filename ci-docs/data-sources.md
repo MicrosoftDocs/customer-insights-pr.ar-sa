@@ -12,12 +12,12 @@ searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: bcc50c6fa8f8e2a66ef6164bfa9022e068c0e374
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 1fe8d6e8098831ecc8ff28e571340c56a654de6d
+ms.sourcegitcommit: a50c5e70d2baf4db41a349162fd1b1f84c3e03b6
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645466"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8739192"
 ---
 # <a name="data-sources-overview"></a>نظرة عامة مصادر البيانات
 
@@ -35,9 +35,6 @@ ms.locfileid: "8645466"
 - [من مجلد نموذج البيانات العامة](connect-common-data-model.md)
 - [من مخزن Microsoft Dataverse الخاص بك](connect-dataverse-managed-lake.md)
 - [من خلال قاعدة بيانات Azure Synapse Analytics ](connect-synapse.md)
-
-> [!NOTE]
-> إذا كنت تستخدم الإصدار التجريبي، فإن قسم طرق الاستيراد يتضمن خيار **مكتبة بيانات Customer Insights**. اختر هذا الخيار لتحديد عينة مجموعة بيانات متوفرة لصناعات متنوعة. لمزيد من المعلومات، راجع [Dynamics 365 Customer Insights إصدار تجريبي](trial-signup.md).
 
 ## <a name="add-data-from-on-premises-data-sources"></a>إضافة البيانات من مصادر البيانات المحلية
 

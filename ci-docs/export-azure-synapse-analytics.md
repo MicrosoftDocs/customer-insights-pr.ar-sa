@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: e77227e1e353c02cfb13e26a8ecbe0768ba6c0fa
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 772fe0978362ccd829077a8133e2a3e74043f3f8
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645477"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8741487"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>تصدير البيانات إلى Azure Synapse Analytics (إصدار أولي)
 
@@ -34,7 +34,7 @@ Azure Synapse iهو خدمة تحليلات تعمل على تسريع وقت ا
 
 - اشتراك Azure نشط.
 
-- إذا كنت تستخدم حساب Azure Data Lake Storage Gen2 جديدًا، يحتاج *كيان الخدمة لـ Customer Insights* إلى أذونات **مساهم بيانات مخزن البيانات الثنائية الكبيرة**. اعرف على المزيد حول [الاتصال بحساب Azure Data Lake Storage Gen2 باستخدام مبدأ خدمة Azure لمعلومات الجمهور](connect-service-principal.md). إن Data Lake Storage Gen2 **يجب** أن يتضمن [مساحة أسماء هرمية](/azure/storage/blobs/data-lake-storage-namespace) قيد التمكين.
+- إذا كنت تستخدم حساب Azure Data Lake Storage Gen2 جديدًا، يحتاج *كيان الخدمة لـ Customer Insights* إلى أذونات **مساهم بيانات مخزن البيانات الثنائية الكبيرة**. تعرف على المزيد حول [الاتصال بحساب Azure Data Lake Storage Gen2 مع أساس خدمة Azure لـ Customer Insights](connect-service-principal.md). إن Data Lake Storage Gen2 **يجب** أن يتضمن [مساحة أسماء هرمية](/azure/storage/blobs/data-lake-storage-namespace) قيد التمكين.
 
 - على مجموعة الموارد حيث توجد Azure Synapse workspace، يجب تعيين أذونات **القارئ** لكل من *كيان الخدمة* و *مستخدم Azure AD الذي لديه أذونات المسؤول في Customer Insights*. لمزيد من المعلومات، راجع [تعيين أدوار Azure باستخدام مدخل Azure](/azure/role-based-access-control/role-assignments-portal).
 
