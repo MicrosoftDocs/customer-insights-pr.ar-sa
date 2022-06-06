@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: a460ec87ec85f0614f944d352588d4ca899f8120
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: 9a04276f7326533cd389cba6554f468123463bac
+ms.sourcegitcommit: bf65bc0a54cdab71680e658e1617bee7b2c2bb68
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755434"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8808490"
 ---
 # <a name="work-with-customer-insights-apis"></a>التعامل مع واجهات API في Customer Insights
 
@@ -31,11 +31,11 @@ ms.locfileid: "8755434"
 
 1. [سجل دخولك](https://home.ci.ai.dynamics.com) إلى Customer Insights. إذا لم يكن لديك اشتراك حتى الآن، فيمكنك [التسجيل للحصول على إصدار تجريبي من Customer Insights](https://aka.ms/tryci).
 
-1. لتمكين واجهات API على بيئة Customer Insights، انتقل إلى **المسؤول** > **الأذونات**. ستحتاج إلى أذونات المسؤول للقيام بذلك.
+1. لتمكين واجهات برمجة التطبيقات (API) في بيئة Customer Insights، انتقل إلى **المسؤول** > **الأمان**. ستحتاج إلى أذونات المسؤول للقيام بذلك.
 
 1. انتقل إلى علامة تبويب **واجهات API** وحدد الزر **تمكين**.    
  
-   يؤدي تمكين واجهات API إلى إنشاء مفتاح اشتراك أساسي وثانوي للمثيل الذي يتم استخدامه في طلبات API. يمكنك إعادة إنشاء المفاتيح بتحديد **إعادة إنشاء الأساسي** أو **إعادة إنشاء الثانوي** على **المسؤول** > **الأذونات** > **واجهات API**.
+   يؤدي تمكين واجهات API إلى إنشاء مفتاح اشتراك أساسي وثانوي للمثيل الذي يتم استخدامه في طلبات API. يمكنك إعادة إنشاء المفاتيح عن طريق تحديد الخيارين **إعادة إنشاء الرئيسي** أو **إعادة إنشاء الثانوي** في **المسؤول** > **الأمان** > **واجهات برمجة التطبيقات (API)**.
 
 <!--  :::image type="content" source="media/enable-apis.gif" alt-text="Enable Customer Insights APIs."::: -->
 
@@ -62,14 +62,12 @@ ms.locfileid: "8755434"
 1. من اليمين، حدد **تسجيلات التطبيق**.
 
 1. حدد **تسجيل جديد**، وقدم اسم تطبيق واختر نوع الحساب.
- 
+
    بشكل اختياري، أضف عنوان URL لإعادة التوجيه. http://localhost يكفي لتطوير تطبيق على الكمبيوتر المحلي.
 
 1. على تسجيل التطبيق الجديد، انتقل إلى **أذونات واجهة API**.
 
-<!--   :::image type="content" source="media/app-registration-1.gif" alt-text="How to set API permissions in App registration."::: -->
-
-1. حدد **إضافة إذن**، وحدد **Customer Insights** في الجزء الجانبي.
+1. حدد **إضافة إذن** وحدد **Dynamics 365 AI for Customer Insights** في الجزء الجانبي.
 
 1. بالنسبة إلى **نوع الإذن**، حدد **الأذونات المفوضة**، ثم حدد إذن **انتحال شخصية المستخدم**.
 
@@ -109,7 +107,7 @@ ms.locfileid: "8755434"
 
 1. في النهاية، يتعين علينا إضافة اسم تسجيل التطبيق كمستخدم في Customer Insights.  
    
-   افتح Customer Insights، وانتقل إلى **المسؤول** > **الأذونات** وحدد **إضافة مستخدم**.
+   افتح Customer Insights، وانتقل إلى **المسؤول‏‎** > **الأمان** وحدد **إضافة مستخدم**.
 
 1. ابحث عن اسم تسجيل التطبيق، وحدده من نتائج البحث، وحدد **حفظ**.
 

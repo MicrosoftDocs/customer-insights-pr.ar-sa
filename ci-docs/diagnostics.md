@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 03169f0218dfad55cf20ecaf1c1596c652e5f601
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: 15ae772617efa4c64cf79d0bac10a0c3cb28ca30
+ms.sourcegitcommit: a92bf5985263240fd07bad98d8e119b88cf2c9d9
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755246"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "8807565"
 ---
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>إعادة توجيه السجل في Dynamics 365 Customer Insights باستخدام Azure Monitor (إصدار أولي)
 
@@ -38,7 +38,7 @@ ms.locfileid: "8755246"
 
 - لديك [اشتراك Azure](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/) نشط.
 - لديك [أذونات المسؤول](permissions.md#admin) في Customer Insights.
-- لديك دور **المساهم** و **مسؤول وصول المستخدم** على المورد الوجهة في Azure. قد يكون المورد حساب Azure Storage أو مركز أحداث Azure أو مساحة عمل Azure Log Analytics. لمزيد من المعلومات، راجع [إضافة أو إزالة تعيينات أدوار Azure باستخدام مدخل Azure](/azure/role-based-access-control/role-assignments-portal).
+- لديك دور **المساهم** و **مسؤول وصول المستخدم** على المورد الوجهة في Azure. قد يكون المورد حساب Azure Data Lake Storage أو مركز أحداث Azure أو مساحة عمل Azure Log Analytics. لمزيد من المعلومات، راجع [إضافة أو إزالة تعيينات أدوار Azure باستخدام مدخل Azure](/azure/role-based-access-control/role-assignments-portal). هذا الإذن ضروري أثناء تكوين إعدادات التشخيص في Customer Insights، ويمكن تغييره بعد الإعداد الناجح.
 - [تمت تلبية المتطلبات الوجهة](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) لـ Azure Storage أو مركز أحداث Azure أو Azure Log Analytics.
 - لديك على الأقل دور **قارئ** في مجموعة الموارد التي ينتمي إليها المورد.
 

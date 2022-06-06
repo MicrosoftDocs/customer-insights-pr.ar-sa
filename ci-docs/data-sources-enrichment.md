@@ -1,19 +1,19 @@
 ---
 title: إثراء مصدر البيانات
 description: إثراء مصادر البيانات قبل الخوض في عملية توحيد البيانات.
-ms.date: 03/02/2022
+ms.date: 05/20/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: v-wendysmith
 manager: shellyha
-ms.openlocfilehash: d1e14d2d4e718d71ccbd2afd259a350ad5c9e69a
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: 1225482c4bf432ed747537b2c9bec9ab0e692a51
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755670"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800265"
 ---
 # <a name="enrichment-for-data-sources-preview"></a>الإثراء لمصادر البيانات (إصدار أولي)
 
@@ -27,7 +27,7 @@ ms.locfileid: "8755670"
 
 1. انتقل إلى **البيانات** > **مصادر البيانات**.
 
-1. حدد علامة الحذف العمودية بجوار مصدر البيانات الذي تريد إثرائه، ثم حدد **إثراء**.
+1. حدد علامة القطع الرأسية (&vellip;) إلى جانب مصدر البيانات الذي ترغب في إثرائه، ثم حدد **إثراء**.
 
    :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="صفحة إثراء مصادر البيانات.":::
 
@@ -41,11 +41,12 @@ ms.locfileid: "8755670"
 
 - [العناوين المحسنة](enrichment-enhanced-addresses.md)
 - [بيانات الشركة المحسنة](enrichment-enhanced-company-data.md)
+- [بيانات الهوية من LiveRamp](enrichment-liveramp.md)
 
 ## <a name="manage-existing-data-source-enrichments"></a>إدارة إثراء مصادر البيانات الموجودة
 
 انتقل إلى علامة التبويب **عمليات الإثراء الخاصة بي** لمعرفة جميع عمليات الإثراء التي تم تكوينها.
 
-حدد الإثراء من أجل الاطلاع على الخيارات المتاحة. يمكنك أيضًا تحديد علامة الحذف (...) على عنصر قائمة لمشاهدة الخيارات. إذا قمت بتكوين العديد من عمليات الإثراء، يمكنك استخدام مربع البحث للعثور عليه بسرعة.
+حدد الإثراء من أجل الاطلاع على الخيارات المتاحة. يمكنك أيضًا تحديد علامة القطع الرأسبة العمودية (&vellip;) في عنصر القائمة لرؤية الخيارات. إذا قمت بتكوين العديد من عمليات الإثراء، يمكنك استخدام مربع البحث للعثور عليه بسرعة.
 
 يمكنك عرض إثراء مصدر البيانات أو تحريره أو تشغيله أو حذفه. لمزيد من المعلومات، راجع [إدارة عمليات الإثراء الموجودة](enrichment-hub.md).

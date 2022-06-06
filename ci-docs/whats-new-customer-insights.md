@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: 386198c838929a20e136288fffb1015707654d8d
-ms.sourcegitcommit: 9f256af5c4f7e99305bf09087f7ec05eebeae6a0
+ms.openlocfilehash: af79c8369dd608e8ce1c14c50bb9aef3a79b9029
+ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8700921"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "8833614"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>الجديد في Dynamics 365 Customer Insights
 
@@ -58,6 +58,7 @@ ms.locfileid: "8700921"
 لمزيد من المعلومات، راجع [‏‫إثراء ملفات تعريف العملاء ببيانات الهوية من LiveRamp (إصدار أولي)‬](enrichment-liveramp.md).
 
 ### <a name="organize-segments-and-measures-with-tags-and-filters"></a>تنظيم الشرائح و القياسات باستخدام العلامات و عوامل التصفية
+
 إذا كانت مؤسستك تحتفظ بالكثير من الشرائح أو القياسات، فإن العثور على الجزء الصحيح قد يمثل تحديًا في بعض الأحيان. تتيح لك هذه الميزة الجديدة تنظيم القوائم باستخدام العلامات والأعمدة. وهي تساعدك في العثور على البيانات بسرعة وسهولة وتخصيص طرق العرض.
 
 لمزيد من المعلومات، راجع [العمل مع العلامات والأعمدة](work-with-tags-columns.md).
@@ -65,9 +66,9 @@ ms.locfileid: "8700921"
 ### <a name="enable-data-sharing-with-dataverse-when-using-your-own-storage-account"></a>تمكين مشاركة البيانات مع Dataverse عند استخدام حساب تخزين خاص بك
 
 إذا كانت بيئتك تستخدم Azure Data Lake Storage لتخزين بيانات Customer Insights، فإن مشاركة البيانات مع Microsoft Dataverse يحتاج إلى تكوين إضافي.
-في وقت سابق، كان بإمكانك تمكين مشاركة البيانات مع Dataverse فقط عندما كانت بياناتك مخزنة في مستودع بيانات مُدار تابع لنا. 
+في وقت سابق، كان بإمكانك تمكين مشاركة البيانات مع Dataverse فقط عندما كانت بياناتك مخزنة في مستودع بيانات مُدار تابع لنا.
 
-لمزيد من المعلومات، راجع [تمكين مشاركة البيانات مع Dataverse من Azure Data Lake Storage الخاص بك (إصدار أولي)](manage-environments.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview).
+لمزيد من المعلومات، راجع [تمكين مشاركة البيانات مع Dataverse من Azure Data Lake Storage الخاص بك (إصدار أولي)](customer-insights-dataverse.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview).
 
 ### <a name="new-export-destinations-iterable-and-braze"></a>الوجهات الجديدة للتصدير: Iterable وBraze
 
@@ -81,7 +82,6 @@ ms.locfileid: "8700921"
 
 - Google Ads: يعمل الإصدار الجديد من موصل تصدير Google Ads على تبسيط تجربة المصادقة ويتيح لك الآن إنشاء مجموعات جديدة من Google Ads بشكل تلقائي. 
 - Marketo: يوفر الإصدار الجديد من موصل تصدير Marketo الدعم لمعرف Marketo، مما يتيح لك تجنب تكرار البيانات وتحديث السجلات الموجودة وإنشاء سجلات جديدة في Marketo. 
-
 
 ## <a name="february-2022-updates"></a>تحديثات فبراير 2022
 

@@ -12,12 +12,12 @@ searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: 50258365c3134c588aa79ec72c66d0de329e0ff1
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 4db97ec02eb96662d30a8536ea42372f81f318d2
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645499"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800128"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>الاتصال بمصدر بيانات Power Query
 
@@ -76,7 +76,7 @@ ms.locfileid: "8645499"
 
 1. انتقل إلى **البيانات** > **مصادر البيانات**.
 
-2. حدد الخصاص العمودي بجوار القائمة مصدر البيانات ترغب في تغييرها وحدد **تحرير** من القائمة المنسدلة.
+2. حدد علامة القطع الرأسية (&vellip;) إلى جانب مصدر البيانات الذي تريد تغييره، وحدد **تحرير** من القائمة المنسدلة.
 
    > [!div class="mx-imgBorder"]
    > ![خيار التحرير.](media/edit-option-data-sources.png "خيار التحرير")

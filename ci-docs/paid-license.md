@@ -1,41 +1,33 @@
 ---
-title: الشروع في العمل باستخدام ترخيص مدفوع من Dynamics 365 Customer Insights
+title: شراء ترخيص Dynamics 365 Customer Insights
 author: m-hartmann
-description: تعرّف على تجربة التشغيل الأولى في Dynamics 365 Customer Insights واستكشِف إمكاناتها.
+description: اشترِ ترخيص Dynamics 365 Customer Insights  وسجّل دخولك واطلع على التطبيق.
 ms.author: mhart
 ms.date: 10/05/2021
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 8fcc1c97be87afe942aa3b5e23d1eb68008aa873
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 9c83dc6716abd5f81eb7851d462d7d61791f542b
+ms.sourcegitcommit: ba29fd7c89bdeba7260b4783662d8da8e1e1e30e
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8641838"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "8768406"
 ---
-# <a name="get-started-after-purchasing-customer-insights"></a>الشروع في العمل بعد شراء Customer Insights
+# <a name="purchase-customer-insights"></a>شراء Customer Insights.
 
-تشرح هذه المقالة كيفية اتخاذ خطواتك الأولى في Dynamics 365 Customer Insights بعد أن قامت مؤسستك بشراء اشتراك. إذا كنت ترغب في شراء Customer Insights، يتم سرد خيارات جهة الاتصال الخاصة بنا على موقع [Dynamics 365 Customer Insights الإلكتروني](https://dynamics.microsoft.com/ai/customer-insights/). 
-
-بعد شراء ترخيص اشتراك لـ Customer Insights، يتلقى المسؤول العمومي لمستأجر Microsoft 365 بريدًا إلكترونيًا يدعوه لإنشاء البيئة. 
-
-يتم ترخيص Customer Insights لكل مستأجر وتتضمن إمكانيات متعددة. يمكنك شراء المزيد من السعة والتراخيص لزيادة الحصة الافتراضية. 
-- [نظرة عامة على التسعير](https://dynamics.microsoft.com/ai/customer-insights/pricing/)
-- القدرة الإنتاجية والاستحقاقات: [دليل ترخيص Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544)
+لشراء Dynamics 365 Customer Insights، راجع خيارات الاتصال لدينا في موقع ويب [Dynamics 365 Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/).
 
 إذا كنت تبحث عن تجربة الخدمة والميزات، فراجع [إعداد بيئة تجريبية](trial-signup.md).
 
-## <a name="start-with-customer-insights"></a>الشروع في العمل باستخدام Customer Insights
+يتم ترخيص Customer Insights لكل مستأجر وتتضمن إمكانيات متعددة. يمكنك شراء المزيد من السعة والتراخيص لزيادة الحصة الافتراضية.
+- [نظرة عامة على التسعير](https://dynamics.microsoft.com/ai/customer-insights/pricing/)
+- القدرة الإنتاجية والاستحقاقات: [دليل ترخيص Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544)
 
-تساعدك تجربة التشغيل الأولى على اختيار التركيز الأولي من خلال Customer Insights واستكشاف الإمكانات عن طريق عينات البيانات. كخطوة تالية، يمكنك إنشاء بيئتك الخاصة والعمل باستخدام بياناتك الخاصة.
-
-**لتسجيل الدخول لأول مرة**:
+## <a name="sign-in-for-the-first-time"></a>لتسجيل الدخول لأول مرة
 
 1. انتقل إلى [عنوان URL لتطبيق Customer Insights](https://home.ci.ai.dynamics.com).
-1. قم بتسجيل الدخول باستخدام حساب العمل أو المدرسة. 
+1. قم بتسجيل الدخول باستخدام حساب العمل أو المدرسة.
 1. وافق على شروط الخدمة وقم بتعيين تفضيلات المحتوى لبيئة Customer Insights الخاصة بك.
 
-## <a name="create-your-own-environment"></a>إنشاء البيئة الخاصة بك
-
-بعد تسجيل الدخول لأول مرة، سترى بيئة بها عينة من البيانات. يمكنك استخدام هذه البيانات لاستكشاف الميزات والتعرف على التطبيق. لاستخدام بياناتك الخاصة، يجب إنشاء [بيئة](create-environment.md).
+بعد تسجيل الدخول لأول مرة، سترى بيئة بها عينة من البيانات. يمكنك استخدام هذه البيانات لاستكشاف الميزات والتعرف على التطبيق. لاستخدام بياناتك الخاصة، [أنشئ بيئة](create-environment.md).

@@ -12,12 +12,12 @@ ms.custom: intro-internal
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: 1a19d83930d667bdca5301dcc5a3ffa5db6a7bdc
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: 68c26eb0ad0da787a9f594b4aebe679588b0d6bf
+ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741117"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "8833523"
 ---
 # <a name="get-started-with-dynamics-365-customer-insights"></a>بدء استخدام Dynamics 365 Customer Insights
 
@@ -25,7 +25,7 @@ ms.locfileid: "8741117"
 
 ## <a name="step-1-create-an-environment"></a>الخطوة 1: إنشاء بيئة
 
-للبدء، عليك أولاً إنشاء بيئة للعمل فيها. إذا كانت مؤسستك قد اشترت ترخيصًا بالفعل، فراجع [إنشاء بيئة](create-environment.md). لبدء إصدار تجريبي لـ Customer Insights، راجع [إعداد بيئة تجريبية](trial-signup.md).
+أولاً، أنشئ بيئة للعمل فيها. إذا كانت مؤسستك قد اشترت ترخيصًا بالفعل، فراجع [إنشاء بيئة](create-environment.md). لبدء إصدار تجريبي لـ Customer Insights، راجع [إعداد بيئة تجريبية](trial-signup.md).
 
 ## <a name="step-2-explore-customer-insights"></a>خطوة 2: استكشاف Customer Insights
 
@@ -33,13 +33,13 @@ ms.locfileid: "8741117"
 
 1. [قم بتسجيل الدخول إلى Customer Insights](https://home.ci.ai.dynamics.com) باستخدام حساب مستخدم Microsoft Azure Active Directory (AAD) الخاص بك.
 
-1. [تغيير البيئة](manage-environments.md#switch-environments) لمشاهدة بيانات العرض التوضيحي و [استكشاف Customer Insights ](home.md).
+1. غيّر البيئة لرؤية بيانات العرض التوضيحي و[استكشاف Customer Insights](home.md) .
 
 ## <a name="step-3-ingest-unify-and-set-up-relationships-for-your-data"></a>الخطوة 3: استيعاب وتوحيد وإعداد العلاقات لبياناتك
 
-ملفات التعريف الموحدة هي الأساس للحصول على رؤى واتخاذ إجراءات بشأن البيانات. قم بإحضار البيانات من مصادر مختلفة وتشغيل عملية توحيد البيانات لدمج ملفات تعريف موحدة. حدد العلاقات بين الكيانات التي تم استيعابها باستخدام ميزات الإثراء لإضافة معلومات إلى ملفات التعريف.
+ملفات التعريف الموحدة هي الأساس للحصول على رؤى واتخاذ إجراءات بشأن البيانات. قم بإحضار البيانات من مصادر مختلفة وتشغيل عملية توحيد البيانات لدمج ملفات تعريف موحدة. حدد العلاقات بين الكيانات التي تم استخدامها واستخدم ميزات الإثراء لإضافة معلومات إلى ملفات التعريف.
 
-1. استيعاب البيانات عن طريق إنشاء مصادر البيانات من خيارات متعددة. اختر بين موصلات [Power Query ](connect-power-query.md)، أو [مجلد نموذج البيانات العامة](connect-common-data-model.md)، أو [Microsoft Dataverse](connect-dataverse-managed-lake.md). 
+1. استيعاب البيانات عن طريق إنشاء مصادر البيانات من خيارات متعددة. اختر بين موصلات [Power Query ](connect-power-query.md)، أو [مجلد نموذج البيانات العامة](connect-common-data-model.md)، أو [Microsoft Dataverse](connect-dataverse-managed-lake.md).
 
 1. قم بتشغيل [عملية توحيد البيانات](data-unification.md) عن طريق تحديد [الحقول المصدر](map-entities.md)، وإزالة [التكرارات](remove-duplicates.md)، و[شروط المطابقة](match-entities.md)، و[توحيد الحقول](merge-entities.md).
 
@@ -47,7 +47,7 @@ ms.locfileid: "8741117"
 
 ## <a name="step-4-enhance-unified-profiles-with-predictions-activities-and-measures"></a>الخطوة الرابعة: تحسين ملفات التعريف الموحدة بالتنبؤات والأنشطة والقياسات
 
-من خلال إعداد ملفات التعريف الموحدة، يمكنك تحسين بياناتك وزيادة المعلومات التي تقدمها.
+من خلال إعداد ملفات التعريف الموحدة، يمكنك تحسين البيانات وزيادة المعلومات التي توفرها.
 
 1. اختر من مكتبة موسعة لمقدمي الإثراء من أجل [إثراء بيانات العملاء](enrichment-hub.md).
 
@@ -59,7 +59,7 @@ ms.locfileid: "8741117"
 
 ## <a name="step-5-create-segments-and-activate-data-through-various-export-options"></a>الخطوة 5: إنشاء مقاطع وتنشيط البيانات من خلال خيارات التصدير المختلفة
 
-الآن وقد اكتملت بياناتك وتحتوي على مجموعة واسعة من المعلومات حول عملائك، فقد حان الوقت للبحث عن طرق لاتخاذ إجراء بشأن تلك البيانات.
+الآن وقد اكتملت بياناتك وباتت تحتوي على مجموعة كبيرة من المعلومات حول العملاء، ابحث عن طرق تسمح لك باتخاذ إجراء على تلك البيانات.
 
 1. [أنشئ مقاطع](segments.md)، مجموعات فرعية من قاعدة عملائك، للتأكد من أن أفعالك ملائمة للعملاء المستهدفين.
 

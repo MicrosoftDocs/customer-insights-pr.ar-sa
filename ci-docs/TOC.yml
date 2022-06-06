@@ -6,7 +6,9 @@
   href: whats-new-customer-insights.md
 - name: كتالوج التعلم
   items:
-    - name: تم البدء
+    - name: الحصول على اعتماد أخصائي Microsoft Customer Data Platform
+      href: /learn/certifications/exams/mb-260?tab=tab-instructor-led
+    - name: الشروع في العمل باستخدام Customer Insights
       href: /learn/modules/get-started-customer-data-platform/
     - name: استيعاب البيانات
       href: /learn/modules/ingest-data-customer-insights/
@@ -34,8 +36,6 @@
       href: get-started.md
     - name: الشروع في العمل باستخدام ترخيص مدفوع
       href: paid-license.md
-    - name: إنشاء بيئة جديدة
-      href: create-environment.md
     - name: استكشاف Customer Insights
       href: home.md
     - name: العمل مع العلامات والأعمدة
@@ -198,6 +198,8 @@
           href: export-campaign-monitor.md
         - name: Constant Contact
           href: export-constant-contact.md
+        - name: Criteo
+          href: export-criteo.md
         - name: DotDigital
           href: export-dotdigital.md
         - name: Dynamics 365 Marketing
@@ -254,12 +256,22 @@
       href: entities.md
     - name: مراجعة مخططات الكيانات في نموذج البيانات العامة
       href: entity-schemas.md
-    - name: بيانات Customer Insights في Dataverse
-      href: customer-insights-dataverse.md
     - name: بناء العلاقات والكيانات المتصلة
       href: relationships.md
     - name: تحديد التعيينات الدلالية
       href: semantic-mappings.md
+- name: البيئات
+  items:
+    - name: إنشاء بيئة جديدة
+      href: create-environment.md
+    - name: الاتصال بـ Microsoft Dataverse
+      href: customer-insights-dataverse.md
+    - name: استخدام Azure Data Lake Storage
+      href: own-data-lake-storage.md
+    - name: إدارة إعدادات البيئة
+      href: manage-environments.md
+    - name: الاتصال بحساب تخزين باستخدام أساس الخدمة
+      href: connect-service-principal.md
 - name: الإدارة
   items:
     - name: إعداد تهيئة النظام
@@ -268,20 +280,12 @@
       href: security-overview.md
     - name: تعيين أذونات المستخدم
       href: permissions.md
-    - name: نظرة عامة على الاتصالات
-      href: connections.md
-    - name: إدارة بيئات متعددة
-      href: manage-environments.md
     - name: جلب Key Vault الخاص بك
       href: use-azure-key-vault.md
-    - name: الاتصال بحساب تخزين باستخدام أساس الخدمة
-      href: connect-service-principal.md
     - name: تصدير سجلات التشخيص
       href: diagnostics.md
-    - name: حدود الخدمة
-      href: service-limits.md
-    - name: حقوق وطلبات DSR
-      href: dsr-rights-requests.md
+    - name: نظرة عامة على الاتصالات
+      href: connections.md
 - name: واجهات API
   items:
     - name: التعامل مع واجهات API
@@ -324,5 +328,9 @@
       items:
         - name: إنشاء توقعات باستخدام بيانات الموافقة
           href: consent-management/predictions-consent-data.md
+- name: حدود الخدمة
+  href: service-limits.md
+- name: حقوق وطلبات DSR
+  href: dsr-rights-requests.md
 - name: الحصول على ال
   href: /power-platform/admin/get-help-support

@@ -1,19 +1,19 @@
 ---
 title: أمثلة OData لواجهات API الخاصة بـ Dynamics 365 Customer Insights
 description: أمثلة شائعة الاستخدام لبروتوكول البيانات المفتوحة (OData) للاستعلام عن واجهات API الخاصة بـ Customer Insights لمراجعة البيانات.
-ms.date: 05/10/2022
+ms.date: 05/25/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 007278e1330e1a8e64d524ded8496acaf83b874c
-ms.sourcegitcommit: a50c5e70d2baf4db41a349162fd1b1f84c3e03b6
+ms.openlocfilehash: cdadd72bfe4272d8d83d923baaa6fd40d008473b
+ms.sourcegitcommit: bf65bc0a54cdab71680e658e1617bee7b2c2bb68
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740028"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8808445"
 ---
 # <a name="odata-query-examples"></a>أمثلة على استعلامات OData
 
@@ -33,16 +33,15 @@ ms.locfileid: "8740028"
 
 يحتوي الجدول التالي على مجموعة من نماذج الاستعلامات لكيان *العميل*.
 
-
 |نوع الاستعلام |مثال  | ‏‫ملاحظة‬  |
 |---------|---------|---------|
 |معرف عميل واحد     | `{serviceRoot}/Customer?$filter=CustomerId eq '{CID}'`          |  |
-|مفتاح بديل    | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} eq '{AlternateKey}' `         |  تستمر المفاتيح البديلة في كيان العميل الموحد       |
+|مفتاح بديل    | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} eq '{AlternateKey}'`         |  تستمر المفاتيح البديلة في كيان العميل الموحد       |
 |Select   | `{serviceRoot}/Customer?$select=CustomerId,FullName&$filter=customerid eq '1'`        |         |
 |خلال    | `{serviceRoot}/Customer?$filter=CustomerId in ('{CID1}',’{CID2}’)`        |         |
 |مفتاح بديل + In   | `Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} in ('{AlternateKey}','{AlternateKey}')`         |         |
 |بحث   | `{serviceRoot}/Customer?$top=10&$skip=0&$search="string"`        |   يُرجع أهم 10 نتائج لسلسلة بحث      |
-|عضوية المقطع  | `{serviceRoot}/Customer?select=*&$filter=IsMemberOfSegment('{SegmentName}')&$top=10  `     | إرجاع عدد الصفوف المعين مسبقًا من كيان التجزئة.      |
+|عضوية المقطع  | `{serviceRoot}/Customer?select=*&$filter=IsMemberOfSegment('{SegmentName}')&$top=10`     | إرجاع عدد الصفوف المعين مسبقًا من كيان التجزئة.      |
 
 ## <a name="unified-activity"></a>النشاط الموحد
 
@@ -53,7 +52,7 @@ ms.locfileid: "8740028"
 |نشاط CID     | `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq '{CID}'`          | سرد أنشطة ملف تعريف عميل محدد |
 |إطار زمني النشاط    | `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq '{CID}' and ActivityTime gt 2017-01-01T00:00:00.000Z and ActivityTime lt 2020-01-01T00:00:00.000Z`     |  أنشطة ملف تعريف العميل في إطار زمني       |
 |نوع النشاط     |   `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq '{CID}' and ActivityType eq '{ActivityName}'`        |         |
-|النشاط حسب اسم العرض     | `{serviceRoot}/UnifiedActivity$filter=CustomerId eq ‘{CID}’ and ActivityTypeDisplay eq ‘{ActivityDisplayName}’ `        | |
+|النشاط حسب اسم العرض     | `{serviceRoot}/UnifiedActivity$filter=CustomerId eq ‘{CID}’ and ActivityTypeDisplay eq ‘{ActivityDisplayName}’`        | |
 |فرز الأنشطة    | `{serviceRoot}/UnifiedActivity?$filter=CustomerId eq ‘{CID}’ & $orderby=ActivityTime asc`     |  فرز الأنشطة تصاعديًا أو تنازليًا       |
 |تم توسيع النشاط من عضوية المقطع  |   `{serviceRoot}/Customer?$expand=UnifiedActivity,Customer_Measure&$filter=CustomerId eq '{CID}'`     |         |
 
@@ -67,3 +66,13 @@ ms.locfileid: "8740028"
 |الأسماء التجارية التي تم إثراؤها لـ CID    | `{serviceRoot}/BrandShareOfVoiceFromMicrosoft?$filter=CustomerId eq '{CID}'`  |       |
 |الاهتمامات التي تم إثراؤها لـ CID    |   `{serviceRoot}/InterestShareOfVoiceFromMicrosoft?$filter=CustomerId eq '{CID}'`       |         |
 |في بند + توسيع     | `{serviceRoot}/Customer?$expand=UnifiedActivity,Customer_Measure&$filter=CustomerId in ('{CID}', '{CID}')`         | |
+
+## <a name="not-supported-odata-queries"></a>استعلامات OData غير المدعومة
+
+الاستعلامات التالية غير مدعومة بواسطة Customer Insights:
+
+- `$filter` في كيانات المصادر التي تم استيعابها يمكنك فقط تشغيل استعلامات $filter على كيانات النظام التي يقوم Customer Insights بإنشائها.
+- `$expand` من استعلام `$search`. مثال: `Customer?$expand=UnifiedActivity$top=10&$skip=0&$search="corey"`
+- `$expand` من `$select` فقط في حال تحديد مجموعة فرعية من السمات. مثال: `Customer?$select=CustomerId,FullName&$expand=UnifiedActivity&$filter=CustomerId eq '{CID}'`
+- قام `$expand` بإثراء صلات العلامات التجارية أو الاهتمامات لعميل معين. مثال: `Customer?$expand=BrandShareOfVoiceFromMicrosoft&$filter=CustomerId eq '518291faaa12f6d853c417835d40eb10'`
+- الاستعلام عن كيانات إخراج نموذج التنبؤ عبر المفتاح الثانوي. مثال: `OOBModelOutputEntity?$filter=HotelCustomerID eq '{AK}'`

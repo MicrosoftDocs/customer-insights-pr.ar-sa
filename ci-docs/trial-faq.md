@@ -8,12 +8,12 @@ ms.topic: get-started
 ms.custom: template-trial-faq
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: 4a269a223efa08f71db09eef2ec9a8f8a077f7a7
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: c0db75afdde91bbd60fbece77eb2660a38b84860
+ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8641792"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "8833752"
 ---
 # <a name="dynamics-365-customer-insights-trial-faq"></a>الأسئلة المتداولة حول الإصدار التجريبي من Dynamics 365 Customer Insights
 
@@ -62,9 +62,9 @@ ms.locfileid: "8641792"
 
 بشكل عام،نوصي بالبدء من جديد مع بياناتك الخاصة عند الترقية إلى الإصدار المدفوع لـ Customer Insights. 
 
-اختياريًا، إذا كنت تستخدم Customer Insights فقط، فيمكنك نسخ بياناتك من بيئة تجريبية إذا قمت بشراء Customer Insights. يجب أن تكون المسؤول عن الإصدار التجريبي من Customer Insights والمسؤول العمومي لمستأجر Microsoft 365 الخاص بك، أو مسؤول Dynamics 365 في مؤسستك لترحيل الإعدادات من بيئة تجريبية إلى بيئة مدفوعة الأجر. 
+اختياريًا، إذا كنت تستخدم Customer Insights فقط، فيمكنك نسخ بياناتك من بيئة تجريبية إذا قمت بشراء Customer Insights. يجب أن تكون المسؤول عن الإصدار التجريبي من Customer Insights والمسؤول العمومي لمستأجر Microsoft 365 الخاص بك، أو مسؤول Dynamics 365 في مؤسستك لترحيل الإعدادات من بيئة تجريبية إلى بيئة مدفوعة الأجر.
 
-بعد تسجيل الدخول إلى مثيل Customer Insights المدفوع لأول مرة، يطلب منك إنشاء بيئة جديدة. أثناء هذه العملية، يمكنك اختيار نسخ التكوين من بيئة موجودة وترحيل معظم الإعدادات. إذا كانت لديك الأذونات المذكورة أعلاه، ستظهر بيئة الإصدار التجريبي في هذه القائمة. لمزيد من المعلومات، راجع [نسخ تكوين البيئة](manage-environments.md#copy-the-environment-configuration).
+بعد تسجيل الدخول إلى مثيل Customer Insights المدفوع لأول مرة، يطلب منك إنشاء بيئة جديدة. أثناء هذه العملية، يمكنك اختيار نسخ التكوين من بيئة موجودة وترحيل معظم الإعدادات. إذا كانت لديك الأذونات المذكورة أعلاه، ستظهر بيئة الإصدار التجريبي في هذه القائمة. لمزيد من المعلومات، راجع [نسخ تكوين البيئة](create-environment.md#copy-the-environment-configuration).
 
 ### <a name="what-are-the-trial-limits-and-quotas"></a>ما حدود الإصدار التجريبي والحصص النسبية؟
 
@@ -81,9 +81,10 @@ ms.locfileid: "8641792"
 
 تتوفر معظم ميزات إمكانات Customer Insights في الإصدار التجريبي.
 
-الميزات التالية **غير متوفرة**: 
+الميزات التالية **غير متوفرة**:
+
 - لا يمكنك إنشاء بيئات جديدة تستخدم حساب تخزين Azure Data Lake الخاص بك.
-- لا يمكنك حذف بيئة الإصدار التجريبي. 
+- لا يمكنك حذف بيئة الإصدار التجريبي.
 
 ### <a name="how-long-does-the-trial-last"></a>ما الفترة التي يستمر خلالها الإصدار التجريبي؟
 

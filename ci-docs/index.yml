@@ -4,14 +4,14 @@ metadata:
   author: m-hartmann
   description: ابحث عن مقالات ذات صلة لبدء العمل مع محتوى التعليمات.
   ms.author: mhart
-  ms.date: 03/02/2022
+  ms.date: 05/18/2022
   ms.topic: landing-page
-  ms.openlocfilehash: e3a9f6d5f4d23ca3e85fa3f69272a0162ca7bd2d
-  ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+  ms.openlocfilehash: e8134fa66ce47cdf8aeab144b8405104fb257f6c
+  ms.sourcegitcommit: 6108152b3d28a2ec140eae32a61dbf4317baa37b
   ms.translationtype: HT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 04/27/2022
-  ms.locfileid: "8641640"
+  ms.lasthandoff: 05/19/2022
+  ms.locfileid: "8781348"
 title: وثائق Dynamics 365 Customer Insights
 summary: اعثر على موارد مفيدة للشروع في العمل وتعرف على ميزات وإمكانيات Customer Insights.
 landingContent:
@@ -43,16 +43,30 @@ landingContent:
     links:
     - text: تم البدء
       url: /learn/modules/get-started-customer-data-platform/
-- title: توحيد البيانات
+- title: استيعاب البيانات
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: نظرة عامة مصادر البيانات
       url: data-sources.md
+    - text: الاتصال باستخدام Power Query
+      url: connect-power-query.md
+    - text: الاتصال بـ Microsoft Dataverse
+      url: connect-dataverse-managed-lake.md
+  - linkListType: learn
+    links:
+    - text: استيعاب البيانات في Customer Insights
+      url: /learn/modules/ingest-data-customer-insights/
+- title: توحيد البيانات
+  linkLists:
+  - linkListType: how-to-guide
+    links:
     - text: نظرة عامة على التوحيد
       url: data-unification.md
     - text: فهم الكيانات
       url: entities.md
+    - text: مراجعة ملفات التعريف الموحدة
+      url: customer-profiles.md
   - linkListType: learn
     links:
     - text: إنشاء ملف تعريف موحد
@@ -99,20 +113,6 @@ landingContent:
     links:
     - text: إدارة الاتصالات الخارجية
       url: /learn/modules/configure-third-party-connections/
-- title: إدارة التطبيق
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: تكوين النظام
-      url: system.md
-    - text: تحديد أذونات المستخدم
-      url: permissions.md
-    - text: إدارة بيئات متعددة
-      url: manage-environments.md
-  - linkListType: learn
-    links:
-    - text: إدارة Customer Insights
-      url: /learn/modules/administer-customer-data-platform/
 - title: إدارة Customer Insights
   linkLists:
   - linkListType: how-to-guide

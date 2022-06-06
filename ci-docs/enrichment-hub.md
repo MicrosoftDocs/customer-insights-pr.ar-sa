@@ -14,12 +14,12 @@ searchScope:
 - ci-enrichment-details
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: 5c14e6c96d2f907ba161331b6f92277191cbdbef
-ms.sourcegitcommit: cf74b8c20d88eb96e1ac86e18cd44fe27aad5ab9
+ms.openlocfilehash: abc1b6af80e8854ee3bc930453634ef67376c4af
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "8653507"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800589"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>الإثراء لملفات تعريف العملاء (معاينة)
 
@@ -63,7 +63,7 @@ ms.locfileid: "8653507"
 
 انتقل إلى علامة التبويب **عمليات الإثراء الخاصة بي** لمعرفة جميع عمليات الإثراء التي تم تكوينها. يتم تمثيل كل عملية من ‏‫عمليات الإثراء كصف يتضمن معلومات إضافية حول ‏‫عملية الإثراء.
 
-حدد الإثراء من أجل الاطلاع على الخيارات المتاحة. يمكنك أيضًا تحديد علامة الحذف (...) على عنصر قائمة لمشاهدة الخيارات. إذا قمت بتكوين العديد من عمليات الإثراء، يمكنك استخدام مربع البحث للعثور عليه بسرعة.
+حدد الإثراء من أجل الاطلاع على الخيارات المتاحة. يمكنك أيضًا تحديد علامة القطع الرأسبة العمودية (&vellip;) في عنصر القائمة لرؤية الخيارات. إذا قمت بتكوين العديد من عمليات الإثراء، يمكنك استخدام مربع البحث للعثور عليه بسرعة.
 
 :::image type="content" source="media/enrichment-hub-options-run.png" alt-text="خيارات إدارة عمليات الإثراء في قائمة عمليات الإثراء.":::
 

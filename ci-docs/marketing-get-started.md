@@ -6,12 +6,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 45c59465771e4ad25ed36d5da1568e67b94cf994
-ms.sourcegitcommit: cf74b8c20d88eb96e1ac86e18cd44fe27aad5ab9
+ms.openlocfilehash: 4cc3cbde97d0f9da198652e86c0843476393b646
+ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "8653696"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "8833292"
 ---
 # <a name="work-with-unified-customer-profiles-in-dynamics-365-marketing"></a>‏‫العمل باستخدام ملفات تعريف العملاء الموحدة في Dynamics 365 Marketing
 
@@ -23,7 +23,6 @@ ms.locfileid: "8653696"
 - ضع محتوى ديناميكيًا (مثل الرموز المميزة المخصصة) في رسائل البريد الإلكتروني والرسائل النصية القصيرة والإشعارات المنبثقة حول إجراءات مثل حالة الولاء أو تاريخ تجديد الاشتراك أو حساب الوالدين أو أي إجراء آخر قمت بالتقاطه في ملف تعريف Customer Insights الموحد.
 - قم بتحميل البيانات من Marketing إلى Customer Insights ودمجها مع بيانات العملاء من مصادر أخرى.
 - قم بتطبيق أدوات تنقية وإثراء البيانات والمطابقة غير الواضحة في Customer Insights.
-
 
 ## <a name="use-rich-customer-profiles-in-real-time-marketing"></a>استخدام ملفات تعريف العملاء المنسّقة في التسويق في الوقت الفعلي
 
@@ -41,4 +40,4 @@ ms.locfileid: "8653696"
 
 لست مقيدًا بالتخزين السحابي إذا كنت ترغب في استخدام بيانات Customer Insights مع Marketing. إذا كان لديك بالفعل إعداد Azure Data Lake Storage الخاص بك، فيمكنك الاتصال بـ Customer Insights، ثم مشاركة البيانات مع تطبيق Marketing تمامًا كما تفعل مع الإعداد المستند إلى السحابة.
 
-معرفة المزيد: [تمكين مشاركة البيانات مع Dataverse من بياناتك الخاصة في Azure Data Lake Storage](manage-environments.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview)
+معرفة المزيد: [تمكين مشاركة البيانات مع Dataverse من بياناتك الخاصة في Azure Data Lake Storage](customer-insights-dataverse.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview)
