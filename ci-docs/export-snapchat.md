@@ -1,19 +1,19 @@
 ---
 title: تصدير بيانات Customer Insights إلى Snapchat
 description: تعرف على كيفية تهيئة الاتصال والتصدير إلى Snapchat.
-ms.date: 10/08/2021
+ms.date: 06/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 171b8bf0f4a034c78e872b671602ae7653271da7
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: d64b482c322af8632e29ec41d6e34c390c5e646c
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645546"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947260"
 ---
 # <a name="export-segments-to-snapchat-preview"></a>تصدير الشرائح إلى Snapchat (إصدار أولي)
 
@@ -21,7 +21,8 @@ ms.locfileid: "8645546"
 
 ## <a name="prerequisites-for-a-connection"></a>المتطلبات الأساسية لاتصال
 
--   لديك [حساب Snapchat Business](https://business.snapchat.com/)، و[حساب Snapchat Ads](https://ads.snapchat.com/)، وبيانات اعتماد المسؤول المقابلة.
+-   لديك [حساب Snapchat Business](https://business.snapchat.com/)، و[حساب Snapchat Ads](https://ads.snapchat.com/)، وبيانات اعتماد المسؤول المقابلة. يجب أن تكون عضوًا في حساب مؤسسة ومدير بيانات على الأقل لحساب إعلانات معين. 
+-   لديك جمهور واحد على الأقل في Snapchat Audience Manager من النوع SAM (Snap Audience Match). 
 -   لديك [مقاطع مُكونة](segments.md) في Customer Insights.
 -   تحتوي ملفات تعريف العملاء الموحدة في الشرائح المصدّرة على حقل يمثل عنوان البريد الإلكتروني.
 
@@ -60,7 +61,7 @@ ms.locfileid: "8645546"
 
 1. في حقل **الاتصال للتصدير**، اختر اتصالاً من قسم Snapchat. إذا لم تشاهد اسم المقطع هذا، لن تكون هناك اتصالات من هذا النوع متوفرة لك.
 
-1. أدخل [**معرف جمهور Snapchat**](https://businesshelp.snapchat.com/s/article/custom-audiences).
+1. أدخل [**معرف شريحة/جمهور Snapchat**](https://businesshelp.snapchat.com/s/article/custom-audiences). يمكن العثور على معرف الجمهور في عنوان URL بعد تحديد الجمهور في Snapchat Audience Manager. 
 
 1. في قسم **مطابقة البيانات** في حقل **البريد الإلكتروني**، حدد الحقل الذي يمثل عنوان البريد الإلكتروني للعميل. يلزم تصدير شرائح إلى Snapchat.
 

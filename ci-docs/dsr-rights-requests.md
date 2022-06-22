@@ -1,19 +1,19 @@
 ---
 title: 'طلبات حقوق صاحب البيانات (DSR) بموجب GDPR | Microsoft Docs '
 description: الاستجابة إلى طلبات صاحب البيانات لـ Dynamics 365 Customer Insights.
-ms.date: 08/11/2021
+ms.date: 05/23/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: af2583295627f98e980adbca4f216b9c34c3cad8
-ms.sourcegitcommit: bf65bc0a54cdab71680e658e1617bee7b2c2bb68
+ms.openlocfilehash: c71305ab835b0f4f75adcce716e795959f898e47
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8808530"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947352"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>طلبات حقوق صاحب البيانات (DSR) بموجب GDPR
 
@@ -77,11 +77,5 @@ ms.locfileid: "8808530"
 1. إرسال بريد إلكتروني إلى D365CI@microsoft.com لتحديد عنوان البريد الإلكتروني الخاص بالمستخدم في الطلب. سوف فريق Customer Insights بإرسال بريد إلكتروني إلى عنوان البريد الإلكتروني لمسؤول المستأجر المُسجل، للمطالبة بتأكيد تصدير البيانات.
 2. قم بالإقرار بتأكيد تصدير البيانات للمستخدم المطلوب.
 3. استلام البيانات المُصدرة من خلال عنوان البريد الإلكتروني لمسؤول المستأجر.
-
-## <a name="consent-management-preview"></a>إدارة الموافقة (إصدار أولي)
-
-لا تقوم إمكانية إدارة الموافقة بجمع بيانات المستخدم مباشرة. فهو يقوم فقط باستيراد بيانات الموافقة التي يتم تقديمها بواسطة المستخدمين في التطبيقات الأخرى، ثم يقوم بمعالجة تلك البيانات.
-
-لإزالة بيانات الموافقة الخاصة لمستخدمين معينين، قم بإزالتها في مصادر البيانات التي تم حذفها إلى إمكانية إدارة الموافقة. وبعد تحديث مصدر البيانات، سيتم حذف البيانات التي تمت إزالتها في مركز الموافقة أيضا. التطبيقات التي تستخدم كيان الموافقة ستحذف البيانات التي تمت إزالتها من المصدر بعد [التحديث](system.md#refresh-processes). يوصى بتحديث مصادر البيانات بسرعة بعد الاستجابة لطلب موضوع بيانات لإزالة بيانات المستخدم من كافة العمليات والتطبيقات الأخرى.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

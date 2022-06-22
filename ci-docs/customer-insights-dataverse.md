@@ -11,18 +11,18 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 3848e143bc7cb2f345bc698a274b92148ef00669
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 252723b8c174cb1ec488388c26fd2a1d398e9002
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833660"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011504"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>استخدام بيانات Customer Insights في Microsoft Dataverse
 
 يوفر Customer Insights خيارًا يسمح بجعل كيانات الإخراج متوفرة باعتبارها [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). يتيح هذا التكامل سهولة مشاركة البيانات والتطوير المخصص من خلال أسلوب قائم على التعليمات البرمجية المنخفضة / بدون تعليمات برمجية. تتوفر [كيانات الإخراج](#output-entities) كجداول في بيئة Dataverse. يمكنك استخدام البيانات لأي تطبيق آخر بالاستناد إلى جداول Dataverse. تمكّن هذه الجداول سيناريوهات مثل مهام سير العمل التلقائية من خلال Power Automate أو بناء التطبيقات باستخدام Power Apps.
 
-كما يمكنك الاتصال ببيئة Dataverse الخاصة بك استيعاب البيانات من مصادر بيانات داخلية[ باستخدام تدفقات البيانات والبوابات Power Platform](data-sources.md#add-data-from-on-premises-data-sources).
+كما يمكنك الاتصال ببيئة Dataverse الخاصة بك استيعاب البيانات من مصادر بيانات داخلية[ باستخدام تدفقات البيانات والبوابات Power Platform](connect-power-query.md#add-data-from-on-premises-data-sources).
 
 ## <a name="prerequisites"></a>المتطلبات
 
@@ -57,7 +57,7 @@ ms.locfileid: "8833660"
 هناك نوعان من القيود عند استخدام Dataverse مع حسابك الخاص في Azure Data Lake Storage:
 
 - هناك تعيين واحد لواحد بين مؤسسة Dataverse وحساب Azure Data Lake Storage. بعد توصيل مؤسسة Dataverse بحساب تخزين، لا يمكنها الاتصال بحساب تخزين آخر. يمنع هذا القيد عدم قيام Dataverse بتعبئة حسابات تخزين متعددة.
-- لن تعمل مشاركة البيانات إذا كان إعداد Azure Private Link مطلوبًا للوصول إلى حساب Azure Data Lake Storage لأنه موجود خلف جدار حماية. لا يدعم Dataverse في الوقت الحالي الاتصال بنقاط النهاية الخاصة من خلال الارتباط الخاص.
+- لن تعمل مشاركة البيانات إذا كان إعداد Azure Private Link مطلوبًا للوصول إلى حسابك في Azure Data Lake Storage لأنه موجود خلف جدار حماية. لا يدعم Dataverse في الوقت الحالي الاتصال بنقاط النهاية الخاصة من خلال الارتباط الخاص.
 
 ### <a name="set-up-powershell"></a>إعداد PowerShell
 

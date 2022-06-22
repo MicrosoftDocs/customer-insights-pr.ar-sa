@@ -1,26 +1,26 @@
 ---
-title: التحديث التزايدي لمصادر البيانات استنادًا إلى Power Query
-description: تحديث البيانات الجديدة والمحدثة لمصادر البيانات الكبيرة استنادًا إلى Power Query.
-ms.date: 12/06/2021
-ms.reviewer: mhart
+title: التحديث التزايدي لمصادر بيانات Power Query وAzure Data Lake
+description: تحديث بيانات جديدة ومحدثة لمصادر البيانات الكبيرة بالاستناد إلى مصادر بيانات Power Query أو Azure Data Lake.
+ms.date: 05/30/2022
+ms.reviewer: v-wendysmith
 ms.subservice: audience-insights
 ms.topic: how-to
-author: adkuppa
-ms.author: adkuppa
+author: mukeshpo
+ms.author: mukeshpo
 manager: shellyha
 searchScope:
 - ci-system-schedule
 - customerInsights
-ms.openlocfilehash: 3d21baf9804f300802b066df0183fc8f01abba9a
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: bff27bf7fec2bcb741846ae76bb1f616f459136c
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645550"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9012009"
 ---
-# <a name="incremental-refresh-for-data-sources-based-on-power-query"></a>التحديث التزايدي لمصادر البيانات استنادًا إلى Power Query
+# <a name="incremental-refresh-for-power-query-and-azure-data-lake-data-sources"></a>التحديث التزايدي لمصادر بيانات Power Query وAzure Data Lake
 
-يناقش هذا المقال كيفية تكوين تحديث تزايدي لمصادر البيانات استنادًا إلى Power Query.
+يناقش هذا المقال كيفية تكوين تحديث تزايدي لمصادر البيانات استنادًا إلى Power Query أو Azure Data Lake.
 
 يوفر التحديث التزايدي لمصادر البيانات المزايا التالية:
 
@@ -28,13 +28,11 @@ ms.locfileid: "8645550"
 - **زيادة الموثوقية** - مع عمليات التحديث الأصغر، لن تحتاج إلى الحفاظ على الاتصالات بأنظمة المصادر المتقلبة لفترة طويلة، مما يقلل من مخاطر مشكلات الاتصال.
 - **تقليل استهلاك الموارد** - يؤدي تحديث مجموعة فرعية فقط من إجمالي بياناتك إلى استخدام أكثر كفاءة لموارد الحوسبة ويقلل من الأثر البيئي.
 
-## <a name="configure-incremental-refresh"></a>تكوين التحديث التزايدي
+## <a name="configure-incremental-refresh-for-data-sources-based-on-power-query"></a>تكوين التحديث التزايدي لمصادر البيانات استنادًا إلى Power Query
 
 تسمح Customer Insights بالتحديث التزايدي لمصادر البيانات المستوردة من Power Query والتي تدعم الاستيعاب التزايدي. على سبيل المثال، قواعد بيانات Azure SQL مع حقول التاريخ والوقت، والتي تشير إلى تاريخ آخر تحديث لسجلات البيانات.
 
 1. [إنشاء مصدر بيانات جديدة استنادًا إلى Power Query](connect-power-query.md).
-
-1. قدم **اسمًا** لمصدر البيانات.
 
 1. حدد مصدر بيانات يدعم التحديث التزايدي، مثل [قاعدة بيانات Azure SQL](/power-query/connectors/azuresqldatabase).
 
@@ -48,7 +46,7 @@ ms.locfileid: "8645550"
 
 1. في **إعدادات التحديث التزايدي**، سنقوم بتكوين التحديث التزايدي لجميع الكيانات التي حددتها عند إنشاء مصدر البيانات.
 
-   :::image type="content" source="media/incremental-refresh-settings.png" alt-text="تكوين الكيانات في مصدر بيانات للتحديث التزايدي.":::
+   :::image type="content" source="media/incremental-refresh-settings.png" alt-text="تكوين إعدادات التحديث التزايدي.":::
 
 1. حدد كيانًا، وقم بتوفير التفاصيل التالية:
 
@@ -58,5 +56,31 @@ ms.locfileid: "8645550"
 
 1. حدد **حفظ** لإكمال إنشاء مصدر البيانات. سيكون تحديث البيانات الأولي تحديثًا كاملاً. بعد ذلك، يتم تحديث البيانات التزايدي كما تم تكوينه في الخطوة السابقة.
 
+## <a name="configure-incremental-refresh-for-azure-data-lake-data-sources"></a>تكوين التحديث التزايدي لمصادر بيانات Azure Data Lake
+
+يسمح Customer Insights بالتحديث التزايدي لمصادر البيانات المتصلة بـ Azure Data Lake Storage. لاستخدام الاستيعاب والتحديث التزايديين لكيان ما، قم بتكوين هذا الكيان عند إضافة مصدر بيانات Azure Data Lake أو لاحقًا عند تحرير مصدر البيانات. يجب أن يحتوي مجلد بيانات الكيان على المجلدات التالية:
+
+- **FullData**: مجلد مع ملفات بيانات تحتوي على السجلات الأولية.
+- **IncrementalData**: مجلد مع مجلدات تاريخ/وقت هرمية بتنسيق **yyyy/mm/dd/hh** يحتوي على التحديثات التزايدية. **hh** يمثل ساعة UTC للتحديثات ويحتوي على المجلدين **Upserts** و **Deletes**. يحتوي المجلد **Upserts‎** على ملفات بيانات بها تحديثات للسجلات الموجودة أو السجلات الجديدة. يحتوي المجلد **Deletes‎** على ملفات بيانات بسجلات سيتم إزالتها.
+
+1. عند إضافة مصدر البيانات أو تحريره، انتقل إلى جزء **السمات** للكيان.
+
+1. راجع السمات. تأكد من إعداد سمة تاريخ تم إنشاؤها أو تحديثها مؤخرًا بواسطة **تنسيق بيانات** *dateTime* و **نوع دلالي** *Calendar.Date*. قم بتحرير السمة، عند الضرورة وحدد **تم**.
+
+1. من الجزء **تحديد الكيانات**، قم بتحرير الكيان. يتم تحديد خانة الاختيار **استيعاب تزايدي**.
+
+   :::image type="content" source="media/ADLS_inc_refresh.png" alt-text="تكوين الكيانات في مصدر بيانات للتحديث التزايدي.":::
+
+   1. استعرض وصولاً إلى المجلد الجذر الذي يحتوي على ملفات csv. أو parquet. للحصول على البيانات الكاملة، upserts البيانات التزايدية وdeletes البيانات التزايدية.
+   1. أدخل الملحق لملفات البيانات الكاملة والملفين التزايديين (\.csv أو \.parquet).
+   1. حدد **حفظ.**.
+
+1. بالنسبة إلى **آخر تحديث**، حدد سمة الطابع الزمني للتاريخ.
+
+1. إذا لم يكن **المفتاح الأساسي** محددًا، فحدد المفتاح الأساسي. المفتاح الأساسي هو سمة فريدة للكيان. كي تكون سمة مفتاحًا أساسيًا صالحًا، يجب ألا تتضمن قيمًا مكررة أو قيمًا مفقودة أو قيمًا فارغة. يتم دعم سمات نوع البيانات سلسلة وعدد صحيح وGUID كمفاتيح أساسية.
+
+1. حدد **إغلاق** لحفظ الجزء وإغلاقه.
+
+1. تابع إضافة مصدر البيانات أو تحريره.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

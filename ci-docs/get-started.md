@@ -12,12 +12,12 @@ ms.custom: intro-internal
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: 68c26eb0ad0da787a9f594b4aebe679588b0d6bf
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 1c925110f40319df77940d1c32f24a99504d6ec6
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833523"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011963"
 ---
 # <a name="get-started-with-dynamics-365-customer-insights"></a>بدء استخدام Dynamics 365 Customer Insights
 
@@ -39,7 +39,7 @@ ms.locfileid: "8833523"
 
 ملفات التعريف الموحدة هي الأساس للحصول على رؤى واتخاذ إجراءات بشأن البيانات. قم بإحضار البيانات من مصادر مختلفة وتشغيل عملية توحيد البيانات لدمج ملفات تعريف موحدة. حدد العلاقات بين الكيانات التي تم استخدامها واستخدم ميزات الإثراء لإضافة معلومات إلى ملفات التعريف.
 
-1. استيعاب البيانات عن طريق إنشاء مصادر البيانات من خيارات متعددة. اختر بين موصلات [Power Query ](connect-power-query.md)، أو [مجلد نموذج البيانات العامة](connect-common-data-model.md)، أو [Microsoft Dataverse](connect-dataverse-managed-lake.md).
+1. استيعاب البيانات عن طريق إنشاء مصادر البيانات من خيارات متعددة. اختر [Azure Data Lake Storage، بما في ذلك نموذج البيانات العامة](connect-common-data-model.md) أو [Azure Synapse Analytics](connect-synapse.md) أو [Microsoft Dataverse](connect-dataverse-managed-lake.md) أو موصلات  [Power Query](connect-power-query.md).
 
 1. قم بتشغيل [عملية توحيد البيانات](data-unification.md) عن طريق تحديد [الحقول المصدر](map-entities.md)، وإزالة [التكرارات](remove-duplicates.md)، و[شروط المطابقة](match-entities.md)، و[توحيد الحقول](merge-entities.md).
 

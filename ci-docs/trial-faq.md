@@ -8,12 +8,12 @@ ms.topic: get-started
 ms.custom: template-trial-faq
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: c0db75afdde91bbd60fbece77eb2660a38b84860
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 46a67e58f79029246029e2d06789525c2131f100
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833752"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011871"
 ---
 # <a name="dynamics-365-customer-insights-trial-faq"></a>الأسئلة المتداولة حول الإصدار التجريبي من Dynamics 365 Customer Insights
 
@@ -68,7 +68,7 @@ ms.locfileid: "8833752"
 
 ### <a name="what-are-the-trial-limits-and-quotas"></a>ما حدود الإصدار التجريبي والحصص النسبية؟
 
-- لا يمكنك استخدام Azure Data Lake storage الخاص بك لتخزين بيانات الإخراج أثناء التجربة المجانية لـ Customer Insights. ومع ذلك، يمكنك استيعاب البيانات من حساب مساحة تخزين Data Lake storage.
+- لا يمكنك استخدام حسابك الخاص في Azure Data Lake Storage  لتخزين بيانات الإخراج أثناء الإصدار التجريبي من Customer Insights. ومع ذلك، يمكنك استيعاب البيانات من حساب Data Lake Storage.
 - يمكنك تخزين بيانات تصل إلى 3 غيغابايت في بيئة Dataverse التي يتم توفيرها تلقائيًا عند بدء تشغيل الإصدار التجريبي لـ Customer Insights.
 
 ## <a name="customer-insights-specific-questions"></a>الأسئلة الخاصة بـ Customer Insights
@@ -83,7 +83,7 @@ ms.locfileid: "8833752"
 
 الميزات التالية **غير متوفرة**:
 
-- لا يمكنك إنشاء بيئات جديدة تستخدم حساب تخزين Azure Data Lake الخاص بك.
+- لا يمكنك إنشاء بيئات جديدة تستخدم حساب تخزين Azure Data Lake Storage الخاص بك.
 - لا يمكنك حذف بيئة الإصدار التجريبي.
 
 ### <a name="how-long-does-the-trial-last"></a>ما الفترة التي يستمر خلالها الإصدار التجريبي؟

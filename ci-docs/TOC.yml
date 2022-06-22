@@ -48,14 +48,14 @@
   items:
     - name: نظرة عامة مصادر البيانات
       href: data-sources.md
+    - name: الاتصال بالبيانات في Azure Data Lake Storage
+      href: connect-common-data-model.md
+    - name: الاتصال بـ Azure Synapse Analytics
+      href: connect-synapse.md
+    - name: الاتصال بالبيانات في مستودع بيانات مُدار في Microsoft Dataverse
+      href: connect-dataverse-managed-lake.md
     - name: إضافة مصادر البيانات عبر موصلات Power Query
       href: connect-power-query.md
-    - name: إضافة مجلد نموذج بيانات عامة كمصدر بيانات
-      href: connect-common-data-model.md
-    - name: إضافة مستودع البيانات المُدارة في Dataverse
-      href: connect-dataverse-managed-lake.md
-    - name: إضافة Azure Synapse Analytics
-      href: connect-synapse.md
     - name: الإثراء لمصادر البيانات
       href: data-sources-enrichment.md
     - name: التحديث التزايدي لمصادر البيانات
@@ -82,27 +82,27 @@
   items:
     - name: إثراء ملفات تعريف العملاء
       href: enrichment-hub.md
+    - name: حسابات من بيانات Office 365
+      href: enrichment-office.md
     - name: العلامات التجارية والاهتمامات
       href: enrichment-microsoft.md
+    - name: بيانات الشركة من Dun & Bradstreet
+      href: enrichment-dnb.md
+    - name: بيانات الشركة من Leadspace
+      href: enrichment-leadspace.md
+    - name: البيانات السكانية مع Experian
+      href: enrichment-experian.md
     - name: العناوين المحسنة
       href: enrichment-enhanced-addresses.md
     - name: بيانات الشركة المحسنة
       href: enrichment-enhanced-company-data.md
-    - name: الإثراء باستخدام خرائط Azure
-      href: enrichment-azure-maps.md
-    - name: الإثراء باستخدام Dun & Bradstreet
-      href: enrichment-dnb.md
-    - name: إثراء بياناتك مع HERE Technologies
-      href: enrichment-here.md
-    - name: الإثراء باستخدام Leadspace
-      href: enrichment-leadspace.md
-    - name: الإثراء باستخدام LiveRamp
+    - name: الهوية مع LiveRamp
       href: enrichment-liveramp.md
-    - name: الإثراء باستخدام Experian
-      href: enrichment-experian.md
-    - name: الإثراء مع بيانات Office 365
-      href: enrichment-office.md
-    - name: إثراء البيانات باستخدام الاستيراد المخصص لبروتوكول SFTP
+    - name: الموقع من خرائط Azure
+      href: enrichment-azure-maps.md
+    - name: الموقع من HERE Technologies
+      href: enrichment-here.md
+    - name: استيراد مخصص عبر SFTP
       href: enrichment-SFTP-custom-import.md
 - name: ملفات التعريف الموحدة
   items:
@@ -112,6 +112,8 @@
       href: search-filter-index.md
     - name: تحديد أنشطة العملاء
       href: activities.md
+    - name: إدارة الموافقة في Customer Insights
+      href: consent-management.md
 - name: Segments
   items:
     - name: نظرة عامة على الشرائح
@@ -294,40 +296,6 @@
       href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
     - name: نماذج استعلامات OData
       href: odata-examples.md
-- name: إدارة الموافقة (إصدار أولي)
-  items:
-    - name: مركز التعليمات
-      href: consent-management/index.yml
-    - name: نظرة عامة على القدرات
-      href: consent-management/overview.md
-    - name: تم البدء
-      items:
-        - name: تم البدء
-          href: consent-management/get-started.md
-        - name: المفاهيم والمصطلحات
-          href: consent-management/glossary.md
-    - name: استيراد بيانات الموافقة
-      items:
-        - name: استيراد بيانات الموافقة
-          href: consent-management/import-consent-data.md
-        - name: تعيين بيانات الموافقة وتطبيق تفضيلات الموافقة
-          href: consent-management/set-consent-rules.md
-    - name: إدارة بيانات الموافقة
-      items:
-        - name: تمكين قواعد الموافقة في Customer Insights
-          href: activate-consent.md
-        - name: إدارة قواعد الموافقة الافتراضية في مقاطع Customer Insights
-          href: change-default-consent-rules.md
-    - name: إدارة الإعدادات والمستخدمين
-      items:
-        - name: تكوين إعدادات النظام
-          href: consent-management/system-settings.md
-        - name: إدارة المستخدمين والأذونات
-          href: consent-management/manage-users.md
-    - name: استخدام بيانات الموافقة
-      items:
-        - name: إنشاء توقعات باستخدام بيانات الموافقة
-          href: consent-management/predictions-consent-data.md
 - name: حدود الخدمة
   href: service-limits.md
 - name: حقوق وطلبات DSR

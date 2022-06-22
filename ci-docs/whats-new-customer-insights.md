@@ -1,19 +1,19 @@
 ---
-title: الميزات الجديدة والقادمة
+title: الميزات الجديدة والمحدثة
 description: معلومات حول الميزات والتحسينات وإصلاحات الأخطاء الجديدة.
-ms.date: 05/03/2022
+ms.date: 06/02/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: af79c8369dd608e8ce1c14c50bb9aef3a79b9029
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: d06f8be114f558d7adadf2913107c5fd69686875
+ms.sourcegitcommit: 9dd767051014e06d8d9f2f616e248573f24df4cb
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833614"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8843331"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>الجديد في Dynamics 365 Customer Insights
 
@@ -24,6 +24,37 @@ ms.locfileid: "8833614"
 > [!TIP]
 > لإرسال طلبات الميزات واقتراحات حول المنتجات والتصويت عليها، انتقل إلى [مدخل أفكار تطبيق Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
 
+## <a name="may-2022-updates"></a>تحديثات مايو 2022
+
+تتضمن التحديثات في شهر مايو 2022 ميزات جديدة وترقيات للأداء وإصلاحات للأخطاء.
+
+### <a name="updated-data-unification-experience"></a>تجربة توحيد البيانات المحدثة
+
+ يتيح لك توحيد البيانات توحيد مصادر البيانات التي كانت متباينة في مجموعة بيانات رئيسية واحدة توفر عرضًا موحدًا لتلك البيانات. يمكن توحيد البيانات في كيان واحد أو كيانات متعددة. أولاً، [حدد حقول الكيانات والمصادر](map-entities.md) و[أزل السجلات المكررة](remove-duplicates.md) وحدد قواعد [شروط المطابقة](match-entities.md) وحدد حقول [التي ينبغي تضمينها في ملفات تعريف العملاء الموحدة](merge-entities.md).
+
+للحصول على مزيد من المعلومات، راجع [نظرة عامة على توحيد البيانات](data-unification.md).
+
+### <a name="refreshed-home-page-in-customer-insights"></a>الصفحة الرئيسية المحدثة في Customer Insights
+
+ترشدك الصفحة **الرئيسية** عبر عملية التكوين للميزات الرئيسية وتوفر نظرة عامة على الشرائح والمقاييس والإثراء البيانات. لقد قمنا بتحديث التجربة لتوفير معلومات أكثر صلة بلمحة واحدة.
+
+لمزيد من المعلومات، راجع [استكشاف Customer Insights](home.md).
+
+### <a name="track-usage-of-a-segment"></a>تعقب استخدام شريحة
+
+يمكنك الآن [تعقب استخدام شريجة](segments.md#track-usage-of-a-segment) في التطبيقات التي تستند إلى مؤسسة Dataverse المتصلة بـ Customer Insights. بالنسبة إلى [شرائح Customer Insights المستخدمة في رحلات العميل في Dynamics 365 Marketing](/dynamics365/marketing/real-time-marketing-ci-profile)، يطلعك النظام على استخدام هذه الشرائح.
+
+### <a name="export-to-criteo"></a>تصدير إلى Criteo
+
+إن Criteo عبارة عن نظام أساسي على الإنترنت يساعد المستخدمين في إدارة الإعلانات الرقمية. يمكنك الآن تصدير شرائح من ملفات تعريف العملاء الموحدة لإنشاء الحملات، وتقديم حملات التسويق عبر البريد الإلكتروني واستخدام مجموعات محددة من العملاء مع Criteo.
+
+لمزيد من المعلومات، راجع [تصدير الشرائح إلى Criteo (إصدار أولي)](export-criteo.md).
+
+### <a name="refined-documentation-structure-for-environment-creation"></a>بنية وثائق محسنة لإنشاء البيئة
+
+لقد قمنا بمراجعة مستندات المساعدة المتعلقة بإنشاء البيئات وإدارتها في Customer Insights. تم الآن تجميع المقالات أسفل عقدة "البيئات" في جدول المحتويات. توفر المقالات التي أعيد تصميم بنيتها المزيد من الإرشادات للطرق المختلفة التي يمكن من خلالها إعداد البيئات وتوفير بنية أوضح. إذا كانت لديك ملاحظات تريد مشاركتها، فيمكنك إعلامنا بذلك عبر عناصر التحكم في نهاية مقالات المساعدة.
+
+لمزيد من المعلومات، راجع [كيفية: إنشاء بيئة جديدة](create-environment.md).
 
 ## <a name="april-2022-updates"></a>تحديثات أبريل 2022
 

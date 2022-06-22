@@ -1,19 +1,19 @@
 ---
 title: تصدير بيانات Customer Insights إلى مساحة تخزين Azure Blob Storage
 description: تعرف على كيفية تهيئة الاتصال والتصدير إلى مساحة تخزين Blob storage.
-ms.date: 10/06/2021
+ms.date: 06/09/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
-author: pkieffer
-ms.author: philk
+author: stefanie-msft
+ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 3d573a6c83b7f0b0c33e656eb383e20a96856b0b
-ms.sourcegitcommit: d45c00a5f6cb106714366af81e8070e7f53654b3
+ms.openlocfilehash: 623926bf520b19ee4156b7a05e953241cd819e9e
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/15/2022
-ms.locfileid: "8757370"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947122"
 ---
 # <a name="export-segment-list-and-other-data-to-azure-blob-storage-preview"></a>تصدير قائمة الشرائح والبيانات الأخرى إلى مساحة تخزين Azure Blob Storage (إصدار أولي)
 
@@ -58,16 +58,19 @@ ms.locfileid: "8757370"
 
 لا تعمل عملية التصدير التي يتم حفظها على التصدير في الحال.
 
-يتم تشغيل عملية التصدير مع كل [تحديث مجدول](system.md#schedule-tab).     
+يتم تشغيل عملية التصدير مع كل [تحديث مجدول](system.md#schedule-tab).
 
-يمكنك أيضًا [تصدير البيانات عند الطلب](export-destinations.md#run-exports-on-demand). 
+يمكنك أيضًا [تصدير البيانات عند الطلب](export-destinations.md#run-exports-on-demand).
 
 يتم تخزين البيانات المصدرة في حاوية مساحة تخزين Blob storage التي قمت بتكوينها. يتم إنشاء مسارات المجلدات التالية بشكل تلقائي في حاويتك:
 
 - بالنسبة للكيانات المصدر والكيانات التي تم إنشاؤها بواسطة النظام:   
   `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`  
   - مثال: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`
- 
+  
+  > [!TIP]
+  > يمكن أن يؤدي تصدير الكيانات التي تحتوي على كمية كبيرة من البيانات إلى الحصول على ملفات CSV متعددة في نفس المجلد لكل عملية تصدير. يحدث تقسيم الصادرات لأسباب تتعلق بالأداء لتقليل الوقت الذي يستغرقه اكتمال التصدير.
+
 - سيكون model.json للكيانات المصدرة في مستوى %ExportDestinationName%.  
   - مثال: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`
 

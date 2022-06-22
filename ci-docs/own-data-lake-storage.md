@@ -3,17 +3,17 @@ title: استخدام حساب Azure Data Lake Storage Gen2
 author: mukeshpo
 description: تعرف على متطلبات استخدام حسابك Azure Data Lake Storage لتخزين بيانات Customer Insights.
 ms.author: mukeshpo
-ms.date: 05/30/2022
+ms.date: 06/08/2022
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
 ms.reviewer: mhart
-ms.openlocfilehash: 9fcd7645e34bf310ac3a1b98a0dd9a60598b19dc
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 5acb58906c1a9db54337f3b4dc2ab7891db7954e
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833912"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011917"
 ---
 # <a name="use-your-own-azure-data-lake-storage-gen2-account"></a>استخدام حساب Azure Data Lake Storage Gen2
 
@@ -37,6 +37,7 @@ ms.locfileid: "8833912"
 1. اختر طريقة **توصيل مساحة التخزين**. يمكنك الاختيار بين خيار مستند إلى المورد أو خيار مستند إلى الاشتراك للمصادقة. لمزيد من المعلومات، راجع [الاتصال بحساب Azure Data Lake Storage باستخدام كيان خدمة Azure](connect-service-principal.md).
    - بالنسبة إلى **اشتراك Azure**، اختر **الاشتراك** و **مجموعة الموارد** و **حساب التخزين** الذي يحتوي على حاوية `customerinsights`.
    - بالنسبة إلى **مفتاح الحساب**، قدم **اسم الحساب** و **مفتاح الحساب** لحساب Data Lake Storage. يشير استخدام طريقة المصادقة هذه إلى إخطارك إذا كانت مؤسستك تقوم بتدوير المفاتيح. يجب [تحديث تكوين البيئة](manage-environments.md#edit-an-existing-environment) بالمفتاح الجديد عند تدويره.
+1. اختر ما إذا كنت ترغب في استخدام Azure Private Link للاتصال بحساب التخزين و[أنشئ الاتصال بالارتباط الخاص](security-overview.md#private-links-tab) من خلال تنفيذ عملية من خطوتين.
 
 عند اكتمال عمليات النظام مثل استيعاب البيانات، يقوم النظام بإنشاء مجلدات مقابلة في حساب التخزين. يتم إنشاء ملفات البيانات وملفات *model.json* وإضافتها إلى المجلدات استنادًا إلى اسم العملية.
 

@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 8b14992f8312d333d8a12501e8a28496c8434779
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 22eee11666752459a1750d728c4e254ab0c59e58
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645487"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947214"
 ---
 # <a name="export-segment-list-and-other-data-to-azure-data-lake-storage-gen2-preview"></a>تصدير قائمة المقاطع والبيانات الأخرى إلى Azure Data Lake Storage ‏Gen2 (إصدار أولي)
 
@@ -21,11 +21,9 @@ ms.locfileid: "8645487"
 
 ## <a name="known-limitations"></a>القيود المعروفة
 
-1. بالنسبة إلى Azure Data Lake Storage ‏Gen2 يمكنك الاختيار بين [الأداء القياسي ومستوى الأداء المتميز](/azure/storage/blobs/create-data-lake-storage-account) عند إنشاء حساب تخزين لمستودع البيانات الخاص بك. إذا اخترت مستوى الأداء المتميز، فحدد كائنات الكتل الثنائية المتميزة كنوع حساب. 
+1. بالنسبة إلى Azure Data Lake Storage ‏Gen2 يمكنك الاختيار بين [الأداء القياسي ومستوى الأداء المتميز](/azure/storage/blobs/create-data-lake-storage-account) عند إنشاء حساب تخزين لمستودع البيانات الخاص بك. إذا اخترت مستوى الأداء المتميز، فحدد كائنات الكتل الثنائية المتميزة كنوع حساب.
 
-
-## <a name="set-up-the-connection-to-azure-data-lake-storage-gen2"></a>إعداد الاتصال بـ Azure Data Lake Storage ‏Gen2 
-
+## <a name="set-up-the-connection-to-azure-data-lake-storage-gen2"></a>إعداد الاتصال بـ Azure Data Lake Storage ‏Gen2
 
 1. انتقل إلى **المسؤول** > **الاتصالات**.
 
@@ -39,7 +37,7 @@ ms.locfileid: "8645487"
     - لمعرفة كيفية إنشاء حساب تخزين لاستخدامه مع Azure Data Lake Storage Gen2، راجع [إنشاء حساب تخزين](/azure/storage/blobs/create-data-lake-storage-account). 
     - لمعرفة المزيد حول اسم حساب تخزين Azure Data Lake Gen2 ومفتاح الحساب، راجع [إدارة إعدادات حساب التخزين في مدخل Azure](/azure/storage/common/storage-account-manage).
 
-1. حدد **حفظ** لإكمال الاتصال. 
+1. حدد **حفظ** لإكمال الاتصال.
 
 ## <a name="configure-an-export"></a>تكوين تصدير
 
@@ -57,8 +55,12 @@ ms.locfileid: "8645487"
 
 لا تعمل عملية التصدير التي يتم حفظها على التصدير في الحال.
 
-يتم تشغيل عملية التصدير مع كل [تحديث مجدول](system.md#schedule-tab). يمكنك أيضًا [تصدير البيانات عند الطلب](export-destinations.md#run-exports-on-demand). 
+يتم تشغيل عملية التصدير مع كل [تحديث مجدول](system.md#schedule-tab).
+يمكنك أيضًا [تصدير البيانات عند الطلب](export-destinations.md#run-exports-on-demand).
 
-يتم تخزين البيانات المصدرة في حاوية تخزين Azure Data Lake Gen 2 التي قمت بتكوينها. 
+يتم تخزين البيانات المصدرة في حاوية تخزين Azure Data Lake Gen 2 التي قمت بتكوينها.
+
+> [!TIP]
+> يمكن أن يؤدي تصدير الكيانات التي تحتوي على كمية كبيرة من البيانات إلى الحصول على ملفات CSV متعددة في نفس المجلد لكل عملية تصدير. يحدث تقسيم الصادرات لأسباب تتعلق بالأداء لتقليل الوقت الذي يستغرقه اكتمال التصدير.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
