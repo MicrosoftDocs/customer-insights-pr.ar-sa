@@ -13,16 +13,16 @@ searchScope:
 - ci-create-prediction
 - ci-custom-models
 - customerInsights
-ms.openlocfilehash: 3e1b1ce00eeda1cead9ba05beae65b6903d0b9cf
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: ea7acd1ddbb0eb8d66fb82018637a85b6ffb369b
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645566"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9055198"
 ---
 # <a name="customer-lifetime-value-clv-prediction"></a>تنبؤ قيمة مدة بقاء العميل (CLV)
 
-يمكنك تنبؤ القيمة المحتملة (الإيراد) التي سيحضرها العملاء النشطاء الفرديون إلى أعمالك خلال فترة زمنية مستقبلية محددة. يمكن أن تساعدك هذه الميزة في تحقيق العديد من الأهداف: 
+يمكنك تنبؤ القيمة المحتملة (الإيراد) التي سيحضرها العملاء النشطاء الفرديون إلى أعمالك خلال فترة زمنية مستقبلية محددة. يمكن أن تساعدك هذه الميزة في تحقيق العديد من الأهداف:
 - تحديد العملاء من ذوي القيمة ومعالجة هذه الرؤى
 - إنشاء شرائح عملاء استراتيجية استنادًا إلى قيمتها المحتملة لتشغيل حملات مخصصة ذات جهود مستهدفة تتعلق بالمبيعات والتسويق والدعم.
 - إدارة تطوير المنتجات من خلال التركيز الميزات التي تزيد قيمة العميل

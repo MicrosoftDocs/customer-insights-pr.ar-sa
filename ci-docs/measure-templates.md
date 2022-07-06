@@ -11,14 +11,14 @@ manager: shellyha
 searchScope:
 - ci-measure-template
 - customerInsights
-ms.openlocfilehash: eeabd889f7b694f8d809894169a3cdc068acc340
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: f6bcdfc45a49c36f22d6ebc6e919f43b27f899d8
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645474"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9051667"
 ---
-# <a name="use-a-template-to-build-a-measure"></a>استخدام قالب لإنشاء مقياس
+# <a name="create-measures-from-templates"></a>إنشاء قياسات من القوالب
 
 يمكنك استخدام قوالب محددة مسبقًا للقياسات [شائعة الإستخدام](measures.md) لإنشائها. تساعدك الأوصاف التفصيلية للقوالب والتجربة الإرشادية في إنشاء مقياس فعال. تستند القوالب إلى البيانات المعينة من كيان *النشاط الموحد*. لذلك تأكد من قيمك بتكوين [أنشطة العملاء](activities.md) قبل أن تنشئ قياسًا من قالب.
 

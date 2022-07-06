@@ -1,5 +1,5 @@
 ---
-title: تصدير بيانات Customer Insights إلى AdRoll
+title: تصدير الشرائح إلى AdRoll (إصدار أولي)
 description: تعرف على كيفية تهيئة الاتصال والتصدير إلى AdRoll.
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ec7d2d4d137f2f0e3e1ff2ec0d09bff8ac4f28ea
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 13c7dd3b8556ad807fba6c537525b463480e860b
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645479"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080757"
 ---
 # <a name="export-segments-to-adroll-preview"></a>تصدير الشرائح إلى AdRoll (إصدار أولي)
 
@@ -21,9 +21,9 @@ ms.locfileid: "8645479"
 
 ## <a name="prerequisites-for-a-connection"></a>المتطلبات الأساسية لاتصال
 
--   لديك [حساب AdRoll](https://www.adroll.com/) وبيانات اعتماد مسؤول مطابقة.
--   لديك [مقاطع مُكونة](segments.md) في Customer Insights.
--   تحتوي ملفات تعريف العملاء الموحدة في الشرائح المصدّرة على حقل يمثل عنوان البريد الإلكتروني.
+- لديك [حساب AdRoll](https://www.adroll.com/) وبيانات اعتماد مسؤول مطابقة.
+- لديك [مقاطع مُكونة](segments.md) في Customer Insights.
+- تحتوي ملفات تعريف العملاء الموحدة في الشرائح المصدّرة على حقل يمثل عنوان البريد الإلكتروني.
 
 ## <a name="known-limitations"></a>القيود المعروفة
 

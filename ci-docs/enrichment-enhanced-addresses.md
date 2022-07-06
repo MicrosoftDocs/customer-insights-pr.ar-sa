@@ -1,5 +1,5 @@
 ---
-title: إثراء تحسين العنوان (يحتوي على فيديو)
+title: إثراء ملفات تعريف العملاء باستخدام عناوين محسنة (يحتوي على فيديو)
 description: إثراء معلومات العنوان وضبطها لملفات تعريف العملاء باستخدام نماذج Microsoft.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -14,14 +14,14 @@ searchScope:
 - ci-enrichments
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: f6279b9bb721d99d66f73e8dc839a92f1ad90140
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 01f1c917c75e932cc69f4c7251e57524fc859dce
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953795"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080713"
 ---
-# <a name="enrichment-of-customer-profiles-with-enhanced-addresses"></a>إثراء ملفات تعريف العملاء من خلال العناوين المحسنة
+# <a name="enrich-customer-profiles-with-enhanced-addresses"></a>إثراء ملفات تعريف العملاء باستخدام عناوين محسنة
 
 قد تكون العناوين الموجودة في بياناتك غير مهيكلة أو غير مكتملة أو غير صحيحة. استخدم نماذج Microsoft لضبط العناوين وإثراءها في [تنسيق نموذج البيانات العامة](/common-data-model/schema/core/applicationcommon/address) لتحقيق مزيد من الدقة والتحليلات.
 
@@ -101,7 +101,7 @@ ms.locfileid: "8953795"
 
 1. حدد **حفظ الإثراء** بعد مراجعة اختياراتك.
 
-## <a name="enrichment-results"></a>نتائج الإثراء
+## <a name="view-enrichment-results"></a>عرض نتائج إثراء البيانات
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

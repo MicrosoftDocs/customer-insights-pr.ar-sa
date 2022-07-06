@@ -1,5 +1,5 @@
 ---
-title: إثراء ملفات تعريف العملاء بواسطة بيانات العلامات التجارية وبيانات والاهتمامات من Microsoft
+title: إثراء ملفات تعريف العملاء بواسطة بيانات العلامات التجارية وبيانات والاهتمامات من Microsoft (إصدار أولي)
 description: استخدم البيانات المسجلة الملكية من Microsoft لإثراء بيانات العملاء الخاصة بك من خلال التقارب ومشاركة الصوت.
 ms.date: 03/02/2022
 ms.reviewer: mhart
@@ -12,14 +12,14 @@ searchScope:
 - ci-enrichments
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: 61262980cafdcd130430e200e466ce7da6cc4d07
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: e1827adca10a3b193c02a20c4abccacf73194a77
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953749"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080751"
 ---
-# <a name="enrich-customer-profiles-with-affinities-and-share-of-voice-preview"></a>إثراء ملفات تعريف العملاء بالصلات ومشاركة الصوت (إصدار أولي)
+# <a name="enrich-customer-profiles-with-brands-and-interests-data-from-microsoft-preview"></a>إثراء ملفات تعريف العملاء بواسطة بيانات العلامات التجارية وبيانات والاهتمامات من Microsoft (إصدار أولي)
 
 استخدم البيانات المملوكة لشركة Microsoft لإثراء بيانات العملاء الخاصة بك بصلات العلامة التجارية، وتقارب المصالح، ومشاركة الصوت (SoV). تستند هذه الصلات وSoV إلى بيانات من أشخاص لديهم خصائص ديموغرافية مماثلة لعملائك. تساعدك هذه المعلومات على فهم عملائك وتقسيمهم بشكل أفضل بناءً على صلاتهم أو SoV لعلامات تجارية واهتمامات محددة.
 
@@ -104,7 +104,7 @@ ms.locfileid: "8953749"
 
    عند إثراء ملفات التعريف، سنثري جميع ملفات تعريف العملاء التي نحصل عليها من العلامات التجارية والاهتمامات المحددة، بما في ذلك الملفات الشخصية غير الموجودة في البلد أو المنطقة المحددة. على سبيل المثال، إذا اخترت ألمانيا، فسوف نقوم بإثراء ملفات التعريف الموجودة في الولايات المتحدة إذا كانت لدينا بيانات متوفرة للعلامة التجارية و الاهتمامات المحددة في الولايات المتحدة.
 
-## <a name="enrichment-results"></a>نتائج الإثراء
+## <a name="view-enrichment-results"></a>عرض نتائج إثراء البيانات
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

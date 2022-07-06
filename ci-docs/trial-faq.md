@@ -1,5 +1,5 @@
 ---
-title: الأسئلة الشائعة حول الإصدار التجريبي - Dynamics 365 Customer Insights
+title: الأسئلة المتداولة حول الإصدار التجريبي من Dynamics 365 Customer Insights
 description: حلول للأسئلة المتداولة المتعلقة بإعداد الإصدار التجريبي من Customer Insights وإدارته. تعرف على كيفية حل المشكلات الخاصة بالنظام الأساسي والتطبيق.
 author: m-hartmann
 ms.author: mhart
@@ -8,12 +8,12 @@ ms.topic: get-started
 ms.custom: template-trial-faq
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: 46a67e58f79029246029e2d06789525c2131f100
-ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
+ms.openlocfilehash: 41f112466d54c9923d0daf7c55d343f9b5c81d98
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9011871"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9051483"
 ---
 # <a name="dynamics-365-customer-insights-trial-faq"></a>الأسئلة المتداولة حول الإصدار التجريبي من Dynamics 365 Customer Insights
 

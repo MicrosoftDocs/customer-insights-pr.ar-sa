@@ -11,14 +11,14 @@ manager: shellyha
 searchScope:
 - ci-measure-builder
 - customerInsights
-ms.openlocfilehash: d003d054145343cc2feeefeeee413810df43185a
-ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
+ms.openlocfilehash: f3ec86806074a12c1107648303ed2d65e97ebc69
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "8800310"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080766"
 ---
-# <a name="use-measure-builder-to-create-measures-from-scratch"></a>استخدام منشئ القياسات لإنشاء المقاييس من البداية
+# <a name="create-new-measures-with-the-measure-builder"></a>إنشاء قياسات جديدة باستخدام منشئ القياسات
 
 تشرح هذه المقالة كيفية إنشاء [قياس](measures.md) جديد من البداية. يتيح لك منشئ القياسات تعريف العمليات الحسابية باستخدام عوامل تشغيل مجمعة ووظائف التجميع و عوامل التصفية. يمكنك إنشاء مقياس باستخدام سمات من كيانات ترتبط بكيان *العميل* الموحد.
 

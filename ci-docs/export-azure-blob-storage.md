@@ -1,5 +1,5 @@
 ---
-title: تصدير بيانات Customer Insights إلى مساحة تخزين Azure Blob Storage
+title: تصدير البيانات إلى Azure Blob Storage (إصدار أولي)
 description: تعرف على كيفية تهيئة الاتصال والتصدير إلى مساحة تخزين Blob storage.
 ms.date: 06/09/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 623926bf520b19ee4156b7a05e953241cd819e9e
-ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
+ms.openlocfilehash: 059c8364ca0f3740bc0e4ffeeeba94246c9e5696
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "8947122"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9055474"
 ---
-# <a name="export-segment-list-and-other-data-to-azure-blob-storage-preview"></a>تصدير قائمة الشرائح والبيانات الأخرى إلى مساحة تخزين Azure Blob Storage (إصدار أولي)
+# <a name="export-data-to-an-azure-blob-storage-preview"></a>تصدير البيانات إلى Azure Blob Storage (إصدار أولي)
 
 قم بتخزين بيانات Customer Insights في مساحة تخزين Blob Storage أو استخدمها لنقل بياناتك إلى تطبيقات أخرى.
 

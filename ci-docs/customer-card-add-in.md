@@ -1,5 +1,5 @@
 ---
-title: الوظيفة الإضافية لبطاقة عميل تطبيقات Dynamics 365 (يحتوي على فيديو)
+title: الوظيفة الإضافية لبطاقة عميل تطبيقات Dynamics 365 (إصدار أولي) (يحتوي على فيديو)
 description: اعرض بيانات ملف تعريف العميل من Customer Insights في تطبيقات Dynamics 365 باستخدام هذه الوظيفة الإضافية.
 ms.date: 02/02/2022
 ms.reviewer: mhart
@@ -13,14 +13,14 @@ searchScope:
 - ci-search-filter
 - ci-customer-card
 - customerInsights
-ms.openlocfilehash: 8508880bb3274bb491a314a043a5222d4d381073
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: ead18963959f94fd07912384cf61802f83523e2f
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755620"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080716"
 ---
-# <a name="customer-card-add-in-preview"></a>الوظيفة الإضافية لبطاقة عميل (معاينة)
+# <a name="customer-card-add-in-for-dynamics-365-apps-preview"></a>الوظيفة الإضافية لبطاقة عميل تطبيقات Dynamics 365 (إصدار أولي)
 
 احصل على طريقة عرض 360 درجة لعملائك مباشرةً في تطبيقات Dynamics 365. مع تثبيت الوظيفة الإضافية لبطاقة العميل في تطبيق Dynamics 365 مدعوم، يمكنك اختيار عرض حقول ملف تعريف العميل والرؤى والمخطط الزمني للنشاط. سوف تسترد الوظيفة الإضافية البيانات من Customer Insights دون التأثير على البيانات في تطبيق Dynamics 365 المتصل.
 

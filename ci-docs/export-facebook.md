@@ -1,5 +1,5 @@
 ---
-title: تصدير بيانات Customer Insights إلى مدير إعلانات Facebook (يحتوي على فيديو)
+title: تصدير مقاطع إلى مدير إعلانات Facebook (إصدار أولي) (يحتوي على فيديو)
 description: تعرف على كيفية تهيئة الاتصال والتصدير إلى مدير إعلانات Facebook.
 ms.date: 04/15/2021
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: f610ab1af83bfd512ec1861e7dc76ebb2eecfcbb
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 782abd7d69166b9c81ac25c4d7e191bdeb03a887
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645562"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080764"
 ---
-# <a name="export-segments-list-to-facebook-ads-manager-preview"></a>تصدير قائمة الشرائح إلى مدير إعلانات Facebook (إصدار أولي)
+# <a name="export-segments-to-facebook-ads-manager-preview"></a>تصدير مقاطع إلى مدير إعلانات Facebook (إصدار أولي)
 
 يمكنك تصدير شرائح من ملفات تعريف العملاء الموحدة إلى مدير الإعلانات في Facebook لإنشاء حملات على Facebook وInstagram.
 

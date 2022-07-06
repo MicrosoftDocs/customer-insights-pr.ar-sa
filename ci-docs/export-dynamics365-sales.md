@@ -1,5 +1,5 @@
 ---
-title: تصدير بيانات Customer Insights إلى Dynamics 365 Sales
+title: تصدير المقاطع إلى Dynamics 365 Sales (إصدار أولي)
 description: تعرف على كيفية تكوين الاتصال والتصدير إلى Dynamics 365 Sales.
 ms.date: 03/03/2021
 ms.reviewer: mhart
@@ -11,16 +11,14 @@ manager: shellyha
 searchScope:
 - ci-export
 - customerInsights
-ms.openlocfilehash: 987690283090ec83ca75f50bf8f3cd8da9295887
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: b8e756313ca037dca41cb25587229808f0c584c9
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645494"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080728"
 ---
-# <a name="use-segments-in-dynamics-365-sales-preview"></a>استخدام الشرائح في Dynamics 365 Sales (إصدار أولي)
-
-
+# <a name="export-segments-to-dynamics-365-sales-preview"></a>تصدير المقاطع إلى Dynamics 365 Sales (إصدار أولي)
 
 استخدم بيانات العميل الخاصة بك لإنشاء قوائم تسويق ومتابعة عمليات سير العمل وإرسال العروض الترويجية باستخدام Dynamics 365 Sales.
 

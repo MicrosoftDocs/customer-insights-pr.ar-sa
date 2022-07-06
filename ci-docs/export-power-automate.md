@@ -1,5 +1,5 @@
 ---
-title: موصل Power Automate  | Microsoft Docs
+title: موصل Power Automate (إصدار أولي) | ‏Microsoft Docs
 description: إنشاء عمليات سير المهام في Microsoft Power Automate من Dynamics 365 Customer Insights.
 ms.date: 06/24/2021
 ms.reviewer: mhart
@@ -8,16 +8,16 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: d22c4c785695b23a257a89f1ffa519fdc18b443e
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: 29a861dad926072f6f849d738d868f0f3b9306be
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741163"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080731"
 ---
 # <a name="power-automate-connector-preview"></a>موصل Power Automate (معاينة)
 
-قم بتشغيل أحداث معينة لكي تحدث تلقائيًا عند تغيير بياناتك وأدر مزيدًا من عمليات سير المهام المعقدة مباشرةً في [Power Automate](https://flow.microsoft.com/).
+قم بتشغيل أحداث معينة لكي تحدث تلقائيًا عند تغيير بياناتك وأدر مزيدًا من عمليات سير المهام المعقدة مباشرةً في [Microsoft Power Automate](https://flow.microsoft.com/).
 
 ## <a name="known-limitations"></a>القيود المعروفة
 

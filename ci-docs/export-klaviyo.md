@@ -1,5 +1,5 @@
 ---
-title: تصدير بيانات Customer Insights إلى Klaviyo
+title: تصدير شرائح إلى Klaviyo (إصدار أولي)
 description: تعرف على كيفية تهيئة الاتصال والتصدير إلى Klaviyo.
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: aa6d43884e5e57af4627b7d5a857d3043abcd026
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: e2b60d9818a753e81e69f2bee6b1663e1840cb10
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645561"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9051299"
 ---
-# <a name="export-segment-lists-to-klaviyo-preview"></a>تصدير قوائم الشرائح إلى Klaviyo (إصدار أولي)
+# <a name="export-segments-to-klaviyo-preview"></a>تصدير شرائح إلى Klaviyo (إصدار أولي)
 
 قم بتصدير شرائح من ملفات تعريف العملاء الموحدة إلى Klaviyo واستخدمها في أنشطة التسويق.
 

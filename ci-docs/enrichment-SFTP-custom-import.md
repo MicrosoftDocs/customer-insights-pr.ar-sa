@@ -1,5 +1,5 @@
 ---
-title: إثراء البيانات باستخدام الاستيراد المخصص لبروتوكول SFTP‬
+title: إثراء ملفات تعريف العملاء مع ‏‫استيراد مخصص عبر SFTP‬ (إصدار أولي)
 description: معلومات عامة حول إثراء البيانات باستخدام الاستيراد المخصص لبروتوكول SFTP‬‬
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 657afb6fcb68429680eb677734b4115e69769008
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 88fc366ab9478c3b67034af794e237ff4573da7c
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953703"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080725"
 ---
-# <a name="enrich-customer-profiles-with-custom-data-preview"></a>إثراء ملفات تعريف العملاء بواسطة البيانات المخصصة (معاينة)
+# <a name="enrich-customer-profiles-with-sftp-custom-import-preview"></a>إثراء ملفات تعريف العملاء مع ‏‫استيراد مخصص عبر SFTP‬ (إصدار أولي)
 
 يتيح لك الاستيراد المخصص لبروتوكول نقل الملفات الآمن (SFTP)‬ استيراد البيانات التي ليست بحاجة إلى المرور عبر عملية توحيد البيانات. إنها عملية آمنة ومرنة وسهلة لإحضار بياناتك. يمكن استخدام الاستيراد المخصص لبروتوكول SFTP بالتزامن مع [تصدير SFTP](export-sftp.md) الذي يتيح لك تصدير بيانات ملفات تعريف العملاء المطلوبة للإثراء. يمكن بعد ذلك معالجة البيانات وإثرائها، ويمكن استخدام استيراد SFTP المخصص لإعادة البيانات المحسنة إلى Dynamics 365 Customer Insights.
 
@@ -120,7 +120,7 @@ ms.locfileid: "8953703"
 
 1. حدد **تشغيل** لبدء عملية المعالجة، أو حدد إغلاق للعودة إلى صفحة **عمليات الإثراء**.
 
-## <a name="enrichment-results"></a>نتائج الإثراء
+## <a name="view-enrichment-results"></a>عرض نتائج إثراء البيانات
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

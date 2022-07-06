@@ -1,19 +1,19 @@
 ---
-title: تصدير بيانات Customer Insights إلى Azure Synapse Analytics
+title: تصدير البيانات إلى Azure Synapse Analytics (إصدار أولي)
 description: تعرف على كيفية تكوين الاتصال بـ Azure Synapse Analytics.
-ms.date: 04/11/2022
+ms.date: 06/29/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 772fe0978362ccd829077a8133e2a3e74043f3f8
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: 60bacb313e0426564310f3c1339bf3b732e17489
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741487"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080759"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>تصدير البيانات إلى Azure Synapse Analytics (إصدار أولي)
 
@@ -72,13 +72,13 @@ Azure Synapse iهو خدمة تحليلات تعمل على تسريع وقت ا
 
 1. في حقل **Connection for export (الاتصال للتصدير)**، اختر اتصالاً من قسم **Azure Synapse Analytics**. إذا لم تشاهد اسم القسم هذا، لن تكون هناك [اتصالات](connections.md) من هذا النوع متوفرة لك.
 
-1. قم بتوفير **اسم العرض** يمكن التعرف عليه لعملية التصدير الخاصة بك و **اسم قاعدة البيانات**.
+1. قم بتوفير **اسم العرض** يمكن التعرف عليه لعملية التصدير الخاصة بك و **اسم قاعدة البيانات**. سيعمل التصدير على إنشاء [Azure Synapse قاعدة بيانات مستودع](/azure/synapse-analytics/database-designer/concepts-lake-database) جديدة في مساحة العمل المحددة في الاتصال.
 
 1. حدد أي الكيانات التي ترغب في تصديرها إلى Azure Synapse Analytics.
    > [!NOTE]
    > لا يتم دعم مصادر البيانات المستندة إلى [مجلد ‏‫نموذج البيانات العامة](connect-common-data-model.md).
 
-2. حدد **حفظ**.
+1. حدد **حفظ**.
 
 لا تعمل عملية التصدير التي يتم حفظها على التصدير في الحال.
 

@@ -1,5 +1,5 @@
 ---
-title: أمثلة OData لواجهات API الخاصة بـ Dynamics 365 Customer Insights
+title: أمثلة على استعلامات OData لواجهات برمجة التطبيقات في Customer Insights
 description: أمثلة شائعة الاستخدام لبروتوكول البيانات المفتوحة (OData) للاستعلام عن واجهات API الخاصة بـ Customer Insights لمراجعة البيانات.
 ms.date: 05/25/2022
 ms.subservice: audience-insights
@@ -8,14 +8,14 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: cdadd72bfe4272d8d83d923baaa6fd40d008473b
-ms.sourcegitcommit: bf65bc0a54cdab71680e658e1617bee7b2c2bb68
+ms.openlocfilehash: 54ba9f4e9baeb4b7021bb8c20a706bbb6eb1529f
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8808445"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080773"
 ---
-# <a name="odata-query-examples"></a>أمثلة على استعلامات OData
+# <a name="odata-query-examples-for-customer-insights-apis"></a>أمثلة على استعلامات OData لواجهات برمجة التطبيقات في Customer Insights
 
 بروتوكول البيانات المفتوحة (OData) هو بروتوكول وصول إلى البيانات مبني على بروتوكولات أساسية مثل HTTP. تستخدم منهجيات مقبولة بشكل عام مثل REST للويب. هناك أنواع مختلفة من المكتبات والأدوات التي يمكن استخدامها لاستهلاك خدمات OData.
 

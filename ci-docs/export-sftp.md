@@ -1,5 +1,5 @@
 ---
-title: تصدير بيانات Customer Insights إلى مضيفي SFTP (يحتوي على فيديو)
+title: تصدير بيانات Customer Insights إلى مضيفي SFTP (إصدار أولي) (يحتوي على فيديو)
 description: تعرف على كيفية تهيئة الاتصال والتصدير إلى موقع SFTP.
 ms.date: 06/09/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: b56d628c8286ba6697cccc9b002f609aa929951b
-ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
+ms.openlocfilehash: 67789a87cf0ff1b0d9933f2c0adde37762c83476
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "8947168"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080754"
 ---
-# <a name="export-segments-and-other-data-to-sftp-preview"></a>تصدير الشرائح والبيانات الأخرى إلى SFTP (إصدار أولي)
+# <a name="export-data-to-sftp-preview"></a>تصدير البيانات إلى SFTP (إصدار أولي)
 
 استخدم بيانات العميل في تطبيقات طرف ثالث من خلال تصديرها إلى موقع بروتوكول نقل الملفات الآمنة (SFTP).
 

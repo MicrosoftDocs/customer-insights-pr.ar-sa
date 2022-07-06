@@ -1,5 +1,5 @@
 ---
-title: استيعاب البيانات من:Azure Synapse Analytics
+title: وصل مصدر بيانات من Azure Synapse (إصدار أولي)
 description: استخدم قاعدة بيانات في Azure Synapseباعتبارها مصدر بيانات في Dynamics 365 Customer Insights.
 ms.date: 03/25/2022
 ms.reviewer: v-wendysmith
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 6f94cdbcc203fc4518544f7a945bd80e871b36c1
-ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
+ms.openlocfilehash: c4ae65613a02df38a30f907dae72d413bf1a702f
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9011411"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052683"
 ---
 # <a name="connect-an-azure-synapse-analytics-data-source-preview"></a>وصل مصدر بيانات من Azure Synapse Analytics (إصدار أولي)
 
@@ -59,7 +59,7 @@ Azure Synapse Analytics هي خدمة تحليلات مؤسسية تُسرع م�
 
 1. اختر [اتصالاً متوفرًا ](connections.md) بـ Azure Synapse Analytics أو قم بإنشاء اتصال جديد.
 
-1. اختر **قاعدة بيانات** من مساحة العمل المتصلة في اتصال Azure Synapse Analytics المحدد وحدد **التالي**.
+1. اختر **قاعدة بيانات** من مساحة العمل المتصلة في اتصال Azure Synapse Analytics المحدد وحدد **التالي**. في الوقت الحالي، ندعم نوع قاعدة البيانات *قاعدة بيانات المستودع* فقط.
 
 1. حدد الكيانات لاستيعابها من قاعدة البيانات المتصلة وحدد **التالي**.
 

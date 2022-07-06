@@ -1,5 +1,5 @@
 ---
-title: إثراء ملفات تعريف العملاء بالبيانات من Microsoft Office 365
+title: إثراء ملفات تعريف العملاء بالبيانات من Microsoft Office 365 (إصدار أولي)
 description: استخدم البيانات المملوكة من Microsoft Office لإثراء ملفات تعريف العملاء من خلال بيانات التفاعل.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahl
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 7192b7680e73a581dd603de174c57b20bec996dd
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 75762afb70814c8a81c1574ee7ea1553a2048737
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954117"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9055658"
 ---
-# <a name="enrich-customer-profiles-with-engagement-data-preview"></a>إثراء ملفات تعريف العملاء ببيانات التفاعل (إصدار أولي)
+# <a name="enrich-customer-profiles-with-data-from-microsoft-office-365-preview"></a>إثراء ملفات تعريف العملاء بالبيانات من Microsoft Office 365 (إصدار أولي)
 
 استخدم البيانات من Microsoft Office 365 لإثراء ملفات تعريف حساب العميل لديك برؤى حول التفاعلات من خلال تطبيقات Office 365. تتكون بيانات التفاعل من نشاط البريد الإلكتروني والاجتماع، والتي يتم تجميعها على مستوى الحساب. على سبيل المثال، عدد رسائل البريد الإلكتروني من حساب تجاري أو عدد الاجتماعات مع الحساب. لا تتوفر أية بيانات حول المستخدمين الأفراد.
 
@@ -75,7 +75,7 @@ ms.locfileid: "8954117"
 
 [!INCLUDE [progress-details-pane](includes/progress-details-pane.md)]
 
-## <a name="enrichment-results"></a>نتائج الإثراء
+## <a name="view-enrichment-results"></a>عرض نتائج إثراء البيانات
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)] هذا هو كيان *Office*. يحتوي *Office_UserEntity* على معرفات Active Directory لعناوين البريد الإلكتروني التي تم اختيارها أثناء تكوين الإثراء.
 

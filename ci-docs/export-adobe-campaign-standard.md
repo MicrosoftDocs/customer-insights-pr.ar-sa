@@ -1,5 +1,5 @@
 ---
-title: تصدير بيانات Customer Insights إلى Adobe Campaign Standard
+title: قم بتصدير شرائح Customer Insights إلى Adobe Campaign Standard (إصدار أولي).
 description: تعرف على كيفية استخدام شرائح Customer Insights في Adobe Campaign Standard.
 ms.date: 03/29/2021
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 2a62d2f889f199222eeb8cc969fce62fa89fa6f0
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 9915591cd969bf825f5d1669de43ed4f9953f898
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645509"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080726"
 ---
-# <a name="use-customer-insights-segments-in-adobe-campaign-standard-preview"></a>استخدم شرائح Customer Insights في Adobe Campaign Standard (إصدار أولي)
+# <a name="export-customer-insights-segments-to-adobe-campaign-standard-preview"></a>قم بتصدير شرائح Customer Insights إلى Adobe Campaign Standard (إصدار أولي).
 
 بصفتك مستخدم Dynamics 365 Customer Insights، ربما تكون قد أنشأت شرائح لجعل حملاتك التسويقية أكثر كفاءة من خلال استهداف الجماهير ذات الصلة. لاستخدام مقطع من Customer Insights في Adobe Experience Platform وتطبيقات مثل Adobe Campaign Standard، تحتاج إلى اتباع بعض الخطوات الموضحة في هذه المقالة.
 
@@ -23,9 +23,9 @@ ms.locfileid: "8645509"
 
 ## <a name="prerequisites"></a>المتطلبات الأساسية
 
--   ترخيص Dynamics 365 Customer Insights
--   ترخيص Adobe Campaign Standard
--   حساب Azure Blob Storage
+- ترخيص Dynamics 365 Customer Insights
+- ترخيص Adobe Campaign Standard
+- حساب Azure Blob Storage
 
 ## <a name="campaign-overview"></a>نظرة عامة على الحملة
 

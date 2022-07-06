@@ -1,5 +1,5 @@
 ---
-title: إثراء ملفات تعريف العملاء ببيانات الموقع من خرائط Azure
+title: ‏‫إثراء ملفات تعريف العملاء ببيانات الموقع من خرائط Azure (إصدار أولي)‬
 description: معلومات عامة حول إثراء الطرف الأول لخرائط Azure.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: a806b2d0c791972c967c90694527608b4def9f3f
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: dfadc08f67beac3fded1a97e557ee9e1880664e0
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953612"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052591"
 ---
-# <a name="enrichment-of-customer-profiles-with-azure-maps-preview"></a>إثراء ملفات تعريف العملاء باستخدام خرائط Azure (إصدار أولي)
+# <a name="enrich-customer-profiles-with-location-data-from-azure-maps-preview"></a>‏‫إثراء ملفات تعريف العملاء ببيانات الموقع من خرائط Azure (إصدار أولي)‬
 
 توفر خرائط Azure لبيانات والخدمات التي تركز على الموقع لتقديم الخبرات بناءً على بيانات الموضع الجيوفضائي باستخدام ذكاء الموقع المدمج. تعمل خدمات إثراء بيانات خرائط Azure على تحسين دقة معلومات الموقع الخاصة بعملائك. إنه يجلب إمكانات مثل معالجة التطبيع واستخراج خطوط الطول والعرض إلى Dynamics 365 Customer Insights.
 
@@ -82,7 +82,7 @@ ms.locfileid: "8953612"
 
 1. حدد **تشغيل** لبدء عملية المعالجة، أو حدد إغلاق للعودة إلى صفحة **عمليات الإثراء**.
 
-## <a name="enrichment-results"></a>نتائج الإثراء
+## <a name="view-enrichment-results"></a>عرض نتائج إثراء البيانات
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

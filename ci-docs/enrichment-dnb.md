@@ -1,5 +1,5 @@
 ---
-title: إثراء ملفات تعريف الشركة باستخدام Dun & Bradstreet
+title: إثراء ملفات تعريف الشركة باستخدام Dun & Bradstreet (إصدار أولي)
 description: معلومات عامة حول إثراء الطرف الثالث Dun & Bradstreet.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -9,14 +9,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: b1038970b6aee3bbdd7f79cc457f79aaf1c38222
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 51f2e4e46aa25d10502d0feb5ea42eb7d2d637b9
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953872"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9080736"
 ---
-# <a name="enrichment-of-company-profiles-with-dun--bradstreet-preview"></a>إثراء ملفات تعريف الشركة باستخدام Dun & Bradstreet (إصدار أولي)
+# <a name="enrich-company-profiles-with-dun--bradstreet-preview"></a>إثراء ملفات تعريف الشركة باستخدام Dun & Bradstreet (إصدار أولي)
 
 يوفر Dun & Bradstreet البيانات التجارية والتحليلات والرؤى للشركات. وهي تمكن العملاء من خلال ملفات تعريف العملاء الموحدة للشركات من إثراء بياناتهم. تشمل عمليات الإثراء على سمات مثل رقم DUNS وحجم الشركة والموقع والصناعة وغير ذلك الكثير.
 
@@ -102,7 +102,7 @@ ms.locfileid: "8953872"
 
 1. حدد **تشغيل** لبدء عملية المعالجة، أو حدد إغلاق للعودة إلى صفحة **عمليات الإثراء**.
 
-## <a name="enrichment-results"></a>نتائج الإثراء
+## <a name="view-enrichment-results"></a>عرض نتائج إثراء البيانات
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 
