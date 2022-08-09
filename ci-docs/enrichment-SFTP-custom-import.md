@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 88fc366ab9478c3b67034af794e237ff4573da7c
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 81ef6c62240e26cb5c9475e6306e08edc7e5eb31
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9080725"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195780"
 ---
 # <a name="enrich-customer-profiles-with-sftp-custom-import-preview"></a>إثراء ملفات تعريف العملاء مع ‏‫استيراد مخصص عبر SFTP‬ (إصدار أولي)
 
@@ -104,9 +104,9 @@ ms.locfileid: "9080725"
 
 1. راجع النظرة العامة، ثم حدد **التالي**.
 
-1. حدد الاتصال. اتصل بمسؤول إذا لم يكن أحدهم متوفرًا.
+1. حدد الاتصال. اتصل بالمسؤول إذا لم يكن هناك اتصال متوفر.
 
-1. حدد **مجموعة بيانات العميل** واختر ملف التعريف أو الشريحة التي ترغب في إثرائها. يقوم كيان *العميل* بإثراء جميع ملفات تعريف عملائك في حين تثري الشريحة فقط ملفات تعريف العملاء الموجودة في تلك الشريحة.
+1. حدد **مجموعة بيانات العميل** واختر ملف التعريف أو المقطع التي ترغب في إثرائها. يقوم كيان *العميل* بإثراء جميع ملفات تعريف عملائك في حين تثري المقطع فقط ملفات تعريف العملاء الموجودة في تلك المقطع.
 
 1. حدد **التالي**.
 

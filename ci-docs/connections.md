@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-connections
 - customerInsights
-ms.openlocfilehash: a8b4b8a9bdcf7cf43c47a67d547405dd20dad60d
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 4a0bc5dd4100b462a26660a0c51fda1fe92b6bb9
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9080714"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195158"
 ---
 # <a name="connections-preview-overview"></a>نظرة عامة على الاتصالات (إصدار أولي)
 
@@ -27,6 +27,12 @@ ms.locfileid: "9080714"
 تعرض علامة التبويب **الاتصالات** جميع الاتصالات النشطة. تُظهر القائمة صفًا لكل اتصال.
 
 احصل على نظرة عامة سريعة ووصف واكتشف ما يمكنك القيام به مع كل خيار من خيارات القابلية للتوسعة في علامة التبويب **اكتشاف**.
+
+## <a name="data-privacy-and-compliance"></a>خصوصية البيانات والتوافق
+
+عند تمكين Dynamics 365 Customer Insights لنقل البيانات إلى جهات خارجية أو منتجات Microsoft الأخرى، فأنت تسمح بنقل البيانات خارج حدود الامتثال لـ Dynamics 365 Customer Insights، بما في ذلك البيانات الحساسة مثل البيانات الشخصية. ستقوم شركة Microsoft بنقل هذه البيانات وفقًا لتعليماتك، ولكنك مسؤول عن ضمان قيام الجهة الخارجية بتلبية أي التزامات تتعلق بالخصوصية أو الأمان قد تكون لديك. لمزيد من المعلومات، راجع [بيان خصوصية Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
+
+بإمكان مسؤول Dynamics 365 Customer Insights إزالة الاتصال في أي وقت لوقف استخدام الوظيفة.
 
 ## <a name="exports"></a>التصديرات
 
@@ -41,8 +47,6 @@ ms.locfileid: "9080714"
 لإضافة اتصالات، يلزم أن يكون لديك [أذونات المسؤول](permissions.md). إذا قمت بالاتصال بخدمات Microsoft أخرى، فإننا نفترض أن كلتا الخدمتين في نفس المؤسسة.
 
 1. انتقل إلى **المسؤول** > **الاتصالات (إصدار أولي)**.
-
-1. انتقل إلى علامة التبويب **الاتصالات**.
 
 1. لإنشاء اتصال جديد، حدد **إضافة اتصال**. اختر من القائمة المنسدلة نوع الاتصال الذي ترغب في إنشائه.
 
@@ -99,3 +103,5 @@ ms.locfileid: "9080714"
 ## <a name="set-up-connections-with-secrets-managed-by-your-own-key-vault"></a>إعداد اتصالات مع الأسرار التي يديرها Key Vault الخاص بك
 
 تحتاج بعض الاتصالات إلى أسرار مثل مفاتيح API أو كلمات المرور. تدعم بعض الاتصالات الأسرار المخزنة في Key Vault الخاص بك. تعرف على المزيد حول الاتصالات المدعومة وكيفية إعداد [Key Vault الخاص بك للحصول على Customer Insights](use-azure-key-vault.md).
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

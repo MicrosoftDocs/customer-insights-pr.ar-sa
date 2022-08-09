@@ -1,7 +1,7 @@
 ---
 title: الاتصال بمجلد نموذج البيانات العامة باستخدام حساب Azure Data Lake
 description: اعمل مع بيانات نموذج البيانات العامة باستخدام Azure Data Lake Storage.
-ms.date: 05/30/2022
+ms.date: 07/27/2022
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -12,12 +12,12 @@ searchScope:
 - ci-create-data-source
 - ci-attach-cdm
 - customerInsights
-ms.openlocfilehash: b1cdcb46df17d722ad49d361ae4c7ab34c83eeb1
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: e071bf9364b44a92d81c9ff2269ff4e8654010aa
+ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9080722"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206983"
 ---
 # <a name="connect-to-data-in-azure-data-lake-storage"></a>الاتصال بالبيانات في Azure Data Lake Storage
 
@@ -82,7 +82,7 @@ ms.locfileid: "9080722"
    :::image type="content" source="media/ADLS_required.png" alt-text="مربع حوار يعرض الخيار مطلوب للمفتاح الأساسي":::
 
    > [!TIP]
-   > لتحرير الكيانات في واجهة تحرير JSON، حدد **إظهار المزيد** > **تحرير ملف المخطط**. أدخل التغييرات وحدد **حفظ**.
+   > لتحرير كيان في واجهة تحرير JSON، حدد الكيان ثم قم **بتحرير ملف المخطط**. أدخل التغييرات وحدد **حفظ**.
 
 1. بالنسبة للكيانات المحددة التي تتطلب الاستيعاب التزايدي، يظهر **مطلوب** تحت **تحديث تزايدي**. لكل واحد من هذه الكيانات، راجع [تكوين تحديث تزايدي لمصادر بيانات Azure Data Lake](incremental-refresh-data-sources.md).
 
@@ -101,6 +101,10 @@ ms.locfileid: "9080722"
    1. حدِّد **تم**.
 
 1. حدد **حفظ.**. تفتح صفحة **مصادر‏‎ البيانات** التي تعرض مصدر البيانات الجديد في الحالة **جارٍ التحديث**.
+
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+قد يستغرق تحميل البيانات وقتا. بعد الانتهاء من التحديث بنجاح، يُمكنك مراجعة البيانات المستوعبة من صفحة [**الكيانات**](entities.md).
 
 ### <a name="create-a-new-schema-file"></a>إنشاء ملف مخطط جديد
 
@@ -148,6 +152,9 @@ ms.locfileid: "9080722"
 
 1. حدد **حفظ.**. تفتح صفحة **مصادر‏‎ البيانات** التي تعرض مصدر البيانات الجديد في الحالة **جارٍ التحديث**.
 
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+قد يستغرق تحميل البيانات وقتا. بعد الانتهاء من التحديث بنجاح، يُمكنك مراجعة البيانات المستوعبة من صفحة [**الكيانات**](entities.md).
 
 ## <a name="edit-an-azure-data-lake-storage-data-source"></a>تحرير مصدر بيانات Azure Data Lake Storage
 
@@ -179,8 +186,16 @@ ms.locfileid: "9080722"
       > [!IMPORTANT]
       > في حال وجود تبعيات على ملف model.json أو manifest.json الموجود وعلى مجموعة الكيانات، فسترى رسالة خطأ ولا يمكنك تحديد ملف model.json أو manifest.json مختلف. يمكنك إزالة هذه التبعيات قبل تغيير الملف model.json أو manifest.json أو إنشاء ملف مصدر بيانات جديد باستخدام الملف model.json أو manifest.json والذي ترغب في استخدامه لتجنب إزالة التبعيات.
    - لتغيير موقع ملف البيانات أو المفتاح الأساسي، حدد **تحرير**.
-   - لتغيير بيانات الاستيعاب التزايدي، راجع [تكوين تحديث تزايدي لمصادر بيانات Azure Data Lake](incremental-refresh-data-sources.md)
+   - لتغيير بيانات الاستيعاب التزايدي، راجع [تكوين تحديث تزايدي لمصادر بيانات Azure Data Lake](incremental-refresh-data-sources.md).
+   - قم بتغيير اسم الكيان فقط لمطابقة اسم الكيان في ملف .json.
+
+     > [!NOTE]
+     > احتفظ دائمًا باسم الكيان في Customer Insights بنفس اسم الكيان داخل ملف model.json أو manifest.json بعد الاستيعاب. يتحقق Customer Insights من صحة جميع أسماء الكيانات باستخدام model.json أو manifest.json أثناء كل تحديث للنظام. إذا تم تغيير اسم الكيان إما داخل Customer Insights أو خارجه، فسيحدث خطأ لأن Customer Insights لا يمكنه العثور على اسم الكيان الجديد في ملف .json. إذا تم تغيير اسم الكيان الذي تم إدخاله عن طريق الخطأ، فقم بتحرير اسم الكيان في Customer Insights لمطابقة الاسم الموجود في ملف .json.
 
 1. حدد **سمات** لإضافة سمات أو تغييرها، أو لتمكين تجميع البيانات. ثم حدد **تم**.
 
 1. انقر فوق **حفظ** لتطبيق تغييرات، ثم عد إلى صفحة **مصادر‏‎ البيانات**.
+
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

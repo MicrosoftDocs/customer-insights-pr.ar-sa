@@ -11,16 +11,14 @@ manager: shellyha
 searchScope:
 - ci-map
 - customerInsights
-ms.openlocfilehash: 0dbc3b2c75365e94758a1b6330e8cb557e6bd768
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 766e688cb80c50a0d620943f87b76eb84a2fb89a
+ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9080720"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9139458"
 ---
 # <a name="data-unification-overview"></a>نظرة عامة على توحيد البيانات
-
-[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
 
 بعد [إعداد مصادر البيانات](data-sources.md)، يمكنك توحيد البيانات. يتيح لك توحيد البيانات توحيد مصادر البيانات التي كانت متباينة في مجموعة بيانات رئيسية واحدة توفر عرضًا موحدًا لتلك البيانات. بالنسبة للمستهلكين الأفراد (B-to-C) حيث تتمحور البيانات حول الأفراد، يوفر التوحيد رؤية موحدة لعملائك. بالنسبة لحسابات الأعمال (B-to-B) حيث تتمحور البيانات حول الحسابات، يوفر التوحيد عرضًا موحدًا لحساباتك.
 
@@ -38,7 +36,7 @@ ms.locfileid: "9080720"
 
 بعد إتمام توحيد البيانات، يُمكنك اختياريًا:
 
-- [إعداد العلاقات بين الكيانات](relationships.md) لإنشاء شرائح متقدمة.
+- [إعداد العلاقات بين الكيانات](relationships.md) لإنشاء مقاطع متقدمة.
 - [قم بإثراء بياناتك](enrichment-hub.md) للحصول على نطاق أكبر من المعلومات حول عملائك.
 - [تعريف الأنشطة](activities.md) البيانات بعض السمات التي تم استيعابها.
 - [وضع مقاييس](measures.md) لفهم سلوكيات العملاء وأداء الأعمال بشكل أفضل.

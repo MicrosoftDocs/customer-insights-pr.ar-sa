@@ -13,12 +13,12 @@ searchScope:
 - ci-search-filter
 - ci-customer-card
 - customerInsights
-ms.openlocfilehash: ead18963959f94fd07912384cf61802f83523e2f
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 8b3b6a0d54b80d7df454e9dc925f14cc3c39684c
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9080716"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9194906"
 ---
 # <a name="customer-card-add-in-for-dynamics-365-apps-preview"></a>الوظيفة الإضافية لبطاقة عميل تطبيقات Dynamics 365 (إصدار أولي)
 
@@ -26,23 +26,27 @@ ms.locfileid: "9080716"
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN1qv]
 
-## <a name="prerequisites"></a>المتطلبات الأساسية
+## <a name="prerequisites"></a>المتطلبات
 
-- تعمل هذه الوظيفة الإضافية فقط مع تطبيقات Dynamics 365 التي تعتمد على نموذج، مثل Sales أو Customer Service الإصدار 9.0 وما يليه.
-- لكي يتم تعيين بيانات Dynamics 365 إلى ملفات تعريف العملاء لـ Customer Insights، نوصي بأن [استيعابها من تطبيق Dynamics 365 باستخدام موصل Microsoft Dataverse](connect-power-query.md). إذا كنت تستخدم طريقة مختلفة لاستيعاب جهات اتصال (أو حسابات) Dynamics 365، فلا بد من التأكد من أن الحقل `contactid` (أو `accountid`) قد تم تعيينه كـ [مفتاح أساسي لمصدر البيانات هذا في خطوة الخريطة لعملية توحيد البيانات](map-entities.md#select-primary-key-and-semantic-type-for-attributes).
+- تطبيقات Dynamics 365 مستندة إلى نموذج، مثل Sales أو Customer Service الإصدار 9.0 وما يليه.
+- لكي يتم تعيين بيانات Dynamics 365 إلى ملفات تعريف العملاء لـ Customer Insights، نوصي بأن [استيعابها من تطبيق Dynamics 365 باستخدام موصل Microsoft Dataverse](connect-power-query.md). إذا كنت تستخدم طريقة مختلفة لاستيعاب جهات اتصال (أو حسابات) Dynamics 365، فتأكد من أن الحقل `contactid` (أو `accountid`) قد تم تعيينه كـ [مفتاح أساسي لمصدر البيانات أثناء عملية توحيد البيانات](map-entities.md#select-primary-key-and-semantic-type-for-attributes).
 - يجب إضافة جميع مستخدمي Dynamics 365 للوظيفة الإضافية لبطاقة العميل [كمستخدمين](permissions.md) في Customer Insights للاطلاع على البيانات.
-- تُطلب ميزتي [البحث المُكون وإمكانيات التصفية](search-filter-index.md) في Customer Insights للبحث عن البيانات للعمل.
+- [إمكانات البحث والتصفية المكونة](search-filter-index.md) في Customer Insights.
 - يعتمد كل عنصر من عناصر تحكم الوظيفة الإضافية على بيانات محددة في Customer Insights. تتوفر بعض البيانات وعناصر التحكم فقط في بيئات من أنواع معينة. سيخبرك تكوين الوظيفة الإضافية في حالة عدم توفر عنصر تحكم بسبب نوع البيئة المحدد. اعرف المزيد حول [حالات استخدام البيئات](work-with-business-accounts.md).
-  - **التحكم في القياس**: يتطلب [القياسات المكونة](measures.md) من نوع سمات العميل.
-  - **التحكم في المعلومات المهنية**: يتطلب بيانات تم إنشاؤها باستخدام [التنبؤات أو النماذج المخصصة](predictions-overview.md).
-  - **التحكم في تفاصيل العميل**: جميع الحقول من ملف التعريف متاحة في ملف تعريف العميل الموحد.
-  - **عنصر تحكم الإثراء**: يتطلب تطبيق [عمليات الإثراء](enrichment-hub.md) النشطة على ملفات تعريف العملاء. تدعم هذه الوظائف الإضافية للبطاقة هذه الإثراءات: [العلامات التجارية](enrichment-microsoft.md) المقدمة من Microsoft، [والاهتمامات](enrichment-microsoft.md) المقدمة من Microsoft، و[بيانات تفاعل Office](enrichment-office.md) المقدمة من Microsoft.
-  - **التحكم في جهات الاتصال**: يتطلب تعريف الكيان الدلالي لنوع جهات الاتصال.
-  - **التحكم في المخطط الزمني**: يتطلب [الأنشطة المكونة](activities.md).
+  - **التحكم في القياس** يتطلب [مقاييس سمات العميل المكونة](measures.md).
+  - **التحكم في المعلومات المهنية** يتطلب بيانات تم إنشاؤها باستخدام [التنبؤات أو النماذج المخصصة](predictions-overview.md).
+  - **التحكم في تفاصيل العميل** يُظهر جميع الحقول من ملف التعريف المتاح في ملف تعريف العميل الموحد.
+  - **عنصر تحكم الإثراء** يتطلب تطبيق [عمليات الإثراء](enrichment-hub.md) النشطة على ملفات تعريف العملاء. تدعم هذه الوظائف الإضافية للبطاقة هذه الإثراءات: [العلامات التجارية](enrichment-microsoft.md) المقدمة من Microsoft، [والاهتمامات](enrichment-microsoft.md) المقدمة من Microsoft، و[بيانات تفاعل Office](enrichment-office.md) المقدمة من Microsoft.
+  - **التحكم في جهات الاتصال** يتطلب تعريف نوع الكيان الدلالي لجهة الاتصال.
+  - **التحكم في المخطط الزمني** يتطلب [الأنشطة المكونة](activities.md).
 
 ## <a name="install-the-customer-card-add-in"></a>تثبيت الوظيفة الإضافية لبطاقة عميل
 
-تعتبر الوظيفة الإضافية لبطاقات العملاء حلاً لتطبيقات customer engagement في Dynamics 365. لتثبيت الحل، انتقل إلى AppSource وابحث عن **بطاقة عميل Dynamics**. حدد [تشغيل الوظيفة الإضافية لبطاقة العميل AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamics_365_customer_insights_customer_card_addin?tab=Overview) وحدد **احصل عليها الآن**.
+تعتبر الوظيفة الإضافية لبطاقات العملاء حلاً لتطبيقات customer engagement في Dynamics 365. لتثبيت الحل:
+
+1. انتقل إلى AppSource وابحث عن **بطاقة عميل Dynamics**.
+
+1. حدد [تشغيل الوظيفة الإضافية لبطاقة العميل AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamics_365_customer_insights_customer_card_addin?tab=Overview) وحدد **احصل عليها الآن**.
 
 قد تحتاج إلى تسجيل الدخول باستخدام بيانات المسؤول الخاصة بك لتطبيق Dynamics 365 لتثبيت الحل. يمكن أن يستغرق تثبيت الحل للبيئة الخاصة بك بعض الوقت.
 

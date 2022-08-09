@@ -13,16 +13,14 @@ searchScope:
 - ci-map
 - ci-match
 - customerInsights
-ms.openlocfilehash: 27dff3551ab411a12c273536d7431d651c48573e
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: a838fbdabdb3bfffc6d3835a3f0e97306a43964a
+ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741599"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9139413"
 ---
 # <a name="remove-duplicates-before-unifying-data"></a>إزالة التكرارات قبل توحيد البيانات
-
-[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
 
 تمكنك هذه الخطوة في التوحيد اختياريًا من إعداد قواعد للتعامل مع السجلات المكررة داخل الكيان. *إلغاء البيانات المكررة* يحدد السجلات المكررة ويدمجها في سجل واحد. ترتبط السجلات المصدر بالسجل المدمج باستخدام معرّفات بديلة. إذا لم يتم تكوين القواعد، يتم تطبيق القواعد المحددة من قبل النظام.
 

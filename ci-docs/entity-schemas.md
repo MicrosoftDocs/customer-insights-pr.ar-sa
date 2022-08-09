@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 92d37fc0950fefcb5c2a5d26214a469d3693980d
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: cc65314f1b083694b60ac0a2625bea906be7272b
+ms.sourcegitcommit: ad74ace653db9a25fce4343adef7db1c9b0d8904
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9054738"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "9183477"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>مخططات الكيانات في نموذج البيانات العامة
 
@@ -32,16 +32,15 @@ ms.locfileid: "9054738"
 |[نشاط العميل](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customeractivity) | نشاط ينفذه مستخدم لديه قيمة رصدية للأعمال. |
 |[ملف تعريف العميل](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile) | شخص أو مؤسسة قامت بتنفيذ أنشطة عمل أو لديها القدرة على المشاركة في مثل هذه الأنشطة. |
 |[تعريف القياس](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/measuredefinition) | تعريف مؤشرات الأداء الأساسية (KPI) المقسمة على صفر من الأبعاد أو أكثر (مثل المستخدمون النشطاء شهريًا، وإجمالي الإنفاق حسب العميل ومتوسط تكلفة الاستحواذ للعميل) |
-|[الشريحة](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/segment) | تعريف مجموعة من الأعضاء الذين لديهم خصائص مشتركة. |
-|[عضوية الشريحة](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/segmentmembership) | الأعضاء المشاركون في شريحة معينة. |
+|[المقطع](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/segment) | تعريف مجموعة من الأعضاء الذين لديهم خصائص مشتركة. |
+|[عضوية المقطع](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/segmentmembership) | الأعضاء المشاركون في مقطع معينة. |
 
 للحصول على مزيد من المعلومات، راجع الوثائق حول [مخططات كيانات Customer Insights في نموذج البيانات العامة](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/overview).
 
 ## <a name="view-entities-using-the-common-data-model-entity-navigator"></a>عرض الكيانات باستخدام متصفح كيانات نموذج البيانات العامة
 
-يمكنك عرض الكيانات في [متصفح كيانات نموذج البيانات العامة](https://microsoft.github.io/CDM/). حدد كيانًا من قسم تطبيق Insights للحصول على قائمة بكيانات Customer Insights وتعريفاتها.
-> [!div class="mx-imgBorder"]
-> ![يعرض مستعرض كيان CDM كيان CustomerActivity.](media/CDM-entity-navigator.png "متصفح كيانات CDS يعرض كيان CustomerActivity")
+اعرض الكيانات في [متصفح كيانات نموذج البيانات العامة](https://microsoft.github.io/CDM/). حدد كيانًا من قسم تطبيق Insights للحصول على قائمة بكيانات Customer Insights وتعريفاتها.
 
+:::image type="content" source="media/CDM-entity-navigator.png" alt-text="يعرض مستعرض كيان CDM كيان CustomerActivity.":::
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

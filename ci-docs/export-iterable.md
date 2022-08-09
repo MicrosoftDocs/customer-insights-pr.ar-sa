@@ -1,19 +1,19 @@
 ---
 title: تصدير المقاطع إلى Iterable (إصدار أولي)
 description: تعرف على كيفية تكوين الاتصال والتصدير إلى Iterable.
-ms.date: 03/29/2022
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 98d5aeab6b0e932d291213053d509ec72da82e47
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: ccf10b6e3a28a75f9d1bd3d8da3bf870ebc2b1b2
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9052219"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195413"
 ---
 # <a name="export-segments-to-iterable-preview"></a>تصدير المقاطع إلى Iterable (إصدار أولي)
 
@@ -21,31 +21,33 @@ ms.locfileid: "9052219"
 
 ## <a name="prerequisites"></a>المتطلبات
 
--   لديك [حساب Iterable](https://iterable.com/) وبيانات اعتماد المسؤول المطابقة.
--   لديك [مقاطع مُكونة](segments.md) في Customer Insights.
--   تحتوي ملفات تعريف العملاء الموحدة في الشرائح المصدّرة على حقل يمثل عنوان البريد الإلكتروني.
+- [حساب Iterable](https://iterable.com/) وبيانات اعتماد المسؤول المقابلة.
+- [مفتاح Iterable API](https://support.iterable.com/hc/en-us/articles/360043464871)
+- [مقاطع مُكونة](segments.md) في Customer Insights.
+- تحتوي ملفات تعريف العملاء الموحدة في المقاطع المصدّرة على حقل يمثل عنوان البريد الإلكتروني.
 
 ## <a name="known-limitations"></a>القيود المعروفة
 
-- يقتصر التصدير إلى Iterable على المقاطع.
-- يمكن أن يستغرق تصدير ما يصل إلى مليون ملف تعريف عميل إلى Iterable ما يصل إلى 30 دقيقة حتى يكتمل. 
-- عدد ملفات تعريف العملاء التي يمكنك تصديرها إلى Iterable يعتمد ويقتصر على عقدك مع Iterable.
+- ما يصل إلى مليون ملف تعريف عميل لـ Iterable، والتي يمكن أن تستغرق ما يصل إلى 30 دقيقة لإكمالها. يعتمد عدد ملفات تعريف العملاء التي يمكنك تصديرها إلى Iterable على عقدك مع Iterable.
+- المقاطع فقط.
 
 ## <a name="set-up-connection-to-iterable"></a>إعداد اتصال بـ Iterable
 
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
+
 1. انتقل إلى **المسؤول** > **الاتصالات**.
 
-1. حدد **"إضافة اتصال** واختر **Iterable** لتكوين الاتصال.
+1. حدد **إضافة اتصال** واختر **Iterable**.
 
 1. اعط اتصالك اسمًا يمكن التعرف عليه في حقل **الاسم المعروض**. يصف الاسم ونوع الاتصال هذا الاتصال. ننصح باختيار اسم يوضح الغرض والهدف من الاتصال.
 
-1. اختر الشخص الذي يمكنه استخدام هذا الاتصال. إذا لم تتخذ أي إجراء، فإن الإعداد الافتراضي سيكونالمسؤولين. لمزيد من المعلومات، راجع [السماح للمساهمين باستخدام اتصال للتصديرات](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. اختر الشخص الذي يمكنه استخدام هذا الاتصال. إنه المسؤول بشكل افتراضي. لمزيد من المعلومات، راجع [السماح للمساهمين باستخدام اتصال للتصديرات](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. قم بتوفير [مفتاح Iterable API](https://support.iterable.com/hc/en-us/articles/360043464871) للمتابعة لتسجيل الدخول. 
+1. قم بتوفير مفتاح Iterable API للمتابعة لتسجيل الدخول.
 
-1. حدد **أوافق** لتأكيد **خصوصية البيانات والتوافق‬**.
+1. راجع [خصوصية البيانات والامتثال](connections.md#data-privacy-and-compliance) وحدد **أوافق**.
 
-1. حدد **اتصال** لبدء الاتصال بـ Iterable.
+1. حدد **اتصال** لتهيئة الاتصال.
 
 1. حدد **إضافة نفسك كمستخدم تصدير** ووفر بيانات اعتماد Customer Insights.
 
@@ -53,25 +55,22 @@ ms.locfileid: "9052219"
 
 ## <a name="configure-an-export"></a>تكوين تصدير
 
-يمكنك تكوين هذا التصدير إذا كان لديك حق الوصول إلى اتصال من هذا النوع. لمزيد من المعلومات، راجع [الأذونات اللازمة لتكوين تصدير](export-destinations.md#set-up-a-new-export).
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. انتقل إلى **البيانات** > **التصديرات**.
 
-1. لإنشاء اتصال جديد، حدد **إضافة وجهة**.
+1. حدد **إضافة تصدير**.
 
-1. في حقل **الاتصال للتصدير**، اختر اتصالاً من قسم Iterable. إذا لم تشاهد اسم المقطع هذا، لن تكون هناك اتصالات من هذا النوع متوفرة لك.
+1. في حقل **الاتصال للتصدير**، اختر اتصالاً من قسم Iterable. اتصل بالمسؤول إذا لم يكن هناك اتصال متوفر.
 
-3. في قسم **مطابقة البيانات** في حقل **البريد الإلكتروني**، حدد الحقل الذي يمثل عنوان البريد الإلكتروني للعميل. من المطلوب تصدير مقاطع إلى Iterable. ستتلقى القائمة التي تم إنشاؤها في Iterable نفس اسم المقطع الخاص بك في Dynamics 365 Customer Insights.
+1. إدخال اسمًا للتصدير.
+
+1. في قسم **مطابقة البيانات** في حقل **البريد الإلكتروني**، حدد الحقل الذي يمثل عنوان البريد الإلكتروني للعميل. ستتلقى القائمة التي تم إنشاؤها في Iterable نفس اسم المقطع الخاص بك في Dynamics 365 Customer Insights.
+
+1. حدد المقاطع التي تريد تصديرها.
 
 1. حدد **حفظ.**.
 
-لا تعمل عملية التصدير التي يتم حفظها على التصدير في الحال.
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
-يتم تشغيل عملية التصدير مع كل [تحديث مجدول](system.md#schedule-tab). يمكنك أيضًا [تصدير البيانات عند الطلب](export-destinations.md#run-exports-on-demand). 
-
-
-## <a name="data-privacy-and-compliance"></a>خصوصية البيانات والتوافق
-
-عند تمكين Dynamics 365 Customer Insights لإرسال البيانات إلى Iterable، تسمح أنت بنقل البيانات خارج حدود الامتثال في Dynamics 365 Customer Insights، بما في ذلك البيانات الحساسة على الأرجح مثل البيانات الشخصية. ستقوم Microsoft بنقل هذه البيانات بناءً على التعليمات الخاصة بك ، ولكنك مسؤول عن ضمان أن يفي Iterable بأي التزامات تتعلق بالخصوصية أو الأمان قد تكون لديك. لمزيد من المعلومات، راجع [بيان خصوصية Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
-
-بإمكان مسؤول Dynamics 365 Customer Insights إزالة وجهة التصدير هذه في أي وقت لإيقاف استخدام هذه الوظيفة.
+[!INCLUDE [footer-include](includes/footer-banner.md)]

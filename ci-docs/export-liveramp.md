@@ -1,61 +1,75 @@
 ---
-title: تصدير شرائح إلى LiveRamp (إصدار أولي)
+title: تصدير مقاطع إلى LiveRamp (إصدار أولي)
 description: تعرف على كيفية تهيئة الاتصال والتصدير إلى LiveRamp.
-ms.date: 10/08/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 3e30a16dcb276fa6c951ad0b42ed0a4792f87ce3
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 55eacea3af83f46583a3a43797d625479f56586b
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9050747"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196700"
 ---
-# <a name="export-segments-to-liverampreg-preview"></a>تصدير شرائح إلى LiveRamp&reg; (إصدار أولي)
+# <a name="export-segments-to-liverampreg-preview"></a>تصدير مقاطع إلى LiveRamp&reg; (إصدار أولي)
 
 قم بتنشيط البيانات في LiveRamp للاتصال بما يزيد على 500 نظام أساسي عبر أجهزة الكمبيوتر الرقمية، والوسائط الاجتماعية، وأجهزة التلفاز. استخدام بياناتك في LiveRamp لاستهداف الحملات الإعلانية وإزالتها وتخصيصها.
 
-## <a name="prerequisites-for-a-connection"></a>المتطلبات الأساسية لاتصال
+## <a name="prerequisites"></a>المتطلبات
 
-- تحتاج إلى اشتراك LiveRamp لاستخدام هذا الموصل.
-- للحصول على اشتراك، [اتصل بـ LiveRamp‎](https://liveramp.com/contact/) بشكل مباشر. [اعرف المزيد حول LiveRamp Onboarding‎](https://liveramp.com/our-platform/data-onboarding/).
+- اشتراك LiveRamp لاستخدام هذا الموصل. للحصول على اشتراك، [اتصل بـ LiveRamp‎](https://liveramp.com/contact/) بشكل مباشر. [اعرف المزيد حول LiveRamp Onboarding‎](https://liveramp.com/our-platform/data-onboarding/).
+
+## <a name="known-limitations"></a>القيود المعروفة
+
+- يستخدم تصدير LiveRamp عملية تصدير SFTP. وجهات SFTP خلف جدران الحماية غير مدعومة حاليًا.
+- إذا كنت تستخدم مفتاح SSH للمصادقة، فتأكد من [إنشاء مفتاحك الخاص](/azure/virtual-machines/linux/create-ssh-keys-detailed#basic-example) بتنسيق PEM أو SSH.COM. إذا كنت تستخدم Putty، فقم بتحويل مفتاحك الخاص عن طريق التصدير إلى Open SSH. يتم دعم تنسيقات المفاتيح الخاصة التالية:
+  - RSA بتنسيق OpenSSL PEM وssh.com
+  - DSA بتنسيق OpenSSL PEM وssh.com
+  - ECDSA 256/384/521 بتنسيق OpenSSL PEM
+  - ED25519 وRSA بتنسيق مفتاح OpenSSH
+- يعتمد وقت تشغيل أي تصدير على أداء النظام. نوصي بمركزين لوحدة المعالجة المركزية وذاكرة بسعة غيغابايت واحد كحدٍ أدنى لتكوين الخادم.
+- قد يستغرق تصدير الكيانات مع 100 مليون من ملفات تعريف العملاء 90 دقيقة عند استخدام الحد الأدنى من التكوين الموصى به من مركزين لوحدة المعالجة المركزية وذاكرة بسعة غيغابايت واحد.
+- يعتمد العدد الفعلي للملفات الشخصية (أو البيانات) التي يمكنك تصديرها إلى LiveRamp على اشتراكك في LiveRamp.
 
 ## <a name="set-up-connection-to-liveramp"></a>إعداد الاتصال بـ LiveRamp
 
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
+
 1. انتقل إلى **المسؤول** > **الاتصالات**.
 
-1. حدد **إضافة اتصال** واختر **LiveRamp** لتكوين الاتصال.
+1. حدد **إضافة اتصال** واختر **LiveRamp**.
 
 1. اعط اتصالك اسمًا يمكن التعرف عليه في حقل **الاسم المعروض**. يصف الاسم ونوع الاتصال هذا الاتصال. ننصح باختيار اسم يوضح الغرض والهدف من الاتصال.
 
-1. اختر الشخص الذي يمكنه استخدام هذا الاتصال. إذا لم تتخذ أي إجراء، فإن الإعداد الافتراضي سيكونالمسؤولين. لمزيد من المعلومات، راجع [السماح للمساهمين باستخدام اتصال للتصديرات](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. اختر الشخص الذي يمكنه استخدام هذا الاتصال. إنه المسؤول بشكل افتراضي. لمزيد من المعلومات، راجع [السماح للمساهمين باستخدام اتصال للتصديرات](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. أدخل **اسم المستخدم** و **كلمة المرور** لحساب LiveRamp Secure FTP (SFTP).
-قد تختلف بيانات الاعتماد هذه عن بيانات اعتماد LiveRamp Onboarding.
+1. اختر ما إذا كنت تريد المصادقة من خلال SSH أو اسم المستخدم/كلمة المرور لاتصالك وقدم التفاصيل اللازمة.
 
 1. حدد **التحقق** لاختبار الاتصال بـ LiveRamp.
 
-1. وبعد التحقق الناجح، قدم موافقتك على **خصوصية البيانات والتوافق‬** من خلال تحديد خانة الاختيار **أوافق**.
+1. بعد عملية تحقق ناجحة، راجع [خصوصية البيانات والامتثال](connections.md#data-privacy-and-compliance) وحدد **أوافق**.
 
 1. حدد **حفظ** لإكمال الاتصال.
 
 ## <a name="configure-an-export"></a>تكوين تصدير
 
-يمكنك تكوين هذا التصدير إذا كان لديك حق الوصول إلى اتصال من هذا النوع. لمزيد من المعلومات، راجع [الأذونات اللازمة لتكوين تصدير](export-destinations.md#set-up-a-new-export).
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. انتقل إلى **البيانات** > **التصديرات**.
 
-1. لإنشاء اتصال جديد، حدد **إضافة وجهة**.
+1. حدد **إضافة تصدير**.
 
-1. في حقل **الاتصال للتصدير**، اختر اتصالاً من قسم LiveRamp. إذا لم تشاهد اسم المقطع هذا، لن تكون هناك اتصالات من هذا النوع متوفرة لك.
+1. في حقل **الاتصال للتصدير**، اختر اتصالاً من قسم LiveRamp. اتصل بالمسؤول إذا لم يكن هناك اتصال متوفر.
 
-1. في الحقل **اختيار معرف المفتاح**، حدد **البريد الإلكتروني** أو **الاسم والعنوان** أو **الهاتف** لإرساله إلى LiveRamp لحل الهوية.
-   > [!div class="mx-imgBorder"]
-   > ![موصل LiveRamp مع تعيين السمات.](media/export-liveramp-segments.png "موصل LiveRamp مع تعيين السمات")
+1. إدخال اسمًا للتصدير.
+
+1. في الحقل **توصيل البيانات**، حدد **البريد الإلكتروني** أو **الاسم والعنوان** أو **الهاتف** لإرساله إلى LiveRamp لحل الهوية.
+
+   :::image type="content" source="media/export-liveramp-segments.png" alt-text="موصل LiveRamp مع تعيين السمات.":::
 
 1. قم بتعيين السمات المقابلة من كيان *العميل* لمعرف المفتاح المحدد.
 
@@ -64,18 +78,10 @@ ms.locfileid: "9050747"
    > [!TIP]
    > من المحتمل أن يؤدي إرسال المزيد من سمات معرف المفتاح إلى LiveRamp للحصول على معدل تطابق أعلى.
 
-1. حدد الشرائح التي تريد تصديرها إلى LiveRamp.
+1. حدد المقاطع التي تريد تصديرها.
 
-1. حدد **حفظ**.
+1. حدد **حفظ.**.
 
-لا تعمل عملية التصدير التي يتم حفظها على التصدير في الحال.
-
-يتم تشغيل عملية التصدير مع كل [تحديث مجدول](system.md#schedule-tab). يمكنك أيضًا [تصدير البيانات عند الطلب](export-destinations.md#run-exports-on-demand). 
-
-
-## <a name="data-privacy-and-compliance"></a>خصوصية البيانات والتوافق
-
-عند تمكين Dynamics 365 Customer Insights لإرسال البيانات إلى Liveramp، تسمح أنت بنقل البيانات خارج حدود الامتثال في Dynamics 365 Customer Insights، بما في ذلك البيانات الحساسة على الأرجح مثل البيانات الشخصية. ستقوم شركة Microsoft بنقل هذه البيانات وفقًا لتعليماتك، ولكنك مسؤول عن ضمان قيام Liveramp بتلبية أي التزامات تتعلق بالخصوصية أو الأمان قد تكون لديك. لمزيد من المعلومات، راجع [بيان خصوصية Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
-بإمكان مسؤول Dynamics 365 Customer Insights إزالة وجهة التصدير هذه في أي وقت لإيقاف استخدام هذه الوظيفة.
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

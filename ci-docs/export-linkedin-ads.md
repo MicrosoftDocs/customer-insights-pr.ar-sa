@@ -1,52 +1,53 @@
 ---
-title: تصدير شرائح إلى إعلانات LinkedIn (إصدار أولي)
+title: تصدير مقاطع إلى إعلانات LinkedIn (إصدار أولي)
 description: تعرف على كيفية تكوين الاتصال والتصدير إلى إعلانات LinkedIn.
-ms.date: 10/08/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: e6ad3901f7b8dc1ae8edc54c0b09a99b01be34cd
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: d1a9ae985043398f4bc38163be26ecf0c3c8e2ba
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9050840"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196792"
 ---
-# <a name="export-segments-to-linkedin-ads-preview"></a>تصدير شرائح إلى إعلانات LinkedIn (إصدار أولي)
+# <a name="export-segments-to-linkedin-ads-preview"></a>تصدير مقاطع إلى إعلانات LinkedIn (إصدار أولي)
 
-يمكنك تصدير شرائح ملفات تعريف العملاء الموحدة إلى إعلانات LinkedIn لإنشاء شرائح جمهور مطابقة. استخدم شرائح الجمهور المطابقة لاستهداف الشركات واستهداف جهات الاتصال.
+يمكنك تصدير مقاطع ملفات تعريف العملاء الموحدة إلى إعلانات LinkedIn لإنشاء مقاطع جمهور مطابقة. استخدم مقاطع الجمهور المطابقة لاستهداف الشركات واستهداف جهات الاتصال.
 
-## <a name="prerequisites"></a>المتطلبات الأساسية
+## <a name="prerequisites"></a>المتطلبات
 
--   لديك [حساب LinkedIn Campaign Manager account](https://business.linkedin.com/marketing-solutions/ads) وبيانات اعتماد مسؤول مناظرة.
--   لديك [مقاطع مُكونة](segments.md) في Customer Insights.
--   تحتوي ملفات تعريف العملاء في الشرائح التي تم تصديرها على حقل يحتوي على عنوان بريد إلكتروني.
+- [حساب LinkedIn Campaign Manager](https://business.linkedin.com/marketing-solutions/ads) وبيانات اعتماد المسؤول المقابلة.
+- [معرف حساب LinkedIn Campaign Manager](https://www.linkedin.com/help/lms/answer/a424270).
+- [مقاطع مُكونة](segments.md) في Customer Insights.
+- تحتوي ملفات تعريف العملاء الموحدة في المقاطع المصدّرة على حقل يمثل عنوان البريد الإلكتروني.
 
 ## <a name="known-limitations"></a>القيود المعروفة
 
-- يجب أن تحتوي شريحتك في Customer Insights على 300 ملف تعريف فريد على الأقل. 
-- يمكنك تصدير ما يصل إلى 100 ألف ملف تعريف عميل لكل عملية تصدير إلى إعلانات LinkedIn.
-- يقتصر التصدير إلى إعلانات LinkedIn على الشرائح.
-- يمكن أن يستغرق تصدير ما يصل إلى 100 ألف ملف تعريف عميل إلى إعلانات LinkedIn ما يصل إلى 10 دقائق حتى يكتمل. 
+- ما يصل إلى 100,000 ملف تعريف عميل لكل عملية تصدير إلى LinkedIn Ads، والتي قد تستغرق ما يصل إلى 10 دقائق حتى تكتمل.
+- المقاطع فقط. يجب أن تحتوي المقطع على 300 ملف تعريف فريد على الأقل.
 
-## <a name="set-up-the-connection-to-linkedin-ads"></a>إعداد الاتصال بإعلانات LinkedIn
+## <a name="set-up-connection-to-linkedin-ads"></a>إعداد الاتصال بـ LinkedIn Ads
+
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
 1. انتقل إلى **المسؤول** > **الاتصالات**.
 
-1. حدد **إضافة اتصال** واختر **إعلانات LinkedIn** لتكوين الاتصال.
+1. حدد **إضافة اتصال** واختر **LinkedIn Ads**.
 
 1. اعط اتصالك اسمًا يمكن التعرف عليه في حقل **الاسم المعروض**. يصف الاسم ونوع الاتصال هذا الاتصال. ننصح باختيار اسم يوضح الغرض والهدف من الاتصال.
 
-1. اختر الشخص الذي يمكنه استخدام هذا الاتصال. إذا لم تتخذ أي إجراء، فإن الإعداد الافتراضي سيكون "المسؤولون". لمزيد من المعلومات، راجع [السماح للمساهمين باستخدام اتصال للتصديرات](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. اختر الشخص الذي يمكنه استخدام هذا الاتصال. إنه المسؤول بشكل افتراضي. لمزيد من المعلومات، راجع [السماح للمساهمين باستخدام اتصال للتصديرات](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. قدم [معرف حساب LinkedIn Campaign Manager](https://www.linkedin.com/help/lms/answer/a424270).
+1. قدم معرف حساب LinkedIn Campaign Manager.
 
-1. حدد **أوافق** لتأكيد **خصوصية البيانات والتوافق‬**.
+1. راجع [خصوصية البيانات والامتثال](connections.md#data-privacy-and-compliance) وحدد **أوافق**.
 
-1. حدد **الاتصال** لبدء الاتصال بـ Campaign Monitor.
+1. حدد **اتصال** لتهيئة الاتصال.
 
 1. حدد **المصادقة مع LinkedIn** وقدم بيانات اعتماد المسؤول لـ LinkedIn Campaign Manager.
 
@@ -56,29 +57,26 @@ ms.locfileid: "9050840"
 
 ## <a name="configure-an-export"></a>تكوين تصدير
 
-يمكنك تكوين تصدير إذا كان لديك حق الوصول إلى اتصال من هذا النوع. لمزيد من المعلومات، راجع [الأذونات اللازمة لتكوين تصدير](export-destinations.md#set-up-a-new-export).
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. انتقل إلى **البيانات** > **التصديرات**.
 
-1. لإنشاء اتصال جديد، حدد **إضافة وجهة**.
+1. حدد **إضافة تصدير**.
 
-1. في حقل **الاتصال للتصدير**، اختر اتصالاً من قسم إعلانات LinkedIn. إذا لم تشاهد اسم المقطع هذا، لن تكون هناك اتصالات من هذا النوع متوفرة لك.
+1. في حقل **الاتصال للتصدير**، اختر اتصالاً من قسم إعلانات LinkedIn. اتصل بالمسؤول إذا لم يكن هناك اتصال متوفر.
 
-1. اختر ما إذا كنت تريد تصدير البيانات من أجل [استهداف جهات الاتصال](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) أو [استهداف الشركات](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting) على LinkedIn. 
+1. إدخال اسمًا للتصدير.
 
-1. في قسم **مطابقة البيانات** لاستهداف جهات الاتصال، حدد حقلًا واحدًا على الأقل يمثل عنوان البريد الإلكتروني للعميل، إعلان Apple ID أو Google Ad ID أو Google User ID أو الاسم الأول والأخير. إذا اخترت استهداف الشركة، فحدد حقلًا واحدًا على الأقل يمثل اسم الشركة أو مجال البريد الإلكتروني أو عنوان URL لصفحة LinkedIn أو رمز الأسهم أو موقع الويب. يمكن تحديد حقول إضافية لتعريف التصدير بشكل أكبر. 
+1. اختر ما إذا كنت تريد تصدير البيانات من أجل [استهداف جهات الاتصال](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) أو [استهداف الشركات](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting) على LinkedIn.
 
-1. حدد الشرائح التي تريد تصديرها. سيتم إنشاء شرائح الجمهور المطابقة في LinkedIn Campaign Manager بشكل تلقائي باسم الشرائح التي حددتها للتصدير. سينتج عن كل شريحة جمهور مطابق منفصل. 
+1. في قسم **مطابقة البيانات** لاستهداف جهات الاتصال، حدد حقلًا واحدًا على الأقل يمثل عنوان البريد الإلكتروني للعميل، إعلان Apple ID أو Google Ad ID أو Google User ID أو الاسم الأول والأخير. إذا اخترت استهداف الشركة، فحدد حقلًا واحدًا على الأقل يمثل اسم الشركة أو مجال البريد الإلكتروني أو عنوان URL لصفحة LinkedIn أو رمز الأسهم أو موقع الويب.
 
-1. حدد **حفظ**.
+1. بشكل اختياري، أضف الحقول لتعريف التصدير بشكل أكبر. حدد **إضافة سمة** لتعيين هذه الحقول.
 
-لا تعمل عملية التصدير التي يتم حفظها على التصدير في الحال.
+1. حدد المقاطع التي تريد تصديرها. سيتم إنشاء مقاطع الجمهور المطابقة في LinkedIn Campaign Manager بشكل تلقائي باسم المقاطع التي حددتها للتصدير. سينتج عن كل مقطع جمهور مطابق منفصل.
 
-يتم تشغيل عملية التصدير مع كل [تحديث مجدول](system.md#schedule-tab). يمكنك أيضًا [تصدير البيانات عند الطلب](export-destinations.md#run-exports-on-demand). 
+1. حدد **حفظ.**.
 
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
-## <a name="data-privacy-and-compliance"></a>خصوصية البيانات والتوافق
-
-عند تمكين Dynamics 365 Customer Insights لنقل البيانات إلى LinkedIn، فأنت تسمح بنقل البيانات خارج حدود الامتثال لـ Dynamics 365 Customer Insights، بما في ذلك البيانات الحساسة مثل البيانات الشخصية. ستقوم Microsoft بنقل هذه البيانات بموجب الإرشادات التي تقدمها، ولكنك مسؤول عن ضمان وفاء إعلانات LinkedIn بأي خصوصية أو التزامات أمنية قد تكون لديك. لمزيد من المعلومات، راجع [بيان خصوصية Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
-
-بإمكان مسؤول Dynamics 365 Customer Insights إزالة وجهة التصدير هذه في أي وقت لوقف استخدام هذه الوظيفة.
+[!INCLUDE [footer-include](includes/footer-banner.md)]

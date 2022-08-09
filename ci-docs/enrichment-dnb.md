@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 51f2e4e46aa25d10502d0feb5ea42eb7d2d637b9
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 71b35e4295e19c13edadc6548ac79715555e8183
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9080736"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196010"
 ---
 # <a name="enrich-company-profiles-with-dun--bradstreet-preview"></a>إثراء ملفات تعريف الشركة باستخدام Dun & Bradstreet (إصدار أولي)
 
@@ -29,7 +29,7 @@ ms.locfileid: "9080736"
 
 ## <a name="set-up-your-dun--bradstreet-project"></a>إعداد مشروع Dun & Bradstreet
 
-بصفتك مستخدمًا مرخصًا لـ Dun & Bradstreet ، يمكنك إعداد مشروع في [Dun & Bradstreet Connect](https://connect.dnb.com?lead_source=microsoft_audienceinsights).
+بصفتك مستخدمًا مرخصًا لـ Dun & Bradstreet، يمكنك إعداد مشروع في [Dun & Bradstreet Connect](https://connect.dnb.com?lead_source=microsoft_audienceinsights).
 
 1. سجّل الدخول إلى [Dun & Bradstreet Connect](https://connect.dnb.com?lead_source=microsoft_audienceinsights). لاسترداد بيانات الاعتماد، [استعادة كلمة المرور](https://sso.dnb.com/signin/forgot-password?lead_source=microsoft_audienceinsights).
 
@@ -63,7 +63,7 @@ ms.locfileid: "9080736"
 
 ### <a name="data-privacy-and-compliance"></a>خصوصية البيانات والتوافق
 
-عند تمكين Dynamics 365 Customer Insights لإرسال البيانات إلى Dun & Bradstreet، تسمح أنت بنقل البيانات خارج حدود الامتثال في Dynamics 365 Customer Insights، بما في ذلك البيانات الحساسة على الأرجح مثل البيانات الشخصية. ستقوم Microsoft بنقل هذه البيانات بناءً على التعليمات الخاصة بك ، ولكنك مسؤول عن ضمان أن يفي Dun & Bradstreet بأي التزامات تتعلق بالخصوصية أو الأمان قد تكون لديك. لمزيد من المعلومات، راجع [بيان خصوصية Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
+عند تمكين Dynamics 365 Customer Insights لإرسال البيانات إلى Dun & Bradstreet، تسمح أنت بنقل البيانات خارج حدود الامتثال في Dynamics 365 Customer Insights، بما في ذلك البيانات الحساسة على الأرجح مثل البيانات الشخصية. ستقوم Microsoft بنقل هذه البيانات بناءً على التعليمات الخاصة بك، ولكنك مسؤول عن ضمان أن يفي Dun & Bradstreet بأي التزامات تتعلق بالخصوصية أو الأمان قد تكون لديك. لمزيد من المعلومات، راجع [بيان خصوصية Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
 بإمكان مسؤول Dynamics 365 Customer Insights إزالة هذا الإثراء في أي وقت لإيقاف استخدام هذه الوظيفة.
 
 ## <a name="supported-countries-or-regions"></a>البلدان أو المناطق المدعومة
@@ -80,11 +80,11 @@ ms.locfileid: "9080736"
 
 1. راجع النظرة العامة، ثم حدد **التالي**.
 
-1. حدد الاتصال وأكده. اتصل بمسؤول إذا لم يكن أحدهم متوفرًا.
+1. حدد الاتصال وأكده. اتصل بالمسؤول إذا لم يكن هناك اتصال متوفر.
 
 1. حدد **التالي**.
 
-1. حدد **مجموعة بيانات العميل** واختر ملف التعريف أو الشريحة التي ترغب في إثرائها بواسطة بيانات الشركة من Dun & Bradstreet. يقوم كيان *العميل* بإثراء جميع ملفات تعريف عملائك في حين تثري الشريحة فقط ملفات تعريف العملاء الموجودة في تلك الشريحة.
+1. حدد **مجموعة بيانات العميل** واختر ملف التعريف أو المقطع التي ترغب في إثرائها بواسطة بيانات الشركة من Dun & Bradstreet. يقوم كيان *العميل* بإثراء جميع ملفات تعريف عملائك في حين تثري المقطع فقط ملفات تعريف العملاء الموجودة في تلك المقطع.
 
 1. حدد أنواع الحقول من ملفات التعريف الموحدة التي يجب استخدامها لمطابقة بيانات الشركة من Dun & Bradstreet. واحد على الأقل من حقول **الاسم والعنوان** أو **الهاتف** أو **البريد الإلكتروني** مطلوب
 

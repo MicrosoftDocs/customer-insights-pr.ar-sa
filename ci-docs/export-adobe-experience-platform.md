@@ -1,32 +1,32 @@
 ---
 title: التصدير إلى Adobe Experience Platform (إصدار أولي)
 description: تعرف على كيفية استخدام مقاطع Customer Insights في Adobe Experience Platform.
-ms.date: 03/29/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: c29b8264019669ffd954a298ce3a633c852477fa
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: fcb43e0956c6d1f0ef36b222dd2b718906364244
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9052495"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195274"
 ---
 # <a name="export-segments-to-adobe-experience-platform-preview"></a>التصدير إلى Adobe Experience Platform (إصدار أولي)
 
-بصفتك مستخدم Dynamics 365 Customer Insights، ربما تكون قد أنشأت شرائح لجعل حملاتك التسويقية أكثر كفاءة من خلال استهداف الجماهير ذات الصلة. لاستخدام مقطع من Customer Insights في Adobe Experience Platform وتطبيقات مثل Adobe Campaign Standard، تحتاج إلى اتباع بعض الخطوات الموضحة في هذه المقالة.
+قم بتصدير المقاطع التي تستهدف الجمهور ذي الصلة لـ Adobe Experience Platform.
 
 :::image type="content" source="media/AEP-flow.png" alt-text="مخطط العملية للخطوات الملخصة في هذه المقالة.":::
 
-## <a name="prerequisites"></a>المتطلبات الأساسية
+## <a name="prerequisites"></a>المتطلبات
 
--   ترخيص Dynamics 365 Customer Insights
--   ترخيص Adobe Experience Platform
--   ترخيص Adobe Campaign Standard
--   حساب Azure Blob Storage
+- ترخيص Adobe Experience Platform.
+- ترخيص Adobe ‏Campaign Standard.
+- اسم [حساب مساحة تخزين Azure Blob Storage](/azure/storage/blobs/create-data-lake-storage-account) ومفتاح الحساب. للعثور على الاسم والمفتاح، راجع [إدارة إعدادات حساب التخزين في مدخل Azure](/azure/storage/common/storage-account-manage).
+- [حاوية مساحة تخزين Azure Blob Storage](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
 
 ## <a name="campaign-overview"></a>نظرة عامة حول الحملة
 
@@ -38,95 +38,99 @@ ms.locfileid: "9052495"
 
 ## <a name="identify-your-target-audience"></a>تحديد الجمهور المستهدف
 
-في السيناريو الخاص بنا، نفترض أن عناوين البريد الإلكتروني للعملاء متوفرة في Customer Insights وتم تحليل تفضيلاتهم الترويجية لتحديد أعضاء الشريحة.
+في السيناريو الخاص بنا، نفترض أن عناوين البريد الإلكتروني للعملاء متوفرة في Customer Insights وتم تحليل تفضيلاتهم الترويجية لتحديد أعضاء المقطع.
 
 ويسمى [المقطع الذي حددته في Customer Insights](segments.md)باسم **ChurnProneCustomers** وأنت تخطط لإرسال الترويج عبر البريد الإلكتروني لهؤلاء العملاء.
 
-:::image type="content" source="media/churn-prone-customers-segment.png" alt-text="لقطة شاشة لصفحة الشرائح باستخدام الشريحة ChurnProneCustomers التي تم إنشاؤها.":::
+:::image type="content" source="media/churn-prone-customers-segment.png" alt-text="لقطة شاشة لصفحة المقاطع باستخدام المقطع ChurnProneCustomers التي تم إنشاؤها.":::
 
 سيحتوي العرض الذي تريد إرسال بالبريد الإلكتروني على الاسم الأول واسم العائلة وتاريخ انتهاء اشتراك العميل. كما يعلم العملاء بالتخفيض الذي سيحصلون عليه في حالة قيامهم بتجديد اشتراكهم قبل انتهاء مدته.
 
 ## <a name="export-your-target-audience"></a>تصدير الجمهور المستهدف
 
-بعد تحديد جمهورنا المستهدف، يمكننا تكوين التصدير من Customer Insights إلى حساب تخزين Azure Blob.
+سنقوم بتكوين التصدير من Customer Insights إلى حساب تخزين Azure Blob.
 
-### <a name="configure-a-connection"></a>تكوين اتصال
+### <a name="set-up-connection-to-azure-blob-storage"></a>إعداد الاتصال بـ Azure Blob Storage
+
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
 1. انتقل إلى **المسؤول** > **الاتصالات**.
 
-1. حدد **إضافة اتصال** واختر **مساحة تخزين Azure Blob** أو حدد **إعداد** في تجانب **مساحة تخزين Azure Blob** لتكوين الاتصال.
-
-   :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="الإطار المتجانب لتكوين Azure Blob Storage."::: 
+1. حدد **إضافة اتصال** واختر **Azure Blob Storage**.
 
 1. اعط اتصالك اسمًا يمكن التعرف عليه في حقل **الاسم المعروض**. يصف الاسم ونوع الاتصال هذا الاتصال. ننصح باختيار اسم يوضح الغرض والهدف من الاتصال.
 
-1. اختر الشخص الذي يمكنه استخدام هذا الاتصال. إذا لم تتخذ أي إجراء، فإن الإعداد الافتراضي سيكونالمسؤولين. لمزيد من المعلومات، راجع [السماح للمساهمين باستخدام اتصال للتصديرات](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. اختر الشخص الذي يمكنه استخدام هذا الاتصال. إنه المسؤول بشكل افتراضي. لمزيد من المعلومات، راجع [السماح للمساهمين باستخدام اتصال للتصديرات](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. أدخل **اسم الحساب**، و **مفتاح الحساب**، و **الحاوية** لحساب تخزين Blob storage حيث تريد تصدير الشريحة إليه.  
-      
-   :::image type="content" source="media/azure-blob-configuration.png" alt-text="لقطة شاشة لتكوين حساب التخزين. "::: 
-   
-    - لمعرفة المزيد حول كيفية العثور على اسم حساب مساحة تخزين اسم حساب تخزين Blob storage ومفتاح الحساب، راجع [إدارة إعدادات حساب التخزين في مدخل Azure](/azure/storage/common/storage-account-manage).
-    - لمعرفة كيفية إنشاء حاوية، راجع [إنشاء حاوية](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
+1. أدخل **اسم الحساب**، و **مفتاح الحساب**، و **الحاوية** لحساب تخزين Blob storage حيث تريد تصدير المقطع إليه.  
 
-1. حدد **حفظ** لإكمال الاتصال. 
+   :::image type="content" source="media/azure-blob-configuration.png" alt-text="لقطة شاشة لتكوين حساب التخزين. ":::
+
+1. راجع [خصوصية البيانات والامتثال](connections.md#data-privacy-and-compliance) وحدد **أوافق**.
+
+1. حدد **حفظ** لإكمال الاتصال.
 
 ### <a name="configure-an-export"></a>تكوين تصدير
 
-يمكنك تكوين هذا التصدير إذا كان لديك حق الوصول إلى اتصال من هذا النوع. لمزيد من المعلومات، راجع [الأذونات اللازمة لتكوين تصدير](export-destinations.md#set-up-a-new-export).
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. انتقل إلى **البيانات** > **التصديرات**.
 
-1. لإنشاء عملية تصدير جديدة، حدد **إضافة تصدير**.
+1. حدد **إضافة تصدير**.
 
-1. في حقل **الاتصال للتصدير**، اختر اتصالاً من قسم مساحة تخزين Azure Blob Storage, إذا لم تشاهد اسم المقطع هذا، فلا توجد اتصالات من هذا النوع متوفرة لك.
+1. في حقل **الاتصال للتصدير**، اختر اتصالاً من قسم مساحة تخزين Azure Blob Storage, اتصل بالمسؤول إذا لم يكن هناك اتصال متوفر.
 
-1. اختر الشريحة التي تريد تصديرها. في هذا المثال، هي **ChurnProneCustomers**.
+1. إدخال اسمًا للتصدير.
 
-   :::image type="content" source="media/select-segment-churnpronecustomers.png" alt-text="لقطة شاشة لواجهة مستخدم تحديد الشريحة مع تحديد الشريحة ChurnProneCustomers.":::
+1. اختر المقطع التي تريد تصديرها. في هذا المثال، هي **ChurnProneCustomers**.
 
-1. حدد **حفظ**.
+   :::image type="content" source="media/select-segment-churnpronecustomers.png" alt-text="لقطة شاشة لواجهة مستخدم تحديد المقطع مع تحديد المقطع ChurnProneCustomers.":::
 
-بعد حفظ وجهة التصدير، تجدها في **البيانات** > **عمليات التصدير**.
+1. حدد **حفظ.**.
 
-يمكنك الآن [تصدير الشريحة عند الطلب](export-destinations.md#run-exports-on-demand). سيعمل التصدير أيضًا مع كل [تحديث مجدول](system.md).
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
 > [!NOTE]
-> تأكد من أن عدد السجلات في الشريحة التي تم تصديرها يقع ضمن الحد المسموح به في ترخيص Adobe Campaign Standard.
+> تأكد من أن عدد السجلات في المقطع التي تم تصديرها يقع ضمن الحد المسموح به في ترخيص Adobe Campaign Standard.
 
-يتم تخزين البيانات المصدّرة في حاوية Azure Blob storage التي قمت بتكوينها أعلاه. يتم إنشاء مسار المجلد التالي بشكل تلقائي في حاويتك:
+يتم تخزين البيانات التي تم تصديرها في حاوية Azure Blob Storage التي قمت بتكوينها. يتم إنشاء مسارات المجلدات التالية بشكل تلقائي في حاويتك:
 
-*%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv*
+- بالنسبة للكيانات المصدر والكيانات التي تم إنشاؤها بواسطة النظام:  
 
-مثال: Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/ChurnSegmentDemo/2021/02/16/1433/ChurnProneCustomers_1.csv
+  *%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv*
 
-يقيم الملف *model.json* للكيانات المصدّرة على مستوى *%ExportDestinationName%*.
+  مثال: Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/ChurnSegmentDemo/2021/02/16/1433/ChurnProneCustomers_1.csv
 
-مثال: Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/ChurnSegmentDemo/model.json
+- يقيم الملف *model.json* للكيانات المصدّرة على مستوى *%ExportDestinationName%*.
+
+  مثال: Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/ChurnSegmentDemo/model.json
 
 ## <a name="define-experience-data-model-xdm-in-adobe-experience-platform"></a>تعريف نموذج بيانات التجربة (XDM) في Adobe Experience Platform
 
-قبل استخدام البيانات التي تم تصديرها من Customer Insights داخل Adobe Experience Platform، نحتاج إلى تحديد مخطط نموذج بيانات التجربة و[تكوين البيانات لملف تعريف العميل في الوقت الفعلي](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html#tutorials).
+قبل استخدام البيانات التي تم تصديرها من Customer Insights داخل Adobe Experience Platform، حدد مخطط نموذج بيانات التجربة و[تكوين البيانات لملف تعريف العميل في الوقت الفعلي](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html#tutorials).
 
 تعرف على [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) وافهم [أساسيات تركيب المخطط](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#schema).
 
 ## <a name="import-data-into-adobe-experience-platform"></a>استيراد البيانات في Adobe Experience Platform
 
-الآن بعد أن أصبح كل شيء في مكانه الصحيح ، نحتاج إلى استيراد بيانات الجمهور المعدة من Customer Insights إلى Adobe Experience Platform.
+استورد بيانات الجمهور المعدة من Customer Insights إلى Adobe Experience Platform.
 
-أولاً، [أنشئ اتصال مصدر Azure Blob Storage](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/blob.html#getting-started).    
+1. [أنشئ اتصال مصدر Azure Blob Storage](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/blob.html#getting-started).
 
-بعد تعريف الاتصال المصدر، [قم بتكوين تدفق البيانات](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html#ui-tutorials) لاتصال دفعة تخزين سحابي لاستيراد إخراج المقطع من Customer Insights إلى Adobe Experience Platform.
+1. [قم بتكوين تدفق البيانات](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html#ui-tutorials) لاتصال دفعة تخزين سحابي لاستيراد إخراج المقطع من Customer Insights إلى Adobe Experience Platform.
 
 ## <a name="create-an-audience-in-adobe-campaign-standard"></a>إنشاء جمهور في Adobe Campaign Standard
 
-لإرسال البريد الإلكتروني لهذه الحملة، سوف نستخدم Adobe Campaign Standard. بعد استيراد البيانات إلى Adobe Experience Platform، علينا [إنشاء جمهور](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) في Adobe Campaign Standard باستخدام البيانات في Adobe Experience Platform.
+لإرسال البريد الإلكتروني لهذه الحملة، سوف نستخدم Adobe Campaign Standard.
 
+1. [قم بإنشاء جمهور](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) في Adobe ‏Campaign Standard باستخدام البيانات الواردة في Adobe Experience Platform.
 
-تعرف على كيفية [استخدام منشئ الشرائح](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/audience-destinations/aep-using-segment-builder.html) في Adobe Campaign Standard لتعريف جمهور بالاستناد إلى البيانات الموجودة في Adobe Experience Platform.
+1. [استخدام منشئ المقاطع](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/audience-destinations/aep-using-segment-builder.html) في Adobe Campaign Standard لتعريف جمهور بالاستناد إلى البيانات الموجودة في Adobe Experience Platform.
 
 ## <a name="create-and-send-the-email-using-adobe-campaign-standard"></a>إنشاء البريد الإلكتروني وإرساله باستخدام Adobe Campaign Standard
 
 أنشئ محتوى البريد الإلكتروني، ثم [اختبر وأرسل](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/get-started-sending-messages.html#preparing-and-testing-messages) البريد الإلكتروني.
 
 :::image type="content" source="media/contoso-sample-email.jpg" alt-text="عينة بريد إلكتروني مع عرض تجديد من Adobe Campaign Standard.":::
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

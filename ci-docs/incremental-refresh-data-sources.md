@@ -11,18 +11,16 @@ manager: shellyha
 searchScope:
 - ci-system-schedule
 - customerInsights
-ms.openlocfilehash: bff27bf7fec2bcb741846ae76bb1f616f459136c
-ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
+ms.openlocfilehash: de39743eb8728fac34e417724c5f73bf44309c89
+ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9012009"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9207121"
 ---
 # <a name="incremental-refresh-for-power-query-and-azure-data-lake-data-sources"></a>التحديث التزايدي لمصادر بيانات Power Query وAzure Data Lake
 
-يناقش هذا المقال كيفية تكوين تحديث تزايدي لمصادر البيانات استنادًا إلى Power Query أو Azure Data Lake.
-
-يوفر التحديث التزايدي لمصادر البيانات المزايا التالية:
+يوفر التحديث التزايدي لمصادر البيانات على أساس Power Query أو Azure Data Lake الميزات التالية:
 
 - **عمليات التحديث السريع** - يتم تحديث البيانات التي تم تغييرها فقط. على سبيل المثال، يمكنك تحديث الأيام الخمسة الماضية فقط من مجموعة بيانات تاريخية.
 - **زيادة الموثوقية** - مع عمليات التحديث الأصغر، لن تحتاج إلى الحفاظ على الاتصالات بأنظمة المصادر المتقلبة لفترة طويلة، مما يقلل من مخاطر مشكلات الاتصال.
@@ -73,6 +71,7 @@ ms.locfileid: "9012009"
 
    1. استعرض وصولاً إلى المجلد الجذر الذي يحتوي على ملفات csv. أو parquet. للحصول على البيانات الكاملة، upserts البيانات التزايدية وdeletes البيانات التزايدية.
    1. أدخل الملحق لملفات البيانات الكاملة والملفين التزايديين (\.csv أو \.parquet).
+   1. بالنسبة لملفات csv.، حدد محدد العمود وإذا كنت تريد الصف الأول من الملف كرأس عمود.
    1. حدد **حفظ.**.
 
 1. بالنسبة إلى **آخر تحديث**، حدد سمة الطابع الزمني للتاريخ.

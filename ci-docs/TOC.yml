@@ -104,27 +104,31 @@
       href: enrichment-here.md
     - name: استيراد مخصص عبر SFTP
       href: enrichment-SFTP-custom-import.md
-- name: ملفات التعريف الموحدة
+- name: أنشطة وملفات تعريف العملاء
   items:
-    - name: مراجعة ملفات تعريف العميل الموحد
+    - name: عرض ملفات تعريف العملاء
       href: customer-profiles.md
-    - name: تصفية ملفات تعريف العميل الموحد
+    - name: إدارة فهرس البحث والتصفية
       href: search-filter-index.md
     - name: تحديد أنشطة العملاء
       href: activities.md
     - name: استخدام إدارة الموافقة
       href: consent-management.md
+    - name: استخدم بيانات الويب للتخصيص
+      href: unknown-to-known.md
 - name: Segments
   items:
-    - name: نظرة عامة على الشرائح
+    - name: نظرة عامة على المقاطع
       href: segments.md
-    - name: إنشاء شرائح
+    - name: الإنشاء باستخدام منشئ المقاطع
       href: segment-builder.md
-    - name: الشرائح المقترحة استنادا إلى القياسات
+    - name: الإنشاء باستخدام المقاطع السريعة
+      href: segment-quick.md
+    - name: المقاطع المقترحة استنادا إلى القياسات
       href: suggested-segments.md
-    - name: الشرائح المقترحة استنادًا إلى النشاط
+    - name: المقاطع المقترحة استنادًا إلى النشاط
       href: suggested-segments-activity.md
-    - name: الحصول على نتائج تحليلات الشرائح
+    - name: الحصول على نتائج تحليلات المقاطع
       href: segment-insights.md
     - name: البحث عن العملاء المتشابهين
       href: find-similar-customer-segments.md
@@ -132,9 +136,9 @@
   items:
     - name: نظرة عامة على القياسات
       href: measures.md
-    - name: إنشاء قياس جديد
+    - name: الإنشاء باستخدام منشئ القياسات
       href: measure-builder.md
-    - name: استخدم قالب قياس
+    - name: الإنشاء باستخدام القوالب
       href: measure-templates.md
 - name: التنبؤات
   items:
@@ -170,7 +174,7 @@
           href: azure-machine-learning-experiments.md
     - name: إدارة التنبؤات
       href: manage-predictions.md
-    - name: إنشاء شرائح استنادًا إلى التنبؤات
+    - name: إنشاء مقاطع استنادًا إلى التنبؤات
       href: prediction-based-segment.md
 - name: خيارات التصدير
   items:
@@ -180,6 +184,10 @@
           href: export-destinations.md
         - name: الحملة النشطة
           href: export-active-campaign.md
+        - name: Adobe Campaign Standard
+          href: export-adobe-campaign-standard.md
+        - name: Adobe Experience Platform
+          href: export-adobe-experience-platform.md
         - name: AdRoll
           href: export-adroll.md
         - name: Autopilot
@@ -190,10 +198,6 @@
           href: export-azure-data-lake-storage-gen2.md
         - name: Azure Synapse Analytics
           href: export-azure-synapse-analytics.md
-        - name: Adobe Campaign Standard
-          href: export-adobe-campaign-standard.md
-        - name: Adobe Experience Platform
-          href: export-adobe-experience-platform.md
         - name: Braze
           href: export-braze.md
         - name: Campaign Monitor
@@ -228,6 +232,8 @@
           href: export-marketo.md
         - name: Microsoft Advertising
           href: export-microsoft-advertising.md
+        - name: MoEngage
+          href: export-moengage.md
         - name: Omnisend
           href: export-omnisend.md
         - name: RollWorks

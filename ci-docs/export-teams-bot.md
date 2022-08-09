@@ -1,30 +1,27 @@
 ---
 title: روبوت Teams في Dynamics 365 Customer Insights (معاينة)
 description: ابحث عن ملفات تعريف العملاء الموحدة في Microsoft Teams بمساعدة الروبوت.
-ms.date: 10/08/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 62a0216de848b5a3a81fdd6ac078feb551fcfec6
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: d140ae72578b48091a41005c4acafe03bac540da
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9080738"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195826"
 ---
 # <a name="teams-bot-for-dynamics-365-customer-insights-preview"></a>روبوت Teams في Dynamics 365 Customer Insights (معاينة)
 
 اتصل بتطبيق Microsoft Teams لتمكين الروبوت من البحث عن ملفات تعريف العملاء الموحدة في قنوات Teams.
 
-> [!div class="mx-imgBorder"]
-> ![يعرض روبوت Teams سجل العميل.](media/teams-bot.png "روبوت Teams يعرض سجل عميل")
+:::image type="content" source="media/teams-bot.png" alt-text="روبوت Teams يعرض سجل عميل":::
 
-## <a name="prerequisites"></a>المتطلبات الأساسية
-
-لإعداد روبوت وتكوينه، يجب استيفاء المتطلبات الأساسية التالية:
+## <a name="prerequisites"></a>المتطلبات
 
 - هناك [مصدر بيانات واحد مضاف](data-sources.md) على الأقل.
 - اكتملت [عملية التوحيد](data-unification.md).
@@ -37,12 +34,12 @@ ms.locfileid: "9080738"
 
 ## <a name="configure-the-bot"></a>تكوين الروبوت
 
-1. انتقل إلى **المسؤول** > **وجهات التصدير**.
+1. انتقل إلى **المسؤول** > **الاتصالات**.
 1. على الإطار المتجانب Microsoft Teams، حدد **إعداد**.
 1. يُعاد توجيهك إلى منطقة **التطبيقات** في Teams. يمكنك أيضًا فتح Teams وتحديد **التطبيقات‏‎** في الزاوية السفلية اليسرى أو [الحصول عليها من AppSource](https://go.microsoft.com/fwlink/?linkid=2124104) مباشرةً.
 1. ابحث عن **Customer Insights** وحدد التطبيق.
 1. حدد **إضافة**.
-1. بعد تسجيل الدخول إلى Customer Insights في Teams، ستظهر لك رسالة ترحيب ويمكنك البدء.
+1. سجل دخولك إلى Customer Insights في Teams. يتم عرض رسالة ترحيب.
 
 ## <a name="things-you-can-do-with-the-bot"></a>أشياء يمكنك القيام بها مع الروبوت
 
@@ -50,11 +47,10 @@ ms.locfileid: "9080738"
 
 - ادخل **بحث** يليه اسم أو عنوان بريد إلكتروني أو اي حقل آخر على ملف تعريف العميل الموحد الذي تمت إضافته إلى فهرس البحث والتصفية.
 
-  ستحصل على بطاقة تتضمن ما يصل إلى 15 حقلاً من ملف تعريف العميل الناتج. تعيد تطابقات متعددة‬ قائمة بالنتائج حيث يمكنك تحديد ملف تعريف. يمكنك إضافة مصطلح البحث في علامات اقتباس مزدوجة للبحث عن تطابق تام.
+  ستحصل على بطاقة تتضمن ما يصل إلى 15 حقلاً من ملف تعريف العميل الناتج. تعيد تطابقات متعددة‬ قائمة بالنتائج حيث يمكنك تحديد ملف تعريف. للبحث عن تطابق تام، أضف مصطلح البحث بين علامتي اقتباس.
 
-- إذا كانت مؤسستك تحتفظ ببيئات Customer Insights متعددة في نفس المؤسسة، فيمكنك إدخال **switchinstance** لاختيار البيئة التي تريد توصيل الروبوت بها.
+- إذا كانت مؤسستك تحتفظ ببيئات Customer Insights متعددة في نفس المؤسسة، أدخل **switchinstance** لاختيار البيئة التي تريد توصيل الروبوت بها.
 
 - أدخل **تعليمات** لرؤية قائمة بالأوامر المتوفرة للروبوت.  
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

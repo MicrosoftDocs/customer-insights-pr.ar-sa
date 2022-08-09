@@ -12,12 +12,12 @@ ms.custom: intro-internal
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: 62969527ceed906ff06fb9be90b972496323ce0a
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 33c8910b7a4dd8723c0d62f2e28228cd2d8df4b7
+ms.sourcegitcommit: 5716025eb4828425ca237377b02a892de8689f4a
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9052729"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "9142803"
 ---
 # <a name="how-to-create-a-new-environment"></a>كيفية: إنشاء بيئة جديدة
 
@@ -67,7 +67,6 @@ ms.locfileid: "9052729"
 ## <a name="step-3-connect-to-microsoft-dataverse"></a>الخطوة 3: الاتصال بـ Microsoft Dataverse
 
 تتيح لك خطوة **Microsoft Dataverse** توصيل Customer Insights ببيئة Dataverse الخاصة بك. شارك البيانات مع Dataverse لاستخدامها مع تطبيقات الأعمال استنادًا إلى Dataverse، مثل Dynamics 365 Marketing أو التطبيقات التي تستند إلى النموذج في Power Apps.
-
 
 اترك هذا الحقل فارغا إذا لم تكن لديك بيئة Dataverse خاصة بك، وسنقوم بإنشاء بيئة لك.
 
@@ -131,7 +130,7 @@ ms.locfileid: "9052729"
 
 بعد تحديث مصادر البيانات، انتقل إلى **البيانات** > **توحيد**. هنا ستجد إعدادات من بيئة المصدر. قم بتحريرها حسب الحاجة أو حدد **تشغيل** لبدء عملية توحيد البيانات وإنشاء كيان العميل الموحد.
 
-عند اكتمال عملية توحيد البيانات، انتقل إلى **المقاييس** و **الشرائح** لتحديثها أيضًا.
+عند اكتمال عملية توحيد البيانات، انتقل إلى **المقاييس** و **المقاطع** لتحديثها أيضًا.
 
 قبل إعادة تنشيط عمليات التصدير والإثراءات، انتقل إلى **المسؤول** > **الاتصالات** لإعادة مصادقة الاتصالات في بيئتك الجديدة.
 

@@ -1,7 +1,7 @@
 ---
 title: استخدام بيانات Customer Insights في Microsoft Dataverse
 description: تعرف على كيفية توصيل Customer Insights وMicrosoft Dataverse وتعرف على كيانات الإخراج التي يتم تصديرها إلى Dataverse.
-ms.date: 05/30/2022
+ms.date: 07/15/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 252723b8c174cb1ec488388c26fd2a1d398e9002
-ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
+ms.openlocfilehash: 89ff629033230de3c6252b6a3a16816d9b3c1287
+ms.sourcegitcommit: 85b198de71ff2916fee5500ed7c37c823c889bbb
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9011504"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9153388"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>استخدام بيانات Customer Insights في Microsoft Dataverse
 
@@ -31,13 +31,25 @@ ms.locfileid: "9011504"
 - لا توجد بيئة Customer Insights أخرى موجودة مقترنة بالفعل ببيئة Dataverse التي تريد توصيلها. تعرف على كيفية [إزالة اتصال موجود ببيئة Dataverse](#remove-an-existing-connection-to-a-dataverse-environment).
 - بإمكان بيئة Microsoft Dataverse الاتصال بحساب تخزين واحد فقط. ينطبق هذا الأمر فقط إذا قمت بتكوين البيئة [لاستخدام Azure Data Lake Storage](own-data-lake-storage.md).
 
+## <a name="dataverse-storage-capacity-entitlement"></a>استحقاق سعة تخزين Dataverse
+
+يؤهلك اشتراك Customer Insights للحصول على سعة إضافية [لسعة تخزين Dataverse الحالية لمؤسستك](/power-platform/admin/capacity-storage). تعتمد السعة المضافة على عدد ملفات التعريف التي يستخدمها اشتراكك.
+
+**مثال:**
+
+بافتراض أنك تحصل على مساحة تخزين لقاعدة البيانات تبلغ 15 جيجا بايت وتخزين ملفات 20 جيجا بايت لكل 100000 ملف تعريف عميل. إذا كان اشتراكك يتضمن 300000 ملف تعريف عميل، فستكون سعة التخزين الإجمالية لديك 45 جيجا بايت (3 × 15 جيجا بايت) لتخزين قاعدة البيانات و60 جيجا بايت لتخزين الملفات (3 × 20 جيجا بايت). وبالمثل، إذا كان لديك اشتراك B2B بحسابات 30 ألفًا، فستكون سعة التخزين الإجمالية لديك 45 جيجا بايت (3 × 15 جيجا بايت) لتخزين قاعدة البيانات، و60 جيجا بايت لتخزين الملفات (3 × 20 جيجا بايت).
+
+سعة السجل ليست تزايدية وثابتة لمؤسستك.
+
+لمزيد من المعلومات حول استحقاقات السعة التفصيلية، راجع [دليل ترخيص Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544).
+
 ## <a name="connect-a-dataverse-environment-to-customer-insights"></a>توصيل بيئة Dataverse بـ Customer Insights
 
 تسمح لك خطوة **Microsoft Dataverse** بتوصيل Customer Insights ببيئتك في Dataverse أثناء [إنشاء بيئة Customer Insights](create-environment.md).
 
 :::image type="content" source="media/dataverse-provisioning.png" alt-text="تمكين مشاركة البيانات مع Microsoft Dataverse بشكل تلقائي للبيئات الجديدة الصافية.":::
 
-يمكن للمسؤولين تكوين Customer Insights لتوصيل بيئة Dataverse موجودة. ومن خلال توفير عنوان URL لبيئة Dataverse، يتم إرفاقه ببيئة Customer Insights الجديدة الخاصة بهم.
+يمكن للمسؤولين تكوين Customer Insights لتوصيل بيئة Dataverse موجودة. ومن خلال توفير عنوان URL لبيئة Dataverse، يتم ربطه ببيئة Customer Insights الجديدة الخاصة بهم. بعد إنشاء الاتصال بين Customer Insights وDataverse، لا تقم بتغيير اسم المؤسسة لبيئة Dataverse. يتم استخدام اسم المؤسسة في عنوان URL لـ Dataverse ويقطع الاسم الذي تم تغييره الاتصال بـ Customer Insights.
 
 إذا كنت لا تريد استخدام بيئة Dataverse موجودة، فيقوم النظام بإنشاء بيئة جديدة لبيانات Customer Insights في المستأجر. بإمكان مسؤولي [Power Platform التحكم في اختيار الأشخاص الذين يمكنهم إنشاء البيئات](/power-platform/admin/control-environment-creation). عندما تقوم بإعداد بيئة Customer Insights جديدة وقام المسؤول بتعطيل إنشاء بيئات Dataverse لكل شخص باستثناء المسؤولين، فقد لا تتمكن من إنشاء بيئة جديدة.
 

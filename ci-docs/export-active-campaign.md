@@ -1,51 +1,54 @@
 ---
-title: تصدير الشرائح إلى ActiveCampaign
+title: تصدير المقاطع إلى ActiveCampaign
 description: تعرف على كيفية تهيئة الاتصال والتصدير إلى ActiveCampaign.
-ms.date: 10/08/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: eb6f2bb69bb30c319e17390562b3f33512f33ff1
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 178d2df8edf1abcec72664e19d73a88f2b97f12d
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9054692"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195550"
 ---
-# <a name="export-segments-to-activecampaign-preview"></a>تصدير شرائح إلى ActiveCampaign (معاينة)
+# <a name="export-segments-to-activecampaign-preview"></a>تصدير مقاطع إلى ActiveCampaign (معاينة)
 
-قم بتصدير شرائح من ملفات تعريف العملاء الموحدين إلى ActiveCampaign واستخدامها في أنشطة التسويق.
+قم بتصدير مقاطع من ملفات تعريف العملاء الموحدين إلى ActiveCampaign واستخدامها في أنشطة التسويق.
 
-## <a name="prerequisites"></a>المتطلبات الأساسية
+## <a name="prerequisites"></a>المتطلبات
 
-- لديك [حساب ActiveCampaign](https://www.activecampaign.com/) وبيانات اعتماد المسؤول المقابلة.
-- لديك [مقاطع مُكونة](segments.md) في Customer Insights.
-- تحتوي ملفات تعريف العملاء الموحدة في الشرائح التي تم تصديرها على حقل يحتوي على عنوان بريد إلكتروني.
+- [حساب ActiveCampaign](https://www.activecampaign.com/) وبيانات اعتماد المسؤول المقابلة.
+- [معرف قائمة ActiveCampaign](https://help.activecampaign.com/hc/articles/360000030559-How-to-create-a-list-in-ActiveCampaign).
+- [مفتاح ActiveCampaign API](https://help.activecampaign.com/hc/articles/207317590-Getting-started-with-the-API#how-to-obtain-your-activecampaign-api-url-and-key) واسم مضيف نقطة نهاية REST.
+- [مقاطع مُكونة](segments.md) في Customer Insights.
+- تحتوي ملفات تعريف العملاء الموحدة في المقاطع المصدّرة على حقل يمثل عنوان البريد الإلكتروني.
 
 ## <a name="known-limitations"></a>القيود المعروفة
 
-- يمكنك تصدير ما يصل إلى مليون ملف تعريف عميل لكل عملية تصدير إلى ActiveCampaign ويمكن أن يستغرق الأمر ما يصل إلى 90 دقيقة حتى يكتمل.
-- يقتصر التصدير إلى ActiveCampaign على الشرائح.
-- يعتمد عدد ملفات تعريف العملاء التي يمكنك تصديرها إلى ActiveCampaign على عقدك مع ActiveCampaign.
+- ما يصل إلى مليون ملف تعريف عميل لكل عملية تصدير إلى ActiveCampaign، والتي قد تستغرق ما يصل إلى 90 دقيقة حتى تكتمل. يعتمد عدد ملفات تعريف العملاء التي يمكنك تصديرها إلى ActiveCampaign على عقدك مع ActiveCampaign.
+- المقاطع فقط.
 
 ## <a name="set-up-connection-to-activecampaign"></a>إعداد اتصال بـ ActiveCampaign
 
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
+
 1. انتقل إلى **المسؤول** > **الاتصالات**.
 
-1. حدد **إضافة اتصال** واختر **ActiveCampaign** لتكوين الاتصال.
+1. حدد **إضافة اتصال** واختر **ActiveCampaign**.
 
 1. اعط اتصالك اسمًا يمكن التعرف عليه في حقل **الاسم المعروض**. يصف الاسم ونوع الاتصال هذا الاتصال. ننصح باختيار اسم يوضح الغرض والهدف من الاتصال.
 
 1. اختر الشخص الذي يمكنه استخدام هذا الاتصال. إنه المسؤول بشكل افتراضي. لمزيد من المعلومات، راجع [السماح للمساهمين باستخدام اتصال للتصديرات](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. أدخل [مفتاح ActiveCampaign API واسم المضيف لنقطة نهاية REST](https://help.activecampaign.com/hc/articles/207317590-Getting-started-with-the-API#how-to-obtain-your-activecampaign-api-url-and-key). اسم المضيف نقطة النهاية REST هو اسم المضيف فقط، بدون https://. 
+1. أدخل مفتاح ActiveCampaign API واسم المضيف لنقطة نهاية REST. اسم المضيف نقطة النهاية REST هو اسم المضيف فقط، بدون https://.
 
-1. حدد **أوافق** لتأكيد **خصوصية البيانات والتوافق‬**.
+1. راجع [خصوصية البيانات والامتثال](connections.md#data-privacy-and-compliance) وحدد **أوافق**.
 
-1. حدد **اتصال** لتهيئة الاتصال بـ ActiveCampaign.
+1. حدد **اتصال** لتهيئة الاتصال.
 
 1. حدد **إضافة نفسك كمستخدم تصدير** ووفر بيانات اعتماد Customer Insights.
 
@@ -53,27 +56,26 @@ ms.locfileid: "9054692"
 
 ## <a name="configure-an-export"></a>تكوين تصدير
 
-يمكنك تكوين تصدير إذا كان لديك حق الوصول إلى اتصال من هذا النوع. لمزيد من المعلومات، راجع [الأذونات اللازمة لتكوين تصدير](export-destinations.md#set-up-a-new-export).
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. انتقل إلى **البيانات** > **التصديرات**.
 
-1. لإنشاء اتصال جديد، حدد **إضافة وجهة**.
+1. حدد **إضافة تصدير**.
 
-1. في حقل **اتصال للتصدير**، اختر اتصالا من قسم ActiveCampaign. إذا لم تشاهد اسم المقطع هذا، لن تكون هناك اتصالات من هذا النوع متوفرة لك.
+1. في حقل **اتصال للتصدير**، اختر اتصالا من قسم ActiveCampaign. اتصل بالمسؤول إذا لم يكن هناك اتصال متوفر.
 
-1. أدخل [**معرف قائمة ActiveCampaign**](https://help.activecampaign.com/hc/articles/360000030559-How-to-create-a-list-in-ActiveCampaign).    
+1. إدخال اسمًا للتصدير.
 
-1. في قسم **مطابقة البيانات** في حقل **البريد الإلكتروني**، حدد الحقل الذي يمثل عنوان البريد الإلكتروني للعميل. مطلوب لتصدير الشرائح إلى ActiveCampaign. بشكل اختياري، يمكنك تصدير الاسم الأول، واسم العائلة، والهاتف لإنشاء المزيد من رسائل البريد الإلكتروني المخصصة. حدد إضافة سمة لتعيين هذه الحقول.
+1. أدخل **معرف قائمة ActiveCampaign**.
 
-1. حدد **حفظ**.
+1. في قسم **مطابقة البيانات** في حقل **البريد الإلكتروني**، حدد الحقل الذي يمثل عنوان البريد الإلكتروني للعميل.
 
-لا تعمل عملية التصدير التي يتم حفظها على التصدير في الحال.
+1. بشكل اختياري، قم بتصدير **الاسم الأول**، و **اسم العائلة**، و **الهاتف**  لإنشاء المزيد من رسائل البريد الإلكتروني المخصصة. حدد **إضافة سمة** لتعيين هذه الحقول.
 
-يتم تشغيل عملية التصدير مع كل [تحديث مجدول](system.md#schedule-tab). يمكنك أيضًا [تصدير البيانات عند الطلب](export-destinations.md#run-exports-on-demand). 
+1. حدد المقاطع التي تريد تصديرها.
 
+1. حدد **حفظ.**.
 
-## <a name="data-privacy-and-compliance"></a>خصوصية البيانات والتوافق
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
-عندما تقوم بتمكين Dynamics 365 Customer Insights لنقل البيانات إلى ActiveCampaign، يمكنك السماح بنقل البيانات خارج حدود التوافق ل Dynamics 365 Customer Insights، بما في ذلك البيانات التي قد تكون حساسة مثل البيانات الشخصية. ستقوم Microsoft بنقل هذه البيانات في الإرشادات التي تقدمها، ولكنك مسؤول عن ضمان وفاء ActiveCampaign بأية خصوصية أو واجبات أمنية قد تكون لديك. لمزيد من المعلومات، راجع [بيان خصوصية Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
-
-بإمكان مسؤول Dynamics 365 Customer Insights إزالة وجهة التصدير هذه في أي وقت لإيقاف استخدام هذه الوظيفة.
+[!INCLUDE [footer-include](includes/footer-banner.md)]

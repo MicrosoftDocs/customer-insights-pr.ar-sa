@@ -1,19 +1,19 @@
 ---
 title: تصدير المقاطع إلى Braze (إصدار أولي)
 description: تعرف على كيفية تكوين الاتصال والتصدير إلى Braze.
-ms.date: 06/29/2022
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 314a61f82c4040a8dbd6dff1dd5d92e20464f82a
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 84dc7f13f30e0334d431fe5b5866c7f87e82ab27
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9080742"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195091"
 ---
 # <a name="export-segments-to-braze-preview"></a>تصدير المقاطع إلى Braze (إصدار أولي)
 
@@ -22,31 +22,32 @@ ms.locfileid: "9080742"
 ## <a name="prerequisites"></a>المتطلبات
 
 - [حساب Braze](https://www.braze.com/) وبيانات اعتماد المسؤول المطابقة.
-- [المقاطع الموجودة في Braze](https://www.braze.com/docs/user_guide/engagement_tools/segments/creating_a_segment/).
+- [مفتاح Braze API](https://www.braze.com/docs/api/basics/)
 - [مقاطع مُكونة](segments.md) في Customer Insights.
 - تحتوي Unified customer profiles في المقاطع التي تم تصديرها على حقل يمثل عنوان بريد إلكتروني ومعرف عميل Braze.
 
 ## <a name="known-limitations"></a>القيود المعروفة
 
-- يقتصر التصدير إلى Braze على المقاطع.
-- يمكن أن يستغرق تصدير ما يصل إلى مليون ملف تعريف عميل إلى Braze ما يصل إلى 40 دقيقة حتى يكتمل.
-- يعتمد عدد ملفات تعريف العملاء التي يمكنك تصديرها إلى Braze ومحدودًا على عقدك مع Braze.
+- ما يصل إلى مليون ملف تعريف عميل لـ Braze، والتي يمكن أن تستغرق ما يصل إلى 40 دقيقة لإكمالها. يعتمد عدد ملفات تعريف العملاء التي يمكنك تصديرها إلى Braze على عقدك مع Braze.
+- المقاطع فقط.
 
 ## <a name="set-up-connection-to-braze"></a>إعداد اتصال بـ Braze
 
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
+
 1. انتقل إلى **المسؤول** > **الاتصالات**.
 
-1. حدد **"إضافة اتصال** واختر **Braze** لتكوين الاتصال.
+1. حدد **إضافة اتصال** واختر **Braze**.
 
 1. اعط اتصالك اسمًا يمكن التعرف عليه في حقل **الاسم المعروض**. يصف الاسم ونوع الاتصال هذا الاتصال. ننصح باختيار اسم يوضح الغرض والهدف من الاتصال.
 
-1. اختر الشخص الذي يمكنه استخدام هذا الاتصال. إذا لم تتخذ أي إجراء، فإن الإعداد الافتراضي سيكونالمسؤولين. لمزيد من المعلومات، راجع [السماح للمساهمين باستخدام اتصال للتصديرات](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. اختر الشخص الذي يمكنه استخدام هذا الاتصال. إنه المسؤول بشكل افتراضي. لمزيد من المعلومات، راجع [السماح للمساهمين باستخدام اتصال للتصديرات](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. قم بتوفير [مفتاح Braze API](https://www.braze.com/docs/api/basics/) للمتابعة لتسجيل الدخول.
+1. قم بتوفير مفتاح Braze API للمتابعة لتسجيل الدخول.
 
-1. حدد **أوافق** لتأكيد **خصوصية البيانات والتوافق‬**.
+1. راجع [خصوصية البيانات والامتثال](connections.md#data-privacy-and-compliance) وحدد **أوافق**.
 
-1. حدد **اتصال** لبدء الاتصال بـ Braze.
+1. حدد **اتصال** لتهيئة الاتصال.
 
 1. حدد **إضافة نفسك كمستخدم تصدير** ووفر بيانات اعتماد Customer Insights.
 
@@ -54,29 +55,22 @@ ms.locfileid: "9080742"
 
 ## <a name="configure-an-export"></a>تكوين تصدير
 
-يمكنك تكوين هذا التصدير إذا كان لديك حق الوصول إلى اتصال من هذا النوع. لمزيد من المعلومات، راجع [الأذونات اللازمة لتكوين تصدير](export-destinations.md#set-up-a-new-export).
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. انتقل إلى **البيانات** > **التصديرات**.
 
-1. لإنشاء اتصال جديد، حدد **إضافة وجهة**.
+1. حدد **إضافة تصدير**.
 
-1. في حقل **الاتصال للتصدير**، اختر اتصالاً من قسم Braze. إذا لم تشاهد هذا القسم، فلا توجد اتصالات من هذا النوع متوفرة لك.  
+1. في حقل **الاتصال للتصدير**، اختر اتصالاً من قسم Braze. اتصل بالمسؤول إذا لم يكن هناك اتصال متوفر.
 
-1. أضف **اسم عرض** للتصدير الخاص بك.
+1. إدخال اسمًا للتصدير.
 
-1. أضف معرف API لمقطع Braze الذي ترغب في تصديره في الحقل **Azure Blob Storage**. يمكنك العثور على المعرف في تفاصيل المقطع على النظام الأساسي Braze.
+1. في قسم **مطابقة البيانات** في حقل **البريد الإلكتروني**، حدد الحقل الذي يمثل عنوان البريد الإلكتروني للعميل. في الحقل **معرف العميل**، حدد الحقل الذي يمثل معرف Braze للعميل. سيتم إنشاء المقاطع في Braze بنفس اسم المقطع كما في Dynamics 365 Customer Insights. يمكنك اختيار حقول إضافية اختيارية لمطابقة البيانات.
 
-1. في قسم **مطابقة البيانات** في حقل **البريد الإلكتروني**، حدد الحقل الذي يمثل عنوان البريد الإلكتروني للعميل. في الحقل **معرف العميل**، حدد الحقل الذي يمثل معرف Braze للعميل. يلزم تصدير مقاطع إلى Braze. يمكنك اختيار المزيد من الحقول بشكل اختياري.
+1. حدد الكيانات أو المقاطع التي تريد تصديرها.
 
 1. حدد **حفظ.**.
 
-لا تعمل عملية التصدير التي يتم حفظها على التصدير في الحال.
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
-يتم تشغيل عملية التصدير مع كل [تحديث مجدول](system.md#schedule-tab). يمكنك أيضًا [تصدير البيانات عند الطلب](export-destinations.md#run-exports-on-demand). 
-
-
-## <a name="data-privacy-and-compliance"></a>خصوصية البيانات والتوافق
-
-عند تمكين Dynamics 365 Customer Insights لإرسال البيانات إلى Braze، تسمح أنت بنقل البيانات خارج حدود الامتثال في Dynamics 365 Customer Insights، بما في ذلك البيانات الحساسة على الأرجح مثل البيانات الشخصية. ستقوم Microsoft بنقل هذه البيانات بناءً على التعليمات الخاصة بك ، ولكنك مسؤول عن ضمان أن يفي Braze بأي التزامات تتعلق بالخصوصية أو الأمان قد تكون لديك. لمزيد من المعلومات، راجع [بيان خصوصية Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
-
-بإمكان مسؤول Dynamics 365 Customer Insights إزالة وجهة التصدير هذه في أي وقت لإيقاف استخدام هذه الوظيفة.
+[!INCLUDE [footer-include](includes/footer-banner.md)]

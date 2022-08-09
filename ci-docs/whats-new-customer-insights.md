@@ -1,19 +1,19 @@
 ---
 title: الجديد في Dynamics 365 Customer Insights
 description: معلومات حول الميزات والتحسينات وإصلاحات الأخطاء الجديدة.
-ms.date: 06/02/2022
+ms.date: 06/30/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: 4b5b95d1774d22827b3c08c2b6ccbb7858f1b04b
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: f3ae0fe6631ee7c8d79664528be383ec53e93fe8
+ms.sourcegitcommit: 92e5a798ca75c7f10aa5025a9bbd2ffb4d4ae7d2
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9054002"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "9114230"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>الجديد في Dynamics 365 Customer Insights
 
@@ -23,6 +23,34 @@ ms.locfileid: "9054002"
 
 > [!TIP]
 > لإرسال طلبات الميزات واقتراحات حول المنتجات والتصويت عليها، انتقل إلى [مدخل أفكار تطبيق Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="june-2022-updates"></a>تحديثات يونيه 2022
+
+تتضمن التحديثات في يونيو 2022 ميزات جديدة وترقيات للأداء وإصلاحات للأخطاء.
+
+### <a name="updated-user-experience-for-data-sources-and-data-ingestion"></a>تجربة مستخدم محدثة لمصادر البيانات واستيعاب البيانات
+
+يُعد استيراد البيانات من مجموعة كبيرة من مصادر البيانات هو الأساس لتوحيد بيانات العميل في Dynamics 365 Customer Insights. لقد راجعنا تجربة المستخدم لاستيراد وتوصيل مصادر البيانات. يهدف هذا التحديث إلى تسهيل إدخال البيانات إلى Customer Insights.
+
+للحصول على مزيد من المعلومات، راجع [نظرة عامة على مصادر البيانات](data-sources.md).
+
+### <a name="export-to-inmobi"></a>تصدير إلى InMobi
+
+يساعد InMobi العلامات التجارية في فهم المستهلكين وتحديدهم والتفاعل معهم واكتسابهم. يمكنك تصدير المقاطع والبيانات الأخرى إلى خدمة InMobi عبر حسابات تخزين Azure Blob.
+
+لمزيد من المعلومات، راجع [تصدير إلى InMobi (إصدار أولي)](export-inmobi.md).
+
+### <a name="lockbox-support-in-customer-insights"></a>دعم Lockbox في Customer Insights
+
+يوفر مربع تأمين العميل واجهة لمراجعة طلبات الوصول إلى البيانات (أو رفضها) والموافقة عليها. تحدث هذه الطلبات عندما يكون الوصول إلى بيانات العميل مطلوبًا لحل حالة دعم.
+
+لمزيد من المعلومات، راجع [الوصول الآمن إلى بيانات العميل باستخدام مربع تأمين العميل (إصدار أولي)](security-overview.md#securely-access-customer-data-with-customer-lockbox-preview).
+
+### <a name="connect-to-your-data-using-azure-private-link"></a>الاتصال ببياناتك باستخدام Azure Private Link
+
+يسمح Azure Private Link لـ Customer Insights بالاتصال بحسابك في Azure Data Lake Storage عبر نقطة نهاية خاصة في شبكتك الظاهرية. فيما يتعلق بالبيانات الموجودة في حساب تخزين، لا يظهر على الإنترنت العام، يمكّن الارتباط الخاص الاتصال بهذه الشبكة المقيدة.
+
+لمزيد من المعلومات، راجع [استخدام الارتباط الخاص في Customer Insights](security-overview.md#private-links-tab).
 
 ## <a name="may-2022-updates"></a>تحديثات مايو 2022
 
@@ -36,19 +64,19 @@ ms.locfileid: "9054002"
 
 ### <a name="refreshed-home-page-in-customer-insights"></a>الصفحة الرئيسية المحدثة في Customer Insights
 
-ترشدك الصفحة **الرئيسية** عبر عملية التكوين للميزات الرئيسية وتوفر نظرة عامة على الشرائح والمقاييس والإثراء البيانات. لقد قمنا بتحديث التجربة لتوفير معلومات أكثر صلة بلمحة واحدة.
+ترشدك الصفحة **الرئيسية** عبر عملية التكوين للميزات الرئيسية وتوفر نظرة عامة على المقاطع والمقاييس والإثراء البيانات. لقد قمنا بتحديث التجربة لتوفير معلومات أكثر صلة بلمحة واحدة.
 
 لمزيد من المعلومات، راجع [استكشاف Customer Insights](home.md).
 
-### <a name="track-usage-of-a-segment"></a>تعقب استخدام شريحة
+### <a name="track-usage-of-a-segment"></a>تعقب استخدام مقطع
 
-يمكنك الآن [تعقب استخدام شريجة](segments.md#track-usage-of-a-segment) في التطبيقات التي تستند إلى مؤسسة Dataverse المتصلة بـ Customer Insights. بالنسبة إلى [شرائح Customer Insights المستخدمة في رحلات العميل في Dynamics 365 Marketing](/dynamics365/marketing/real-time-marketing-ci-profile)، يطلعك النظام على استخدام هذه الشرائح.
+يمكنك الآن [تعقب استخدام شريجة](segments.md#track-usage-of-a-segment) في التطبيقات التي تستند إلى مؤسسة Dataverse المتصلة بـ Customer Insights. بالنسبة إلى [مقاطع Customer Insights المستخدمة في رحلات العميل في Dynamics 365 Marketing](/dynamics365/marketing/real-time-marketing-ci-profile)، يطلعك النظام على استخدام هذه المقاطع.
 
 ### <a name="export-to-criteo"></a>تصدير إلى Criteo
 
-إن Criteo عبارة عن نظام أساسي على الإنترنت يساعد المستخدمين في إدارة الإعلانات الرقمية. يمكنك الآن تصدير شرائح من ملفات تعريف العملاء الموحدة لإنشاء الحملات، وتقديم حملات التسويق عبر البريد الإلكتروني واستخدام مجموعات محددة من العملاء مع Criteo.
+إن Criteo عبارة عن نظام أساسي على الإنترنت يساعد المستخدمين في إدارة الإعلانات الرقمية. يمكنك الآن تصدير مقاطع من ملفات تعريف العملاء الموحدة لإنشاء الحملات، وتقديم حملات التسويق عبر البريد الإلكتروني واستخدام مجموعات محددة من العملاء مع Criteo.
 
-لمزيد من المعلومات، راجع [تصدير الشرائح إلى Criteo (إصدار أولي)](export-criteo.md).
+لمزيد من المعلومات، راجع [تصدير المقاطع إلى Criteo (إصدار أولي)](export-criteo.md).
 
 ### <a name="refined-documentation-structure-for-environment-creation"></a>بنية وثائق محسنة لإنشاء البيئة
 
@@ -88,9 +116,9 @@ ms.locfileid: "9054002"
 
 لمزيد من المعلومات، راجع [‏‫إثراء ملفات تعريف العملاء ببيانات الهوية من LiveRamp (إصدار أولي)‬](enrichment-liveramp.md).
 
-### <a name="organize-segments-and-measures-with-tags-and-filters"></a>تنظيم الشرائح و القياسات باستخدام العلامات و عوامل التصفية
+### <a name="organize-segments-and-measures-with-tags-and-filters"></a>تنظيم المقاطع و القياسات باستخدام العلامات و عوامل التصفية
 
-إذا كانت مؤسستك تحتفظ بالكثير من الشرائح أو القياسات، فإن العثور على الجزء الصحيح قد يمثل تحديًا في بعض الأحيان. تتيح لك هذه الميزة الجديدة تنظيم القوائم باستخدام العلامات والأعمدة. وهي تساعدك في العثور على البيانات بسرعة وسهولة وتخصيص طرق العرض.
+إذا كانت مؤسستك تحتفظ بالكثير من المقاطع أو القياسات، فإن العثور على الجزء الصحيح قد يمثل تحديًا في بعض الأحيان. تتيح لك هذه الميزة الجديدة تنظيم القوائم باستخدام العلامات والأعمدة. وهي تساعدك في العثور على البيانات بسرعة وسهولة وتخصيص طرق العرض.
 
 لمزيد من المعلومات، راجع [العمل مع العلامات والأعمدة](work-with-tags-columns.md).
 
@@ -103,9 +131,9 @@ ms.locfileid: "9054002"
 
 ### <a name="new-export-destinations-iterable-and-braze"></a>الوجهات الجديدة للتصدير: Iterable وBraze
 
-نحن نواصل توسيع نطاق نظامنا البيئي لوجهات التصدير من خلال اتصالات جديدة. يمكنك الآن تصدير الشرائح إلى Iterable وBraze لاستخدام خدمات التنشيط الخاصة بهم.
+نحن نواصل توسيع نطاق نظامنا البيئي لوجهات التصدير من خلال اتصالات جديدة. يمكنك الآن تصدير المقاطع إلى Iterable وBraze لاستخدام خدمات التنشيط الخاصة بهم.
 
-لمزيد من المعلومات، راجع [تصدير الشرائح إلى Iterable (إصدار أولي)](export-iterable.md) و[تصدير الشرائح إلى Braze (إصدار أولي)](export-braze.md).
+لمزيد من المعلومات، راجع [تصدير المقاطع إلى Iterable (إصدار أولي)](export-iterable.md) و[تصدير المقاطع إلى Braze (إصدار أولي)](export-braze.md).
 
 ### <a name="improvements-to-marketo-and-google-ads-export"></a>التحسينات التي تم إدخالها على تصدير Marketo وGoogle Ads
 
