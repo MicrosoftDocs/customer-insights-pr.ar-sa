@@ -12,12 +12,12 @@ searchScope:
 - ci-create-data-source
 - ci-attach-cdm
 - customerInsights
-ms.openlocfilehash: e071bf9364b44a92d81c9ff2269ff4e8654010aa
-ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
+ms.openlocfilehash: b237c291bb4dd22ca22ab2cdd8b6293490aa83e1
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9206983"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245761"
 ---
 # <a name="connect-to-data-in-azure-data-lake-storage"></a>الاتصال بالبيانات في Azure Data Lake Storage
 
@@ -56,8 +56,8 @@ ms.locfileid: "9206983"
 
 1. حدد أحد الخيارات التالية **لتوصيل مساحة التخزين باستخدام** لمزيد من المعلومات، راجع [توصيل Customer Insights بحساب Azure Data Lake Storage Gen2 باستخدام كيان خدمة Azure](connect-service-principal.md).
 
-   - **مورد Azure**: أدخل **معرف المورد**. بشكل اختياري، إذا أردت استيعاب البيانات من حساب تخزين عبر Azure Private Link، فحدد **تمكين الارتباط الخاص**. لمزيد من المعلومات، راجع [الارتباطات الخاصة](security-overview.md#private-links-tab).
-   - **اشتراك Azure**: حدد **الاشتراك** ثم **مجموعة الموارد** و **حساب التخزين**. بشكل اختياري، إذا أردت استيعاب البيانات من حساب تخزين عبر Azure Private Link، فحدد **تمكين الارتباط الخاص**. لمزيد من المعلومات، راجع [الارتباطات الخاصة](security-overview.md#private-links-tab).
+   - **مورد Azure**: أدخل **معرف المورد**. بشكل اختياري، إذا أردت استيعاب البيانات من حساب تخزين عبر Azure Private Link، فحدد **تمكين الارتباط الخاص**. لمزيد من المعلومات، راجع [الارتباطات الخاصة](security-overview.md#set-up-an-azure-private-link).
+   - **اشتراك Azure**: حدد **الاشتراك** ثم **مجموعة الموارد** و **حساب التخزين**. بشكل اختياري، إذا أردت استيعاب البيانات من حساب تخزين عبر Azure Private Link، فحدد **تمكين الارتباط الخاص**. لمزيد من المعلومات، راجع [الارتباطات الخاصة](security-overview.md#set-up-an-azure-private-link).
   
    > [!NOTE]
    > أنت تحتاج إلى أحد الأدوار التالية للحاوية أو حساب التخزين لإنشاء مصدر البيانات:
@@ -176,7 +176,7 @@ ms.locfileid: "9206983"
         > - مالك بيانات مخزن البيانات الثنائية الكبيرة
         > - المساهم في بيانات مخزن البيانات الثنائية الكبيرة
 
-   - **تمكين الارتباط الخاص** إذا أردت استيعاب البيانات من حساب تخزين عبر Azure Private Link. لمزيد من المعلومات، راجع [الارتباطات الخاصة](security-overview.md#private-links-tab).
+   - **تمكين الارتباط الخاص** إذا أردت استيعاب البيانات من حساب تخزين عبر Azure Private Link. لمزيد من المعلومات، راجع [الارتباطات الخاصة](security-overview.md#set-up-an-azure-private-link).
 
 1. حدد **التالي**.
 1. قم بتغيير أي مما يلي:

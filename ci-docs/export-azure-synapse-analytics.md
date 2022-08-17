@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: f9c9ee55f2874ae1dcaf82f2ff17ed0fbbb7804d
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 0e953cfff12df433d033717d58b28c2834468916
+ms.sourcegitcommit: 086f75136132d561cd78a4c2cb1e1933e2301f32
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196378"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "9259828"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>تصدير البيانات إلى Azure Synapse Analytics (إصدار أولي)
 
@@ -24,7 +24,7 @@ Azure Synapse iهو خدمة تحليلات تعمل على تسريع وقت ا
 > [!NOTE]
 > تأكد من تعيين جميع **تعيينات الدور** كما هو موضح.
 
-- في Customer Insights، يجب أن يشتمل حساب مستخدم Azure Active Directory (AD) الخاص بك على [دور المسؤول](permissions.md#assign-roles-and-permissions).
+- في Customer Insights، يجب أن يشتمل حساب مستخدم Azure Active Directory (AD) الخاص بك على [دور المسؤول](permissions.md#add-users).
 
 في Azure:
 
@@ -39,6 +39,8 @@ Azure Synapse iهو خدمة تحليلات تعمل على تسريع وقت ا
 - تتضمن *[الهوية المدارة بواسطة Azure Synapse ‏workspace](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* أذونات **مساهم بيانات مخزن البيانات الثنائية الكبيرة** في حساب Azure Data Lake Storage ‏Gen2 في المكان الذي توجد فيه البيانات وترتبط بـ Azure Synapse ‏workspace. تعلم المزيد حول [استخدام مدخل Azure لتعيين دور Azure للوصول إلى بيانات الكائن الثنائي كبير الحجم والصف](/azure/storage/common/storage-auth-aad-rbac-portal) و[أذونات مساهم بيانات مخزن البيانات الثنائية الكبيرة](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
 - في Azure Synapse ‏workspace، إن *مدير الخدمة في Customer Insights* تم تعيين دور **مسؤول Synapse** [له](/azure/synapse-analytics/security/how-to-set-up-access-control).
+
+- إذا كانت بيئة Customer Insights [تخزن Azure Data Lake Storage](own-data-lake-storage.md)، المستخدم الذي يقوم بإعداد الاتصال إلى Azure Synapse Analytics يحتاج على الأقل المدمج في **القارئ** دور في حساب Data Lake Storage. لمزيد من المعلومات، راجع [تعيين أدوار Azure باستخدام مدخل Azure](/azure/role-based-access-control/role-assignments-portal).
 
 ## <a name="set-up-connection-to-azure-synapse"></a>إعداد اتصال بـ Azure Synapse
 

@@ -1,7 +1,7 @@
 ---
-title: إعادة توجيه السجل في Dynamics 365 Customer Insights باستخدام Azure Monitor (إصدار أولي)
+title: تصدير سجلات التشخيص (معاينة)
 description: تعرّف على كيفية إرسال السجلات إلى Microsoft Azure Monitor.
-ms.date: 12/14/2021
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: article
@@ -11,71 +11,92 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 8c72df7054a682244215bbee54968d6aef4bbf59
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 60b039173fd938482c782c7394420d4951c222a7
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9052637"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245909"
 ---
-# <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>إعادة توجيه السجل في Dynamics 365 Customer Insights باستخدام Azure Monitor (إصدار أولي)
+# <a name="export-diagnostic-logs-preview"></a>تصدير سجلات التشخيص (معاينة)
 
-توفر Dynamics 365 Customer Insights تكاملاً مباشرًا مع Azure Monitor. تسمح لك سجلات موارد Azure Monitor بمراقبة وإرسال السجلات إلى [Azure Storage](https://azure.microsoft.com/services/storage/)، أو [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview)، أو دفقها إلى [مراكز أحداث Azure](https://azure.microsoft.com/services/event-hubs/).
+سجلات إعادة التوجيه من Customer Insights باستخدام Azure Monitor. تسمح لك سجلات موارد Azure Monitor بمراقبة وإرسال السجلات إلى [Azure Storage](https://azure.microsoft.com/services/storage/)، أو [Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview)، أو دفقها إلى [مراكز أحداث Azure](https://azure.microsoft.com/services/event-hubs/).
 
-تقوم Customer Insights بإرسال سجلات الأحداث التالية:
+يرسل Customer Insights سجلات الأحداث التالية:
 
 - **أحداث التدقيق**
-  - **APIEvent** - يتيح إمكانية تعقب التغييرات الذي يتم عبر واجهة مستخدم Dynamics 365 Customer Insights.
+  - **APIEvent** - يتيح تتبع التغيير عبر Dynamics 365 Customer Insights واجهة المستخدم.
 - **الأحداث التشغيلية**
-  - **WorkflowEvent** - سير العمل الذي يسمح لك بإعداد [مصادر البيانات](data-sources.md)، و[توحيد البيانات](data-unification.md) و[إثرائها](enrichment-hub.md) وأخيرًا [تصديرها](export-destinations.md) في أنظمة أخرى. يمكن تنفيذ كل هذه الخطوات بشكل فردي (على سبيل المثال، تشغيل تصدير واحد). يمكن أيضًا تشغيل تنسيقه (على سبيل المثال، تحديث البيانات من مصادر البيانات التي تؤدي إلى بدء عملية التوحيد، والتي ستسحب عمليات الثراء وبمجرد الانتهاء من تصدير البيانات إلى نظام آخر). لمزيد من المعلومات، راجع [مخطط WorkflowEvent](#workflow-event-schema).
-  - **APIEvent** - كافة استدعاءات API إلى مثيل العملاء إلى Dynamics 365 Customer Insights. لمزيد من المعلومات، راجع [مخطط APIEvent](#api-event-schema).
+  - **WorkflowEvent** - يتيح لك إعداد [مصادر البيانات](data-sources.md), [توحد](data-unification.md), [وإثراء ](enrichment-hub.md) و،[تصدير](export-destinations.md) البيانات في أنظمة أخرى. يمكن تنفيذ هذه الخطوات بشكل فردي (على سبيل المثال ، بدء عملية تصدير واحدة). يمكنهم أيضًا تشغيل منسق (على سبيل المثال ، تحديث البيانات من مصادر البيانات التي تؤدي إلى عملية التوحيد ، والتي ستجذب الإثراء وتصدير البيانات إلى نظام آخر). لمزيد من المعلومات، راجع [مخطط WorkflowEvent](#workflow-event-schema).
+  - **APIEvent** -يرسل جميع استدعاءات API الخاصة بنسخة العملاء إلى Dynamics 365 Customer Insights. لمزيد من المعلومات، راجع [مخطط APIEvent](#api-event-schema).
 
 ## <a name="set-up-the-diagnostic-settings"></a>إعداد إعدادات التشخيص
 
 ### <a name="prerequisites"></a>المتطلبات
 
-لتكوين التشخيصات في Customer Insights، يجب تلبية المتطلبات الأساسية التالية:
-
-- لديك [اشتراك Azure](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/) نشط.
-- لديك [أذونات المسؤول](permissions.md#admin) في Customer Insights.
-- لديك دور **المساهم** و **مسؤول وصول المستخدم** على المورد الوجهة في Azure. قد يكون المورد حساب Azure Data Lake Storage أو مركز أحداث Azure أو مساحة عمل Azure Log Analytics. لمزيد من المعلومات، راجع [إضافة أو إزالة تعيينات أدوار Azure باستخدام مدخل Azure](/azure/role-based-access-control/role-assignments-portal). هذا الإذن ضروري أثناء تكوين إعدادات التشخيص في Customer Insights، ويمكن تغييره بعد الإعداد الناجح.
-- [تمت تلبية المتطلبات الوجهة](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) لـ Azure Storage أو مركز أحداث Azure أو Azure Log Analytics.
-- لديك على الأقل دور **قارئ** في مجموعة الموارد التي ينتمي إليها المورد.
+- اشتراك Azure [نشط](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/).
+- [أذونات](permissions.md#admin) المسؤول في Customer Insights.
+- [دور المسؤول للمساهم ووصول المستخدم](/azure/role-based-access-control/role-assignments-portal) في المورد الوجهة على Azure.. قد يكون المورد حساب Azure Data Lake Storage أو مركز أحداث Azure أو مساحة عمل Azure Log Analytics. هذا الإذن ضروري أثناء تكوين إعدادات التشخيص في Customer Insights ، ولكن يمكن تغييره بعد الإعداد الناجح.
+- [متطلبات الوجهة](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) بالنسبة إلى Azure Storage أو مركز أحداث Azure أو Azure Log Analytics.
+- على الأقل دور **القارئ** في مجموعة الموارد التي ينتمي إليها المورد.
 
 ### <a name="set-up-diagnostics-with-azure-monitor"></a>إعداد التشخيصات باستخدام Azure Monitor
 
-1. في Customer Insights، قم بتحديد **النظام** > **تشخيصات** لرؤية وجهات التشخيصات التي تم تكوينها لهذا المثيل.
+1. في Customer Insights.، انتقل إلى **المسؤل** > **النظام** وحدد **علامة تبويب** التشخيص.
 
 1. حدد **إضافة وجهة**.
 
-   > [!div class="mx-imgBorder"]
-   > ![اتصال التشخيصات](media/diagnostics-pane.png "اتصال التشخيصات")
+   :::image type="content" source="media/diagnostics-pane.png" alt-text="اتصال التشخيص.":::
 
 1. قم بتوفير اسم في الحقل **اسم وجهة عملية التشخيص**.
 
-1. اختر **مستأجر** اشتراك Azure بالمورد الوجهة وحدد **تسجيل الدخول**.
+1. حدد **نوع المورد** (حساب التخزين أو Event Hub أو Log Analytics).
 
-1. حدد **نوع المورد** (حساب التخزين أو مركز الأحداث أو تحليلات السجل).
+1. حدد **الاشتراك**, **مجموعة الموارد** و، **المورد** لمورد الوجهة. راجع [التكوين على المورد الوجهة](#configuration-on-the-destination-resource) للحصول على إذن وتسجيل المعلومات.
 
-1. حدد **اشتراك** للمورد الوجهة.
-
-1. حدد **مجموعة الموارد** للمورد الوجهة.
-
-1. حدد **المورد**.
-
-1. قم بتأكيد بيان **خصوصية البيانات وتوافقها**.
+1. راجع [خصوصية البيانات والامتثال](connections.md#data-privacy-and-compliance) وحدد **أوافق**.
 
 1. حدد **الاتصال بالنظام** للاتصال بالمورد الوجهة. تبدأ ملفات السجل في الظهور في الوجهة بعد 15 دقيقة، إذا كانت API قيد الاستخدام وتقوم بإنشاء أحداث.
 
-### <a name="remove-a-destination"></a>إزالة وجهة
+## <a name="configuration-on-the-destination-resource"></a>التكوين على المورد الوجهة
 
-1. انتقل إلى **النظام** > **التشخيصات**.
+بناءً على اختيارك لنوع المورد، تحدث التغييرات التالية تلقائيًا:
+
+### <a name="storage-account"></a>حساب التخزين
+
+يحصل أساسي خدمة Customer Insights على إذن **مساهم حساب التخزين** على المورد المحدد وينشئ اثنتين من الحاويات ضمن مساحة الاسم المحددة:
+
+- يحتوي `insight-logs-audit` على **أحداث التدقيق**
+- يحتوي `insight-logs-operational` على **أحداث تشغيلية**
+
+### <a name="event-hub"></a>مركز الأحداث
+
+يحصل مدير خدمة Customer Insights. على **مالك بيانات Azure Event Hubs** إذن على المورد وإنشاء مركزي أحداث ضمن مساحة الاسم المحددة:
+
+- يحتوي `insight-logs-audit` على **أحداث التدقيق**
+- يحتوي `insight-logs-operational` على **أحداث تشغيلية**
+
+### <a name="log-analytics"></a>Log Analytics
+
+يحصل أساسي خدمة Customer Insights على إذن **مساهم Log Analytics** على المورد. السجلات متوفرة تحت **السجلات** > **الجداول** > **إدارة السجل** في مساحة عمل تحليلات السجل المحددة. قم بتوسيع حل **إدارة السجلات** وحدد موقع جداول `CIEventsAudit` و`CIEventsOperational`.
+
+- يحتوي `CIEventsAudit` على **أحداث التدقيق**
+- يحتوي `CIEventsOperational` على **أحداث تشغيلية**
+
+ضمن الإطار **استعلامات**، قم بتوسيع حل **التدقيق** وتحديد موقع نموذج الاستعلامات المقدم من خلال البحث عن `CIEvents`.
+
+## <a name="remove-a-diagnostics-destination"></a>إزالة وجهة التشخيص
+
+1. انتقل إلى **المسؤل** > **النظام** وحدد **علامة تبويب** التشخيص.
 
 1. حدد وجهة عملية التشخيص في القائمة.
 
+   > [!TIP]
+   > تؤدي إزالة الوجهة إلى إيقاف إعادة توجيه السجل ، ولكنها لا تحذف المورد في اشتراك Azure. لحذف المورد في Azure ، حدد الارتباط في عمود **أجراءات** لفتح مدخل Azure للمورد المحدد وحذفه هناك. ثم احذف وجهة التشخيص.
+
 1. في العمود **إجراءات**، قم بتحديد أيقونة **حذف**.
 
-1. تأكد من الحذف لإيقاف إعادة توجيه السجل. لن يتم حذف المورد في اشتراك Azure. يمكنك تحديد الارتباط في العمود **إجراءات** لفتح مدخل Azure للمورد المحدد وحذفه هناك.
+1. قم بتأكيد الحذف لإزالة الوجهة وإيقاف إعادة توجيه السجل.
 
 ## <a name="log-categories-and-event-schemas"></a>فئات السجل ومخططات الأحداث
 
@@ -89,36 +110,9 @@ ms.locfileid: "9052637"
 - **أحداث التدقيق**: [أحداث API](#api-event-schema) لتعقب تغييرات التكوين على الخدمة. تدخل عمليات `POST|PUT|DELETE|PATCH` في هذه الفئة.
 - **الأحداث التشغيلية**: [أحداث API](#api-event-schema) أو [أحداث سير العمل](#workflow-event-schema) التي تم إنشاؤها أثناء استخدام الخدمة.  على سبيل المثال، طلبات `GET` أو أحداث تنفيذ سير عمل.
 
-## <a name="configuration-on-the-destination-resource"></a>التكوين على المورد الوجهة
-
-استنادًا إلى اختيارك لنوع المورد، سيتم تطبيق الخطوات التالية تلقائيًا:
-
-### <a name="storage-account"></a>حساب التخزين
-
-يحصل أساسي خدمة Customer Insights على إذن **مساهم حساب التخزين** على المورد المحدد وينشئ اثنتين من الحاويات ضمن مساحة الاسم المحددة:
-
-- يحتوي `insight-logs-audit` على **أحداث التدقيق**
-- يحتوي `insight-logs-operational` على **أحداث تشغيلية**
-
-### <a name="event-hub"></a>مركز الأحداث
-
-يحصل أساسي خدمة Customer Insights على إذن **‏‫مالك بيانات مراكز أحداث Azure‬** على المورد وسوف ينشئ اثنين من مراكز الأحداث ضمن مساحة الاسم المحددة:
-
-- يحتوي `insight-logs-audit` على **أحداث التدقيق**
-- يحتوي `insight-logs-operational` على **أحداث تشغيلية**
-
-### <a name="log-analytics"></a>Log Analytics
-
-يحصل أساسي خدمة Customer Insights على إذن **مساهم Log Analytics** على المورد. ستكون السجلات متوفرة ضمن **السجلات** > **الجداول** > **إدارة السجلات** في مساحة عمل Log Analytics المحددة. قم بتوسيع حل **إدارة السجلات** وحدد موقع جداول `CIEventsAudit` و`CIEventsOperational`.
-
-- يحتوي `CIEventsAudit` على **أحداث التدقيق**
-- يحتوي `CIEventsOperational` على **أحداث تشغيلية**
-
-ضمن الإطار **استعلامات**، قم بتوسيع حل **التدقيق** وتحديد موقع نموذج الاستعلامات المقدم من خلال البحث عن `CIEvents`.
-
 ## <a name="event-schemas"></a>مخططات الأحداث
 
-تشترك أحداث API وأحداث سير العمل في البنية وتختلف في التفاصيل، راجع [مخطط حدث API](#api-event-schema) أو [مخطط حدث سير العمل](#workflow-event-schema).
+أحداث API وأحداث سير العمل لها بنية مشتركة ، ولكن مع بعض الاختلافات. لمزيد من المعلومات، راجع [مخطط حدث API](#api-event-schema) أو [مخطط حدث سير العمل](#workflow-event-schema).
 
 ### <a name="api-event-schema"></a>مخططات أحداث API
 
@@ -182,7 +176,7 @@ ms.locfileid: "9052637"
 
 ### <a name="workflow-event-schema"></a>مخطط حدث سير العمل
 
-يحتوي سير العمل على خطوات متعددة. [استيعاب مصادر البيانات](data-sources.md)، [توحيد البيانات](data-unification.md)، [وإثراؤها](enrichment-hub.md)، و[تصديرها](export-destinations.md). يمكن تشغيل كل هذه الخطوات بشكل فردي أو تنظيمها باستخدام العمليات التالية.
+يحتوي سير العمل على خطوات متعددة. [استيعاب مصادر البيانات](data-sources.md)، [توحيد البيانات](data-unification.md)، [وإثراؤها](enrichment-hub.md)، و[تصديرها](export-destinations.md). يمكن تشغيل كل هذه الخطوات بشكل فردي أو بتنسيق مع العمليات التالية.
 
 #### <a name="operation-types"></a>أنواع العمليات
 
@@ -220,7 +214,6 @@ ms.locfileid: "9052637"
 | `durationMs`    | طويل      | اختيارية          | مدة العملية بالمللي ثانية.                                                                                                                    | `133`                                                                                                                                                                    |
 | `properties`    | السلسلة‬    | اختيارية          | كائن JSON مع مزيد من الخصائص لفئة معينة من الأحداث.                                                                                        | راجع القسم الفرعي [خصائص سير العمل](#workflow-properties-schema)                                                                                                       |
 | `level`         | السلسلة‬    | مطلوبة          | مستوى خطورة الحدث.                                                                                                                                  | `Informational`، أو`Warning`، أو `Error`                                                                                                                                   |
-|                 |
 
 #### <a name="workflow-properties-schema"></a>مخطط خصائص سير العمل
 
@@ -247,3 +240,5 @@ ms.locfileid: "9052637"
 | `properties.additionalInfo.AffectedEntities` | لا        | نعم   | اختياري. بالنسبة إلى OperationType `Export` فقط. يتضمن قائمة بالكيانات المكونة في التصدير.                                                                                                                                                            |
 | `properties.additionalInfo.MessageCode`      | لا        | نعم   | اختياري. بالنسبة إلى OperationType `Export` فقط. رسالة تفصيلية للتصدير.                                                                                                                                                                                 |
 | `properties.additionalInfo.entityCount`      | لا        | نعم   | اختياري. بالنسبة إلى OperationType `Segmentation` فقط. يشير إلى إجمالي عدد الأعضاء في المقطع.                                                                                                                                                    |
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

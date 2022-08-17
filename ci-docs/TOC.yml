@@ -284,18 +284,20 @@
       href: connect-service-principal.md
 - name: الإدارة
   items:
-    - name: إعداد تهيئة النظام
-      href: system.md
-    - name: تكوين إعدادات الأمان
-      href: security-overview.md
     - name: تعيين أذونات المستخدم
       href: permissions.md
     - name: جلب Key Vault الخاص بك
       href: use-azure-key-vault.md
+    - name: تكوين إعدادات الأمان
+      href: security-overview.md
     - name: تصدير سجلات التشخيص
       href: diagnostics.md
-    - name: نظرة عامة على الاتصالات
+    - name: إدارة الاتصالات
       href: connections.md
+    - name: جدولة تحديث النظام
+      href: schedule-refresh.md
+    - name: عرض تكوين النظام
+      href: system.md
 - name: واجهات API
   items:
     - name: التعامل مع واجهات API

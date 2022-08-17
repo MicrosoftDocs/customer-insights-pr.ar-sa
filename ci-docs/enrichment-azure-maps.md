@@ -1,19 +1,19 @@
 ---
 title: ‏‫إثراء ملفات تعريف العملاء ببيانات الموقع من خرائط Azure (إصدار أولي)‬
 description: معلومات عامة حول إثراء الطرف الأول لخرائط Azure.
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: dfadc08f67beac3fded1a97e557ee9e1880664e0
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: f14b4fc20a9a1d8842f42f9e0e656b3d8dcddcf4
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9052591"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9238026"
 ---
 # <a name="enrich-customer-profiles-with-location-data-from-azure-maps-preview"></a>‏‫إثراء ملفات تعريف العملاء ببيانات الموقع من خرائط Azure (إصدار أولي)‬
 
@@ -35,14 +35,9 @@ ms.locfileid: "9052591"
 
 1. أدخل اسمًا للاتصال، ومفتاح API صالحًا لخرائط Azure.
 
-1. راجع [خصوصية البيانات والامتثال](#data-privacy-and-compliance) وقدم الموافقة عليها بتحديد **أوافق**.
+1. راجع [خصوصية البيانات والامتثال](connections.md#data-privacy-and-compliance) وحدد **أوافق**.
 
 1. حدد **التحقق** للتحقق من صحة التكوين ثم حدد **حفظ** .
-
-### <a name="data-privacy-and-compliance"></a>خصوصية البيانات والتوافق
-
-عندما تقوم بتمكين Dynamics 365 Customer Insights لنقل البيانات إلى خرائط Azure، يمكنك السماح بنقل البيانات خارج حدود التوافق ل Dynamics 365 Customer Insights، بما في ذلك البيانات التي قد تكون حساسة مثل البيانات الشخصية. ستقوم Microsoft بنقل هذه البيانات بناءً على التعليمات الخاصة بك، ولكنك مسؤول عن ضمان أن تفي خرائط Azure بأي التزامات تتعلق بالخصوصية أو الأمان قد تكون لديك. لمزيد من المعلومات، انتقل إلى [بيان خصوصية Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
-بإمكان مسؤول Dynamics 365 Customer Insights إزالة هذا الإثراء في أي وقت لإيقاف استخدام هذه الوظيفة.
 
 ## <a name="configure-the-enrichment"></a>تكوين الإثراء
 

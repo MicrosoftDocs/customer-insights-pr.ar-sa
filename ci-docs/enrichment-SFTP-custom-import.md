@@ -1,19 +1,19 @@
 ---
 title: إثراء ملفات تعريف العملاء مع ‏‫استيراد مخصص عبر SFTP‬ (إصدار أولي)
 description: معلومات عامة حول إثراء البيانات باستخدام الاستيراد المخصص لبروتوكول SFTP‬‬
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 81ef6c62240e26cb5c9475e6306e08edc7e5eb31
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 831d1d3d3045379bbc5bcdcd4b05b8a147221f31
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195780"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9237750"
 ---
 # <a name="enrich-customer-profiles-with-sftp-custom-import-preview"></a>إثراء ملفات تعريف العملاء مع ‏‫استيراد مخصص عبر SFTP‬ (إصدار أولي)
 
@@ -85,14 +85,9 @@ ms.locfileid: "9195780"
 
 1. أدخل اسم مستخدم صالح وكلمة مرور وعنوان URL لاستضافة خادم SFTP الذي توجد البيانات المطلوب استيرادها فيه.
 
-1. راجع [خصوصية البيانات والامتثال](#data-privacy-and-compliance) وقدم الموافقة عليها بتحديد **أوافق**.
+1. راجع [خصوصية البيانات والامتثال](connections.md#data-privacy-and-compliance) وحدد **أوافق**.
 
 1. حدد **التحقق** للتحقق من صحة التكوين ثم حدد **حفظ** .
-
-### <a name="data-privacy-and-compliance"></a>خصوصية البيانات والتوافق
-
-عند تمكين Dynamics 365 Customer Insights لإرسال البيانات باستخدام الاستيراد المخصص، تسمح أنت بنقل البيانات خارج حدود الامتثال في Dynamics 365 Customer Insights، بما في ذلك البيانات الحساسة على الأرجح مثل البيانات الشخصية. ستقوم Microsoft بنقل مثل هذه البيانات بناءً على تعليماتك، ولكنك مسؤول عن ضمان وفاء البيانات بأي التزامات تتعلق بالخصوصية أو الأمان قد تكون لديك. لمزيد من المعلومات، راجع [بيان خصوصية Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
-بإمكان مسؤول Dynamics 365 Customer Insights إزالة هذا الإثراء في أي وقت لإيقاف استخدام هذه الوظيفة.
 
 ## <a name="configure-the-import"></a>تكوين الاستيراد
 

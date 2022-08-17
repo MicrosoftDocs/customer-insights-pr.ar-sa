@@ -1,19 +1,19 @@
 ---
 title: إثراء ملفات تعريف العملاء بخصائص سكانية من Experian (معاينة)
 description: معلومات عامة عن إثراء Experian التابع لجهة خارجية.
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 876853ab42e8c08ad1abacb8d8a205c0aadabcf7
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: fccb37cde3f05a70009c18b6c52db01a5ede094d
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195920"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9237980"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>إثراء ملفات تعريف العملاء بخصائص سكانية من Experian (معاينة)
 
@@ -41,13 +41,9 @@ Experian هي شركة رائدة على مستوى العالم في مجال �
 
 1. أدخل اسمًا للاتصال ومعرف المستخدم ومعرف الطرف ورقم نموذج صالحًا لحساب Experian Secure Transport .
 
-1. راجع [خصوصية البيانات والامتثال](#data-privacy-and-compliance) وقدم الموافقة عليها بتحديد **أوافق**.
+1. راجع [خصوصية البيانات والامتثال](connections.md#data-privacy-and-compliance) وحدد **أوافق**.
 
 1. حدد **التحقق** للتحقق من صحة التكوين ثم حدد **حفظ** .
-
-### <a name="data-privacy-and-compliance"></a>خصوصية البيانات والتوافق
-
-عندما تقوم بتمكين Dynamics 365 Customer Insights لنقل البيانات إلى Experian، يمكنك السماح بنقل البيانات خارج حدود التوافق لـ Dynamics 365 Customer Insights، بما في ذلك البيانات التي قد تكون حساسة مثل البيانات الشخصية. ستقوم Microsoft بنقل هذه البيانات في الإرشادات التي تقدمها، ولكنك مسؤول عن ضمان وفاء Experian بأية خصوصية أو واجبات أمنية قد تكون لديك. لمزيد من المعلومات، راجع [بيان خصوصية Microsoft](https://go.microsoft.com/fwlink/?linkid=396732). بإمكان مسؤول Dynamics 365 Customer Insights إزالة هذا الإثراء في أي وقت لإيقاف استخدام هذه الوظيفة.
 
 ## <a name="configure-the-enrichment"></a>تكوين الإثراء
 

@@ -12,12 +12,12 @@ searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: 6ab97c535454e84c1bb18aca00bca2568eb65a2a
-ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
+ms.openlocfilehash: 591353bf1ba2f9ca05ddd137e1cf29dc0b0fba97
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9207075"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245633"
 ---
 # <a name="data-sources-overview"></a>نظرة عامة مصادر البيانات
 
@@ -67,7 +67,7 @@ ms.locfileid: "9207075"
 
 يمكن تحديث مصادر البيانات حسب جدول تلقائي أو يمكن تحديثها يدويًا عند الطلب. تتم عملية تحديث [مصادر البيانات المحلية](connect-power-query.md#add-data-from-on-premises-data-sources) وفق جداولها الخاصة التي يتم إعدادها أثناء عملية استيعاب البيانات. بالنسبة لمصادر البيانات المرفقة، يستهلك استيعاب البيانات أحدث البيانات المتوفرة من مصدر البيانات هذا.
 
-انتقل إلى **الإدارة** > **النظام** > [**جدولة**](system.md#schedule-tab) لتكوين التحديثات المجدولة من قبل النظام لمصادر البيانات التي تم استيعابها.
+انتقل إلى **الإدارة** > **النظام** > [**جدولة**](schedule-refresh.md) لتكوين التحديثات المجدولة من قبل النظام لمصادر البيانات التي تم استيعابها.
 
 لتحديث مصدر بيانات عند الطلب:
 

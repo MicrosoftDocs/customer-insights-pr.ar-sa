@@ -9,12 +9,12 @@ ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 54247fbcdc27f6ed8314e0755164083eb461aa64
-ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
+ms.openlocfilehash: 7bc0c3614e6dd39fbd65ae098ed679d95d09de9d
+ms.sourcegitcommit: 086f75136132d561cd78a4c2cb1e1933e2301f32
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9206891"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "9259782"
 ---
 # <a name="connect-an-azure-synapse-analytics-data-source-preview"></a>وصل مصدر بيانات من Azure Synapse Analytics (إصدار أولي)
 
@@ -24,26 +24,30 @@ Azure Synapse Analytics هي خدمة تحليلات مؤسسية تُسرع م�
 
 ## <a name="prerequisites"></a>المتطلبات
 
+> [!NOTE]
+> مساحة عمل Synapse التي تم [تمكين جدار حماية](/azure/synapse-analytics/security/synapse-workspace-ip-firewall) لها غير مدعومة حاليا.
 > [!IMPORTANT]
 > تأكد من تعيين جميع **تعيينات الدور** كما هو موضح.  
 
 **في Customer Insights**:
 
-* لديك دور **المسؤول** في Customer Insights. لمعرفة المزيد [أذونات المستخدم في Customer Insights](permissions.md#assign-roles-and-permissions).
+* لديك دور **المسؤول** في Customer Insights. لمعرفة المزيد [أذونات المستخدم في Customer Insights](permissions.md#add-users).
 
 **في Azure**:
 
 - اشتراك Azure نشط.
 
-- إذا كنت تستخدم حساب Azure Data Lake Storage Gen2 جديدًا، يحتاج *كيان الخدمة لـ Customer Insights* إلى أذونات **مساهم بيانات مخزن البيانات الثنائية الكبيرة**. تعرف على المزيد حول [الاتصال بـ Azure Data Lake Storage باستخدام كيان خدمة لـ Customer Insights](connect-service-principal.md). إن Data Lake Storage Gen2 **يجب** أن يتضمن [مساحة أسماء هرمية](/azure/storage/blobs/data-lake-storage-namespace) قيد التمكين.
+- إذا كنت تستخدم حساب Azure Data Lake Storage Gen2 جديدًا، يحتاج *كيان الخدمة لـ Customer Insights* وهي احتياجات "Dynamics 365 AI for Customer Insights" **مساهم بيانات مخزن البيانات الثنائية الكبيرة**. تعرف على المزيد حول [الاتصال بـ Azure Data Lake Storage باستخدام كيان خدمة لـ Customer Insights](connect-service-principal.md). إن Data Lake Storage Gen2 **يجب** أن يتضمن [مساحة أسماء هرمية](/azure/storage/blobs/data-lake-storage-namespace) قيد التمكين.
 
-- في مجموعة الموارد، توجد Azure Synapse ‏workspace، ويحتاج *كيان الخدمة* و *مستخدم Customer Insights* إلى تعيين أذونات **القارئ** على الأقل . لمزيد من المعلومات، راجع [تعيين أدوار Azure باستخدام مدخل Azure](/azure/role-based-access-control/role-assignments-portal).
+- في مجموعة الموارد توجد workspace Azure Synapse *مدير الخدمة* وهو "Dynamics 365 AI for Customer Insights" و *مستخدم لـ Customer Insights* يحتاج إلى تعيين على الأقل أذونات **القائ**. لمزيد من المعلومات، راجع [تعيين أدوار Azure باستخدام مدخل Azure](/azure/role-based-access-control/role-assignments-portal).
 
 - يحتاج *المستخدم* إلى أذونات **مساهم بيانات مخزن البيانات الثنائية الكبيرة** في حساب Azure Data Lake Storage Gen2 في المكان الذي توجد فيه البيانات وترتبط بـ Azure Synapse ‏workspace. تعلم المزيد حول [استخدام مدخل Azure لتعيين دور Azure للوصول إلى بيانات الكائن الثنائي كبير الحجم والصف](/azure/storage/common/storage-auth-aad-rbac-portal) و[أذونات مساهم بيانات مخزن البيانات الثنائية الكبيرة](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
 - تحتاج *[الهوية المدارة بواسطة Azure Synapse ‏workspace](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* إلى أذونات **مساهم بيانات مخزن البيانات الثنائية الكبيرة** في حساب Azure Data Lake Storage ‏Gen2 في المكان الذي توجد فيه البيانات وترتبط بـ Azure Synapse ‏workspace. تعلم المزيد حول [استخدام مدخل Azure لتعيين دور Azure للوصول إلى بيانات الكائن الثنائي كبير الحجم والصف](/azure/storage/common/storage-auth-aad-rbac-portal) و[أذونات مساهم بيانات مخزن البيانات الثنائية الكبيرة](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
-- في Azure Synapse ‏workspace، يحتاج *كيان الخدمة لـ Customer Insights* إلى دور **مسؤول Synapse**. لمزيد من المعلومات، راجع [كيفية إعداد عنصر تحكم الوصول لـ Synapse workspace](/azure/synapse-analytics/security/how-to-set-up-access-control) الخاصة بك.
+- في Azure Synapse ‏workspace، يحتاج *كيان الخدمة لـ Customer Insights* وهو "Dynamics 365 AI for Customer Insights" إلى دور **مسؤول Synapse**. لمزيد من المعلومات، راجع [كيفية إعداد عنصر تحكم الوصول لـ Synapse workspace](/azure/synapse-analytics/security/how-to-set-up-access-control) الخاصة بك.
+
+- إذا كانت بيئة Customer Insights [تخزن Azure Data Lake Storage](own-data-lake-storage.md)، المستخدم الذي يقوم بإعداد الاتصال إلى Azure Synapse Analytics يحتاج على الأقل المدمج في **القارئ** دور في حساب Data Lake Storage. لمزيد من المعلومات، راجع [تعيين أدوار Azure باستخدام مدخل Azure](/azure/role-based-access-control/role-assignments-portal).
 
 ## <a name="connect-to-the-data-lake-database-in-azure-synapse-analytics"></a>الاتصال بقاعدة بيانات مستودع البيانات في Azure Synapse Analytics
 
@@ -57,7 +61,7 @@ Azure Synapse Analytics هي خدمة تحليلات مؤسسية تُسرع م�
   
 1. أدخل **اسمًا** لمصدر البيانات و **وصفًا** اختياريًا.
 
-1. اختر [اتصالاً متوفرًا ](connections.md) بـ Azure Synapse Analytics أو قم بإنشاء اتصال جديد.
+1. اختر [اتصالاً متوفرًا](connections.md) إلى Azure Synapse Analytics أو [قم بإنشاء اتصال جديد](export-azure-synapse-analytics.md#set-up-connection-to-azure-synapse).
 
 1. اختر **قاعدة بيانات** من مساحة العمل المتصلة في اتصال Azure Synapse Analytics المحدد وحدد **التالي**. في الوقت الحالي، ندعم نوع قاعدة البيانات *قاعدة بيانات المستودع* فقط.
 

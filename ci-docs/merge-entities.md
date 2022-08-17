@@ -14,12 +14,12 @@ searchScope:
 - ci-match
 - ci-relationships
 - customerInsights
-ms.openlocfilehash: 4a19b753e7a5979fe72d7e96bc4452d7795c2d48
-ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
+ms.openlocfilehash: a6f29c4985ee274207d122fb1bd76d97b98613b6
+ms.sourcegitcommit: 10dcfc32eaf8ec0903be96136dca7bb4e250276a
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "9139641"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "9213566"
 ---
 # <a name="unify-customer-fields-for-data-unification"></a>توحيد حقول العملاء لتوحيد البيانات
 
@@ -58,6 +58,9 @@ ms.locfileid: "9139641"
 
 1. حدد كيفية دمج الحقول أو دمجها من أحد الخيارات الثلاثة:
     - **الأهمية**: تحديد قيمة الفائز بناءً على تصنيف الأهمية المحدد للحقول المشاركة. إنه خيار الدمج الافتراضي. حدد **تحريك لأعلى/لأسفل** لتعيين ترتيب الأهمية.
+
+      > [!NOTE]
+      > تستخدم Customer Insights أول قيمة غير فارغة. على سبيل المثال، تم تصنيف الكيانات "أ" و"ب" و"C" مثلا في هذا الترتيب، A.Name و"B.Name" فارغة، عندئذ يتم استخدام القيمة من C.Name.
 
       :::image type="content" source="media/importance-merge-option.png" alt-text="خيار الأهمية في مربع حوار دمج الحقول.":::
 

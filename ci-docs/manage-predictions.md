@@ -8,12 +8,12 @@ ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: a180f6462452d9830d0daa150a35a9d0acad925a
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 42abfb305efaccaeef48e32f2cc69f3d36fbe73d
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9080758"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245449"
 ---
 # <a name="manage-predictions"></a>إدارة التنبؤات
 
@@ -58,7 +58,7 @@ ms.locfileid: "9080758"
 
 ## <a name="refresh-a-prediction"></a>تحديث تنبؤ
 
-سيتم تحديث التنبؤات تلقائيًا على وفقًا لنفس [جدول تحديثات البيانات الخاصة بك](system.md#schedule-tab) كما تم تكوينها في الإعدادات. يمكنك تحديثها يدويًا أيضًا.
+سيتم تحديث التنبؤات تلقائيًا على وفقًا لنفس [جدول تحديثات البيانات الخاصة بك](schedule-refresh.md) كما تم تكوينها في الإعدادات. يمكنك تحديثها يدويًا أيضًا.
 
 1. انتقل إلى **الذكاء** > **التنبؤات** وحدد علامة التبويب **التنبؤات الخاصة بي‬**.
 

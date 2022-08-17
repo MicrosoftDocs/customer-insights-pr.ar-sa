@@ -14,12 +14,12 @@ searchScope:
 - ci-measure-template
 - ci-enrichment-details
 - customerInsights
-ms.openlocfilehash: ead57ccbdcaf9f86ee54d1f15de71a63f2e1081b
-ms.sourcegitcommit: 8a28e9458b857adf8e90e25e43b9bc422ebbb2cd
+ms.openlocfilehash: 99368a7ab2e8d7b3e53c04fbf25bb23bd2e550a9
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/18/2022
-ms.locfileid: "9170804"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245357"
 ---
 # <a name="measures-overview"></a>نظرة عامة على القياسات
 
@@ -53,7 +53,7 @@ ms.locfileid: "9170804"
 - يمكنك **تحرير** القياس لتغيير خصائصه.
 - يمكنك **تحديث** القياس ليتضمن أحدث البيانات.
 - **إعادة تسمية** المقياس.
-- يمكنك **تنشيط** أو **إلغاء تنشيط** القياس. لن يتم تحديث القياسات غير النشطة أثناء [تحديث مجدول](system.md#schedule-tab)، وتكون بـ **الحالة** المسجلة كـ **تم التخطي**، مما يشير إلى أنه لم تتم محاولة التحديث.
+- يمكنك **تنشيط** أو **إلغاء تنشيط** القياس. لن يتم تحديث القياسات غير النشطة أثناء [تحديث مجدول](schedule-refresh.md)، وتكون بـ **الحالة** المسجلة كـ **تم التخطي**، مما يشير إلى أنه لم تتم محاولة التحديث.
 - يمكنك وضع **علامة** من أجل [إدارة العلامات](work-with-tags-columns.md#manage-tags) للقياس.
 - **حذف** المقياس.
 - **أعمدة‏‎** من أجل [لتخصيص الأعمدة](work-with-tags-columns.md#customize-columns) التي تظهر.
@@ -62,7 +62,7 @@ ms.locfileid: "9170804"
 
 ## <a name="refresh-measures"></a>تحديث القياسات
 
-يمكن تحديث القياسات في جدول تلقائي أو يمكن تحديثها يدويًا عند الطلب. لتحديث قياس أو أكثر يدويًا، حدده واختر **تحديث**. لـ [جدولة تحديث تلقائي](system.md#schedule-tab)، انتقل إلى **مسؤول** > **نظام** > **جدولة**.
+يمكن تحديث القياسات في جدول تلقائي أو يمكن تحديثها يدويًا عند الطلب. لتحديث قياس أو أكثر يدويًا، حدده واختر **تحديث**. لـ [جدولة تحديث تلقائي](schedule-refresh.md)، انتقل إلى **مسؤول** > **نظام** > **جدولة**.
 
 [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 

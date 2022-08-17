@@ -1,19 +1,19 @@
 ---
 title: إثراء ملفات تعريف العملاء مع HERE Technologies (إصدار أولي)
 description: معلومات عامة حول خدمات إثراء البيانات من طرف ثالث HERE Technologies.
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 26de9fce863c9832b70adf3ce39cb2ae0ce43d0e
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 86a070342193dd7afda38823d90f4bd28c8b862e
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196240"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9237842"
 ---
 # <a name="enrich-customer-profiles-with-here-technologies-preview"></a>إثراء ملفات تعريف العملاء مع HERE Technologies (إصدار أولي)
 
@@ -33,16 +33,11 @@ ms.locfileid: "9196240"
 
 1. أدخل اسمًا للاتصال، ومفتاح API صالحًا لـ HERE Technologies.
 
-1. راجع [خصوصية البيانات والامتثال](#data-privacy-and-compliance) وقدم الموافقة عليها بتحديد **أوافق**.
+1. راجع [خصوصية البيانات والامتثال](connections.md#data-privacy-and-compliance) وحدد **أوافق**.
 
 1. حدد **التحقق** للتحقق من صحة التكوين ثم حدد **حفظ** .
 
    :::image type="content" source="media/enrichment-HERE-connection.png" alt-text="صفحة تكوين الاتصال بـ HERE technologies.":::
-
-### <a name="data-privacy-and-compliance"></a>خصوصية البيانات والتوافق
-
-عند تمكين Dynamics 365 Customer Insights لإرسال البيانات إلى HERE Technologies، تسمح أنت بنقل البيانات خارج حدود الامتثال في Dynamics 365 Customer Insights، بما في ذلك البيانات الحساسة على الأرجح مثل البيانات الشخصية. ستقوم شركة Microsoft بنقل هذه البيانات وفقًا لتعليماتك، ولكنك مسؤول عن ضمان قيام HERE Technologies بتلبية أي التزامات تتعلق بالخصوصية أو الأمان قد تكون لديك. لمزيد من المعلومات، راجع [بيان خصوصية Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
-بإمكان مسؤول Dynamics 365 Customer Insights إزالة هذا الإثراء في أي وقت لإيقاف استخدام هذه الوظيفة.
 
 ## <a name="configure-the-enrichment"></a>تكوين الإثراء
 

@@ -1,19 +1,19 @@
 ---
 title: الجديد في Dynamics 365 Customer Insights
 description: معلومات حول الميزات والتحسينات وإصلاحات الأخطاء الجديدة.
-ms.date: 06/30/2022
+ms.date: 08/03/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: f3ae0fe6631ee7c8d79664528be383ec53e93fe8
-ms.sourcegitcommit: 92e5a798ca75c7f10aa5025a9bbd2ffb4d4ae7d2
+ms.openlocfilehash: a9bb254736ae70589afb267bf0a60206a18a3385
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "9114230"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245995"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>الجديد في Dynamics 365 Customer Insights
 
@@ -23,6 +23,28 @@ ms.locfileid: "9114230"
 
 > [!TIP]
 > لإرسال طلبات الميزات واقتراحات حول المنتجات والتصويت عليها، انتقل إلى [مدخل أفكار تطبيق Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="july-2022-updates"></a>تحديثات يوليو 2022
+
+تتضمن التحديثات في يوليو 2022 ميزات جديدة وترقيات للأداء وإصلاحات للأخطاء.
+
+### <a name="export-to-moengage"></a>تصدير إلى MoEngage
+
+يمكنك تصدير مقاطع من ملفات تعريف العملاء الموحدة‬ إلى MoEngage واستخدامها في الحملات والتسويق عبر البريد الإلكتروني في MoEngage.
+
+لمزيد من المعلومات، راجع [تصدير الشرائح إلى إعلانات MoEngage‎‎](export-moengage.md).
+
+### <a name="ssh-support-for-sftp-based-exports"></a>دعم SSH للصديرات المستندة إلى SFTP
+
+اختر ما إذا كنت ترغب في المصادقة من خلال SSH أو اسم المستخدم/كلمة المرور للحصول على اتصالات مع وجهات تصدير SFTP.
+
+لمزيد من المعلومات، راجع [تصدير البيانات إلى مضيفو بروتوكول SFTP](export-sftp.md).
+
+### <a name="personalize-experiences-with-data-about-known-and-unknown-users"></a>تخصيص التجارب مع البيانات حول المستخدمين المعروفين وغير المعروفين
+
+لا تعد إدارة بيانات العملاء تحديًا جديدًا ولكنها تزداد صعوبة مع تنقل المستخدمين في مختلف القنوات الرقمية التي توفرها العلامات التجارية. يصبح المستخدم المعروف (المصادق عليه) في إحدى القنوات غير معروف (غير مصادق) في قناة أخرى إذا لم يقم بتسجيل الدخول. غالبًا ما تكمن المشكلة في أن المستخدمين غير المصادق عليهم (غير المعروفين) ليس لديهم معرف مشترك. يمكن استخدامه لربط سمات ملفات التعريف ذات المغزى وإنشاء ملفات تعريف موحدة للعملاء. تساعد Customer Insights في حل هذه المشكلة عن طريق استيعاب البيانات من طرق التتبع على أنظمة المصدر لديك.
+
+لمزيد من المعلومات، راجع [تخصيص خبراتك مع البيانات المتعلقة بالمستخدمين المعروفين وغير المعروفين](unknown-to-known.md).
 
 ## <a name="june-2022-updates"></a>تحديثات يونيه 2022
 
@@ -50,7 +72,7 @@ ms.locfileid: "9114230"
 
 يسمح Azure Private Link لـ Customer Insights بالاتصال بحسابك في Azure Data Lake Storage عبر نقطة نهاية خاصة في شبكتك الظاهرية. فيما يتعلق بالبيانات الموجودة في حساب تخزين، لا يظهر على الإنترنت العام، يمكّن الارتباط الخاص الاتصال بهذه الشبكة المقيدة.
 
-لمزيد من المعلومات، راجع [استخدام الارتباط الخاص في Customer Insights](security-overview.md#private-links-tab).
+لمزيد من المعلومات، راجع [استخدام الارتباط الخاص في Customer Insights](security-overview.md#set-up-an-azure-private-link).
 
 ## <a name="may-2022-updates"></a>تحديثات مايو 2022
 
