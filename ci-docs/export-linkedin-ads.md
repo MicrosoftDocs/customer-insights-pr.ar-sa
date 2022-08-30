@@ -1,19 +1,19 @@
 ---
 title: تصدير مقاطع إلى إعلانات LinkedIn (إصدار أولي)
 description: تعرف على كيفية تكوين الاتصال والتصدير إلى إعلانات LinkedIn.
-ms.date: 07/25/2022
+ms.date: 08/12/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: d1a9ae985043398f4bc38163be26ecf0c3c8e2ba
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 4c3928e05db0ebda262b4ad3e928ce85f70035b9
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196792"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9304687"
 ---
 # <a name="export-segments-to-linkedin-ads-preview"></a>تصدير مقاطع إلى إعلانات LinkedIn (إصدار أولي)
 
@@ -24,9 +24,9 @@ ms.locfileid: "9196792"
 - [حساب LinkedIn Campaign Manager](https://business.linkedin.com/marketing-solutions/ads) وبيانات اعتماد المسؤول المقابلة.
 - [معرف حساب LinkedIn Campaign Manager](https://www.linkedin.com/help/lms/answer/a424270).
 - [مقاطع مُكونة](segments.md) في Customer Insights.
-- تحتوي ملفات تعريف العملاء الموحدة في المقاطع المصدّرة على حقل يمثل عنوان البريد الإلكتروني.
+- تحتاج الأجزاء التي تم تصديرها إلى حقل محدد واحد على الأقل بناءً على ما إذا كنت تختار [استهداف جهات الاتصال](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) أو [استهداف الشركة](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting) على LinkedIn. يتم سرد الحقول المحتملة في خطوة **مطابقة البيانات** عند [تكوين التصدير](#configure-an-export).
 
-## <a name="known-limitations"></a>القيود المعروفة
+## <a name="known-limitations"></a>الحدود المعروفة
 
 - ما يصل إلى 100,000 ملف تعريف عميل لكل عملية تصدير إلى LinkedIn Ads، والتي قد تستغرق ما يصل إلى 10 دقائق حتى تكتمل.
 - المقاطع فقط. يجب أن تحتوي المقطع على 300 ملف تعريف فريد على الأقل.

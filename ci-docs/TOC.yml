@@ -76,6 +76,8 @@
       href: merge-entities.md
     - name: مراجعة توحيد البيانات
       href: review-unification.md
+    - name: إنشاء ملف تعريف جهة الاتصال الموحدة
+      href: data-unification-contacts.md
     - name: تحديث إعدادات التوحيد
       href: data-unification-update.md
 - name: إثراء البيانات
