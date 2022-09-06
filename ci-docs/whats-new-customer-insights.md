@@ -1,19 +1,19 @@
 ---
 title: الجديد في Dynamics 365 Customer Insights
 description: معلومات حول الميزات والتحسينات وإصلاحات الأخطاء الجديدة.
-ms.date: 08/03/2022
+ms.date: 08/31/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: a9bb254736ae70589afb267bf0a60206a18a3385
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: 1e734464cec1f66428c3a2a2e403437a2a9d8500
+ms.sourcegitcommit: 624b27bb65a0de1970dc1ac436643b493f0a31cf
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9245995"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9387266"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>الجديد في Dynamics 365 Customer Insights
 
@@ -23,6 +23,24 @@ ms.locfileid: "9245995"
 
 > [!TIP]
 > لإرسال طلبات الميزات واقتراحات حول المنتجات والتصويت عليها، انتقل إلى [مدخل أفكار تطبيق Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="august-2022-updates"></a>تحديثات أغسطس 2022
+
+تتضمن التحديثات في أغسطس 2022 ميزات جديدة وترقيات للأداء وإصلاحات للأخطاء.
+
+### <a name="contact-unification-in-b-to-b-environments"></a>توحيد جهات الاتصال في بيئات متاجرة شركة إلى شركة
+
+تدعم الآن بيئات متاجرة شركة إلى شرك في Customer Insights تجربة توحيد البيانات المحسّنة.
+
+يمكنك الآن توحيد جهات الاتصال بالإضافة إلى الحسابات للحصول على عرض كامل لجهات الاتصال الخاصة بالعمل. ترتبط جهات الاتصال الموحدة بحسابات موحدة وهي الآن مدرجة في بطاقات العملاء. 
+
+لمزيد من المعلومات، راجع [‏‫إنشاء ملف تعريف جهة الاتصال الموحدة](data-unification-contacts.md).
+
+### <a name="create-and-export-of-segments-based-on-unified-contacts"></a>إنشاء القطاعات وتصديرها استنادًا إلى جهات اتصال موحدة
+
+بفضل توحيد جهات الاتصال الجديد، يمكنك إنشاء قطاعات من جهات الاتصال باستخدام معايير من جهات الاتصال أو الحسابات أو كليهما. ويمكن تصدير هذه القطاعات لتنشيطها في خدمات أخرى.
+
+لمزيد من المعلومات، راجع [نظرة عامة على عمليات التصدير](export-destinations.md).
 
 ## <a name="july-2022-updates"></a>تحديثات يوليو 2022
 

@@ -1,27 +1,27 @@
 ---
 title: أمثلة على استعلامات OData لواجهات برمجة التطبيقات في Customer Insights
 description: أمثلة شائعة الاستخدام لبروتوكول البيانات المفتوحة (OData) للاستعلام عن واجهات API الخاصة بـ Customer Insights لمراجعة البيانات.
-ms.date: 05/25/2022
+ms.date: 08/30/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 8843fc04e4e6eaba0019d932c54f62561ffbdb92
-ms.sourcegitcommit: f3c12ad445d5f91a88f91a7bbc40790ebcfaa826
+ms.openlocfilehash: 26e56a3bab01ba55284a52e72efbcbfbaadaad6f
+ms.sourcegitcommit: 624b27bb65a0de1970dc1ac436643b493f0a31cf
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9121546"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9387186"
 ---
 # <a name="odata-query-examples-for-customer-insights-apis"></a>أمثلة على استعلامات OData لواجهات برمجة التطبيقات في Customer Insights
 
 بروتوكول البيانات المفتوحة (OData) هو بروتوكول وصول إلى البيانات مبني على بروتوكولات أساسية مثل HTTP. تستخدم منهجيات مقبولة بشكل عام مثل REST للويب. هناك أنواع مختلفة من المكتبات والأدوات التي يمكن استخدامها لاستهلاك خدمات OData.
 
-تسرد هذه المقالة بعض الاستعلامات النموذجية المطلوبة بشكل متكرر لمساعدتك في إنشاء عمليات التنفيذ الخاصة بك استنادًا إلى [واجهات API الخاصة بـ Customer Insights](apis.md).
+لمساعدتك في إنشاء عمليات التنفيذ الخاصة بك استنادًا إلى [Customer Insights APIs](apis.md)، راجع بعض الاستعلامات النموذجية المطلوبة بشكل متكرر.
 
-يجب عليك تعديل نماذج الاستعلام لجعلها تعمل في البيئات المستهدفة: 
+قم بتعديل نماذج الاستعلام لجعلها تعمل في البيئات المستهدفة:
 
 - {serviceRoot}: `https://api.ci.ai.dynamics.com/v1/instances/{instanceId}/data` حيث {instanceId} هو GUID لبيئة Customer Insights التي تريد الاستعلام عنها. تتيح [عملية ListAllInstances](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances) العثور على {InstanceId} الذي لديك الوصول إليه.
 - {CID}:‏ GUID لسجل عميل موحد. مثال:`ce759201f786d590bf2134bff576c369`.
@@ -31,7 +31,7 @@ ms.locfileid: "9121546"
 
 ## <a name="customer"></a>العميل 
 
-يحتوي الجدول التالي على مجموعة من نماذج الاستعلامات لكيان *العميل*.
+نموذج استعلامات كيان *العميل*.
 
 |نوع الاستعلام |مثال  | ‏‫ملاحظة‬  |
 |---------|---------|---------|
@@ -46,7 +46,7 @@ ms.locfileid: "9121546"
 
 ## <a name="unified-activity"></a>النشاط الموحد
 
-يحتوي الجدول التالي على مجموعة من نماذج الاستعلامات لكيان *UnifiedActivity*.
+نموذج استعلامات كيان *UnifiedActivity*.
 
 |نوع الاستعلام |مثال  | ‏‫ملاحظة‬  |
 |---------|---------|---------|
@@ -59,7 +59,7 @@ ms.locfileid: "9121546"
 
 ## <a name="other-examples"></a>أمثلة أخرى
 
-يحتوي الجدول التالي على مجموعة من نماذج الاستعلامات للكيانات الأخرى.
+نموذج استعلامات للكيانات الأخرى.
 
 |نوع الاستعلام |مثال  | ‏‫ملاحظة‬  |
 |---------|---------|---------|

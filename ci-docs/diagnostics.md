@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 60b039173fd938482c782c7394420d4951c222a7
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: c573c46fda895d36d29712e75fe28b261c9b399a
+ms.sourcegitcommit: 0b5bfe0145dbd325fa518df4561d6a0a9a352264
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9245909"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "9352785"
 ---
 # <a name="export-diagnostic-logs-preview"></a>تصدير سجلات التشخيص (معاينة)
 
@@ -36,8 +36,8 @@ ms.locfileid: "9245909"
 
 - اشتراك Azure [نشط](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/).
 - [أذونات](permissions.md#admin) المسؤول في Customer Insights.
+- مورد صالح في Azure يتبع [متطلبات الوجهة](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) الخاصة بمساحة تخزين Azure، أو مركز أحداث Azure، أو Azure Log Analytics.
 - [دور المسؤول للمساهم ووصول المستخدم](/azure/role-based-access-control/role-assignments-portal) في المورد الوجهة على Azure.. قد يكون المورد حساب Azure Data Lake Storage أو مركز أحداث Azure أو مساحة عمل Azure Log Analytics. هذا الإذن ضروري أثناء تكوين إعدادات التشخيص في Customer Insights ، ولكن يمكن تغييره بعد الإعداد الناجح.
-- [متطلبات الوجهة](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) بالنسبة إلى Azure Storage أو مركز أحداث Azure أو Azure Log Analytics.
 - على الأقل دور **القارئ** في مجموعة الموارد التي ينتمي إليها المورد.
 
 ### <a name="set-up-diagnostics-with-azure-monitor"></a>إعداد التشخيصات باستخدام Azure Monitor
