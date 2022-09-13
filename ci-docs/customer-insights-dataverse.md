@@ -1,7 +1,7 @@
 ---
 title: استخدام بيانات Customer Insights في Microsoft Dataverse
 description: تعرف على كيفية توصيل Customer Insights وMicrosoft Dataverse وتعرف على كيانات الإخراج التي يتم تصديرها إلى Dataverse.
-ms.date: 08/15/2022
+ms.date: 08/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 0d536259f310b41fe12922baeebdc4569937db08
-ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
+ms.openlocfilehash: dfa63110fc5291f2b63aebf588d6fdd20ed4ab67
+ms.sourcegitcommit: 134aac66e3e0b77b2e96a595d6acbb91bf9afda2
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "9303813"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9424293"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>استخدام بيانات Customer Insights في Microsoft Dataverse
 
@@ -136,6 +136,7 @@ OR
 تتوفر بعض كيانات الإخراج من Customer Insights كجداول في Dataverse. تصف الأقسام أدناه المخطط المتوقع لهذه الجداول.
 
 - [ملف تعريف العميل](#customerprofile)
+- [ContactProfile](#contactprofile)
 - [AlternateKey](#alternatekey)
 - [UnifiedActivity](#unifiedactivity)
 - [CustomerMeasure](#customermeasure)
@@ -145,21 +146,46 @@ OR
 
 ### <a name="customerprofile"></a>ملف تعريف العميل
 
-يحتوي هذا الجدول على ملف تعريف العميل الموحد من Customer Insights. يعتمد مخطط ملف تعريف العميل الموحد على الكيانات والسمات المستخدمة في عملية توحيد البيانات. يحتوي مخطط ملف تعريف العميل عادة على مجموعة فرعية من السمات من [تعريف نموذج البيانات العامة لـ CustomerProfile](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile).
+يحتوي هذا الجدول على ملف تعريف العميل الموحد من Customer Insights. يعتمد مخطط ملف تعريف العميل الموحد على الكيانات والسمات المستخدمة في عملية توحيد البيانات. يحتوي مخطط ملف تعريف العميل عادة على مجموعة فرعية من السمات من [تعريف نموذج البيانات العامة لـ CustomerProfile](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile). بالنسبة إلى السيناريو B-إلى-B، يحتوي ملف تعريف العميل على الحسابات الموحدة، وعادةً ما يحتوي المخطط على مجموعة فرعية من السمات من [تعريف نموذج البيانات العامة للحساب](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/account).
+
+### <a name="contactprofile"></a>ContactProfile
+
+يحتوي ContactProfile على معلومات موحدة حول جهة اتصال. جهات الاتصال هي [الأفراد الذين يتم تعيينهم إلى حساب](data-unification-contacts.md) في سيناريو من B إلى B.
+
+| Column                       | نوع                | الوصف      |
+| ---------------------------- | ------------------- | --------------- |
+|  تاريخ الميلاد            | DateTime       |  تاريخ الميلاد جهة الاتصال               |
+|  المدينة                  | نص |  مدينة عنوان جهة الاتصال               |
+|  ContactId            | نص |  معرف ملف تعريف جهة الاتصال               |
+|  ContactProfileId     | معرِّف فريد   |  GUID بالنسبة لجهة الاتصال               |
+|  CountryOrRegion      | نص |  بلد/منطقة عنوان جهة الاتصال               |
+|  Customerid           | نص |  مُعرف الحساب الذي يتم تعيين جهة الاتصال عليه               |
+|  EntityName           | نص |  الكيان الذي تأتي منه البيانات                |
+|  FirstName            | نص |  الاسم الأول لجهة الاتصال               |
+|  النوع                | نص |  نوع جهة الاتصال               |
+|  المعرّف‬                   | نص |  تحديد GUID استنادًا إلى `Identifier`               |
+|  Identifier           | نص |  المُعرف الداخلي لملف تعريف جهة الاتصال: `ContactProfile|CustomerId|ContactId`               |
+|  JobTitle             | نص |  اللقب الوظيفي لجهة الاتصال               |
+|  LastName             | نص |  الاسم الأخير لجهة الاتصال               |
+|  PostalCode           | نص |  الرمز البريدي لعنوان جهة الاتصال               |
+|  PrimaryEmail         | نص |  عنوان البريد الإلكتروني لجهة الاتصال               |
+|  PrimaryPhone         | نص |  رقم هاتف جهة الاتصال               |
+|  StateOrProvince      | نص |  المحافظة أو المنطقة الخاصة بعنوان جهة الاتصال               |
+|  StreetAddress        | نص |  شارع عنوان جهة الاتصال               |
 
 ### <a name="alternatekey"></a>AlternateKey
 
 يحتوي جدول AlternateKey على مفاتيح الكيانات التي شاركت في عملية التوحيد.
 
-|Column  |النوع  |الوصف   |
+|Column  |نوع  |الوصف   |
 |---------|---------|---------|
-|DataSourceName    |السلسلة‬         | اسم مصدر البيانات. على سبيل المثال: `datasource5`        |
-|EntityName        | سلسلة‬        | اسم الكيان في Customer Insights. على سبيل المثال: `contact1`        |
-|AlternateValue    |سلسلة‬         |المعرف البديل الذي يتم تعيينه إلى معرف العميل. مثال: `cntid_1078`         |
-|KeyRing           | نص متعدد الأسطر        | قيمة JSON  </br> العينة: [{"dataSourceName":" datasource5 ",</br>"entityName":" contact1",</br>"المفتاح المفضل":" cntid_1078"،</br>"keys":[" cntid_1078"]}]       |
-|Customerid         | السلسلة‬        | معرف ملف تعريف العميل الموحد.         |
-|AlternateKeyId     | GUID         |  GUID المؤكد لـ AlternateKey استنادًا إلى msdynci_identifier       |
-|msdynci_identifier |   السلسلة‬      |   `DataSourceName|EntityName|AlternateValue`  </br> العينة: `testdatasource|contact1|cntid_1078`    |
+|DataSourceName    |نص         | اسم مصدر البيانات. على سبيل المثال: `datasource5`        |
+|EntityName        | نص        | اسم الكيان في Customer Insights. على سبيل المثال: `contact1`        |
+|AlternateValue    |نص         |المعرف البديل الذي يتم تعيينه إلى معرف العميل. مثال: `cntid_1078`         |
+|KeyRing           | نص        | قيمة JSON  </br> العينة: [{"dataSourceName":" datasource5 ",</br>"entityName":" contact1",</br>"المفتاح المفضل":" cntid_1078"،</br>"keys":[" cntid_1078"]}]       |
+|Customerid         | نص        | معرف ملف تعريف العميل الموحد.         |
+|AlternateKeyId     | معرِّف فريد        |  ‏‫GUID المؤكد لـ AlternateKey استنادًا إلى `Identifier`      |
+|Identifier |   نص      |   `DataSourceName|EntityName|AlternateValue`  </br> العينة: `testdatasource|contact1|cntid_1078`    |
 
 ### <a name="unifiedactivity"></a>UnifiedActivity
 
@@ -167,43 +193,42 @@ OR
 
 | Column            | نوع        | الوصف                                                                               |
 |-------------------|-------------|------------------------------------------------------------------------------------------|
-| Customerid        | سلسلة‬‬      | معرف ملف تعريف العميل                                                                      |
-| ActivityId        | سلسلة‬‬      | المعرف الداخلي لنشاط العميل (المفتاح الأساسي)                                       |
-| SourceEntityName  | السلسلة‬      | اسم الكيان المصدر.                                                                |
-| SourceActivityId  | السلسلة‬      | المفتاح الأساسي من الكيان المصدر                                                       |
-| ActivityType      | السلسلة‬      | نوع النشاط الدلالي أو اسم النشاط المخصص                                        |
-| ActivityTimeStamp | DATETIME    | الطابع الزمني للنشاط                                                                      |
-| ‏‫المسمى الوظيفي             | سلسلة‬‬      | اسم أو عنوان النشاط                                                               |
-| الوصف        | السلسلة‬      | وصف النشاط                                                                     |
-| عنوان URL                | السلسلة‬      | ارتباط إلى عنوان URL خارجي خاص بالنشاط                                         |
-| SemanticData      | سلسلة JSON | تتضمن قائمة بأزواج القيم الأساسية بحقول التعيين الدلالي الخاصة بنوع النشاط |
-| RangeIndex        | السلسلة‬      | طابع زمني لـ Unix يستخدم لفرز المخطط الزمني للنشاط واستعلامات النطاق الفعالة |
-| mydynci_unifiedactivityid   | GUID | المعرف الداخلي لنشاط العميل (ActivityId) |
+| Customerid        | نص      | معرف ملف تعريف العميل                                                                      |
+| ActivityId        | نص      | المعرف الداخلي لنشاط العميل (المفتاح الأساسي)                                       |
+| SourceEntityName  | نص      | اسم الكيان المصدر.                                                                |
+| SourceActivityId  | نص      | المفتاح الأساسي من الكيان المصدر                                                       |
+| ActivityType      | نص      | نوع النشاط الدلالي أو اسم النشاط المخصص                                        |
+| ActivityTimeStamp | DateTime    | الطابع الزمني للنشاط                                                                      |
+| ‏‫المسمى الوظيفي             | نص      | اسم أو عنوان النشاط                                                               |
+| الوصف        | نص      | وصف النشاط                                                                     |
+| عنوان URL                | نص      | ارتباط إلى عنوان URL خارجي خاص بالنشاط                                         |
+| SemanticData      | نص | تتضمن قائمة بأزواج القيم الأساسية بحقول التعيين الدلالي الخاصة بنوع النشاط |
+| RangeIndex        | نص      | طابع زمني لـ Unix يستخدم لفرز المخطط الزمني للنشاط واستعلامات النطاق الفعالة |
+| UnifiedActivityId   | معرِّف فريد | المعرف الداخلي لنشاط العميل (ActivityId) |
 
 ### <a name="customermeasure"></a>CustomerMeasure
 
 يحتوي هذا الجدول على بيانات الإخراج الخاصة بالمقاييس المستندة إلى سمات العميل.
 
-| Column             | النوع             | الوصف                  |
+| Column             | نوع             | الوصف                  |
 |--------------------|------------------|-----------------------------|
-| Customerid         | السلسلة‬           | معرف ملف تعريف العميل        |
-| المقاييس           | سلسلة JSON      | تتضمن قائمة بأزواج القيم الأساسية لاسم المقياس وقيمه للعميل المحدد | 
-| msdynci_identifier | السلسلة‬           | `Customer_Measure|CustomerId` |
-| msdynci_customermeasureid | GUID      | معرف ملف تعريف العميل |
-
+| Customerid         | نص           | معرف ملف تعريف العميل        |
+| القياسات           | نص      | تتضمن قائمة بأزواج القيم الأساسية لاسم المقياس وقيمه للعميل المحدد |
+| Identifier | نص           | `Customer_Measure|CustomerId` |
+| CustomerMeasureId | معرِّف فريد     | معرف ملف تعريف العميل |
 
 ### <a name="enrichment"></a>الإثراء
 
 يحتوي هذا الجدول على إخراج عملية الإثراء.
 
-| Column               | النوع             |  الوصف                                           |
+| Column               | نوع             |  الوصف                                           |
 |----------------------|------------------|------------------------------------------------------|
-| Customerid           | السلسلة‬           | معرف ملف تعريف العميل                                 |
-| EnrichmentProvider   | السلسلة‬           | اسم موفر الإثراء                                  |
-| EnrichmentType       | السلسلة‬           | نوع الإثراء                                      |
-| القيم               | سلسلة JSON      | قائمة السمات التي تنتجها عملية الإثراء |
-| msdynci_enrichmentid | GUID             | GUID المؤكد الناشئ عن msdynci_identifier |
-| msdynci_identifier   | السلسلة‬           | `EnrichmentProvider|EnrichmentType|CustomerId`         |
+| Customerid           | نص           | معرف ملف تعريف العميل                                 |
+| EnrichmentProvider   | نص           | اسم موفر الإثراء                                  |
+| EnrichmentType       | نص           | نوع الإثراء                                      |
+| القيم               | نص      | قائمة السمات التي تنتجها عملية الإثراء |
+| EnrichmentId | معرِّف فريد            | تم إنشاء GUID الحتمي من `Identifier` |
+| Identifier   | نص           | `EnrichmentProvider|EnrichmentType|CustomerId`         |
 
 ### <a name="prediction"></a>التنبؤ
 
@@ -211,25 +236,24 @@ OR
 
 | Column               | نوع        | الوصف                                           |
 |----------------------|-------------|------------------------------------------------------|
-| Customerid           | سلسلة‬‬      | معرف ملف تعريف العميل                                  |
-| ModelProvider        | سلسلة‬‬      | اسم موفر النموذج                                      |
-| النموذج                | السلسلة‬      | اسم النموذج                                                |
-| القيم               | سلسلة JSON | قائمة السمات التي ينتجها النموذج |
-| msdynci_predictionid | GUID        | GUID المؤكد الناشئ عن msdynci_identifier | 
-| msdynci_identifier   | السلسلة‬      |  `Model|ModelProvider|CustomerId`                      |
+| Customerid           | نص      | معرف ملف تعريف العميل                                  |
+| ModelProvider        | نص      | اسم موفر النموذج                                      |
+| النموذج                | نص      | اسم النموذج                                                |
+| القيم               | نص | قائمة السمات التي ينتجها النموذج |
+| PredictionId | معرِّف فريد       | تم إنشاء GUID الحتمي من `Identifier` |
+| Identifier   | نص      |  `Model|ModelProvider|CustomerId`                      |
 
 ### <a name="segment-membership"></a>عضوية المقطع
 
 يحتوي هذا الجدول على معلومات عضوية المقطع لملفات تعريف العملاء.
 
-| Column        | كتابة | الوصف                         |
+| Column        | نوع | الوصف                         |
 |--------------------|--------------|-----------------------------|
-| Customerid        | السلسلة‬       | معرف ملف تعريف العميل        |
-| SegmentProvider      | سلسلة‬       | التطبيق الذي ينشر المقاطع.      |
-| SegmentMembershipType | سلسلة‬‬       | نوع العميل لسجل عضوية هذا المقطع. يدعم أنواعًا متعددة مثل العميل أو جهة الاتصال أو الحساب. الافتراضي: العميل  |
-| المقاطع       | سلسلة JSON  | قائمة الأقسام الفريدة التي ينتمي إليها ملف تعريف العميل      |
-| msdynci_identifier  | السلسلة‬   | معرّف فريد لسجل عضوية المقطع. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
-| msdynci_segmentmembershipid | معرف Guid      | تم إنشاء GUID الحتمي من `msdynci_identifier`          |
-
+| Customerid        | نص       | معرف ملف تعريف العميل        |
+| SegmentProvider      | نص       | التطبيق الذي ينشر المقاطع.      |
+| SegmentMembershipType | نص       | نوع العميل لسجل عضوية هذا المقطع. يدعم أنواعًا متعددة مثل العميل أو جهة الاتصال أو الحساب. الافتراضي: العميل  |
+| Segments       | نص  | قائمة الأقسام الفريدة التي ينتمي إليها ملف تعريف العميل      |
+| Identifier  | نص   | معرّف فريد لسجل عضوية المقطع. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
+| SegmentMembershipId | معرِّف فريد      | تم إنشاء GUID الحتمي من `Identifier`          |
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

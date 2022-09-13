@@ -160,8 +160,6 @@
           href: sentiment-analysis.md
         - name: استخدام نماذج مخصصة من التعلم الآلي من Azure
           href: custom-models.md
-        - name: إكمال البيانات المفقودة جزئيًا
-          href: predictions.md
     - name: الأدلة النموذجية
       items:
         - name: الدليل النموذجي للتنبؤ بالقيمة العمرية للعميل

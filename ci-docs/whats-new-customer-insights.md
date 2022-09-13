@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: 1e734464cec1f66428c3a2a2e403437a2a9d8500
-ms.sourcegitcommit: 624b27bb65a0de1970dc1ac436643b493f0a31cf
+ms.openlocfilehash: acba06cba5fb5cbf0bca5aeb30b603003555fc32
+ms.sourcegitcommit: 3ab8f1c0ba5874095a19f0b6367b9a4432f72ed1
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "9387266"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "9409341"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>الجديد في Dynamics 365 Customer Insights
 
@@ -41,6 +41,14 @@ ms.locfileid: "9387266"
 بفضل توحيد جهات الاتصال الجديد، يمكنك إنشاء قطاعات من جهات الاتصال باستخدام معايير من جهات الاتصال أو الحسابات أو كليهما. ويمكن تصدير هذه القطاعات لتنشيطها في خدمات أخرى.
 
 لمزيد من المعلومات، راجع [نظرة عامة على عمليات التصدير](export-destinations.md).
+
+### <a name="deployment-regions-aligned-with-microsoft-dataverse"></a>مناطق النشر المتوافقة مع Microsoft Dataverse
+
+عند إنشاء بيئة Customer Insights جديدة، فإنه يمكنك تحديد المنطقة التي ترغب في نشر الخدمة فيها واستضافتها. لقد قمنا بتحديث تحديد المنطقة للمحاذاة مع Microsoft Dataverse و Power Platform.
+
+يمكنك الآن تحديد المنطقة نفسها كبيئة Microsoft Dataverse الحالية الخاصة بك أو حساب Azure Data Lake storage (إذا اخترت ذلك الخيار) بسهولة، وذلك حسب توفر Customer Insights في تلك المنطقة.
+
+لمزيد من المعلومات، راجع [إنشاء بيئة جديدة](create-environment.md) و [وفر المنتج حسب التوزيع الجغرافي](https://dynamics.microsoft.com/availability-reports/).
 
 ## <a name="july-2022-updates"></a>تحديثات يوليو 2022
 

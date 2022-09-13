@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: 2652e0868f5cc514ab6df9c150a9183cf95ae589
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: dd433b57e8695891a08d6f7fdb8c87befd2e1cfa
+ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9246092"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9396045"
 ---
 # <a name="real-time-data-ingestion-preview"></a>استيعاب بيانات الوقت الحقيقي (إصدار أولي)
 
@@ -82,10 +82,5 @@ ms.locfileid: "9246092"
 يمكنك نشر نشاط بتنسيق نظام المصدر أو بتنسيق UnifiedActivity‬. احصل على التنسيق عن طريق إجراء مكالمة واجهة برمجة تطبيقات إلى/api/instances/ {instanceId}/manage/entities/UnifiedActivity.
 
 يمكن العثور على تفاصيل واجهة برمجه التطبيقات هذه، بما في ذلك المعلمات والاستجابات في القسم **EntityData** على [مرجع Customer Insights API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). لمزيد من المعلومات، راجع [التعامل مع Customer Insights API](apis.md).
-
-## <a name="understand-your-real-time-usage-with-telemetry"></a>فهم استخدام الوقت الحقيقي مع قياس تتبع الاستخدام
-
-يمكنك الحصول على نظرة عامة على حجم الطلبات لواجهة برمجة التطبيقات في الوقت الحقيقي ومعلومات حول المشكلات التي قد يواجهها النظام. يمكنك الوصول إلى [بيانات تتبع الاستخدام في الوقت الحقيقي](system.md#view-api-usage). 
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

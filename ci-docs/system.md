@@ -14,12 +14,12 @@ searchScope:
 - ci-system-general
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: 2498814a3d2e6330124fb97c036b9b310bcf1f7a
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: 6e60bf7c18939a29f660e06989e262deeb59a39b
+ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9246231"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9395985"
 ---
 # <a name="view-system-configuration"></a>عرض تكوين النظام
 
@@ -38,12 +38,6 @@ ms.locfileid: "9246231"
    - **استدعاءات واجهة برمجة التطبيقات (API)‬** - مخطط يقدم رسمًا مرئيًا لعدد المكالمات المجمع في واجهة API في الإطار الزمني المحدد.
    - **نقل البيانات** - مخطط يوضح كمية البيانات التي تم نقلها عبر API في الإطار الزمني المحدد.
    - **العمليات** - جدول يحتوي على صفوف لكل عملية API متوفرة وتفاصيل حول استخدام العمليات. حدد اسم العملية للذهاب إليها [مرجع API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
-
-   وتحتوي العمليات التي تستخدم [الاحتواء على البيانات في الوقت الحقيقي](real-time-data-ingestion.md) على رمز منفرد لعرض استخدام API في الوقت الحقيقي.
-
-   1. عرض تكوين النظام **استخدام API في الوقت الحقيقي** جزء يحتوي على تفاصيل الاستخدام للعملية.
-   1. **تحديد الإطار الزمني** للعرض.
-   1. استخدم **تجميع حسب** مربع لاختيار أفضل طريقة لتقديم تفاعلاتك في الوقت الفعلي. تجميع البيانات حسب أسلوب واجهة **برمجة التطبيقات (API)**, **اسم الكيان المؤهل** (الكيان المبتلع), **انشأ من قبل** (رموز الخطأ), **النتيجة** (نجاح أو فشل) أو **رموز الخطأ**. تتوفر البيانات كمخطط تاريخي وكجدول.
 
 ## <a name="view-system-information"></a>عرض معلومات النظام
 
