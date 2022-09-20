@@ -13,12 +13,12 @@ searchScope:
 - ci-search-filter
 - ci-customer-card
 - customerInsights
-ms.openlocfilehash: 8b3b6a0d54b80d7df454e9dc925f14cc3c39684c
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 65fd80cc563b8b3b8c8874b66f179f8b0c7a19f0
+ms.sourcegitcommit: fe33cc76d015232ff8737f77193f44f2b884bb6b
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9194906"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9473626"
 ---
 # <a name="customer-card-add-in-for-dynamics-365-apps-preview"></a>الوظيفة الإضافية لبطاقة عميل تطبيقات Dynamics 365 (إصدار أولي)
 
@@ -32,7 +32,8 @@ ms.locfileid: "9194906"
 - لكي يتم تعيين بيانات Dynamics 365 إلى ملفات تعريف العملاء لـ Customer Insights، نوصي بأن [استيعابها من تطبيق Dynamics 365 باستخدام موصل Microsoft Dataverse](connect-power-query.md). إذا كنت تستخدم طريقة مختلفة لاستيعاب جهات اتصال (أو حسابات) Dynamics 365، فتأكد من أن الحقل `contactid` (أو `accountid`) قد تم تعيينه كـ [مفتاح أساسي لمصدر البيانات أثناء عملية توحيد البيانات](map-entities.md#select-primary-key-and-semantic-type-for-attributes).
 - يجب إضافة جميع مستخدمي Dynamics 365 للوظيفة الإضافية لبطاقة العميل [كمستخدمين](permissions.md) في Customer Insights للاطلاع على البيانات.
 - [إمكانات البحث والتصفية المكونة](search-filter-index.md) في Customer Insights.
-- يعتمد كل عنصر من عناصر تحكم الوظيفة الإضافية على بيانات محددة في Customer Insights. تتوفر بعض البيانات وعناصر التحكم فقط في بيئات من أنواع معينة. سيخبرك تكوين الوظيفة الإضافية في حالة عدم توفر عنصر تحكم بسبب نوع البيئة المحدد. اعرف المزيد حول [حالات استخدام البيئات](work-with-business-accounts.md).
+- تتوفر بعض البيانات وعناصر التحكم فقط في بيئات من أنواع معينة. سيخبرك تكوين الوظيفة الإضافية في حالة عدم توفر عنصر تحكم بسبب نوع البيئة المحدد. يظهر هذا الخطأ داخل عنصر التحكم عند تقديمه. اعرف المزيد حول [حالات استخدام البيئات](work-with-business-accounts.md).
+- يعتمد كل عنصر من عناصر تحكم الوظيفة الإضافية على بيانات محددة في Customer Insights.
   - **التحكم في القياس** يتطلب [مقاييس سمات العميل المكونة](measures.md).
   - **التحكم في المعلومات المهنية** يتطلب بيانات تم إنشاؤها باستخدام [التنبؤات أو النماذج المخصصة](predictions-overview.md).
   - **التحكم في تفاصيل العميل** يُظهر جميع الحقول من ملف التعريف المتاح في ملف تعريف العميل الموحد.

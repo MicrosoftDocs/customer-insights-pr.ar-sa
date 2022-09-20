@@ -5,19 +5,19 @@ ms.date: 07/26/2022
 ms.reviewer: v-wendysmith
 ms.subservice: audience-insights
 ms.topic: how-to
-author: adkuppa
-ms.author: matgos
+author: mukeshpo
+ms.author: mukeshpo
 manager: shellyha
 searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: 7af51ed04fbd28149ea501c58e6fe71b5fa6d4b6
-ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
+ms.openlocfilehash: 6a25e332bafab414c9def4e1e6b461139dd24ea6
+ms.sourcegitcommit: dfba60e17ae6dc1e2e3830e6365e2c1f87230afd
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9207029"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9463249"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>الاتصال بمصدر بيانات Power Query
 
@@ -63,7 +63,9 @@ ms.locfileid: "9207029"
 قد يستغرق تحميل البيانات وقتا. بعد الانتهاء من التحديث بنجاح، يُمكنك مراجعة البيانات المستوعبة من صفحة [**الكيانات**](entities.md).
 
 > [!CAUTION]
-> يقوم مصدر بيانات مستند إلى Power Query بإنشاء [تدفق بيانات في Dataverse](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365). لا تقم بتغيير اسم تدفق بيانات في مركز مسؤولي Power Platform المستخدم في Customer Insights. تؤدي إعادة تسمية تدفق البيانات إلى حدوث مشكلات في المراجع بين مصدر بيانات Customer Insights وتدفق بيانات Dataverse.
+>
+> - يقوم مصدر بيانات مستند إلى Power Query بإنشاء [تدفق بيانات في Dataverse](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365). لا تقم بتغيير اسم تدفق بيانات في مركز مسؤولي Power Platform المستخدم في Customer Insights. تؤدي إعادة تسمية تدفق البيانات إلى حدوث مشكلات في المراجع بين مصدر بيانات Customer Insights وتدفق بيانات Dataverse.
+> - يكون للتقييمات المتزامنة لمصادر بيانات Power Query في Customer Insights نفس [حدود التحديث مثل تدفق البيانات في PowerBI.com](/power-query/power-query-online-limits#refresh-limits). في حالة فشل تحديث البيانات لأنه وصل إلى حد التقييم، نوصي بضبط جدول التحديث لكل تدفق بيانات لضمان عدم معالجة مصادر البيانات في نفس الوقت.
 
 ### <a name="available-power-query-data-sources"></a>مصادر بيانات Power Query المتوفرة
 
@@ -77,7 +79,7 @@ ms.locfileid: "9207029"
 
 تستخدم مصادر البيانات التي يتم إنشاؤها بعد ربط بيئة Dataverse مع Customer Insights تدفقات بيانات [Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) بشكل افتراضي. تدعم تدفقات البيانات الاتصال المحلي باستخدام بوابة البيانات. يمكنك إزالة وإعادة إنشاء مصادر البيانات التي كانت موجودة قبل اقتران بيئة Dataverse[باستخدام بوابات البيانات الداخلية](/data-integration/gateway/service-gateway-app).
 
-ستظهر بوابات البيانات من بيئة Power BI أو Power Apps موجودة ويمكنك إعادة استخدامها في Customer Insights. تعرض صفحة مصادر البيانات ارتباطات للوصول إلى بيئةMicrosoft Power Platform، حيث يمكنك عرض محلي بوابات البيانات المحلية وتكوينها.
+ستظهر بوابات البيانات مبيئة Power BI أو Power Apps الحالية ويمكنك إعادة استخدامها في Customer Insights إذا كانت بوابة البيانات وبيئة Customer Insights في نفس منطقة Azure. تعرض صفحة مصادر البيانات ارتباطات للوصول إلى بيئةMicrosoft Power Platform، حيث يمكنك عرض محلي بوابات البيانات المحلية وتكوينها.
 
 > [!IMPORTANT]
 > تأكد من تحديث البوابات إلى أحدث إصدار. يمكنك تثبيت تحديث وإعادة تكوين بوابة من موجه يتم عرضه على شاشة البوابة مباشرة [أو تنزيل أحدث إصدار](https://powerapps.microsoft.com/downloads/). إذا لم تستخدم أحدث إصدار من البوابة، يفشل تحديث تدفق البيانات مع ظهور رسائل خطأ مثل **الكلمة الأساسية غير مدعومة: خصائص التكوين. اسم المعلمة: الكلمة الأساسية**.
