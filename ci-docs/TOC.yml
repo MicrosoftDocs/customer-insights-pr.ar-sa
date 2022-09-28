@@ -7,21 +7,21 @@
 - name: كتالوج التعلم
   items:
     - name: الحصول على اعتماد أخصائي Microsoft Customer Data Platform
-      href: /learn/certifications/exams/mb-260?tab=tab-instructor-led
+      href: /certifications/exams/mb-260?tab=tab-instructor-led
     - name: الشروع في العمل باستخدام Customer Insights
-      href: /learn/modules/get-started-customer-data-platform/
+      href: /training/modules/get-started-customer-data-platform/
     - name: استيعاب البيانات
-      href: /learn/modules/ingest-data-customer-insights/
+      href: /training/modules/ingest-data-customer-insights/
     - name: إنشاء ملف تعريف العميل الموحد
-      href: /learn/modules/unified-customer-profile/
+      href: /training/modules/unified-customer-profile/
     - name: العمل باستخدام Customer Insights
-      href: /learn/modules/working-with-customer-insights/
+      href: /training/modules/working-with-customer-insights/
     - name: إثراء البيانات وإجراء التنبؤات
-      href: /learn/modules/enrich-data/
+      href: /training/modules/enrich-data/
     - name: إدارة الاتصالات الخارجية
-      href: /learn/modules/configure-third-party-connections/
+      href: /training/modules/configure-third-party-connections/
     - name: إدارة Customer Insights
-      href: /learn/modules/administer-customer-data-platform/
+      href: /training/modules/administer-customer-data-platform/
 - name: إصدار تجريبي مجاني
   items:
     - name: التسجيل للحصول على إصدار تجريبي مجاني
@@ -118,6 +118,8 @@
       href: consent-management.md
     - name: استخدم بيانات الويب للتخصيص
       href: unknown-to-known.md
+    - name: إدارة ملفات تعريف العملاء غير المعروفة
+      href: manage-unknown-profiles.md
 - name: Segments
   items:
     - name: نظرة عامة على المقاطع
