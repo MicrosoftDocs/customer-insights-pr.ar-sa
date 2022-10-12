@@ -162,6 +162,8 @@
           href: sentiment-analysis.md
         - name: استخدام نماذج مخصصة من التعلم الآلي من Azure
           href: custom-models.md
+        - name: إنشاء مقاطع استنادًا إلى التنبؤات
+          href: prediction-based-segment.md
     - name: الأدلة النموذجية
       items:
         - name: الدليل النموذجي للتنبؤ بالقيمة العمرية للعميل
@@ -174,10 +176,6 @@
           href: sample-guide-predict-product-recommendation.md
         - name: تجارب باستخدام ‏‫التعلم الآلي من Azure‬
           href: azure-machine-learning-experiments.md
-    - name: إدارة التنبؤات
-      href: manage-predictions.md
-    - name: إنشاء مقاطع استنادًا إلى التنبؤات
-      href: prediction-based-segment.md
 - name: خيارات التصدير
   items:
     - name: التصديرات

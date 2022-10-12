@@ -1,19 +1,19 @@
 ---
 title: استخدام نماذج قائمة على التعلم الآلي من Azure
 description: استخدم نماذج قائمة على التعلم الآلي من Azure في Dynamics 365 Customer Insights.
-ms.date: 12/02/2021
+ms.date: 09/22/2022
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: naravill
 ms.author: naravill
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: a1efad2887a02a92ee2960b07b066edc331f3665
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 8d9c9324ea4840b585b9af1a58d505ccaea6f18e
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9080723"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9609728"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>استخدام نماذج قائمة على التعلم الآلي من Azure
 
@@ -35,7 +35,7 @@ ms.locfileid: "9080723"
 ## <a name="work-with-azure-machine-learning-designer"></a>العمل مع مصمم التعلم الآلي من Azure
 
 يوفر مصمم التعلم الآلي من Azure لوحة مرئية حيث يمكنك سحب مجموعات البيانات والوحدات النمطية وإسقاطها. ويمكن دمج تدفقات دُفعية تم إنشاؤها من المصمم في Customer Insights إذا تم تكوينها وفقًا لذلك. 
-   
+
 ## <a name="working-with-azure-machine-learning-sdk"></a>العمل مع SDK التعلم الآلي من Azure
 
 يستخدم علماء البيانات ومطورو الذكاء الاصطناعي [SDK‏‎ التعلم الآلي من Azure](/python/api/overview/azure/ml/?preserve-view=true&view=azure-ml-py) لبناء سير عمل التعلم الآلي. في الوقت الحالي، لا يمكن دمج النماذج التي تم تدريبها باستخدام SDK مباشرةً مع Customer Insights. يلزم وجود تدفقات استدلال دُفعية تستهلك هذا النموذج للتكامل مع Customer Insights.
@@ -44,17 +44,16 @@ ms.locfileid: "9080723"
 
 ### <a name="dataset-configuration"></a>تكوين مجموعة البيانات
 
-تحتاج إلى إنشاء مجموعات بيانات لاستخدام بيانات الكيان من Customer Insights إلى تدفقات الاستدلال الدُفعية. يجب تسجيل مجموعات البيانات هذه في مساحة العمل. في الوقت الحالي، ندعم فقط [مجموعات البيانات الجدولية](/azure/machine-learning/how-to-create-register-datasets#tabulardataset) بتنسيق csv. يجب تعيين معلمة لمجموعات البيانات التي تتطابق مع كيان البيانات كمعلمة تدفقات.
-   
-* معلمات مجموعة البيانات في المصمم
-   
-     في المصمم، افتح **تحديد أعمدة في مجموعة البيانات**، وحدد **تعيين كمعلمة تدفق** حيث توفر اسمًا للمعلمة.
+أنشئ مجموعات بيانات لاستخدام بيانات الكيان من Customer Insights لتدفق الاستدلال الدُفعي. سجل مجموعات البيانات هذه في مساحة العمل. في الوقت الحالي، ندعم فقط [مجموعات البيانات الجدولية](/azure/machine-learning/how-to-create-register-datasets#tabulardataset) بتنسيق csv. عيّن معلمات مجموعات البيانات التي تتطابق مع كيان البيانات كمعلمة تدفق.
 
-     > [!div class="mx-imgBorder"]
-     > ![تعيين معلمات مجموعة البيانات في المصمم.](media/intelligence-designer-dataset-parameters.png "تعيين معلمات مجموعة البيانات في المصمم")
-   
-* معلمة مجموعة البيانات في SDK‏ (Python)
-   
+- معلمات مجموعة البيانات في المصمم
+
+  في المصمم، افتح **تحديد أعمدة في مجموعة البيانات**، وحدد **تعيين كمعلمة تدفق** حيث توفر اسمًا للمعلمة.
+
+  :::image type="content" source="media/intelligence-designer-dataset-parameters.png" alt-text="تعيين معلمات مجموعة البيانات في المصمم.":::
+
+- معلمة مجموعة البيانات في SDK‏ (Python)
+
    ```python
    HotelStayActivity_dataset = Dataset.get_by_name(ws, name='Hotel Stay Activity Data')
    HotelStayActivity_pipeline_param = PipelineParameter(name="HotelStayActivity_pipeline_param", default_value=HotelStayActivity_dataset)
@@ -63,10 +62,10 @@ ms.locfileid: "9080723"
 
 ### <a name="batch-inference-pipeline"></a>تدفقات الاستدلال الدُفعية
   
-* في المصمم، يمكن استخدام تدفقات التدريب لإنشاء أو تحديث تدفقات الاستدلال. يتم حاليًا دعم تدفقات الاستدلال الدُفعية فقط.
+- في المصمم، استخدم تدفق التدريب لإنشاء تدفق الاستدلال أو تحديثه. يتم حاليًا دعم تدفقات الاستدلال الدُفعية فقط.
 
-* باستخدام SDK، يمكنك نشر التدفقات إلى نقطة النهاية. في الوقت الحالي، يتكامل Customer Insights مع التدفقات الافتراضية في نقطة نهاية التدفقات الدُفعية في مساحة التعلم الآلي.
-   
+- باستخدام SDK، انشر التدفق إلى نقطة النهاية. في الوقت الحالي، يتكامل Customer Insights مع التدفقات الافتراضية في نقطة نهاية التدفقات الدُفعية في مساحة التعلم الآلي.
+
    ```python
    published_pipeline = pipeline.publish(name="ChurnInferencePipeline", description="Published Churn Inference pipeline")
    pipeline_endpoint = PipelineEndpoint.get(workspace=ws, name="ChurnPipelineEndpoint") 
@@ -75,11 +74,11 @@ ms.locfileid: "9080723"
 
 ### <a name="import-pipeline-data-into-customer-insights"></a>استيراد بيانات التدفقات إلى Customer Insights
 
-* يوفر المصمم [الوحدة النمطية لتصدير البيانات](/azure/machine-learning/algorithm-module-reference/export-data) التي تتيح لك تصدير إخراج التدفقات إلى مساحة تخزين Azure. في الوقت الحالي، يجب أن تستخدم الوحدة النمطية نوع متجر البيانات **مساحة تخزين Azure Blob** وتعيين معلمة **متجر البيانات** و **المسار** النسبي. يتجاوز Customer Insights المعلمتين أثناء تنفيذ التدفقات مع متجر بيانات ومسار يمكن للمنتج الوصول إليه.
-   > [!div class="mx-imgBorder"]
-   > ![تكوين الوحدة النمطية لتصدير البيانات.](media/intelligence-designer-importdata.png "تكوين الوحدة النمطية لتصدير البيانات")
-   
-* عند كتابة إخراج الاستدلال باستخدام التعليمات البرمجية، يمكنك تحميل الإخراج إلى مسار داخل *متجر بيانات مسجل* في مساحة العمل. إذا تم تعيين معلمات للمسار ومتجر البيانات في التدفقات، فسيتمكن Customer insights من قراءة إخراج الاستدلال واستيراده. في الوقت الحالي، يتم دعم إخراج جدولي فردي بتنسيق csv. يجب أن يتضمن المسار الدليل واسم الملف.
+- يوفر المصمم [الوحدة النمطية لتصدير البيانات](/azure/machine-learning/algorithm-module-reference/export-data) التي تتيح لك تصدير إخراج التدفقات إلى مساحة تخزين Azure. في الوقت الحالي، يجب أن تستخدم الوحدة النمطية نوع متجر البيانات **مساحة تخزين Azure Blob** وتعيين معلمة **متجر البيانات** و **المسار** النسبي. يتجاوز Customer Insights المعلمتين أثناء تنفيذ التدفقات مع متجر بيانات ومسار يمكن للمنتج الوصول إليه.
+
+  :::image type="content" source="media/intelligence-designer-importdata.png" alt-text="تكوين الوحدة النمطية لتصدير البيانات.":::
+
+- عند كتابة إخراج الاستدلال باستخدام التعليمات البرمجية، يمكنك تحميل الإخراج إلى مسار داخل *متجر بيانات مسجل* في مساحة العمل. إذا تم تعيين معلمات للمسار ومتجر البيانات في التدفقات، فسيتمكن Customer insights من قراءة إخراج الاستدلال واستيراده. في الوقت الحالي، يتم دعم إخراج جدولي فردي بتنسيق csv. يجب أن يتضمن المسار الدليل واسم الملف.
 
    ```python
    # In Pipeline setup script

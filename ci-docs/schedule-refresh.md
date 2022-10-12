@@ -1,7 +1,7 @@
 ---
 title: جدولة تحديث النظام
 description: جدولة الوقت الذي ينبغي تحديث النظام فيه
-ms.date: 08/09/2022
+ms.date: 09/27/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: NimrodMagen
@@ -11,19 +11,19 @@ manager: shellyha
 searchScope:
 - ci-system-schedule
 - customerInsights
-ms.openlocfilehash: 949ea071ca41127b0c45488d5d7af3f6aa4e1c35
-ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
+ms.openlocfilehash: 4aac02b570357d2086f7a9d7340b0e4837157a0b
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9395940"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9610312"
 ---
 # <a name="schedule-system-refresh"></a>جدولة تحديث النظام
 
 جدولة التحديثات التلقائية لجميع ملفات [مصادر البيانات المبتلعة](data-sources.md). يساعد التحديث التلقائي في التأكد من أن التحديثات من مصادر البيانات تنعكس في ملفات تعريف العميل الموحدة.
 
 > [!NOTE]
-> Power Query يتم تحديث مصادر البيانات التي تديرها وفقًا لجداولها الخاصة. لجدولة تحديث Power Query مصادر البيانات التي تديرها، قم بتكوين إعدادات التحديث في مصدر البيانات المحدد هذا من صفح **Data sources**.
+> Power Query يتم تحديث مصادر البيانات التي تديرها وفقًا لجداولها الخاصة. لجدولة تحديث Power Query مصادر البيانات التي تديرها، قم بتكوين إعدادات التحديث في مصدر البيانات المحدد هذا من صفح **Data sources**. عليك مواءمة الوقت مع جدول تحديث البيانات النهائي لتفادي حدوث التحديثات كلها في وقت واحد.
 > :::image type="content" source="media/PPDF-edit-refresh.png" alt-text="Power Platformإعدادات تحديث تدفق البيانات":::
 
 ## <a name="set-system-refresh-schedule"></a>قم بتعيين جدول تحديث النظام

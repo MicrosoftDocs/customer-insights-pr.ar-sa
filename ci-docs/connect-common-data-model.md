@@ -1,7 +1,7 @@
 ---
 title: الاتصال بمجلد نموذج البيانات العامة باستخدام حساب Azure Data Lake
 description: اعمل مع بيانات نموذج البيانات العامة باستخدام Azure Data Lake Storage.
-ms.date: 07/27/2022
+ms.date: 09/29/2022
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -12,12 +12,12 @@ searchScope:
 - ci-create-data-source
 - ci-attach-cdm
 - customerInsights
-ms.openlocfilehash: d79b2d34e425e123224209814fef6e367c77c813
-ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
+ms.openlocfilehash: c12603b9ed8a814356a0f8d0137e97afc749b87c
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9396030"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9609926"
 ---
 # <a name="connect-to-data-in-azure-data-lake-storage"></a>الاتصال بالبيانات في Azure Data Lake Storage
 
@@ -43,6 +43,10 @@ ms.locfileid: "9396030"
 - يحتاج المستخدم الذي يقوم بإعداد اتصال مصدر البيانات إلى ‏‫المساهم في بيانات مخزن البيانات الثنائية الكبيرة على حساب التخزين.
 
 - يجب أن تتبع البيانات الموجودة في Data Lake Storage مقياس نموذج البيانات العامة لتخزين بياناتك كما يجب أن يكون لديها بيان نموذج البيانات العامة لتمثيل مخطط ملفات البيانات (csv.* أو parquet.*). يجب أن يقدم البيان تفاصيل الكيانات مثل أعمدة الكيانات وأنواع البيانات، وموقع ملف البيانات ونوع الملف. للحصول على المزيد من المعلومات، راجع [بيان نموذج البيانات العامة](/common-data-model/sdk/manifest). إذا لم يكن البيان موجودًا، فبإمكان المستخدمين الذين لديهم دور المسؤول وحق الوصول كمالك بيانات مخزن البيانات الثنائية الكبيرة أو مساهم بيانات مخزن البيانات الثنائية الكبيرة تعريف المخطط عند استيعاب البيانات.
+
+## <a name="recommendations"></a>التوصيات
+
+للحصول على الأداء الأمثل، ينصح Customer Insights بأن يكون حجم القسم 1 غيغابايت أو أقل ويجب ألا يتجاوز عدد ملفات الأقسام في المجلد 1000.
 
 ## <a name="connect-to-azure-data-lake-storage"></a>الاتصال بـ Azure Data Lake Storage
 
@@ -199,5 +203,101 @@ ms.locfileid: "9396030"
 1. انقر فوق **حفظ** لتطبيق تغييرات، ثم عد إلى صفحة **مصادر‏‎ البيانات**.
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+## <a name="common-reasons-for-ingestion-errors-or-corrupt-data"></a>الأسباب الشائعة لأخطاء الاستيعاب أو البيانات تالفة
+
+أثناء استيعاب البيانات، تتضمن بعض الأسباب الأكثر شيوعًا لاعتبار أحد السجلات تالفًا:
+
+- عدم تطابق أنواع البيانات وقيم الحقول بين الملف المصدر والمخطط
+- عدم تطابق عدد الأعمدة في الملف المصدر مع المخطط
+- تحتوي الحقول على أحرف تتسبب في انحراف الأعمدة مقارنةً بالمخطط المتوقع. على سبيل المثال: علامات الاقتباس المنسقة بشكل غير صحيح أو علامات الاقتباس التي لم يتم تجاوزها أو أحرف السطر الجديد أو أحرف علامات جدولة.
+- ملفات الأقسام مفقودة
+- في حالة وجود أعمدة التاريخ والوقت/التاريخ/datetimeoffset، يجب تحديد تنسيقها في المخطط إذا لم تكن تتبع التنسيق القياسي.
+
+### <a name="schema-or-data-type-mismatch"></a>عدم تطابق المخطط أو نوع البيانات
+
+إذا لم تكن البيانات متوافقة مع المخطط، فيتم إكمال عملية الاستيعاب مع أخطاء. صحح إما مصدر البيانات أو المخطط ثم أعد استيعاب البيانات.
+
+### <a name="partition-files-are-missing"></a>ملفات الأقسام مفقودة
+
+- إذا نجحت عملية الاستيعاب دون أي سجلات تالفة، ولكن لم يكن بمقدورك رؤية أية بيانات، فحرر ملف model.json أو manifest.json للتأكد من تحديد الأقسام. بعد ذلك، اعمل على [تحديث مصدر البيانات](data-sources.md#refresh-data-sources).
+
+- إذا حدثت عملية استيعاب البيانات في نفس الوقت الذي تم فيه تحديث مصادر البيانات أثناء التحديث المجدول التلقائي، فقد تكون ملفات الأقسام فارغة أو غير متوفرة كي تتم معالجتها بواسطة Customer Insights. للمواءمة مع جدول التحديث النهائي، عليك تغيير [جدولة تحديث النظام](schedule-refresh.md) أو جدولة تحديث مصدر البيانات. عليك مواءمة الوقت بحيث لا تحدث التحديثات كلها في وقت واحد وتوفر أحدث البيانات التي تتم معالجتها في Customer Insights.
+
+### <a name="datetime-fields-in-the-wrong-format"></a>حقول التاريخ والوقت بالتنسيق الخاطئ
+
+حقول التاريخ والوقت في الكيان ليست بتنسيقات ISO 8601 أو en-US. تنسيق التاريخ والوقت الافتراضي في Customer Insights هو تنسيق en-US. يجب أن تكون كافة حقول التاريخ والوقت في الكيان بنفس التنسيق. يدعم Customer Insights التنسيقات الأخرى شريطة إنشاء التعليقات أو الخصائص على مستوى المصدر أو الكيان في النموذج أو manifest.json. على سبيل المثال: 
+
+**Model.json**
+
+   ```json
+      "annotations": [
+        {
+          "name": "ci:CustomTimestampFormat",
+          "value": "yyyy-MM-dd'T'HH:mm:ss:SSS"
+        },
+        {
+          "name": "ci:CustomDateFormat",
+          "value": "yyyy-MM-dd"
+        }
+      ]   
+   ```
+
+  في manifest.json، يمكن تحديد تنسيق التاريخ والوقت على مستوى الكيان أو على مستوى السمة. على مستوى الكيان، استخدم "exhibitsTraits" في الكيان في *.manifest.cdm.json لتحديد تنسيق التاريخ والوقت. على مستوى السمة، استخدم "appliedTraits" في السمة في entityname.cdm.json.
+
+**Manifest.json على مستوى الكيان**
+
+```json
+"exhibitsTraits": [
+    {
+        "traitReference": "is.formatted.dateTime",
+        "arguments": [
+            {
+                "name": "format",
+                "value": "yyyy-MM-dd'T'HH:mm:ss"
+            }
+        ]
+    },
+    {
+        "traitReference": "is.formatted.date",
+        "arguments": [
+            {
+                "name": "format",
+                "value": "yyyy-MM-dd"
+            }
+        ]
+    }
+]
+```
+
+**Manifest.json على مستوى السمة**
+
+```json
+   {
+      "name": "PurchasedOn",
+      "appliedTraits": [
+        {
+          "traitReference": "is.formatted.date",
+          "arguments" : [
+            {
+              "name": "format",
+              "value": "yyyy-MM-dd"
+            }
+          ]
+        },
+        {
+          "traitReference": "is.formatted.dateTime",
+          "arguments" : [
+            {
+              "name": "format",
+              "value": "yyyy-MM-ddTHH:mm:ss"
+            }
+          ]
+        }
+      ],
+      "attributeContext": "POSPurchases/attributeContext/POSPurchases/PurchasedOn",
+      "dataFormat": "DateTime"
+    }
+```
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
