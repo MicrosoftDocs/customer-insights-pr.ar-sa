@@ -1,19 +1,19 @@
 ---
 title: تصدير المقاطع إلى Braze (إصدار أولي)
 description: تعرف على كيفية تكوين الاتصال والتصدير إلى Braze.
-ms.date: 07/25/2022
+ms.date: 10/06/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 84dc7f13f30e0334d431fe5b5866c7f87e82ab27
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 2f52eb8196e057f934c8d2b5ac0518ce121606b6
+ms.sourcegitcommit: 003c1929f730d7d505c108aba84f6269f4c98978
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195091"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9655264"
 ---
 # <a name="export-segments-to-braze-preview"></a>تصدير المقاطع إلى Braze (إصدار أولي)
 
@@ -23,6 +23,7 @@ ms.locfileid: "9195091"
 
 - [حساب Braze](https://www.braze.com/) وبيانات اعتماد المسؤول المطابقة.
 - [مفتاح Braze API](https://www.braze.com/docs/api/basics/)
+- [نقطة نهاية Braze REST](https://www.braze.com/docs/api/basics/#api-definitions) الخاصة بك 
 - [مقاطع مُكونة](segments.md) في Customer Insights.
 - تحتوي Unified customer profiles في المقاطع التي تم تصديرها على حقل يمثل عنوان بريد إلكتروني ومعرف عميل Braze.
 
@@ -30,6 +31,7 @@ ms.locfileid: "9195091"
 
 - ما يصل إلى مليون ملف تعريف عميل لـ Braze، والتي يمكن أن تستغرق ما يصل إلى 40 دقيقة لإكمالها. يعتمد عدد ملفات تعريف العملاء التي يمكنك تصديرها إلى Braze على عقدك مع Braze.
 - المقاطع فقط.
+- لا يتم دعم Azure Private Link لتصدير Braze.
 
 ## <a name="set-up-connection-to-braze"></a>إعداد اتصال بـ Braze
 
@@ -62,6 +64,8 @@ ms.locfileid: "9195091"
 1. حدد **إضافة تصدير**.
 
 1. في حقل **الاتصال للتصدير**، اختر اتصالاً من قسم Braze. اتصل بالمسؤول إذا لم يكن هناك اتصال متوفر.
+
+1. أدخل نقطة نهاية REST في حقل **Hostname** بالتنسيق التالي: `rest.iad-03.braze.com`.
 
 1. إدخال اسمًا للتصدير.
 
