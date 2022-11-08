@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 178d2df8edf1abcec72664e19d73a88f2b97f12d
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: e62888a6d618fb1154890e607d8c23d3767d35f7
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195550"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725384"
 ---
 # <a name="export-segments-to-activecampaign-preview"></a>تصدير مقاطع إلى ActiveCampaign (معاينة)
 
@@ -27,8 +27,9 @@ ms.locfileid: "9195550"
 - [مقاطع مُكونة](segments.md) في Customer Insights.
 - تحتوي ملفات تعريف العملاء الموحدة في المقاطع المصدّرة على حقل يمثل عنوان البريد الإلكتروني.
 
-## <a name="known-limitations"></a>القيود المعروفة
+## <a name="known-limitations"></a>الحدود المعروفة
 
+- الارتباط الخاص بالإضافة إلى إحضار مساحة التخزين الخاصة بك (BYOS) غير مدعوم.
 - ما يصل إلى مليون ملف تعريف عميل لكل عملية تصدير إلى ActiveCampaign، والتي قد تستغرق ما يصل إلى 90 دقيقة حتى تكتمل. يعتمد عدد ملفات تعريف العملاء التي يمكنك تصديرها إلى ActiveCampaign على عقدك مع ActiveCampaign.
 - المقاطع فقط.
 

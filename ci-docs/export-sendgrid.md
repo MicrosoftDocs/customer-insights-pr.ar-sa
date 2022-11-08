@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: f2990ad410dda0cbf952f82f3fc30b3a53a7bcd4
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 855e77055eeb24a2c6cff0d45cd23edf93cc0581
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196976"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724832"
 ---
 # <a name="export-segments-to-sendgrid-preview"></a>تصدير مقاطع إلى SendGrid (إصدار أولي)
 
@@ -27,8 +27,9 @@ ms.locfileid: "9196976"
 - [مقاطع مُكونة](segments.md) في Customer Insights.
 - تحتوي ملفات تعريف العملاء الموحدة في المقاطع المصدّرة على حقل يمثل عنوان البريد الإلكتروني.
 
-## <a name="known-limitations"></a>القيود المعروفة
+## <a name="known-limitations"></a>الحدود المعروفة
 
+- الارتباط الخاص بالإضافة إلى إحضار مساحة التخزين الخاصة بك (BYOS) غير مدعوم.
 - ما يصل إلى 100000 ملف تعريف عميل إجمالاً إلى SendGrid، والتي قد تستغرق ما يصل إلى بضع ساعات حتى تكتمل. يعتمد عدد ملفات تعريف العملاء التي يمكنك تصديرها إلى SendGrid على عقدك مع SendGrid.
 - المقاطع فقط.
 

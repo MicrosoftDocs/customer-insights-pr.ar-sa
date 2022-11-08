@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 4d2ec29c194dc481ee40048b8ecbed813291b4d2
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: c0affd3ed45f462696850813bd50331061dde780
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196470"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724485"
 ---
 # <a name="export-segments-to-constant-contact-preview"></a>تصدير المقاطع إلى Constant Contact (إصدار أولي)
 
@@ -26,8 +26,9 @@ ms.locfileid: "9196470"
 - [مقاطع مُكونة](segments.md) في Customer Insights.
 - تحتوي ملفات تعريف العملاء الموحدة في المقاطع المصدّرة على حقل يمثل عنوان البريد الإلكتروني.
 
-## <a name="known-limitations"></a>القيود المعروفة
+## <a name="known-limitations"></a>الحدود المعروفة
 
+- الارتباط الخاص بالإضافة إلى إحضار مساحة التخزين الخاصة بك (BYOS) غير مدعوم.
 - ما يصل إلى مليون ملف تعريف عميل لكل عملية تصدير إلى Constant Contact، والتي قد تستغرق ما يصل إلى ساعة واحدة حتى تكتمل. يعتمد عدد ملفات تعريف العملاء التي يمكنك تصديرها إلى Constant Contact على عقدك مع Constant Contact.
 - المقاطع فقط.
 

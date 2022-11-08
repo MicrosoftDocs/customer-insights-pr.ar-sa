@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ffc591c01a5a9434cde41f2da25fa930a515b8c1
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: df38e9e88a9c116252fba26983b5f3711b46f051
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9199064"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725246"
 ---
 # <a name="export-segments-to-moengage-preview"></a>تصدير مقاطع إلى MoEngage (إصدار أولي)
 
@@ -25,8 +25,9 @@ ms.locfileid: "9199064"
 - مفتاح MoEngage API من الإعدادات > API في MoEngage.
 - [مقاطع مُكونة](segments.md) في Customer Insights.
 
-## <a name="known-limitations"></a>القيود المعروفة
+## <a name="known-limitations"></a>الحدود المعروفة
 
+- الارتباط الخاص بالإضافة إلى إحضار مساحة التخزين الخاصة بك (BYOS) غير مدعوم.
 - ما يصل إلى 100000 ملف تعريف عميل لكل عملية تصدير إلى MoEngage، والتي يمكن أن تستغرق ما يصل إلى 15 دقيقة. يعتمد عدد ملفات تعريف العملاء التي يمكنك تصديرها إلى MoEngage على عقدك مع MoEngage.
 - المقاطع فقط.
 

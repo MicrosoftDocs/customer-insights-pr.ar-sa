@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 449d2c5e32697e4a5d2c9dff4a5a1cbdb26aeb4d
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: b4b14ba9de2c7e20175fac664a705f2212a411fd
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195044"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724741"
 ---
 # <a name="export-segments-to-autopilot-preview"></a>تصدير مقاطع إلى Autopilot (إصدار أولي)
 
@@ -26,8 +26,9 @@ ms.locfileid: "9195044"
 - [مقاطع مُكونة](segments.md) في Customer Insights.
 - تحتوي ملفات تعريف العملاء الموحدة في المقاطع المصدّرة على حقل يمثل عنوان البريد الإلكتروني.
 
-## <a name="known-limitations"></a>القيود المعروفة
+## <a name="known-limitations"></a>الحدود المعروفة
 
+- الارتباط الخاص بالإضافة إلى إحضار مساحة التخزين الخاصة بك (BYOS) غير مدعوم.
 - ما يصل إلى 100000 ملف تعريف عميل لكل عملية تصدير إلى الطيار الآلي، والتي يمكن أن تستغرق ما يصل إلى بضع ساعات حتى تكتمل. يعتمد عدد ملفات تعريف العملاء التي يمكنك تصديرها إلى Autopilot على عقدك مع Autopilot.
 - المقاطع فقط.
 

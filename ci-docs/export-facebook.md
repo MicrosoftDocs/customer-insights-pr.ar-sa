@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 01be1a075db0da05dc5536aea8a33093f9a2ea13
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: c7a4b1be1c959d70fad929b56452169b40e5b592
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9194998"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724560"
 ---
 # <a name="export-segments-to-facebook-ads-manager-preview"></a>تصدير مقاطع إلى مدير إعلانات Facebook (إصدار أولي)
 
@@ -25,11 +25,13 @@ ms.locfileid: "9194998"
 
 - [حساب إعلانات Facebook](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account) يتضمن [حساب أعمال على Facebook](https://business.facebook.com/).
 - امتيازات المسؤول على [حساب إعلانات Facebook](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account).
+- يجب على المستخدم الذي يعمل على إعداد الاتصال في Customer Insights قبول شروط الحضور المخصصة.
 
-## <a name="known-limitations"></a>القيود المعروفة
+## <a name="known-limitations"></a>الحدود المعروفة
 
 - ما يصل إلى 10 ملايين ملف تعريف عميل لكل عملية تصدير إلى مدير إعلانات Facebook، والتي يمكن أن تستغرق ما يصل إلى 90 دقيقة.
 - المقاطع فقط.
+- لا يدعم تكامل إعلانات Facebook المستخدمين الذين لديهم أكثر من 25 حسابًا إعلانيًا.
 - نوع Facebook *قائمة العميل* في [الجماهير المخصصة](https://www.facebook.com/business/help/744354708981227?id=2469097953376494) فقط.
   > [!NOTE]
   > وفي بعض الحالات، قد تشاهد مجموعات مخصصة من أنواع مختلفة في القائمة المنسدلة. إذا حددت نوعًا مختلفًا غير *قائمة العملاء*، يفشل التصدير.
