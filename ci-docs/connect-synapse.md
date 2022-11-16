@@ -9,12 +9,12 @@ ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 7bc0c3614e6dd39fbd65ae098ed679d95d09de9d
-ms.sourcegitcommit: 086f75136132d561cd78a4c2cb1e1933e2301f32
+ms.openlocfilehash: 675fd03c44a7a7a492b111895d79c2e77f93a5b5
+ms.sourcegitcommit: 4ba74816ebfa46412c64c40a61e1f31c4ccc40f2
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "9259782"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9738140"
 ---
 # <a name="connect-an-azure-synapse-analytics-data-source-preview"></a>وصل مصدر بيانات من Azure Synapse Analytics (إصدار أولي)
 
@@ -45,7 +45,7 @@ Azure Synapse Analytics هي خدمة تحليلات مؤسسية تُسرع م�
 
 - تحتاج *[الهوية المدارة بواسطة Azure Synapse ‏workspace](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* إلى أذونات **مساهم بيانات مخزن البيانات الثنائية الكبيرة** في حساب Azure Data Lake Storage ‏Gen2 في المكان الذي توجد فيه البيانات وترتبط بـ Azure Synapse ‏workspace. تعلم المزيد حول [استخدام مدخل Azure لتعيين دور Azure للوصول إلى بيانات الكائن الثنائي كبير الحجم والصف](/azure/storage/common/storage-auth-aad-rbac-portal) و[أذونات مساهم بيانات مخزن البيانات الثنائية الكبيرة](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
-- في Azure Synapse ‏workspace، يحتاج *كيان الخدمة لـ Customer Insights* وهو "Dynamics 365 AI for Customer Insights" إلى دور **مسؤول Synapse**. لمزيد من المعلومات، راجع [كيفية إعداد عنصر تحكم الوصول لـ Synapse workspace](/azure/synapse-analytics/security/how-to-set-up-access-control) الخاصة بك.
+- في Azure Synapse ‏workspace، يحتاج *كيان الخدمة لـ Customer Insights* وهو "Dynamics 365 AI for Customer Insights" إلى دور **مسؤول Synapse**. يحتاج **المستخدم** إلى تعيين دور **مساهم Synapse** لمساحة العمل. لمزيد من المعلومات، راجع [كيفية إعداد عنصر تحكم الوصول لـ Synapse workspace](/azure/synapse-analytics/security/how-to-set-up-access-control) الخاصة بك.
 
 - إذا كانت بيئة Customer Insights [تخزن Azure Data Lake Storage](own-data-lake-storage.md)، المستخدم الذي يقوم بإعداد الاتصال إلى Azure Synapse Analytics يحتاج على الأقل المدمج في **القارئ** دور في حساب Data Lake Storage. لمزيد من المعلومات، راجع [تعيين أدوار Azure باستخدام مدخل Azure](/azure/role-based-access-control/role-assignments-portal).
 
